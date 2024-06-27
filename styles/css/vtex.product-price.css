@@ -1,0 +1,60 @@
+:global(.vtex-product-summary-2-x-container) .sellingPrice--summary .sellingPriceValue--summary {
+    font-size: 24px;
+    color: #db3d68;
+    font-family: 'Larsseit Extra Bold';
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--product-main) .sellingPrice--summary .sellingPriceValue--summary {
+    font-family: 'Larsseit Medium';
+    font-size: 23px;
+    color: #db3d68;
+    text-align: center;
+    display: block;
+}
+
+.listPrice .listPriceValue--summary {
+    color: #757575;
+    font-size: 15px;
+    font-family: 'Larsseit Medium';
+    text-align: center;
+    display: block;
+}
+
+.savings--savingPercentage {
+    font-size: 14px;
+    background: #000;
+    color: #fff;
+    border: 1px solid #222;
+    border-radius: 3px;
+    height: 21px;
+    text-transform: lowercase;
+    line-height: 15px;
+    padding: 0px 8px;
+    display: flex;
+    align-items: center;
+    font-family: 'Larsseit Bold';
+    position: relative;
+}
+
+.savings--savingPercentage::before {
+    content: "";
+    display: block;
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    left: -4px;
+    background: #000;
+    transform: translateY(-50%) rotate(45deg);
+    border-radius: 2px;
+    top: 47%;
+    font-size: 14px;
+}
+
+.installments--summary {
+    color: #757575;
+    font-size: 15px;
+    font-family: 'Larsseit Thin';
+    display: block;
+    text-align: center;
+    margin-top: 4px;
+}

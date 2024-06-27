@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Larsseit Regular';
+    src: url('assets/fonts/larsseit.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}  
+
+@font-face {
+    font-family: 'Larsseit Thin';
+    font-style: normal;
+    font-weight: 200;
+	font-display: swap;
+    src: local('Larsseit'), url('https://fonts.cdnfonts.com/s/95001/LarsseitThin.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Larsseit Medium';
+    font-style: normal;
+    font-weight: 500;
+	font-display: swap;
+    src: local('Larsseit'), url('https://fonts.cdnfonts.com/s/95001/LarsseitMedium.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Larsseit Bold';
+    font-style: normal;
+    font-weight: 700;
+	font-display: swap;
+    src: local('Larsseit'), url('https://fonts.cdnfonts.com/s/95001/LarsseitBold.woff') format('woff');
+}
+
+
+@font-face {
+    font-family: 'Larsseit Extra Bold';
+    font-style: normal; 
+    font-weight: 800;
+	font-display: swap;
+    src: local('Larsseit'), url('https://fonts.cdnfonts.com/s/95001/LarsseitExtraBold.woff') format('woff');
+}
+ 
+@font-face {
+    font-family: 'BebasNeue Regular';
+    src: url('assets/fonts/bebasneue-webfont.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+    font-display: swap;
+}   

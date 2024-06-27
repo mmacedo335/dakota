@@ -1,0 +1,95 @@
+{
+  "header-layout.mobile": {
+    "title": "Header - Mobile",
+    "children": [
+      "custom-styles", 
+      "sticky-layout#header-mobile",
+      "flex-layout.row#header-departamentos"
+    ]
+  },
+  "sticky-layout#header-mobile": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#topo-flutuante-mobile",
+      "flex-layout.row#header-mobile",
+      "disclosure-layout#search-bar-mobile"
+    ]
+  },
+  "flex-layout.row#header-mobile": {
+    "children": [
+      "flex-layout.col#header-mobile-left",
+      "flex-layout.col#header-mobile-center",
+      "flex-layout.col#header-mobile-rigth"
+    ],
+    "props": {
+      "blockClass": "main-header-mobile",
+      "preventHorizontalStretch": false,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "between",
+      "verticalAlign": "center",
+      "fullWidth": false
+    }
+  },
+  "flex-layout.col#header-mobile-left": {
+    "props": {
+      "width": "22%"
+    },
+    "children": ["drawer"]
+  },
+  "flex-layout.col#header-mobile-center": {
+    "props": {
+      "width": "40%"
+    },
+    "children": ["logo#mobile"]
+  },
+  "flex-layout.col#header-mobile-rigth": {
+    "props": {
+      "width": "22%"
+    },
+    "children": ["minicart.v2"]
+  },
+  "disclosure-layout#search-bar-mobile": {
+    "children": [
+      "disclosure-trigger#search-bar-mobile",
+      "disclosure-content#search-bar-mobile"
+    ],
+    "props": {
+      "blockClass": "search-bar-mobile"
+    }
+  },
+  "disclosure-trigger#search-bar-mobile": {
+    "children": [
+      "image#lupa"
+    ],
+    "props": {
+      "blockClass": "search-bar-mobile"
+    } 
+  },
+  "disclosure-content#search-bar-mobile": {
+    "children": [
+      "flex-layout.row#search-bar-mobile"
+    ],
+    "props": {
+      "blockClass": "search-bar-mobile"
+    }
+  },
+  "flex-layout.row#search-bar-mobile": {
+    "children": [
+      "search-bar"
+    ], 
+    "props": {
+      "blockClass": "search-bar-mobile",
+      "marginBottom": 3
+    }
+  },
+  "image#lupa": {
+    "props": {
+      "src": "assets/svg/lupa.svg",
+      "maxHeight": 20,
+      "maxWidth": 20,
+      "blockClass": "full"
+    }
+  }
+} 

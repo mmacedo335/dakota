@@ -1,0 +1,60 @@
+{
+  "product-summary.shelf": {
+    "children": [
+      "stack-layout#prodsum",
+      "product-summary-name",
+      "product-summary-space",
+      "product-list-price#summary",
+      "product-selling-price#summary",
+      "product-installments#summary"
+    ]
+  },
+
+  "stack-layout#prodsum": {
+    "children": [
+      "product-summary-image#shelf",
+      "flex-layout.col#flags" 
+    ]
+  },
+
+  "flex-layout.col#flags": {
+    "children": [ 
+      "vtex.product-highlights@2.x:product-highlights#collection",
+      "product-price-savings#discount" 
+    ],
+    "props": { 
+      "blockClass": "flags-summary", 
+      "horizontalAlign": "right"
+    }
+  },
+
+  "product-summary-image#shelf": {
+    "props": {
+      "showBadge": false,
+      "aspectRatio": "1:1",
+      "maxHeight": 300,
+      "hoverImage": {
+        "criteria": "index",
+        "index": 2
+      }
+    }
+  },
+
+  "vtex.product-highlights@2.x:product-highlights#collection": {
+    "props": {
+      "type": "collection"
+    },
+    "children": ["product-highlight-wrapper"]
+  },
+  "product-highlight-wrapper": {
+    "props": {
+      "blockClass": "collection"
+    },
+    "children": ["product-highlight-text"]
+  },
+  "product-highlight-text": {
+    "props": {
+      "message": "{highlightName}"
+    }
+  }
+}

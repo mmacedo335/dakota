@@ -1,0 +1,140 @@
+.orderByButton {
+  justify-content: space-between;
+  background: #F6F6F6;
+  border: none;
+  border-radius: 3px;
+  z-index: 5;
+  position: relative;
+  padding: 8px 10px;
+  height: 39px;
+}
+
+.orderByButton .filterPopupTitle {
+  color: #DB3D68;
+  font-size: 16px;
+  text-transform: none;
+  font-family: 'Larsseit Medium';
+}
+
+.filterPopupArrowIcon {
+  color: #DB3D68;
+  padding: 0px;
+}
+
+.filterPopupArrowIcon .caretIcon {
+  width: 12px;
+  height: 12px;
+}
+
+.orderByButton .orderByText {
+  display: none;
+}
+
+.orderByOptionsContainer {
+  box-shadow: none;
+  top: 40px;
+  padding-top: 0px;
+  z-index: 9999;
+  min-width: 146px;
+  background: rgb(255, 255, 255);
+  border: 1px solid rgb(219, 61, 104);
+  border-radius: 3px;
+}
+
+.orderByOptionsContainer .orderByOptionItem {
+  background: transparent;
+  font-size: 14px;
+  min-width: 146px;
+  color: #222222;
+  font-family: 'Larsseit Regular';
+  display: flex;
+  gap: 5px;
+  border-bottom: 1px solid #F6F6F6;
+}
+
+.orderByOptionsContainer .orderByOptionItem::before {
+  content: '';
+  display: block;
+  width: 14px;
+  height: 14px;
+  border-radius: 50px;
+  border: 1px solid #DB3D68;
+}
+
+.orderByOptionsContainer .orderByOptionItem--selected::before {
+  background: #DB3D68;
+}
+
+.orderByOptionsContainer .orderByOptionItem:hover {
+  background: #F6F6F6;
+}
+
+.orderByOptionsContainer .orderByOptionItem--selected {
+  display: none;
+}
+
+.orderBy--layout {
+  width: 215px;
+}
+
+.gallery {
+  padding: 0;
+}
+
+.filterTitleSpan {
+  letter-spacing: 0.1em;
+  color: #222222;
+  text-transform: uppercase;
+  font-family: 'Larsseit Medium';
+  font-size: 14px;
+}
+
+.filterItem :global(.vtex-checkbox__label) {
+  color: #222222;
+  font-family: 'Larsseit Regular';
+  font-size: 14px;
+}
+
+.filterItem :global(.vtex-checkbox__inner-container) {
+  width: 14px;
+  height: 14px;
+  border-radius: 50px;
+  border: 1px solid #DB3D68;
+  bottom: 0px;
+  top: 0px;
+  margin: auto;
+}
+
+.filterItem :global(.vtex-checkbox__container) {
+  margin-right: 12px;
+}
+
+.caretIcon {
+  color: #DB3D68;
+}
+
+.filterTemplateOverflow::-webkit-scrollbar-thumb {
+  background: #DB3D68;
+}
+
+.filterTemplateOverflow::-webkit-scrollbar {
+  width: 3px;
+  background: #F6F6F6;
+}
+
+.filter__container--title {
+  display: none;
+}
+
+.buttonShowMore :global(.vtex-button){
+  width: 288px;
+  height: 48px;
+  border-radius: 3px;
+  justify-content: center;
+}
+
+.buttonShowMore :global(.vtex-button__label){
+  font-size: 16px;
+  text-transform: none;
+  font-family: 'Larsseit Bold';
+}

@@ -1,0 +1,28 @@
+.styledLinkContent--menu-principal {
+    font-size: 14px;
+    letter-spacing: 0.04em;
+    color: #222222;
+    text-transform: uppercase;
+    font-family: 'Larsseit Medium';
+}
+
+.styledLinkContainer--menu-principal {
+    padding: 8px 0px;
+}
+
+.styledLinkContainer--menu-principal.styledLinkContainer--ativo{
+    background-color: #DB3D68;
+    padding: 8px 10px; 
+} 
+
+.styledLinkContainer--menu-principal.styledLinkContainer--ativo .styledLinkContent--menu-principal{
+    color: white;
+}
+
+.menuContainer--menu-principal {
+    justify-content: space-evenly;
+}
+
+.styledLinkContainer--menu-principal:not(.styledLinkContainer--ativo):hover .styledLinkContent--menu-principal{
+    color: #DB3D68; 
+}

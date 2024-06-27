@@ -1,0 +1,21 @@
+.openIconContainer--header-menu {
+    padding: 0px;
+}
+
+.menuIcon--header-menu {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 20px;
+    background-color: transparent;
+    color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg version='1.1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' viewBox='0 0 460.6 438' style='enable-background:new 0 0 460.6 438;' xml:space='preserve'%3e%3cstyle type='text/css'%3e .st0%7bfill:%23010202;%7d %3c/style%3e%3crect x='0.4' y='40' class='st0' width='459.8' height='26'%3e%3c/rect%3e%3crect x='0.4' y='374.4' class='st0' width='459.8' height='26'%3e%3c/rect%3e%3crect x='0.4' y='259' class='st0' width='349.8' height='26'%3e%3c/rect%3e%3crect x='0.4' y='139.2' class='st0' width='349.8' height='26'%3e%3c/rect%3e%3c/svg%3e");
+}
+
+.closeIconButton--header-menu {
+    position: fixed;
+    right: 10px;
+    top: 13px;
+}

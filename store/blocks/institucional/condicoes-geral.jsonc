@@ -1,0 +1,656 @@
+{
+  "store.custom#condicoes-geral": {
+    "blocks": [
+      "responsive-layout.desktop#condicoes-geral",
+      "responsive-layout.mobile#condicoes-geral"
+    ]
+  },
+
+  "responsive-layout.desktop#condicoes-geral": {
+    "title": "Desktop",
+    "children": [
+      "flex-layout.row#institucional-titulo-page",
+      "flex-layout.row#links-account",
+      "flex-layout.row#condicoes-geral-content"
+    ]
+  }, 
+
+  "responsive-layout.mobile#condicoes-geral": {
+    "title": "Mobile",
+    "children": [
+      "flex-layout.row#institucional-titulo-page",
+      "flex-layout.row#links-account", 
+      "flex-layout.row#conteudo-condicoes-geral-mobile"
+    ]
+  },
+
+  "flex-layout.row#conteudo-condicoes-geral-mobile": {
+    "title": "mobile",
+    "children": [
+      "flex-layout.col#condicoes-geral-voltar",
+      "flex-layout.col#conteudo-condicoes-geral-mobile"
+    ],
+    "props": {
+      "props": {
+        "blockClass": ["condicoes-geral", "main-container"],
+        "paddingBottom": 8,
+        "colGap": 7
+      }
+    }
+  },
+
+  "flex-layout.col#condicoes-geral-voltar": {
+    "children": [
+      "link#condicoes-geral-voltar"
+    ],
+    "props": {
+      "blockClass": ["conteudo-institucional-voltar"]
+    }
+  },
+
+  "link#condicoes-geral-voltar": {
+    "props": {
+      "label": "Termos e condições de uso",
+      "href": "/institucional/central-de-ajuda",
+      "blockClass": [
+        "institucional-links-voltar",
+        "condicoes-geral"
+      ]
+    }
+  },
+
+  "flex-layout.col#conteudo-condicoes-geral-mobile": {
+    "children": [],
+    "props": {
+      "blockClass": ["conteudo-institucional"]
+    }
+  },
+
+  "flex-layout.row#condicoes-geral-content": {
+    "title": "desktop",
+    "children": [
+      "flex-layout.col#menu-institucional",
+      "flex-layout.col#conteudo-condicoes-geral"
+    ],
+    "props": {
+      "blockClass": ["condicoes-geral", "main-container"],
+      "paddingBottom": 8,
+      "colGap": 7
+    }
+  },
+
+  "flex-layout.col#conteudo-condicoes-geral": {
+    "title": "Conteudo",
+    "children": [
+      "disclosure-layout-group#condicoes-geral"
+    ],
+    "props": {
+      "blockClass": ["conteudo-institucional"]
+    }
+  },
+
+  "disclosure-layout-group#condicoes-geral": {
+    "children": [
+      "disclosure-layout#condicoes-geral-01",
+      "disclosure-layout#condicoes-geral-02",
+      "disclosure-layout#condicoes-geral-03",
+      "disclosure-layout#condicoes-geral-04",
+      "disclosure-layout#condicoes-geral-05",
+      "disclosure-layout#condicoes-geral-06",
+      "disclosure-layout#condicoes-geral-07",
+      "disclosure-layout#condicoes-geral-08",
+      "disclosure-layout#condicoes-geral-09",
+      "disclosure-layout#condicoes-geral-10",
+      "disclosure-layout#condicoes-geral-11",
+      "disclosure-layout#condicoes-geral-12",
+      "disclosure-layout#condicoes-geral-13",
+      "disclosure-layout#condicoes-geral-14"
+    ]
+  },
+
+  // PERGUNTA 01
+
+  "disclosure-layout#condicoes-geral-01": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#condicoes-geral-01",
+      "disclosure-content#condicoes-geral-01"
+    ]
+  },
+  "disclosure-trigger#condicoes-geral-01": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "disclosure-state-indicator",
+      "rich-text#condicoes-geral-01"
+    ]
+  },
+  "disclosure-content#condicoes-geral-01": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer-condicoes-geral-01"]
+  },
+  "rich-text#condicoes-geral-01": {
+    "props": {
+      "blockClass": "margin-0",
+      "text": "1- Preâmbulo – Considerando que:"
+    }
+  },
+  "rich-text#answer-condicoes-geral-01": {
+    "props": {
+      "text": "CRIAÇÕES DAKOTA LTDA. inscrita no CNPJ sob n. 94.266.947.0005-16, Inscrição Estadual n. 084/0014791, com sede Av. 15 de Novembro, 3667, Bairro Piá, Nova Petrópolis, RS, e PESSOA NATURAL inscrita no CPF (Cadastro de Pessoas Físicas) qualificada no cadastro realizado consentem com as CONDIÇÕES GERAIS a seguir dispostas."
+    }
+  },
+
+  // PERGUNTA 02
+
+  "disclosure-layout#condicoes-geral-02": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#condicoes-geral-02",
+      "disclosure-content#condicoes-geral-02"
+    ]
+  },
+  "disclosure-trigger#condicoes-geral-02": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "disclosure-state-indicator",
+      "rich-text#condicoes-geral-02"
+    ]
+  },
+  "disclosure-content#condicoes-geral-02": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer-condicoes-geral-02"]
+  },
+  "rich-text#condicoes-geral-02": {
+    "props": {
+      "blockClass": "margin-0",
+      "text": "2- Definições"
+    }
+  },
+  "rich-text#answer-condicoes-geral-02": {
+    "props": {
+      "text": "2.1. Universo Dakota: utilizado para designar as marcas e os produtos de Dakota, Kolosh, Mississipi, Pink Cats, Tanara, Campesi e Kolway. \n \n 2.2. Sites do Universo Dakota: são todos os sites das marcas que compõe o Universo Dakota, a saber, www.dakota.com.br, kolosh.dakota.com.br, mississipi.dakota.com.br, tanarabrasil.com.br, campesi.dakota.com.br, pinkcats.dakota.com.br e kolway.dakota.com.br. \n \n 2.3. Usuário(s): todas as pessoas que se cadastram nos sites do Universo Dakota e recebem uma conta de acesso individual e exclusiva; \n \n 2.4. Visitante(s): todas as pessoas que acessam os sites do Universo Dakota. \n \n 2.5. Login: é o e-mail do Usuário para acesso à conta de Universo Dakota. \n \n 2.6. Carrinho de compras: é a página nos sites de Universo Dakota em que aparecem os produtos selecionados para compra. \n \n 2.7. Minha Conta: é a conta que o Usuário possui nos sites de Universo Dakota."
+    }
+  },
+
+  // PERGUNTA 03
+
+  "disclosure-layout#condicoes-geral-03": {
+    "props": {
+      "animated": true
+    },
+    "children": [ 
+      "disclosure-trigger#condicoes-geral-03",
+      "disclosure-content#condicoes-geral-03"
+    ]
+  },
+  "disclosure-trigger#condicoes-geral-03": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "disclosure-state-indicator",
+      "rich-text#condicoes-geral-03"
+    ]
+  },
+  "disclosure-content#condicoes-geral-03": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer-condicoes-geral-03"]
+  },
+  "rich-text#condicoes-geral-03": {
+    "props": {
+      "blockClass": "margin-0",
+      "text": "3- Cadastro"
+    }
+  },
+  "rich-text#answer-condicoes-geral-03": {
+    "props": {
+      "text": "3.1. Para a realização de compras dos produtos de Universo Dakota é preciso realizar o cadastro nos sites de Universo Dakota, o qual é indispensável para que seja possível a adequada identificação do usuário adquirente, o correto envio de produtos e a coibição de fraudes e abuso de direito na utilização dos sites. \n \n 3.2. O cadastro nos sites de Universo Dakota é gratuito. \n \n 3.3. Para a realização do cadastro é necessário ser maior de 18 anos ou emancipado e capaz nos termos do Código Civil. \n \n 3.4. As seguintes informações serão necessárias para efetivar o cadastro: \n a) Nome e sobrenome; \n b) Data de nascimento; \n c) Gênero (Feminino, Masculino, Outro); \n d) Número do Cadastro de Pessoas Físicas – CPF; \n e) Número de telefone celular; \n f) E-mail; e, \n g) Cadastrar senha. \n \n 3.5. O Usuário declara que as informações fornecidas são corretas e atualizadas, sob pena de responder nos termos da legislação vigente. \n \n 3.6. O Usuário responsabiliza-se por atualizar as informações de cadastro sempre que ocorrer alguma alteração. \n \n 3.7. Ao efetivar o cadastro, o Usuário concorda com o envio de material publicitário pelo Universo Dakota para o endereço de e-mail fornecido, sendo possível pedir, a qualquer tempo, para não receber e-mails promocionais nas configurações da conta do usuário ou no link de descadastro no rodapé dos e-mails recebidos de Universo Dakota. \n \n 3.8. Ao efetivar o cadastro, o usuário está ciente e concorda com as disposições constantes nessas Condições Gerais, especialmente com os textos abaixo: \n “Eu, maior de 18 anos e capaz, li e concordo expressamente com as disposições contidas nas Condições Gerais de Compra e Uso dos Sites de Universo Dakota, às quais estarei sujeito caso meu cadastro seja aprovado por Universo Dakota.” \n “Eu declaro expressamente, nos termos da Lei 13.709/2018 (Lei Geral de Proteção de Dados), que consenti com o tratamento dos dados pessoais de minha titularidade informados no cadastro efetuado, e que estou de acordo com a Política de Privacidade e Proteção de Dados de Universo Dakota. \n \n 3.9. O Universo Dakota enviará um e-mail de confirmação do cadastro e informará o link para acessar, a qualquer tempo, essas condições gerais. \n \n 3.10. São causas, não exaustivas, de recusa do cadastro: \n 3.10.1. A existência de irregularidade fiscal no CPF (Cadastro de Pessoas Físicas) \n 3.10.2. Não atendimento aos requisitos de maioridade, capacidade civil e demais hipóteses legais que autorizem a sua recusa; \n 3.10.3. Quando o cadastro do usuário tiver sido bloqueado/cancelado pelas causas previstas nessas Condições Gerais. \n \n 3.10. São causas, não exaustivas, de recusa do cadastro: \n 3.10.1. A existência de irregularidade fiscal no CPF (Cadastro de Pessoas Físicas) \n 3.10.2. Não atendimento aos requisitos de maioridade, capacidade civil e demais hipóteses legais que autorizem a sua recusa; \n 3.10.3. Quando o cadastro do usuário tiver sido bloqueado/cancelado pelas causas previstas nessas Condições Gerais. \n 3.10.4. A existência de restrições cadastrais ou de informações que não estejam em conformidade com as compliance e de governança do Universo Dakota."
+    }
+  },
+
+  // PERGUNTA 04
+
+  "disclosure-layout#condicoes-geral-04": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#condicoes-geral-04",
+      "disclosure-content#condicoes-geral-04"
+    ]
+  },
+  "disclosure-trigger#condicoes-geral-04": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "disclosure-state-indicator",
+      "rich-text#condicoes-geral-04"
+    ]
+  },
+  "disclosure-content#condicoes-geral-04": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer-condicoes-geral-04"]
+  },
+  "rich-text#condicoes-geral-04": {
+    "props": {
+      "blockClass": "margin-0",
+      "text": "4- Da conta do Usuário"
+    }
+  },
+  "rich-text#answer-condicoes-geral-04": {
+    "props": {
+      "text": "4.1. O usuário poderá, a qualquer momento, cancelar o cadastro acessando a página inicial de sua conta. \n \n 4.2. O Universo Dakota reserva-se o direito de conferir a veracidade das informações prestadas pelos Usuários. Caso seja verificada qualquer divergência entre as informações prestadas no cadastro dos sites de Universo Dakota, o cadastro do Usuário poderá ser cancelado, visando a coibir tentativa de fraude ou abuso de direitos. \n \n 4.3. O Login e senha do Usuário são pessoais, intransferíveis e inalienáveis. Todos os eventos relacionados ao acesso à página de sua conta são de única e exclusiva responsabilidade do Usuário. \n \n 4.4. Constituem justa causa para o bloqueio ou cancelamento da conta do Usuário, as seguintes hipóteses, não exaustivas: \n 4.4.1. Inexatidão nas informações prestadas pelo Usuário ou ilegalidade em sua conduta; \n 4.4.2. Conduta de má-fé e tentativa de fraude, como nos casos em que o Usuário realiza pedidos sucessivos de compras sem a respectiva confirmação do pagamento, em quantidade superior a 80% dos pedidos realizados, dentro do prazo de 30 (trinta) dias. \n 4.4.3. Pedidos reiterados de devoluções de produtos sem justificativa; \n 4.4.4. Informação sobre uso de cartão de crédito fraudado; \n 4.4.5. Tentativa de trocar ou devolver algum produto após o seu uso por conta de conduta contrária aos deveres decorrentes da boa-fé objetiva; \n 4.4.6. Não recebimento de produto após a análise do Universo Dakota; \n 4.4.7. Tentativa de fraude e práticas abusivas cometidas pelo usuário; \n \n 4.5. Caso a conta do Usuário seja bloqueada ou cancelada, o Usuário não poderá realizar compras nos sites de Universo Dakota, podendo entrar em contato com o Universo Dakota mediante o canal de atendimento, disponível nos sites de Universo Dakota para obter mais informações."
+    }
+  },
+
+  // PERGUNTA 05
+
+  "disclosure-layout#condicoes-geral-05": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#condicoes-geral-05",
+      "disclosure-content#condicoes-geral-05"
+    ]
+  },
+  "disclosure-trigger#condicoes-geral-05": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "disclosure-state-indicator",
+      "rich-text#condicoes-geral-05"
+    ]
+  },
+  "disclosure-content#condicoes-geral-05": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer-condicoes-geral-05"]
+  },
+  "rich-text#condicoes-geral-05": {
+    "props": {
+      "blockClass": "margin-0",
+      "text": "5- Da utilização dos sites de Universo Dakota"
+    }
+  },
+  "rich-text#answer-condicoes-geral-05": {
+    "props": {
+      "text": "5.1. Quando o Usuário inicia seção, o Universo Dakota usa cookies para que este não tenha que preencher seus dados todas as vezes que acessar o site, conforme a Política de Privacidade e Proteção de Dados de Universo Dakota. \n \n 5.2. O Usuário é responsável por instalar os programas e aplicativos necessários para a visualização dos conteúdos e bom funcionamento dos sites de Universo Dakota. \n \n 5.3. Os sites do Universo Dakota foram planejados para serem acessados por todos os navegadores de internet, sem que haja qualquer distinção técnica que possa causar prejuízo à navegação. \n \n 5.4. O Universo Dakota dedica-se continuamente a aperfeiçoar o site, de modo que a implementação de novas tecnologias ou criação de novos navegadores não causem prejuízo de acesso aos Usuários. \n \n 5.5. O Universo Dakota é o único e exclusivo titular dos direitos de propriedade intelectual sobre os layouts, aparência visual, websites, softwares, aplicativos, programas, códigos-fonte, banco de dados, esquemas e quaisquer materiais relacionados aos sites do Universo Dakota e à página da conta do usuário. \n \n 5.6. O Universo Dakota preza pela privacidade e a proteção de dados dos Usuários, garantindo que suas atividades de tratamento de dados pessoais sejam realizadas sempre em conformidade com as determinações da Lei 13.709/2019 (Lei Geral de Proteção de Dados). \n \n 5.7. O Usuário, ao utilizar o site, está de acordo com a Política de Privacidade e Proteção de Dados de Universo Dakota (link com a política de privacidade)"
+    }
+  },
+
+  // PERGUNTA 06
+
+  "disclosure-layout#condicoes-geral-06": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#condicoes-geral-06",
+      "disclosure-content#condicoes-geral-06"
+    ]
+  },
+  "disclosure-trigger#condicoes-geral-06": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "disclosure-state-indicator",
+      "rich-text#condicoes-geral-06"
+    ]
+  },
+  "disclosure-content#condicoes-geral-06": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer-condicoes-geral-06"]
+  },
+  "rich-text#condicoes-geral-06": {
+    "props": {
+      "blockClass": "margin-0",
+      "text": "6- Das Compras"
+    }
+  },
+  "rich-text#answer-condicoes-geral-06": {
+    "props": {
+      "text": "6.1. É requisito para a realização de compras nos sites de Universo Dakota o visitante possuir seu cadastro de Usuário ativo. \n \n 6.2. Todos os preços dos produtos indicados através do site incluem o Imposto de Circulação de Mercadorias e Serviços (ICMS) e outros eventuais impostos que possam incidir na venda. Nesses preços não estão incluídos os gastos correspondentes ao envio (frete) dos produtos que são cobrados à parte e devem ser aceitos pelo Usuário. \n \n 6.3. Quando determinado produto não existir no estoque, o Usuário e /ou Visitante poderá optar por cadastrar-se no “avise-me quando chegar” para ser alertado por e-mail quando o produto estiver disponível. \n 6.3.1. Ao fornecer os dados solicitados, o Usuário e /ou Visitante autoriza o Universo Dakota a entrar em contato quando houver a reposição do produto. \n 6.3.2. O Usuário e/ou Visitante está ciente de que não há garantias de que o produto que não estiver disponível será produzido novamente. \n 6.3.3. O Usuário e/ou Visitante está ciente de que, mesmo ao ter recebido o e-mail de disponibilização do produto, isso não significa que estará disponível no momento de sua compra, visto que o sistema envia automaticamente este aviso para todas as pessoas que solicitaram e, em função disso, outro Usuário poderá realizar a compra antes. \n \n 6.4. Após entrar em seu cadastro, os produtos selecionados para a compra serão adicionados ao carrinho de compras. \n \n 6.5. A inclusão do produto no carrinho de compras não garante a compra, tampouco a disponibilidade do produto. \n \n 6.6. No caso de esgotar o produto no estoque entre a inclusão no carrinho de compras e a finalização do pedido, o produto esgotado será automaticamente retirado do carrinho de compras. \n \n 6.7. No caso de compras simultâneas de algum produto com apenas uma (01) unidade em estoque, o primeiro pedido confirmado efetuará a sua reserva. \n \n 6.8. A inclusão de um produto no carrinho de compras não garante o preço do produto. No caso de alteração de preço entre a inclusão no carrinho de compras e a finalização do pedido, prevalecerá o preço vigente na finalização da compra. Portanto, o Usuário precisa observar o valor discriminado na finalização da compra. \n \n 6.9. A compra do produto somente será considerada efetivada após a confirmação do pagamento por Universo Dakota. \n \n 6.10. O Universo Dakota poderá cancelar o pedido que estiver no carrinho de compras se for constatada inconsistência dos dados preenchidos para pagamento e entrega da compra. \n \n 6.11. O pedido que estiver no carrinho de compras será automaticamente cancelado se o usuário não realizar o pagamento, conforme previsto na cláusula 7 dessas Condições Gerais."
+    }
+  },
+
+  // PERGUNTA 07
+
+  "disclosure-layout#condicoes-geral-07": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#condicoes-geral-07",
+      "disclosure-content#condicoes-geral-07"
+    ]
+  },
+  "disclosure-trigger#condicoes-geral-07": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "disclosure-state-indicator",
+      "rich-text#condicoes-geral-07"
+    ]
+  },
+  "disclosure-content#condicoes-geral-07": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer-condicoes-geral-07"]
+  },
+  "rich-text#condicoes-geral-07": {
+    "props": {
+      "blockClass": "margin-0",
+      "text": "7- Das formas de pagamento"
+    }
+  },
+  "rich-text#answer-condicoes-geral-07": {
+    "props": {
+      "text": "7.1. O Universo Dakota disponibiliza o pagamento mediante cartão de crédito e PIX. \n \n 7.2. O Usuário está ciente de que somente é possível escolher uma forma para pagamento do valor total dos pedidos que estiverem no carrinho de compras. Ou seja, somente é possível o pagamento ou mediante cartão de crédito ou PIX. \n \n 7.3. É possível o parcelamento da compra de alguns produtos, conforme informações dos sites de Universo Dakota. Somente é possível parcelar o valor total da compra se o pagamento for realizado mediante cartão de crédito. \n \n 7.4. Caso o Usuário escolha pagar com cartão de crédito, será necessário informar o número do cartão de crédito, nome constante no cartão de crédito, data de validade, código de segurança e quantidade de parcelas (se disponível). \n 7.4.1. A aprovação da compra mediante cartão de crédito é feita de forma automática pelo sistema do Universo Dakota em comunicação com as operadoras de cartão de crédito. \n 7.4.2. Mesmo após a aprovação da compra mediante cartão de crédito é possível que as informações inseridas no pedido de compra passem por uma análise interna, estando sujeitas à confirmação, que pode ocorrer através de contato telefônico ou e-mail, o que será efetuado segundo as políticas de compliance do Universo Dakota. \n 7.4.3. O pedido ficará em análise até que as verificações de segurança sejam realizadas e as informações prestadas pelo Usuário. \n 7.4.4. O Usuário está ciente de que o valor total dos produtos que estiverem no carrinho de compras deve estar dentro do limite disponível no seu cartão de crédito e que o Universo Dakota não se responsabiliza pelos problemas que impeçam o Usuário de utilizar o cartão de crédito para a compra do(s) produto(s). \n 7.4.5. O Universo Dakota não possui informações sobre os motivos de cancelamento ou impossibilidade de uso do cartão de crédito. \n 7.4.6. O Usuário está ciente de que não é possível alterar o número de parcelas escolhido após a compra ter sido concluída. \n \n 7.5. Caso o Usuário escolha realizar o pagamento mediante PIX, será aberta uma página para finalizar a compra. Após o Usuário confirmar a finalização da compra, aparecerá a página com o QR Code e o código para pagamento por PIX. \n 7.5.1. O QR Code e o código para pagamento por PIX será, também, enviado para o e-mail do Usuário. \n 7.5.2. Para pagar, o Usuário deverá abrir o aplicativo do seu banco ou carteira digital e ler o QR Code ou copiar o código PIX gerado e recebido. \n 7.5.3. O Usuário deverá verificar se as informações da compra estão corretas, estando ciente que é o único responsável por revisar as informações da compra e do pagamento por PIX. \n 7.5.4. O pagamento por PIX deverá ser realizado no prazo de 24 (vinte e quatro) horas, após o QR Code e o código PIX expiram. \n 7.5.5. Após a expiração do QR Code e do código PIX, o Usuário deverá fazer um novo pedido no site e seguir o mesmo procedimento previsto nesta cláusula. \n \n 7.6. O Usuário deverá preencher as seguintes informações para a emissão da Nota Fiscal: nome completo, CPF, endereço completo, cidade, UF, CEP e e-mail. \n 7.6.1. Caso a compra seja um presente ou dirigida para terceiro, cuja entrega deva ocorrer em Estado da Federação diverso do Usuário que realiza a compra, o Usuário deverá informar o nome completo, CPF, endereço completo, cidade, UF, CEP, e e-mail do destinatário."
+    }
+  },
+
+  // PERGUNTA 08
+
+  "disclosure-layout#condicoes-geral-08": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#condicoes-geral-08",
+      "disclosure-content#condicoes-geral-08"
+    ]
+  },
+  "disclosure-trigger#condicoes-geral-08": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "disclosure-state-indicator",
+      "rich-text#condicoes-geral-08"
+    ]
+  },
+  "disclosure-content#condicoes-geral-08": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer-condicoes-geral-08"]
+  },
+  "rich-text#condicoes-geral-08": {
+    "props": {
+      "blockClass": "margin-0",
+      "text": "8- Da entrega dos produtos"
+    }
+  },
+  "rich-text#answer-condicoes-geral-08": {
+    "props": {
+      "text": "8.1. O Usuário poderá escolher se a entrega será através de Correios, transportadora ou outro meio que poderá ser incluído entre as opções de entrega diretamente no site. \n \n 8.2. O Usuário é responsável pelo pagamento da entrega, com exceção de promoções promovidas pelo Universo Dakota. \n \n 8.3. Após finalizar o carrinho de compras, o Usuário deverá confirmar o endereço de entrega dos produtos."
+    }
+  },
+
+  // PERGUNTA 09
+
+  "disclosure-layout#condicoes-geral-09": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#condicoes-geral-09",
+      "disclosure-content#condicoes-geral-09"
+    ]
+  },
+  "disclosure-trigger#condicoes-geral-09": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "disclosure-state-indicator",
+      "rich-text#condicoes-geral-09"
+    ]
+  },
+  "disclosure-content#condicoes-geral-09": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer-condicoes-geral-09"]
+  },
+  "rich-text#condicoes-geral-09": {
+    "props": {
+      "blockClass": "margin-0",
+      "text": "9- Da política de entrega"
+    }
+  },
+  "rich-text#answer-condicoes-geral-09": {
+    "props": {
+      "text": "9.1. As entregas são realizadas somente no Brasil, não sendo realizada entrega no exterior. \n \n 9.2. Não é possível agendar data e horário para entregas. \n \n 9.3. O recebimento da mercadoria pode ser realizado por terceiros, como porteiros de condomínios e familiares, desde que estejam em posse de documento com foto e assinem o comprovante de recebimento da mercadoria. \n \n 9.4. São realizadas até três (03) tentativas de entrega em dias e horários diferentes. Ocorrendo três (03) tentativas de entrega sem sucesso, o produto será devolvido ao Centro de Distribuição de Universo Dakota. \n \n 9.5. As entregas são realizadas de segunda a sexta-feira em horário comercial. \n \n 9.6. Algumas regiões possuem restrições de entrega domiciliar. Neste caso, a compra ficará aguardando retirada em uma agência a definir pelos Correios ou CD da transportadora. O acompanhamento da entrega poderá ser feito pelo rastreamento disponível nos sites de Universo Dakota, acessando a opção Minha Conta. \n \n 9.7. Em algumas regiões os pedidos coletados por transportadora poderão ser despachados pelos Correios, hipótese em que não será cobrado custo adicional do Usuário. \n \n 9.8. O Universo Dakota poderá cancelar a compra do Usuário em caso de impossibilidade de entrega do(s) produto(s), em razão da inexistência do endereço de entrega indicado pelo Usuário ou a sua não acessibilidade. \n 9.8.1. Nessa hipótese de cancelamento pelo Universo Dakota, o(s) produto(s) retornará(ão) ao centro de distribuição. \n 9.8.2. O valor do(s) produto(s) cancelado(s) será estornado ou reembolsado(s) no prazo de 45 (quarenta e cinco) dias."
+    }
+  },
+
+  // PERGUNTA 10
+
+  "disclosure-layout#condicoes-geral-10": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#condicoes-geral-10",
+      "disclosure-content#condicoes-geral-10"
+    ]
+  },
+  "disclosure-trigger#condicoes-geral-10": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "disclosure-state-indicator",
+      "rich-text#condicoes-geral-10"
+    ]
+  },
+  "disclosure-content#condicoes-geral-10": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer-condicoes-geral-10"]
+  },
+  "rich-text#condicoes-geral-10": {
+    "props": {
+      "blockClass": "margin-0",
+      "text": "10- Da política geral de troca e devoluções"
+    }
+  },
+  "rich-text#answer-condicoes-geral-10": {
+    "props": {
+      "text": "10.1. De acordo com o decreto federal 7.962/13 e com o Código de Defesa do Consumidor, o Usuário tem até 07 (sete) dias corridos após o recebimento do produto para solicitar o cancelamento da compra, exercendo o seu direito de arrependimento. \n \n 10.2. A loja online não realiza trocas e devoluções de produtos adquiridos em lojas físicas ou representantes multimarcas e vice-versa. \n \n 10.3. Para realizar a devolução ou troca é necessário preencher o formulário disponível nos sites de Universo Dakota, com as seguintes informações: nome completo, e-mail, CPF, telefone, número do pedido, produto a ser devolvido (modelo, cor, número), selecionar o motivo, selecionar a opção de restituição (cupom desconto, estorno, reembolso, troca por outro número) e explicar o motivo para a devolução ou troca. \n \n 10.4. O Universo Dakota entrará em contato com o Usuário em até 03 (três) dias úteis para informar o código de postagem do(s) produto(s), orientando os demais procedimentos a serem adotados. \n \n 0.5. Após o recebimento do código de postagem, o Usuário deverá enviar o(s) produto(s) pelos Correios ou pelo Centro de Distribuição para o endereço fornecido por Universo Dakota, sem custo adicional. 10.5.1. No segundo pedido para troca da mesma compra por outro modelo, cor ou numeração será cobrado o frete do Usuário. \n \n 10.6. Para que o(s) produto(s) seja(m) trocado(s) ou devolvido(s), ainda que no exercício do direito de arrependimento do Usuário, é preciso cumprir as seguintes exigências: \n 10.6.1. Não poderá haver qualquer indício de uso do(s) produto(s); \n 10.6.2. O(s) produto(s) deverá(ão) ser enviados ao Universo Dakota acompanhado de Nota Fiscal e dentro da caixa original. \n \n 10.7. O Universo Dakota reserva-se o direito de não atender o pedido de devolução ou troca de qualquer produto que apresente indícios de uso. \n \n 10.8. Assim que for confirmado o recebimento do produto, o Universo Dakota analisará o cumprimento dos requisitos de troca ou devolução constantes nestas Condições Gerais. \n 10.8.1. Se tudo estiver de acordo com o disposto nestas Condições Gerais, o novo produto será postado para envio pelos Correios em até dez (10) dias úteis do recebimento por Universo Dakota ou será estornado o seu valor no prazo disposto na Cláusula 12 dessas Condições Gerais, conforme a escolha do Usuário posta no formulário. \n \n 10.9. Em caso de pedido de troca ou devolução do produto por motivos de insatisfação, tamanho, cor, ou outra divergência, o Universo Dakota fará uma análise de qualidade. Caso haja indícios de uso o produto será devolvido ao Usuário sem aviso prévio, que será obrigado a recebê-lo."
+    }
+  },
+
+   // PERGUNTA 11
+
+   "disclosure-layout#condicoes-geral-11": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#condicoes-geral-11",
+      "disclosure-content#condicoes-geral-11"
+    ]
+  },
+  "disclosure-trigger#condicoes-geral-11": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "disclosure-state-indicator",
+      "rich-text#condicoes-geral-11"
+    ]
+  },
+  "disclosure-content#condicoes-geral-11": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer-condicoes-geral-11"]
+  },
+  "rich-text#condicoes-geral-11": {
+    "props": {
+      "blockClass": "margin-0",
+      "text": "11- Da troca ou devolução por defeito no produto"
+    }
+  },
+  "rich-text#answer-condicoes-geral-11": {
+    "props": {
+      "text": "11.1. Caso seja constatado algum tipo de vício ou defeito no produto que o torne impróprio, inadequado, ou lhe diminua o valor original, o Universo Dakota se responsabiliza pelo atendimento ao Usuário. \n \n 11.2. O Usuário possui o prazo de 90 (noventa) dias, da data do recebimento do produto, para constatar a existência de defeito e solicitar a sua troca ou devolução, conforme a cláusula 10 destas Condições Gerais. \n \n 11.3. O Usuário que constatar a existência de vício ou defeito no produto deverá preencher o formulário disponível nos sites de Universo Dakota (https://www.dakota.com.br/solicitar-atendimento), com as seguintes informações: nome completo, e-mail, CPF, telefone, número do pedido, produto a ser devolvido (modelo, cor, número), selecionar o motivo “produto com defeito”, anexar foto do produto indicando o defeito, selecionar a opção de restituição (cupom desconto, estorno, reembolso, troca por outro número) e explicar o motivo para a devolução ou troca. \n \n 11.4. O Universo Dakota entrará em contato com o Usuário em até 03 (três) dias úteis para informar o código de postagem do(s) produto(s), orientando os demais procedimentos a serem adotados. \n \n11.5. Após o recebimento do código de postagem, o Usuário deverá enviar o(s) produto(s) pelos Correios, transportadora ou outro meio informado, com porte pago por Universo Dakota, para o endereço constante na Nota Fiscal de compra. \n 11.5.1. Os produtos deverão ser enviados ao Universo Dakota acompanhado de Nota Fiscal e dentro da caixa original. \n \n 11.6. O Universo Dakota analisará o produto no prazo de trinta (30) dias e informará o Usuário quanto à comprovação da existência de vício ou defeito que gere o direito à troca ou à devolução do produto. \n \n 11.7. O Universo Dakota não providenciará a troca ou a devolução do produto nas seguintes hipóteses: \n 11.7.1. Caso o produto não esteja acompanhado de Nota Fiscal e dentro da caixa original; \n 11.7.2. Ausência de defeito, isto é, não constatação do dano apontado pelo usuário; \n 11.7.3. Indícios de uso inadequado do produto; \n 11.7.4. Indícios de dano acidental; \n 11.7.5. Desgaste natural em decorrência do uso. \n \n 11.8. No caso de não ser constatado o vício ou defeito no produto, o Universo Dakota o devolverá ao Usuário com carta/laudo da reprovação do pedido de troca ou devolução por defeito, sem aviso prévio. \n 11.8.1. O Usuário é obrigado a aceitar o recebimento do produto, cuja tentativa de entrega seguirá o disposto na cláusula destas Condições Gerais, sob pena de ficar sem o produto e não ser devido estorno/reembolso do produto."
+    }
+  },
+
+  // PERGUNTA 12
+
+  "disclosure-layout#condicoes-geral-12": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#condicoes-geral-12",
+      "disclosure-content#condicoes-geral-12"
+    ]
+  },
+  "disclosure-trigger#condicoes-geral-12": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "disclosure-state-indicator",
+      "rich-text#condicoes-geral-12"
+    ]
+  },
+  "disclosure-content#condicoes-geral-12": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer-condicoes-geral-12"]
+  },
+  "rich-text#condicoes-geral-12": {
+    "props": {
+      "blockClass": "margin-0",
+      "text": "12- Do reembolso do valor do produto"
+    }
+  },
+  "rich-text#answer-condicoes-geral-12": {
+    "props": {
+      "text": "12.1. Caso o Usuário opte pela devolução do produto e desde que estejam preenchidos todos os requisitos para tanto, o Usuário poderá optar por receber Cupom desconto, para usar na próxima compra, ou pela devolução do valor do produto. \n \n 12.2. Caso o Usuário opte por receber Cupom desconto, o Usuário tem o prazo de 180 (cento e oitenta) dias para utilizá-lo, a contar da data de sua disponibilização. Após esse prazo, o Cupom desconto expira e deixa de constar como opção de pagamento. \n \n 12.3. A devolução do valor do produto será realizada mediante crédito em conta corrente, caso a compra tenha sido realizada por boleto bancário. \n 12.3.1. O Universo Dakota, após analisar a solicitação de devolução do produto, entrará em contato com o usuário para que esta informe os dados de sua conta corrente; \n 12.3.2. O Universo Dakota providenciará o reembolso em até 10 (dez) dias do recebimento da informação dos dados da conta corrente do Usuário. \n 12.3.3. O Usuário deve ser o titular da conta corrente informada. \n \n 12.4. Caso o pagamento da compra tenha sido através de cartão de crédito, o reembolso será efetuado até a segunda fatura subsequente à compra, a depender da administradora do cartão de crédito do usuário. \n 12.4.1. O Universo Dakota fará, apenas e tão somente, a solicitação de estorno, o qual será processado pela administradora do cartão de crédito, sendo esta a responsável pelo processamento e efetivo estorno na fatura do usuário."
+    }
+  },
+
+  // PERGUNTA 13
+
+  "disclosure-layout#condicoes-geral-13": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#condicoes-geral-13",
+      "disclosure-content#condicoes-geral-13"
+    ]
+  },
+  "disclosure-trigger#condicoes-geral-13": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "disclosure-state-indicator",
+      "rich-text#condicoes-geral-13"
+    ]
+  },
+  "disclosure-content#condicoes-geral-13": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer-condicoes-geral-13"]
+  },
+  "rich-text#condicoes-geral-13": {
+    "props": {
+      "blockClass": "margin-0",
+      "text": "13- Da modificação das Condições Gerais"
+    }
+  },
+  "rich-text#answer-condicoes-geral-13": {
+    "props": {
+      "text": "13.1. As disposições dessas Condições Gerais poderão ser revisadas, modificadas e atualizadas a qualquer tempo, de forma unilateral pelo Universo Dakota e sem notificação prévia, de modo que a versão mais atualizada estará sempre disponível nos sites de Universo Dakota. \n \n  13.2. Após a disponibilização da nova versão das Condições Gerais, o Usuário poderá insurgir-se quanto às modificações através de contato no canal de atendimento disponível nos sites de Universo Dakota e/ou cancelar o seu cadastro. \n \n 13.3. Presume-se a ciência e a concordância do Usuário que continuar a acessar o site após as revisões entrarem em vigor. \n \n 12.4. Caso o pagamento da compra tenha sido através de cartão de crédito, o reembolso será efetuado até a segunda fatura subsequente à compra, a depender da administradora do cartão de crédito do usuário. \n 12.4.1. O Universo Dakota fará, apenas e tão somente, a solicitação de estorno, o qual será processado pela administradora do cartão de crédito, sendo esta a responsável pelo processamento e efetivo estorno na fatura do usuário."
+    }
+  },
+
+  // PERGUNTA 14
+
+  "disclosure-layout#condicoes-geral-14": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#condicoes-geral-14",
+      "disclosure-content#condicoes-geral-14"
+    ]
+  },
+  "disclosure-trigger#condicoes-geral-14": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "disclosure-state-indicator",
+      "rich-text#condicoes-geral-14"
+    ]
+  },
+  "disclosure-content#condicoes-geral-14": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer-condicoes-geral-14"]
+  },
+  "rich-text#condicoes-geral-14": {
+    "props": {
+      "blockClass": "margin-0",
+      "text": "14- Lei Aplicável e foro para resolução de disputas"
+    }
+  },
+  "rich-text#answer-condicoes-geral-14": {
+    "props": {
+      "text": "14.1. Essas Condições Gerais regem-se pelo Direito brasileiro. \n \n 14.2. Os Usuários e Visitantes dos sites de Universo Dakota e Universo Dakota elegem o foro de Nova Petrópolis/RS, com a expressa renúncia de qualquer outro, por mais privilegiado que seja ou venha a ser, para dirimir qualquer dúvida, pendência ou litígio oriundo dessas Condições Gerais."
+    }
+  }
+}

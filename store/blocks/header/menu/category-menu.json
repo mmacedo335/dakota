@@ -1,0 +1,18 @@
+{
+  "vtex.menu@2.x:menu#category-menu": {
+    "props": {
+      "experimentalOptimizeRendering": true,
+      "blockClass": "menu-principal"
+    },
+    "children": [
+      "menu-item#lancamento", 
+      "menu-item#bota",
+      "menu-item#sapato",
+      "menu-item#sandalia",
+      "menu-item#tenis",
+      "menu-item#bolsa",
+      "menu-item#acessorios",
+      "menu-item#promocao"
+    ] 
+  }
+}

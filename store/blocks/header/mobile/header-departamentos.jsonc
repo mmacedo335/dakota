@@ -1,0 +1,238 @@
+{
+  "flex-layout.row#header-departamentos": {
+    "title": "Slide departamentos",
+    "children": [
+      "flex-layout.col#header-departamentos-01",
+      "flex-layout.col#header-departamentos-02",
+      "flex-layout.col#header-departamentos-03",
+      "flex-layout.col#header-departamentos-04",
+      "flex-layout.col#header-departamentos-05",
+      "flex-layout.col#header-departamentos-06",
+      "flex-layout.col#header-departamentos-07"
+    ],
+    "props": {
+      "blockClass": "header-departamento",
+      "fullWidth": true,
+      "preserveLayoutOnMobile": true,
+      "paddingBottom": 3,
+      "paddingTop": 3 
+    }
+  },
+  "flex-layout.col#header-departamentos-01": {
+    "title": "Conteudo 01",
+    "props": {
+      "blockClass": "header-departamentos"
+    },
+    "children": [
+      "image#header-departamentos-01",
+      "rich-text#header-departamentos-01"
+    ]
+  },
+  "image#header-departamentos-01": {
+    "title": "Imagem",
+    "props": {
+      "src": "assets/img/header-departamentos-01.png",
+      "blockClass": "full",
+      "link": {
+        "url": "/",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    }
+  },
+  "rich-text#header-departamentos-01": {
+    "title": "Texto",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Lançamento",
+      "blockClass": ["margin-0", "header-departamentos"]
+    }
+  },
+  "flex-layout.col#header-departamentos-02": {
+    "title": "Conteudo 02",
+    "props": {
+      "blockClass": "header-departamentos"
+    },
+    "children": [
+      "image#header-departamentos-02",
+      "rich-text#header-departamentos-02"
+    ]
+  },
+  "image#header-departamentos-02": {
+    "title": "Imagem",
+    "props": {
+      "src": "assets/img/header-departamentos-02.png",
+      "blockClass": "full",
+      "link": {
+        "url": "/",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    }
+  },
+  "rich-text#header-departamentos-02": {
+    "title": "Texto",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Botas",
+      "blockClass": ["margin-0", "header-departamentos"]
+    }
+  },
+  "flex-layout.col#header-departamentos-03": {
+    "title": "Conteudo 03",
+    "props": {
+      "blockClass": "header-departamentos"
+    },
+    "children": [
+      "image#header-departamentos-03",
+      "rich-text#header-departamentos-03"
+    ]
+  },
+  "image#header-departamentos-03": {
+    "title": "Imagem",
+    "props": {
+      "src": "assets/img/header-departamentos-03.png",
+      "blockClass": "full",
+      "link": {
+        "url": "/",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    }
+  },
+  "rich-text#header-departamentos-03": {
+    "title": "Texto",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Tênis",
+      "blockClass": ["margin-0", "header-departamentos"]
+    }
+  },
+  "flex-layout.col#header-departamentos-04": {
+    "title": "Conteudo 04",
+    "props": {
+      "blockClass": "header-departamentos"
+    },
+    "children": [
+      "image#header-departamentos-04",
+      "rich-text#header-departamentos-04"
+    ]
+  },
+  "image#header-departamentos-04": {
+    "title": "Imagem",
+    "props": {
+      "src": "assets/img/header-departamentos-04.png",
+      "blockClass": "full",
+      "link": {
+        "url": "/",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    }
+  },
+  "rich-text#header-departamentos-04": {
+    "title": "Texto",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Sapatos",
+      "blockClass": ["margin-0", "header-departamentos"]
+    }
+  },
+  "flex-layout.col#header-departamentos-05": {
+    "title": "Conteudo 05",
+    "props": {
+      "blockClass": "header-departamentos"
+    },
+    "children": [
+      "image#header-departamentos-05",
+      "rich-text#header-departamentos-05"
+    ]
+  },
+  "image#header-departamentos-05": {
+    "title": "Imagem",
+    "props": {
+      "src": "assets/img/header-departamentos-05.png",
+      "blockClass": "full",
+      "link": {
+        "url": "/",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    }
+  },
+  "rich-text#header-departamentos-05": {
+    "title": "Texto",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Sandálias",
+      "blockClass": ["margin-0", "header-departamentos"]
+    }
+  },
+  "flex-layout.col#header-departamentos-06": {
+    "title": "Conteudo 06",
+    "props": {
+      "blockClass": "header-departamentos"
+    },
+    "children": [
+      "image#header-departamentos-06",
+      "rich-text#header-departamentos-06"
+    ]
+  },
+  "image#header-departamentos-06": {
+    "title": "Imagem",
+    "props": {
+      "src": "assets/img/header-departamentos-06.png",
+      "blockClass": "full",
+      "link": {
+        "url": "/",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    }
+  },
+  "rich-text#header-departamentos-06": {
+    "title": "Texto",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Bolsas",
+      "blockClass": ["margin-0", "header-departamentos"]
+    }
+  },
+  "flex-layout.col#header-departamentos-07": {
+    "title": "Conteudo 07",
+    "props": {
+      "blockClass": "header-departamentos"
+    },
+    "children": [
+      "image#header-departamentos-07",
+      "rich-text#header-departamentos-07"
+    ]
+  },
+  "image#header-departamentos-07": {
+    "title": "Imagem",
+    "props": {
+      "src": "assets/img/header-departamentos-07.png",
+      "blockClass": "full",
+      "link": {
+        "url": "/",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    }
+  },
+  "rich-text#header-departamentos-07": {
+    "title": "Texto",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Promoção",
+      "blockClass": ["margin-0", "header-departamentos"]
+    }
+  }
+}

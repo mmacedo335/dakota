@@ -1,0 +1,13 @@
+.specificationName{
+    font-size: 14px;
+    font-family: 'Larsseit Medium';
+    color: #222222;
+    letter-spacing: 0.5px;
+}
+
+.specificationValue{
+    font-size: 14px;
+    font-family: 'Larsseit Regular';
+    color: #222222;
+    letter-spacing: 0.5px;
+}

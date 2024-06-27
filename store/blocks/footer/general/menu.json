@@ -1,0 +1,129 @@
+{
+  "vtex.menu@2.x:menu#footer": {
+    "title": "Menu",
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#atendimento",
+      "menu-item#empresa",
+      "menu-item#condicoes-gerais",
+      "menu-item#politica-privacidade",
+      "menu-item#troca-devolucoes",
+      "menu-item#vale-presente",
+      "menu-item#clube"
+    ]
+  },
+
+  "menu-item#politica-privacidade": {
+    "props": {
+      "id": "menu-item-politica-privacidade",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/politica-privacidade",
+        "noFollow": true,
+        "tagTitle": "Política de privacidade",
+        "text": "Política de privacidade"
+      }
+    }
+  },
+
+  "menu-item#clube": {
+    "props": {
+      "id": "menu-item-clube",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://www.clubedeaguias.com.br/",
+        "noFollow": true,
+        "tagTitle": "Clube de Águias",
+        "text": "Clube de Águias"
+      }
+    }
+  },
+
+  "menu-item#vale-presente": {
+    "props": {
+      "id": "menu-item-vale-presente",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "https://pagamentos.dakota.com.br/vale-presente/",
+        "noFollow": true,
+        "tagTitle": "Vale Presente",
+        "text": "Vale Presente"
+      }
+    }
+  },
+
+  "menu-item#troca-devolucoes": {
+    "props": {
+      "id": "menu-item-troca-devolucoes",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/condicoes-geral",
+        "noFollow": true,
+        "tagTitle": "Troca e Devolução",
+        "text": "Troca e Devolução"
+      }
+    }
+  },
+
+  "menu-item#atendimento": {
+    "props": {
+      "id": "menu-item-atendimento",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/central-de-atendimento",
+        "noFollow": true,
+        "tagTitle": "Atendimento",
+        "text": "Atendimento"
+      }
+    }
+  },
+
+  "menu-item#empresa": {
+    "props": {
+      "id": "menu-item-empresa",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/empresa",
+        "noFollow": true,
+        "tagTitle": "A empresa",
+        "text": "A empresa"
+      }
+    }
+  },
+
+  "menu-item#condicoes-gerais": {
+    "props": {
+      "id": "menu-item-condicoes-gerais",
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "/institucional/condicoes-geral",
+        "noFollow": true,
+        "tagTitle": "Condições gerais de compra",
+        "text": "Condições gerais de compra"
+      }
+    }
+  }
+}

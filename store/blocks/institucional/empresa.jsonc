@@ -1,0 +1,110 @@
+{
+  "store.custom#empresa": {
+    "blocks": [
+      "image#full-banner-empresa",
+      "flex-layout.row#bloco-1-empresa",
+      "flex-layout.row#bloco-2-empresa"
+    ]
+  },
+  "image#full-banner-empresa": {
+    "title": "Full Banner",
+    "props": {
+      "src": "assets/img/banner_empresa_desk.jpg"
+    }
+  },
+  "image#full-banner-empresa-mobile": {
+    "props": {
+      "src": "assets/img/banner_empresa_desk.jpg"
+    }
+  },
+  // BLOCO 1
+  "flex-layout.row#bloco-1-empresa": {
+    "title": "Conteudo 1",
+    "props": {
+      "blockClass": "bloco-1-empresa",
+      "fullWidth": false,
+      "horizontalAlign": "between",
+      "marginTop": 7,
+      "marginBottom": 7
+    },
+    "children": [
+      "flex-layout.col#bloco-1-empresa-left",
+      "flex-layout.col#bloco-1-empresa-rigth"
+    ]
+  },
+  "flex-layout.col#bloco-1-empresa-left": {
+    "props": {
+      "width": "40%"
+    },
+    "children": [
+      "rich-text#bloco-1-empresa-left"
+    ]
+  },
+  "rich-text#bloco-1-empresa-left": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "page-empresa",
+      "text": "## Dakota \n \n A Dakota acredita que a verdadeira beleza está em um sorriso. Nossa coleção foi desenvolvida para que você possa expressar seu estilo único através dos nossos calçados. \n \n Reinventando-se constantemente, a marca traz o melhor das tendências de moda, com inovações em tecnologia e sustentabilidade."
+    }
+  },
+  "flex-layout.col#bloco-1-empresa-rigth": {
+    "props": {
+      "width": "55%"
+    },
+    "children": [
+      "image#bloco-1-empresa-rigth"
+    ]
+  },
+  "image#bloco-1-empresa-rigth": {
+    "title": "Imagem",
+    "props": {
+      "blockClass": "full",
+      "src": "assets/img/empresa-01.jpg"
+    }
+  },
+  // BLOCO 2
+  "flex-layout.row#bloco-2-empresa": {
+    "title": "Conteudo 2",
+    "props": {
+      "blockClass": "bloco-2-empresa",
+      "fullWidth": false,
+      "horizontalAlign": "between",
+      "marginTop": 7,
+      "marginBottom": 8
+    },
+    "children": [
+      "flex-layout.col#bloco-2-empresa-left",
+      "flex-layout.col#bloco-2-empresa-rigth"
+    ]
+  },
+  "flex-layout.col#bloco-2-empresa-left": {
+    "props": {
+      "width": "40%"
+    },
+    "children": [
+      "image#bloco-2-empresa-rigth"
+    ]
+  },
+  "rich-text#bloco-2-empresa-left": {
+    "title": "Texto",
+    "props": {
+      "blockClass": "page-empresa",
+      "text": "## Universo Dakota \n \n A Dakota faz parte do Universo Dakota, uma organização dedicada à criação e fabricação de calçados, desde 1976. \n \n Referência nacional no ramo calçadista, com as melhores matérias-primas, investimento em tecnologia e pesquisas sobre as tendências globais de moda. proporciona uma experiência única nos passos dos seus consumidores. \n \n Muito além dos calçados, o grupo promove qualidade de vida através de seu compromisso com a ética, a valorização dos seus colaboradores e das práticas que contribuem para o desenvolvimento sustentável em respeito ao meio ambiente. \n \n Nosso Universo Dakota é composta por 7 marcas: Dakota, Tanara, Campesí, Pink Cats, Mississipi, Kolosh e Kolway. Cada uma prezando com sua própria identidade, mas sempre prezando pela qualidade reconhecida do Universo Dakota."
+    }
+  },
+  "flex-layout.col#bloco-2-empresa-rigth": {
+    "props": {
+      "width": "55%"
+    },
+    "children": [
+      "rich-text#bloco-2-empresa-left"
+    ]
+  },
+  "image#bloco-2-empresa-rigth": {
+    "title": "Imagem",
+    "props": {
+      "blockClass": "full",
+      "src": "assets/img/empresa-02.png"
+    }
+  }
+}

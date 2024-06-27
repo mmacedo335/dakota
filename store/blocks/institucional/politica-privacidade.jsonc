@@ -1,0 +1,657 @@
+{
+    "store.custom#politica-privacidade": {
+      "blocks": [
+        "responsive-layout.desktop#politica-privacidade",
+        "responsive-layout.mobile#politica-privacidade"
+      ]
+    },
+  
+    "responsive-layout.desktop#politica-privacidade": {
+      "title": "Desktop",
+      "children": [
+        "flex-layout.row#institucional-titulo-page",
+        "flex-layout.row#links-account",
+        "flex-layout.row#politica-privacidade-content" 
+      ]
+    }, 
+  
+    "responsive-layout.mobile#politica-privacidade": {
+      "title": "Mobile",
+      "children": [
+        "flex-layout.row#institucional-titulo-page",
+        "flex-layout.row#links-account", 
+        "flex-layout.row#conteudo-politica-privacidade-mobile"
+      ]
+    },
+  
+    "flex-layout.row#conteudo-politica-privacidade-mobile": {
+      "title": "mobile",
+      "children": [
+        "flex-layout.col#politica-privacidade-voltar",
+        "flex-layout.col#conteudo-politica-privacidade-mobile"
+      ],
+      "props": {
+        "props": {
+          "blockClass": ["politica-privacidade", "main-container"],
+          "paddingBottom": 8,
+          "colGap": 7
+        }
+      }
+    },
+  
+    "flex-layout.col#politica-privacidade-voltar": {
+      "children": [
+        "link#politica-privacidade-voltar"
+      ],
+      "props": {
+        "blockClass": ["conteudo-institucional-voltar"]
+      }
+    },
+  
+    "link#politica-privacidade-voltar": {
+      "props": {
+        "label": "Termos e condições de uso",
+        "href": "/institucional/central-de-ajuda",
+        "blockClass": [
+          "institucional-links-voltar",
+          "politica-privacidade"
+        ]
+      }
+    },
+  
+    "flex-layout.col#conteudo-politica-privacidade-mobile": {
+      "children": [],
+      "props": {
+        "blockClass": ["conteudo-institucional"]
+      }
+    },
+  
+    "flex-layout.row#politica-privacidade-content": {
+      "title": "desktop",
+      "children": [
+        "flex-layout.col#menu-institucional",
+        "flex-layout.col#conteudo-politica-privacidade"
+      ],
+      "props": {
+        "blockClass": ["politica-privacidade", "main-container"],
+        "paddingBottom": 8,
+        "colGap": 7
+      }
+    },
+  
+    "flex-layout.col#conteudo-politica-privacidade": {
+      "title": "Conteudo",
+      "children": [
+        "disclosure-layout-group#politica-privacidade"
+      ],
+      "props": {
+        "blockClass": ["conteudo-institucional"]
+      }
+    },
+  
+    "disclosure-layout-group#politica-privacidade": {
+      "children": [
+        "disclosure-layout#politica-privacidade-01",
+        "disclosure-layout#politica-privacidade-02",
+        "disclosure-layout#politica-privacidade-03",
+        "disclosure-layout#politica-privacidade-04",
+        "disclosure-layout#politica-privacidade-05",
+        "disclosure-layout#politica-privacidade-06",
+        "disclosure-layout#politica-privacidade-07",
+        "disclosure-layout#politica-privacidade-08",
+        "disclosure-layout#politica-privacidade-09",
+        "disclosure-layout#politica-privacidade-10",
+        "disclosure-layout#politica-privacidade-11",
+        "disclosure-layout#politica-privacidade-12",
+        "disclosure-layout#politica-privacidade-13",
+        "disclosure-layout#politica-privacidade-14"
+      ]
+    },
+  
+    // PERGUNTA 01
+  
+    "disclosure-layout#politica-privacidade-01": {
+      "props": {
+        "animated": true 
+      },
+      "children": [
+        "disclosure-trigger#politica-privacidade-01",
+        "disclosure-content#politica-privacidade-01"
+      ]
+    },
+    "disclosure-trigger#politica-privacidade-01": {
+      "props": {
+        "blockClass": "question",
+        "as": "div"
+      },
+      "children": [
+        "disclosure-state-indicator",
+        "rich-text#politica-privacidade-01"
+      ]
+    },
+    "disclosure-content#politica-privacidade-01": {
+      "props": {
+        "blockClass": "answer"
+      },
+      "children": ["rich-text#answer-politica-privacidade-01"]
+    },
+    "rich-text#politica-privacidade-01": {
+      "props": {
+        "blockClass": "margin-0",
+        "text": "1- Informações Gerais"
+      }
+    },
+    "rich-text#answer-politica-privacidade-01": {
+      "props": {
+        "text": "As empresas do Universo Dakota buscam facilitar aos consumidores o acesso aos seus produtos e às informações sobre esses através das lojas virtuais nos sites dakota.com.br, kolosh.dakota.com.br, mississipi.dakota.com.br, tanarabrasil.com.br, campesi.dakota.com.br e pinkcats.dakota.com.br. \n \n Para permitir a realização das compras online, e para garantir a melhor experiência às pessoas Usuárias desses sites, é necessária a coleta e utilização dos dados pessoais. \n \n Esta Política de Privacidade tem como objetivo fornecer uma visão clara de quais são os dados pessoais coletados, quais são as finalidades para as quais eles são utilizados, como eles são armazenados para proteger a privacidade dos Usuários, quais são os seus direitos e com quem esses dados são compartilhados. \n \n Esta Política de Privacidade e Proteção de Dados aplica-se a todas as empresas que formam o Universo Dakota (Criações Dakota Ltda., Dakota Nordeste S/A, Dakota Calçados S/A. e Dakota S/A.) e regula o uso dos sites do Universo Dakota (dakota.com.br, kolosh.dakota.com.br, mississipi.dakota.com.br, tanarabrasil.com.br, campesi.dakota.com.br e pinkcats.dakota.com.br). \n \n Esta Política de Privacidade e Proteção de Dados foi elaborada em conformidade com o Código Civil Brasileiro (Lei n. 10.406/2002), o Marco Civil da Internet (Lei n. 12.965/2014), o Código de Defesa do Consumidor (Lei 8.078/1990) e com a Lei Geral de Proteção de Dados Pessoais (Lei n. 13.709/2018)."
+      }
+    },
+  
+    // PERGUNTA 02
+  
+    "disclosure-layout#politica-privacidade-02": {
+      "props": {
+        "animated": true
+      },
+      "children": [
+        "disclosure-trigger#politica-privacidade-02",
+        "disclosure-content#politica-privacidade-02"
+      ]
+    },
+    "disclosure-trigger#politica-privacidade-02": {
+      "props": {
+        "blockClass": "question",
+        "as": "div"
+      },
+      "children": [
+        "disclosure-state-indicator",
+        "rich-text#politica-privacidade-02"
+      ]
+    },
+    "disclosure-content#politica-privacidade-02": {
+      "props": {
+        "blockClass": "answer"
+      },
+      "children": ["rich-text#answer-politica-privacidade-02"]
+    },
+    "rich-text#politica-privacidade-02": {
+      "props": {
+        "blockClass": "margin-0",
+        "text": "2- Definições"
+      }
+    },
+    "rich-text#answer-politica-privacidade-02": {
+      "props": {
+        "text": "A leitura deste documento, no todo ou em partes, deverá ser realizada tomando-se em conta as definições abaixo destacadas: \n \n **Dado pessoal:** informação relacionada a pessoa natural identificada ou identificável; \n \n **Dado pessoal sensível:** Categoria especial de dados pessoais referentes a origem racial ou étnica, convicção religiosa, opinião política, filiação a sindicato ou a organização de carácter religioso, filosófico ou político, referentes à saúde ou à vida sexual, dados genéticos ou biométricos relativos à pessoa natural. \n \n **Encarregado:** pessoa encarregada de atuar como canal de comunicação entre o controlador, os titulares dos dados e a Autoridade Nacional de Proteção de Dados (ANPD) \n \n **IP:** Abreviatura de Internet Protocol. É um conjunto de números que identifica o computador dos Usuários na Internet. \n \n **Usuário:** pessoa natural a quem se referem os dados pessoais, tais como antigos, presentes ou potenciais clientes, integrantes do Clube de Águias, e visitantes dos sites do Universo Dakota. \n \n **Tratamento:** Toda operação realizada com dados pessoais, como as que se referem: a coleta, produção, recepção, classificação, utilização, acesso, reprodução, transmissão, distribuição, processamento, arquivamento, armazenamento, eliminação, avaliação ou controle da informação, modificação, comunicação, transferência, difusão ou extração. \n \n **Titular de dados pessoais:** Qualquer pessoa física, cujos dados pessoais sejam tratados"
+      }
+    },
+  
+    // PERGUNTA 03
+  
+    "disclosure-layout#politica-privacidade-03": {
+      "props": {
+        "animated": true
+      },
+      "children": [ 
+        "disclosure-trigger#politica-privacidade-03",
+        "disclosure-content#politica-privacidade-03"
+      ]
+    },
+    "disclosure-trigger#politica-privacidade-03": {
+      "props": {
+        "blockClass": "question",
+        "as": "div"
+      },
+      "children": [
+        "disclosure-state-indicator",
+        "rich-text#politica-privacidade-03"
+      ]
+    },
+    "disclosure-content#politica-privacidade-03": {
+      "props": {
+        "blockClass": "answer"
+      },
+      "children": ["rich-text#answer-politica-privacidade-03"]
+    },
+    "rich-text#politica-privacidade-03": {
+      "props": {
+        "blockClass": "margin-0",
+        "text": "3- Aplicação da Política de Privacidade"
+      }
+    },
+    "rich-text#answer-politica-privacidade-03": {
+      "props": {
+        "text": "Esta Política de Privacidade aplica-se a todas as pessoas naturais usuárias dos sites de Universo Dakota, bem como a todos os serviços oferecidos nos sites de Universo Dakota. \n \n Ao se cadastrar nos sites de Universo Dakota o Usuário consente com as disposições desta Política de Privacidade e Proteção de dados, especialmente com o seguinte texto: \n “Eu declaro expressamente, nos termos da Lei 13.709/2018 (Lei Geral de Proteção de Dados), que consenti com o tratamento dos dados pessoais de minha titularidade informados no cadastro efetuado, e que estou de acordo com a Política de Privacidade e Proteção de Dados do Universo Dakota”"
+      }
+    },
+  
+    // PERGUNTA 04
+  
+    "disclosure-layout#politica-privacidade-04": {
+      "props": {
+        "animated": true
+      },
+      "children": [
+        "disclosure-trigger#politica-privacidade-04",
+        "disclosure-content#politica-privacidade-04"
+      ]
+    },
+    "disclosure-trigger#politica-privacidade-04": {
+      "props": {
+        "blockClass": "question",
+        "as": "div"
+      },
+      "children": [
+        "disclosure-state-indicator",
+        "rich-text#politica-privacidade-04"
+      ]
+    },
+    "disclosure-content#politica-privacidade-04": {
+      "props": {
+        "blockClass": "answer"
+      },
+      "children": ["rich-text#answer-politica-privacidade-04"]
+    },
+    "rich-text#politica-privacidade-04": {
+      "props": {
+        "blockClass": "margin-0",
+        "text": "4- Dados coletados"
+      }
+    },
+    "rich-text#answer-politica-privacidade-04": {
+      "props": {
+        "text": "4.1. Quando o Usuário acessa os sites do Universo Dakota, são automaticamente coletados dados do navegador que não a identificam diretamente, como endereço de IP, data e hora da visita, tempo de permanência no site, URL de referência (em caso de redirecionamento para nossos sites a partir de outro site), páginas e produtos visitados nos sites, e informações sobre o dispositivo e navegador utilizado para acessar o site. 4.1.1. Os registros de acesso aos sites de Universo Dakota serão coletados e armazenados por, pelo menos, 6 (seis) meses, devido à incidência do art. 15 do Marco Civil da Internet. \n \n 4.2. As lojas online do Universo Dakota registram as informações de navegação através de cookies, que são registrados no próprio dispositivo (computador, celular, tablet, etc.) do Usuário para customizar a navegação no site, facilitar e agilizar o processo de compra. Os cookies podem ser desativados em seu navegador. Mais informações sobre os cookies são encontradas no item 12 desta Política de Privacidade. \n \n 4.3. O endereço de e-mail cadastrado pelo Usuário para o recebimento de Newsletter será coletado, armazenado e utilizado para essa finalidade (envio de Newsletter) até que a Usuária ou Visitante solicite o seu descadastro. \n \n 4.4. Os dados informados pelo Usuário que utilizar o formulário de contato disponibilizado no site, incluindo a mensagem enviada, também serão coletados e armazenados. \n \n 4.5. Para a realização de compras nos sites do Universo Dakota, é necessária a realização de cadastro. \n 4.5.1. É possível a realização de cadastro com a utilização de informações constantes em redes sociais, nesse caso as informações serão importadas da rede social escolhida, podendo ser necessário complementá-las. \n 4.5.2. Os dados inseridos pelo Usuário quando da realização do cadastro nos sites do Universo Dakota são armazenados de forma automatizada (sem intervenção humana), protegendo esses dados com uma senha cadastrada pelo Usuário. \n 4.5.3. O Usuário é inteiramente responsável pelas senhas fornecidas quando da realização de seu cadastro, que serão arquivadas de maneira criptografada, permitindo que apenas a pessoa responsável pelo cadastro tenha acesso. \n 4.5.4. Os dados obrigatórios solicitados para a realização do cadastro são os seguintes: \n a) Nome e sobrenome \n b) Endereço completo, cidade, UF e CEP \n c) Data de nascimento \n d) Gênero (Feminino, Masculino, Outro) \n e) Número do Cadastro de Pessoas Físicas - CPF \n f) Número de telefone celular \n g) E-mail \n h) PIS (no caso de cadastro no Programa de Águias) \n \n 4.6. Quando o Usuário realizar uma compra em algum dos sites do Universo Dakota, será solicitada a confirmação do endereço completo, cidade, UF e CEP para a entrega dos produtos. \n \n 4.7. As empresas do Universo Dakota não coletam intencionalmente dados de menores de 18 anos, e os sites do Universo Dakota foram desenvolvidos para serem utilizados por maiores de 18 anos, conforme os Termos de Uso. \n 4.7.1. Quando o Universo Dakota tiver ciência de que foram inseridos dados de menores de 18 anos, esses serão prontamente apagados. \n \n 4.8. As empresas do Universo Dakota não coletam dados para pagamento dos produtos. Os dados pessoais de pagamento, como número do cartão de crédito, serão registrados diretamente no banco de dados das administradoras de cartão e demais plataformas de pagamento, sem interferência das empresas do Universo Dakota."
+      }
+    },
+  
+    // PERGUNTA 05
+  
+    "disclosure-layout#politica-privacidade-05": {
+      "props": {
+        "animated": true
+      },
+      "children": [
+        "disclosure-trigger#politica-privacidade-05",
+        "disclosure-content#politica-privacidade-05"
+      ]
+    },
+    "disclosure-trigger#politica-privacidade-05": {
+      "props": {
+        "blockClass": "question",
+        "as": "div"
+      },
+      "children": [
+        "disclosure-state-indicator",
+        "rich-text#politica-privacidade-05"
+      ]
+    },
+    "disclosure-content#politica-privacidade-05": {
+      "props": {
+        "blockClass": "answer"
+      },
+      "children": ["rich-text#answer-politica-privacidade-05"]
+    },
+    "rich-text#politica-privacidade-05": {
+      "props": {
+        "blockClass": "margin-0",
+        "text": "5- Fundamento jurídico para o tratamento de dados pessoais"
+      }
+    },
+    "rich-text#answer-politica-privacidade-05": {
+      "props": {
+        "text": "Todos os dados coletados pelo Universo Dakota são necessários a finalidades específicas discriminadas no próximo tópico (6. Finalidade da coleta de dados). O Usuário, ao realizar o cadastro, está consentindo com o tratamento e armazenamento de seus dados pessoais para permitir compras futuras e, se tiver optado, pelo recebimento de notícias e promoções. \n \n O Usuário tem o direito de retirar seu consentimento a qualquer momento, não comprometendo a licitude do tratamento de seus dados pessoais antes da retirada. A retirada do consentimento poderá ser feita através do contato com o Encarregado de Proteção de Dados. A retirada do consentimento implicará a impossibilidade de realização de compras nos sites do Universo Dakota. \n \n O tratamento de dados pessoais sem consentimento do Usuário somente será realizado de acordo com as hipóteses previstas em lei."
+      }
+    },
+  
+    // PERGUNTA 06
+  
+    "disclosure-layout#politica-privacidade-06": {
+      "props": {
+        "animated": true
+      },
+      "children": [
+        "disclosure-trigger#politica-privacidade-06",
+        "disclosure-content#politica-privacidade-06"
+      ]
+    },
+    "disclosure-trigger#politica-privacidade-06": {
+      "props": {
+        "blockClass": "question",
+        "as": "div"
+      },
+      "children": [
+        "disclosure-state-indicator",
+        "rich-text#politica-privacidade-06"
+      ]
+    },
+    "disclosure-content#politica-privacidade-06": {
+      "props": {
+        "blockClass": "answer"
+      },
+      "children": ["rich-text#answer-politica-privacidade-06"]
+    },
+    "rich-text#politica-privacidade-06": {
+      "props": {
+        "blockClass": "margin-0",
+        "text": "6- Finalidade da coleta dos dados"
+      }
+    },
+    "rich-text#answer-politica-privacidade-06": {
+      "props": {
+        "text": "O Universo Dakota trata os dados pessoais para prestar o serviço de venda de seus produtos, otimizar a experiência dos Usuários, sugerir produtos de interesse do Usuário e realizar campanhas de marketing. \n \n Os dados serão utilizados apenas para finalidades determinadas, explícitas e legítimas, quais sejam: \n \n 6.1. Dados cadastrais informados pelo Usuário são tratados para as finalidades de: \n a) identificação e o acesso à página do Usuário, onde estão registrados os pedidos realizados, eventuais vale-compras e promoções vinculadas ao Usuário. \n b) processamento das compras, emissão de notas fiscais, entrega das mercadorias, e para que o Usuário possa consultar o andamento dos seus pedidos. \n c) execução do contrato de compra e venda dos produtos (entrega de mercadoria, eventual troca de produto etc.). \n d) execução do contrato do “Clube de Águias – programa de parceiros do Universo Dakota”; \n e) comunicação com o Usuário, que poderá ser realizada por e-mail ou outros canais de comunicação (WhatsApp, Telegram, etc.); \n f) envio de publicidade personalizada (por e-mail ou canais de comunicação) relacionada aos produtos do Universo Dakota; \n g) verificação da idade do Usuário para realização de compras; \n h) atendimento ao consumidor e aos pedidos do Usuário relativos ao exercício dos direitos previstos na LGPD (Lei Geral de Proteção de Dados), expostos no tópico específico. \n \n 6.2. Os dados de compras realizadas são tratados para (a) o cumprimento de obrigações legais; (b) prevenção e identificação de fraudes; (c) o envio de propagandas por e-mail ou canais de comunicação (como WhatsApp e Telegram). \n \n 6.3. O endereço eletrônico informado pelo Usuário para o recebimento de notícias e promoções será utilizado exclusivamente para essa finalidade - caso não tenha sido informado para outras finalidades, como no cadastro da Usuária - e poderá ser descadastrado para essa finalidade mediante simples solicitação de descadastramento no rodapé dos e-mails recebidos de Universo Dakota."
+      }
+    },
+  
+    // PERGUNTA 07
+  
+    "disclosure-layout#politica-privacidade-07": {
+      "props": {
+        "animated": true
+      },
+      "children": [
+        "disclosure-trigger#politica-privacidade-07",
+        "disclosure-content#politica-privacidade-07"
+      ]
+    },
+    "disclosure-trigger#politica-privacidade-07": {
+      "props": {
+        "blockClass": "question",
+        "as": "div"
+      },
+      "children": [
+        "disclosure-state-indicator",
+        "rich-text#politica-privacidade-07"
+      ]
+    },
+    "disclosure-content#politica-privacidade-07": {
+      "props": {
+        "blockClass": "answer"
+      },
+      "children": ["rich-text#answer-politica-privacidade-07"]
+    },
+    "rich-text#politica-privacidade-07": {
+      "props": {
+        "blockClass": "margin-0",
+        "text": "7- Direitos do Titular de Dados"
+      }
+    },
+    "rich-text#answer-politica-privacidade-07": {
+      "props": {
+        "text": "A LGPD elenca, em seu art. 18, os direitos dos titulares. Nos termos desse dispositivo, o titular dos dados tem o direito a obter: \n a) a confirmação da existência de tratamento de dados pessoais; \n b) acesso aos seus dados pessoais; \n c) correção de dados incompletos, inexatos ou desatualizados; \n d) anonimização, bloqueio ou eliminação de dados desnecessários, excessivos ou tratados em desconformidade com o disposto na LGPD; \n e) portabilidade de dados; \n f) eliminação de dados pessoais tratados com base no consentimento, à exceção daqueles necessários ao cumprimento de obrigação legal ou regulatória pelo controlador, transferidos a terceiro e de uso exclusivo do controlador e anonimizados; \n g) informação das entidades públicas e provadas com as quais o controlador realiza uso compartilhado de dados; \n h) informação sobre a possibilidade de não consentir com o tratamento (quando o consentimento for a base legal do tratamento) e as consequências da negativa; e, \n ) revogação do consentimento. \n \n O Usuário cadastrado poderá acessar os seus dados diretamente através do acesso à sua conta, na qual poderá atualizar, corrigir e remover diretamente alguns dados. \n \n O Usuário que não tiver realizado compras a poderá, a qualquer momento, cancelar o seu cadastro acessando a página inicial de sua conta. \n \n O Usuário poderá exercer os seus direitos por meio de comunicação via e-mail enviada ao encarregado, especificando: \n a) Nome completo, data de nascimento, CPF, endereço de e-mail; \n b) Direito que deseja exercer junto ao site (acesso, correção, exclusão); \n c) Documentos que demonstrem ou justifiquem o exercício de seu direito. \n \n Contato do Encarregado de Proteção de Dados – Ricardo José Grings, através do e-mail: privacidade@dakota.com.br. \n \n Os pedidos serão avaliados e respondidos de acordo com a Lei Geral de Proteção de Dados (LGPD). Caso não seja possível o atendimento do pedido, o Usuário será informado da justificativa para a negativa. \n \n Os dados do Usuário são tratados e conservados de forma segura, estando protegidos de acessos não autorizados e de situações acidentais ou ilícitas de destruição, perda, alteração, comunicação ou difusão. \n \n O Universo Dakota garante o exercício de todos os direitos do titular de dados, segundo a Lei Geral de Proteção de Dados (Lei n. 13.709/2018)."
+      }
+    },
+  
+    // PERGUNTA 08
+  
+    "disclosure-layout#politica-privacidade-08": {
+      "props": {
+        "animated": true
+      },
+      "children": [
+        "disclosure-trigger#politica-privacidade-08",
+        "disclosure-content#politica-privacidade-08"
+      ]
+    },
+    "disclosure-trigger#politica-privacidade-08": {
+      "props": {
+        "blockClass": "question",
+        "as": "div"
+      },
+      "children": [
+        "disclosure-state-indicator",
+        "rich-text#politica-privacidade-08"
+      ]
+    },
+    "disclosure-content#politica-privacidade-08": {
+      "props": {
+        "blockClass": "answer"
+      },
+      "children": ["rich-text#answer-politica-privacidade-08"]
+    },
+    "rich-text#politica-privacidade-08": {
+      "props": {
+        "blockClass": "margin-0",
+        "text": "8- Tempo de retenção dos dados"
+      }
+    },
+    "rich-text#answer-politica-privacidade-08": {
+      "props": {
+        "text": "Os dados do Usuário serão conservados durante o período necessário para consecução da finalidade para o qual foi coletado. \n \n Os dados pessoais dos Usuários poderão ser conservados após o término de seu tratamento nas hipóteses previstas em lei. \n \n Os dados cadastrais e as informações de compras anteriores serão mantidos por período de até 11 (onze) anos após o término da relação entre o Usuário e as empresas do Universo Dakota, para que haja a observância à legislação vigente. Esse prazo poderá ser maior em caso de auditoria, segurança ou controle de fraudes, proteção de crédito e preservação de direitos. \n \n Dados de acesso serão armazenados por até seis meses após a exclusão da conta do Usuário, de modo a atender a obrigação legal de que trata o art. 15 do Marco Civil da Internet (Lei 12.965 de 2014)."
+      }
+    },
+  
+    // PERGUNTA 09
+  
+    "disclosure-layout#politica-privacidade-09": {
+      "props": {
+        "animated": true
+      },
+      "children": [
+        "disclosure-trigger#politica-privacidade-09",
+        "disclosure-content#politica-privacidade-09"
+      ]
+    },
+    "disclosure-trigger#politica-privacidade-09": {
+      "props": {
+        "blockClass": "question",
+        "as": "div"
+      },
+      "children": [
+        "disclosure-state-indicator",
+        "rich-text#politica-privacidade-09"
+      ]
+    },
+    "disclosure-content#politica-privacidade-09": {
+      "props": {
+        "blockClass": "answer"
+      },
+      "children": ["rich-text#answer-politica-privacidade-09"]
+    },
+    "rich-text#politica-privacidade-09": {
+      "props": {
+        "blockClass": "margin-0",
+        "text": "9- Tratamento de dados"
+      }
+    },
+    "rich-text#answer-politica-privacidade-09": {
+      "props": {
+        "text": "O controlador dos dados pessoais dos usuários é CRIAÇÕES DAKOTA LTDA. inscrita no CNPJ sob n. 94.266.947.0005-16, Inscrição Estadual n. 084/0014791, com sede Av. 15 de Novembro, 3667, Bairro Piá, Nova Petrópolis, RS. \n \n Operam os dados pessoais as empresas do grupo Universo Dakota."
+      }
+    },
+  
+    // PERGUNTA 10
+  
+    "disclosure-layout#politica-privacidade-10": {
+      "props": {
+        "animated": true
+      },
+      "children": [
+        "disclosure-trigger#politica-privacidade-10",
+        "disclosure-content#politica-privacidade-10"
+      ]
+    },
+    "disclosure-trigger#politica-privacidade-10": {
+      "props": {
+        "blockClass": "question",
+        "as": "div"
+      },
+      "children": [
+        "disclosure-state-indicator",
+        "rich-text#politica-privacidade-10"
+      ]
+    },
+    "disclosure-content#politica-privacidade-10": {
+      "props": {
+        "blockClass": "answer"
+      },
+      "children": ["rich-text#answer-politica-privacidade-10"]
+    },
+    "rich-text#politica-privacidade-10": {
+      "props": {
+        "blockClass": "margin-0",
+        "text": "10- Segurança e Proteção aos dados"
+      }
+    },
+    "rich-text#answer-politica-privacidade-10": {
+      "props": {
+        "text": "O Universo Dakota tem o compromisso com a privacidade e a segurança de seus usuários durante todo o processo de navegação e compra pelo site, por isso conta com certificado de segurança SSL emitido pela Digicert, uma das maiores autoridades certificadoras do mundo. \n \n Através deste certificado, todas as informações fornecidas pelo Usuário nos sites de Universo Dakota são criptografadas e mantidas em sigilo em servidores seguros. \n \n O Universo Dakota se compromete a tratar os dados pessoais dos usuários com confidencialidade, dentro dos limites legais. \n \n O Universo Dakota se exime de responsabilidade por culpa de terceiros, como em caso de ataque de hackers ou crackers, ou culpa exclusiva da Usuária."
+      }
+    },
+  
+     // PERGUNTA 11
+  
+     "disclosure-layout#politica-privacidade-11": {
+      "props": {
+        "animated": true
+      },
+      "children": [
+        "disclosure-trigger#politica-privacidade-11",
+        "disclosure-content#politica-privacidade-11"
+      ]
+    },
+    "disclosure-trigger#politica-privacidade-11": {
+      "props": {
+        "blockClass": "question",
+        "as": "div"
+      },
+      "children": [
+        "disclosure-state-indicator",
+        "rich-text#politica-privacidade-11"
+      ]
+    },
+    "disclosure-content#politica-privacidade-11": {
+      "props": {
+        "blockClass": "answer"
+      },
+      "children": ["rich-text#answer-politica-privacidade-11"]
+    },
+    "rich-text#politica-privacidade-11": {
+      "props": {
+        "blockClass": "margin-0",
+        "text": "11- Compartilhamento dos dados"
+      }
+    },
+    "rich-text#answer-politica-privacidade-11": {
+      "props": {
+        "text": "O Universo Dakota não compartilha com terceiros os dados pessoais dos Usuários, sem solicitar o seu consentimento. \n \n Os dados pessoais dos Usuários podem ser compartilhados com autoridades de segurança e agências regulatórias, quando solicitados por essa e a solicitação estiver fundamentada na legislação nacional. \n \n Os dados também serão compartilhados quando exigidos por autoridade, seja por disposição legal ou determinação judicial. \n \n Os dados pessoais do Usuário ainda poderão ser compartilhados com terceiros para proteger bens e interesses das empresas do Universo Dakota e a segurança dos usuários dos sites, em processo judicial ou procedimento administrativo. \n \n Os dados cadastrados nos sites do Universo Dakota são compartilhados entre as empresas que formam o Universo Dakota para as finalidades discriminadas no item 6 desta Política de Dados. \n \n O Universo Dakota poderá divulgar e/ou transferir os dados pessoais para um comprador ou sucessor em conexão com a aquisição, fusão ou reorganização de qualquer das empresas que formam o Universo Dakota."
+      }
+    },
+  
+    // PERGUNTA 12
+  
+    "disclosure-layout#politica-privacidade-12": {
+      "props": {
+        "animated": true
+      },
+      "children": [
+        "disclosure-trigger#politica-privacidade-12",
+        "disclosure-content#politica-privacidade-12"
+      ]
+    },
+    "disclosure-trigger#politica-privacidade-12": {
+      "props": {
+        "blockClass": "question",
+        "as": "div"
+      },
+      "children": [
+        "disclosure-state-indicator",
+        "rich-text#politica-privacidade-12"
+      ]
+    },
+    "disclosure-content#politica-privacidade-12": {
+      "props": {
+        "blockClass": "answer"
+      },
+      "children": ["rich-text#answer-politica-privacidade-12"]
+    },
+    "rich-text#politica-privacidade-12": {
+      "props": {
+        "blockClass": "margin-0",
+        "text": "12- cookies "
+      }
+    },
+    "rich-text#answer-politica-privacidade-12": {
+      "props": {
+        "text": "Os sites de Universo Dakota coletam informações através de cookies (informações enviadas pelo servidor dos sites de Universo Dakota ao computador do usuário, para identificá-lo). \n \n Os cookies servem para proporcionar mais facilidade ao Usuário no momento da compra. O objetivo do cookie é customizar ao máximo sua navegação no site, permitindo maior facilidade e agilidade no processo de compras. \n \n A aceitação dos cookies pode ser livremente alterada na configuração de seu navegador. As funcionalidades do site poderão ser prejudicadas, caso os cookies sejam desativados. \n \n Os cookies não permitem a extração de qualquer arquivo ou informação do disco rígido do Usuário, não sendo possível por meio deles obter informações pessoais que não tenham sido informadas pelo Usuário ou da forma como o Usuário utiliza os sites de Universo Dakota \n \n Os Cookies utilizados são: \n a) Cookies de preferência: são utilizados para que os sites de Universo Dakota lembrem informações que podem ser usadas para personalizar a experiência do usuário nos sites de Universo Dakota. \n b) Cookies de segurança: são utilizados para autenticar o Usuário, evitar o uso fraudulento de credenciais de login e proteger os dados do Usuário. \n c) Cookies de processamento: são utilizados para fazer os sites de Universo Dakota funcionar, sem esses cookies os sites de Universo Dakota não funcionarão corretamente. \n d) Cookies publicitários: esses cookies coletam informações sobre as atividades do Usuário na internet, como quais anúncios o Usuário viu, os sites e páginas visitadas, para extrair inferências sobre quais anúncios publicitários podem ser relevantes para o Usuário. \n e) Cookies de redes sociais: os sites de Universo Dakota utilizam plug-ins de redes sociais, que permitem acessá-las a partir do site. Assim ao fazê-lo, os cookies utilizados por essas redes sociais poderão ser armazenados no navegador do usuário. \n f) Cookies de estado de sessão: esses cookies coletam informações sobre como os usuários interagem com um website, incluindo páginas visitadas com mais frequência e se os usuários recebem mensagens de erro das páginas visitadas. \n g) Cookies analíticos: esses cookies coletam informações sobre o uso dos sites de Universo Dakota e são usados para melhorar os serviços oferecidos nos sites de Universo Dakota."
+      }
+    },
+  
+    // PERGUNTA 13
+  
+    "disclosure-layout#politica-privacidade-13": {
+      "props": {
+        "animated": true
+      },
+      "children": [
+        "disclosure-trigger#politica-privacidade-13",
+        "disclosure-content#politica-privacidade-13"
+      ]
+    },
+    "disclosure-trigger#politica-privacidade-13": {
+      "props": {
+        "blockClass": "question",
+        "as": "div"
+      },
+      "children": [
+        "disclosure-state-indicator",
+        "rich-text#politica-privacidade-13"
+      ]
+    },
+    "disclosure-content#politica-privacidade-13": {
+      "props": {
+        "blockClass": "answer"
+      },
+      "children": ["rich-text#answer-politica-privacidade-13"]
+    },
+    "rich-text#politica-privacidade-13": {
+      "props": {
+        "blockClass": "margin-0",
+        "text": "13- Alterações na Política de Privacidade e Proteção de Dados"
+      }
+    },
+    "rich-text#answer-politica-privacidade-13": {
+      "props": {
+        "text": "O Universo Dakota se reserva o direito de modificar, a qualquer momento, o site e essa Política de Privacidade e Proteção de Dados. \n \n O Usuário será informado, através do e-mail cadastrado, em caso de alteração desta Política. \n \n Após a disponibilização da nova versão da Política de Privacidade e Proteção de Dados, o Usuário poderá insurgir-se quanto às modificações através de contato no canal de atendimento disponível nos sites de Universo Dakota e/ou cancelar o seu cadastro. \n \n Presume-se a ciência e a concordância do Usuário que permanecer a acessar o site após as revisões entrarem em vigor. \n \n NFORMAÇÕES DE CONTATO: Caso você tenha qualquer pergunta sobre a utilização de seus dados pessoais, sobre como exercer seus direitos ou sobre nossa Política de Privacidade, sinta-se à vontade para entrar em contato conosco através do canal mencionado abaixo: \n ENCARREGADO DE PROTEÇÃO DE DADOS: \n Nome do encarregado: Ricardo José Grings. \n E-mail: privacidade@dakota.com.br. \n Caso prefira entrar em contato por correspondência regular, envie sua solicitação ao endereço a seguir: Avenida 15 de novembro, nº 3.667, bairro Piá, Nova Petrópolis, RS. CEP: 95150-000."
+      }
+    },
+  
+    // PERGUNTA 14
+  
+    "disclosure-layout#politica-privacidade-14": {
+      "props": {
+        "animated": true
+      },
+      "children": [
+        "disclosure-trigger#politica-privacidade-14",
+        "disclosure-content#politica-privacidade-14"
+      ]
+    },
+    "disclosure-trigger#politica-privacidade-14": {
+      "props": {
+        "blockClass": "question",
+        "as": "div"
+      },
+      "children": [
+        "disclosure-state-indicator",
+        "rich-text#politica-privacidade-14"
+      ]
+    },
+    "disclosure-content#politica-privacidade-14": {
+      "props": {
+        "blockClass": "answer"
+      },
+      "children": ["rich-text#answer-politica-privacidade-14"]
+    },
+    "rich-text#politica-privacidade-14": {
+      "props": {
+        "blockClass": "margin-0",
+        "text": "14- Legislação e Foro competentes"
+      }
+    }, 
+    "rich-text#answer-politica-privacidade-14": {
+      "props": {
+        "text": "Essa Política de Privacidade e Proteção de Dados rege-se pelo Direito brasileiro. \n \n Os Usuários dos sites de Universo Dakota elegem o foro de Nova Petrópolis/RS, com a expressa renúncia de qualquer outro, por mais privilegiado que seja ou venha a ser, para dirimir qualquer dúvida, pendência ou litígio oriundo dessa Política de Privacidade e Proteção de Dados. \n \n Essa Política de Privacidade e Proteção de Dados foi modificada pela última vez em: 20 de Maio de 2021."
+      }
+    }
+  }
+  

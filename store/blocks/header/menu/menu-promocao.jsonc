@@ -1,0 +1,18 @@
+{
+    "menu-item#promocao": {
+      "props": {
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": ["menu-principal", "ativo"],  
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": true, 
+          "tagTitle": "Promoção",
+          "text": "Promoção"
+        }
+      }
+    }
+  }
+  

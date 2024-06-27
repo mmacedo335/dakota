@@ -1,0 +1,29 @@
+/* Geral */
+:global(.vtex-store-components-3-x-productDescriptionText) span,
+:global(.vtex-store-components-3-x-productDescriptionText) p{
+    color: #222222;
+    font-family: 'Larsseit Regular'!important; 
+    font-size: 16px;
+}     
+
+:global(.vtex-store-components-3-x-productImagesContainer--list){
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+:global(.vtex-store-components-3-x-productImagesContainer--list) :global(.vtex-store-components-3-x-productImage):nth-child(2),
+:global(.vtex-store-components-3-x-productImagesContainer--list) :global(.vtex-store-components-3-x-productImage):nth-child(3){
+    width: calc(50% - 5px); 
+}
+
+:global(.render-route-store-home) :global(.vtex-flex-layout-0-x-flexRow--header-departamento){
+    display: block;
+}
+
+@media(max-width: 768px){
+    :global(.render-route-store-product) :global(.vtex-store-components-3-x-imageElementLink--whats-flutuante){
+        bottom: 70px;
+        padding-bottom: 0px; 
+    }
+}

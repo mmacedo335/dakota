@@ -1,0 +1,18 @@
+{
+    "menu-item#tenis": {
+      "props": {
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "menu-principal",  
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": true,
+          "tagTitle": "Tênis",
+          "text": "Tênis"
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,125 @@
+{
+  "header": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "header.full": {
+    "blocks": ["header-layout.desktop", "header-layout.mobile"]
+  },
+  "flex-layout.col#spacer": {
+    "props": {
+      "width": "grow"
+    }
+  },
+  "sticky-layout#header-desktop": {
+    "props": {
+      "blockClass": "sticky-header"
+    },
+    "children": [
+      "flex-layout.row#topo-flutuante",
+      "flex-layout.row#header-main-desktop"
+    ]
+  },
+  "flex-layout.row#header-main-desktop": {
+    "props": {
+      "blockClass": ["main-header", "content-custom"],
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#logo-desktop",
+      "flex-layout.col#spacer",
+      "search-bar",
+      "flex-layout.col#spacer",
+      "login",
+      "minicart.v2"
+    ]
+  },
+  "flex-layout.col#logo-desktop": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["logo#desktop"]
+  },
+  "flex-layout.col#category-menu": {
+    "props": {
+      "verticalAlign": "middle"
+    },
+    "children": ["vtex.menu@2.x:menu#category-menu"]
+  },
+  "search-bar": {
+    "props": {
+      "placeholder": "O que você está buscando?"
+    }
+  },
+  "logo#desktop": {
+    "props": {
+      "title": "Logo",
+      "href": "/",
+      "url": "assets/svg/logo-dakota.svg",
+      "width": "170",
+      "height": "44"
+    }
+  },
+  "drawer": {
+    "title": "Menu categorias",
+    "children": [ 
+      "flex-layout.row#topo-menu-mobile",
+      "menu#drawer"
+    ],
+    "props": {
+      "blockClass": "header-menu",
+      "isFullWidth": true 
+    }
+  },
+  "menu#drawer": {
+    "children": [
+      
+    ],
+    "props": {
+      "orientation": "vertical"
+    }
+  },
+  "flex-layout.row#topo-menu-mobile": {
+    "title": "Logo",
+    "children": [
+      "logo#mobile-menu"
+    ],  
+    "props": {
+      "blockClass": "topo-menu-mobile",
+      "horizontalAlign": "center" 
+    }
+  },
+  "logo#mobile-menu": {
+    "props": {
+      "title": "Logo Mobile",
+      "href": "/",
+      "url": "assets/svg/logo-dakota.svg",
+      "width": "135",
+      "height": "35"  
+    }
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo Mobile",
+      "href": "/",
+      "url": "assets/svg/logo-dakota.svg",
+      "width": "255",
+      "height": "65"
+    }
+  },
+  "login": {
+    "props": {
+      "iconLabel": "Entre ou Cadastre-se"
+    }
+  },
+  "flex-layout.row#header-menu": {
+    "children": ["vtex.menu@2.x:menu#category-menu"],
+    "props": {
+      "fullWidth": true,
+      "blockClass": "menu-categorias-header"
+    } 
+  }
+}

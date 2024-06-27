@@ -1,0 +1,17 @@
+{
+  "store.custom#empresa": {
+    "path": "/empresa"
+  },
+  "store.custom#central-de-atendimento": {
+    "path": "/central-de-atendimento"
+  },
+  "store.custom#condicoes-geral": {
+    "path": "/institucional/condicoes-geral"
+  },
+  "store.custom#troca-devolucao": {
+    "path": "/institucional/troca-devolucao"
+  },
+  "store.custom#politica-privacidade": {
+    "path": "/institucional/politica-privacidade"
+  }
+}

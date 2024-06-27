@@ -1,0 +1,136 @@
+{
+  "flex-layout.row#blog": {
+    "title": "Conteudo Blog",
+    "children": [
+      "flex-layout.col#blog"
+    ],
+    "props": {
+      "blockClass": "blog",
+      "fullWidth": true,
+      "marginBottom": 6,
+      "marginTop": 6,
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#blog": {
+    "children": [
+      "responsive-layout.desktop#title-blog",
+      "flex-layout.row#grid-blog" 
+    ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "responsive-layout.desktop#title-blog": {
+    "children": [
+      "rich-text#title-blog"
+    ]
+  },
+  "rich-text#title-blog": {
+    "title": "Titulo",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "ÚLTIMAS TENDÊNCIAS DO MUNDO FASHION",
+      "blockClass": "title-padrao"
+    }
+  },
+  "flex-layout.row#grid-blog": {
+    "children": [
+      "flex-layout.col#conteudo-blog-01",
+      "flex-layout.col#conteudo-blog-02",
+      "flex-layout.col#conteudo-blog-03"
+    ],
+    "props": {
+      "blockClass": "conteudo-blog",
+      "horizontalAlign": "center"
+    }
+  },
+  "flex-layout.col#conteudo-blog-01": {
+    "title": "Conteudo Blog 01",
+    "children": [
+      "image#conteudo-blog-01",
+      "rich-text#conteudo-blog-01"
+    ],
+    "props": {
+      "width": "28%",
+      "blockClass": "conteudo-01"
+    }
+  },
+  "image#conteudo-blog-01": {
+    "title": "Imagem",
+    "props": {
+      "blockClass": "full",
+      "src": "assets/img/post_blog_01.jpg",
+      "link": {
+        "url": "https://blog.dakota.com.br/presentes-para-celebrar-o-amor/",
+        "newTab": true
+      }
+    }
+  },
+  "rich-text#conteudo-blog-01": {
+    "title": "Texto",
+    "props": {
+      "text": "[**PRESENTES PARA CELEBRAR O AMOR**](https://blog.dakota.com.br/presentes-para-celebrar-o-amor/) \n \n [Neste post, trazemos sugestões de presentes para celebrar o amor que vão tornar sua data ainda mais especial! Acesse e confira todas as dicas!](https://blog.dakota.com.br/presentes-para-celebrar-o-amor/)",
+      "blockClass": ["margin-0", "conteudo-blog"]
+    }
+  },
+  "flex-layout.col#conteudo-blog-02": {
+    "title": "Conteudo Blog 02",
+    "children": [
+      "image#conteudo-blog-02",
+      "rich-text#conteudo-blog-02"
+    ],
+    "props": {
+      "width": "28%",
+      "blockClass": "conteudo-02"
+    }
+  },
+  "image#conteudo-blog-02": {
+    "title": "Imagem",
+    "props": {
+      "blockClass": "full",
+      "src": "assets/img/post_blog_02.jpg",
+      "link": {
+        "url": "https://blog.dakota.com.br/marrom-cor-essencial-do-inverno-2024/",
+        "newTab": true
+      }
+    }
+  },
+  "rich-text#conteudo-blog-02": {
+    "title": "Texto",
+    "props": {
+      "text": "[**MARROM: COR ESSENCIAL DO INVERNO 2024**](https://blog.dakota.com.br/marrom-cor-essencial-do-inverno-2024/) \n \n [Uma cor que vem se destacando nas coleções de moda, seja no verão ou inverno, é o marrom!](https://blog.dakota.com.br/marrom-cor-essencial-do-inverno-2024/)",
+      "blockClass": ["margin-0", "conteudo-blog"]
+    }
+  },
+  "flex-layout.col#conteudo-blog-03": {
+    "title": "Conteudo Blog 03",
+    "children": [
+      "image#conteudo-blog-03",
+      "rich-text#conteudo-blog-03"
+    ],
+    "props": {
+      "width": "28%",
+      "blockClass": "conteudo-03"
+    }
+  },
+  "image#conteudo-blog-03": {
+    "title": "Imagem",
+    "props": {
+      "blockClass": "full",
+      "src": "assets/img/post_blog_03.jpg",
+      "link": {
+        "url": "https://blog.dakota.com.br/ta-na-moda-esportivo/",
+        "newTab": true
+      }
+    }
+  },
+  "rich-text#conteudo-blog-03": {
+    "title": "Texto",
+    "props": {
+      "text": "[**TÁ NA MODA: ESPORTIVO**](https://blog.dakota.com.br/ta-na-moda-esportivo/) \n \n [Neste post, vamos falar sobre uma tendência que está dominando as ruas e passarelas. Tá na moda: esportivo!](https://blog.dakota.com.br/ta-na-moda-esportivo/)",
+      "blockClass": ["margin-0", "conteudo-blog"]
+    }
+  }
+}

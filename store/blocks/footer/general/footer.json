@@ -1,0 +1,270 @@
+{
+  "footer": {
+    "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
+  },
+  "flex-layout.row#footer-menu": {
+    "children": [
+      "vtex.menu@2.x:menu#footer"
+    ],
+    "props": {
+      "blockClass": "menu-footer",
+      "paddingTop": 7, 
+      "paddingBottom": 6
+    }
+  },
+  "flex-layout.row#meios-pagamento-footer": {
+    "children": [
+      "image#meios-pagamento-footer"
+    ],
+    "props": {
+      "blockClass": "meios-pagamento-footer",
+      "paddingTop": 6,
+      "paddingBottom": 6
+    }
+  },
+  "flex-layout.row#copyright-footer": {
+    "title": "Copyright",
+    "children": [
+      "rich-text#copyright"
+    ],
+    "props": {
+      "blockClass": "copyright-footer",
+      "paddingTop": 6,
+      "paddingBottom": 6
+    }
+  },
+  "rich-text#copyright": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Criações Dakota LTDA. – CNPJ: 94.266.947.0005-16 / Inscrição Estadual: 084/0014791 \n Endereço: Av. 15 de Novembro, 3667– Bairro Piá – Nova Petrópolis/RS – CEP: 95150-000 \n Atendimento telefônico Loja Virtual: (54) 3281-8070  / Loja Física (54) 3281-8090 (de segunda a quinta-feira das 07:20 às 11:50 e 13:00 às 17:30; sexta-feira das 07:20 às 11:50 e 13:00 às 16:30) \n [Central de atendimento](/)",
+      "blockClass": "copyright"
+    }
+  },
+  "image#meios-pagamento-footer": {
+    "title": "Imagem meios de pagamento",
+    "props": {
+      "blockClass": "meios-pagamento-footer",
+      "src": "assets/img/formas-de-pgto.png"
+    }
+  },
+  "image#whats-flutuante": {
+    "title": "Whats flutuante",
+    "props": {
+      "blockClass": "whats-flutuante",
+      "src": "assets/img/whatsapp-small.png",
+      "maxWidth": 60,
+      "link": {
+        "url": "https://api.whatsapp.com/send?phone=5554999637521",
+        "attributeTitle": "Atendimento WhatsApp",
+        "newTab": true
+      }
+    }
+  },
+  "flex-layout.row#footer-seguranca": {
+    "children": [
+      "flex-layout.col#footer-seguranca-01",
+      "flex-layout.col#footer-seguranca-02"
+    ],
+    "props": {
+      "blockClass": "footer-seguranca",
+      "paddingTop": 5, 
+      "paddingBottom": 7,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.col#footer-seguranca-01": {
+    "props": {
+      "blockClass": "plataformas"
+    },
+    "children": [
+      "rich-text#footer-seguranca-01",
+      "image#lets"
+    ]
+  },
+  "flex-layout.col#footer-seguranca-02": {
+    "props": {
+      "blockClass": "plataformas"
+    },
+    "children": [
+      "rich-text#footer-seguranca-02",
+      "image#vtex"
+    ]
+  },
+  "rich-text#footer-seguranca-01": {
+    "props": {
+      "text": "DADOS \n CRIPTOGRAFADOS",
+      "blockClass": "footer-seguranca"
+    }
+  },
+  "image#lets": {
+    "props": {
+      "blockClass": "footer-seguranca",
+      "src": "assets/img/lets.png",
+      "maxWidth": 115
+    }
+  },
+  "rich-text#footer-seguranca-02": {
+    "props": {
+      "text": "PLATAFORMA",
+      "blockClass": "footer-seguranca"
+    }
+  },
+  "image#vtex": {
+    "props": {
+      "blockClass": "footer-seguranca",
+      "src": "assets/svg/vtex.svg",
+      "maxWidth": 115
+    }
+  },
+  "flex-layout.row#redes-sociais": {
+    "title": "Redes sociais",
+    "children": [
+      "image#facebook",
+      "image#instagram",
+      "image#youtube",
+      "image#linkeding",
+      "image#tiktok"
+    ],
+    "props": {
+      "blockClass": "redes-sociais",
+      "marginTop": 6,
+      "marginBottom": 7,
+      "preventHorizontalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "image#facebook": {
+    "title": "Facebook",
+    "props": {
+      "blockClass": "redes-sociais",
+      "src": "assets/svg/facebook.svg",
+      "maxWidth": 12,
+      "link": {
+        "url": "https://www.facebook.com/DakotaCalcados",
+        "newTab": true
+      }
+    }
+  },
+  "image#instagram": {
+    "title": "Instagram",
+    "props": {
+      "blockClass": "redes-sociais",
+      "src": "assets/svg/instagram.svg",
+      "maxWidth": 20,
+      "link": {
+        "url": "https://www.instagram.com/dakotacalcados/",
+        "newTab": true
+      }
+    }
+  },
+  "image#youtube": {
+    "title": "Youtube",
+    "props": {
+      "blockClass": "redes-sociais",
+      "src": "assets/svg/youtube.svg",
+      "maxWidth": 20,
+      "link": {
+        "url": "https://www.youtube.com/user/dakotanarede?app=desktop",
+        "newTab": true
+      }
+    }
+  },
+  "image#tiktok": {
+    "title": "Tiktok",
+    "props": {
+      "blockClass": "redes-sociais",
+      "src": "assets/svg/tiktok.svg",
+      "maxWidth": 20,
+      "link": {
+        "url": "https://vm.tiktok.com/@dakotacalcados",
+        "newTab": true
+      }
+    }
+  },
+  "image#linkeding": {
+    "title": "Linke",
+    "props": {
+      "blockClass": "redes-sociais",
+      "src": "assets/svg/linkeding.svg",
+      "maxWidth": 20,
+      "link": {
+        "url": "https://br.linkedin.com/company/dakotacalcados",
+        "newTab": true
+      }
+    }
+  },
+  "flex-layout.row#footer-newsletter": {
+    "children": [
+      "flex-layout.col#footer-newsletter"
+    ],
+    "props": {
+      "blockClass": "newsletter",
+      "horizontalAlign": "center",
+      "verticalAlign": "center",
+      "paddingBottom": 6,
+      "marginBottom": 6
+    },
+    "title": "Footer Newsletter"
+  },
+  "flex-layout.col#footer-newsletter": {
+    "children": [
+      "rich-text#newsletter-text",
+      "newsletter-form",
+      "rich-text#newsletter-text-privacidade"
+    ],
+    "props": {
+      "blockClass": "newsletter",
+      "horizontalAlign": "center",
+      "fullWidth": false
+    }
+  },
+  "rich-text#newsletter-text": {
+    "props": {
+      "text": "### FIQUE POR DENTRO",
+      "blockClass": "text-newsletter",
+      "textColor": "c-on-base--inverted",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER" 
+    },
+    "title": "Título Newsletter"
+  },
+  "rich-text#newsletter-text-privacidade": {
+    "props": {
+      "text": "Ao clicar em ASSINAR declaro que concordo em receber novidades e promoções da Dakota e suas marcas. \n Confira nossa [Política de privacidade](/)",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "textColor": "c-on-base--inverted",
+      "blockClass": "newsletter-text-privacidade"
+    },
+    "title": "Newsletter - Politica"
+  },
+  "newsletter-form": {
+    "children": [
+      "newsletter-input-name",
+      "newsletter-input-email",
+      "newsletter-submit"
+    ],
+    "props": {
+      "blockClass": "newsletter"
+    },
+    "title": "Newsletter"
+  },
+  "newsletter-input-email": {
+    "props": {
+      "placeholderText": "Insira seu e-mail e receba as novidades.."
+    }
+  },
+  "newsletter-input-name": {
+    "props": {
+      "placeholderText": "Digite seu nome..."
+    }
+  }, 
+  "newsletter-submit": {
+    "props": {
+      "submitButtonLabel": "ASSINAR"
+    }
+  }
+}

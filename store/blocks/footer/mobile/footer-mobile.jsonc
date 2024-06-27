@@ -1,0 +1,15 @@
+{
+  "footer-layout.mobile": {
+    "title": "Footer - Mobile",
+    "children": [
+      "image#whats-flutuante",
+      "flex-layout.row#footer-newsletter",
+      "flex-layout.row#footer-menu",
+      "flex-layout.row#meios-pagamento-footer",
+      "flex-layout.row#redes-sociais",
+      "flex-layout.row#copyright-footer",
+      "flex-layout.row#footer-seguranca",
+      "minicart.v2#footer"
+    ] 
+  }
+}

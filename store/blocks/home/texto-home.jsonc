@@ -1,0 +1,21 @@
+{
+  "flex-layout.row#texto-home": {
+    "title": "Conteúdo texto home",
+    "children": [
+      "rich-text#texto-home"
+    ],
+    "props": {
+      "blockClass": "texto-home",
+      "marginBottom": 6,
+      "marginTop": 6
+    }
+  },
+  "rich-text#texto-home": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## Apaixonada por sapatos femininos? A Dakota te ajuda a encontrar o seu match! \n \n Seja qual for o seu estilo, a Dakota tem o sapato feminino perfeito para você. Conheça a nossa coleção completa e apaixone-se por modelos que combinam estilo, conforto e qualidade. \n \n Do estilo street ao artesanal, criamos itens modernos, despojados, versáteis e muito confortáveis para você arrasar em qualquer ocasião. Navegue pelo site e confira tudo agora mesmo! \n \n ## Calçados Dakota: seu estilo, suas regras! \n \n O tênis Dakota é o must-have do momento! Eles esbanjam atitude, complementando looks streetwear, com destaque para o **tênis Dakota flatform feminino** e o **tênis Dakota tratorado,** trends fortes que invadiram as passarelas. \n \n Um clássico que nunca sai de moda é a **sandália Dakota salto bloco.** Quer chamar a atenção para um look icônico? Então, aposte nas pedrarias que trazem mais glamour para suas produções fashion. \n \n A trend animal print também dominou os calçados, destacando-se nos variados modelos de **sandálias Dakota** para agradar a todos os estilos. \n \n A Dakota se preocupa com o seu bem-estar. Por isso, todos os nossos **sapatos femininos** são fabricados com materiais de alta qualidade e pensados para proporcionar o máximo de conforto. \n \n ## Onde comprar sapatos Dakota? \n \n Do casual ao social e do clássico ao moderno, na nossa loja online você encontra os **calçados Dakota** perfeitos para qualquer ocasião. \n \n Navegue por todos os itens e aproveite nossas condições de pagamento e frete grátis para todo o Brasil!",
+      "blockClass": "texto-home"
+    }
+  }
+}

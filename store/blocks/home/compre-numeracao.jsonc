@@ -1,0 +1,111 @@
+{
+  "flex-layout.row#compre-numeracao": {
+    "title": "Compre por numeracao",
+    "children": [
+      "responsive-layout.desktop#compre-numeracao-title",
+      "link#compre-numeracao-33",
+      "link#compre-numeracao-34",
+      "link#compre-numeracao-35",
+      "link#compre-numeracao-36",
+      "link#compre-numeracao-37",
+      "link#compre-numeracao-38",
+      "link#compre-numeracao-39",
+      "link#compre-numeracao-40"
+    ],
+    "props": {
+      "blockClass": "compre-numeracao",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true ,
+      "horizontalAlign": "center", 
+      "verticalAlign": "center",
+      "preserveLayoutOnMobile": true, 
+      "paddingTop": 5, 
+      "paddingBottom": 5
+    }
+  }, 
+  "responsive-layout.desktop#compre-numeracao-title": {
+    "children": [
+      "rich-text#compre-numeracao-title"
+    ]
+  },
+  "rich-text#compre-numeracao-title": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "COMPRE NA SUA NUMERAÇÃO",
+      "blockClass": ["margin-0", "compre-numeracao"]
+    }
+  },
+  "link#compre-numeracao-33": {
+    "props": {
+      "label": "33",
+      "href": "/",
+      "blockClass": [
+        "compre-numeracao"
+      ]
+    }
+  },
+  "link#compre-numeracao-34": {
+    "props": {
+      "label": "34",
+      "href": "/",
+      "blockClass": [
+        "compre-numeracao"
+      ]
+    }
+  },
+  "link#compre-numeracao-35": {
+    "props": {
+      "label": "35",
+      "href": "/",
+      "blockClass": [
+        "compre-numeracao"
+      ]
+    }
+  },
+  "link#compre-numeracao-36": {
+    "props": {
+      "label": "36",
+      "href": "/",
+      "blockClass": [
+        "compre-numeracao"
+      ]
+    }
+  },
+  "link#compre-numeracao-37": {
+    "props": {
+      "label": "37",
+      "href": "/",
+      "blockClass": [
+        "compre-numeracao"
+      ]
+    }
+  },
+  "link#compre-numeracao-38": {
+    "props": {
+      "label": "38",
+      "href": "/",
+      "blockClass": [
+        "compre-numeracao"
+      ]
+    }
+  },
+  "link#compre-numeracao-39": {
+    "props": {
+      "label": "39",
+      "href": "/",
+      "blockClass": [
+        "compre-numeracao"
+      ]
+    }
+  },
+  "link#compre-numeracao-40": {
+    "props": {
+      "label": "40",
+      "href": "/",
+      "blockClass": [
+        "compre-numeracao"
+      ]
+    }
+  }
+}

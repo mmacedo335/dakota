@@ -1,0 +1,31 @@
+{
+  "product-list-price#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "product-installments#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "product-selling-price#summary": {
+    "props": {
+      "blockClass": "summary"
+    }
+  },
+  "product-price-savings#summary": {
+    "props": {
+      "markers": [
+        "discount"
+      ],
+      "blockClass": "summary"
+    }
+  },
+  "product-price-savings#discount": {
+    "props": {
+      "message": "- {savingsPercentage}",
+      "blockClass": "savingPercentage"
+    }
+  }
+}

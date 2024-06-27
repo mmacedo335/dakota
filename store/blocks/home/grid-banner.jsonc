@@ -1,0 +1,54 @@
+{
+  "flex-layout.row#grid-banner": {
+    "title": "Grid banner",
+    "children": [
+      "image#grid-banner-01",
+      "image#grid-banner-02",
+      "image#grid-banner-03"
+    ],
+    "props": {
+      "blockClass": ["grid-banner", "container-custom"],
+      "fullWidth": true,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "colGap": 6,
+      "marginBottom": 6,
+      "marginTop": 6
+    }
+  },
+  "image#grid-banner-01": {
+    "title": "Imagem 01",
+    "props": {
+      "src": "assets/img/banner-grid-01.jpg",
+      "link": {
+        "url": "/lancamento#/r$101-r$-200",
+        "attributeTitle": "",
+        "newTab": false
+      }
+    }
+  },
+
+  "image#grid-banner-02": {
+    "title": "Imagem 02",
+    "props": {
+      "src": "assets/img/banner-grid-02.jpg",
+      "link": {
+        "url": "/lancamento#/r$201-r$-300/",
+        "attributeTitle": "",
+        "newTab": false
+      }
+    }
+  },
+
+  "image#grid-banner-03": {
+    "title": "Imagem 03",
+    "props": {
+      "src": "assets/img/banner-grid-03.jpg",
+      "link": {
+        "url": "/lancamento#/r$301-r$-460",
+        "attributeTitle": "",
+        "newTab": false
+      }
+    }
+  }
+}

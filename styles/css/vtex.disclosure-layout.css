@@ -1,0 +1,35 @@
+.trigger {
+    cursor: pointer;
+    border: none;
+    transition: all .2s linear;
+}
+
+.content {
+    transition: all .2s linear;
+}
+
+.trigger--question :global(.vtex-rich-text-0-x-paragraph) {
+    font-size: 17px;
+    color: #000;
+    font-weight: 600;
+}
+
+.content--answer :global(.vtex-rich-text-0-x-paragraph) {
+    font-style: italic;
+    margin: 20px 0;
+    clear: both;
+    font-size: .875rem;
+    color: #555;
+}
+
+.trigger--question {
+    margin-bottom: 10px;
+}
+
+.trigger--search-bar-mobile {
+    position: absolute;
+    top: 50px;
+    right: 55px;
+    background: transparent;
+    border: none;
+}

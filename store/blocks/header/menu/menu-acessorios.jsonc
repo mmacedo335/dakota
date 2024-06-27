@@ -1,0 +1,18 @@
+{
+    "menu-item#acessorios": {
+      "props": {
+        "type": "custom",
+        "iconId": null,
+        "highlight": false,
+        "blockClass": "menu-principal",  
+        "itemProps": {
+          "type": "internal",
+          "href": "#",
+          "noFollow": true,
+          "tagTitle": "Acessórios",
+          "text": "Acessórios"
+        }
+      }
+    }
+  }
+  

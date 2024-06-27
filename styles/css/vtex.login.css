@@ -1,0 +1,24 @@
+.container .label {
+    font-size: 14px;
+    letter-spacing: 0.03em;
+    color: #222222;
+    text-transform: none;
+    font-family: 'Larsseit Medium';
+    display: flex;
+    align-items: center;
+    gap: 4px;
+}
+
+.container .label:hover{
+    text-decoration: underline; 
+}
+
+.container .label:before { 
+    content: '';
+    display: block;
+    width: 26px;
+    height: 26px;
+    background-image: url('assets/img/user-icon.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,28 @@
+.homeLink::after {
+    content: 'Página inicial';
+    color: #000;
+    font-size: .75rem;
+}
+
+.homeIcon {
+    display: none;
+}
+ 
+.link {
+    color: #000;
+    font-size: .75rem;
+}
+
+.term,
+.arrow .link {
+    color: #000;
+    font-size: .75rem;
+}
+
+.caretIcon {
+    color: #000;
+}
+ 
+.term{
+    font-family: 'Larsseit Medium';
+}

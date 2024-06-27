@@ -1,0 +1,129 @@
+{
+  
+  "flex-layout.row#links-account": {
+    "title": "Bloco painel do cliente",
+    "children": [
+      "link#troca-pedido",
+      "link#rastrear-pedido",
+      "link#alterar-dados",
+      "link#solicitar-atendimento"
+    ],
+    "props": {
+      "blockClass": ["links-account"],
+      "marginBottom": 8,
+      "marginTop": 5 
+    }
+  },
+
+  "link#troca-pedido": {
+    "props": {
+      "label": "Trocar meu Pedido",
+      "href": "/",
+      "blockClass": [
+        "links-account"
+      ]
+    }
+  },
+
+  "link#rastrear-pedido": {
+    "props": {
+      "label": "Rastrear Meu Pedido",
+      "href": "/",
+      "blockClass": [
+        "links-account"
+      ]
+    }
+  },
+
+  "link#alterar-dados": {
+    "props": {
+      "label": "Alterar Meus Dados",
+      "href": "/",
+      "blockClass": [
+        "links-account"
+      ]
+    }
+  },
+
+  "link#solicitar-atendimento": {
+    "props": {
+      "label": "Solicitar atendimento",
+      "href": "/",
+      "blockClass": [
+        "links-account"
+      ]
+    }
+  },
+
+  "flex-layout.row#menu-institucional": {
+    "children": [
+      "flex-layout.col#menu-institucional"
+    ],
+    "props": {
+      "blockClass": ["main-container"],
+      "paddingBottom": 8
+    }
+  },
+
+  "flex-layout.row#institucional-titulo-page": {
+    "title": "Titulo página",
+    "children": [
+      "rich-text#central-ajuda-tile"
+    ],
+    "props": {
+      "paddingBottom": 7
+    }
+  },
+  "rich-text#central-ajuda-tile": {
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "# Atendimento \n \n Como podemos te ajudar?",
+      "blockClass": "title-page"
+    }
+  },
+  "flex-layout.col#menu-institucional": {
+    "title": "Links menu lateral",
+    "children": [
+      "link#condicoes-gerais",
+      "link#page-trocas-devolucao",
+      "link#page-politicas-privacidade"
+    ],
+    "props": {
+      "blockClass": "container-links-institucional",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "width": "25%"
+    }
+  },
+  "link#condicoes-gerais": {
+    "props": {
+      "label": "Condições gerais",
+      "href": "/institucional/condicoes-geral",
+      "blockClass": [
+        "institucional-links",
+        "condicoes-gerais" 
+      ]
+    }
+  },
+  "link#page-trocas-devolucao": {
+    "props": {
+      "label": "Troca e devolução",
+      "href": "/institucional/troca-devolucao",
+      "blockClass": [
+        "institucional-links",
+        "trocas-devolucao"
+      ]
+    }
+  },
+  "link#page-politicas-privacidade": {
+    "props": {
+      "label": "Política de Privacidade e Proteção de Dados",
+      "href": "/institucional/politica-privacidade",
+      "blockClass": [
+        "institucional-links",
+        "politicas-privacidade"
+      ]
+    }
+  }
+}

@@ -1,0 +1,3 @@
+.wrapper--sticky-header:not(.wrapper--sticky-header--stuck) :global(.vtex-flex-layout-0-x-flexRow--topo-menu-flutuante) {
+    display: none;
+} 

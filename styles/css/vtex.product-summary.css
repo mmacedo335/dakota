@@ -1,0 +1,11 @@
+.productBrand {
+    font-size: 15px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    line-height: normal;
+    color: #333;
+}
+
+.container :global(.vtex-stack-layout-0-x-stackContainer) {
+    z-index: 1;
+} 

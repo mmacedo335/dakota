@@ -1,0 +1,304 @@
+{
+  "menu-item#bota": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-principal", 
+      "itemProps": {
+        "type": "internal",
+        "href": "#",
+        "noFollow": true,
+        "tagTitle": "Bota",
+        "text": "Bota"
+      }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#bota"
+    ]
+  },
+  "vtex.menu@2.x:submenu#bota": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-bota"
+    ]
+  },
+  "flex-layout.row#menu-bota": {
+    "children": [
+      "flex-layout.col#menu-bota-1",
+      "flex-layout.col#menu-bota-2",
+      "flex-layout.col#menu-bota-3"
+    ],
+    "props": { 
+      "colGap": 7,
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true 
+    }
+  },
+  "flex-layout.col#menu-bota-1": {
+    "title": "Bloco categorias",
+    "children": [
+      "vtex.menu@2.x:menu#bota"
+    ]
+  },
+  "flex-layout.col#menu-bota-2": {
+    "title": "Bloco numeração",
+    "props": {
+      "blockClass": "header-numeracao",
+      "preventVerticalStretch": true  
+    },
+    "children": [
+      "link#numeracao-botao-1",
+      "link#numeracao-botao-2",
+      "link#numeracao-botao-3",
+      "link#numeracao-botao-4",
+      "link#numeracao-botao-5",
+      "link#numeracao-botao-6",
+      "link#numeracao-botao-7",
+      "link#numeracao-botao-8"
+    ]
+  },
+  "link#numeracao-botao-1": {
+    "props": {
+      "href": "/",
+      "label": "33"
+    }
+  },
+  "link#numeracao-botao-2": {
+    "props": {
+      "href": "/",
+      "label": "34"
+    }
+  },
+  "link#numeracao-botao-3": {
+    "props": {
+      "href": "/",
+      "label": "35"
+    }
+  },
+  "link#numeracao-botao-4": {
+    "props": {
+      "href": "/",
+      "label": "36"
+    }
+  },
+  "link#numeracao-botao-5": {
+    "props": {
+      "href": "/",
+      "label": "37"
+    }
+  },
+  "link#numeracao-botao-6": {
+    "props": {
+      "href": "/",
+      "label": "38"
+    }
+  },
+  "link#numeracao-botao-7": {
+    "props": {
+      "href": "/",
+      "label": "39"
+    }
+  },
+  "link#numeracao-botao-8": {
+    "props": {
+      "href": "/",
+      "label": "40"
+    }
+  },
+  "flex-layout.col#menu-bota-3": {
+    "title": "Bloco produtos",
+    "children": [
+
+    ]
+  },
+  "vtex.menu@2.x:menu#bota": {
+    "props": {
+      "orientation": "vertical"
+    },
+    "children": [
+      "menu-item#bota-01",
+      "menu-item#bota-02",
+      "menu-item#bota-03",
+      "menu-item#bota-04",
+      "menu-item#bota-05",
+      "menu-item#bota-06",
+      "menu-item#bota-07",
+      "menu-item#bota-08",
+      "menu-item#bota-09",
+      "menu-item#bota-10",
+      "menu-item#bota-11",
+      "menu-item#bota-12"
+    ]
+  },
+  "menu-item#bota-01": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Cano Curto",
+        "text": "Cano Curto"
+      }
+    }
+  },
+  "menu-item#bota-02": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Cano Longo",
+        "text": "Cano Longo"
+      }
+    }
+  },
+  "menu-item#bota-03": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Cano Médio",
+        "text": "Cano Médio"
+      }
+    }
+  },
+  "menu-item#bota-04": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Chelsea",
+        "text": "Chelsea"
+      }
+    }
+  },
+  "menu-item#bota-05": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Coturno",
+        "text": "Coturno"
+      }
+    }
+  },
+  "menu-item#bota-06": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Over The Knee",
+        "text": "Over The Knee"
+      }
+    }
+  },
+  "menu-item#bota-07": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Plataforma / Meia Pata",
+        "text": "Plataforma / Meia Pata"
+      }
+    }
+  },
+  "menu-item#bota-08": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Salto Alto",
+        "text": "Salto Alto"
+      }
+    }
+  },
+  "menu-item#bota-09": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Salto Baixo",
+        "text": "Salto Baixo"
+      }
+    }
+  },
+  "menu-item#bota-10": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Salto Medio",
+        "text": "Salto Medio"
+      }
+    }
+  },
+  "menu-item#bota-11": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Salto Bloco",
+        "text": "Salto Bloco"
+      }
+    }
+  },
+  "menu-item#bota-12": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "itemProps": {
+        "type": "internal",
+        "href": "",
+        "noFollow": true,
+        "tagTitle": "Salto Fino",
+        "text": "Salto Fino"
+      }
+    }
+  }
+}

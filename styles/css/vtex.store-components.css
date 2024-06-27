@@ -1,0 +1,171 @@
+.container {
+    max-width: 1200px;
+}
+
+.container:global(.vtex-search-result-3-x-searchResultContainer) {
+    max-width: 100%;
+    padding: 0px;
+}
+
+.container:global(.vtex-search-result-3-x-searchResultContainer) :global(.vtex-flex-layout-0-x-flexRowContent--content-search),
+.container:global(.vtex-search-result-3-x-searchResultContainer) :global(.vtex-flex-layout-0-x-flexRow--seo-category) {
+    max-width: 95%;
+    margin: auto;
+    width: 100%;
+}
+
+.sizeDesktop.logoContainer,
+.sizeMobile.logoContainer {
+    max-width: 100%;
+    max-height: 100%;
+    min-width: auto;
+    padding: 0px;
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+
+.searchBarContainer {
+    max-width: 100%;
+    width: 520px;
+}
+
+.searchBarContainer :global(.vtex-input-prefix__group) {
+    height: 44px;
+    color: rgb(121, 119, 119);
+    background-color: rgb(246, 246, 246);
+    border: none;
+    border-radius: 0px;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input),
+.searchBarContainer :global(.vtex-input__suffix) {
+    font-size: 13.12px;
+    color: rgb(121, 119, 119);
+    background-color: rgb(246, 246, 246);
+}
+
+.searchBarIcon {
+    padding: 0;
+    color: rgb(219, 61, 104);
+}
+
+.imageElement--full {
+    width: 100%;
+}
+
+.imageElementLink--whats-flutuante {
+    display: block;
+    right: 0;
+    padding: 25px;
+    position: fixed;
+    transition: all .5s linear;
+    text-align: center;
+    z-index: 99;
+    bottom: 0;
+}
+
+.imageElementLink--redes-sociais {
+    border-radius: 50px;
+    background-color: #000;
+    display: flex;
+    width: 35px !important;
+    height: 35px;
+    justify-content: center;
+    align-items: center;
+}
+
+.productNameContainer .productBrand {
+    font-size: 24px;
+    width: 80%;
+    margin: 0 auto;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    color: #000;
+    font-family: 'Larsseit Extra Bold';
+    display: block;
+    text-align: center;
+}
+
+.skuSelectorItemTextValue {
+    font-size: 18px;
+    font-family: 'Larsseit Bold';
+    color: black;
+    padding: 6px 10px;
+}
+
+.skuSelectorInternalBox {
+    border: 1.5px solid #222222;
+    border-radius: 3px;
+}
+
+.skuSelectorInternalBox:hover {
+    border: 1.5px solid #222222;
+}
+
+.skuSelectorItem .frameAround {
+    display: none;
+}
+
+.skuSelectorItem--selected .skuSelectorInternalBox {
+    border: #db3d68;
+    background: #db3d68;
+}
+
+.skuSelectorItem--selected .skuSelectorInternalBox .skuSelectorItemTextValue {
+    color: white;
+}
+
+.skuSelectorItem.unavailable .skuSelectorInternalBox {
+    border-color: #eee;
+}
+
+.skuSelectorItem.unavailable .skuSelectorInternalBox .skuSelectorItemTextValue {
+    color: #eee;
+}
+
+.diagonalCross {
+    background-image: linear-gradient(to top right, transparent 48%, #eee 48%, currentColor 48%, currentColor 52%, transparent 52%);
+}
+
+.skuSelectorSubcontainer--numeracao .skuSelectorName {
+    font-size: 0px;
+}
+
+.skuSelectorSubcontainer--numeracao .skuSelectorName::after {
+    content: 'Selecione o tamanho:';
+    display: block;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Larsseit Medium';
+    letter-spacing: 1px;
+}
+
+.skuSelectorOptionsList {
+    justify-content: center;
+}
+
+.productDescriptionContainer .productDescriptionText {
+    line-height: 20px;
+    font-size: 16px;
+    color: #222222;
+    font-family: 'Larsseit Regular' !important;
+}
+
+.productImagesGallerySwiperContainer .swiperBullet {
+    height: 5px;
+    width: 5px;
+    border: 1px solid #707070;
+    background: #fff;
+}
+
+.productImagesGallerySwiperContainer .swiperBullet--active {
+    background: #707070;
+}
+
+@media(max-width: 768px) {
+    .container {
+        padding: 0 20px;
+    }
+}

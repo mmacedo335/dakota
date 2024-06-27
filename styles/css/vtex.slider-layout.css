@@ -1,0 +1,27 @@
+.paginationDotsContainer .paginationDot--isActive {
+    background: black;
+}
+
+.paginationDot {
+    width: 15px !important;
+    height: 15px !important;
+    border: 1px solid #000;
+    background: white;
+}
+
+.paginationDotsContainer {
+    bottom: 15px;
+}
+
+.sliderArrows--shelf {
+    width: 40px;
+    height: 40px;
+    background: black!important;
+    border-radius: 40px;
+}
+
+.sliderArrows--shelf .caretIcon--shelf {
+    color: white;
+    width: 18px;
+    height: 18px;
+}

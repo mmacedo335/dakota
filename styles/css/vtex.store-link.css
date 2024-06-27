@@ -1,0 +1,43 @@
+.link {
+    text-decoration: none;
+    color: black;
+}
+
+.link--compre-numeracao {
+    background-color: transparent;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 10px;
+    position: relative;
+    width: 60px;
+    height: 60px;
+    text-align: center;
+    border-radius: 50%;
+    transition: all .3s ease;
+}
+
+.link--compre-numeracao:hover {
+    background-color: #db3d68;
+    transition: all .3s ease;
+}
+
+.label--compre-numeracao {
+    color: #9B9B9B;
+    font-size: 41px;
+    font-family: 'Larsseit Extra Bold';
+}
+
+.link--compre-numeracao:hover .label--compre-numeracao {
+    color: white;
+}
+
+@media(max-width: 768px) {
+    .label--compre-numeracao {
+        font-size: 32px;
+    }
+    .link--compre-numeracao {
+        width: 50px;
+        height: 43px;
+    }
+}

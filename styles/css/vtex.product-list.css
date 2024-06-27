@@ -1,0 +1,73 @@
+.productName--minicart {
+    line-height: 18px;
+    color: #000;
+    font-size: 13px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--cartSummary) .removeButton::after {
+    content: '×';
+    background: black;
+    width: 20px;
+    height: 20px;
+    border-radius: 100px;
+    display: flex;
+    color: white !important;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: 'Larsseit Medium';
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--cartSummary) .removeButton {
+    padding: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--cartSummary) .deleteIcon {
+    display: none;
+}
+
+.quantitySelectorWrapper .inputContainer {
+    width: 28px;
+    padding: 0px;
+    height: 28px;
+    border: 1px solid black;
+    font-size: 14px;
+}
+
+.quantitySelectorWrapper .quantitySelectorButton {
+    background: transparent;
+    border: none;
+    height: 28px;
+    width: 32px;
+    color: black;
+    padding: 0;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--cartSummaryCustom) .removeButton .deleteIcon {
+    content: "";
+    display: block;
+    width: 22px;
+    height: 22px;
+    background-color: transparent;
+    color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='20' height='22' viewBox='0 0 20 22' fill='none'%3e%3cpath d='M19 4.27271H1' stroke='%23ACACAC' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M7.54541 9.18188V15.7273' stroke='%23ACACAC' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M12.4546 9.18188V15.7273' stroke='%23ACACAC' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M17.3637 4.27271V19.8182C17.3637 20.0352 17.2775 20.2433 17.1241 20.3967C16.9707 20.5501 16.7626 20.6363 16.5456 20.6363H3.45466C3.23766 20.6363 3.02955 20.5501 2.87611 20.3967C2.72268 20.2433 2.63647 20.0352 2.63647 19.8182V4.27271' stroke='%23ACACAC' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3cpath d='M14.091 4.27273V2.63636C14.091 2.20237 13.9186 1.78616 13.6117 1.47928C13.3048 1.1724 12.8886 1 12.4546 1H7.54554C7.11155 1 6.69534 1.1724 6.38846 1.47928C6.08158 1.78616 5.90918 2.20237 5.90918 2.63636V4.27273' stroke='%23ACACAC' stroke-width='1.5' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e");
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--cartSummaryCustom) .productPrice .price {
+    color: #222;
+    font-size: 14px;
+    font-family: 'Larsseit Medium';
+    width: auto;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--cartSummaryCustom) .productPriceCurrency .currencyContainer {
+    color: gray;
+    font-size: 12px;
+    width: auto;
+}
+
+.productPriceContainer {
+    width: auto;
+}

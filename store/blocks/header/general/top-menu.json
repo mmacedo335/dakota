@@ -1,0 +1,199 @@
+{
+  "flex-layout.row#topo-menu": {
+    "title": "Topo menu",
+    "props": {
+      "blockClass": ["topo-menu", "content-custom"],
+      "horizontalAlign": "between",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "fullWidth": true,
+      "paddingTop": 2,
+      "paddingBottom": 2
+    },
+    "children": [
+      "flex-layout.row#logos-marcas-topo",
+      "rich-text#topo-menu-link"
+    ]
+  },
+  "rich-text#topo-menu-link": {
+    "title": "Links",
+    "props": {
+      "text": "[Clube de Águias](https://www.clubedeaguias.com.br) | [Área do Lojista](https://pedidofacil.dakota.com.br/login) | [Atendimento ](/central-de-atendimento) | [Blog](https://blog.dakota.com.br/) | [Sustentabilidade](/no-passo-certo)"
+    }
+  },
+  "flex-layout.row#logos-marcas-topo": {
+    "props": {
+      "blockClass": "logos-marca",
+      "horizontalAlign": "center"
+    },
+    "children": [
+      "image#kolosh",
+      "image#missisipi",
+      "image#tanara",
+      "image#campesi",
+      "image#pink_cats",
+      "image#kolway"
+    ]
+  },
+  "image#kolosh": {
+    "props": {
+      "src": "assets/svg/kolosh.svg",
+      "maxHeight": 18,
+      "maxWidth": 60,
+      "link": {
+        "url": "https://kolosh.dakota.com.br/?o=d/",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    }
+  },
+  "image#missisipi": {
+    "props": {
+      "src": "assets/svg/missisipi.svg",
+      "maxHeight": 18,
+      "maxWidth": 60,
+      "link": {
+        "url": "https://mississipi.dakota.com.br/",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    }
+  },
+  "image#tanara": {
+    "props": {
+      "src": "assets/svg/tanara_logo.svg",
+      "maxHeight": 18,
+      "maxWidth": 60,
+      "link": {
+        "url": "https://www.tanarabrasil.com.br/",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    }
+  },
+  "image#campesi": {
+    "props": {
+      "src": "assets/svg/campesi.svg",
+      "maxHeight": 18,
+      "maxWidth": 60,
+      "link": {
+        "url": "https://campesi.dakota.com.br/",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    }
+  },
+  "image#pink_cats": {
+    "props": {
+      "src": "assets/svg/pink_cats.svg",
+      "maxHeight": 18,
+      "maxWidth": 60,
+      "link": {
+        "url": "https://pinkcats.dakota.com.br/",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    }
+  },
+  "image#kolway": {
+    "props": {
+      "src": "assets/svg/kolway.svg",
+      "maxHeight": 18,
+      "maxWidth": 60,
+      "link": {
+        "url": "https://kolway.dakota.com.br/",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    }
+  },
+  "flex-layout.row#topo-flutuante": {
+    "title": "Topo Flutuante",
+    "props": {
+      "blockClass": ["topo-menu-flutuante", "desktop"],
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "verticalAlign": "center",
+      "fullWidth": true,
+      "paddingTop": 2,
+      "paddingBottom": 2
+    },
+    "children": [
+      "rich-text#topo-flutuante-01",
+      "rich-text#topo-flutuante-02",
+      "rich-text#topo-flutuante-03",
+      "rich-text#topo-flutuante-04"
+    ]
+  },
+  "rich-text#topo-flutuante-01": {
+    "title": "Conteudo 01",
+    "props": {
+      "text": "3% de desconto no PIX",
+      "textColor": "c-on-base--inverted",
+      "blockClass": ["margin-0", "topo-flutuante-01", "topo-flutuante"]
+    }
+  },
+  "rich-text#topo-flutuante-02": {
+    "title": "Conteudo 02",
+    "props": {
+      "text": "Frete grátis para todo Brasil (compras acima de R$ 249,90)",
+      "textColor": "c-on-base--inverted",
+      "blockClass": ["margin-0", "topo-flutuante-02", "topo-flutuante"]
+    }
+  },
+  "rich-text#topo-flutuante-03": {
+    "title": "Conteudo 03",
+    "props": {
+      "text": "10x sem juros no cartão de crédito",
+      "textColor": "c-on-base--inverted",
+      "blockClass": ["margin-0", "topo-flutuante-03", "topo-flutuante"]
+    }
+  },
+  "rich-text#topo-flutuante-04": {
+    "title": "Conteudo 04",
+    "props": {
+      "text": "Primeira troca grátis",
+      "textColor": "c-on-base--inverted",
+      "blockClass": ["margin-0", "topo-flutuante-04", "topo-flutuante"] 
+    }
+  },
+  "flex-layout.row#topo-flutuante-mobile": {
+    "title": "Topo Flutuante",
+    "props": {
+      "blockClass": "topo-menu",
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "verticalAlign": "center",
+      "fullWidth": true,
+      "paddingTop": 2,
+      "paddingBottom": 2
+    },
+    "children": [
+      "slider-layout#topo-flutuante-mobile"
+    ]
+  },
+  "slider-layout#topo-flutuante-mobile": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 4000
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "topo-flutuante",
+      "showPaginationDots": "never" 
+    },
+    "children": [
+      "rich-text#topo-flutuante-01",
+      "rich-text#topo-flutuante-02",
+      "rich-text#topo-flutuante-03",
+      "rich-text#topo-flutuante-04"
+    ]
+  }
+}

@@ -1,0 +1,544 @@
+.flexRow--content-custom .flexRowContent--content-custom {
+    max-width: 95%;
+    margin: auto;
+}
+
+.flexRow--container-custom .flexRowContent--container-custom {
+    padding: 0 20px;
+}
+
+.flexRowContent--main-header {
+    padding: 11px 0px;
+}
+
+:global(.vtex-sticky-layout-0-x-wrapper--sticky-header--stuck) .flexRowContent--main-header {
+    padding: 3px 0px;
+}
+
+:global(.vtex-sticky-layout-0-x-wrapper--sticky-header--stuck) :global(.vtex-sticky-layout-0-x-container--sticky-header) {
+    box-shadow: 0 4px 7px -6px grey;
+}
+
+.flexRow--topo-menu,
+.flexRow--topo-menu-flutuante {
+    background-color: #db3d68;
+}
+
+.flexRowContent--topo-menu :global(.vtex-rich-text-0-x-paragraph),
+.flexRowContent--topo-menu :global(.vtex-rich-text-0-x-link) {
+    color: white;
+    font-size: 14px;
+    letter-spacing: 0.2px;
+    margin: 0;
+}
+
+.flexRowContent--topo-menu-flutuante :global(.vtex-rich-text-0-x-container) {
+    padding: 0px 15px;
+}
+
+.flexRow--logos-marca :global(.vtex-store-components-3-x-imageElement) {
+    display: block;
+    width: 100%;
+}
+
+.flexRow--topo-menu .flexRowContent--logos-marca {
+    gap: 25px;
+    align-items: center;
+}
+
+.flexRow--main-header,
+.flexRow--main-header-mobile,
+.flexRow--search-bar-mobile {
+    background: white;
+}
+
+.flexRowContent--links-central-de-atendimento :global(.vtex-store-link-0-x-link) {
+    display: inline-block;
+    padding: 5px 30px;
+    background: none;
+    color: #000;
+    font-size: 24px;
+    width: auto;
+    text-align: center;
+    margin: 20px;
+    text-decoration: none;
+    border-radius: 15px;
+    border: 1px solid #000;
+    letter-spacing: 1px;
+    font-family: 'Larsseit Medium';
+}
+
+.flexCol--container-links-institucional :global(.vtex-store-link-0-x-link) {
+    display: block;
+    width: 100%;
+    padding: 15px;
+    cursor: pointer;
+    position: relative;
+    font-size: 17px;
+    box-sizing: border-box;
+    border-bottom: 1px solid #ccc;
+    letter-spacing: 1px;
+    color: #858585;
+}
+
+.flexRowContent--links-account :global(.vtex-store-link-0-x-link--links-account) {
+    background: #000;
+    color: #fff;
+    width: 100%;
+    display: inline-block;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 12px;
+    margin: 15px 15px;
+    border: 3px solid #000;
+    text-decoration: none;
+    text-align: center;
+}
+
+.flexRowContent--links-account :global(.vtex-store-link-0-x-link--links-account):hover {
+    background: #fff;
+    color: #000;
+}
+
+.flexRow--links-account :global(.vtex-store-components-3-x-container) {
+    max-width: 1000px;
+}
+
+.flexRow--condicoes-geral :global(.vtex-store-link-0-x-link--condicoes-gerais),
+.flexRowContent--troca-devolucao :global(.vtex-store-link-0-x-link--trocas-devolucao),
+.flexRow--politica-privacidade :global(.vtex-store-link-0-x-link--politicas-privacidade) {
+    color: black;
+}
+
+.flexRowContent--menu-footer :global(.vtex-menu-2-x-styledLinkContent):hover {
+    color: #db3d68;
+    text-decoration: underline;
+}
+
+.flexRow--footer-seguranca {
+    background-color: #eee;
+}
+
+.flexRowContent--footer-seguranca {
+    justify-content: center;
+    gap: 35px;
+    align-items: flex-start;
+}
+
+.flexColChild--plataformas:last-child {
+    height: 20px !important;
+    align-items: flex-end;
+    display: flex;
+}
+
+.flexRowContent--copyright-footer {
+    border-top: 1px solid #dcd6d1;
+}
+
+.flexRowContent--redes-sociais {
+    justify-content: center;
+    gap: 20px;
+}
+
+.flexRow--newsletter {
+    background-color: #db3d68;
+    position: relative;
+}
+
+.flexRow--newsletter .flexColChild--newsletter {
+    width: 100%;
+}
+
+.flexRow--compre-numeracao {
+    background-color: #EBEBEB;
+}
+
+.flexRowContent--conteudo-blog {
+    gap: 35px;
+}
+
+.flexRowContent--main-header-mobile {
+    align-items: center;
+}
+
+.flexRowContent--main-header-mobile :global(.vtex-minicart-2-x-openIconContainer),
+.flexRowContent--main-header-mobile :global(.vtex-minicart-2-x-openIconContainer) :global(.vtex-button__label) {
+    padding: 0;
+}
+
+.flexCol--header-numeracao {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    gap: 8px;
+    grid-auto-rows: 38px;
+    position: relative;
+    padding-top: 23px;
+}
+
+.flexCol--header-numeracao::before {
+    content: 'compre por numeração';
+    display: block;
+    position: absolute;
+    text-align: center;
+    font-family: 'Larsseit Bold';
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #222222;
+    width: 100%;
+}
+
+.flexRow--menu-categorias-header {
+    border-top: 1px solid #EEEEEE;
+    border-bottom: 1px solid #EEEEEE;
+    padding: 3px 0px 2px 0px;
+}
+
+.flexCol--header-numeracao :global(.vtex-store-link-0-x-link) {
+    padding: 10px 10px;
+    border: 1px solid black;
+    cursor: pointer;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    display: block;
+}
+
+.flexRowContent--header-departamento {
+    overflow: scroll;
+    gap: 13px;
+    padding-left: 6px;
+}
+
+.flexRowContent--header-departamento .stretchChildrenWidth {
+    width: 22% !important;
+    flex-shrink: 0;
+}
+
+.flexRow--topo-menu-mobile {
+    display: block;
+    width: 100%;
+    text-align: center;
+    padding: 20px;
+    border-bottom: 1px solid #EEEEEE;
+}
+
+.flexRowContent--product-main .flexCol--product-informacoes {
+    position: sticky;
+    top: 120px;
+    height: 115vh !important;
+    padding: 0 40px;
+}
+
+.flexRow--buy-button :global(.vtex-button) {
+    height: 45px;
+    background: #45eb85;
+    border: none;
+    border-radius: 3px;
+}
+
+.flexRow--buy-button :global(.vtex-add-to-cart-button-0-x-buttonText--checkout) {
+    color: black;
+    font-size: 18px;
+    font-family: 'Larsseit Bold';
+    letter-spacing: 2px;
+}
+
+.flexCol--buy-button-whislist-left :global(.vtex-button) {
+    background: #FFFFFF;
+    border: 1.5px solid #222222;
+    height: 45px;
+}
+
+.flexCol--buy-button-whislist-left :global(.vtex-button__label),
+.flexCol--buy-button-whislist-rigth :global(.vtex-button__label) {
+    padding: 0px 8px;
+}
+
+.flexCol--buy-button-whislist-left :global(.vtex-button__label) :global(.vtex-add-to-cart-button-0-x-buttonText) {
+    font-size: 13px;
+    color: black;
+    font-family: 'Larsseit Bold';
+    letter-spacing: 2px;
+}
+
+.flexColChild--buy-button-whislist-rigth :global(.vtex-button) {
+    display: block;
+    width: 100%;
+    background: #F6F6F6;
+    border-radius: 3px;
+    height: 45px;
+}
+
+.flexColChild--buy-button-whislist-rigth :global(.vtex-button__label)::after {
+    content: 'Inserir na Lista de Desejos';
+    display: block;
+    letter-spacing: 0.05em;
+    color: #222222;
+    font-size: 14px;
+    font-family: 'Larsseit Medium';
+    text-transform: none;
+    padding-left: 10px;
+}
+
+.flexCol--product-informacoes .flexColChild--product-informacoes {
+    display: block;
+    width: 100%;
+}
+
+.flexRowContent--beneficios {
+    border-top: 1px solid #F6F6F6;
+}
+
+.flexCol--product-informacoes :global(.vtex-store-components-3-x-skuSelectorContainer) {
+    border-top: 1px solid #F6F6F6;
+    margin-top: 20px;
+}
+
+.flexRowContent--productSpecificationGroup {
+    background: #F6F6F6;
+    border-radius: 5px;
+    padding: 34px 50px;
+}
+
+.flexRowContent--title-description {
+    border-bottom: 1px solid #F6F6F6;
+}
+
+.flexRow--productSpecification {
+    padding: 2px 0px;
+}
+
+.flexRowContent--cartSummary,
+.flexRowContent--cartSummaryCustom {
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.flexRowContent--minicart-footer-custom :global(.vtex-minicart-2-x-minicartCheckoutButton) :global(.vtex-button) {
+    background: black;
+    border: none;
+    border-radius: 5rem;
+    height: 54px;
+}
+
+
+.flexRowContent--minicart-footer :global(.vtex-minicart-2-x-minicartCheckoutButton) :global(.vtex-button) {
+    height: 45px;
+    background: #222;
+    border-radius: 3px;
+    border: none;
+}
+
+.flexRowContent--minicart-footer-custom :global(.vtex-minicart-2-x-minicartCheckoutButton) :global(.vtex-button__label),
+.flexRowContent--minicart-footer :global(.vtex-minicart-2-x-minicartCheckoutButton) :global(.vtex-button__label) {
+    font-size: 0px;
+}
+
+.flexRowContent--minicart-footer-custom :global(.vtex-minicart-2-x-minicartCheckoutButton) :global(.vtex-button__label)::after {
+    font-size: 18px;
+    content: 'Finalizar compra';
+    display: block;
+    color: white;
+    text-transform: none;
+}
+
+.flexRowContent--minicart-footer :global(.vtex-minicart-2-x-minicartCheckoutButton) :global(.vtex-button__label)::after {
+    font-size: 14px;
+    content: 'Finalizar compra';
+    display: block;
+    color: white;
+    text-transform: uppercase;
+    font-family: 'Larsseit Medium';
+    letter-spacing: 1px;
+}
+
+.flexRow--minicart-footer {
+    box-shadow: none;
+    background: #F6F6F6;
+}
+
+.flexRow--minicart-header {
+    background: #F6F6F6;
+    height: 60px;
+}
+
+.flexRow--minicart-header .flexRowContent--minicart-header {
+    padding: 20px 25px;
+}
+
+.flexRow--minicart-header .flexRowContent--minicart-header :global(.vtex-rich-text-0-x-paragraph) {
+    color: #222;
+    font-size: 16px;
+    font-weight: 700;
+    letter-spacing: 0.8px;
+}
+
+.flexRow--buy-button-mobile {
+    position: fixed;
+    bottom: 0px;
+    background: white;
+    left: 0px;
+    right: 0px;
+    box-shadow: 0px -2px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 15px 15px 0px 0px;
+    z-index: 99;
+}
+
+.flexRowContent--buy-button-mobile {
+    padding-left: 15px;
+    padding-right: 15px;
+    gap: 8px;
+}
+
+.flexRow--header-departamento {
+    display: none;
+}
+
+.flexCol--filterCol :global(.vtex-disclosure-layout-1-x-trigger) {
+    background: #DB3D68;
+    border-radius: 3px;
+    padding: 11px 15px;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+}
+
+.flexCol--filterCol :global(.vtex-disclosure-layout-1-x-trigger--visible) {
+    position: relative;
+    width: 100%;
+    background: #F6F6F6;
+    margin-top: 70px;
+}
+
+.flexCol--filterCol :global(.vtex-disclosure-layout-1-x-trigger--visible) :global(.vtex-rich-text-0-x-paragraph--title-filter) {
+    color: #DB3D68;
+}
+
+.flexCol--filterCol :global(.vtex-disclosure-layout-1-x-trigger--visible) :global(.vtex-rich-text-0-x-paragraph--title-filter)::after {
+    content: "";
+    width: 10px;
+    height: 10px;
+    transform: rotate(45deg);
+    border-right: 2px solid #DB3D68;
+    border-bottom: 2px solid #DB3D68;
+    font-size: 0;
+    position: absolute;
+    right: 15px;
+    transform: translateY(-50%) rotate(-135deg);
+    top: 25px;
+    display: block;
+}
+
+.flexCol--filterCol :global(.vtex-search-result-3-x-filters--layout) {
+    width: 275px;
+}
+
+.flexRowContent--content-search {
+    position: relative;
+}
+
+@media(min-width: 769px) {
+    .flexRowContent--menu-footer :global(.vtex-menu-2-x-menuContainer) {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .flexRowContent--menu-footer :global(.vtex-menu-2-x-styledLinkContent) {
+        font-size: 15px;
+    }
+}
+
+@media(max-width: 768px) {
+
+    .flexRowContent--productSpecificationGroup {
+        margin-top: 15px;
+        padding: 34px 25px;
+    }
+
+    .flexRow--beneficios .flexCol--beneficios {
+        flex-direction: row;
+        gap: 13px;
+        align-items: center;
+    }
+
+    .flexRowContent--conteudo-blog {
+        padding: 0px 20px;
+    }
+
+    .flexRowContent--conteudo-blog .flexCol--conteudo-02,
+    .flexRowContent--conteudo-blog .flexCol--conteudo-03 {
+        display: grid;
+        grid-template-columns: 1.1fr 0.9fr;
+        gap: 25px;
+    }
+
+    .flexRowContent--conteudo-blog .flexCol--conteudo-02 {
+        border-top: 1px solid #cecece;
+        border-bottom: 1px solid #cecece;
+        padding-top: 25px;
+        padding-bottom: 30px;
+        margin-bottom: 30px;
+        margin-top: 25px;
+    }
+
+    .flexCol--conteudo-02 :global(.vtex-rich-text-0-x-link--conteudo-blog),
+    .flexCol--conteudo-03 :global(.vtex-rich-text-0-x-link--conteudo-blog) {
+        font-size: 12px;
+    }
+
+    .flexCol--conteudo-01 :global(.vtex-rich-text-0-x-link--conteudo-blog) {
+        font-size: 14px;
+    }
+
+    .flexRowContent--menu-footer :global(.vtex-menu-2-x-menuContainer) {
+        gap: 8px;
+    }
+
+    .flexRowContent--links-central-de-atendimento :global(.vtex-store-link-0-x-link) {
+        padding: 27px 30px;
+        background: #fbf9fa;
+        width: 270px;
+        border-radius: 20px;
+        display: block;
+        margin: 20px auto;
+    }
+
+    .flexRowContent--compre-numeracao {
+        flex-wrap: wrap;
+        max-width: 340px;
+        margin: auto;
+    }
+
+    .flexRowContent--compre-numeracao::before {
+        content: 'COMPRE NA SUA NUMERAÇÃO';
+        display: block;
+        width: 100%;
+        text-align: center;
+        color: #4C4C4C;
+        font-size: 16px;
+        font-weight: bold;
+        letter-spacing: 4px;
+        font-family: 'Larsseit Extra Bold';
+        margin-bottom: 8px;
+    }
+
+    .flexRowContent--menu-footer :global(.vtex-menu-2-x-styledLinkContent) {
+        font-size: 16px;
+        font-family: 'Larsseit Bold';
+        justify-content: center;
+    }
+
+    .flexRowContent--product-main .flexCol--product-informacoes {
+        height: auto !important;
+        padding: 0px;
+    }
+
+    .flexRowContent--product-main {
+        margin-top: 0;
+        padding-top: 0;
+    }
+}

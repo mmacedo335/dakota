@@ -1,0 +1,177 @@
+{
+  "flex-layout.row#beneficios": {
+    "title": "Barra beneficios",
+    "props": {
+      "marginBottom": 5,
+      "marginTop": 4,
+      "paddingTop": 6,
+      "blockClass": "beneficios",
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true,
+      "horizontalAlign": "between"
+    },
+    "children": [
+      "flex-layout.col#beneficios-01",
+      "flex-layout.col#beneficios-02",
+      "flex-layout.col#beneficios-03"
+    ]
+  },
+  "flex-layout.col#beneficios-01": {
+    "children": ["image#beneficios-01", "rich-text#beneficios-01"],
+    "props": {
+      "preventVerticalStretch": true,
+      "horizontalAlign": "center",
+      "width": "22%"
+    }
+  },
+  "image#beneficios-01": {
+    "title": "Imagem 01",
+    "props": {
+      "src": "assets/svg/desconto.svg"
+    }
+  },
+  "rich-text#beneficios-01": {
+    "title": "Texto",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Desconto de \n **3% no PIX**",
+      "blockClass": "beneficios"
+    }
+  },
+  "flex-layout.col#beneficios-02": {
+    "children": ["image#beneficios-02", "rich-text#beneficios-02"],
+    "props": {
+      "preventVerticalStretch": true,
+      "width": "30%",
+      "horizontalAlign": "center"
+    } 
+  },
+  "image#beneficios-02": {
+    "title": "Imagem 02",
+    "props": {
+      "src": "assets/svg/frete.svg"
+    }
+  },
+  "rich-text#beneficios-02": {
+    "title": "Texto",
+    "props": {
+      "textAlignment": "CENTER",
+      "blockClass": "beneficios",
+      "textPosition": "CENTER",
+      "text": "**FRETE GRÁTIS** para **TODO BRASIL** em compras acima de R$ 249,90"
+    }
+  },
+  "flex-layout.col#beneficios-03": {
+    "children": ["image#beneficios-03", "rich-text#beneficios-03"],
+    "props": {
+      "preventVerticalStretch": true,
+      "horizontalAlign": "center",
+      "width": "22%"
+    }
+  },
+  "image#beneficios-03": {
+    "title": "Imagem 03",
+    "props": {
+      "src": "assets/svg/parcelamento.svg"
+    }
+  },
+  "rich-text#beneficios-03": {
+    "title": "Texto",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": "beneficios",
+      "text": "Parcelamento em até **10x sem juros**"
+    }
+  },
+  "flex-layout.row#beneficios-mobile": {
+    "title": "Barra beneficios Mobile",
+    "props": {
+      "marginBottom": 5,
+      "marginTop": 4,
+      "paddingTop": 6, 
+      "blockClass": "beneficios",
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": false,
+      "horizontalAlign": "between"
+    },
+    "children": [
+      "flex-layout.col#beneficios-01-mobile",
+      "flex-layout.col#beneficios-02-mobile",
+      "flex-layout.col#beneficios-03-mobile"
+    ]
+  },
+  "flex-layout.col#beneficios-01-mobile": {
+    "children": ["image#beneficios-01-mobile", "rich-text#beneficios-01-mobile"],
+    "props": {
+      "preventVerticalStretch": true,
+      "horizontalAlign": "center",
+      "width": "22%",
+      "blockClass": "beneficios"
+    }
+  },
+  "image#beneficios-01-mobile": {
+    "title": "Imagem 01",
+    "props": {
+      "src": "assets/svg/desconto-v2.svg"
+    }
+  },
+  "rich-text#beneficios-01-mobile": {
+    "title": "Texto",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "text": "Desconto de **3% no PIX**",
+      "blockClass": "beneficios" 
+    }
+  },
+  "flex-layout.col#beneficios-02-mobile": {
+    "children": ["image#beneficios-02-mobile", "rich-text#beneficios-02-mobile"],
+    "props": {
+      "preventVerticalStretch": true,
+      "width": "30%",
+      "horizontalAlign": "center",
+      "blockClass": "beneficios"
+    } 
+  },
+  "image#beneficios-02-mobile": {
+    "title": "Imagem 02",
+    "props": {
+      "src": "assets/svg/frete-v2.svg"
+    }
+  },
+  "rich-text#beneficios-02-mobile": {
+    "title": "Texto",
+    "props": {
+      "textAlignment": "LEFT",
+      "blockClass": "beneficios", 
+      "textPosition": "LEFT",
+      "text": "**FRETE GRÁTIS** para **TODO BRASIL** em compras acima de R$ 249,90"
+    }
+  },
+  "flex-layout.col#beneficios-03-mobile": {
+    "children": ["image#beneficios-03-mobile", "rich-text#beneficios-03-mobile"],
+    "props": {
+      "preventVerticalStretch": true,
+      "horizontalAlign": "center",
+      "width": "22%",
+      "blockClass": "beneficios"
+    }
+  },
+  "image#beneficios-03-mobile": {
+    "title": "Imagem 03",
+    "props": {
+      "src": "assets/svg/parcelamento-v2.svg"
+    }
+  },
+  "rich-text#beneficios-03-mobile": { 
+    "title": "Texto",
+    "props": {
+      "textAlignment": "LEFT",
+      "textPosition": "LEFT",
+      "blockClass": "beneficios",
+      "text": "Parcelamento em até **10x sem juros**"
+    }
+  }
+}

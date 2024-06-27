@@ -1,0 +1,156 @@
+{
+  // Configuração global da Vitrine slider da home
+  "slider-layout#slider-product": {
+    "title": "Slider Vitrine",
+    "props": {
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always",
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 2,
+        "phone": 1
+      } 
+    }
+  },
+  // VIitrine produtos 01
+  "flex-layout.row#shelf-01": {
+    "title": "01 - Vitrine",
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "container-custom",
+        "vitrine-produto"
+      ],
+      "marginBottom": 5,
+      "marginTop": 5
+    },
+    "children": [
+      "flex-layout.col#shelf-01"
+    ]
+  },
+  "flex-layout.col#shelf-01": {
+    "props": {
+      "blockClass": "vitrine-produto"
+    },
+    "children": [
+      "rich-text#title-shelf-01",
+      "list-context.product-list#vitrine-01"
+    ]
+  },
+  "rich-text#title-shelf-01": {
+    "title": "Titulo",
+    "props": { 
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "NOVIDADES DA LOJA",
+      "blockClass": "title-padrao"
+    }
+  },
+  "list-context.product-list#vitrine-01": {
+    "title": "01 - Vitrine",
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#slider-product"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  // VIitrine produtos 02
+  "flex-layout.row#shelf-02": {
+    "title": "02 - Vitrine",
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "container-custom",
+        "vitrine-produto"
+      ],
+      "marginBottom": 5,
+      "marginTop": 5
+    },
+    "children": [
+      "flex-layout.col#shelf-02"
+    ]
+  },
+  "flex-layout.col#shelf-02": {
+    "props": {
+      "blockClass": "vitrine-produto"
+    },
+    "children": [
+      "rich-text#title-shelf-02",
+      "list-context.product-list#vitrine-02"
+    ]
+  },
+  "rich-text#title-shelf-02": {
+    "title": "Titulo",
+    "props": { 
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "OS MAIS VENDIDOS",
+      "blockClass": "title-padrao"
+    }
+  },
+  "list-context.product-list#vitrine-02": {
+    "title": "02 - Vitrine",
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#slider-product"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  // VIitrine produtos 03
+  "flex-layout.row#shelf-03": {
+    "title": "03 - Vitrine",
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "container-custom",
+        "vitrine-produto"
+      ],
+      "marginBottom": 5,
+      "marginTop": 5
+    },
+    "children": [
+      "flex-layout.col#shelf-03"
+    ]
+  },
+  "flex-layout.col#shelf-03": {
+    "props": {
+      "blockClass": "vitrine-produto"
+    },
+    "children": [
+      "rich-text#title-shelf-03",
+      "list-context.product-list#vitrine-03"
+    ]
+  },
+  "rich-text#title-shelf-03": {
+    "title": "Titulo",
+    "props": { 
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "As melhores ofertas", 
+      "blockClass": "title-padrao"
+    }
+  },
+  "list-context.product-list#vitrine-03": {
+    "title": "03 - Vitrine",
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#slider-product"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  }
+}
