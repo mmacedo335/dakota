@@ -7,7 +7,7 @@
       "blockClass": "menu-principal", 
       "itemProps": {
         "type": "internal",
-        "href": "#",
+        "href": "/bota",
         "noFollow": true,
         "tagTitle": "Bota",
         "text": "Bota"

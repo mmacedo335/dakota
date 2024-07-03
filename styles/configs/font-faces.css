@@ -11,7 +11,7 @@
     font-style: normal;
     font-weight: 200;
 	font-display: swap;
-    src: local('Larsseit'), url('https://fonts.cdnfonts.com/s/95001/LarsseitThin.woff') format('woff');
+    src: url('assets/fonts/LarsseitThin .woff') format('woff');
 }
 
 @font-face {
@@ -19,7 +19,7 @@
     font-style: normal;
     font-weight: 500;
 	font-display: swap;
-    src: local('Larsseit'), url('https://fonts.cdnfonts.com/s/95001/LarsseitMedium.woff') format('woff');
+    src: url('assets/fonts/LarsseitMedium.woff') format('woff');
 }
 
 @font-face {
@@ -27,7 +27,7 @@
     font-style: normal;
     font-weight: 700;
 	font-display: swap;
-    src: local('Larsseit'), url('https://fonts.cdnfonts.com/s/95001/LarsseitBold.woff') format('woff');
+    src: url('assets/fonts/LarsseitBold.woff') format('woff');
 }
 
 
@@ -36,7 +36,7 @@
     font-style: normal; 
     font-weight: 800;
 	font-display: swap;
-    src: local('Larsseit'), url('https://fonts.cdnfonts.com/s/95001/LarsseitExtraBold.woff') format('woff');
+    src: url('assets/fonts/LarsseitExtraBold.woff') format('woff');
 }
  
 @font-face {

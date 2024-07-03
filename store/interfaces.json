@@ -1,5 +1,8 @@
 {
   "custom-styles": {
     "component": "CustomStyles"
+  },
+  "summary-minicart": {
+    "component": "SummaryMinicart"
   }
 }

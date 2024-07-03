@@ -1,19 +1,18 @@
 {
-
   "add-to-cart-button#checkout": {
     "props": {
       "addToCartFeedback": "customEvent",
-      "isOneClickBuy": true, 
+      "isOneClickBuy": true,
       "text": "Comprar",
-      "blockClass": "checkout" 
-    } 
+      "blockClass": "checkout"
+    }
   },
 
   "add-to-cart-button": {
     "props": {
       "addToCartFeedback": "customEvent",
       "customPixelEventId": "add-to-cart-button"
-    } 
+    }
   },
 
   // Minicart v1
@@ -34,9 +33,12 @@
     "children": ["minicart-base-content#custom"]
   },
   "minicart-base-content#custom": {
-    "children": ["minicart-product-list#custom", "flex-layout.row#minicart-footer-custom"],
-    "blocks": ["minicart-empty-state#custom"] 
-  }, 
+    "children": [
+      "minicart-product-list#custom",
+      "flex-layout.row#minicart-footer-custom"
+    ],
+    "blocks": ["minicart-empty-state#custom"]
+  },
   "flex-layout.row#minicart-footer-custom": {
     "props": {
       "paddingTop": "3",
@@ -52,8 +54,8 @@
   },
   "product-list#minicart#custom": {
     "blocks": ["product-list-content-mobile#summary"]
-  },  
-  "product-list-content-mobile#summary":{
+  },
+  "product-list-content-mobile#summary": {
     "children": ["flex-layout.row#cartSummary"]
   },
   "flex-layout.row#cartSummary": {
@@ -77,12 +79,12 @@
   "flex-layout.col#minicart-product-image": {
     "children": ["product-list-image#minicart"],
     "props": {
-      "marginRight": 4 
+      "marginRight": 4
     }
   },
   "product-list-image#minicart": {
     "props": {
-      "width": 50 
+      "width": 50
     }
   },
   "flex-layout.col#productInfo": {
@@ -99,7 +101,7 @@
     "props": {
       "blockClass": "minicart"
     }
-  }, 
+  },
   "minicart-checkout-button": {
     "props": {
       "finishShoppingButtonLink": "/checkout/#/orderform"
@@ -112,7 +114,7 @@
     "children": ["flex-layout.col#empty-state"],
     "props": {
       "marginTop": 2,
-      "marginBottom": 5 
+      "marginBottom": 5
     }
   },
   "flex-layout.col#empty-state": {
@@ -126,7 +128,7 @@
     }
   },
   "rich-text#minicart-default-empty-state": {
-    "props": { 
+    "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "blockClass": "minicart-empty",
@@ -142,9 +144,13 @@
     },
     "children": ["minicart-base-content"]
   },
-  "minicart-base-content": { 
+  "minicart-base-content": {
     "blocks": ["minicart-empty-state#custom"],
-    "children": ["flex-layout.row#minicart-header", "minicart-product-list", "flex-layout.row#minicart-footer"]
+    "children": [
+      "flex-layout.row#minicart-header",
+      "minicart-product-list",
+      "flex-layout.row#minicart-footer"
+    ]
   },
   "flex-layout.row#minicart-header": {
     "props": {
@@ -160,18 +166,20 @@
   "rich-text#minicart-header": {
     "title": "title minicart",
     "props": {
-      "text": "Seu carrinho", 
+      "text": "Seu carrinho",
       "blockClass": "margin-0"
     }
   },
   "flex-layout.row#minicart-footer": {
     "props": {
-      "blockClass": "minicart-footer"
+      "blockClass": "minicart-footer",
+      "paddingTop": 6,
+      "paddingBottom": 6
     },
     "children": ["flex-layout.col#minicart-footer"]
   },
   "flex-layout.col#minicart-footer": {
-    "children": ["minicart-summary", "minicart-checkout-button"]
+    "children": ["summary-minicart", "minicart-checkout-button"]
   },
   "minicart-product-list": {
     "blocks": ["product-list#minicart"]
@@ -180,7 +188,7 @@
     "blocks": ["product-list-content-mobile"]
   },
   //list
-  "product-list-content-mobile":{ 
+  "product-list-content-mobile": {
     "children": ["flex-layout.row#cartSummaryCustom"]
   },
   "flex-layout.row#cartSummaryCustom": {
@@ -209,7 +217,7 @@
 
   "product-list-image#minicart-custom": {
     "props": {
-      "width": 100 
+      "width": 100
     }
   },
   "flex-layout.col#productInfo-custom": {
@@ -225,10 +233,10 @@
 
   "flex-layout.row#productInfo__name": {
     "children": ["vtex.product-list:product-name#minicart", "remove-button"],
-    "props":{
+    "props": {
       "preventHorizontalStretch": true,
       "horizontalAlign": "between",
-      "preserveLayoutOnMobile": true 
+      "preserveLayoutOnMobile": true
     }
   },
   "flex-layout.row#bottomInfo": {
@@ -244,14 +252,14 @@
       "preventHorizontalStretch": true,
       "horizontalAlign": "between"
     }
-  }, 
+  },
   "quantity-selector": {
     "props": {
-      "mode": "stepper" 
+      "mode": "stepper"
     }
   },
   "flex-layout.col#price-minicart": {
-    "children": [ 
+    "children": [
       "price"
     ],
     "props": {

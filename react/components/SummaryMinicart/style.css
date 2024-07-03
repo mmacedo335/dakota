@@ -1,0 +1,42 @@
+.customsummary .total span {
+    font-size: 20px;
+    color: #DB3D68;
+    font-family: 'Larsseit Medium';
+}
+
+.customsummary .total {
+    display: flex;
+    align-items: center;
+    justify-content: right;
+    gap: 12px;
+}
+
+.customsummary .parcelas {
+    display: block;
+    margin-top: 8px;
+}
+
+.customsummary .parcelas span {
+    line-height: 20px;
+    font-size: 15px;
+    color: black;
+    font-family: 'Larsseit Thin';
+}
+
+.customsummary .parcelas span b {
+    font-family: 'Larsseit Regular';
+}
+
+.customsummary {
+    text-align: right;
+    padding: 0px 35px;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.customsummary .title {
+    color: #222;
+    font-size: 16px;
+    text-align: left;
+}

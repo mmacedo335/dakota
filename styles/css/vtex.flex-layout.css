@@ -456,6 +456,12 @@
     gap: 8px;
 }
 
+.flexCol--filterCol {
+    position: sticky;
+    top: 80px;
+    height: 100vh;
+}
+
 @media(min-width: 769px) {
     .flexRowContent--menu-footer :global(.vtex-menu-2-x-menuContainer) {
         flex-direction: row;
@@ -469,7 +475,7 @@
 
 @media(max-width: 768px) {
 
-    .flexRowContent--footer-seguranca{
+    .flexRowContent--footer-seguranca {
         max-width: 350px;
         margin: auto;
     }

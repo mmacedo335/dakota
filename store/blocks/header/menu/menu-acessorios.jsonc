@@ -7,7 +7,7 @@
         "blockClass": "menu-principal",  
         "itemProps": {
           "type": "internal",
-          "href": "#",
+          "href": "/acessorios",
           "noFollow": true,
           "tagTitle": "Acessórios",
           "text": "Acessórios"

@@ -50,20 +50,24 @@
     width: 26px;
 }
 
-.minicartProductListContainer::-webkit-scrollbar-track{
+.minicartProductListContainer::-webkit-scrollbar-track {
     background: #D5D9DC;
     border-radius: 1.5px;
 }
 
-.minicartProductListContainer::-webkit-scrollbar-thumb{
+.minicartProductListContainer::-webkit-scrollbar-thumb {
     background: #37434D;
     border-radius: 1.5px;
 }
 
-.minicartProductListContainer::-webkit-scrollbar{
+.minicartProductListContainer::-webkit-scrollbar {
     width: 3px;
 }
 
-.minicartProductListContainer{
+.minicartProductListContainer {
     padding-bottom: 15px;
 }
+
+.minicartSideBarContentWrapper {
+    height: 100% !important;
+} 

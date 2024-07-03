@@ -7,7 +7,7 @@
         "blockClass": "menu-principal",  
         "itemProps": {
           "type": "internal",
-          "href": "#",
+          "href": "/tenis",
           "noFollow": true,
           "tagTitle": "Tênis",
           "text": "Tênis"
