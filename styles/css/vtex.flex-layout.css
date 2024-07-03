@@ -441,6 +441,21 @@
     position: relative;
 }
 
+.flexRow--search-topo {
+    box-shadow: inset 0px 119px #F6F6F6;
+    margin-bottom: 30px;
+}
+
+.flexRowContent--productCountMobileRow {
+    border-bottom: 1px solid #F6F6F6;
+    border-top: 1px solid #F6F6F6;
+    align-items: center;
+}
+
+.flexRowContent--searchinfomobile {
+    gap: 8px;
+}
+
 @media(min-width: 769px) {
     .flexRowContent--menu-footer :global(.vtex-menu-2-x-menuContainer) {
         flex-direction: row;
@@ -453,6 +468,11 @@
 }
 
 @media(max-width: 768px) {
+
+    .flexRowContent--footer-seguranca{
+        max-width: 350px;
+        margin: auto;
+    }
 
     .flexRowContent--productSpecificationGroup {
         margin-top: 15px;

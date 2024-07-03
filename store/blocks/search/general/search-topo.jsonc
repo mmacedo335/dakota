@@ -1,0 +1,34 @@
+{
+  "flex-layout.row#search-topo": {
+    "title": "Topo listagem",
+    "children": [
+      "flex-layout.col#search-topo"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true,
+      "blockClass": ["search-topo", "container-full"],
+      "marginBottom": 10, 
+      "paddingTop": 3
+    }
+  },
+  "flex-layout.col#search-topo": {
+    "title": "Topo listagem",
+    "children": [
+      "breadcrumb.search",
+      "flex-layout.row#searchtitle"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "fullWidth": false,
+      "blockClass": "search-topo"
+    }
+  },
+  "flex-layout.row#searchtitle": {
+    "title": "Titulo categoria",
+    "children": ["search-title.v2"],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  }
+}

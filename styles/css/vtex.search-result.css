@@ -75,13 +75,16 @@
 
 .orderBy--layout {
   width: 215px;
+  max-width: 100%;
 }
 
-.gallery {
+.gallery,
+.accordionFilterContainer {
   padding: 0;
 }
 
-.filterTitleSpan {
+.filterTitleSpan,
+.accordionFilterItemTitle {
   letter-spacing: 0.1em;
   color: #222222;
   text-transform: uppercase;
@@ -89,13 +92,21 @@
   font-size: 14px;
 }
 
-.filterItem :global(.vtex-checkbox__label) {
+.filterAccordionItemBox {
+  min-height: auto;
+  padding: 0px 15px;
+  border: none;
+}
+
+.filterItem :global(.vtex-checkbox__label),
+.filterAccordionItemBox :global(.vtex-checkbox__label) {
   color: #222222;
   font-family: 'Larsseit Regular';
   font-size: 14px;
 }
 
-.filterItem :global(.vtex-checkbox__inner-container) {
+.filterItem :global(.vtex-checkbox__inner-container),
+.filterAccordionItemBox :global(.vtex-checkbox__inner-container) {
   width: 14px;
   height: 14px;
   border-radius: 50px;
@@ -126,15 +137,199 @@
   display: none;
 }
 
-.buttonShowMore :global(.vtex-button){
+.buttonShowMore :global(.vtex-button) {
   width: 288px;
   height: 48px;
   border-radius: 3px;
   justify-content: center;
 }
 
-.buttonShowMore :global(.vtex-button__label){
+.buttonShowMore :global(.vtex-button__label) {
   font-size: 16px;
   text-transform: none;
   font-family: 'Larsseit Bold';
+}
+
+.galleryTitle--layout {
+  font-size: 1.625rem;
+  font-family: 'Larsseit Extra Bold';
+  color: #333;
+  display: block;
+  text-align: center;
+  margin-top: 0px;
+}
+
+.totalProducts--layout {
+  border: none;
+  padding: 0px;
+  color: #222;
+  font-size: 10px;
+  letter-spacing: 0.5px;
+  font-family: 'Larsseit Medium';
+}
+
+.totalProducts--layout .totalProductsMessage {
+  font-size: 0px;
+}
+
+.totalProducts--layout .totalProductsMessage::before {
+  content: 'Resultado ';
+  display: inline-block;
+  font-size: 10px;
+  color: #222;
+  text-transform: uppercase;
+}
+
+.totalProducts--layout .totalProductsMessage::after {
+  content: ' Encontrados';
+  display: inline-block;
+  font-size: 10px;
+  color: #222;
+  text-transform: uppercase;
+  font-family: 'Larsseit Regular';
+}
+
+.filterPopupButton {
+  height: 42px;
+  background: #f6f6f6;
+  width: 100%;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.filterPopupButton .filterPopupTitle {
+  margin: 0px;
+  color: #DB3D68;
+  font-size: 16px;
+  text-transform: none;
+  font-family: 'Larsseit Medium';
+}
+
+.filterPopupButton .filterPopupArrowIcon .filterIcon {
+  display: none;
+}
+
+.filterPopupButton .filterPopupArrowIcon::after {
+  content: '';
+  background: url('assets/img/icon-plus.png') no-repeat;
+  display: block;
+  width: 14px;
+  height: 14px;
+}
+
+:global(.vtex-store-icons-0-x-inlineGridIcon),
+:global(.vtex-store-icons-0-x-gridIcon) {
+  display: none;
+}
+
+.galleryLayoutOptionButton:first-child {
+  width: 43px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 3px;
+  border: 1.5px solid #ACACAC;
+  border-radius: 3px;
+  border-left: none;
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+  transition: 0.3s;
+  order: 0;
+}
+
+.galleryLayoutOptionButton:last-child {
+  width: 43px;
+  height: 32px;
+  display: flex;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1.5px solid #ACACAC;
+  border-radius: 3px;
+  border-right: none;
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+  transition: 0.3s;
+  order: -1;
+}
+
+.galleryLayoutOptionButton:last-child::after {
+  content: '';
+  width: 20px;
+  height: 18px;
+  background: #ACACAC;
+  display: block;
+  border-radius: 5px;
+  transition: 0.3s;
+}
+
+.galleryLayoutOptionButton:first-child::after,
+.galleryLayoutOptionButton:first-child::before {
+  content: '';
+  width: 9px;
+  height: 18px;
+  background: #ACACAC;
+  display: block;
+  border-radius: 2px;
+  transition: 0.3s;
+}
+
+.galleryLayoutOptionButton--selected:first-child::after,
+.galleryLayoutOptionButton--selected:first-child::before,
+.galleryLayoutOptionButton--selected:last-child::after {
+  background: #fff;
+  transition: 0.3s;
+}
+
+.galleryLayoutOptionButton--selected:first-child,
+.galleryLayoutOptionButton--selected:last-child {
+  background: #DB3D68;
+  z-index: 99;
+  border: 1.5px solid #DB3D68;
+  transition: 0.3s;
+}
+
+.filterBreadcrumbsText {
+  color: #DB3D68;
+  font-size: 16px;
+  font-family: 'Larsseit Medium';
+}
+
+.filterAccordionBreadcrumbs {
+  background: #F6F6F6;
+  border: none;
+  height: auto;
+  padding: 5px 16px;
+  margin-bottom: 10px;
+}
+
+.sidebar {
+  width: 85%;
+}
+
+.accordionFilterOpen .filterAccordionItemBox {
+  padding: 5px 0px;
+}
+
+.accordionFilterContainer {
+  border-bottom: 1px solid #F6F6F6;
+}
+
+.accordionFilterOpen {
+  margin-bottom: 12px;
+}
+
+@media(max-width: 768px) {
+  .gallery--grid .galleryItem {
+    padding: 0px;
+  }
+
+  .gallery--grid .galleryItem:nth-child(even) {
+    padding-left: 5px;
+  }
+
+  .gallery--grid .galleryItem:nth-child(odd) {
+    padding-right: 5px;
+  }
 }

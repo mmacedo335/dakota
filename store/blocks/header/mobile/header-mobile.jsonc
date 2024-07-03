@@ -48,7 +48,7 @@
     "props": {
       "width": "22%"
     },
-    "children": ["minicart.v2"]
+    "children": ["minicart.v2#mobile"] 
   },
   "disclosure-layout#search-bar-mobile": {
     "children": [

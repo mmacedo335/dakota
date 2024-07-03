@@ -66,9 +66,9 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
   integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
 
-"dakota.dakota-theme@https://desenvolvimento--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@0.0.0+build1719099421/public/_types/react":
+"dakota.dakota-theme@https://desenvolvimento--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@0.0.0+build1719489345/public/@types/dakota.dakota-theme":
   version "0.0.0"
-  resolved "https://desenvolvimento--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@0.0.0+build1719099421/public/_types/react#fa7a0347e046eab3dd768998fc9252b2c0dd5aef"
+  resolved "https://desenvolvimento--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@0.0.0+build1719489345/public/@types/dakota.dakota-theme#37892b4f8e0293de0ceb311f29bce64312b3dd91"
 
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
@@ -182,9 +182,9 @@ swiper@^11.1.4:
   version "0.5.6"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.locale-switcher@0.5.6/public/@types/vtex.locale-switcher#5db8558af5593d65e4fff3da0903d0081dfcab42"
 
-"vtex.login@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.59.0/public/@types/vtex.login":
-  version "2.59.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.59.0/public/@types/vtex.login#a8ed8f327b519e6b9c5da8969b69ffc4037c630b"
+"vtex.login@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.60.0/public/@types/vtex.login":
+  version "2.60.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.60.0/public/@types/vtex.login#91cda2b8f1e69fb6828fc24ecdc2260a2b5ff241"
 
 "vtex.menu@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.menu@2.35.1/public/@types/vtex.menu":
   version "2.35.1"

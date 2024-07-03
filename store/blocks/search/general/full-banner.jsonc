@@ -1,0 +1,48 @@
+{
+  "flex-layout.row#search-banner": {
+    "title": "Full banner desktop",
+    "props": {
+      "fullWidth": true,
+      "marginBottom": 5,
+      "marginTop": 0,
+      "blockClass": "search-banner"
+    },
+    "children": [
+      "image#search-banner"
+    ]
+  },
+  "image#search-banner": {
+    "props": {
+      "src": "assets/img/search-banner.jpg",
+      "blockClass": "full",
+      "link": {
+        "url": "/",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    }
+  },
+  "flex-layout.row#search-banner-mobile": {
+    "title": "Full banner mobile",
+    "props": {
+      "fullWidth": true,
+      "marginBottom": 2,  
+      "marginTop": 0,
+      "blockClass": "search-banner"
+    },
+    "children": [
+      "image#search-banner-mobile"
+    ]
+  },
+  "image#search-banner-mobile": {
+    "props": {
+      "src": "assets/img/search-banner-mobile.jpg",
+      "blockClass": "full",
+      "link": {
+        "url": "/",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    }
+  }
+}

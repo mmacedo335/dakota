@@ -8,4 +8,8 @@
 
 .container :global(.vtex-stack-layout-0-x-stackContainer) {
     z-index: 1;
+}
+
+.container {
+    max-width: 100% !important;
 } 

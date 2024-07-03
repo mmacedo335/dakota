@@ -1,0 +1,20 @@
+{
+  "flex-layout.row#seo-category": {
+    "title": "Texto Seo",
+    "children": [
+      "rich-text#textosSeo"
+    ],
+    "props": {
+      "fullWidth": true,
+      "marginBottom": 7,
+      "marginTop": 7,
+      "blockClass": ["seo-category", "container-full"]
+    }
+  },
+  "rich-text#textosSeo": {
+    "props": {
+      "text": "#### Invista em conforto e estilo com as botas femininas da Dakota! \n \n Seja qual for a época do ano, as [botas femininas](/) da Dakota são ótimas opções para montar um visual cheio de estilo. Afinal, elas são super versáteis, práticas e muito confortáveis, ou seja, perfeitas para diferentes ocasiões. \n \n Em nossa Loja Oficial, você encontra diferentes tipos de **botas femininas**, desde os clássicos e atemporais, até as opções que são tendências da moda. E claro, todas com a qualidade que só a bota Dakota oferece! Confira mais e boas compras!",
+      "blockClass": "textoSeo"
+    }
+  }
+}

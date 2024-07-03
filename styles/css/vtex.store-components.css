@@ -7,8 +7,7 @@
     padding: 0px;
 }
 
-.container:global(.vtex-search-result-3-x-searchResultContainer) :global(.vtex-flex-layout-0-x-flexRowContent--content-search),
-.container:global(.vtex-search-result-3-x-searchResultContainer) :global(.vtex-flex-layout-0-x-flexRow--seo-category) {
+:global(.vtex-flex-layout-0-x-flexRowContent--container-full) {
     max-width: 95%;
     margin: auto;
     width: 100%;
@@ -166,6 +165,6 @@
 
 @media(max-width: 768px) {
     .container {
-        padding: 0 20px;
+        padding: 0 15px;
     }
 }

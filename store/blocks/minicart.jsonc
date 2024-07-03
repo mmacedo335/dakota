@@ -17,6 +17,14 @@
   },
 
   // Minicart v1
+  "minicart.v2#mobile": {
+    "props": {
+      "quantityDisplay": "always",
+      "variation": "link",
+      "openOnHover": true
+    },
+    "children": ["minicart-base-content#custom"]
+  },
   "minicart.v2": {
     "props": {
       "quantityDisplay": "always",

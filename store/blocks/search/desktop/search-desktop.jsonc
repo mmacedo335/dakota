@@ -1,11 +1,10 @@
 {
   "search-result-layout.desktop": {
+    "title": "Listagem desktop",
     "children": [
       "flex-layout.row#search-banner",
-      //"flex-layout.row#searchbread",
-      //"flex-layout.row#searchtitle",
-      "flex-layout.row#result",
-      "flex-layout.row#seo-category"
+      "flex-layout.row#search-topo",
+      "flex-layout.row#result"
     ],
     "props": {
       "pagination": "show-more",
