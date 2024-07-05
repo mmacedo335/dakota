@@ -8,8 +8,7 @@
       "flex-layout.row#meios-pagamento-footer",
       "flex-layout.row#redes-sociais",
       "flex-layout.row#copyright-footer",
-      "flex-layout.row#footer-seguranca",
-      "minicart.v2#footer"
+      "flex-layout.row#footer-seguranca"
     ] 
   }
 }

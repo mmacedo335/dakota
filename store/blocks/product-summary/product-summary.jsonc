@@ -10,20 +10,30 @@
     ]
   },
 
+  "product-summary.shelf#menu": {
+    "children": [
+      "product-summary-image#shelf",
+      "product-summary-name"
+    ],
+    "props":{
+      "blockClass": "menucategory"
+    }
+  },
+
   "stack-layout#prodsum": {
     "children": [
       "product-summary-image#shelf",
-      "flex-layout.col#flags" 
+      "flex-layout.col#flags"
     ]
   },
 
   "flex-layout.col#flags": {
-    "children": [ 
+    "children": [
       "vtex.product-highlights@2.x:product-highlights#collection",
-      "product-price-savings#discount" 
+      "product-price-savings#discount"
     ],
-    "props": { 
-      "blockClass": "flags-summary", 
+    "props": {
+      "blockClass": "flags-summary",
       "horizontalAlign": "right"
     }
   },

@@ -42,7 +42,20 @@ const SummaryMinicart = () => {
       </div>
     );
   } else {
-    return null;
+    return (
+      <div className={styles.customsummary}>
+        <div className={styles.titlle}>
+          <span>Total</span>
+        </div>
+        <div>
+          <div className={styles.total}>
+            <span>
+              <FormattedCurrency value={total / 100} /> à vista
+            </span>
+          </div>
+        </div>
+      </div>
+    );
   }
 };
 

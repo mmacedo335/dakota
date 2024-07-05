@@ -20,14 +20,50 @@
   },
 
   "store.login": {
-    "blocks": ["login-content#default"]
+    "blocks": [
+      "flex-layout.row#title-login",   
+      "flex-layout.row#login-content"
+    ]
+  },
+
+  "flex-layout.row#title-login": {
+    "title": "Título",
+    "props": {
+      "marginTop": 5
+    }, 
+    "children": [
+      "rich-text#title-login"
+    ]
+  },
+
+  "flex-layout.row#login-content": {
+    "title": "Login",
+    "props": {
+      "marginTop": 9, 
+      "marginBottom": 10
+    },
+    "children": [
+      "login-content#default"
+    ]
+  },
+
+  "rich-text#title-login": {
+    "title": "Title login",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "blockClass": ["title-login", "margin-0"], 
+      "text": "## ACESSE A SUA CONTA \n \n Faça login através do seu cadastro em outra plataforma"  
+    }
   },
 
   "login-content#default": {
     "props": {
       "isInitialScreenOptionOnly": false,
       "defaultOption": 1,
-      "showPasswordVerificationIntoTooltip": true
+      "showPasswordVerificationIntoTooltip": true,
+      "hideIconLabel": true,
+      "hasGoogleOneTap": true
     }
   },
 

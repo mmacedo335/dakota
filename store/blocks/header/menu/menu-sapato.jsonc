@@ -1,18 +1,398 @@
 {
-    "menu-item#sapato": {
-      "props": {
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "blockClass": "menu-principal",  
-        "itemProps": {
-          "type": "internal",
-          "href": "/sapato",
-          "noFollow": true,
-          "tagTitle": "sapato",
-          "text": "sapato"
-        }
+  "menu-item#sapato": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-principal",
+      "itemProps": {
+        "type": "internal",
+        "href": "/sapato",
+        "noFollow": true,
+        "tagTitle": "sapato",
+        "text": "sapato"
       }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#sapato"
+    ]
+  },
+  "vtex.menu@2.x:submenu#sapato": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-sapato"
+    ]
+  },
+  "flex-layout.row#menu-sapato": {
+    "children": [
+      "flex-layout.row#menu-sapato-1",
+      "flex-layout.col#menu-sapato-2",
+      "flex-layout.col#menu-sapato-3"
+    ],
+    "props": {
+      "colGap": 7,
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+  // Bloco categorias
+  "flex-layout.row#menu-sapato-1": {
+    "title": "Bloco categorias",
+    "children": [
+      "flex-layout.col#menu-sapato-modelo",
+      "flex-layout.col#menu-sapato-tendencia"
+    ],
+    "props": {
+      "blockClass": "submenu",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#menu-sapato-tendencia": {
+    "title": "Menu Tendências",
+    "children": [
+      "rich-text#menu-sapato-tendencia",
+      "vtex.menu@2.x:menu#sapato-tendencia"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "vtex.menu@2.x:menu#sapato-tendencia": {
+    "title": "Tendências",
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Mary Jane / Boneca",
+            "text": "Mary Jane / Boneca"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Metalizado",
+            "text": "Metalizado"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Brilho",
+            "text": "Brilho"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Slingback",
+            "text": "Slingback"
+          }
+        }
+      ]
+    }
+  },
+  "rich-text#menu-sapato-tendencia": {
+    "title": "Título",
+    "props": {
+      "text": "Tendências",
+      "blockClass": ["margin-0", "title-submenu"]
+    }
+  },
+  "flex-layout.col#menu-sapato-modelo": {
+    "title": "Menu modelo",
+    "children": [
+      "rich-text#menu-sapato-modelo",
+      "vtex.menu@2.x:menu#sapato-modelo"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#menu-sapato-modelo": {
+    "title": "Título",
+    "props": {
+      "text": "Modelo",
+      "blockClass": ["margin-0", "title-submenu"]
+    }
+  },
+  "vtex.menu@2.x:menu#sapato-modelo": {
+    "title": "Modelo",
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Loafer",
+            "text": "Loafer"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Mocassim",
+            "text": "Mocassim"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Mule",
+            "text": "Mule"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Oxford",
+            "text": "Oxford"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Sapatilha",
+            "text": "Sapatilha"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Scarpin",
+            "text": "Scarpin"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Plataforma / Meia Pata",
+            "text": "Plataforma / Meia Pata"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Salto Baixo",
+            "text": "Salto Baixo"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Salto Medio",
+            "text": "Salto Medio"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Salto Alto",
+            "text": "Salto Alto"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Salto Bloco",
+            "text": "Salto Bloco"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Salto Fino",
+            "text": "Salto Fino"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Tratorado",
+            "text": "Tratorado"
+          }
+        }
+      ]
+    }
+  },
+  // Bloco numeração
+  "flex-layout.col#menu-sapato-2": {
+    "title": "Bloco numeração",
+    "props": {
+      "blockClass": "header-numeracao",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "link#numeracao-sapatoo-1",
+      "link#numeracao-sapatoo-2",
+      "link#numeracao-sapatoo-3",
+      "link#numeracao-sapatoo-4",
+      "link#numeracao-sapatoo-5",
+      "link#numeracao-sapatoo-6",
+      "link#numeracao-sapatoo-7",
+      "link#numeracao-sapatoo-8"
+    ]
+  },
+  "link#numeracao-sapatoo-1": {
+    "props": {
+      "href": "/",
+      "label": "33"
+    }
+  },
+  "link#numeracao-sapatoo-2": {
+    "props": {
+      "href": "/",
+      "label": "34"
+    }
+  },
+  "link#numeracao-sapatoo-3": {
+    "props": {
+      "href": "/",
+      "label": "35"
+    }
+  },
+  "link#numeracao-sapatoo-4": {
+    "props": {
+      "href": "/",
+      "label": "36"
+    }
+  },
+  "link#numeracao-sapatoo-5": {
+    "props": {
+      "href": "/",
+      "label": "37"
+    }
+  },
+  "link#numeracao-sapatoo-6": {
+    "props": {
+      "href": "/",
+      "label": "38"
+    }
+  },
+  "link#numeracao-sapatoo-7": {
+    "props": {
+      "href": "/",
+      "label": "39"
+    }
+  },
+  "link#numeracao-sapatoo-8": {
+    "props": {
+      "href": "/",
+      "label": "40"
+    }
+  },
+  // Bloco produtos
+  "flex-layout.col#menu-sapato-3": {
+    "title": "Bloco produtos",
+    "children": [
+      "rich-text#menu-sapato-vitrine",
+      "list-context.product-list#menu-sapato"
+    ],
+    "props": {
+      "blockClass": "menuproduct",
+      "preventVerticalStretch": true 
+    }
+  },
+  "list-context.product-list#menu-sapato": {
+    "blocks": ["product-summary.shelf#menu"],
+    "children": ["slider-layout#slider-product-menu"],
+    "props": {
+      "maxItems": 3
+    }
+  },
+  "rich-text#menu-sapato-vitrine": {
+    "title": "Título",
+    "props": {
+      "text": "Destaques",
+      "blockClass": ["margin-0", "title-submenu"]
     }
   }
-  
+}

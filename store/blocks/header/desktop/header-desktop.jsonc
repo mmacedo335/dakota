@@ -2,7 +2,8 @@
   "header-layout.desktop": {
     "title": "Header - Desktop",
     "children": [
-      "custom-styles",  
+      "custom-styles",
+      "minicart.v2#flutuante", 
       "flex-layout.row#topo-menu",
       "sticky-layout#header-desktop",
       "flex-layout.row#header-menu" 

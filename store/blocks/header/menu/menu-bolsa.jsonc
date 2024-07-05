@@ -1,18 +1,254 @@
 {
-    "menu-item#bolsa": {
-      "props": {
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "blockClass": "menu-principal",  
-        "itemProps": {
-          "type": "internal",
-          "href": "/bolsa",
-          "noFollow": true,
-          "tagTitle": "Bolsa",
-          "text": "Bolsa"
-        }
+  "menu-item#bolsa": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-principal",
+      "itemProps": {
+        "type": "internal",
+        "href": "/bolsa",
+        "noFollow": true,
+        "tagTitle": "Bolsa",
+        "text": "Bolsa"
       }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#bolsa"
+    ]
+  },
+  "vtex.menu@2.x:submenu#bolsa": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-bolsa"
+    ]
+  },
+  "flex-layout.row#menu-bolsa": {
+    "children": [
+      "flex-layout.row#menu-bolsa-1",
+      "flex-layout.col#menu-bolsa-2",
+      "flex-layout.col#menu-bolsa-3"
+    ],
+    "props": {
+      "colGap": 7,
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+  // Bloco categorias
+  "flex-layout.row#menu-bolsa-1": {
+    "title": "Bloco categorias",
+    "children": [
+      "flex-layout.col#menu-bolsa-modelo",
+      "flex-layout.col#menu-bolsa-tendencia"
+    ],
+    "props": {
+      "blockClass": "submenu",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#menu-bolsa-tendencia": {
+    "title": "Menu Tendências",
+    "children": [
+      "rich-text#menu-bolsa-tendencia",
+      "vtex.menu@2.x:menu#bolsa-tendencia"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "vtex.menu@2.x:menu#bolsa-tendencia": {
+    "title": "Tendências",
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Metalizado",
+            "text": "Metalizado"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Brilho",
+            "text": "Brilho"
+          }
+        }
+      ]
+    }
+  },
+  "rich-text#menu-bolsa-tendencia": {
+    "title": "Título",
+    "props": {
+      "text": "Tendências",
+      "blockClass": ["margin-0", "title-submenu"]
+    }
+  },
+  "flex-layout.col#menu-bolsa-modelo": {
+    "title": "Menu modelo",
+    "children": [
+      "rich-text#menu-bolsa-modelo",
+      "vtex.menu@2.x:menu#bolsa-modelo"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#menu-bolsa-modelo": {
+    "title": "Título",
+    "props": {
+      "text": "Modelo",
+      "blockClass": ["margin-0", "title-submenu"]
+    }
+  },
+  "vtex.menu@2.x:menu#bolsa-modelo": {
+    "title": "Modelo",
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Pequena",
+            "text": "Pequena"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Pequena",
+            "text": "Pequena"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Grande",
+            "text": "Grande"
+          }
+        }
+      ]
+    }
+  },
+  // Bloco numeração
+  "flex-layout.col#menu-bolsa-2": {
+    "title": "Bloco numeração",
+    "props": {
+      "blockClass": "header-numeracao",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "link#numeracao-bolsa-1",
+      "link#numeracao-bolsa-2",
+      "link#numeracao-bolsa-3",
+      "link#numeracao-bolsa-4",
+      "link#numeracao-bolsa-5",
+      "link#numeracao-bolsa-6",
+      "link#numeracao-bolsa-7",
+      "link#numeracao-bolsa-8"
+    ]
+  },
+  "link#numeracao-bolsa-1": {
+    "props": {
+      "href": "/",
+      "label": "33"
+    }
+  },
+  "link#numeracao-bolsa-2": {
+    "props": {
+      "href": "/",
+      "label": "34"
+    }
+  },
+  "link#numeracao-bolsa-3": {
+    "props": {
+      "href": "/",
+      "label": "35"
+    }
+  },
+  "link#numeracao-bolsa-4": {
+    "props": {
+      "href": "/",
+      "label": "36"
+    }
+  },
+  "link#numeracao-bolsa-5": {
+    "props": {
+      "href": "/",
+      "label": "37"
+    }
+  },
+  "link#numeracao-bolsa-6": {
+    "props": {
+      "href": "/",
+      "label": "38"
+    }
+  },
+  "link#numeracao-bolsa-7": {
+    "props": {
+      "href": "/",
+      "label": "39"
+    }
+  },
+  "link#numeracao-bolsa-8": {
+    "props": {
+      "href": "/",
+      "label": "40"
+    }
+  },
+  // Bloco produtos
+  "flex-layout.col#menu-bolsa-3": {
+    "title": "Bloco produtos",
+    "children": [
+      "rich-text#menu-bolsa-vitrine",
+      "list-context.product-list#menu-bolsa"
+    ],
+    "props": {
+      "blockClass": "menuproduct",
+      "preventVerticalStretch": true 
+    }
+  },
+  "list-context.product-list#menu-bolsa": {
+    "blocks": ["product-summary.shelf#menu"],
+    "children": ["slider-layout#slider-product-menu"],
+    "props": {
+      "maxItems": 3
+    }
+  },
+  "rich-text#menu-bolsa-vitrine": {
+    "title": "Título",
+    "props": {
+      "text": "Destaques",
+      "blockClass": ["margin-0", "title-submenu"]
     }
   }
-  
+}

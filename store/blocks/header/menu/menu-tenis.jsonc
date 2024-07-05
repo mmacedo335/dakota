@@ -1,18 +1,302 @@
 {
-    "menu-item#tenis": {
-      "props": {
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "blockClass": "menu-principal",  
-        "itemProps": {
-          "type": "internal",
-          "href": "/tenis",
-          "noFollow": true,
-          "tagTitle": "Tênis",
-          "text": "Tênis"
-        }
+  "menu-item#tenis": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-principal",
+      "itemProps": {
+        "type": "internal",
+        "href": "/tenis",
+        "noFollow": true,
+        "tagTitle": "Tênis",
+        "text": "Tênis"
       }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#tenis"
+    ]
+  },
+  "vtex.menu@2.x:submenu#tenis": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-tenis" 
+    ]
+  },
+  "flex-layout.row#menu-tenis": {
+    "children": [
+      "flex-layout.row#menu-tenis-1",
+      "flex-layout.col#menu-tenis-2",
+      "flex-layout.col#menu-tenis-3"
+    ],
+    "props": {
+      "colGap": 7,
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+  // Bloco categorias
+  "flex-layout.row#menu-tenis-1": {
+    "title": "Bloco categorias",
+    "children": [
+      "flex-layout.col#menu-tenis-modelo",
+      "flex-layout.col#menu-tenis-tendencia"
+    ],
+    "props": {
+      "blockClass": "submenu",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#menu-tenis-tendencia": {
+    "title": "Menu Tendências",
+    "children": [
+      "rich-text#menu-tenis-tendencia",
+      "vtex.menu@2.x:menu#tenis-tendencia"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "vtex.menu@2.x:menu#tenis-tendencia": {
+    "title": "Tendências",
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Esportivo",
+            "text": "Esportivo"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Metalizado",
+            "text": "Metalizado"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Brilho",
+            "text": "Brilho"
+          }
+        }
+      ]
+    }
+  },
+  "rich-text#menu-tenis-tendencia": {
+    "title": "Título",
+    "props": {
+      "text": "Tendências",
+      "blockClass": ["margin-0", "title-submenu"]
+    }
+  },
+  "flex-layout.col#menu-tenis-modelo": {
+    "title": "Menu modelo",
+    "children": [
+      "rich-text#menu-tenis-modelo",
+      "vtex.menu@2.x:menu#tenis-modelo"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#menu-tenis-modelo": {
+    "title": "Título",
+    "props": {
+      "text": "Modelo",
+      "blockClass": ["margin-0", "title-submenu"]
+    }
+  },
+  "vtex.menu@2.x:menu#tenis-modelo": {
+    "title": "Modelo",
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Cano Alto",
+            "text": "Cano Alto"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Casual",
+            "text": "Casual"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Dad Sneakers",
+            "text": "Dad Sneakers"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Flatform",
+            "text": "Flatform"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Jogging",
+            "text": "Jogging"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Slip On",
+            "text": "Slip On"
+          }
+        }
+      ]
+    }
+  },
+  // Bloco numeração
+  "flex-layout.col#menu-tenis-2": {
+    "title": "Bloco numeração",
+    "props": {
+      "blockClass": "header-numeracao",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "link#numeracao-teniso-1",
+      "link#numeracao-teniso-2",
+      "link#numeracao-teniso-3",
+      "link#numeracao-teniso-4",
+      "link#numeracao-teniso-5",
+      "link#numeracao-teniso-6",
+      "link#numeracao-teniso-7",
+      "link#numeracao-teniso-8"
+    ]
+  },
+  "link#numeracao-teniso-1": {
+    "props": {
+      "href": "/",
+      "label": "33"
+    }
+  },
+  "link#numeracao-teniso-2": {
+    "props": {
+      "href": "/",
+      "label": "34"
+    }
+  },
+  "link#numeracao-teniso-3": {
+    "props": {
+      "href": "/",
+      "label": "35"
+    }
+  },
+  "link#numeracao-teniso-4": {
+    "props": {
+      "href": "/",
+      "label": "36"
+    }
+  },
+  "link#numeracao-teniso-5": {
+    "props": {
+      "href": "/",
+      "label": "37"
+    }
+  },
+  "link#numeracao-teniso-6": {
+    "props": {
+      "href": "/",
+      "label": "38"
+    }
+  },
+  "link#numeracao-teniso-7": {
+    "props": {
+      "href": "/",
+      "label": "39"
+    }
+  },
+  "link#numeracao-teniso-8": {
+    "props": {
+      "href": "/",
+      "label": "40"
+    }
+  },
+  // Bloco produtos
+  "flex-layout.col#menu-tenis-3": {
+    "title": "Bloco produtos",
+    "children": [
+      "rich-text#menu-tenis-vitrine",
+      "list-context.product-list#menu-tenis"
+    ],
+    "props": {
+      "blockClass": "menuproduct",
+      "preventVerticalStretch": true 
+    }
+  },
+  "list-context.product-list#menu-tenis": {
+    "blocks": ["product-summary.shelf#menu"],
+    "children": ["slider-layout#slider-product-menu"],
+    "props": {
+      "maxItems": 3
+    }
+  },
+  "rich-text#menu-tenis-vitrine": {
+    "title": "Título",
+    "props": {
+      "text": "Destaques",
+      "blockClass": ["margin-0", "title-submenu"]
     }
   }
-  
+}

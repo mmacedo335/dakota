@@ -249,7 +249,7 @@
   },
   "breadcrumb": {
     "props": {
-      "showOnMobile": false
+      "showOnMobile": true
     }
   },
   "gallery": {

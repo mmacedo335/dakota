@@ -48,6 +48,7 @@
 
 .closeIconContainer .closeIcon {
     width: 26px;
+    color: black;
 }
 
 .minicartProductListContainer::-webkit-scrollbar-track {
@@ -70,4 +71,12 @@
 
 .minicartSideBarContentWrapper {
     height: 100% !important;
-} 
+}
+
+.minicartWrapperContainer--flutuante {
+    display: none;
+}
+
+.drawerStyles {
+    height: 100vh;
+}

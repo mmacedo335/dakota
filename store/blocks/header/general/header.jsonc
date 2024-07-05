@@ -50,13 +50,15 @@
     "children": ["vtex.menu@2.x:menu#category-menu"]
   },
   "search-bar": {
+    "title": "Busca",
     "props": {
-      "placeholder": "O que você está buscando?"
+      "placeholder": "O que você está buscando?",
+      "openAutocompleteOnFocus": true
     }
   },
   "logo#desktop": {
+    "title": "Logo",
     "props": {
-      "title": "Logo",
       "href": "/",
       "url": "assets/svg/logo-dakota.svg",
       "width": "170",
@@ -121,5 +123,20 @@
       "fullWidth": true,
       "blockClass": "menu-categorias-header"
     } 
+  },
+  "slider-layout#slider-product-menu": {
+    "title": "Vitrine produtos",
+    "props": {
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always",
+      "itemsPerPage": {
+        "desktop": 3,
+        "tablet": 3,
+        "phone": 3
+      } 
+    }
   }
 }

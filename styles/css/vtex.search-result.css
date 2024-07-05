@@ -320,6 +320,28 @@
   margin-bottom: 12px;
 }
 
+.filterAvailable .caretIcon {
+  content: "";
+  width: 8px;
+  height: 8px;
+  border-right: 2px solid #DB3D68;
+  border-bottom: 2px solid #DB3D68;
+  font-size: 0;
+  transform: translateY(-50%) rotate(45deg);
+  display: block;
+  color: transparent;
+  top: 6px;
+  position: relative;
+}
+
+.filterAvailable.filterIsOpen .caretIcon {
+  transform: translateY(-50%) rotate(-135deg);
+}
+
+.accordionFilterItemTag {
+  display: none;
+}
+
 @media(max-width: 768px) {
   .gallery--grid .galleryItem {
     padding: 0px;

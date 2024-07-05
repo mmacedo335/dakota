@@ -2,14 +2,14 @@
   "store.product": {
     "children": [
       "responsive-layout.mobile#buy-button",
-      "flex-layout.row#product-breadcrumb",
+      "flex-layout.row#product-breadcrumbs",
       "condition-layout.product#availability",
       "flex-layout.row#title-description",
       "flex-layout.row#description"
-      //"shelf.relatedProducts"
+      //"shelf.relatedProducts" 
     ]
   },
-  "flex-layout.row#product-breadcrumb": {
+  "flex-layout.row#product-breadcrumbs": {
     "title": "breadcrumb",
     "props": {
       "marginTop": 4
@@ -169,8 +169,18 @@
       "flex-layout.row#buy-button-whislist",
       "responsive-layout.desktop#beneficios",
       "responsive-layout.mobile#beneficios"
+      //"flex-layout.row#product-frete"
     ]
   },
+
+  "flex-layout.row#product-frete": {
+    "title": "Frete",
+    "props": {
+      "marginBottom": 5
+    },
+    "children": ["shipping-simulator"]
+  },
+
 
   "responsive-layout.desktop#beneficios": {
     "title": "Barra de beneficios desktop",

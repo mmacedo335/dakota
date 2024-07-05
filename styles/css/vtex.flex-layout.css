@@ -208,6 +208,11 @@
     display: block;
 }
 
+.flexCol--header-numeracao :global(.vtex-store-link-0-x-link):hover {
+    background: #db3d68;
+    color: white;
+}
+
 .flexRowContent--header-departamento {
     overflow: scroll;
     gap: 13px;
@@ -333,6 +338,12 @@
     border: none;
 }
 
+.flexCol--menuproduct{
+    padding-left: 30px;
+    margin-left: 10px;
+    border-left: 1px solid #EEEEEE;
+}
+
 .flexRowContent--minicart-footer-custom :global(.vtex-minicart-2-x-minicartCheckoutButton) :global(.vtex-button__label),
 .flexRowContent--minicart-footer :global(.vtex-minicart-2-x-minicartCheckoutButton) :global(.vtex-button__label) {
     font-size: 0px;
@@ -420,9 +431,8 @@
 
 .flexCol--filterCol :global(.vtex-disclosure-layout-1-x-trigger--visible) :global(.vtex-rich-text-0-x-paragraph--title-filter)::after {
     content: "";
-    width: 10px;
-    height: 10px;
-    transform: rotate(45deg);
+    width: 8px;
+    height: 8px;
     border-right: 2px solid #DB3D68;
     border-bottom: 2px solid #DB3D68;
     font-size: 0;
@@ -431,6 +441,10 @@
     transform: translateY(-50%) rotate(-135deg);
     top: 25px;
     display: block;
+}
+
+.flexCol--filterCol :global(.vtex-disclosure-layout-1-x-trigger--visible) :global(.vtex-rich-text-0-x-paragraph--title-filter)::before {
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='20' viewBox='0 0 24 20' fill='none'%3e%3cpath d='M9 4H23' stroke='%23DB3D68' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3cpath d='M1 4H5' stroke='%23DB3D68' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3cpath d='M17 16H23' stroke='%23DB3D68' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3cpath d='M1 16H13' stroke='%23DB3D68' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3cpath d='M9 1V7' stroke='%23DB3D68' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3cpath d='M17 13V19' stroke='%23DB3D68' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3e%3c/path%3e%3c/svg%3e");
 }
 
 .flexCol--filterCol :global(.vtex-search-result-3-x-filters--layout) {
@@ -465,7 +479,7 @@
 @media(min-width: 769px) {
     .flexRowContent--menu-footer :global(.vtex-menu-2-x-menuContainer) {
         flex-direction: row;
-        justify-content: center;
+        justify-content: space-between;
     }
 
     .flexRowContent--menu-footer :global(.vtex-menu-2-x-styledLinkContent) {
@@ -474,12 +488,7 @@
 }
 
 @media(max-width: 768px) {
-
-    .flexRowContent--footer-seguranca {
-        max-width: 350px;
-        margin: auto;
-    }
-
+    
     .flexRowContent--productSpecificationGroup {
         margin-top: 15px;
         padding: 34px 25px;

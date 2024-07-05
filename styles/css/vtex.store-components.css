@@ -13,6 +13,10 @@
     width: 100%;
 }
 
+.resultsItemImage{
+    display: none;
+}
+
 .sizeDesktop.logoContainer,
 .sizeMobile.logoContainer {
     max-width: 100%;

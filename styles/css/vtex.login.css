@@ -9,11 +9,11 @@
     gap: 4px;
 }
 
-.container .label:hover{
-    text-decoration: underline; 
+.container .label:hover {
+    text-decoration: underline;
 }
 
-.container .label:before { 
+.container .label:before {
     content: '';
     display: block;
     width: 26px;
@@ -21,4 +21,47 @@
     background-image: url('assets/img/user-icon.png');
     background-size: contain;
     background-repeat: no-repeat;
+}
+
+.accessCodeOptionBtn :global(.vtex-button) {
+    background: #222;
+    color: white;
+    font-family: 'Larsseit Medium';
+    font-size: 12px;
+    letter-spacing: 0.6px;
+}
+
+.content :global(.vtex-input-prefix__group) {
+    border-width: 1px;
+    border-radius: 0px;
+    border-color: #ACACAC; 
+}
+
+.content :global(.vtex-button) {
+    border-radius: 3px;
+    height: 37px;
+}
+
+.content :global(.vtex-button) :global(.vtex-button__label) :global(.t-small){
+    text-transform: uppercase;
+    font-family: 'Larsseit Medium';
+    font-size: 12px;
+    letter-spacing: 0.6px;
+} 
+
+.formLinkContainer{
+    justify-content: center;
+}
+
+.forgotPasswordLink{
+    font-size: 11px;
+    color: #222;
+}
+
+.formTitle{
+    color: #222;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: center;
+    font-family: 'Larsseit Medium';
 }

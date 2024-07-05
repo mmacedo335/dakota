@@ -4,7 +4,7 @@
       "type": "custom",
       "iconId": null,
       "highlight": false,
-      "blockClass": "menu-principal", 
+      "blockClass": "menu-principal",
       "itemProps": {
         "type": "internal",
         "href": "/bota",
@@ -27,27 +27,276 @@
   },
   "flex-layout.row#menu-bota": {
     "children": [
-      "flex-layout.col#menu-bota-1",
+      "flex-layout.row#menu-bota-1",
       "flex-layout.col#menu-bota-2",
       "flex-layout.col#menu-bota-3"
     ],
-    "props": { 
+    "props": {
       "colGap": 7,
       "preventVerticalStretch": true,
-      "preventHorizontalStretch": true 
+      "preventHorizontalStretch": true
     }
   },
-  "flex-layout.col#menu-bota-1": {
+  // Bloco categorias
+  "flex-layout.row#menu-bota-1": {
     "title": "Bloco categorias",
     "children": [
-      "vtex.menu@2.x:menu#bota"
-    ]
+      "flex-layout.col#menu-bota-modelo",
+      "flex-layout.col#menu-bota-tendencia"
+    ],
+    "props": {
+      "blockClass": "submenu",
+      "preventVerticalStretch": true
+    }
   },
+  "flex-layout.col#menu-bota-tendencia": {
+    "title": "Menu Tendências",
+    "children": [
+      "rich-text#menu-bota-tendencia",
+      "vtex.menu@2.x:menu#bota-tendencia"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "vtex.menu@2.x:menu#bota-tendencia": {
+    "title": "Tendências",
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Country",
+            "text": "Country"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Tratorado",
+            "text": "Tratorado"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Biker",
+            "text": "Biker"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Couro",
+            "text": "Couro"
+          }
+        }
+      ]
+    }
+  },
+  "rich-text#menu-bota-tendencia": {
+    "title": "Título",
+    "props": {
+      "text": "Tendências",
+      "blockClass": ["margin-0", "title-submenu"]
+    }
+  },
+  "flex-layout.col#menu-bota-modelo": {
+    "title": "Menu modelo",
+    "children": [
+      "rich-text#menu-bota-modelo",
+      "vtex.menu@2.x:menu#bota-modelo"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#menu-bota-modelo": {
+    "title": "Título",
+    "props": {
+      "text": "Modelo",
+      "blockClass": ["margin-0", "title-submenu"]
+    }
+  },
+  "vtex.menu@2.x:menu#bota-modelo": {
+    "title": "Modelo",
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Cano Curto",
+            "text": "Cano Curto"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Cano Longo",
+            "text": "Cano Longo"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Cano Médio",
+            "text": "Cano Médio"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Chelsea",
+            "text": "Chelsea"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Coturno",
+            "text": "Coturno"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Over The Knee",
+            "text": "Over The Knee"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Plataforma / Meia Pata",
+            "text": "Plataforma / Meia Pata"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Salto Alto",
+            "text": "Salto Alto"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Salto Baixo",
+            "text": "Salto Baixo"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Salto Medio",
+            "text": "Salto Medio"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Salto Bloco",
+            "text": "Salto Bloco"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Salto Fino",
+            "text": "Salto Fino"
+          }
+        }
+      ]
+    }
+  },
+  // Bloco numeração
   "flex-layout.col#menu-bota-2": {
     "title": "Bloco numeração",
     "props": {
       "blockClass": "header-numeracao",
-      "preventVerticalStretch": true  
+      "preventVerticalStretch": true
     },
     "children": [
       "link#numeracao-botao-1",
@@ -108,197 +357,30 @@
       "label": "40"
     }
   },
+  // Bloco produtos
   "flex-layout.col#menu-bota-3": {
     "title": "Bloco produtos",
     "children": [
-
-    ]
-  },
-  "vtex.menu@2.x:menu#bota": {
-    "props": {
-      "orientation": "vertical"
-    },
-    "children": [
-      "menu-item#bota-01",
-      "menu-item#bota-02",
-      "menu-item#bota-03",
-      "menu-item#bota-04",
-      "menu-item#bota-05",
-      "menu-item#bota-06",
-      "menu-item#bota-07",
-      "menu-item#bota-08",
-      "menu-item#bota-09",
-      "menu-item#bota-10",
-      "menu-item#bota-11",
-      "menu-item#bota-12"
-    ]
-  },
-  "menu-item#bota-01": {
-    "props": {
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "",
-        "noFollow": true,
-        "tagTitle": "Cano Curto",
-        "text": "Cano Curto"
-      }
+      "rich-text#menu-bota-vitrine",
+      "list-context.product-list#menu-bota"
+    ],
+    "props":{
+      "blockClass": "menuproduct",
+      "preventVerticalStretch": true  
     }
   },
-  "menu-item#bota-02": {
+  "list-context.product-list#menu-bota": {
+    "blocks": ["product-summary.shelf#menu"],
+    "children": ["slider-layout#slider-product-menu"],
     "props": {
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "",
-        "noFollow": true,
-        "tagTitle": "Cano Longo",
-        "text": "Cano Longo"
-      }
+      "maxItems": 3
     }
   },
-  "menu-item#bota-03": {
+  "rich-text#menu-bota-vitrine": {
+    "title": "Título",
     "props": {
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "",
-        "noFollow": true,
-        "tagTitle": "Cano Médio",
-        "text": "Cano Médio"
-      }
-    }
-  },
-  "menu-item#bota-04": {
-    "props": {
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "",
-        "noFollow": true,
-        "tagTitle": "Chelsea",
-        "text": "Chelsea"
-      }
-    }
-  },
-  "menu-item#bota-05": {
-    "props": {
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "",
-        "noFollow": true,
-        "tagTitle": "Coturno",
-        "text": "Coturno"
-      }
-    }
-  },
-  "menu-item#bota-06": {
-    "props": {
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "",
-        "noFollow": true,
-        "tagTitle": "Over The Knee",
-        "text": "Over The Knee"
-      }
-    }
-  },
-  "menu-item#bota-07": {
-    "props": {
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "",
-        "noFollow": true,
-        "tagTitle": "Plataforma / Meia Pata",
-        "text": "Plataforma / Meia Pata"
-      }
-    }
-  },
-  "menu-item#bota-08": {
-    "props": {
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "",
-        "noFollow": true,
-        "tagTitle": "Salto Alto",
-        "text": "Salto Alto"
-      }
-    }
-  },
-  "menu-item#bota-09": {
-    "props": {
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "",
-        "noFollow": true,
-        "tagTitle": "Salto Baixo",
-        "text": "Salto Baixo"
-      }
-    }
-  },
-  "menu-item#bota-10": {
-    "props": {
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "",
-        "noFollow": true,
-        "tagTitle": "Salto Medio",
-        "text": "Salto Medio"
-      }
-    }
-  },
-  "menu-item#bota-11": {
-    "props": {
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "",
-        "noFollow": true,
-        "tagTitle": "Salto Bloco",
-        "text": "Salto Bloco"
-      }
-    }
-  },
-  "menu-item#bota-12": {
-    "props": {
-      "type": "custom",
-      "iconId": null,
-      "highlight": false,
-      "itemProps": {
-        "type": "internal",
-        "href": "",
-        "noFollow": true,
-        "tagTitle": "Salto Fino",
-        "text": "Salto Fino"
-      }
+      "text": "Destaques",
+      "blockClass": ["margin-0", "title-submenu"]
     }
   }
 }

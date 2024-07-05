@@ -136,11 +136,12 @@
     }
   },
   // Minicart v2
-  "minicart.v2#footer": {
+  "minicart.v2#flutuante": {
     "props": {
       "customPixelEventId": "add-to-cart-button",
       "quantityDisplay": "always",
-      "openOnHover": true
+      "openOnHover": true,
+      "blockClass": "flutuante"
     },
     "children": ["minicart-base-content"]
   },

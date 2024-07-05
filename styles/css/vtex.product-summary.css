@@ -12,4 +12,30 @@
 
 .container {
     max-width: 100% !important;
-} 
+}
+
+.container--menucategory {
+    max-width: 150px !important;
+    margin-right: 30px;
+}
+
+.container--menucategory .productBrand {
+    font-size: 12px;
+    line-height: 18px;
+    text-align: center;
+    color: #222222;
+    font-family: 'Larsseit Bold';
+    text-transform: none;
+}
+
+.container--menucategory .imageContainer{
+    max-width: 130px;
+}
+
+.container--menucategory:hover .productBrand {
+    text-decoration: underline;
+}
+
+.container--menucategory .nameContainer{
+    padding-top: 5px;
+}

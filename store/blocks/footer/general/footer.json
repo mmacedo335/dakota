@@ -3,6 +3,7 @@
     "blocks": ["footer-layout.desktop", "footer-layout.mobile"]
   },
   "flex-layout.row#footer-menu": {
+    "title": "Menu",
     "children": [
       "vtex.menu@2.x:menu#footer"
     ],
@@ -13,6 +14,7 @@
     }
   },
   "flex-layout.row#meios-pagamento-footer": {
+    "title": "Imagem meios de pagamentos",
     "children": [
       "image#meios-pagamento-footer"
     ],
@@ -62,6 +64,7 @@
     }
   },
   "flex-layout.row#footer-seguranca": {
+    "title": "Selos de segurança",
     "children": [
       "flex-layout.col#footer-seguranca-01",
       "flex-layout.col#footer-seguranca-02"
@@ -72,6 +75,19 @@
       "paddingBottom": 7,
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.row#footer-seguranca-mobile": {
+    "title": "Selos de segurança",
+    "children": [
+      "flex-layout.col#footer-seguranca-01",
+      "flex-layout.col#footer-seguranca-02"
+    ],
+    "props": {
+      "blockClass": "footer-seguranca",
+      "paddingTop": 5, 
+      "paddingBottom": 7,
       "preserveLayoutOnMobile": true
     }
   },

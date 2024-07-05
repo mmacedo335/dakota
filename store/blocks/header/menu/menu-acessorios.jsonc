@@ -1,18 +1,255 @@
 {
-    "menu-item#acessorios": {
-      "props": {
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "blockClass": "menu-principal",  
-        "itemProps": {
-          "type": "internal",
-          "href": "/acessorios",
-          "noFollow": true,
-          "tagTitle": "Acessórios",
-          "text": "Acessórios"
-        }
+  "menu-item#acessorios": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-principal",
+      "itemProps": {
+        "type": "internal",
+        "href": "/acessorios",
+        "noFollow": true,
+        "tagTitle": "Acessórios",
+        "text": "Acessórios"
       }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#acessorios"
+    ]
+  },
+  "vtex.menu@2.x:submenu#acessorios": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-acessorios"
+    ]
+  },
+  "flex-layout.row#menu-acessorios": {
+    "children": [
+      "flex-layout.row#menu-acessorios-1",
+      "flex-layout.col#menu-acessorios-3"
+    ],
+    "props": {
+      "colGap": 7,
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+  // Bloco categorias
+  "flex-layout.row#menu-acessorios-1": {
+    "title": "Bloco categorias",
+    "children": [
+      "flex-layout.col#menu-acessorios-modelo",
+      "flex-layout.col#menu-acessorios-tendencia"
+    ],
+    "props": {
+      "blockClass": "submenu",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#menu-acessorios-tendencia": {
+    "title": "Menu Tendências",
+    "children": [
+      "vtex.menu@2.x:menu#acessorios-tendencia"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "vtex.menu@2.x:menu#acessorios-tendencia": {
+    "title": "Tendências",
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Outros",
+            "text": "Outros"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "metalizado",
+            "text": "metalizado"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Porta Celular",
+            "text": "Porta Celular"
+          }
+        }
+      ]
+    }
+  },
+  "flex-layout.col#menu-acessorios-modelo": {
+    "title": "Menu modelo",
+    "children": [
+      "vtex.menu@2.x:menu#acessorios-modelo"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "vtex.menu@2.x:menu#acessorios-modelo": {
+    "title": "Modelo",
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Cadarço",
+            "text": "Cadarço"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Carteira",
+            "text": "Carteira"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Cinto",
+            "text": "Cinto"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Garrafa",
+            "text": "Garrafa"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Máscara de Lycra",
+            "text": "Máscara de Lycra"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Meia",
+            "text": "Meia"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Necessaire",
+            "text": "Necessaire"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Pingentes para tênis",
+            "text": "Pingentes para tênis"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Porta Cartão",
+            "text": "Porta Cartão"
+          }
+        }
+      ]
+    }
+  },
+  // Bloco produtos
+  "flex-layout.col#menu-acessorios-3": {
+    "title": "Bloco produtos",
+    "children": [
+      "rich-text#menu-acessorios-vitrine",
+      "list-context.product-list#menu-acessorios"
+    ],
+    "props": {
+      "blockClass": "menuproduct",
+      "preventVerticalStretch": true 
+    }
+  },
+  "list-context.product-list#menu-acessorios": {
+    "blocks": ["product-summary.shelf#menu"],
+    "children": ["slider-layout#slider-product-menu"],
+    "props": {
+      "maxItems": 3
+    }
+  },
+  "rich-text#menu-acessorios-vitrine": {
+    "title": "Título",
+    "props": {
+      "text": "Destaques",
+      "blockClass": ["margin-0", "title-submenu"]
     }
   }
-  
+}

@@ -262,6 +262,27 @@
     font-weight: 700;
 }
 
+.paragraph--title-submenu{
+    font-family: "Larsseit Bold";
+    text-transform: uppercase;
+    font-size: 14px;
+    color: #222222;
+    width: 100%;
+}
+
+.heading--title-login{
+    color: #222;
+    font-size: 24px;
+    letter-spacing: 0.48px;
+    text-transform: uppercase;
+    margin-bottom: 8px;
+}
+
+.paragraph--title-login{
+    font-size: 14px;
+    color: #222;
+}
+
 @media(min-width: 769px) {
     .paragraph--copyright {
         font-size: 10px;

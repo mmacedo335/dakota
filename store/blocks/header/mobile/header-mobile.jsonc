@@ -3,6 +3,7 @@
     "title": "Header - Mobile",
     "children": [
       "custom-styles", 
+      "minicart.v2#flutuante",
       "sticky-layout#header-mobile",
       "flex-layout.row#header-departamentos"
     ]

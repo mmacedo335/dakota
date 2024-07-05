@@ -1,18 +1,386 @@
 {
-    "menu-item#sandalia": {
-      "props": {
-        "type": "custom",
-        "iconId": null,
-        "highlight": false,
-        "blockClass": "menu-principal",  
-        "itemProps": {
-          "type": "internal",
-          "href": "/sandalia",
-          "noFollow": true,
-          "tagTitle": "sandália",
-          "text": "sandália"
-        }
+  "menu-item#sandalia": {
+    "props": {
+      "type": "custom",
+      "iconId": null,
+      "highlight": false,
+      "blockClass": "menu-principal",
+      "itemProps": {
+        "type": "internal",
+        "href": "/sandalia",
+        "noFollow": true,
+        "tagTitle": "sandália",
+        "text": "sandália"
       }
+    },
+    "blocks": [
+      "vtex.menu@2.x:submenu#sandalia"
+    ]
+  },
+  "vtex.menu@2.x:submenu#sandalia": {
+    "props": {
+      "width": "100%"
+    },
+    "children": [
+      "flex-layout.row#menu-sandalia"
+    ]
+  },
+  "flex-layout.row#menu-sandalia": {
+    "children": [
+      "flex-layout.row#menu-sandalia-1",
+      "flex-layout.col#menu-sandalia-2",
+      "flex-layout.col#menu-sandalia-3"
+    ],
+    "props": {
+      "colGap": 7,
+      "preventVerticalStretch": true,
+      "preventHorizontalStretch": true
+    }
+  },
+  // Bloco categorias
+  "flex-layout.row#menu-sandalia-1": {
+    "title": "Bloco categorias",
+    "children": [
+      "flex-layout.col#menu-sandalia-modelo",
+      "flex-layout.col#menu-sandalia-tendencia"
+    ],
+    "props": {
+      "blockClass": "submenu",
+      "preventVerticalStretch": true
+    }
+  },
+  "flex-layout.col#menu-sandalia-tendencia": {
+    "title": "Menu Tendências",
+    "children": [
+      "rich-text#menu-sandalia-tendencia",
+      "vtex.menu@2.x:menu#sandalia-tendencia"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "vtex.menu@2.x:menu#sandalia-tendencia": {
+    "title": "Tendências",
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Brilho",
+            "text": "Brilho"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Metalizado",
+            "text": "Metalizado"
+          }
+        }
+      ]
+    }
+  },
+  "rich-text#menu-sandalia-tendencia": {
+    "title": "Título",
+    "props": {
+      "text": "Tendências",
+      "blockClass": ["margin-0", "title-submenu"]
+    }
+  },
+  "flex-layout.col#menu-sandalia-modelo": {
+    "title": "Menu modelo",
+    "children": [
+      "rich-text#menu-sandalia-modelo",
+      "vtex.menu@2.x:menu#sandalia-modelo"
+    ],
+    "props": {
+      "preventVerticalStretch": true
+    }
+  },
+  "rich-text#menu-sandalia-modelo": {
+    "title": "Título",
+    "props": {
+      "text": "Modelo",
+      "blockClass": ["margin-0", "title-submenu"]
+    }
+  },
+  "vtex.menu@2.x:menu#sandalia-modelo": {
+    "title": "Modelo",
+    "props": {
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Anabela",
+            "text": "Anabela"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Chinelo",
+            "text": "Chinelo"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Flatform",
+            "text": "Flatform"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Papete",
+            "text": "Papete"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Plataforma / Meia Pata",
+            "text": "Plataforma / Meia Pata"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Rasteira",
+            "text": "Rasteira"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Salto Alto",
+            "text": "Salto Alto"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Salto Fino",
+            "text": "Salto Fino"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Salto Medio",
+            "text": "Salto Medio"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Salto Medio",
+            "text": "Salto Medio"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Salto Bloco",
+            "text": "Salto Bloco"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Slide",
+            "text": "Slide"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Sport Sandals",
+            "text": "Sport Sandals"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Tamanco",
+            "text": "Tamanco"
+          }
+        }
+      ]
+    }
+  },
+  // Bloco numeração
+  "flex-layout.col#menu-sandalia-2": {
+    "title": "Bloco numeração",
+    "props": {
+      "blockClass": "header-numeracao",
+      "preventVerticalStretch": true
+    },
+    "children": [
+      "link#numeracao-sandalia-1",
+      "link#numeracao-sandalia-2",
+      "link#numeracao-sandalia-3", 
+      "link#numeracao-sandalia-4",
+      "link#numeracao-sandalia-5",
+      "link#numeracao-sandalia-6",
+      "link#numeracao-sandalia-7",
+      "link#numeracao-sandalia-8"
+    ]
+  },
+  "link#numeracao-sandalia-1": {
+    "props": {
+      "href": "/",
+      "label": "33"
+    }
+  },
+  "link#numeracao-sandalia-2": {
+    "props": {
+      "href": "/",
+      "label": "34"
+    }
+  },
+  "link#numeracao-sandalia-3": {
+    "props": {
+      "href": "/",
+      "label": "35"
+    }
+  },
+  "link#numeracao-sandalia-4": {
+    "props": {
+      "href": "/",
+      "label": "36"
+    }
+  },
+  "link#numeracao-sandalia-5": {
+    "props": {
+      "href": "/",
+      "label": "37"
+    }
+  },
+  "link#numeracao-sandalia-6": {
+    "props": {
+      "href": "/",
+      "label": "38"
+    }
+  },
+  "link#numeracao-sandalia-7": {
+    "props": {
+      "href": "/",
+      "label": "39"
+    }
+  },
+  "link#numeracao-sandalia-8": {
+    "props": {
+      "href": "/",
+      "label": "40"
+    }
+  },
+  // Bloco produtos
+  "flex-layout.col#menu-sandalia-3": {
+    "title": "Bloco produtos",
+    "children": [
+      "rich-text#menu-sandalia-vitrine",
+      "list-context.product-list#menu-sandalia"
+    ],
+    "props": {
+      "blockClass": "menuproduct",
+      "preventVerticalStretch": true 
+    }
+  },
+  "list-context.product-list#menu-sandalia": {
+    "blocks": ["product-summary.shelf#menu"],
+    "children": ["slider-layout#slider-product-menu"],
+    "props": {
+      "maxItems": 3
+    }
+  },
+  "rich-text#menu-sandalia-vitrine": {
+    "title": "Título",
+    "props": {
+      "text": "Destaques",
+      "blockClass": ["margin-0", "title-submenu"]
     }
   }
-  
+}
