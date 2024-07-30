@@ -26,7 +26,24 @@
     padding: 0px;
 }
 
+:global(.vtex-login-2-x-box) :global(.vtex-login-2-x-optionsListItem):first-child:after{
+    display: none;
+} 
 
+:global(.vtex-login-2-x-box) :global(.vtex-login-2-x-optionsListItem):nth-child(2):after {
+    content: 'Ou acessar via plataforma';
+    display: block;
+    font-size: 14px; 
+    color: #222;
+    margin-top: 25px; 
+}
+
+:global(.vtex-login-2-x-box) :global(.vtex-login-2-x-optionsListItem):nth-child(2){
+    display: block;
+    width: 100%; 
+    text-align: center;
+}
+ 
 @media(max-width: 768px) {
     :global(.render-route-store-product) :global(.vtex-store-components-3-x-imageElementLink--whats-flutuante) {
         bottom: 70px;

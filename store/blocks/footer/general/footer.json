@@ -66,6 +66,7 @@
   "flex-layout.row#footer-seguranca": {
     "title": "Selos de segurança",
     "children": [
+      "flex-layout.col#footer-seguranca-00",
       "flex-layout.col#footer-seguranca-01",
       "flex-layout.col#footer-seguranca-02"
     ],
@@ -81,6 +82,7 @@
   "flex-layout.row#footer-seguranca-mobile": {
     "title": "Selos de segurança",
     "children": [
+      "flex-layout.col#footer-seguranca-00",
       "flex-layout.col#footer-seguranca-01",
       "flex-layout.col#footer-seguranca-02"
     ],
@@ -89,6 +91,37 @@
       "paddingTop": 5, 
       "paddingBottom": 7,
       "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.col#footer-seguranca-00": {
+    "props": { 
+      "blockClass": "selos seguranca"
+    },
+    "children": [
+      "rich-text#footer-seguranca-00",
+      "flex-layout.row#selos-seguranca"
+    ]
+  }, 
+  "flex-layout.row#selos-seguranca": {
+    "title": "Selos de segurança",
+    "children": [
+      "image#premio-reclame"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true
+    }
+  },
+  "image#premio-reclame": {
+    "props": {
+      "blockClass": "footer-seguranca",
+      "src": "assets/svg/premio-reclame-aqui.svg",
+      "maxWidth": 100 
+    }
+  },
+  "rich-text#footer-seguranca-00": {
+    "props": {
+      "text": "REPUTAÇÃO",
+      "blockClass": "footer-seguranca"
     }
   },
   "flex-layout.col#footer-seguranca-01": {

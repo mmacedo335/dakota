@@ -4,5 +4,8 @@
   },
   "summary-minicart": {
     "component": "SummaryMinicart"
+  },
+  "scrollListagem": {
+    "component": "Scroll"
   }
 }

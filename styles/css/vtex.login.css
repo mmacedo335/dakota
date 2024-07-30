@@ -26,15 +26,17 @@
 .accessCodeOptionBtn :global(.vtex-button) {
     background: #222;
     color: white;
-    font-family: 'Larsseit Medium';
+    font-family: 'Inter';
+    font-weight: 800;
     font-size: 12px;
     letter-spacing: 0.6px;
+    border: none;
 }
 
 .content :global(.vtex-input-prefix__group) {
     border-width: 1px;
     border-radius: 0px;
-    border-color: #ACACAC; 
+    border-color: #ACACAC;
 }
 
 .content :global(.vtex-button) {
@@ -42,26 +44,116 @@
     height: 37px;
 }
 
-.content :global(.vtex-button) :global(.vtex-button__label) :global(.t-small){
+.content :global(.vtex-button) :global(.vtex-button__label) :global(.t-small) {
     text-transform: uppercase;
-    font-family: 'Larsseit Medium';
     font-size: 12px;
     letter-spacing: 0.6px;
-} 
+    font-family: 'Inter';
+    font-weight: 800;
+}
 
-.formLinkContainer{
+.formLinkContainer {
     justify-content: center;
 }
 
-.forgotPasswordLink{
+.forgotPasswordLink {
     font-size: 11px;
     color: #222;
 }
 
-.formTitle{
+.formTitle {
     color: #222;
     font-size: 12px;
     text-transform: uppercase;
     text-align: center;
-    font-family: 'Larsseit Medium';
+    font-family: 'Inter';
+    font-weight: 500;
+}
+
+.contentContainer {
+    box-shadow: none;
+}
+
+.arrowUp {
+    display: none;
+}
+
+.box {
+    border-radius: 10px;
+    border: 1px solid #EEE;
+    right: -215px !important;
+}
+
+.emailPasswordOptionBtn :global(.vtex-button) {
+    border-radius: 3px;
+    background: #DB3D68;
+    border: none;
+}
+
+.emailPasswordOptionBtn :global(.vtex-button) :global(.vtex-button__label) {
+    text-transform: uppercase;
+    font-size: 12px; 
+    letter-spacing: 0.6px;
+    color: white;
+    font-family: 'Inter';
+    font-weight: 800;
+}
+
+.buttonSocial .oauthLabel {
+    display: none;
+}
+
+.buttonSocial :global(.vtex-button) {
+    margin: 5px 10px 0px 10px; 
+    border: none;
+    height: auto;
+}
+ 
+.googleOptionBtn :global(.vtex-button)::after {
+    content: '';
+    background-image: url(https://dakota.com.br/custom/content/themes/DakotaLoja/Images/dev-google2-24.png);
+    display: block;
+    height: 60px;
+    width: 60px; 
+    background-repeat: no-repeat;
+} 
+
+.facebookOptionBtn :global(.vtex-button)::after {
+    content: '';
+    background-image: url(https://dakota.com.br/custom/content/themes/DakotaLoja/Images/dev-fb-24.png);
+    display: block;
+    height: 60px; 
+    width: 60px;  
+    background-repeat: no-repeat;
+}
+
+.buttonSocial :global(.vtex-button__label) {
+    padding: 0;
+    display: none;
+}
+
+.optionsList {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.optionsListItem:first-child {
+    display: block;
+    width: 100%;
+    text-align: center;
+}
+
+.content{
+    gap: 0px 40px;
+} 
+
+.optionsListItem:first-child:after {
+    content: 'Ou acessar via plataforma';
+    display: block;
+    font-family: 'Inter';
+    font-weight: 500;
+    font-size: 10px;
+    color: #222;
+    margin-top: 25px; 
 }

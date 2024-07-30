@@ -135,7 +135,8 @@
       "flex-layout.row#orderByAndSwitcher",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#products",
-      "flex-layout.row#fetchmore"
+      "flex-layout.row#fetchmore",
+      "scrollListagem"  
     ],
     "props": {
       "width": "grow",

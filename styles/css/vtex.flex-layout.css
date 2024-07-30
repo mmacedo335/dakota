@@ -5,7 +5,7 @@
 
 .flexRow--container-custom .flexRowContent--container-custom {
     padding: 0 20px;
-}
+} 
 
 .flexRowContent--main-header {
     padding: 11px 0px;
@@ -357,6 +357,10 @@
     text-transform: none;
 }
 
+.flexRowContent--search-banner :global(.vtex-store-components-3-x-imageElementLink){
+    line-height: 0;
+}
+
 .flexRowContent--minicart-footer :global(.vtex-minicart-2-x-minicartCheckoutButton) :global(.vtex-button__label)::after {
     font-size: 14px;
     content: 'Finalizar compra';
@@ -460,6 +464,10 @@
     margin-bottom: 30px;
 }
 
+.flexCol--search-topo{
+    position: relative;
+}
+
 .flexRowContent--productCountMobileRow {
     border-bottom: 1px solid #F6F6F6;
     border-top: 1px solid #F6F6F6;
@@ -477,6 +485,13 @@
 }
 
 @media(min-width: 769px) {
+    .flexRow--search-topo :global(.vtex-breadcrumb-1-x-container){
+        position: absolute;
+        bottom: 0;
+        top: 0;
+        margin: auto;
+        height: 40px;
+    }
     .flexRowContent--menu-footer :global(.vtex-menu-2-x-menuContainer) {
         flex-direction: row;
         justify-content: space-between;

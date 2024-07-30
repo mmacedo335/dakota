@@ -7,7 +7,7 @@
     "props": {
       "fullWidth": true,
       "paddingBottom": 9, 
-      "marginTop": 7,
+      "marginTop": 10,
       "blockClass": ["seo-category", "container-full"]
     }
   },

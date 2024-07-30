@@ -52,10 +52,10 @@
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "blockClass": ["title-login", "margin-0"], 
-      "text": "## ACESSE A SUA CONTA \n \n Faça login através do seu cadastro em outra plataforma"  
+      "blockClass": ["title-login", "margin-0"],  
+      "text": "## ACESSE A SUA CONTA"  
     }
-  },
+  }, 
 
   "login-content#default": {
     "props": {

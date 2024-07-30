@@ -3,7 +3,7 @@
     "title": "Full banner desktop",
     "props": {
       "fullWidth": true,
-      "marginBottom": 5,
+      "marginBottom": 0, 
       "marginTop": 0,
       "blockClass": "search-banner"
     },
