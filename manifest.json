@@ -1,7 +1,7 @@
 {
   "vendor": "dakota",
   "name": "dakota-theme",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "builders": {
     "react": "3.x",
     "assets": "0.x",
