@@ -1,0 +1,88 @@
+{
+  "drawer": {
+    "title": "Menu categorias",
+    "children": [
+      "flex-layout.row#topo-menu-mobile",
+      "flex-layout.row#menu-header-mobile",
+      "challenge-block#login-menu-mobile"
+    ],
+    "props": {
+      "blockClass": "header-menu",
+      "isFullWidth": true
+    }
+  },
+  "challenge-block#login-menu-mobile": {
+    "blocks": [
+      "challenge-content#login-menu-mobile",
+      "challenge-fallback#login-menu-mobile"
+    ]
+  },
+  "challenge-content#login-menu-mobile": {
+    "children": [
+      "rich-text#logado-menu-mobile"
+    ]
+  },
+  "challenge-fallback#login-menu-mobile": {
+    "children": [
+      "rich-text#login-menu-mobile"
+    ]
+  },
+  "rich-text#login-menu-mobile": { 
+    "props": {
+      "text": "![Carangueijo](assets/img/user-icon.png) [Entre](/login) ou [Cadastra-se](/login)",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "blockClass": "login-menu-mobile" 
+    } 
+  }, 
+  "rich-text#logado-menu-mobile": { 
+    "props": {
+      "text": "![Carangueijo](assets/img/user-icon.png) [**Minha conta**](/account)",
+      "textAlignment": "CENTER",
+      "textPosition": "LEFT",
+      "blockClass": "login-menu-mobile" 
+    }
+  },
+  "flex-layout.row#menu-header-mobile": {
+    "props": {
+      "blockClass": "menuHeader"
+    },
+    "children": [
+      "flex-layout.col#menu-header-mobile"
+    ]
+  },
+  "flex-layout.col#menu-header-mobile": {
+    "children": [
+      "mega-menu-go-back-btn",
+      "mega-menu" 
+    ]
+  },
+  "flex-layout.row#topo-menu-mobile": {
+    "title": "Logo",
+    "children": [
+      "logo#mobile-menu"
+    ],
+    "props": {
+      "blockClass": "topo-menu-mobile",
+      "horizontalAlign": "center"
+    }
+  },
+  "logo#mobile-menu": {
+    "props": {
+      "title": "Logo Mobile",
+      "href": "/",
+      "url": "assets/svg/logo-dakota.svg",
+      "width": "135",
+      "height": "35"
+    }
+  },
+  "logo#mobile": {
+    "props": {
+      "title": "Logo Mobile",
+      "href": "/",
+      "url": "assets/svg/logo-dakota.svg",
+      "width": "255",
+      "height": "65"
+    }
+  }
+}

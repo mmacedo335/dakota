@@ -13,7 +13,7 @@
     width: 100%;
 }
 
-.resultsItemImage{
+.resultsItemImage {
     display: none;
 }
 
@@ -168,8 +168,150 @@
     background: #707070;
 }
 
+.shippingContainer :global(.vtex-input__label) {
+    font-size: 0;
+}
+
+.shippingContainer {
+    position: relative;
+}
+
+
+.shippingContainer :global(.vtex-input-prefix__group) :global(.vtex-address-form-4-x-input),
+.shippingContainer :global(.vtex-input-prefix__group) :global(.vtex-input__suffix) {
+    background: #FFF;
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset; 
+    color: #989898;
+    font-size: 14px;
+}
+
+.shippingContainer :global(.vtex-input-prefix__group){
+    height: 45px;
+    border: 1.5px solid #EEEEEE;
+    border-radius: 3px;
+    font-weight: 400; 
+    font-size: 14px; 
+    line-height: 22px;
+    color: #989898;
+    width: calc(100% - 88px);
+} 
+
+.shippingContainer :global(.vtex-address-form__postalCode-forgottenURL) {
+    display: none;
+}
+
+.shippingContainer :global(.vtex-button) {
+    width: 80px; 
+    position: absolute;
+    top: 25px;
+    right: 0px;
+    height: 44px;
+    background: #222222;
+    border: 1.5px solid #000000;
+    border-radius: 3px;
+}
+
+.shippingContainer :global(.vtex-address-form__postalCode) {
+    margin: 0;
+    padding: 0;
+}
+
+.shippingContainer :global(.vtex-button) :global(.vtex-button__label) {
+    font-size: 0;
+    color: white;
+}
+
+.shippingContainer :global(.vtex-button) :global(.vtex-button__label)::after {
+    content: 'OK';
+    font-size: 14px; 
+    font-family: 'Inter';
+    font-weight: 900;
+}
+
+.shippingContainer :global(.vtex__icon-external-link) {
+    display: none;
+}
+
+
+.shippingContainer :global(.vtex-input__label) {
+    display: flex;
+    align-items: center;
+    gap: 3px;
+}
+
+.shippingContainer :global(.vtex-input__label)::after {
+    content: 'Simule frete e prazo';
+    font-size: 14px;
+    display: block;
+    color: #222222;
+    text-transform: uppercase;
+    font-family: 'Larsseit Medium';
+    letter-spacing: 0.05em; 
+    margin-left: 8px; 
+}
+
+.shippingTable .shippingTableRow {
+    padding: 12px 0;
+    display: grid;
+    grid-template-columns: auto;
+    justify-content: space-between;
+    position: relative;
+}
+
+.shippingTable .shippingTableRow .shippingTableLabel {
+    display: block;
+    font-size: 14px;
+    margin-bottom: 3px;
+    text-transform: capitalize;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: #111110;
+}
+
+.shippingTable .shippingTableRow .shippingTableCellDeliveryName {
+    padding: 0px;
+}
+
+
+.shippingTable .shippingTableRow .shippingTableCellDeliveryPrice {
+    font-size: 14px;
+    font-weight: 500;
+    letter-spacing: 0px;
+    color: black;
+    padding: 0px;
+}
+
+.shippingTable .shippingTableRow .shippingTableCellDeliveryEstimate {
+    color: #585858;
+    font-size: 14px;
+    padding-left: 28px;
+}
+
+.shippingTable {
+    border: none;
+    border-radius: 5px;
+    padding: 0px 15px;
+    margin-top: 5px;
+}
+
+.shippingTableRadioBtn {
+    width: 18px;
+    height: 18px;
+    position: relative;
+    top: 5px;
+}
+
+.shippingTable .shippingTableRow .shippingTableCellDeliveryPrice {
+    position: absolute;
+    right: 0;
+    bottom: 0px; 
+    top: 0px;
+    margin: auto;
+    height: 20px;
+}
+
 @media(max-width: 768px) {
     .container {
         padding: 0 15px;
-    }
+    } 
 }

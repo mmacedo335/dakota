@@ -235,9 +235,9 @@
 .flexRowContent--product-main .flexCol--product-informacoes {
     position: sticky;
     top: 120px;
-    height: 115vh !important;
+    height: 130vh !important;
     padding: 0 40px;
-}
+} 
 
 .flexRow--buy-button :global(.vtex-button) {
     height: 45px;
@@ -483,6 +483,14 @@
     top: 80px;
     height: 100vh;
 }
+
+.flexRow--menuHeader{  
+    width: 100%;
+    height: calc(100vh - 180px);
+    overflow: auto;
+    margin-bottom: 25px;
+}
+
 
 @media(min-width: 769px) {
     .flexRow--search-topo :global(.vtex-breadcrumb-1-x-container){

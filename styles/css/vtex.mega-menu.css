@@ -1,0 +1,87 @@
+.departmentsTitle {
+    display: none;
+}
+
+.menuItemVertical,
+.submenuItemVertical {
+    border: none;
+}
+
+.styledLinkText {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 18px;
+    color: #000;
+}
+
+.accordionIconContainer .caretIcon {
+    display: none;
+}
+
+.accordionIconContainer::after {
+    content: '>';
+    display: block;
+    font-size: 32px;
+    font-family: monospace;
+    color: black;
+    font-weight: 400;
+}
+
+.submenuContainerTitle {
+    font-size: 20px;
+    text-transform: uppercase;
+    font-family: 'Larsseit Extra Bold';
+    color: black;
+    margin-bottom: 30px;
+    letter-spacing: 0.2px;
+}
+
+.collapsibleHeaderText {
+    font-size: 17px;
+    color: #000;
+    font-family: 'Larsseit Regular';
+    margin: 10px 0px;
+}
+
+.styledLinkContainer{
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.goBackContainer {
+    position: absolute;
+    top: 27px;
+    left: 10px;
+}
+
+.goBackContainer .caretIcon {
+    display: none;
+}
+
+.goBackContainer .goBackButton::before {
+    content: '<';
+    display: block;
+    font-size: 22px;
+    font-family: monospace;
+    color: black;
+    font-weight: 400;
+}
+
+.goBackContainer .goBackButtonText {
+    font-size: 0px;
+}
+
+.goBackContainer .goBackButtonText::after {
+    display: block;
+    color: black;
+    font-size: 14px;
+    content: 'Voltar';
+}
+
+.menuItemVertical:last-child .styledLinkText{
+    color: #DB3D68; 
+}
+
+.submenuItemVertical:first-child .collapsibleHeaderText{
+    font-weight: bold; 
+}

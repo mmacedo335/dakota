@@ -65,53 +65,6 @@
       "height": "44"
     }
   },
-  "drawer": {
-    "title": "Menu categorias",
-    "children": [ 
-      "flex-layout.row#topo-menu-mobile",
-      "menu#drawer"
-    ],
-    "props": {
-      "blockClass": "header-menu",
-      "isFullWidth": true 
-    }
-  },
-  "menu#drawer": {
-    "children": [
-      
-    ],
-    "props": {
-      "orientation": "vertical"
-    }
-  },
-  "flex-layout.row#topo-menu-mobile": {
-    "title": "Logo",
-    "children": [
-      "logo#mobile-menu"
-    ],  
-    "props": {
-      "blockClass": "topo-menu-mobile",
-      "horizontalAlign": "center" 
-    }
-  },
-  "logo#mobile-menu": {
-    "props": {
-      "title": "Logo Mobile",
-      "href": "/",
-      "url": "assets/svg/logo-dakota.svg",
-      "width": "135",
-      "height": "35"  
-    }
-  },
-  "logo#mobile": {
-    "props": {
-      "title": "Logo Mobile",
-      "href": "/",
-      "url": "assets/svg/logo-dakota.svg",
-      "width": "255",
-      "height": "65"
-    }
-  },
   "login": {
     "props": {
       "iconLabel": "Entre ou Cadastre-se"

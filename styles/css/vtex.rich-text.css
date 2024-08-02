@@ -262,7 +262,7 @@
     font-weight: 700;
 }
 
-.paragraph--title-submenu{
+.paragraph--title-submenu {
     font-family: "Larsseit Bold";
     text-transform: uppercase;
     font-size: 14px;
@@ -270,7 +270,7 @@
     width: 100%;
 }
 
-.heading--title-login{
+.heading--title-login {
     color: #222;
     font-size: 24px;
     letter-spacing: 0.48px;
@@ -278,9 +278,34 @@
     margin-bottom: 8px;
 }
 
-.paragraph--title-login{
+.paragraph--title-login {
     font-size: 14px;
     color: #222;
+}
+
+.paragraph--login-menu-mobile{
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    color: black; 
+    font-size: 16px;
+    margin: 0;
+}
+ 
+.image--login-menu-mobile{ 
+    margin-right: 5px;
+}
+
+.wrapper--login-menu-mobile{
+    padding-left: 15px;
+    display: block;
+    width: 100%;
+    border-top: 1px solid #EEEEEE;
+    padding-top: 20px;
+}
+
+.link--login-menu-mobile{
+    color: black;
 }
 
 @media(min-width: 769px) {

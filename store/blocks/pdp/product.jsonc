@@ -6,7 +6,7 @@
       "condition-layout.product#availability",
       "flex-layout.row#title-description",
       "flex-layout.row#description"
-      //"shelf.relatedProducts" 
+      //"shelf.relatedProducts"
     ]
   },
   "flex-layout.row#product-breadcrumbs": {
@@ -168,19 +168,24 @@
       "responsive-layout.desktop#buy-button",
       "flex-layout.row#buy-button-whislist",
       "responsive-layout.desktop#beneficios",
-      "responsive-layout.mobile#beneficios"
-      //"flex-layout.row#product-frete"
+      "responsive-layout.mobile#beneficios",
+      "flex-layout.row#product-frete"
     ]
   },
 
   "flex-layout.row#product-frete": {
     "title": "Frete",
     "props": {
-      "marginBottom": 5
-    },
-    "children": ["shipping-simulator"]
+      "marginTop": 6
+    }, 
+    "children": [
+      "flex-layout.col#product-frete"
+    ]
   },
 
+  "flex-layout.col#product-frete": {
+    "children": ["shipping-simulator"]
+  },
 
   "responsive-layout.desktop#beneficios": {
     "title": "Barra de beneficios desktop",
@@ -262,8 +267,8 @@
     ]
   },
   "flex-layout.col#buy-button-whislist-left": {
-    "children": ["add-to-cart-button"], 
-    "props": { 
+    "children": ["add-to-cart-button"],
+    "props": {
       "width": "50%",
       "rowGap": 0,
       "blockClass": "buy-button-whislist-left"
