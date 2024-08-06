@@ -7,5 +7,11 @@
   },
   "scrollListagem": {
     "component": "Scroll"
+  }, 
+  "guia-medidas": {
+    "component": "GuiaMedidas" 
+  },
+  "newsletter-footer": {
+    "component": "NewsletterFooter" 
   }
 }

@@ -1,0 +1,61 @@
+:global(.guia-tamanhos) {
+    background-color: #fff;
+    box-shadow: 0 0 3em #d6d6d6;
+    width: 970px;
+} 
+
+:global(.guia-tamanhos) h4 {
+    text-align: center; 
+    padding: 20px;
+    font-size: 1.3rem; 
+    margin-bottom: 15px; 
+}
+ 
+:global(.guia-tamanhos) :global(.tabelas) h5 {
+    text-align: center;
+    margin-top: 1rem;
+}
+
+:global(.guia-tamanhos) :global(.tabelas) table {
+    margin: auto;
+    border-collapse: collapse;
+    color: #454545;
+    text-align: center;
+    font-size: .75rem;
+}
+
+:global(.guia-tamanhos) :global(.tabelas) table :global(.background-cinza) {
+    background-color: #ececec; 
+}
+
+:global(.guia-tamanhos) :global(.tabelas) table td,
+:global(.guia-tamanhos) :global(.tabelas) table th {  
+    border: 1px solid #cecece;
+    padding: 8px;
+}
+
+:global(.guia-tamanhos) :global(.informacoes-guia) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 0.8rem;
+}
+
+:global(.guia-tamanhos) :global(.informacoes-guia) p {
+    font-size: 0.8rem;
+    margin: 2.5rem 0.5rem;
+    text-align: left;
+    color: #555;
+    line-height: 20px;
+}
+
+:global(.guia-tamanhos) :global(.informacoes-guia) p b {
+    font-weight: 900;
+}
+
+:global(.guia-tamanhos) :global(.informacoes-guia) img {
+    padding-right: 30px;
+} 

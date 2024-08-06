@@ -308,6 +308,19 @@
     color: black;
 }
 
+.paragraph--guia-tamanhos{
+    border: 1.5px solid #ACACAC;
+    border-radius: 9px;
+    font-size: .7em;
+    font-style: initial;  
+    cursor: pointer;
+    letter-spacing: 2px;
+    padding: 1px 15px;
+    text-transform: uppercase;
+    color: #9c9c9c;
+    font-family: 'Larsseit Regular';
+}
+
 @media(min-width: 769px) {
     .paragraph--copyright {
         font-size: 10px;

@@ -1,0 +1,31 @@
+.triggerContainer--guia-tamanhos {
+    display: block;
+}
+
+.container--guia-tamanhos {
+    background-color: rgba(255, 255, 255, .9);
+}
+
+.container--guia-tamanhos .headerContainer {
+    position: absolute;
+    right: 0;
+    border: none;
+}
+
+.container--guia-tamanhos .headerContainer .closeIcon {
+    content: "";
+    display: block;
+    width: 30px;
+    height: 30px;
+    background-color: transparent;
+    color: transparent;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-image: url('assets/img/fechar_guia.png');
+}
+
+@media(max-width: 768px) {
+    .paper--guia-tamanhos {
+        margin: 12px;
+    }
+}

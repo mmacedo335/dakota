@@ -33,3 +33,9 @@
     background: transparent;
     border: none;
 }
+
+@media(max-width: 768px){
+    .trigger--question :global(.vtex-rich-text-0-x-paragraph) {
+        font-weight: 500;
+    }
+}

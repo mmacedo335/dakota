@@ -9,7 +9,7 @@
     ],
     "props": {
       "blockClass": "menu-footer",
-      "paddingTop": 7, 
+      "paddingTop": 7,
       "paddingBottom": 6
     }
   },
@@ -72,7 +72,7 @@
     ],
     "props": {
       "blockClass": "footer-seguranca",
-      "paddingTop": 5, 
+      "paddingTop": 5,
       "paddingBottom": 7,
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
@@ -88,20 +88,20 @@
     ],
     "props": {
       "blockClass": "footer-seguranca",
-      "paddingTop": 5, 
+      "paddingTop": 5,
       "paddingBottom": 7,
       "preserveLayoutOnMobile": true
     }
   },
   "flex-layout.col#footer-seguranca-00": {
-    "props": { 
+    "props": {
       "blockClass": "selos seguranca"
     },
     "children": [
       "rich-text#footer-seguranca-00",
       "flex-layout.row#selos-seguranca"
     ]
-  }, 
+  },
   "flex-layout.row#selos-seguranca": {
     "title": "Selos de segurança",
     "children": [
@@ -115,7 +115,7 @@
     "props": {
       "blockClass": "footer-seguranca",
       "src": "assets/svg/premio-reclame-aqui.svg",
-      "maxWidth": 100 
+      "maxWidth": 100
     }
   },
   "rich-text#footer-seguranca-00": {
@@ -261,8 +261,7 @@
   "flex-layout.col#footer-newsletter": {
     "children": [
       "rich-text#newsletter-text",
-      "newsletter-form",
-      "rich-text#newsletter-text-privacidade"
+      "newsletter-footer"
     ],
     "props": {
       "blockClass": "newsletter",
@@ -276,44 +275,8 @@
       "blockClass": "text-newsletter",
       "textColor": "c-on-base--inverted",
       "textAlignment": "CENTER",
-      "textPosition": "CENTER" 
+      "textPosition": "CENTER"
     },
-    "title": "Título Newsletter"
-  },
-  "rich-text#newsletter-text-privacidade": {
-    "props": {
-      "text": "Ao clicar em ASSINAR declaro que concordo em receber novidades e promoções da Dakota e suas marcas. \n Confira nossa [Política de privacidade](/)",
-      "textAlignment": "CENTER",
-      "textPosition": "CENTER",
-      "textColor": "c-on-base--inverted",
-      "blockClass": "newsletter-text-privacidade"
-    },
-    "title": "Newsletter - Politica"
-  },
-  "newsletter-form": {
-    "children": [
-      "newsletter-input-name",
-      "newsletter-input-email",
-      "newsletter-submit"
-    ],
-    "props": {
-      "blockClass": "newsletter"
-    },
-    "title": "Newsletter"
-  },
-  "newsletter-input-email": {
-    "props": {
-      "placeholderText": "Insira seu e-mail e receba as novidades.."
-    }
-  },
-  "newsletter-input-name": {
-    "props": {
-      "placeholderText": "Digite seu nome..."
-    }
-  }, 
-  "newsletter-submit": {
-    "props": {
-      "submitButtonLabel": "ASSINAR"
-    }
+    "title": "Título Newsletter" 
   }
 }

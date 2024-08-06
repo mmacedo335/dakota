@@ -19,24 +19,8 @@
     "title": "Mobile",
     "children": [
       "flex-layout.row#institucional-titulo-page",
-      "flex-layout.row#links-account", 
-      "flex-layout.row#conteudo-condicoes-geral-mobile"
+      "flex-layout.row#condicoes-geral-content"
     ]
-  },
-
-  "flex-layout.row#conteudo-condicoes-geral-mobile": {
-    "title": "mobile",
-    "children": [
-      "flex-layout.col#condicoes-geral-voltar",
-      "flex-layout.col#conteudo-condicoes-geral-mobile"
-    ],
-    "props": {
-      "props": {
-        "blockClass": ["condicoes-geral", "main-container"],
-        "paddingBottom": 8,
-        "colGap": 7
-      }
-    }
   },
 
   "flex-layout.col#condicoes-geral-voltar": {

@@ -165,6 +165,7 @@
       "product-selling-price#summary",
       "product-installments#summary",
       "sku-selector",
+      "modal-trigger#guia-tamanhos",
       "responsive-layout.desktop#buy-button",
       "flex-layout.row#buy-button-whislist",
       "responsive-layout.desktop#beneficios",
@@ -173,11 +174,57 @@
     ]
   },
 
+  "modal-trigger#guia-tamanhos": {
+    "title": "Guia de tamanhos",
+    "children": ["rich-text#guia-tamanhos", "modal-layout#guia-tamanhos"],
+    "props": {
+      "blockClass": "guia-tamanhos"
+    }
+  },
+  
+  "rich-text#guia-tamanhos": { 
+    "props": {
+      "text": "Guia de tamanhos",
+      "blockClass": "guia-tamanhos",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER" 
+    }
+  }, 
+
+  "modal-layout#guia-tamanhos": {
+    "children": [
+      "modal-header", 
+      "responsive-layout.desktop#guia-tamanhos",
+      "responsive-layout.mobile#guia-tamanhos"
+    ], 
+    "props": {
+      "blockClass": "guia-tamanhos"
+    }
+  },
+
+  "responsive-layout.desktop#guia-tamanhos": {
+    "children": [
+      "guia-medidas"
+    ]
+  },
+
+  "responsive-layout.mobile#guia-tamanhos": {
+    "children": [
+      "image#guia-tamanhos"
+    ]
+  },
+ 
+  "image#guia-tamanhos": {
+    "props": {
+      "src": "assets/img/guia-mobile.jpg"
+    }
+  },
+
   "flex-layout.row#product-frete": {
     "title": "Frete",
     "props": {
       "marginTop": 6
-    }, 
+    },
     "children": [
       "flex-layout.col#product-frete"
     ]

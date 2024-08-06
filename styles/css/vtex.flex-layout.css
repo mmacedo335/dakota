@@ -235,7 +235,7 @@
 .flexRowContent--product-main .flexCol--product-informacoes {
     position: sticky;
     top: 120px;
-    height: 130vh !important;
+    height: 115vh; 
     padding: 0 40px;
 } 
 
@@ -511,6 +511,31 @@
 }
 
 @media(max-width: 768px) {
+
+    .flexCol--container-links-institucional :global(.vtex-store-link-0-x-link) {
+        font-size: 14px;
+        text-transform: uppercase;
+        position: relative;
+    }
+
+    .flexCol--container-links-institucional :global(.vtex-store-link-0-x-link)::after {
+        content: '>';
+        display: flex;
+        align-items: center;
+        font-size: 22px; 
+        font-family: monospace;
+        color: black;
+        font-weight: 400;
+        position: absolute; 
+        right: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    
+    .flexCol--container-links-institucional{
+        margin-bottom: 50px;
+    }
     
     .flexRowContent--productSpecificationGroup {
         margin-top: 15px;

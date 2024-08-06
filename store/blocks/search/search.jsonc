@@ -178,8 +178,8 @@
     }
   },
   "flex-layout.row#products": {
-    "children": ["search-content"]
-  },
+    "children": ["search-content"] 
+  }, 
   "search-content": {
     "blocks": ["gallery", "not-found"]
   },

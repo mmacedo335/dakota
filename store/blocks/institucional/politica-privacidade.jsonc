@@ -11,7 +11,7 @@
       "children": [
         "flex-layout.row#institucional-titulo-page",
         "flex-layout.row#links-account",
-        "flex-layout.row#politica-privacidade-content" 
+        "flex-layout.row#politica-privacidade-content"  
       ]
     }, 
   
@@ -19,25 +19,10 @@
       "title": "Mobile",
       "children": [
         "flex-layout.row#institucional-titulo-page",
-        "flex-layout.row#links-account", 
-        "flex-layout.row#conteudo-politica-privacidade-mobile"
+        "flex-layout.row#politica-privacidade-content" 
       ]
     },
   
-    "flex-layout.row#conteudo-politica-privacidade-mobile": {
-      "title": "mobile",
-      "children": [
-        "flex-layout.col#politica-privacidade-voltar",
-        "flex-layout.col#conteudo-politica-privacidade-mobile"
-      ],
-      "props": {
-        "props": {
-          "blockClass": ["politica-privacidade", "main-container"],
-          "paddingBottom": 8,
-          "colGap": 7
-        }
-      }
-    },
   
     "flex-layout.col#politica-privacidade-voltar": {
       "children": [
