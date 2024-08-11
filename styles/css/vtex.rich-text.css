@@ -21,11 +21,13 @@
 
 .heading--title-central-de-atendimento {
     font-size: 30px;
+    color: black;
 }
 
 .paragraph--title-central-de-atendimento {
     margin: 0;
     font-size: 21px;
+    color: black;
 }
 
 .container--title-page .paragraph {
@@ -319,6 +321,12 @@
     text-transform: uppercase;
     color: #9c9c9c;
     font-family: 'Larsseit Regular';
+}
+
+.paragraph--produto-indisponivel-title{
+    font-size: 25px;
+    text-transform: uppercase;
+    font-family: 'Larsseit Medium';
 }
 
 @media(min-width: 769px) {

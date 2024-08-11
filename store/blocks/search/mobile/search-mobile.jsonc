@@ -8,7 +8,8 @@
       "flex-layout.row#productCountMobile",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#contentmobile",
-      "flex-layout.row#fetchmore" 
+      "flex-layout.row#fetchmore",
+      "scrollListagem"  
     ],
     "props": {
       "pagination": "show-more",

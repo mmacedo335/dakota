@@ -87,15 +87,17 @@
       "flex-layout.col#footer-seguranca-02"
     ],
     "props": {
-      "blockClass": "footer-seguranca",
-      "paddingTop": 5,
+      "blockClass": ["footer-seguranca", "mobile"], 
+      "paddingTop": 5, 
       "paddingBottom": 7,
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
       "preserveLayoutOnMobile": true
     }
   },
   "flex-layout.col#footer-seguranca-00": {
     "props": {
-      "blockClass": "selos seguranca"
+      "blockClass": "seguranca" 
     },
     "children": [
       "rich-text#footer-seguranca-00",
@@ -105,17 +107,48 @@
   "flex-layout.row#selos-seguranca": {
     "title": "Selos de segurança",
     "children": [
-      "image#premio-reclame"
+      "image#ebit",
+      "image#reclame-aqui", 
+      "image#premio-reclame" 
     ],
     "props": {
-      "preserveLayoutOnMobile": true
+      "blockClass": "img-seguranca",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true, 
+      "colGap": 2
     }
+  },
+  "image#reclame-aqui": {
+    "props": {
+      "blockClass": "footer-seguranca",
+      "src": "assets/img/reclame_aqui.png", 
+      "maxHeight": 52,
+      "maxWidth": 142,
+      "link": {
+        "url": "https://www.reclameaqui.com.br/empresa/dakota-calcados-s-a/?utm_source=referral&utm_medium=embbed&utm_campaign=reputacao&utm_term=horizontal",
+        "newTab": true
+      }
+    }
+  },  
+  "image#ebit": { 
+    "props": {
+      "blockClass": "footer-seguranca",
+      "src": "assets/img/ebit.png",
+      "maxHeight": 67,
+      "maxWidth": 50, 
+      "link": {
+        "url": "https://www.ebit.com.br/Dakota",
+        "newTab": true
+      }  
+    } 
   },
   "image#premio-reclame": {
     "props": {
       "blockClass": "footer-seguranca",
       "src": "assets/svg/premio-reclame-aqui.svg",
-      "maxWidth": 100
+      "maxWidth": 100,
+      "maxHeight": 52
     }
   },
   "rich-text#footer-seguranca-00": {

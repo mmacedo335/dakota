@@ -24,6 +24,38 @@
     background-image: url('assets/img/fechar_guia.png');
 }
 
+.headerContainer {
+    position: absolute;
+    right: 0px;
+    border: none;
+    top: 0;
+}
+
+.paper--modal-zoom {
+    width: 80%;
+    height: 100%;
+}
+
+.triggerContainer--produto-indisponivel {
+    display: block;
+    background: #fd8a10;
+    padding: 15px 50px;
+    cursor: pointer;
+    margin-top: 25px;
+}
+
+.triggerContainer--produto-indisponivel :global(.vtex-rich-text-0-x-paragraph--produto-indisponivel) {
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 20px;
+    color: #000;
+    font-family: 'Larsseit Extra Bold';
+}
+
+.paper--produto-indisponivel {
+    padding: 30px 70px;
+}
+
 @media(max-width: 768px) {
     .paper--guia-tamanhos {
         margin: 12px;

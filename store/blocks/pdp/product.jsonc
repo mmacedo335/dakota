@@ -118,7 +118,8 @@
   "flex-layout.row#product-image": {
     "children": [
       "responsive-layout.desktop#product-images-desktop",
-      "responsive-layout.mobile#product-images-mobile"
+      "responsive-layout.mobile#product-images-mobile",
+      "responsive-layout.tablet#product-images-mobile"
     ],
     "props": {
       "preventHorizontalStretch": true
@@ -130,6 +131,8 @@
   "product-images#desktop": {
     "props": {
       "displayMode": "list",
+      "ModalZoom": "modal-layout#product-zoom",
+      "zoomMode": "open-modal",
       "aspectRatio": {
         "desktop": "auto",
         "phone": "16:9"
@@ -137,11 +140,31 @@
       "displayThumbnailsArrows": true
     }
   },
+  "modal-layout#product-zoom": {
+    "children": [
+      "modal-header", 
+      "product-images.high-quality-image" 
+    ],
+    "props": {
+      "blockClass": "modal-zoom"
+    }
+  },
+  "product-images.high-quality-image": { 
+    "props": {
+      "zoomMode": "in-place-hover", 
+      "zoomFactor": 2  
+    }
+  }, 
+  "responsive-layout.tablet#product-images-mobile": {
+    "children": ["product-images#mobile"]
+  },  
   "responsive-layout.mobile#product-images-mobile": {
     "children": ["product-images#mobile"]
   },
   "product-images#mobile": {
     "props": {
+      "ModalZoom": "modal-layout#product-zoom",
+      "zoomMode": "open-modal", 
       "aspectRatio": {
         "desktop": "auto",
         "phone": "auto"
@@ -181,22 +204,22 @@
       "blockClass": "guia-tamanhos"
     }
   },
-  
-  "rich-text#guia-tamanhos": { 
+
+  "rich-text#guia-tamanhos": {
     "props": {
       "text": "Guia de tamanhos",
       "blockClass": "guia-tamanhos",
       "textAlignment": "CENTER",
-      "textPosition": "CENTER" 
+      "textPosition": "CENTER"
     }
-  }, 
+  },
 
   "modal-layout#guia-tamanhos": {
     "children": [
-      "modal-header", 
+      "modal-header",
       "responsive-layout.desktop#guia-tamanhos",
       "responsive-layout.mobile#guia-tamanhos"
-    ], 
+    ],
     "props": {
       "blockClass": "guia-tamanhos"
     }
@@ -213,7 +236,7 @@
       "image#guia-tamanhos"
     ]
   },
- 
+
   "image#guia-tamanhos": {
     "props": {
       "src": "assets/img/guia-mobile.jpg"
@@ -350,11 +373,55 @@
     },
     "children": [
       "flex-layout.row#product-name",
-      "product-identifier.product",
-      "sku-selector",
-      "flex-layout.row#availability"
+      "product-list-price#summary",
+      "product-selling-price#summary",
+      "product-installments#summary",
+      "sku-selector", 
+      "modal-trigger#produto-indisponivel", 
+      "flex-layout.row#buy-button-whislist", 
+      "responsive-layout.desktop#beneficios",
+      "responsive-layout.mobile#beneficios",
+      "flex-layout.row#product-frete"
+
     ]
   },
+  "modal-trigger#produto-indisponivel": {
+    "title": "Guia de tamanhos",
+    "children": ["rich-text#produto-indisponivel", "modal-layout#produto-indisponivel"],
+    "props": {
+      "blockClass": "produto-indisponivel"
+    }
+  },
+
+  "rich-text#produto-indisponivel": {
+    "props": { 
+      "text": "Avise-me quando chegar",
+      "blockClass": ["produto-indisponivel", "margin-0"],
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
+  "modal-layout#produto-indisponivel": {
+    "children": [
+      "modal-header", 
+      "rich-text#produto-indisponivel-title", 
+      "flex-layout.row#availability" 
+    ],
+    "props": {
+      "blockClass": "produto-indisponivel"
+    }
+  },
+
+  "rich-text#produto-indisponivel-title": {
+    "props": { 
+      "text": "Avise-me quando chegar",
+      "blockClass": "produto-indisponivel-title",
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
+  },
+
   "flex-layout.row#availability": {
     "props": {
       "blockClass": "message-availability"

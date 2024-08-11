@@ -180,28 +180,28 @@
 .shippingContainer :global(.vtex-input-prefix__group) :global(.vtex-address-form-4-x-input),
 .shippingContainer :global(.vtex-input-prefix__group) :global(.vtex-input__suffix) {
     background: #FFF;
-    -webkit-box-shadow: 0 0 0px 1000px #fff inset; 
+    -webkit-box-shadow: 0 0 0px 1000px #fff inset;
     color: #989898;
     font-size: 14px;
 }
 
-.shippingContainer :global(.vtex-input-prefix__group){
+.shippingContainer :global(.vtex-input-prefix__group) {
     height: 45px;
     border: 1.5px solid #EEEEEE;
     border-radius: 3px;
-    font-weight: 400; 
-    font-size: 14px; 
+    font-weight: 400;
+    font-size: 14px;
     line-height: 22px;
     color: #989898;
     width: calc(100% - 88px);
-} 
+}
 
 .shippingContainer :global(.vtex-address-form__postalCode-forgottenURL) {
     display: none;
 }
 
 .shippingContainer :global(.vtex-button) {
-    width: 80px; 
+    width: 80px;
     position: absolute;
     top: 25px;
     right: 0px;
@@ -223,7 +223,7 @@
 
 .shippingContainer :global(.vtex-button) :global(.vtex-button__label)::after {
     content: 'OK';
-    font-size: 14px; 
+    font-size: 14px;
     font-family: 'Inter';
     font-weight: 900;
 }
@@ -246,8 +246,8 @@
     color: #222222;
     text-transform: uppercase;
     font-family: 'Larsseit Medium';
-    letter-spacing: 0.05em; 
-    margin-left: 8px; 
+    letter-spacing: 0.05em;
+    margin-left: 8px;
 }
 
 .shippingTable .shippingTableRow {
@@ -304,14 +304,104 @@
 .shippingTable .shippingTableRow .shippingTableCellDeliveryPrice {
     position: absolute;
     right: 0;
-    bottom: 0px; 
+    bottom: 0px;
     top: 0px;
     margin: auto;
     height: 20px;
 }
 
+.highQualityProductImageImgElement {
+    max-width: 600px;
+}
+
+.highQualityContainer {
+    display: flex;
+    justify-content: center;
+    cursor: crosshair;
+    align-items: center;
+}
+
+.productImage {
+    cursor: -webkit-zoom-in;
+    cursor: zoom-in;
+}
+
+.subscriberContainer .content {
+    display: block;
+}
+
+.subscriberContainer .content :global(.vtex-styleguide-9-x-input) {
+    border-radius: 2px;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dfdfdf;
+    color: #333;
+    display: block;
+    font-size: .875rem;
+    padding: .5em;
+    width: 100%;
+    height: 2.5em;
+}
+
+.subscriberContainer .content :global(.vtex-styleguide-9-x-input)::placeholder {
+    color: black;
+    text-transform: uppercase;
+}
+
+.subscriberContainer .content :global(.vtex-input-prefix__group) {
+    border: none;
+}
+
+.subscriberContainer :global(.vtex-store-components-3-x-submit) {
+    justify-content: center;
+}
+
+.subscriberContainer :global(.vtex-store-components-3-x-submit) :global(.vtex-button) {
+    font-size: 18px;
+    font-family: 'Larsseit Bold';
+    border: none;
+    background-color: #fd8a10;
+    padding: 5px 35px 5px 35px;
+    border-radius: 0;
+    font-weight: 400;
+    cursor: pointer;
+    letter-spacing: 1px;
+    margin: auto;
+    display: block;
+    color: white;
+}
+
+.subscriberContainer .submit::before {
+    content: 'Ao clicar no botão "Enviar", eu confirmo ter mais de 18 anos e concordo em receber notícias sobre os produtos e serviços empresa Dakota Calçados, incluindo as marcas Dakota, Tanara, Mississipi, Campesi, Kolosh e Pink Cats.';
+    display: block;
+    text-align: left;
+    font-size: 11px;
+    color: #555;
+    line-height: 15px;
+    margin-bottom: 15px;
+}
+
+.subscriberContainer {
+    max-width: 380px;
+}
+
+.subscriberContainer .success {
+    text-align: center;
+    font-family: 'Larsseit Medium';
+}
+
+.subscriberContainer .submit {
+    display: block;
+}
+
+.subscriberContainer .title,
+.subscriberContainer .subscribeLabel {
+    display: none;
+}
+
 @media(max-width: 768px) {
     .container {
         padding: 0 15px;
-    } 
+    }
 }
