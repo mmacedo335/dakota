@@ -7,7 +7,7 @@
       "flex-layout.row#title-description",
       "flex-layout.row#description"
       //"shelf.relatedProducts"
-    ]
+    ] 
   },
   "flex-layout.row#product-breadcrumbs": {
     "title": "breadcrumb",
@@ -142,29 +142,29 @@
   },
   "modal-layout#product-zoom": {
     "children": [
-      "modal-header", 
-      "product-images.high-quality-image" 
+      "modal-header",
+      "product-images.high-quality-image"
     ],
     "props": {
       "blockClass": "modal-zoom"
     }
   },
-  "product-images.high-quality-image": { 
+  "product-images.high-quality-image": {
     "props": {
-      "zoomMode": "in-place-hover", 
-      "zoomFactor": 2  
+      "zoomMode": "in-place-hover",
+      "zoomFactor": 2
     }
-  }, 
+  },
   "responsive-layout.tablet#product-images-mobile": {
     "children": ["product-images#mobile"]
-  },  
+  },
   "responsive-layout.mobile#product-images-mobile": {
     "children": ["product-images#mobile"]
   },
   "product-images#mobile": {
     "props": {
       "ModalZoom": "modal-layout#product-zoom",
-      "zoomMode": "open-modal", 
+      "zoomMode": "open-modal",
       "aspectRatio": {
         "desktop": "auto",
         "phone": "auto"
@@ -189,6 +189,7 @@
       "product-installments#summary",
       "sku-selector",
       "modal-trigger#guia-tamanhos",
+      "flex-layout.row#product-similar",
       "responsive-layout.desktop#buy-button",
       "flex-layout.row#buy-button-whislist",
       "responsive-layout.desktop#beneficios",
@@ -196,6 +197,16 @@
       "flex-layout.row#product-frete"
     ]
   },
+
+  "flex-layout.row#product-similar": {
+    "title": "Produto Similar",
+    "props": {
+      "marginTop": 3,
+      "marginBottom": 4 
+    },
+    "children": ["similar-products-variants"]
+  },
+
 
   "modal-trigger#guia-tamanhos": {
     "title": "Guia de tamanhos",
@@ -376,25 +387,27 @@
       "product-list-price#summary",
       "product-selling-price#summary",
       "product-installments#summary",
-      "sku-selector", 
-      "modal-trigger#produto-indisponivel", 
-      "flex-layout.row#buy-button-whislist", 
+      "sku-selector",
+      "modal-trigger#produto-indisponivel",
+      "flex-layout.row#buy-button-whislist",
       "responsive-layout.desktop#beneficios",
       "responsive-layout.mobile#beneficios",
       "flex-layout.row#product-frete"
-
     ]
   },
   "modal-trigger#produto-indisponivel": {
     "title": "Guia de tamanhos",
-    "children": ["rich-text#produto-indisponivel", "modal-layout#produto-indisponivel"],
+    "children": [
+      "rich-text#produto-indisponivel",
+      "modal-layout#produto-indisponivel"
+    ],
     "props": {
       "blockClass": "produto-indisponivel"
     }
   },
 
   "rich-text#produto-indisponivel": {
-    "props": { 
+    "props": {
       "text": "Avise-me quando chegar",
       "blockClass": ["produto-indisponivel", "margin-0"],
       "textAlignment": "CENTER",
@@ -404,9 +417,9 @@
 
   "modal-layout#produto-indisponivel": {
     "children": [
-      "modal-header", 
-      "rich-text#produto-indisponivel-title", 
-      "flex-layout.row#availability" 
+      "modal-header",
+      "rich-text#produto-indisponivel-title",
+      "flex-layout.row#availability"
     ],
     "props": {
       "blockClass": "produto-indisponivel"
@@ -414,7 +427,7 @@
   },
 
   "rich-text#produto-indisponivel-title": {
-    "props": { 
+    "props": {
       "text": "Avise-me quando chegar",
       "blockClass": "produto-indisponivel-title",
       "textAlignment": "CENTER",

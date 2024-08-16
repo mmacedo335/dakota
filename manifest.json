@@ -16,6 +16,7 @@
   },
   "dependencies": {
     "vtex.store": "2.x",
+    "vtex.similar-products-variants": "0.x",
     "vtex.store-header": "2.x",
     "vtex.product-summary": "2.x",
     "vtex.store-footer": "2.x",
@@ -40,6 +41,7 @@
     "vtex.product-identifier": "0.x",
     "vtex.breadcrumb": "1.x",
     "vtex.sticky-layout": "0.x",
+    "vtex.product-context": "0.x",
     "vtex.product-customizer": "2.x",
     "vtex.stack-layout": "0.x",
     "vtex.product-specification-badges": "0.x",
@@ -61,6 +63,7 @@
     "vtex.product-price": "1.x",
     "vtex.disclosure-layout": "1.x",
     "vtex.store-form": "0.x",
+    "vtex.overlay-layout": "0.x", 
     "vtex.product-highlights": "2.x",
     "vtex.product-specifications": "1.x",
     "vtex.tab-layout": "0.x",

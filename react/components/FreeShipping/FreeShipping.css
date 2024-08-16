@@ -1,0 +1,51 @@
+.freeShippingBar {
+    background: rgb(255 255 255 / 30%);
+    height: 8px;
+    width: 100%;
+    border-radius: 25px;
+}
+
+.freeShippingItem p {
+    margin-bottom: 0;
+}
+
+.freeShippingRange {
+    background-color: white;
+    max-width: calc(100% + 1px);
+    height: 8px;
+    margin-top: -1px;
+    margin-left: -1px;
+    transition: width 1s;
+    border-radius: 25px;
+}
+
+.freeShippingItem .title {
+    margin: 0;
+    color: #fff;
+    font-size: 13px;
+    line-height: 18px;
+    letter-spacing: 0em;
+    text-align: center;
+    margin-bottom: 10px;
+    font-family: 'Larsseit Regular';
+}
+
+.freeShippingItem .title strong { 
+    font-family: 'Larsseit Bold';
+}
+
+.freeShippingItem .title span {
+    color: #636363;
+    font-size: 12px;
+    text-transform: none;
+    font-family: 'Figtree-Regular';
+    display: block;
+    margin-top: 7px;
+}
+
+.freeShippingItem {
+    background: #DB3D68;
+    padding: 15px;
+    position: relative; 
+    margin-bottom: 15px;
+}

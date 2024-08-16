@@ -13,5 +13,8 @@
   },
   "store.custom#politica-privacidade": {
     "path": "/institucional/politica-privacidade"
+  },
+  "store.custom#loja-fisicas": {
+    "path": "/lojas-fisicas"
   }
 }

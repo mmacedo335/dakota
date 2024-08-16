@@ -40,7 +40,7 @@
   "link#loja-fisica": {
     "props": {
       "href": "/lojas-fisicas",
-      "label": "Lojas Físicas"
+      "label": "Lojas Físicas" 
     }
   },
   "link#loja-online": {

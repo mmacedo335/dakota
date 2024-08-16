@@ -155,7 +155,7 @@
     "props": {
       "text": "Primeira troca grátis",
       "textColor": "c-on-base--inverted",
-      "blockClass": ["margin-0", "topo-flutuante-04", "topo-flutuante"] 
+      "blockClass": ["margin-0", "topo-flutuante-04", "topo-flutuante"]
     }
   },
   "flex-layout.row#topo-flutuante-mobile": {
@@ -187,7 +187,7 @@
       "infinite": true,
       "showNavigationArrows": "never",
       "blockClass": "topo-flutuante",
-      "showPaginationDots": "never" 
+      "showPaginationDots": "never"
     },
     "children": [
       "rich-text#topo-flutuante-01",
@@ -195,5 +195,38 @@
       "rich-text#topo-flutuante-03",
       "rich-text#topo-flutuante-04"
     ]
+  },
+  "flex-layout.row#topo-flutuante-mobile-01": {
+    "title": "Topo Flutuante 02",
+    "props": {
+      "blockClass": ["topo-menu", "mobile"],
+      "horizontalAlign": "center",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "verticalAlign": "center",
+      "fullWidth": true,
+      "paddingTop": 2,
+      "paddingBottom": 2
+    },
+    "children": [
+      "link#blog-topo-mobile",
+      "link#sustentabilidade-topo-mobile"
+    ]
+  },
+
+  "link#blog-topo-mobile": {
+    "title": "Link blog",
+    "props": {
+      "href": "https://blog.dakota.com.br/",
+      "label": "Blog"
+    }
+  },
+
+  "link#sustentabilidade-topo-mobile": {
+    "title": "Link blog",
+    "props": {
+      "href": "https://blog.dakota.com.br/",
+      "label": "Blog"
+    }
   }
 }

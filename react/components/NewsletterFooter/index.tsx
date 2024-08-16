@@ -84,7 +84,7 @@ const ContactForm: React.FC = () => {
                 />
               </div>
               <div className={styles.info}>
-                <p>Ao clicar em ASSINAR declaro que concordo em receber novidades e promoções da Dakota e suas marcas. <br></br> Confira nossa <a href="/">Política de privacidade</a> </p>
+                <p>Ao clicar em ASSINAR declaro que concordo em receber novidades e promoções da Dakota e suas marcas. <br></br> Confira nossa <a href="/institucional/politica-privacidade">Política de privacidade</a> </p>
               </div>
               <div className={styles.btn}>
                 <button type="submit">ASSINAR</button>

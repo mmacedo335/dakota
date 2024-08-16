@@ -1,0 +1,36 @@
+.variants .title {
+    font-size: 0;
+}
+
+.variants .title::after {
+    content: 'Selecione a cor:';
+    display: block;
+    text-align: center;
+    color: #000;
+    font-size: 14px;
+    font-family: 'Larsseit Medium';
+    letter-spacing: 1px;
+}
+
+.var-wrap {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.img {
+    width: 32px;
+    height: 32px;
+    margin: 0;
+}
+
+.img_wrap {
+    border: 1.5px solid #EEEEEE;
+    border-radius: 3px;
+    width: 42px;
+    height: 40px;
+    padding: 4px;
+}

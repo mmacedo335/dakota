@@ -87,6 +87,23 @@
     text-decoration: underline;
 }
 
+.heading--loja-fisicas-title{
+    letter-spacing: 1px;
+    font-size: 1.625rem;
+    margin: 0;
+    color: #000;
+}
+
+.paragraph--loja-fisicas-title{
+    font-size: 20px;
+    color: #000;
+}
+
+.paragraph--loja-fisicas-title .link--loja-fisicas-title{
+    text-decoration: underline;
+    color: #000;
+}
+
 .heading--text-newsletter {
     letter-spacing: 6px;
     font-size: 18px;
@@ -321,6 +338,7 @@
     text-transform: uppercase;
     color: #9c9c9c;
     font-family: 'Larsseit Regular';
+    margin-top: 3px;
 }
 
 .paragraph--produto-indisponivel-title{

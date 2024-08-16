@@ -24,6 +24,11 @@
     background-color: #db3d68;
 }
 
+.flexRow--topo-menu.flexRow--mobile :global(.vtex-store-link-0-x-label){
+    color: white; 
+    font-size: 14px;
+}
+
 .flexRowContent--topo-menu :global(.vtex-rich-text-0-x-paragraph),
 .flexRowContent--topo-menu :global(.vtex-rich-text-0-x-link) {
     color: white;
@@ -379,6 +384,10 @@
 .flexRow--minicart-footer {
     box-shadow: none;
     background: #F6F6F6;
+}
+
+.flexRow--minicart-footer :global(.vtex-store-components-3-x-container){
+    padding: 0;
 }
 
 .flexRow--minicart-header {

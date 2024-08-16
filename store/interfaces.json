@@ -6,12 +6,15 @@
     "component": "SummaryMinicart"
   },
   "scrollListagem": {
-    "component": "Scroll"
+    "component": "Scroll" 
   }, 
   "guia-medidas": {
     "component": "GuiaMedidas" 
   },
   "newsletter-footer": {
     "component": "NewsletterFooter" 
+  },
+  "free-shipping": {
+    "component": "FreeShipping" 
   }
 }

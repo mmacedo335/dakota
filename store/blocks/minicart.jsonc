@@ -180,7 +180,11 @@
     "children": ["flex-layout.col#minicart-footer"]
   },
   "flex-layout.col#minicart-footer": {
-    "children": ["summary-minicart", "minicart-checkout-button"]
+    "children": [
+      "free-shipping",
+      "summary-minicart",
+      "minicart-checkout-button"
+    ]
   },
   "minicart-product-list": {
     "blocks": ["product-list#minicart"]

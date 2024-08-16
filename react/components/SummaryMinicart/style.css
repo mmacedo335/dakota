@@ -20,11 +20,11 @@
     line-height: 20px;
     font-size: 15px;
     color: black;
-    font-family: 'Larsseit Thin';
+    font-family: 'Larsseit Regular';
 }
 
 .customsummary .parcelas span b {
-    font-family: 'Larsseit Regular';
+    font-family: 'Larsseit Bold';
 }
 
 .customsummary {
