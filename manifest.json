@@ -1,7 +1,7 @@
 {
   "vendor": "dakota",
   "name": "dakota-theme",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "builders": {
     "react": "3.x",
     "assets": "0.x",
@@ -63,7 +63,7 @@
     "vtex.product-price": "1.x",
     "vtex.disclosure-layout": "1.x",
     "vtex.store-form": "0.x",
-    "vtex.overlay-layout": "0.x", 
+    "vtex.overlay-layout": "0.x",
     "vtex.product-highlights": "2.x",
     "vtex.product-specifications": "1.x",
     "vtex.tab-layout": "0.x",
