@@ -37,6 +37,11 @@
     margin: 0;
 }
 
+.flexRowContent--topo-menu.flexRowContent--mobile :global(.vtex-disclosure-layout-1-x-trigger){
+    background: transparent;
+    border: none;
+}
+
 .flexRowContent--topo-menu-flutuante :global(.vtex-rich-text-0-x-container) {
     padding: 0px 15px;
 }

@@ -203,8 +203,9 @@
       "horizontalAlign": "center",
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
-      "verticalAlign": "center",
+      "verticalAlign": "center", 
       "fullWidth": true,
+      "preserveLayoutOnMobile": true,
       "paddingTop": 2,
       "paddingBottom": 2
     },
@@ -226,7 +227,47 @@
     "title": "Link blog",
     "props": {
       "href": "https://blog.dakota.com.br/",
-      "label": "Blog"
+      "label": "Sustentabilidade"
+    }
+  },
+  "flex-layout.row#marcas-topo-mobile": {
+    "children": [
+      "flex-layout.col#marcas-topo-mobile"
+    ],
+    "props": {
+      "blockClass": "topo-mobile-trigger"
+    }
+  },
+  "flex-layout.col#marcas-topo-mobile": {
+    "children": [
+      "disclosure-layout#marcas"
+    ],
+    "props": {
+      "horizontalAlign": "center"
+    }
+  },
+  "disclosure-layout#marcas": {
+    "children": ["disclosure-trigger#marcas", "disclosure-content#marcas"],
+    "props": {
+      "blockClass": "marcas"
+    }
+  },
+  "disclosure-trigger#marcas": {
+    "children": ["rich-text#topo-marcas"]
+  },
+  "disclosure-content#marcas": {
+    "children": [
+      "image#kolosh",
+      "image#missisipi",
+      "image#tanara",
+      "image#campesi",
+      "image#pink_cats",
+      "image#kolway"
+    ]
+  },
+  "rich-text#topo-marcas": {
+    "props": {
+      "text": "Marcas"
     }
   }
 }

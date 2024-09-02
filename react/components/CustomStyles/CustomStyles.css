@@ -43,6 +43,7 @@
     width: 100%; 
     text-align: center;
 }
+
  
 @media(max-width: 768px) {
     :global(.render-route-store-product) :global(.vtex-store-components-3-x-imageElementLink--whats-flutuante) {
