@@ -16,5 +16,8 @@
   },
   "free-shipping": {
     "component": "FreeShipping" 
+  },
+  "shared-cart": {
+    "component": "SharedCart" 
   }
 }

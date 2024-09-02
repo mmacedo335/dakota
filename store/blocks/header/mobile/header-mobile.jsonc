@@ -2,12 +2,13 @@
   "header-layout.mobile": {
     "title": "Header - Mobile",
     "children": [
+      "shared-cart",
       "custom-styles", 
       "minicart.v2#flutuante",
       "sticky-layout#header-mobile",
       "flex-layout.row#header-departamentos"
     ]
-  },
+  }, 
   "sticky-layout#header-mobile": {
     "props": {
       "blockClass": "sticky-header"
