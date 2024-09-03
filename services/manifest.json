@@ -1,14 +1,14 @@
 {
   "name": "backdakota",
   "vendor": "dakota",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "title": "",
   "description": "",
   "mustUpdateAt": "2023-04-25",
   "categories": [],
   "dependencies": {},
   "builders": {
-    "docs": "0.x", 
+    "docs": "0.x",
     "node": "6.x",
     "graphql": "1.x"
   },
