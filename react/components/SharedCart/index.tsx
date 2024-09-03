@@ -1,22 +1,28 @@
-import React, { useEffect, useState } from 'react';
-import { getCookie } from './cookies';
+import React, { useEffect } from "react";
 
 const SharedCart: React.FC = () => {
-  const [myCookieValue, setMyCookieValue] = useState<string | null>(null);
+  async function setCookieFromBackend() {
+    try {
+      // Fazendo a requisição para o serviço backend
+      const response = await fetch("/_v/cookie", {
+        method: "POST",
+      });
+
+      // Verifica o status da resposta
+      if (response.status === 400) {
+        // Chama a função recursivamente para tentar novamente
+        setCookieFromBackend();
+      }  
+    } catch (error) {
+      console.error("Erro ao fazer requisição:", error);
+    }
+  }
 
   useEffect(() => {
-    // Recupera o valor do cookie quando o componente monta
-    const value = getCookie('checkout.vtex.com');
-    setMyCookieValue(value);
+    setCookieFromBackend();
   }, []);
 
-  return (
-    <div>
-      <p>O valor do cookie é: {myCookieValue ? myCookieValue : 'Cookie não encontrado'}</p>
-    </div>
-  );
-};
- 
+  return null;
+}; 
+
 export default SharedCart;
-
-

@@ -12,7 +12,7 @@
   },
   "op-section#confirmation": {
     "props": {
-      "name": "confirmation",
+      "name": "confirmation", 
       "marginBottom": 9,
       "borderless": true
     },

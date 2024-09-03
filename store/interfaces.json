@@ -18,6 +18,7 @@
     "component": "FreeShipping" 
   },
   "shared-cart": {
-    "component": "SharedCart" 
+    "component": "SharedCart",
+    "render": "client" 
   }
 }
