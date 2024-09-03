@@ -6,17 +6,17 @@ const SharedCart: React.FC = () => {
       // Fazendo a requisição para o serviço backend
       const response = await fetch("/_v/cookie", {
         method: "POST",
-      });
+      }); 
 
       // Verifica o status da resposta
-      if (response.status === 400) {
+      if (response.status === 400 || response.status === 500) {
         // Chama a função recursivamente para tentar novamente
-        setCookieFromBackend();
-      }  
+        setCookieFromBackend(); 
+      }   
     } catch (error) {
       console.error("Erro ao fazer requisição:", error);
     }
-  }
+  } 
 
   useEffect(() => {
     setCookieFromBackend();
