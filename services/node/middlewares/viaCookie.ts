@@ -69,4 +69,3 @@ export async function viaCookieMiddleware(ctx: ServiceContext) {
   ctx.set("Pragma", "no-cache");
   ctx.set("Expires", "0");
 }
- 
