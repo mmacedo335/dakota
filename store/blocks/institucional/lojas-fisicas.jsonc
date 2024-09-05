@@ -1,13 +1,14 @@
 {
   "store.custom#loja-fisicas": {
     "blocks": [
-      "flex-layout.row#loja-fisicas"
+      "flex-layout.row#loja-fisicas",
+      "flex-layout.row#loja-fisicas-form"
     ]
   },
   "flex-layout.row#loja-fisicas": {
     "props": {
       "marginTop": 6,
-      "marginBottom": 10
+      "marginBottom": 3
     },
     "children": [
       "rich-text#loja-fisicas-title"
@@ -16,10 +17,19 @@
   "rich-text#loja-fisicas-title": {
     "title": "Titulo",
     "props": {
-      "blockClass": "loja-fisicas-title", 
+      "blockClass": "loja-fisicas-title",
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "## Dakota - Loja Física \n \n  O formulário ao lado é para você que precisa de suporte da Dakota relacionado à lojas físicas. \n Se você precisa de suporte para uma compra online em nosso e-commerce [clique aqui](/loja-online). "
     }
+  },
+  "flex-layout.row#loja-fisicas-form": {
+    "props": {
+      "marginTop": 6,
+      "marginBottom": 10
+    },
+    "children": [
+      "fale-conosco"
+    ]
   }
 }

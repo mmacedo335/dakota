@@ -11,14 +11,17 @@
   "guia-medidas": {
     "component": "GuiaMedidas" 
   },
-  "newsletter-footer": {
+  "newsletter-footer": { 
     "component": "NewsletterFooter" 
   },
   "free-shipping": {
     "component": "FreeShipping" 
   },
+  "fale-conosco": {
+    "component": "FaleConosco" 
+  },
   "shared-cart": {
     "component": "SharedCart",
-    "render": "client" 
+    "render": "client"  
   }
 }
