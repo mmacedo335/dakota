@@ -1,0 +1,111 @@
+:global(.minicart-custom) {
+    display: none;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--minicart-custom):hover :global(.minicart-custom) {
+    display: block;
+    position: absolute;
+    right: -40px;
+    width: 310px;
+    top: 100%;
+    background-color: #f8f8f8;
+    padding-top: .5rem;
+    padding-bottom: .5rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--minicart-custom) {
+    position: relative;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--minicart-custom):hover :global(.minicart-custom) :global(.empty) p {
+    font-size: 13px;
+    color: #454545;
+    line-height: 17px;
+    text-align: center;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--minicart-custom):hover :global(.minicart-custom) :global(.empty) a {
+    background: #000;
+    border-radius: 5rem;
+    color: white;
+    font-size: 14px;
+    display: block;
+    padding: 6px 0px;
+    text-decoration: none;
+    margin: auto;
+    text-align: center;
+}
+
+:global(.vtex-flex-layout-0-x-flexCol--minicart-custom):hover :global(.minicart-custom) :global(.empty) {
+    max-width: 160px;
+    margin: auto;
+    padding: 10px 0px;
+}
+
+:global(.minicart-custom) :global(.remove)::after {
+    content: "×";
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    font-family: "Larsseit Medium";
+    color: rgb(255, 255, 255) !important;
+    background: rgb(0, 0, 0);
+    border-radius: 100px;
+    cursor: pointer;
+}
+
+:global(.minicart-custom) :global(.item) {
+    display: grid;
+    grid-template-columns: 1fr 50px 20px;
+    gap: 15px;
+    border-bottom: 1px solid #e1e1e1;
+    padding: 15px 0px;
+    margin-bottom: 12px;
+}
+
+:global(.minicart-custom) :global(.item) :global(.name) a {
+    line-height: 18px;
+    color: #000;
+    font-size: 13px;
+    text-decoration: none;
+    margin-right: 8px;
+}
+
+:global(.minicart-custom) :global(.products) {
+    margin: 10px 22px;
+}
+
+:global(.minicart-custom) :global(.finalizar) a {
+    background: #000;
+    border: none;
+    border-radius: 5rem;
+    height: 54px;
+    display: flex;
+    color: #fff;
+    text-transform: none;
+    font-size: 18px;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+:global(.quantity) {
+    position: absolute;
+    top: 13px;
+    right: -7px;
+    font-size: 10px;
+    width: 16px;
+    height: 16px;
+    background: #db3d68;
+    border-radius: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+}

@@ -7,7 +7,7 @@
   },
   "flex-layout.col#spacer": {
     "props": {
-      "width": "grow"
+      "width": "grow" 
     }
   },
   "sticky-layout#header-desktop": {
@@ -34,8 +34,28 @@
       "search-bar",
       "flex-layout.col#spacer",
       "login",
-      "minicart.v2"
+      //"minicart.v2"
+      "flex-layout.col#minicart-custom"
     ]
+  },
+  "flex-layout.col#minicart-custom": {
+    "props": {
+      "blockClass": "minicart-custom",
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle"
+    },
+    "children": [
+      "image#minicart-custom",
+      "minicart-custom"
+    ]
+  },
+  "image#minicart-custom": {
+    "props": {
+      "src": "assets/svg/minicart.svg",
+      "link": {
+        "url": "/checkout/#/cart"
+      }
+    }
   },
   "flex-layout.col#logo-desktop": {
     "props": {
@@ -75,7 +95,7 @@
     "props": {
       "fullWidth": true,
       "blockClass": "menu-categorias-header"
-    } 
+    }
   },
   "slider-layout#slider-product-menu": {
     "title": "Vitrine produtos",
@@ -89,7 +109,7 @@
         "desktop": 3,
         "tablet": 3,
         "phone": 3
-      } 
+      }
     }
   }
 }
