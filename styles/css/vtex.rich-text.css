@@ -376,9 +376,9 @@
         font-size: 16px;
     }
 
-    .paragraph--topo-flutuante {
+    :global(.vtex-flex-layout-0-x-flexRowContent--topo-menu) .paragraph--topo-flutuante {
         font-size: 12.5px;
-    }
+    } 
 
     .paragraph--copyright {
         font-size: 14px;

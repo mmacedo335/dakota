@@ -5,7 +5,7 @@
 :global(.vtex-flex-layout-0-x-flexCol--minicart-custom):hover :global(.minicart-custom) {
     display: block;
     position: absolute;
-    right: -40px;
+    right: -25px;
     width: 310px;
     top: 100%;
     background-color: #f8f8f8;
