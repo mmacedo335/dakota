@@ -2,7 +2,7 @@
   "product-summary.shelf": {
     "children": [
       "stack-layout#prodsum",
-      "product-summary-name",
+      "product-summary-name#shelf",
       "product-summary-space",
       "product-list-price#summary",
       "product-selling-price#summary",
@@ -12,11 +12,17 @@
 
   "product-summary.shelf#menu": {
     "children": [
-      "product-summary-image#shelf",
-      "product-summary-name"
+      "product-summary-image",
+      "product-summary-name#shelf"
     ],
     "props":{
       "blockClass": "menucategory"
+    }
+  },
+
+  "product-summary-name#shelf": {
+    "props": {
+      "tag": "h4"
     }
   },
 
