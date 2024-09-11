@@ -176,7 +176,7 @@
     margin-right: 35px;
 }
 
-.paragraph--title-padrao {
+.heading--title-padrao,.paragraph--title-padrao {
     font-size: 27px;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -217,6 +217,17 @@
     font-size: 14px;
     display: block;
     padding: 6px 0px;
+}
+
+.container--hidden{
+    position: absolute;
+    clip: rect(1px, 1px, 1px, 1px);
+    clip-path: inset(0 0 99.9% 99.9%);
+    overflow: hidden;
+    height: 1px;
+    width: 1px;
+    padding: 0;
+    border: 0;
 }
 
 .paragraph--header-departamentos {
@@ -361,7 +372,7 @@
         text-align: left;
     }
 
-    .paragraph--title-padrao {
+    .heading--title-padrao,.paragraph--title-padrao {
         font-size: 16px;
     }
 

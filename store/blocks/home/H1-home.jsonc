@@ -1,0 +1,9 @@
+{
+    "rich-text#h1__home": {
+        "title": "H1 Home",
+        "props": {
+            "text": "# Dakota, sua loja de calçados femininos",
+            "blockClass":"hidden"
+        }
+    }
+}
