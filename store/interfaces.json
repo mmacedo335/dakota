@@ -26,5 +26,8 @@
   "shared-cart": {
     "component": "SharedCart",
     "render": "client"  
+  },
+  "minicart-custom": {
+    "component": "MiniCartCustom"  
   }
 }
