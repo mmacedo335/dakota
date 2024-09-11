@@ -45,7 +45,7 @@
     "props": { 
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "text": "NOVIDADES DA LOJA",
+      "text": "## NOVIDADES DA LOJA",
       "blockClass": "title-padrao"
     }
   },
@@ -91,7 +91,7 @@
     "props": { 
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "text": "OS MAIS VENDIDOS",
+      "text": "## OS MAIS VENDIDOS",
       "blockClass": "title-padrao"
     }
   },
@@ -137,7 +137,7 @@
     "props": { 
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "text": "As melhores ofertas", 
+      "text": "## As melhores ofertas", 
       "blockClass": "title-padrao"
     }
   },

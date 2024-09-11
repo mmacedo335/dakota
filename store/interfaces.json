@@ -20,6 +20,9 @@
   "fale-conosco": {
     "component": "FaleConosco" 
   },
+  "fg-metaOganization": {
+    "component": "metaOganization" 
+  },
   "shared-cart": {
     "component": "SharedCart",
     "render": "client"  
