@@ -6,53 +6,79 @@ const SharedCart: React.FC = () => {
   const { useOrderForm } = OrderForm;
   const { setOrderForm } = useOrderForm();
 
-  async function setCookieFromBackend() {
+  // Função para definir o cookie a partir do backend com limite de tentativas
+  async function setCookieFromBackend(retries = 5) {
     try {
-      // Fazendo a requisição para o serviço backend
       const response = await fetch("/_v/cookie", {
         method: "POST",
       });
 
-      // Verifica o status da resposta
-      if (response.status === 400 || response.status === 500) {
-        // Chama a função recursivamente para tentar novamente
-        setCookieFromBackend();
+      if (response.status === 404 || response.status === 500) {
+        // Tentar novamente até esgotar o número de tentativas
+        if (retries > 0) {
+          setTimeout(() => setCookieFromBackend(retries - 1), 1000);
+        } else {
+          console.error("Falha ao definir cookie após várias tentativas.");
+        }
       } else if (response.status === 200) {
         let data = await response.json();
         const id = data?.cookieValueCustom?.replace("__ofid=", "");
-        setOrderForm({
-          id: id,
-        });
+        setOrderForm({ id });
       }
     } catch (error) {
       console.error("Erro ao fazer requisição:", error);
     }
   }
 
-  async function setCookieClearFromBackend() {
+  // Função para limpar o cookie a partir do backend com limite de tentativas
+  async function setCookieClearFromBackend(retries = 5) {
     try {
-      // Fazendo a requisição para o serviço backend
       const response = await fetch("/_v/cookieclear", {
         method: "POST",
       });
 
-      // Verifica o status da resposta
-      if (response.status === 400 || response.status === 500) {
-        // Chama a função recursivamente para tentar novamente
-        setCookieClearFromBackend();
+      if (response.status === 404 || response.status === 500) {
+        // Tentar novamente até esgotar o número de tentativas
+        if (retries > 0) {
+          setTimeout(() => setCookieClearFromBackend(retries - 1), 1000);
+        } else {
+          console.error("Falha ao limpar cookie após várias tentativas.");
+        }
       }
     } catch (error) {
-      console.error("Erro ao fazer requisição:", error);
+      console.error("Erro ao limpar cookie:", error);
     }
   }
 
   useEffect(() => {
-    if (currentLocation === "/checkout/orderPlaced/") {
-      setCookieClearFromBackend();
+    // Função para realizar as ações de cookies
+    const handleCookieActions = async () => {
+      if (currentLocation === "/checkout/orderPlaced/") {
+        await setCookieClearFromBackend();
+      } else {
+        await setCookieFromBackend();
+      }
+    };
+
+    // Adicionando um listener para garantir que a lógica só seja executada após a página estar totalmente carregada
+    const onLoadHandler = () => {
+      handleCookieActions();
+    };
+
+    // Garantindo que a lógica só execute quando a página estiver carregada
+    if (document.readyState === "complete") {
+      // Se a página já estiver carregada, executa imediatamente
+      onLoadHandler();
     } else {
-      setCookieFromBackend();
+      // Caso contrário, espera o evento de load
+      window.addEventListener("load", onLoadHandler);
     }
-  }, []);
+
+    // Remover o listener no cleanup
+    return () => {
+      window.removeEventListener("load", onLoadHandler);
+    };
+  }, [currentLocation]);
 
   return null;
 };

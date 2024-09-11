@@ -2,21 +2,21 @@
   "header-layout.mobile": {
     "title": "Header - Mobile",
     "children": [
-      "shared-cart",
       "custom-styles", 
       "minicart.v2#flutuante",
       "sticky-layout#header-mobile",
-      "flex-layout.row#header-departamentos"
+      "flex-layout.row#header-departamentos",
+      "shared-cart" 
     ]
   }, 
   "sticky-layout#header-mobile": {
     "props": {
-      "blockClass": "sticky-header"
+      "blockClass": "sticky-header" 
     },
     "children": [
       "flex-layout.row#topo-flutuante-mobile",
-      "flex-layout.row#topo-flutuante-mobile-01",
-      "flex-layout.row#marcas-topo-mobile",
+      //"flex-layout.row#topo-flutuante-mobile-01",
+      //"flex-layout.row#marcas-topo-mobile",
       "flex-layout.row#header-mobile",
       "disclosure-layout#search-bar-mobile"
     ]
@@ -60,7 +60,8 @@
       "disclosure-content#search-bar-mobile"
     ],
     "props": {
-      "blockClass": "search-bar-mobile"
+      "blockClass": "search-bar-mobile", 
+      "initialVisibility": "visible" 
     }
   },
   "disclosure-trigger#search-bar-mobile": {

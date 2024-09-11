@@ -2,12 +2,12 @@
   "header-layout.desktop": {
     "title": "Header - Desktop",
     "children": [ 
-      "shared-cart",
       "custom-styles",
       "minicart.v2#flutuante", 
       "flex-layout.row#topo-menu",
       "sticky-layout#header-desktop",
-      "flex-layout.row#header-menu" 
+      "flex-layout.row#header-menu",
+      "shared-cart" 
     ] 
   }
 }
