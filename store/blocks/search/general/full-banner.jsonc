@@ -3,7 +3,7 @@
     "title": "Full banner desktop",
     "props": {
       "fullWidth": true,
-      "marginBottom": 0, 
+      "marginBottom": 0,
       "marginTop": 0,
       "blockClass": "search-banner"
     },
@@ -13,7 +13,7 @@
   },
   "image#search-banner": {
     "props": {
-      "src": "assets/img/search-banner.jpg",
+      "src": "",
       "blockClass": "full",
       "link": {
         "url": "/",
@@ -26,7 +26,7 @@
     "title": "Full banner mobile",
     "props": {
       "fullWidth": true,
-      "marginBottom": 2,  
+      "marginBottom": 2,
       "marginTop": 0,
       "blockClass": "search-banner"
     },
@@ -36,7 +36,7 @@
   },
   "image#search-banner-mobile": {
     "props": {
-      "src": "assets/img/search-banner-mobile.jpg",
+      "src": "",
       "blockClass": "full",
       "link": {
         "url": "/",
@@ -45,4 +45,4 @@
       }
     }
   }
-}
+} 

@@ -19,9 +19,9 @@
   "image#grid-banner-01": {
     "title": "Imagem 01",
     "props": {
-      "src": "assets/img/banner-grid-01.jpg",
+      "src": "",
       "link": {
-        "url": "/lancamento#/r$101-r$-200",
+        "url": "",
         "attributeTitle": "",
         "newTab": false
       }
@@ -31,9 +31,9 @@
   "image#grid-banner-02": {
     "title": "Imagem 02",
     "props": {
-      "src": "assets/img/banner-grid-02.jpg",
+      "src": "",
       "link": {
-        "url": "/lancamento#/r$201-r$-300/",
+        "url": "",
         "attributeTitle": "",
         "newTab": false
       }
@@ -43,9 +43,9 @@
   "image#grid-banner-03": {
     "title": "Imagem 03",
     "props": {
-      "src": "assets/img/banner-grid-03.jpg",
-      "link": {
-        "url": "/lancamento#/r$301-r$-460",
+      "src": "",
+      "link": { 
+        "url": "",
         "attributeTitle": "",
         "newTab": false
       }

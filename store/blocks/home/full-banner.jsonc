@@ -1,20 +1,13 @@
 {
   "list-context.image-list#full-banner-home": {
     "title": "Full Banner",
-    "children": ["slider-layout#full-banner"],
+    "children": [
+      "slider-layout#full-banner"
+    ],
     "props": {
       "preload": true,
       "height": 1800,
-      "images": [
-        {
-          "image": "assets/img/full-banner-01.jpg",
-          "mobileImage": "assets/img/full-banner-01_mobile.jpg"
-        },
-        {
-          "image": "assets/img/full-banner-02.jpg",
-          "mobileImage": "assets/img/full-banner-01_mobile.jpg"
-        }
-      ]
+      "images": [] 
     }
   },
   "slider-layout#full-banner": {
@@ -22,7 +15,7 @@
       "itemsPerPage": {
         "desktop": 1,
         "tablet": 1,
-        "phone": 1 
+        "phone": 1
       },
       "autoplay": {
         "timeout": 4000

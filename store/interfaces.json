@@ -6,28 +6,34 @@
     "component": "SummaryMinicart"
   },
   "scrollListagem": {
-    "component": "Scroll" 
-  }, 
-  "guia-medidas": {
-    "component": "GuiaMedidas" 
+    "component": "Scroll"
   },
-  "newsletter-footer": { 
-    "component": "NewsletterFooter" 
+  "guia-medidas": {
+    "component": "GuiaMedidas"
+  },
+  "newsletter-footer": {
+    "component": "NewsletterFooter"
   },
   "free-shipping": {
-    "component": "FreeShipping" 
+    "component": "FreeShipping"
   },
   "fale-conosco": {
-    "component": "FaleConosco" 
+    "component": "FaleConosco"
   },
   "fg-metaOganization": {
-    "component": "metaOganization" 
+    "component": "metaOganization"
   },
   "shared-cart": {
     "component": "SharedCart",
-    "render": "client"  
+    "render": "client"
   },
   "minicart-custom": {
-    "component": "MiniCartCustom"  
+    "component": "MiniCartCustom" 
+  },
+  "my-account-page.my-account-lm-page": {
+    "component": "MyAppPage"
+  },
+  "my-account-link.my-account-lm-link": {
+    "component": "MyAppLink" 
   }
 }

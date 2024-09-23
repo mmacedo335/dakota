@@ -15,7 +15,7 @@
   "flex-layout.col#blog": {
     "children": [
       "responsive-layout.desktop#title-blog",
-      "flex-layout.row#grid-blog" 
+      "flex-layout.row#grid-blog"
     ],
     "props": {
       "horizontalAlign": "center"
@@ -61,9 +61,9 @@
     "title": "Imagem",
     "props": {
       "blockClass": "full",
-      "src": "assets/img/post_blog_01.jpg",
+      "src": "",
       "link": {
-        "url": "https://blog.dakota.com.br/presentes-para-celebrar-o-amor/",
+        "url": "",
         "newTab": true
       }
     }
@@ -71,8 +71,11 @@
   "rich-text#conteudo-blog-01": {
     "title": "Texto",
     "props": {
-      "text": "[**PRESENTES PARA CELEBRAR O AMOR**](https://blog.dakota.com.br/presentes-para-celebrar-o-amor/) \n \n [Neste post, trazemos sugestões de presentes para celebrar o amor que vão tornar sua data ainda mais especial! Acesse e confira todas as dicas!](https://blog.dakota.com.br/presentes-para-celebrar-o-amor/)",
-      "blockClass": ["margin-0", "conteudo-blog"]
+      "text": "",
+      "blockClass": [
+        "margin-0",
+        "conteudo-blog"
+      ]
     }
   },
   "flex-layout.col#conteudo-blog-02": {
@@ -90,9 +93,9 @@
     "title": "Imagem",
     "props": {
       "blockClass": "full",
-      "src": "assets/img/post_blog_02.jpg",
+      "src": "",
       "link": {
-        "url": "https://blog.dakota.com.br/marrom-cor-essencial-do-inverno-2024/",
+        "url": "",
         "newTab": true
       }
     }
@@ -100,8 +103,11 @@
   "rich-text#conteudo-blog-02": {
     "title": "Texto",
     "props": {
-      "text": "[**MARROM: COR ESSENCIAL DO INVERNO 2024**](https://blog.dakota.com.br/marrom-cor-essencial-do-inverno-2024/) \n \n [Uma cor que vem se destacando nas coleções de moda, seja no verão ou inverno, é o marrom!](https://blog.dakota.com.br/marrom-cor-essencial-do-inverno-2024/)",
-      "blockClass": ["margin-0", "conteudo-blog"]
+      "text": "",
+      "blockClass": [
+        "margin-0",
+        "conteudo-blog"
+      ]
     }
   },
   "flex-layout.col#conteudo-blog-03": {
@@ -119,9 +125,9 @@
     "title": "Imagem",
     "props": {
       "blockClass": "full",
-      "src": "assets/img/post_blog_03.jpg",
+      "src": "",
       "link": {
-        "url": "https://blog.dakota.com.br/ta-na-moda-esportivo/",
+        "url": "",
         "newTab": true
       }
     }
@@ -129,8 +135,11 @@
   "rich-text#conteudo-blog-03": {
     "title": "Texto",
     "props": {
-      "text": "[**TÁ NA MODA: ESPORTIVO**](https://blog.dakota.com.br/ta-na-moda-esportivo/) \n \n [Neste post, vamos falar sobre uma tendência que está dominando as ruas e passarelas. Tá na moda: esportivo!](https://blog.dakota.com.br/ta-na-moda-esportivo/)",
-      "blockClass": ["margin-0", "conteudo-blog"]
+      "text": "",
+      "blockClass": [
+        "margin-0",
+        "conteudo-blog"
+      ]
     }
   }
 }

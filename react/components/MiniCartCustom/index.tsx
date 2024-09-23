@@ -104,33 +104,33 @@ const MiniCartCustom: React.FC = () => {
             <a href="/">Vem ver</a>
           </div>
         ) : (
-          <div className="products">
-            {data?.items.map((item, index) => (
-              <div className="item" key={index}>
-                <div className="name">
-                  <a href={item.detailUrl}>{item.name}</a>
+          <><div className="products">
+              {data?.items.map((item, index) => (
+                <div className="item" key={index}>
+                  <div className="name">
+                    <a href={item.detailUrl}>{item.name}</a>
+                  </div>
+                  <div className="img">
+                    <a href={item.detailUrl}>
+                      <img
+                        src={item.imageUrl}
+                        width="50px"
+                        height="50px"
+                        alt={item.name} />
+                    </a>
+                  </div>
+                  <div
+                    onClick={() => updateCartItemQuantity(index)}
+                    className="remove"
+                  >
+                  </div>
                 </div>
-                <div className="img">
-                  <a href={item.detailUrl}>
-                    <img
-                      src={item.imageUrl}
-                      width="50px"
-                      height="50px"
-                      alt={item.name}
-                    />
-                  </a>
-                </div>
-                <div
-                  onClick={() => updateCartItemQuantity(index)}
-                  className="remove"
-                >
-                </div>
-              </div>
-            ))}
+              ))}
+            </div>
             <div className="finalizar">
               <a href="/checkout/#/cart">Finalizar compra</a>
-            </div>
-          </div>
+            </div>  
+            </>
         )}
       </div>
     </>

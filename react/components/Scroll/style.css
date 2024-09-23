@@ -12,9 +12,10 @@
     color: #DB3D68;
     border: none;
     cursor: pointer;
-}
+} 
 
 .contentscroll{
     display: flex;
     justify-content: center;
+    margin-bottom: 40px; 
 }
