@@ -5,10 +5,28 @@
       "flex-layout.row#product-breadcrumbs",
       "condition-layout.product#availability",
       "flex-layout.row#title-description",
-      "flex-layout.row#description"
+      "flex-layout.row#description",
+      "flex-layout.row#review-product" 
       //"shelf.relatedProducts"
     ] 
   },
+  "flex-layout.row#review-product": {
+    "title": "Review",
+    "props": {
+      "marginTop": 4, 
+      "marginBottom": 4
+    },
+    "children": [ 
+      "flex-layout.col#review-product"
+    ] 
+  },
+  "flex-layout.col#review-product": {
+    "children": [
+      "yv-product-reviews",
+      "product-questions-and-answers"
+    ]
+  },
+
   "flex-layout.row#product-breadcrumbs": {
     "title": "breadcrumb",
     "props": {
