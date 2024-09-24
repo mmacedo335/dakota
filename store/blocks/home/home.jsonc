@@ -10,8 +10,8 @@
       "flex-layout.row#grid-banner",
       "flex-layout.row#shelf-02",
       "flex-layout.row#blog",
-      "flex-layout.row#shelf-03",
-      "yv-testimonials",   
+      "flex-layout.row#shelf-03", 
+      "yv-testimonials",
       "flex-layout.row#texto-home"
     ]
   }
