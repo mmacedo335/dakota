@@ -1,0 +1,88 @@
+{
+    "modal-trigger#compre-junto": {
+        "children": [
+            "modal-layout#compre-junto"
+        ],
+        "props": {
+            "customPixelEventId": "add-to-cart-button#modal",
+            "blockClass": "add-modal"
+        }
+    },
+    "modal-layout#compre-junto": {
+        "title": "Modal compre junto",
+        "children": [
+            "link#modal-close-background",
+            "link#modal-comprejunto-close",
+            "rich-text#title-minicart-modal",
+            "list-context.product-list#modal-compre-junto",
+            "link#modal-recusar-oferta"
+        ],
+        "props": {
+            "blockClass": "add-modal",
+            "backdrop": "none"
+        }
+    },
+    "link#modal-close-background": {
+        "props": {
+            "href": "/checkout/#/cart",
+            "label": "",
+            "blockClass": "background" 
+        }
+    },
+    "link#modal-recusar-oferta": {
+        "title": "Botão recusar oferta",
+        "props": {
+            "href": "/checkout/#/cart",
+            "label": "Recusar oferta",
+            "blockClass": "btn"
+        }
+    },
+    "link#modal-comprejunto-close": {
+        "title": "Botão fechar",
+        "props": {
+            "href": "/checkout/#/cart",
+            "label": "",
+            "blockClass": "close"
+        }
+    },
+    "rich-text#title-minicart-modal": {
+        "title": "Titulo",
+        "props": {
+            "text": "Quer aproveitar e levar \n junto essa **OFERTA EXCLUSIVA?**",
+            "blockClass": [
+                "title-minicart-modal",
+                "margin-0"
+            ],
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    },
+    "list-context.product-list#modal-compre-junto": {
+        "title": "Lista de produto",
+        "blocks": [
+            "product-summary.shelf#modal"
+        ],
+        "children": [
+            "slider-layout#modalcomprejunto"
+        ],
+        "props": {
+            "collection": "137",
+            "maxItems": "1"
+        }
+    },
+    "slider-layout#modalcomprejunto": {
+        "props": {
+            "itemsPerPage": {
+                "desktop": 1,
+                "tablet": 1,
+                "phone": 1
+            },
+            "infinite": true,
+            "fullWidth": true,
+            "blockClass": [
+                "comprejunto",
+                "shelf"
+            ]
+        }
+    }
+}

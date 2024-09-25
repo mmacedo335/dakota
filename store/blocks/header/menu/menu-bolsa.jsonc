@@ -163,66 +163,51 @@
   "flex-layout.col#menu-bolsa-2": {
     "title": "Bloco numeração",
     "props": {
-      "blockClass": "header-numeracao",
+      "blockClass": "header-compre-por-cor",
       "preventVerticalStretch": true
     },
     "children": [
-      "link#numeracao-bolsa-1",
-      "link#numeracao-bolsa-2",
-      "link#numeracao-bolsa-3",
-      "link#numeracao-bolsa-4",
-      "link#numeracao-bolsa-5",
-      "link#numeracao-bolsa-6",
-      "link#numeracao-bolsa-7",
-      "link#numeracao-bolsa-8"
+      "rich-text#menu-bolsa-cor",
+      "vtex.menu@2.x:menu#compre-por-cor" 
     ]
   },
-  "link#numeracao-bolsa-1": {
+  "rich-text#menu-bolsa-cor": {
+    "title": "Título",
     "props": {
-      "href": "/",
-      "label": "33"
+      "text": "Compre por Cor",
+      "blockClass": ["margin-0", "title-submenu"]
     }
   },
-  "link#numeracao-bolsa-2": {
+  "vtex.menu@2.x:menu#compre-por-cor": {
+    "title": "Compre por cor",
     "props": {
-      "href": "/",
-      "label": "34"
-    }
-  },
-  "link#numeracao-bolsa-3": {
-    "props": {
-      "href": "/",
-      "label": "35"
-    }
-  },
-  "link#numeracao-bolsa-4": {
-    "props": {
-      "href": "/",
-      "label": "36"
-    }
-  },
-  "link#numeracao-bolsa-5": {
-    "props": {
-      "href": "/",
-      "label": "37"
-    }
-  },
-  "link#numeracao-bolsa-6": {
-    "props": {
-      "href": "/",
-      "label": "38"
-    }
-  },
-  "link#numeracao-bolsa-7": {
-    "props": {
-      "href": "/",
-      "label": "39"
-    }
-  },
-  "link#numeracao-bolsa-8": {
-    "props": {
-      "href": "/",
-      "label": "40"
+      "orientation": "vertical",
+      "items": [
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false, 
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false,
+            "tagTitle": "Bege",
+            "text": "Bege"
+          }
+        },
+        {
+          "id": "menu-item",
+          "type": "custom",
+          "highlight": false,
+          "itemProps": {
+            "type": "internal",
+            "href": "#",
+            "noFollow": false, 
+            "tagTitle": "Marrom",
+            "text": "Marrom"
+          }
+        }
+      ]
     }
   },
   // Bloco produtos

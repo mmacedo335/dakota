@@ -2,11 +2,12 @@
   "footer-layout.desktop": {
     "title": "Footer - Desktop",
     "children": [
-      "image#whats-flutuante",
+      "image#whats-flutuante", 
+      "modal-privacidade",
       "flex-layout.row#footer-newsletter", 
       "flex-layout.row#footer-menu",
-      "flex-layout.row#meios-pagamento-footer",
-      "flex-layout.row#redes-sociais",
+      "flex-layout.row#meios-pagamento-footer", 
+      "flex-layout.row#redes-sociais",  
       "flex-layout.row#copyright-footer",
       "flex-layout.row#footer-seguranca"
     ] 

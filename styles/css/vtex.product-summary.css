@@ -28,7 +28,7 @@
     text-transform: none;
 }
 
-.container--menucategory .imageContainer{
+.container--menucategory .imageContainer {
     max-width: 130px;
 }
 
@@ -40,6 +40,57 @@
     text-transform: uppercase;
 }
 
-.container--menucategory .nameContainer{
+.container--menucategory .nameContainer {
     padding-top: 5px;
+}
+
+.containerNormal--summary-modal :global(.vtex-product-price-1-x-sellingPrice--summary) {
+    display: block;
+    text-align: left;
+}
+
+.containerNormal--summary-modal :global(.vtex-product-price-1-x-sellingPrice--summary) :global(.vtex-product-price-1-x-sellingPriceValue--summary) {
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 30px;
+    color: #000000;
+    border-radius: 3px;
+    border: 2px solid var(--45-eb-85-boto-compra, #45EB85);
+    padding: 2px 5px;
+    font-family: Inter;
+}
+
+.containerNormal--summary-modal :global(.vtex-product-summary-2-x-brandName) {
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 18px;
+    letter-spacing: 1.4px;
+    color: #000000;
+    text-transform: uppercase;
+    text-align: left;
+    display: block;
+    font-family: Inter;
+}
+
+.containerNormal--summary-modal :global(.vtex-product-summary-2-x-nameContainer) {
+    padding-bottom: 15px;
+}
+
+.containerNormal--summary-modal :global(.vtex-button){
+    background: #45EB85;
+    text-align: center;
+    height: 40px;
+    border: none;
+    border-radius: 0px;
+}
+
+.containerNormal--summary-modal :global(.vtex-add-to-cart-button-0-x-buttonText){
+    color: black;
+    text-transform: uppercase;
+    font-family: Inter;
+    font-weight: 700;
+    letter-spacing: 0.7px;
+    font-size: 14px;
 }

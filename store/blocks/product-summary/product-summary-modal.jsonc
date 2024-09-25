@@ -1,0 +1,46 @@
+{
+    "product-summary.shelf#modal": {
+        "children": [
+            "flex-layout.row#summary-modal",
+            "add-to-cart-button#add-modal"
+        ],
+        "props": {
+            "blockClass": "summary-modal"
+        }
+    },
+    "flex-layout.row#summary-modal": {
+        "children": [
+            "flex-layout.col#summary-modal-left",
+            "flex-layout.col#summary-modal"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "preserveLayoutOnMobile": true,
+            "colGap": 4,
+            "marginBottom": 6,
+            "blockClass": [
+                "summary"
+            ]
+        }
+    },
+    "flex-layout.col#summary-modal-left": {
+        "children": [
+            "stack-layout#prodsum"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "width": "42%"
+        }
+    },
+    "flex-layout.col#summary-modal": {
+        "children": [
+            "product-summary-name",
+            "product-selling-price#summary"
+        ],
+        "props": {
+            "preventVerticalStretch": true,
+            "width": "58%",
+            "horizontalAlign": "left"
+        }
+    }
+}

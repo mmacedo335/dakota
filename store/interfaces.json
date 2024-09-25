@@ -35,5 +35,11 @@
   },
   "my-account-link.my-account-lm-link": {
     "component": "MyAppLink" 
+  },
+  "modal-privacidade": {
+    "component": "PrivacyPolicyModal" 
+  },
+  "topo-menu-mobile": {
+    "component": "TopoMenuMobile" 
   }
 }

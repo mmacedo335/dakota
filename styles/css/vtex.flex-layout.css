@@ -17,6 +17,7 @@
 
 :global(.vtex-sticky-layout-0-x-wrapper--sticky-header--stuck) :global(.vtex-sticky-layout-0-x-container--sticky-header) {
     box-shadow: 0 4px 7px -6px grey;
+    background: white;
 }
 
 .flexRow--topo-menu,
@@ -667,5 +668,10 @@
     .flexRowContent--product-main {
         margin-top: 0;
         padding-top: 0;
+    }
+
+    .flexRowContent--grid-banner :global(.vtex-store-components-3-x-imageElement){
+        margin-top: 10px;
+        margin-bottom: 10px;
     }
 }
