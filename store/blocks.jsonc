@@ -9,7 +9,7 @@
  */
 {
   "store.orderplaced": {
-    "blocks": ["order-placed"]  
+    "blocks": ["order-placed"]   
   },
 
   "store.account": {
