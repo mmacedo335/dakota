@@ -43,9 +43,16 @@
 
 .searchBarContainer :global(.vtex-styleguide-9-x-input),
 .searchBarContainer :global(.vtex-input__suffix) {
-    font-size: 13.12px;
     color: rgb(121, 119, 119);
     background-color: rgb(246, 246, 246);
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input)::placeholder {
+    font-size: 13.12px;
+}
+
+.searchBarContainer :global(.vtex-styleguide-9-x-input) {
+    font-size: 16px;
 }
 
 .searchBarIcon {
@@ -182,7 +189,7 @@
     background: #FFF;
     -webkit-box-shadow: 0 0 0px 1000px #fff inset;
     color: #989898;
-    font-size: 14px;
+    font-size: 16px;
 }
 
 .shippingContainer :global(.vtex-input-prefix__group) {

@@ -48,7 +48,7 @@
     "props": {
       "showBadge": false,
       "aspectRatio": "1:1",
-      "maxHeight": 300,
+      "maxHeight": 400,
       "hoverImage": {
         "criteria": "index",
         "index": 2
