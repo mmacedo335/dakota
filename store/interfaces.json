@@ -41,5 +41,8 @@
   },
   "topo-menu-mobile": {
     "component": "TopoMenuMobile" 
+  },
+  "menu-custom": {
+    "component": "MenuCustom" 
   }
 }

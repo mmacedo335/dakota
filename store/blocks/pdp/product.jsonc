@@ -137,7 +137,8 @@
     "children": [
       "responsive-layout.desktop#product-images-desktop",
       "responsive-layout.mobile#product-images-mobile",
-      "responsive-layout.tablet#product-images-mobile"
+      "responsive-layout.tablet#product-images-mobile",
+      "product-price-savings#discount" 
     ],
     "props": {
       "preventHorizontalStretch": true
@@ -330,10 +331,11 @@
   },
 
   "sku-selector": {
-    "props": {
+    "props": {  
       "variationsSpacing": 3,
       "showValueNameForImageVariation": true,
-      "initialSelection": "empty"
+      "initialSelection": "empty",
+      "maxItems": 50
     } 
   },
 

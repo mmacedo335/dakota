@@ -16,7 +16,7 @@ const TopoMenuMobile = () => {
         <div className='topoMenuMobile'>
             <div className='content'>
                 <div className='marcas' onClick={() => toggleTab('atendimentoTab')}>
-                    Marcas
+                    + Marcas
                 </div>
                 <div>
                     <a href='https://blog.dakota.com.br/' target="_blank" rel="noopener noreferrer">Blog</a>
@@ -25,7 +25,7 @@ const TopoMenuMobile = () => {
                     <a href='/' target="_blank" rel="noopener noreferrer">Sustentabilidade</a>
                 </div>
                 <div className='atendimento' onClick={() => toggleTab('lojasTab')}>
-                    Atendimento
+                    + Atendimento
                 </div>
             </div>
 
@@ -33,7 +33,7 @@ const TopoMenuMobile = () => {
             {activeTab === 'atendimentoTab' && (
                 <div className='atendimentoTab'>
                     <div className='contents'>
-                        <a href='https://kolosh.dakota.com.br/?o=d/' className='kolosh'> 
+                        <a href='https://kolosh.dakota.com.br/?o=d/' className='kolosh'>
 
                         </a>
                         <a href='https://mississipi.dakota.com.br/?o=d/' className='mississipi'>

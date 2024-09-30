@@ -3,12 +3,13 @@
     "title": "Menu categorias",
     "children": [
       "flex-layout.row#topo-menu-mobile",
-      "flex-layout.row#menu-header-mobile",
-      "challenge-block#login-menu-mobile"
+      "flex-layout.row#menu-header-mobile",  
+      "challenge-block#login-menu-mobile"  
     ],
     "props": {
       "blockClass": "header-menu",
-      "isFullWidth": true
+      "isFullWidth": true,
+      "renderingStrategy":"eager"
     }
   },
   "challenge-block#login-menu-mobile": {
@@ -28,6 +29,7 @@
     ]
   },
   "rich-text#login-menu-mobile": { 
+    "title": "Texto cliente não logado",
     "props": {
       "text": "![Carangueijo](assets/img/user-icon.png) [Entre](/login) ou [Cadastra-se](/login)",
       "textAlignment": "CENTER",
@@ -36,6 +38,7 @@
     } 
   }, 
   "rich-text#logado-menu-mobile": { 
+    "title": "Texto cliente logado",
     "props": {
       "text": "![Carangueijo](assets/img/user-icon.png) [**Minha conta**](/account)",
       "textAlignment": "CENTER",
@@ -53,8 +56,7 @@
   },
   "flex-layout.col#menu-header-mobile": {
     "children": [
-      "mega-menu-go-back-btn",
-      "mega-menu" 
+      "menu-custom"
     ]
   },
   "flex-layout.row#topo-menu-mobile": {

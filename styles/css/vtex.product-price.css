@@ -50,6 +50,13 @@
     font-size: 14px;
 }
 
+:global(.vtex-flex-layout-0-x-flexRowContent--product-main) .savings--savingPercentage{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    z-index: 1; 
+}
+
 .installments--summary {
     color: #757575;
     font-size: 15px;

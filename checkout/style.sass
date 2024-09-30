@@ -7,9 +7,122 @@ body
         display: flex
         align-items: center
         justify-content: center
+        @media(max-width: 768px)
+            text-align: center
+    .cart-active
+        .summary-template-holder::before
+            content: "Resumo"
+            letter-spacing: 4px
+            text-transform: uppercase 
+            font-size: 27px
+            margin: 0
+            color: #000
+            text-transform: uppercase
+            font-weight: 800
+            display: block
+            margin-bottom: 30px
+            @media(max-width: 768px)
+                text-align: center
+    .cart-template-holder 
+        .cart::before
+            content: "Meu carrinho"
+            letter-spacing: 4px
+            text-transform: uppercase
+            font-size: 27px
+            margin: 0
+            color: #000
+            text-transform: uppercase
+            font-weight: 800
+            display: block
+            margin-bottom: 30px
     .table.cart-items i.icon.icon-remove.item-remove-ico:before
         width: 7px
         height: 21px
+    #cart-coupon-add
+        width: 81px
+        background: black
+        border: none
+        color: white
+        font-size: 14px
+        margin: 0
+        height: 35px
+        line-height: 20px
+    .coupon-column
+        .summary-coupon
+            .coupon-form
+                .coupon-fieldset
+                    .coupon-label
+                        display: block!important
+                        margin-bottom: 6px
+                        label
+                            font-size: 15px
+                            color: black
+                            text-align: left
+                            font-weight: 500
+    #shipping-preview-container
+        max-width: 100%
+        margin-bottom: 20px
+        .srp-data.mt4
+            margin-top: 0
+        .srp-main-title
+            font-size: 15px
+            color: black
+            text-align: left
+            line-height: 16px
+            font-weight: 500
+    #cart-coupon
+        margin: 0
+        display: block
+        width: 100%
+        height: 35px
+        background: #e6e6e6
+        border: none
+        box-shadow: none
+        border-radius: 3px
+    .vtex-shipping-preview-0-x-pc 
+        .vtex-shipping-preview-0-x-postalCodeForgotten
+            align-items: flex-start
+        .srp-postal-code__form
+            width: 100%
+        #cart-shipping-calculate 
+            width: 81px
+            background: black
+            border: none
+            color: white
+            font-size: 14px
+            margin: 0
+            height: 35px 
+        .ship-postalCode
+            display: block
+            width: calc(100% - 81px)
+            span.help.error
+                display: none
+            label
+                display: none
+            small
+                a
+                    color: #a5a5a5
+                    text-decoration: underline
+                    font-size: 12px
+            #ship-postalCode
+                display: block
+                width: 100%
+                height: 35px
+                background: #e6e6e6
+                border: none
+                box-shadow: none
+                border-radius: 3px
+    .orderform-template 
+        .cart-template.mini-cart 
+            .summary-template-holder 
+                .summary>.summary-coupon-wrap
+                    padding: 20px 0
+    .orderform-template-holder 
+        .step 
+            .submit.btn.btn-success
+                font-weight: 600
+                font-size: 14px
+                text-transform: uppercase
 .header-topo
     background: #be3f66
     max-width: unset
@@ -103,7 +216,19 @@ body
                     position: absolute
                     bottom: -27px
                     font-weight: 600
+body.body-cart
+    background: white 
 @media(max-width: 768px)
+    body
+        .orderform-template 
+            .custom-cart-template-wrap
+                .summary-cart-template-holder
+                    margin-bottom: 40px
+        .summary-template-holder 
+            .cart-links-bottom
+                position: relative
+        .cart-more-options.span7
+            display: none!important
     .header-topo
         height: 70px
         .content
@@ -119,7 +244,7 @@ body
         .content
             .shields
                 order: 1
-                margin-bottom: 60px
+                margin-bottom: 00px
                 margin-top: 20px
             .copyright 
                 p

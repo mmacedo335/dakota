@@ -243,6 +243,11 @@
     border-bottom: 1px solid #EEEEEE;
 }
 
+.flexRow--topo-menu-mobile :global(.vtex-store-components-3-x-logoLink){
+    width: auto;
+}
+
+
 .flexRowContent--product-main .flexCol--product-informacoes,
 .flexCol--info-availability {
     position: sticky;
