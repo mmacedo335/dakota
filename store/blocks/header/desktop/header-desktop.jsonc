@@ -8,7 +8,8 @@
       "flex-layout.row#topo-menu",
       "sticky-layout#header-desktop",
       "flex-layout.row#header-menu",
-      "shared-cart" 
+      "shared-cart",
+      "modal-privacidade"
     ] 
   } 
 }

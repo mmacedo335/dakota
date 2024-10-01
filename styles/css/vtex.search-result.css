@@ -183,9 +183,10 @@
 }
 
 .totalProducts--layout .totalProductsMessage::after {
-  content: ' Encontrados';
+  content: 'Encontrados';
   display: inline-block;
   font-size: 10px;
+  margin-left: 3px;
   color: #222;
   text-transform: uppercase;
   font-family: 'Larsseit Regular';

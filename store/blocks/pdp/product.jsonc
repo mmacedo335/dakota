@@ -435,6 +435,7 @@
       "product-selling-price#summary",
       "product-installments#summary",
       "sku-selector",
+      "rich-text#flag+produto-indisponivel",
       "flex-layout.row#product-similar",
       "modal-trigger#produto-indisponivel",
       "flex-layout.row#buy-button-whislist",
@@ -442,6 +443,18 @@
       "responsive-layout.mobile#beneficios",
       "flex-layout.row#product-frete"
     ]
+  },
+  "rich-text#flag+produto-indisponivel": {
+    "title": "Flag produto indisponivel",
+    "props": {
+      "text": "Escolha uma opção disponível",
+      "blockClass": [
+        "flag-produto-indisponivel",
+        "margin-0"
+      ],
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER"
+    }
   },
   "modal-trigger#produto-indisponivel": {
     "title": "Guia de tamanhos",

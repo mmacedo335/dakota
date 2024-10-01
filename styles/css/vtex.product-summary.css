@@ -78,7 +78,7 @@
     padding-bottom: 15px;
 }
 
-.containerNormal--summary-modal :global(.vtex-button){
+.containerNormal--summary-modal :global(.vtex-button) {
     background: #45EB85;
     text-align: center;
     height: 40px;
@@ -86,11 +86,20 @@
     border-radius: 0px;
 }
 
-.containerNormal--summary-modal :global(.vtex-add-to-cart-button-0-x-buttonText){
+.containerNormal--summary-modal :global(.vtex-add-to-cart-button-0-x-buttonText) {
     color: black;
     text-transform: uppercase;
     font-family: Inter;
     font-weight: 700;
     letter-spacing: 0.7px;
     font-size: 14px;
+}
+
+.imageNormal {
+    transition: all .3s ease;
+    height: auto !important;
+}
+
+:global(.vtex-slider-layout-0-x-sliderLayoutContainer) .imageNormal {
+    max-width: 90%!important; 
 }

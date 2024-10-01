@@ -328,6 +328,14 @@
     border-top: 1px solid #F6F6F6;
 }
 
+.flexRowContent--beneficios.flexRowContent--mobile {
+    padding: 15px 35px 0px 35px;
+} 
+
+.flexRowContent--beneficios.flexRowContent--mobile .flexCol--beneficios{
+    margin-bottom: 12px;
+}
+
 .flexCol--product-informacoes :global(.vtex-store-components-3-x-skuSelectorContainer) {
     border-top: 1px solid #F6F6F6;
     margin-top: 20px;
@@ -517,9 +525,9 @@
     height: 100vh;
 }
 
-.flexRow--menuHeader {
+.flexRow--menuHeader { 
     width: 100%;
-    height: calc(100vh - 180px);
+    height: calc(100vh - 255px);
     overflow: auto;
     margin-bottom: 25px;
 }

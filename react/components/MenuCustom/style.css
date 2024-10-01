@@ -24,6 +24,11 @@
   margin: 0;
   padding-top: 10px;
   padding-bottom: 10px;
+  color: black;
+}
+
+.menuLink:global(.negrito) {
+  color: #DB3D68;
 }
 
 .openSubmenu .menuLink {
@@ -88,6 +93,7 @@
 
 .close {
   position: absolute;
+  z-index: 99; 
   top: 30px;
   display: flex;
   align-items: center;
@@ -186,4 +192,14 @@
 .submenuWrapper.level-1.openSubmenu {
   display: block;
 
+}
+
+.menuLink :global(.underline) {
+  text-transform: uppercase;
+  font-family: 'Larsseit Bold'
+}
+
+.openSubmenu .menuLink a:global(.negrito) {
+  font-family: 'Larsseit Medium';
+  text-transform: none;
 }

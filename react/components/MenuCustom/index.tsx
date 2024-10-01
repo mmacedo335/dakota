@@ -8,11 +8,12 @@ type SubmenuLink = {
   hasSubmenu?: boolean;
   submenuLinks?: SubmenuLink[];
   linkColor?: string;
-  underline?: boolean;
+  underline?: boolean; 
+  negrito: boolean;
 };
 
 type Banner = {
-  bannerImage: string;
+  bannerImage: string; 
   bannerLink: string;
   bannerText: string;
 };
@@ -20,8 +21,9 @@ type Banner = {
 type MenuLink = {
   __editorItemTitle?: string;
   text: string;
-  url: string;
+  url: string;  
   hasSubmenu: boolean;
+  negrito: boolean;
   submenuLinks?: SubmenuLink[];
   banners?: Banner[];
   linkColor?: string;
@@ -56,6 +58,8 @@ const CSS_HANDLES = [
 
 const MenuCustom = (props: Props) => {
   const { menuLinks } = props;
+
+  console.log('dasdsa', menuLinks);
 
   const [openSubmenus, setOpenSubmenus] = useState<string[]>([]);
   const { handles } = useCssHandles(CSS_HANDLES);
@@ -111,28 +115,27 @@ const MenuCustom = (props: Props) => {
                   onClick={(e) => {
                     if (submenuLink.hasSubmenu) {
                       e.preventDefault();
-                      handleSubmenuToggle(currentPath);
+                      handleSubmenuToggle(currentPath); 
                     }
                   }}
                   aria-controls={`submenu-${currentPath}`}
                   aria-expanded={
-                    openSubmenus.includes(currentPath) ? "true" : "false"
+                    openSubmenus.includes(currentPath) ? "true" : "false"  
                   }
                 >
-                  <a href={submenuLink.url}>{submenuLink.text}</a>
+                  <a href={submenuLink.url} className={`${submenuLink.underline ? "underline" : ""} ${submenuLink.negrito ? "negrito" : ""}`}>{submenuLink.text}</a> 
                   {submenuLink.hasSubmenu && (
                     <span
                       className={`${handles.submenuToggleIcon} ${openSubmenus.includes(currentPath) ? "active" : ""
                         }`}
                     />
-                  )}
-                </p>
+                  )} 
+                </p> 
               ) : (
                 <a
                   href={submenuLink.url}
                   style={{ color: submenuLink.linkColor || "#000" }}
-                  className={`${handles.menuLink} ${submenuLink.underline ? "underline" : ""
-                    }`}
+                  className={`${handles.menuLink} ${submenuLink.underline ? "underline" : "" } ${submenuLink.negrito ? "negrito" : ""}`}
                 >
                   {submenuLink.text}
                 </a>
@@ -144,7 +147,7 @@ const MenuCustom = (props: Props) => {
         })}
       </ul>
     );
-  };
+  }; 
 
   const isMenuActive = openSubmenus.length > 0;
 
@@ -193,17 +196,14 @@ const MenuCustom = (props: Props) => {
                     <>
                       <span>{link.text}</span>
                       <span
-                        className={`${handles.submenuToggleIcon} ${openSubmenus.includes(indexPath) ? "active" : ""
-                          }`}
+                        className={`${handles.submenuToggleIcon} ${openSubmenus.includes(indexPath) ? "active" : ""}  ${link.negrito ? "negrito" : ""}`}
                       />
                     </>
                   )}
                   {!link.hasSubmenu && (
                     <a
                       href={link.url}
-                      className={`${handles.menuLink} ${link.underline ? "underline" : ""
-                        }`}
-                      style={{ color: link.linkColor || "#000" }}
+                      className={`${handles.menuLink} ${link.underline ? "underline" : ""} ${link.negrito ? "negrito" : ""}`}
                     >
                       {link.text}
                     </a>
@@ -238,9 +238,6 @@ const MenuCustom = (props: Props) => {
                     {link.text}
                   </div>
 
-                  <div className={handles.todosProdutos}>
-                    <a href={link.url}>Todos os produtos</a>
-                  </div>
 
                   <div className={handles.close} onClick={(e) => {
                     e.preventDefault();
@@ -292,10 +289,10 @@ export default MenuCustom;
 MenuCustom.schema = {
   title: "Menu Customizado",
   description: "Um menu customizado com links dinâmicos e banners nos submenus",
-  type: "object",
+  type: "object", 
   properties: {
     menuLinks: {
-      type: "array",
+      type: "array", 
       title: "Links do Menu",
       items: {
         type: "object",
@@ -317,6 +314,11 @@ MenuCustom.schema = {
             title: "Possui Submenu?",
             default: false,
           },
+          negrito: {  
+            type: "boolean",
+            title: "Negrito", 
+            default: false,
+          }, 
           submenuLinks: {
             title: "Submenu Links",
             type: "array",
@@ -337,9 +339,14 @@ MenuCustom.schema = {
                 },
                 underline: {
                   type: "boolean",
-                  title: "Ativar underline?",
+                  title: "Título?",
                   default: false,
                 },
+                negrito: {  
+                  type: "boolean",
+                  title: "Negrito",  
+                  default: false,
+                }, 
                 hasSubmenu: {
                   type: "boolean",
                   title: "Possui Submenu?",

@@ -3,7 +3,6 @@
     "title": "Footer - Mobile",
     "children": [
       "image#whats-flutuante",
-      "modal-privacidade", 
       "flex-layout.row#footer-newsletter", 
       "flex-layout.row#footer-menu",
       "flex-layout.row#meios-pagamento-footer",

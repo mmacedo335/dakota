@@ -116,7 +116,7 @@
     "props": {
       "initiallyCollapsed": true,
       "drawerDirectionMobile": "drawerRight",
-      "truncateFilters": true,
+      "truncateFilters": false,
       "showClearByFilter": false,
       "fullWidthOnMobile": false,
       "navigationTypeOnMobile": "collapsible",

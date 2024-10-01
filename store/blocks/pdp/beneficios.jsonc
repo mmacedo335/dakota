@@ -91,7 +91,7 @@
       "marginBottom": 5,
       "marginTop": 4,
       "paddingTop": 6, 
-      "blockClass": "beneficios",
+      "blockClass": ["mobile", "beneficios"],
       "preventVerticalStretch": true,
       "preserveLayoutOnMobile": false,
       "horizontalAlign": "between"

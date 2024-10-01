@@ -411,4 +411,8 @@
     .container {
         padding: 0 15px;
     }
+
+    .shippingContainer {
+        margin: 0px 15px;
+    }
 }

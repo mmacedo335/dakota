@@ -68,13 +68,19 @@
 }
 
 .paragraph--texto-home {
-    font-size: 14px;
+    font-size: 16px;
     margin: .55em 0;
+    text-align: left;
+}
+
+.paragraph--texto-home .strong--texto-home {
+    color: #db3d68;
 }
 
 .heading--texto-home {
     margin: 15px auto;
-    font-size: 14px;
+    font-size: 16px;
+    text-align: left;
 }
 
 .paragraph--newsletter-text-privacidade {
@@ -87,19 +93,19 @@
     text-decoration: underline;
 }
 
-.heading--loja-fisicas-title{
+.heading--loja-fisicas-title {
     letter-spacing: 1px;
     font-size: 1.625rem;
     margin: 0;
     color: #000;
 }
 
-.paragraph--loja-fisicas-title{
+.paragraph--loja-fisicas-title {
     font-size: 20px;
     color: #000;
 }
 
-.paragraph--loja-fisicas-title .link--loja-fisicas-title{
+.paragraph--loja-fisicas-title .link--loja-fisicas-title {
     text-decoration: underline;
     color: #000;
 }
@@ -176,7 +182,8 @@
     margin-right: 35px;
 }
 
-.heading--title-padrao,.paragraph--title-padrao {
+.heading--title-padrao,
+.paragraph--title-padrao {
     font-size: 27px;
     text-transform: uppercase;
     letter-spacing: 4px;
@@ -219,7 +226,7 @@
     padding: 6px 0px;
 }
 
-.container--hidden{
+.container--hidden {
     position: absolute;
     clip: rect(1px, 1px, 1px, 1px);
     clip-path: inset(0 0 99.9% 99.9%);
@@ -313,20 +320,20 @@
     color: #222;
 }
 
-.paragraph--login-menu-mobile{
+.paragraph--login-menu-mobile {
     display: flex;
     align-items: center;
     gap: 6px;
-    color: black; 
+    color: black;
     font-size: 16px;
     margin: 0;
 }
- 
-.image--login-menu-mobile{ 
+
+.image--login-menu-mobile {
     margin-right: 5px;
 }
 
-.wrapper--login-menu-mobile{
+.wrapper--login-menu-mobile {
     padding-left: 15px;
     display: block;
     width: 100%;
@@ -334,15 +341,15 @@
     padding-top: 20px;
 }
 
-.link--login-menu-mobile{
+.link--login-menu-mobile {
     color: black;
 }
 
-.paragraph--guia-tamanhos{
+.paragraph--guia-tamanhos {
     border: 1.5px solid #ACACAC;
     border-radius: 9px;
     font-size: .7em;
-    font-style: initial;  
+    font-style: initial;
     cursor: pointer;
     letter-spacing: 2px;
     padding: 1px 15px;
@@ -352,17 +359,26 @@
     margin-top: 3px;
 }
 
-.paragraph--produto-indisponivel-title{
+.paragraph--produto-indisponivel-title {
     font-size: 25px;
     text-transform: uppercase;
     font-family: 'Larsseit Medium';
 }
 
-.paragraph--title-minicart-modal{
+.paragraph--title-minicart-modal {
     font-family: 'Inter';
     font-weight: 400;
     letter-spacing: 0.8px;
     font-size: 16px;
+}
+
+.paragraph--flag-produto-indisponivel {
+    background-color: #ffeb3b;
+    font-size: 14px;
+    font-weight: bold;
+    padding: 8px 15px;
+    font-family: 'Larsseit Regular';
+    color: #333;
 }
 
 @media(min-width: 769px) {
@@ -379,13 +395,14 @@
         text-align: left;
     }
 
-    .heading--title-padrao,.paragraph--title-padrao {
+    .heading--title-padrao,
+    .paragraph--title-padrao {
         font-size: 16px;
     }
 
     :global(.vtex-flex-layout-0-x-flexRowContent--topo-menu) .paragraph--topo-flutuante {
         font-size: 12.5px;
-    } 
+    }
 
     .paragraph--copyright {
         font-size: 14px;
