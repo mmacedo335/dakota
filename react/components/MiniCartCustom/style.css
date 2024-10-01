@@ -2,7 +2,7 @@
     display: none;
 }
 
-:global(.vtex-flex-layout-0-x-flexCol--minicart-custom):hover :global(.minicart-custom) {
+:global(.vtex-flex-layout-0-x-flexCol--minicart-custom):not(:global(.vtex-flex-layout-0-x-flexCol--mobile)):hover :global(.minicart-custom) {
     display: block;
     position: absolute;
     right: -25px;
@@ -120,7 +120,6 @@
     position: absolute;
     top: 13px;
     right: -7px;
-    font-size: 10px;
     width: 16px;
     height: 16px;
     background: #db3d68;
@@ -128,5 +127,13 @@
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+:global(.quantity) a {
+    font-size: 10px;
     color: white;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--main-header-mobile) :global(.quantity) {
+    top: -10px;
 }

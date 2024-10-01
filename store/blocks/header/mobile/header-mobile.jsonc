@@ -25,13 +25,13 @@
     "children": [
       "flex-layout.col#header-mobile-left",
       "flex-layout.col#header-mobile-center",
-      "flex-layout.col#header-mobile-rigth"
+      "flex-layout.col#minicart-custom-mobile"
     ],
     "props": {
       "blockClass": "main-header-mobile",
       "preventHorizontalStretch": false,
       "preserveLayoutOnMobile": true,
-      "horizontalAlign": "between",
+      "horizontalAlign": "between", 
       "verticalAlign": "center",
       "fullWidth": false
     }
@@ -48,11 +48,19 @@
     },
     "children": ["logo#mobile"]
   },
-  "flex-layout.col#header-mobile-rigth": {
+  "flex-layout.col#minicart-custom-mobile": {
+    "title": "Minicart",
     "props": {
-      "width": "22%"
+      "width": "22%",
+      "blockClass": ["minicart-custom", "mobile"], 
+      "preventVerticalStretch": true,
+      "verticalAlign": "middle",
+      "horizontalAlign": "right" 
     },
-    "children": ["minicart.v2#mobile"] 
+    "children": [
+      "image#minicart-custom",
+      "minicart-custom"
+    ]
   },
   "disclosure-layout#search-bar-mobile": {
     "children": [

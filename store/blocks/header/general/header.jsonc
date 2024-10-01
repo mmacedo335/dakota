@@ -39,6 +39,7 @@
     ]
   },
   "flex-layout.col#minicart-custom": {
+    "title": "Minicart",
     "props": {
       "blockClass": "minicart-custom",
       "preventVerticalStretch": true,
@@ -50,6 +51,7 @@
     ]
   },
   "image#minicart-custom": {
+    "title": "Imagem minicart",
     "props": {
       "src": "assets/svg/minicart.svg",
       "link": {

@@ -105,10 +105,7 @@
   width: 100%;
   box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
   z-index: 1000;
-
-  @media(max-width:1024px) {
-    flex-direction: column;
-  }
+  flex-direction: column;
 }
 
 .submenuContainer.level-1 {
@@ -116,19 +113,10 @@
 }
 
 .wrapper {
-  display: flex;
   list-style: none;
   padding: 0;
-
-  @media (max-width: 1024px) {
-    display: block;
-    width: 100%;
-  }
-
-}
-
-.menuContainer .wrapper>.menuItem:last-child .menuLink {
-  color: #DB3D68 !important;
+  display: block;
+  width: 100%;
 }
 
 .wrapper.activeMenuItem .menuItem:not(.activeMenuItem) {
@@ -140,13 +128,11 @@
 }
 
 .submenuWrapper {
-  display: flex;
+  display: block;
   list-style: none;
   padding: 0;
 
-  @media (max-width: 1024px) {
-    display: block;
-  }
+
 }
 
 .submenuWrapper.level-2 {
@@ -167,39 +153,37 @@
   height: auto;
 }
 
-@media (max-width: 768px) {
-  .menuContainer {
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px 30px;
-  }
+.menuContainer {
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 0px 30px;
+}
 
-  .submenuContainer {
-    position: static;
-    flex-direction: column !important;
-    padding: 10px 0;
-    box-shadow: none;
-    width: 100%;
-  }
+.submenuContainer {
+  position: static;
+  flex-direction: column !important;
+  padding: 10px 0;
+  box-shadow: none;
+  width: 100%;
+}
 
-  .bannerContainer {
-    margin-left: 0;
-    margin-top: 10px;
-    text-align: center;
-  }
+.bannerContainer {
+  margin-left: 0;
+  margin-top: 10px;
+  text-align: center;
+}
 
-  .bannerImage {
-    width: 100%;
-    max-width: 300px;
-  }
+.bannerImage {
+  width: 100%;
+  max-width: 300px;
+}
 
-  .submenuWrapper.level-1 {
-    display: none;
+.submenuWrapper.level-1 {
+  display: none;
 
-  }
+}
 
-  .submenuWrapper.level-1.openSubmenu {
-    display: block;
+.submenuWrapper.level-1.openSubmenu {
+  display: block;
 
-  }
 }

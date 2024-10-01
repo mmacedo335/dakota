@@ -2,7 +2,7 @@
   "product-list-price#summary": {
     "props": {
       "blockClass": "summary"
-    }
+    } 
   },
   "product-installments#summary": {
     "props": {

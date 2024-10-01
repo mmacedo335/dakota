@@ -22,7 +22,7 @@
             "backdrop": "none"
         }
     },
-    "link#modal-close-background": {
+    "link#modal-close-background": { 
         "props": {
             "href": "/checkout/#/cart",
             "label": "",

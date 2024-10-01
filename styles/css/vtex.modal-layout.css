@@ -111,4 +111,7 @@
     .paper--guia-tamanhos {
         margin: 12px;
     }
+    .triggerContainer--produto-indisponivel :global(.vtex-rich-text-0-x-paragraph--produto-indisponivel) {
+        font-size: 16px;
+    }
 }

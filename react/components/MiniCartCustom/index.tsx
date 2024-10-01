@@ -13,24 +13,31 @@ interface CartItem {
 
 // Definindo a interface para a estrutura de dados do OrderForm
 interface OrderFormData {
-  items: CartItem[]; 
+  items: CartItem[];
 }
 
 const MiniCartCustom: React.FC = () => {
-  const [data, setData] = useState<OrderFormData | null>(null); // Adicionando tipagem ao estado
+  const [data, setData] = useState<OrderFormData | null>(null);
   const [loading, setLoading] = useState(true);
+  const [orderFormId, setOrderFormId] = useState<string | null>(null); // Estado para salvar o orderFormId
   const { useOrderForm } = OrderForm;
   const { orderForm } = useOrderForm();
 
+  // Atualiza o orderFormId quando estiver disponível
+  useEffect(() => {
+    if (orderForm?.id && orderForm.id !== "default-order-form") {
+      setOrderFormId(orderForm.id);
+    }
+  }, [orderForm?.id]);
+
   // Função para buscar os dados do minicart
   const dadosMinicart = async () => {
+    if (!orderFormId) return; // Certifica-se de que o orderFormId está definido
+
     try {
-      const response = await fetch(
-        `/api/checkout/pub/orderForm/${orderForm?.id}`,
-        {
-          method: "POST",
-        }
-      );
+      const response = await fetch(`/api/checkout/pub/orderForm/${orderFormId}`, {
+        method: "POST",
+      });
 
       if (!response.ok) throw new Error("Erro ao buscar dados do minicart");
       const result = await response.json();
@@ -39,13 +46,13 @@ const MiniCartCustom: React.FC = () => {
       console.error("Erro ao fazer requisição:", error);
     } finally {
       setLoading(false);
-    } 
+    }
   };
 
   // Função para atualizar a quantidade de itens no carrinho
   const updateCartItemQuantity = useCallback(
     async (index: number) => {
-      if (!data || index < 0 || index >= data.items.length) {
+      if (!data || index < 0 || index >= data.items.length || !orderFormId) {
         console.error("Índice inválido ao tentar atualizar o item");
         return;
       }
@@ -56,7 +63,7 @@ const MiniCartCustom: React.FC = () => {
 
       try {
         const response = await fetch(
-          `/api/checkout/pub/orderForm/${orderForm?.id}/items/update`,
+          `/api/checkout/pub/orderForm/${orderFormId}/items/update`,
           {
             method: "POST",
             body: bodyContent,
@@ -70,30 +77,39 @@ const MiniCartCustom: React.FC = () => {
         console.error("Erro ao atualizar o item:", error);
       }
     },
-    [data, orderForm?.id]
+    [data, orderFormId] // Agora depende do orderFormId
   );
 
-  // Efeito para carregar os dados do minicart ao montar o componente
+  // Efeito para carregar os dados do minicart e atualizar quando o orderForm mudar
   useEffect(() => {
-    let isMounted = true;
-    if (orderForm?.id && orderForm.id !== "default-order-form") {
+    if (orderFormId) {
       dadosMinicart();
     }
-
-    return () => {
-      isMounted = false;
-    };
-  }, [orderForm]);
+  }, [orderFormId, orderForm]); // Atualiza sempre que o orderForm mudar
 
   // Indicador de carregamento
   if (loading) {
-    return <p></p>;
+    return (
+      <div className="minicart-custom">
+        <div className="empty">
+          <p>
+            Seu carrinho está vazio! <br /> Que tal conferir as{" "}
+            <br /> novidades da coleção.
+          </p>
+          <a href="/">Vem ver</a>
+        </div>
+      </div>
+    );
   }
 
   // Renderização do minicart
   return (
     <>
-      <div className="quantity">{data?.items.length}</div>
+      <div className="quantity">
+        <a href="/checkout/#/cart">
+          {data?.items.length}
+        </a>
+      </div>
       <div className="minicart-custom">
         {data?.items.length === 0 ? (
           <div className="empty">
@@ -104,7 +120,8 @@ const MiniCartCustom: React.FC = () => {
             <a href="/">Vem ver</a>
           </div>
         ) : (
-          <><div className="products">
+          <>
+            <div className="products">
               {data?.items.map((item, index) => (
                 <div className="item" key={index}>
                   <div className="name">
@@ -116,21 +133,21 @@ const MiniCartCustom: React.FC = () => {
                         src={item.imageUrl}
                         width="50px"
                         height="50px"
-                        alt={item.name} />
+                        alt={item.name}
+                      />
                     </a>
                   </div>
                   <div
                     onClick={() => updateCartItemQuantity(index)}
                     className="remove"
-                  >
-                  </div>
+                  ></div>
                 </div>
               ))}
             </div>
             <div className="finalizar">
               <a href="/checkout/#/cart">Finalizar compra</a>
-            </div>  
-            </>
+            </div>
+          </>
         )}
       </div>
     </>

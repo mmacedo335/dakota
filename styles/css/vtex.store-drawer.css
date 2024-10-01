@@ -20,6 +20,10 @@
     top: 13px;
 }
 
-.childrenContainer--header-menu{
+.childrenContainer--header-menu {
     display: block;
+}
+
+.closeIcon {
+    color: black;
 }
