@@ -542,6 +542,10 @@
     width: 24px;
 }
 
+.flexRowContent--minicart-footer {
+    padding-top: 0;
+}
+
 @media(min-width: 769px) {
     .flexRow--search-topo :global(.vtex-breadcrumb-1-x-container) {
         position: absolute;

@@ -17,7 +17,7 @@
     }
   },
   "image#grid-banner-01": {
-    "title": "Imagem 01",
+    "title": "Imagem 01", 
     "props": {
       "src": "",
       "link": {

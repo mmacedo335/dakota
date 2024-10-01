@@ -132,8 +132,10 @@
 :global(.quantity) a {
     font-size: 10px;
     color: white;
+    font-family: 'BebasNeue Regular';
+    text-decoration: none;
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--main-header-mobile) :global(.quantity) {
     top: -10px;
-}
+} 
