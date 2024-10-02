@@ -2,7 +2,6 @@
   "drawer": {
     "title": "Menu categorias",
     "children": [
-      "flex-layout.row#topo-menu-mobile",
       "flex-layout.row#menu-header-mobile",  
       "challenge-block#login-menu-mobile"  
     ],

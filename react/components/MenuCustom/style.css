@@ -93,7 +93,7 @@
 
 .close {
   position: absolute;
-  z-index: 99; 
+  z-index: 99;
   top: 30px;
   display: flex;
   align-items: center;
@@ -123,6 +123,7 @@
   padding: 0;
   display: block;
   width: 100%;
+  margin-top: 85px;
 }
 
 .wrapper.activeMenuItem .menuItem:not(.activeMenuItem) {
@@ -202,4 +203,15 @@
 .openSubmenu .menuLink a:global(.negrito) {
   font-family: 'Larsseit Medium';
   text-transform: none;
+}
+
+.topoMenu {
+  display: block;
+  width: 100%;
+  text-align: center;
+  background: white;
+  position: absolute;
+  top: 0px;
+  padding: 20px;
+  border-bottom: 1px solid #EEEEEE;
 }

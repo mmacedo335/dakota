@@ -18,6 +18,7 @@
     position: fixed;
     right: 10px;
     top: 13px;
+    z-index: 99;
 }
 
 .childrenContainer--header-menu {

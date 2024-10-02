@@ -7,7 +7,7 @@
   },
   "flex-layout.row#title-central-de-atendimento": {
     "props": {
-        "marginTop": 5 
+      "marginTop": 5
     },
     "children": [
       "rich-text#title-central-de-atendimento"
@@ -27,7 +27,7 @@
     "props": {
       "blockClass": "links-central-de-atendimento",
       "preventHorizontalStretch": true,
-      "preventVerticalStretch": true, 
+      "preventVerticalStretch": true,
       "horizontalAlign": "center",
       "marginTop": 3,
       "marginBottom": 2
@@ -40,12 +40,12 @@
   "link#loja-fisica": {
     "props": {
       "href": "/lojas-fisicas",
-      "label": "Lojas Físicas" 
+      "label": "Lojas Físicas"
     }
   },
   "link#loja-online": {
     "props": {
-      "href": "/loja-online",
+      "href": "/institucional/condicoes-geral",
       "label": "Loja Online"
     }
   }

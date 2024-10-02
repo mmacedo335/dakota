@@ -53,14 +53,12 @@ const CSS_HANDLES = [
   "titleSubMenu",
   "todosProdutos",
   "level-",
+  "topoMenu",
   "close",
 ] as const;
 
 const MenuCustom = (props: Props) => {
   const { menuLinks } = props;
-
-  console.log('dasdsa', menuLinks);
-
   const [openSubmenus, setOpenSubmenus] = useState<string[]>([]);
   const { handles } = useCssHandles(CSS_HANDLES);
 
@@ -152,135 +150,132 @@ const MenuCustom = (props: Props) => {
   const isMenuActive = openSubmenus.length > 0;
 
   return (
+ 
+    <>     
+    <div className={handles.topoMenu}>
+      <img width="135" height="35" alt="Logo Mobile" src="https://dakota.vtexassets.com/assets/vtex/assets-builder/dakota.dakota-theme/6.0.6/svg/logo-dakota___9e5024e768762611d1260e2e2d5e1aa5.svg"/>
+    </div>
+    
     <nav
       className={handles.menuContainer}
       role="navigation"
       aria-label="Main Menu"
     >
-      <ul
-        className={`${handles.wrapper} ${isMenuActive ? handles.activeMenuItem : ""}`}
-      >
-        {menuLinks?.map((link, index) => {
-          const indexPath = `${index}`;
+        <ul
+          className={`${handles.wrapper} ${isMenuActive ? handles.activeMenuItem : ""}`}
+        >
+          {menuLinks?.map((link, index) => {
+            const indexPath = `${index}`;
 
-          return (
-            <li
-              key={indexPath}
-              className={`${handles.menuItem} ${openSubmenus.includes(indexPath)
+            return (
+              <li
+                key={indexPath}
+                className={`${handles.menuItem} ${openSubmenus.includes(indexPath)
                   ? handles.activeMenuItem
-                  : ""
-                } ${!isMobile ? handles.hoverMenuItem : ""}`}
-              onMouseEnter={() => !isMobile && setOpenSubmenus([indexPath])}
-              onMouseLeave={() => !isMobile && setOpenSubmenus([])}
-              aria-haspopup={link.hasSubmenu ? "true" : undefined}
-              aria-expanded={
-                openSubmenus.includes(indexPath) ? "true" : "false"
-              }
-            >
-              {isMobile ? (
-                <p
-                  className={handles.menuLink}
-                  style={{ color: link.linkColor || "#000" }}
-                  onClick={(e) => {
-                    if (link.hasSubmenu) {
+                  : ""} ${!isMobile ? handles.hoverMenuItem : ""}`}
+                onMouseEnter={() => !isMobile && setOpenSubmenus([indexPath])}
+                onMouseLeave={() => !isMobile && setOpenSubmenus([])}
+                aria-haspopup={link.hasSubmenu ? "true" : undefined}
+                aria-expanded={openSubmenus.includes(indexPath) ? "true" : "false"}
+              >
+                {isMobile ? (
+                  <p
+                    className={handles.menuLink}
+                    style={{ color: link.linkColor || "#000" }}
+                    onClick={(e) => {
+                      if (link.hasSubmenu) {
+                        e.preventDefault();
+                        handleSubmenuToggle(indexPath);
+                      }
+                    } }
+                    aria-controls={`submenu-${indexPath}`}
+                    aria-expanded={openSubmenus.includes(indexPath) ? "true" : "false"}
+                  >
+                    {link.hasSubmenu && (
+                      <>
+                        <span>{link.text}</span>
+                        <span
+                          className={`${handles.submenuToggleIcon} ${openSubmenus.includes(indexPath) ? "active" : ""}  ${link.negrito ? "negrito" : ""}`} />
+                      </>
+                    )}
+                    {!link.hasSubmenu && (
+                      <a
+                        href={link.url}
+                        className={`${handles.menuLink} ${link.underline ? "underline" : ""} ${link.negrito ? "negrito" : ""}`}
+                      >
+                        {link.text}
+                      </a>
+                    )}
+                  </p>
+                ) : (
+                  <a
+                    href={link.url}
+                    className={`${handles.menuLink} ${link.underline ? "underline" : ""}`}
+                    style={{ color: link.linkColor || "#000" }}
+                  >
+                    {link.text}
+                  </a>
+                )}
+                {link.hasSubmenu && (
+                  <div
+                    id={`submenu-${indexPath}`}
+                    className={`${handles.submenuContainer} ${openSubmenus.includes(indexPath)
+                      ? handles.openSubmenu
+                      : ""}`}
+                    role="region"
+                    aria-label={`${link.text} submenu`}
+                    style={{
+                      display: openSubmenus.includes(indexPath)
+                        ? "flex"
+                        : "none",
+                    }}
+                  >
+                    <div className={handles.titleSubMenu}>
+                      {link.text}
+                    </div>
+
+
+                    <div className={handles.close} onClick={(e) => {
                       e.preventDefault();
                       handleSubmenuToggle(indexPath);
-                    }
-                  }}
-                  aria-controls={`submenu-${indexPath}`}
-                  aria-expanded={
-                    openSubmenus.includes(indexPath) ? "true" : "false"
-                  }
-                >
-                  {link.hasSubmenu && (
-                    <>
-                      <span>{link.text}</span>
-                      <span
-                        className={`${handles.submenuToggleIcon} ${openSubmenus.includes(indexPath) ? "active" : ""}  ${link.negrito ? "negrito" : ""}`}
-                      />
-                    </>
-                  )}
-                  {!link.hasSubmenu && (
-                    <a
-                      href={link.url}
-                      className={`${handles.menuLink} ${link.underline ? "underline" : ""} ${link.negrito ? "negrito" : ""}`}
-                    >
-                      {link.text}
-                    </a>
-                  )}
-                </p>
-              ) : (
-                <a
-                  href={link.url}
-                  className={`${handles.menuLink} ${link.underline ? "underline" : ""
-                    }`}
-                  style={{ color: link.linkColor || "#000" }}
-                >
-                  {link.text}
-                </a>
-              )}
-              {link.hasSubmenu && (
-                <div
-                  id={`submenu-${indexPath}`}
-                  className={`${handles.submenuContainer} ${openSubmenus.includes(indexPath)
-                      ? handles.openSubmenu
-                      : ""
-                    }`}
-                  role="region"
-                  aria-label={`${link.text} submenu`}
-                  style={{
-                    display: openSubmenus.includes(indexPath)
-                      ? "flex"
-                      : "none",
-                  }}
-                >
-                  <div className={handles.titleSubMenu}>
-                    {link.text}
-                  </div>
-
-
-                  <div className={handles.close} onClick={(e) => {
-                    e.preventDefault();
-                    handleSubmenuToggle(indexPath);
-                  }}>
-                    <span>Voltar</span> 
-                  </div>
-
-                  {renderSubmenu(link.submenuLinks, 1, indexPath)}
-
-                  {link.banners && link.banners.length > 0 && (
-                    <div className={handles.bannerContainer}>
-                      {link.banners.map((banner, bannerIndex) => {
-                        return (
-                          <a
-                            className={handles.bannerLink}
-                            key={bannerIndex}
-                            href={banner.bannerLink}
-                            target="_blank"
-                            rel="noopener noreferrer"
-                          >
-                            <img
-                              src={banner.bannerImage}
-                              alt={`Banner ${bannerIndex + 1}`}
-                              className={handles.bannerImage}
-                            />
-                            {banner.bannerText && (
-                              <span className={handles.bannerText}>
-                                {banner.bannerText}
-                              </span>
-                            )}
-                          </a>
-                        );
-                      })}
+                    } }>
+                      <span>Voltar</span>
                     </div>
-                  )}
-                </div>
-              )}
-            </li>
-          );
-        })}
-      </ul>
-    </nav>
+
+                    {renderSubmenu(link.submenuLinks, 1, indexPath)}
+
+                    {link.banners && link.banners.length > 0 && (
+                      <div className={handles.bannerContainer}>
+                        {link.banners.map((banner, bannerIndex) => {
+                          return (
+                            <a
+                              className={handles.bannerLink}
+                              key={bannerIndex}
+                              href={banner.bannerLink}
+                              target="_blank"
+                              rel="noopener noreferrer"
+                            >
+                              <img
+                                src={banner.bannerImage}
+                                alt={`Banner ${bannerIndex + 1}`}
+                                className={handles.bannerImage} />
+                              {banner.bannerText && (
+                                <span className={handles.bannerText}>
+                                  {banner.bannerText}
+                                </span>
+                              )}
+                            </a>
+                          );
+                        })}
+                      </div>
+                    )}
+                  </div>
+                )}
+              </li>
+            );
+          })}
+        </ul>
+      </nav></>
   );
 };
 

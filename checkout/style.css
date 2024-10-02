@@ -1,6 +1,10 @@
 body {
   padding-bottom: 0px !important;
 }
+body .ChangeNumberOfPayments a {
+  color: #08c;
+  text-decoration: underline;
+}
 body .item-remove-ico {
   width: 16px;
   height: 16px;

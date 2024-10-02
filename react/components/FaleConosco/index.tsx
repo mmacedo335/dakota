@@ -60,6 +60,34 @@ const DynamicForms: React.FC = () => {
   const renderForm = () => {
     switch (selectedOption) {
       case "option1":
+        return (
+          <div>
+            <input
+              type="text"
+              name="productReference"
+              value={formData.productReference}
+              onChange={handleInputChange}
+              required
+              placeholder="Referência do produto"
+            />
+            <div className="anexo">
+              <input
+                type="file"
+                name="attachment"
+                onChange={(e) => console.log(e.target.files)}
+              />
+            </div>
+            <div>
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                required
+                placeholder="Mensagem"
+              />
+            </div>
+          </div>
+        );
       case "option2":
         return (
           <div>
@@ -71,6 +99,15 @@ const DynamicForms: React.FC = () => {
               required
               placeholder="Referência do produto"
             />
+            <div>
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                required
+                placeholder="Mensagem"
+              />
+            </div>
           </div>
         );
       case "option3":
@@ -138,6 +175,22 @@ const DynamicForms: React.FC = () => {
                 onChange={handleInputChange}
                 required
                 placeholder="Nome e endereço da loja"
+              />
+            </div>
+            <div className="anexo">
+              <input
+                type="file"
+                name="attachment"
+                onChange={(e) => console.log(e.target.files)}
+              />
+            </div>
+            <div>
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                required
+                placeholder="Mensagem"
               />
             </div>
           </>
