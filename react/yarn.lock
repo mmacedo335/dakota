@@ -66,9 +66,9 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
   integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
 
-"dakota.dakota-theme@https://desenvolvimento--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.3+build1727459761/public/@types/dakota.dakota-theme":
-  version "6.0.3"
-  resolved "https://desenvolvimento--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.3+build1727459761/public/@types/dakota.dakota-theme#5fd1e00b7536ac84361cb40db8fe11fef270eeab"
+"dakota.dakota-theme@https://desenvolvimento--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.7+build1727961351/public/@types/dakota.dakota-theme":
+  version "6.0.7"
+  resolved "https://desenvolvimento--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.7+build1727961351/public/@types/dakota.dakota-theme#e95f0e5d5c24db2dfe3635749fe1665d959e15cd"
 
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
@@ -306,9 +306,9 @@ swiper@^11.1.4:
   version "2.90.1"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.90.1/public/@types/vtex.product-summary#b2efb5e9543511f98da94d1814c0d6a6a6803feb"
 
-"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.134.8/public/@types/vtex.render-runtime":
-  version "8.134.8"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.134.8/public/@types/vtex.render-runtime#b54ce7a361a512237c57ae2ad254ba1958b22ef9"
+"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.134.11/public/@types/vtex.render-runtime":
+  version "8.134.11"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.134.11/public/@types/vtex.render-runtime#0e42a00ac9b26c34b5b18b7a080f7dc3a5ac9959"
 
 "vtex.responsive-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.responsive-layout@0.1.4/public/@types/vtex.responsive-layout":
   version "0.1.4"
@@ -318,9 +318,9 @@ swiper@^11.1.4:
   version "0.16.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.16.0/public/@types/vtex.rich-text#0cdcaccffb37ae0d025894ba7055f69bc3c9aa30"
 
-"vtex.search-result@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.133.0/public/@types/vtex.search-result":
-  version "3.133.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.133.0/public/@types/vtex.search-result#7774d5f97869b082d7135dc2a3d0e5187c64e8a9"
+"vtex.search-result@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.133.1/public/@types/vtex.search-result":
+  version "3.133.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.133.1/public/@types/vtex.search-result#25b96e385913a6464fb78bf3d6ed924d3b180e62"
 
 "vtex.shelf@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shelf@1.49.0/public/@types/vtex.shelf":
   version "1.49.0"

@@ -1,0 +1,49 @@
+{
+    "flex-layout.row#search-topo-lp-colecao-custom": {
+        "title": "Topo listagem",
+        "children": [
+            "flex-layout.col#search-topo-lp-colecao-custom"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "fullWidth": true,
+            "blockClass": [
+                "search-topo",
+                "container-full"
+            ],
+            "marginBottom": 10,
+            "paddingTop": 3
+        }
+    },
+    "flex-layout.col#search-topo-lp-colecao-custom": {
+        "title": "Titulo e Breadcrumb",
+        "children": [
+            "flex-layout.row#searchbread",
+            "flex-layout.row#title-lp-colecao-custom"
+        ],
+        "props": {
+            "preserveLayoutOnMobile": true,
+            "fullWidth": false,
+            "blockClass": "search-topo"
+        }
+    },
+    "flex-layout.row#title-lp-colecao-custom": {
+        "children": [
+            "rich-text#title-lp-colecao-custom"
+        ],
+        "props": {
+            "horizontalAlign": "center"
+        }
+    },
+    "rich-text#title-lp-colecao-custom": {
+        "title": "Titulo Coleção",
+        "props": {
+            "text": "Lorem ipsum",
+            "blockClass": [
+                "title-lp-colecao-custom"
+            ],
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER"
+        }
+    }
+}

@@ -1,0 +1,57 @@
+{
+    "store.custom#lp-colecoes-custom": {
+        "blocks": [
+            "search-result-layout.customQuery#lp-colecoes-custom"
+        ]
+    },
+    "search-result-layout.customQuery#lp-colecoes-custom": {
+        "title": "LP Coleção",
+        "props": {
+            "querySchema": {
+                "orderByField": "OrderByReleaseDateDESC",
+                "hideUnavailableItems": true,
+                "maxItemsPerPage": 12,
+                "skusFilter": "ALL",
+                "simulationBehavior": "skip",
+                "mapField": "productClusterIds",
+                "queryField": "" //SETAR UM E DEPOIS PODERÁ TROCAR PELO SITE EDITOR
+            }
+        },
+        "blocks": [
+            "search-result-layout.desktop#lp-colecoes-custom",
+            "search-result-layout.mobile"
+        ]
+    },
+    "search-result-layout.desktop#lp-colecoes-custom": {
+        "title": "Listagem Desktop",
+        "children": [
+            "flex-layout.row#search-banner",
+            "flex-layout.row#search-topo-lp-colecao-custom",
+            "flex-layout.row#result"
+        ],
+        "props": {
+            "preventRouteChange": true
+        }
+    },
+    "search-result-layout.mobile#lp-colecoes-custom": {
+        "title": "Listagem mobile",
+        "children": [
+            "flex-layout.row#search-banner-mobile",
+            "flex-layout.row#searchbreadMobile",
+            "flex-layout.row#searchinfomobile",
+            "flex-layout.row#productCountMobile",
+            "flex-layout.row#fetchprevious",
+            "flex-layout.row#contentmobile",
+            "flex-layout.row#fetchmore",
+            "scrollListagem"
+        ],
+        "props": {
+            "pagination": "show-more",
+            "mobileLayout": {
+                "mode1": "small",
+                "mode2": "normal"
+            },
+            "defaultGalleryLayout": "grid"
+        }
+    }
+}
