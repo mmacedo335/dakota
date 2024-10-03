@@ -5,13 +5,10 @@
       "rich-text#texto-home"
     ],
     "props": {
-      "marginBottom": 6, 
-      "marginTop": 6, 
-      "fullWidth": true,
-      "blockClass": [
-        "seo-category",
-        "container-full"
-      ]
+      "marginBottom": 8,
+      "marginTop": 6,
+      "fullWidth": false,
+      "blockClass": "texto-home"
     }
   },
   "rich-text#texto-home": {

@@ -396,6 +396,7 @@
 
 .flexRowContent--search-banner :global(.vtex-store-components-3-x-imageElementLink) {
     line-height: 0;
+    font-size: 0;
 }
 
 .flexRowContent--minicart-footer :global(.vtex-minicart-2-x-minicartCheckoutButton) :global(.vtex-button__label)::after {

@@ -16,7 +16,7 @@
   "devDependencies": {
     "@types/node": "^18.6.1",
     "@types/react": "^18.0.15",
-    "dakota.dakota-theme": "https://desenvolvimento--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.7+build1727961351/public/@types/dakota.dakota-theme",
+    "dakota.dakota-theme": "http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.7/public/@types/dakota.dakota-theme",
     "vtex.add-to-cart-button": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.30.2/public/@types/vtex.add-to-cart-button",
     "vtex.auth-challenge": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.auth-challenge@1.1.1/public/@types/vtex.auth-challenge",
     "vtex.breadcrumb": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.breadcrumb@1.9.5/public/@types/vtex.breadcrumb",

@@ -68,9 +68,8 @@
 }
 
 .paragraph--texto-home {
-    font-size: 16px;
+    font-size: 14px;
     margin: .55em 0;
-    text-align: left;
 }
 
 .paragraph--texto-home .strong--texto-home {
@@ -79,9 +78,8 @@
 
 .heading--texto-home {
     margin: 15px auto;
-    font-size: 16px;
-    text-align: left;
-}
+    font-size: 14px;
+} 
 
 .paragraph--newsletter-text-privacidade {
     font-size: .875rem;

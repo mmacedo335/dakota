@@ -40,6 +40,10 @@
     color: #222222;
 }
 
+:global(.vtex-flex-layout-0-x-flexRowContent--submenu) .menuItem .styledLink--highlight .styledLinkContent {
+    font-weight: 700;
+}
+
 :global(.vtex-flex-layout-0-x-flexRowContent--submenu) .menuItem .styledLinkContainer .styledLinkContent:hover {
     text-decoration: underline;
 }

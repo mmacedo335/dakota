@@ -66,9 +66,9 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
   integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
 
-"dakota.dakota-theme@https://desenvolvimento--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.7+build1727961351/public/@types/dakota.dakota-theme":
+"dakota.dakota-theme@http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.7/public/@types/dakota.dakota-theme":
   version "6.0.7"
-  resolved "https://desenvolvimento--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.7+build1727961351/public/@types/dakota.dakota-theme#e95f0e5d5c24db2dfe3635749fe1665d959e15cd"
+  resolved "http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.7/public/@types/dakota.dakota-theme#229bc0cab8e15e929d61b4228bb4292fb62feda7"
 
 "js-tokens@^3.0.0 || ^4.0.0":
   version "4.0.0"
