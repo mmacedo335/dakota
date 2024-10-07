@@ -14,7 +14,15 @@
   "store.custom#politica-privacidade": {
     "path": "/institucional/politica-privacidade"
   },
+  "store.custom#LP": {
+    "path": "/lancamento-inverno"
+  },
   "store.custom#loja-fisicas": {
     "path": "/lojas-fisicas"
   }
 }
+
+
+
+
+

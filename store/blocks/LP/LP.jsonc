@@ -1,0 +1,46 @@
+{
+  "store.custom#LP": {
+    "blocks": ["flex-layout.row#lp__container"]
+  },
+  "flex-layout.row#lp__container": {
+    "props": {
+      "marginTop": 6,
+      "marginBottom": 3,
+      "blockClass": "lp__container"
+    },
+    "children": [
+      "image#lp",
+      "list-context.product-list#lp",
+      "rich-text#lp__text"
+    ]
+  },
+  "image#lp": {
+    "props": {
+      "src": ""
+    }
+  },
+  "rich-text#lp__text": {},
+  "slider-layout#slider-product": {
+    "title": "Slider Vitrine",
+    "props": {
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always",
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 2,
+        "phone": 1
+      }
+    }
+  },
+  "list-context.product-list#lp": {
+    "title": "01 - Vitrine",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#slider-product"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  }
+}

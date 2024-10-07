@@ -423,6 +423,14 @@
     height: 60px;
 }
 
+.flexRowContent--lp__container{
+    flex-direction: column;
+}
+
+.flexRowContent--lp__container .stretchChildrenWidth{
+    display: contents;
+}
+
 .flexRow--minicart-header .flexRowContent--minicart-header {
     padding: 20px 25px;
 }
