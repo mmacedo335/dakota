@@ -3,6 +3,7 @@
     "blocks": ["flex-layout.row#lp__container"]
   },
   "flex-layout.row#lp__container": {
+    "title": "conteúdo",
     "props": {
       "marginTop": 6,
       "marginBottom": 3,
@@ -15,11 +16,14 @@
     ]
   },
   "image#lp": {
+    "title": "banner LP",
     "props": {
       "src": ""
     }
   },
-  "rich-text#lp__text": {},
+  "rich-text#lp__text": {
+    "title": "Texto SEO"
+  },
   "slider-layout#slider-product": {
     "title": "Slider Vitrine",
     "props": {
