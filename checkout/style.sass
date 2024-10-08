@@ -1,9 +1,45 @@
 body
     padding-bottom: 0px !important
-    .ChangeNumberOfPayments  
-        a 
+    .diferenciais
+        width: 100%
+        margin-top: 20px
+        overflow: hidden
+        position: relative
+        display: none
+        .slider
+            display: flex
+            width: 100%
+            transition: transform 0.5s ease-in-out
+        .item
+            min-width: 100%
+            box-sizing: border-box
+            text-align: center
+             min-width: 100%
+            display: flex
+            align-items: center
+            justify-content: center
+            box-sizing: border-box
+            text-align: left
+            padding: 20px
+            svg
+                height: 48px
+                width: 60px
+                margin-right: 28px
+                @media(max-width: 768px)
+                    height: 32px
+                    width: 44px 
+            & span 
+                display: block
+                color: #000
+                letter-spacing: 0.4px
+                font-size: 23px
+                @media(max-width: 768px)
+                    font-size: 14px
+                    max-width: 230px
+    .ChangeNumberOfPayments
+        a
             color: #08c
-            text-decoration: underline  
+            text-decoration: underline
     .item-remove-ico
         width: 16px
         height: 16px
@@ -14,10 +50,10 @@ body
         @media(max-width: 768px)
             text-align: center
     .cart-active
-        .summary-template-holder::before 
+        .summary-template-holder::before
             content: "Resumo"
             letter-spacing: 4px
-            text-transform: uppercase 
+            text-transform: uppercase
             font-size: 27px
             margin: 0
             color: #000
@@ -27,7 +63,7 @@ body
             margin-bottom: 30px
             @media(max-width: 768px)
                 text-align: center
-    .cart-template-holder 
+    .cart-template-holder
         .cart::before
             content: "Meu carrinho"
             letter-spacing: 4px
@@ -83,19 +119,19 @@ body
         border: none
         box-shadow: none
         border-radius: 3px
-    .vtex-shipping-preview-0-x-pc 
+    .vtex-shipping-preview-0-x-pc
         .vtex-shipping-preview-0-x-postalCodeForgotten
             align-items: flex-start
         .srp-postal-code__form
             width: 100%
-        #cart-shipping-calculate 
+        #cart-shipping-calculate
             width: 81px
             background: black
             border: none
             color: white
             font-size: 14px
             margin: 0
-            height: 35px 
+            height: 35px
         .ship-postalCode
             display: block
             width: calc(100% - 81px)
@@ -116,13 +152,13 @@ body
                 border: none
                 box-shadow: none
                 border-radius: 3px
-    .orderform-template 
-        .cart-template.mini-cart 
-            .summary-template-holder 
+    .orderform-template
+        .cart-template.mini-cart
+            .summary-template-holder
                 .summary>.summary-coupon-wrap
                     padding: 20px 0
-    .orderform-template-holder 
-        .step 
+    .orderform-template-holder
+        .step
             .submit.btn.btn-success
                 font-weight: 600
                 font-size: 14px
@@ -161,13 +197,6 @@ body
                 font-weight: 400
                 letter-spacing: 0.2px
                 font-size: 16px
-.diferenciais
-    .slider
-        .item
-            svg
-                height: 48px
-                width: 60px
-                margin-right: 28px
 .middle-footer-blk
     background-color: #eee
     .content
@@ -222,13 +251,15 @@ body
                     font-weight: 600
 body.body-cart
     background: white
+    .diferenciais.active
+        display: block 
 @media(max-width: 768px)
     body
-        .orderform-template 
+        .orderform-template
             .custom-cart-template-wrap
                 .summary-cart-template-holder
                     margin-bottom: 40px
-        .summary-template-holder 
+        .summary-template-holder
             .cart-links-bottom
                 position: relative
         .cart-more-options.span7
@@ -250,7 +281,7 @@ body.body-cart
                 order: 1
                 margin-bottom: 00px
                 margin-top: 20px
-            .copyright 
+            .copyright
                 p
                     text-align: center
                     font-size: 14px

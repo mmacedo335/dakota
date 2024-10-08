@@ -1,6 +1,53 @@
 body {
   padding-bottom: 0px !important;
 }
+body .diferenciais {
+  width: 100%;
+  margin-top: 20px;
+  overflow: hidden;
+  position: relative;
+  display: none;
+}
+body .diferenciais .slider {
+  display: flex;
+  width: 100%;
+  transition: transform 0.5s ease-in-out;
+}
+body .diferenciais .item {
+  min-width: 100%;
+  box-sizing: border-box;
+  text-align: center;
+  text-align-min-width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-sizing: border-box;
+  text-align: left;
+  padding: 20px;
+}
+body .diferenciais .item svg {
+  height: 48px;
+  width: 60px;
+  margin-right: 28px;
+}
+@media (max-width: 768px) {
+  body .diferenciais .item svg {
+    height: 32px;
+    width: 44px;
+  }
+}
+body .diferenciais .item span {
+  display: block;
+  color: #000;
+  letter-spacing: 0.4px;
+  font-size: 23px;
+}
+@media (max-width: 768px) {
+  body .diferenciais .item span {
+    font-size: 14px;
+    max-width: 230px;
+  }
+}
 body .ChangeNumberOfPayments a {
   color: #08c;
   text-decoration: underline;
@@ -185,12 +232,6 @@ body .orderform-template-holder .step .submit.btn.btn-success {
   font-size: 16px;
 }
 
-.diferenciais .slider .item svg {
-  height: 48px;
-  width: 60px;
-  margin-right: 28px;
-}
-
 .middle-footer-blk {
   background-color: #eee;
 }
@@ -256,6 +297,9 @@ body .orderform-template-holder .step .submit.btn.btn-success {
 
 body.body-cart {
   background: white;
+}
+body.body-cart .diferenciais.active {
+  display: block;
 }
 
 @media (max-width: 768px) {
