@@ -162,8 +162,9 @@
     }
   },
   // Minicart v2
-  "minicart.v2#flutuante": {
-    "props": {
+  "minicart.v2#flutuante": { 
+    "title": "Minicart modal", 
+    "props": { 
       "customPixelEventId": "add-to-cart-button",
       "quantityDisplay": "always",
       "openOnHover": true,

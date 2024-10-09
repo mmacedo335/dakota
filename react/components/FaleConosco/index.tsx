@@ -35,9 +35,7 @@ const DynamicForms: React.FC = () => {
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-
-    console.log(formData)
-
+    
     try {
       const response = await fetch("/api/dataentities/FL/documents", {
         method: "POST",

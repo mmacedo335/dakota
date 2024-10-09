@@ -4,16 +4,17 @@
       "condition-layout.product#flutuante-mobile",
       "flex-layout.row#product-breadcrumbs",
       "condition-layout.product#availability",
+      "__fold__",  
       "flex-layout.row#title-description",
       "flex-layout.row#description",
-      "flex-layout.row#review-product"
-      //"shelf.relatedProducts"
+      "flex-layout.row#review-product",
+      "modal-trigger#compre-junto" 
     ]
   },
   "condition-layout.product#flutuante-mobile": {
     "title": "Commra flutuante mobile",
     "props": {
-      "conditions": [
+      "conditions": [ 
         {
           "subject": "isProductAvailable"
         }
@@ -242,7 +243,7 @@
       "modal-trigger#guia-tamanhos",
       "flex-layout.row#product-similar",
       "responsive-layout.desktop#buy-button",
-      "flex-layout.row#buy-button-whislist",
+      "responsive-layout.mobile#button-whislist",
       "responsive-layout.desktop#beneficios",
       "responsive-layout.mobile#beneficios",
       "flex-layout.row#product-frete"
@@ -359,7 +360,7 @@
     ]
   },
   "sku-selector": {
-    "props": {
+    "props": { 
       "variationsSpacing": 3,
       "showValueNameForImageVariation": true,
       "initialSelection": "empty",
@@ -368,8 +369,38 @@
   },
   "responsive-layout.desktop#buy-button": {
     "children": [
-      "flex-layout.row#buy-button"
+      "flex-layout.row#buy-button",
+      "flex-layout.row#buy-button-whislist"
     ]
+  },
+  "responsive-layout.mobile#button-whislist": {
+    "children": [
+      "flex-layout.row#button-whislist"
+    ]
+  },
+  "flex-layout.row#button-whislist": {
+    "title": "Lista de desejos",
+    "props": {
+      "marginTop": 3,
+      "marginBottom": 3,
+      "colGap": 5,
+      "blockClass": "buy-button-whislist",
+      "preserveLayoutOnMobile": true
+    },
+    "children": [
+      "flex-layout.col#buy-button-whislist"
+    ]
+  },
+  "flex-layout.col#buy-button-whislist": {
+    "title": "Lista de desejos",
+    "children": [
+      "add-to-list-btn"
+    ],
+    "props": {
+      "width": "100%",
+      "rowGap": 0,
+      "blockClass": "buy-button-whislist-rigth"
+    }
   },
   "flex-layout.row#buy-button": {
     "props": {
@@ -518,4 +549,4 @@
       }
     }
   }
-} 
+}

@@ -175,7 +175,7 @@
 }
 
 .totalProducts--layout .totalProductsMessage::before {
-  content: 'Resultado ';
+  content: 'Resultados ';
   display: inline-block;
   font-size: 10px;
   color: #222;

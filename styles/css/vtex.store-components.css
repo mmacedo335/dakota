@@ -407,6 +407,16 @@
     display: none;
 }
 
+.shippingTableBody::before {
+    content: 'Prazo de entrega a partir da data de envio';
+    display: block;
+    color: black;
+    font-family: 'Larsseit Medium';
+    font-size: 14px;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
 @media(max-width: 768px) {
     .container {
         padding: 0 15px;
@@ -414,5 +424,11 @@
 
     .shippingContainer {
         margin: 0px 15px;
+    }
+
+    .imageElementLink--whats-flutuante {
+        padding: 0px;
+        bottom: 10px;
+        right: 10px;
     }
 }

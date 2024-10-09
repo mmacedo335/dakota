@@ -5,7 +5,7 @@
       "custom-styles",
       "minicart.v2#flutuante", 
       "modal-trigger#compre-junto",
-      "flex-layout.row#topo-menu",
+      "flex-layout.row#topo-menu", 
       "sticky-layout#header-desktop",
       "flex-layout.row#header-menu",
       "shared-cart",

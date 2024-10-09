@@ -294,7 +294,8 @@
   "flex-layout.col#footer-newsletter": {
     "children": [
       "rich-text#newsletter-text",
-      "newsletter-footer"
+      "newsletter-footer",
+      "free-shipping" 
     ],
     "props": {
       "blockClass": "newsletter",
