@@ -1,14 +1,14 @@
 {
   "store.product": {
     "children": [
+      "modal-trigger#compre-junto",
       "condition-layout.product#flutuante-mobile",
       "flex-layout.row#product-breadcrumbs",
       "condition-layout.product#availability",
       "__fold__",  
-      "flex-layout.row#title-description",
+      "flex-layout.row#title-description", 
       "flex-layout.row#description",
-      "flex-layout.row#review-product",
-      "modal-trigger#compre-junto" 
+      "flex-layout.row#review-product"
     ] 
   },
   "condition-layout.product#flutuante-mobile": {
