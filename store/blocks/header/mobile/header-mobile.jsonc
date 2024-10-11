@@ -2,22 +2,22 @@
   "header-layout.mobile": {
     "title": "Header - Mobile",
     "children": [
-      "custom-styles",  
+      "custom-styles",
       "minicart.v2#flutuante",
-      "modal-trigger#compre-junto", 
       "sticky-layout#header-mobile",
       "flex-layout.row#header-departamentos",
       "shared-cart",
-      "modal-privacidade"
+      "modal-privacidade",
+      "modal-newsletter" 
     ]
-  }, 
+  },
   "sticky-layout#header-mobile": {
     "props": {
-      "blockClass": "sticky-header" 
+      "blockClass": "sticky-header"
     },
     "children": [
       "flex-layout.row#topo-flutuante-mobile",
-      "topo-menu-mobile",   
+      "topo-menu-mobile",
       "flex-layout.row#header-mobile",
       "disclosure-layout#search-bar-mobile"
     ]
@@ -32,7 +32,7 @@
       "blockClass": "main-header-mobile",
       "preventHorizontalStretch": false,
       "preserveLayoutOnMobile": true,
-      "horizontalAlign": "between", 
+      "horizontalAlign": "between",
       "verticalAlign": "center",
       "fullWidth": false
     }
@@ -41,22 +41,29 @@
     "props": {
       "width": "22%"
     },
-    "children": ["drawer"]
+    "children": [
+      "drawer"
+    ]
   },
   "flex-layout.col#header-mobile-center": {
     "props": {
       "width": "40%"
     },
-    "children": ["logo#mobile"]
+    "children": [
+      "logo#mobile"
+    ]
   },
   "flex-layout.col#minicart-custom-mobile": {
     "title": "Minicart",
     "props": {
       "width": "22%",
-      "blockClass": ["minicart-custom", "mobile"], 
+      "blockClass": [
+        "minicart-custom",
+        "mobile"
+      ],
       "preventVerticalStretch": true,
       "verticalAlign": "middle",
-      "horizontalAlign": "right" 
+      "horizontalAlign": "right"
     },
     "children": [
       "image#minicart-custom",
@@ -69,8 +76,8 @@
       "disclosure-content#search-bar-mobile"
     ],
     "props": {
-      "blockClass": "search-bar-mobile", 
-      "initialVisibility": "visible" 
+      "blockClass": "search-bar-mobile",
+      "initialVisibility": "visible"
     }
   },
   "disclosure-trigger#search-bar-mobile": {
@@ -79,7 +86,7 @@
     ],
     "props": {
       "blockClass": "search-bar-mobile"
-    } 
+    }
   },
   "disclosure-content#search-bar-mobile": {
     "children": [
@@ -92,7 +99,7 @@
   "flex-layout.row#search-bar-mobile": {
     "children": [
       "search-bar"
-    ], 
+    ],
     "props": {
       "blockClass": "search-bar-mobile",
       "marginBottom": 3
@@ -106,4 +113,4 @@
       "blockClass": "full"
     }
   }
-} 
+}

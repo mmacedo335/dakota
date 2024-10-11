@@ -8,6 +8,7 @@ const ContactForm: React.FC = () => {
   const [formData, setFormData] = useState({
     email: "",
     nome: "",
+    footer: true
   });
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -34,17 +35,18 @@ const ContactForm: React.FC = () => {
         setFormData({
           email: "",
           nome: "",
+          footer: true
         });
         const box = document.getElementById("mensagemsucesso");
         const content = document.getElementById("contentnewsletter");
         if (box != null) {
           box.style.display = "block";
         }
-        if (content != null) { 
+        if (content != null) {
           content.style.display = "none";
         }
       } else {
-        console.error("Ocorreu um erro ao enviar os dados."); 
+        console.error("Ocorreu um erro ao enviar os dados.");
       }
     } catch (error) {
       console.error("Ocorreu um erro ao enviar os dados.", error);
@@ -60,12 +62,12 @@ const ContactForm: React.FC = () => {
       {loading === true
         ? (
           <div className={styles.footernewsletter}>
-            <div id="contentnewsletter"> 
+            <div id="contentnewsletter">
               <div>
                 <input
                   type="text"
                   id="name"
-                  name="nome" 
+                  name="nome"
                   value={formData.nome}
                   onChange={handleChange}
                   placeholder="Digite seu nome..."
@@ -89,7 +91,7 @@ const ContactForm: React.FC = () => {
               <div className={styles.btn}>
                 <button type="submit">ASSINAR</button>
               </div>
-            </div> 
+            </div>
             <div
               id="mensagemsucesso"
               style={{ display: "none" }}

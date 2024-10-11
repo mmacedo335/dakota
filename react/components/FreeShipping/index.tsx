@@ -4,8 +4,6 @@ import { OrderForm } from "vtex.order-manager";
 //@ts-ignore
 import styles from "./FreeShipping.css";
 
-
-
 type PropsImagens = {
   valor: string,
   ativo: boolean

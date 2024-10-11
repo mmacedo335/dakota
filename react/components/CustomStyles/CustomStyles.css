@@ -6,6 +6,10 @@
     font-size: 16px;
 }
 
+:global(.vtex-store-components-3-x-productDescriptionText) strong {
+    font-family: 'Larsseit Medium';
+}
+
 :global(.vtex-store-components-3-x-productImagesContainer--list) {
     display: flex;
     flex-wrap: wrap;
@@ -26,25 +30,25 @@
     padding: 0px;
 }
 
-:global(.vtex-login-2-x-box) :global(.vtex-login-2-x-optionsListItem):first-child:after{
+:global(.vtex-login-2-x-box) :global(.vtex-login-2-x-optionsListItem):first-child:after {
     display: none;
-} 
+}
 
 :global(.vtex-login-2-x-box) :global(.vtex-login-2-x-optionsListItem):nth-child(2):after {
     content: 'Entrar com';
     display: block;
-    font-size: 14px; 
+    font-size: 14px;
     color: #222;
-    margin-top: 25px; 
+    margin-top: 25px;
 }
 
-:global(.vtex-login-2-x-box) :global(.vtex-login-2-x-optionsListItem):nth-child(2){
+:global(.vtex-login-2-x-box) :global(.vtex-login-2-x-optionsListItem):nth-child(2) {
     display: block;
-    width: 100%; 
+    width: 100%;
     text-align: center;
 }
 
- 
+
 @media(max-width: 768px) {
     :global(.render-route-store-product) :global(.vtex-store-components-3-x-imageElementLink--whats-flutuante) {
         bottom: 70px;

@@ -9,7 +9,7 @@
       "flex-layout.row#description",
       "flex-layout.row#review-product",
       "modal-trigger#compre-junto" 
-    ]
+    ] 
   },
   "condition-layout.product#flutuante-mobile": {
     "title": "Commra flutuante mobile",

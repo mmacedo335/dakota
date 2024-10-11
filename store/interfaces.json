@@ -44,5 +44,11 @@
   },
   "menu-custom": {
     "component": "MenuCustom" 
+  },
+  "beonly": {
+    "component": "Beonly" 
+  },
+  "modal-newsletter": {
+    "component": "ModalNewsletter" 
   }
 }
