@@ -3,7 +3,7 @@ import type { ServiceContext } from "@vtex/api";
 // Definir constantes para nomes de cookies e domínio
 const COOKIE_NAME_CUSTOM = "checkout.vtex.dakota.com";
 const COOKIE_NAME = "checkout.vtex.com";
-const DOMAIN = ".myvtex.com";
+const DOMAIN = ".dakota.com.br";
 
 // Handler que busca o cookie e retorna o valor
 export async function viaCookieMiddleware(ctx: ServiceContext) {
