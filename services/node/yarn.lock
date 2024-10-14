@@ -2509,9 +2509,9 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.1.tgz#841b532c45c758ee546a11d5bd7b7b473c8c30b9"
   integrity sha512-DJR/VvkAvSZW9bTouZue2sSxDwdTN92uHjqeKVm+0dAqdfNykRzQ95tay8aXMBAAPpUiq4Qcug2L7neoRh2Egw==
 
-"dakota.backdakota@https://desenvolvimento--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.backdakota@2.0.0+build1725469776/public/@types/dakota.backdakota":
-  version "2.0.0"
-  resolved "https://desenvolvimento--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.backdakota@2.0.0+build1725469776/public/@types/dakota.backdakota#f6c6369625eb67c42bb328d152ddb8e93ffd20fd"
+"dakota.backdakota@http://dakota.vtexassets.com/_v/public/typings/v1/dakota.backdakota@3.0.1/public/@types/dakota.backdakota":
+  version "3.0.1"
+  resolved "http://dakota.vtexassets.com/_v/public/typings/v1/dakota.backdakota@3.0.1/public/@types/dakota.backdakota#e40cecbe02707a1ecd739e9e7dd5f3cdd436589b"
 
 dashdash@^1.12.0:
   version "1.14.1"
