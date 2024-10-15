@@ -172,8 +172,22 @@
     },
     "children": [
       "rich-text#footer-seguranca-02",
-      "image#vtex"
+      "flex-layout.row#selos-plataforma"
     ]
+  },
+  "flex-layout.row#selos-plataforma": {
+    "title": "Selos de plataforma",
+    "children": [
+      "image#fg",
+      "image#vtex"      
+    ],
+    "props": {
+      "blockClass": "img-seguranca",
+      "preventHorizontalStretch": true,
+      "preventVerticalStretch": true,
+      "preserveLayoutOnMobile": true, 
+      "colGap": 5
+    }
   },
   "rich-text#footer-seguranca-01": {
     "props": {
@@ -199,6 +213,13 @@
       "blockClass": "footer-seguranca",
       "src": "assets/svg/vtex.svg",
       "maxWidth": 115
+    }
+  },
+  "image#fg": {  
+    "props": {
+      "blockClass": "footer-seguranca",
+      "src": "assets/svg/vtex.svg",
+      "maxWidth": 115 
     }
   },
   "flex-layout.row#redes-sociais": {

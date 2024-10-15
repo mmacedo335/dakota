@@ -68,7 +68,7 @@ const SharedCart: React.FC = () => {
       } else {
         clearInterval(intervalId);
       }
-    }, 5000);
+    }, 3000);
 
     return () => clearInterval(intervalId);
 
