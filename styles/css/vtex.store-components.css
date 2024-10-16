@@ -417,6 +417,10 @@
     margin-bottom: 5px;
 }
 
+.imageElementLink--full-banner {
+    width: 100%;
+}
+
 @media(max-width: 768px) {
     .container {
         padding: 0 15px;

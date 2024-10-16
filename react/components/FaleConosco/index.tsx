@@ -4,8 +4,10 @@ import "./style.css";
 const DynamicForms: React.FC = () => {
   const [selectedOption, setSelectedOption] = useState<string>("");
   const [isFormVisible, setIsFormVisible] = useState<boolean>(false);
+  const [isFormSubmitted, setIsFormSubmitted] = useState<boolean>(false);
+  const [attachmentFile, setAttachmentFile] = useState<File | null>(null);
 
-  const [formData, setFormData] = useState({
+  const initialFormData = {
     fullName: "",
     email: "",
     phone: "",
@@ -18,35 +20,87 @@ const DynamicForms: React.FC = () => {
     message: "",
     purchaseDate: "",
     storeName: "",
-  });
+    formulario: "" // Campo para armazenar o nome do formulário
+  };
+
+  const [formData, setFormData] = useState(initialFormData);
 
   const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedValue = e.target.value;
     setSelectedOption(selectedValue);
     setIsFormVisible(!!selectedValue);
+    setIsFormSubmitted(false); // Reset the submission state when a new option is selected
+
+    // Atualiza o campo formulario com base na opção selecionada
+    let formularioName = "";
+    switch (selectedValue) {
+      case "option1":
+        formularioName = "Onde Comprar";
+        break;
+      case "option2":
+        formularioName = "Elogios, Dúvidas e Sugestões";
+        break;
+      case "option3":
+        formularioName = "Lojistas e Representantes";
+        break;
+      case "option4":
+        formularioName = "Reclamações/Críticas";
+        break;
+      default:
+        formularioName = "";
+    }
+
+    setFormData({ ...formData, formulario: formularioName });
   };
 
   const handleInputChange = (
-    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>,
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
 
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    const file = e.target.files?.[0];
+    if (file) {
+      setAttachmentFile(file); 
+    }
+  };
+
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
+
+    const dataToSubmit = {
+      ...formData
+    };
+ 
     try {
       const response = await fetch("/api/dataentities/FL/documents", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
         },
-        body: JSON.stringify(formData),
+        body: JSON.stringify(dataToSubmit),
       });
 
       if (response.ok) {
-        console.log("Formulário enviado com sucesso");
+        setFormData(initialFormData); 
+        setIsFormSubmitted(true); 
+        const responseData = await response.json();
+        const DocumentId = responseData.DocumentId;
+        
+        if (attachmentFile != null) {
+
+          const formData = new FormData();
+          formData.append('anexo', attachmentFile);
+
+          await fetch(`/api/dataentities/FL/documents/${DocumentId}/anexo/attachments`, {
+            method: 'POST',
+            body: formData,
+          })
+           
+        }
+
       } else {
         console.error("Erro ao enviar o formulário");
       }
@@ -72,7 +126,7 @@ const DynamicForms: React.FC = () => {
               <input
                 type="file"
                 name="attachment"
-                onChange={(e) => console.log(e.target.files)}
+                onChange={handleFileChange}
               />
             </div>
             <div>
@@ -179,7 +233,7 @@ const DynamicForms: React.FC = () => {
               <input
                 type="file"
                 name="attachment"
-                onChange={(e) => console.log(e.target.files)}
+                onChange={handleFileChange}
               />
             </div>
             <div>
@@ -246,7 +300,7 @@ const DynamicForms: React.FC = () => {
               name="birthDate"
               value={formData.birthDate}
               onChange={handleInputChange}
-              placeholder="Data de Nascimento"
+              placeholder="Data de Nascimento" 
               required
             />
           </div>
@@ -276,6 +330,8 @@ const DynamicForms: React.FC = () => {
           <button type="submit">Enviar Formulário</button>
         </form>
       )}
+
+      {isFormSubmitted && <p className="success-message">Mensagem enviada com sucesso!</p>}
     </div>
   );
 };

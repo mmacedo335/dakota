@@ -73,3 +73,9 @@
     color: #fff;
     background-color: #000;
 }
+
+:global(.success-message) {
+    color: #42c653;
+    font-size: 17px;
+    font-weight: 500;
+}
