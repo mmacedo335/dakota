@@ -30,7 +30,7 @@
       "preventVerticalStretch": true,
       "horizontalAlign": "center",
       "marginTop": 3,
-      "marginBottom": 2
+      "marginBottom": 10
     },
     "children": [
       "link#loja-fisica",
