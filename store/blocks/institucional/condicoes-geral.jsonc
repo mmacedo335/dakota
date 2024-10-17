@@ -88,7 +88,8 @@
       "disclosure-layout#condicoes-geral-11",
       "disclosure-layout#condicoes-geral-12",
       "disclosure-layout#condicoes-geral-13",
-      "disclosure-layout#condicoes-geral-14"
+      "disclosure-layout#condicoes-geral-14",
+      "disclosure-layout#condicoes-geral-15"
     ]
   },
 
@@ -635,6 +636,45 @@
   "rich-text#answer-condicoes-geral-14": {
     "props": {
       "text": "14.1. Essas Condições Gerais regem-se pelo Direito brasileiro. \n \n 14.2. Os Usuários e Visitantes dos sites de Universo Dakota e Universo Dakota elegem o foro de Nova Petrópolis/RS, com a expressa renúncia de qualquer outro, por mais privilegiado que seja ou venha a ser, para dirimir qualquer dúvida, pendência ou litígio oriundo dessas Condições Gerais."
+    }
+  },
+
+  // PERGUNTA 15
+
+  "disclosure-layout#condicoes-geral-15": {
+    "props": {
+      "animated": true
+    },
+    "children": [
+      "disclosure-trigger#condicoes-geral-15",
+      "disclosure-content#condicoes-geral-15"
+    ]
+  },
+  "disclosure-trigger#condicoes-geral-15": {
+    "props": {
+      "blockClass": "question",
+      "as": "div"
+    },
+    "children": [
+      "disclosure-state-indicator",
+      "rich-text#condicoes-geral-15"
+    ]
+  },
+  "disclosure-content#condicoes-geral-15": {
+    "props": {
+      "blockClass": "answer"
+    },
+    "children": ["rich-text#answer-condicoes-geral-15"]
+  },
+  "rich-text#condicoes-geral-15": {
+    "props": {
+      "blockClass": "margin-0",
+      "text": "15 - Da Central de Relacionamento Dakota"
+    }
+  },
+  "rich-text#answer-condicoes-geral-15": {
+    "props": {
+      "text": "15.1. A Dakota oferece atendimento telefônico aos seus Usuários por meio da Central de Relacionamento Dakota \n \n 15.2. Todas as ligações realizadas para a Central de Relacionamento Dakota são gravadas para fins de segurança e cumprimento de obrigações legais. Caso o Usuário não concorde com a gravação, poderá utilizar outros canais de atendimento disponíveis. \n \n 15.3 Os registros das ligações telefônicas serão mantidos pelo período de 1 (um) ano, a contar da data da respectiva ligação."
     }
   }
 }
