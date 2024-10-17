@@ -1,24 +1,31 @@
 {
   "store.custom#empresa": {
-    "path": "/empresa"
+    "path": "/empresa",
+    "isSitemapEntry": true
   },
   "store.custom#central-de-atendimento": {
-    "path": "/central-de-atendimento"
+    "path": "/central-de-atendimento",
+    "isSitemapEntry": true
   },
   "store.custom#condicoes-geral": {
-    "path": "/institucional/condicoes-geral"
+    "path": "/institucional/condicoes-geral",
+    "isSitemapEntry": true
   },
   "store.custom#troca-devolucao": {
-    "path": "/institucional/troca-devolucao"
+    "path": "/institucional/troca-devolucao",
+    "isSitemapEntry": true
   },
   "store.custom#politica-privacidade": {
-    "path": "/institucional/politica-privacidade"
+    "path": "/institucional/politica-privacidade",
+    "isSitemapEntry": true
   },
   "store.custom#LP": {
-    "path": "/lancamento-inverno"
+    "path": "/lancamento-inverno",
+    "isSitemapEntry": true
   },
   "store.custom#loja-fisicas": {
-    "path": "/lojas-fisicas"
+    "path": "/lojas-fisicas",
+    "isSitemapEntry": true
   }
 }
 
