@@ -1,0 +1,35 @@
+{
+    "store.custom#atendimento-online": {
+        "blocks": [
+            "flex-layout.row#loja-online",
+            "flex-layout.row#loja-online-form"
+        ]
+    },
+    "flex-layout.row#loja-online": {
+        "props": {
+            "marginTop": 6,
+            "marginBottom": 3
+        },
+        "children": [
+            "rich-text#loja-online-title"
+        ]
+    },
+    "rich-text#loja-online-title": {
+        "title": "Titulo",
+        "props": {
+            "blockClass": "loja-online-title",
+            "textAlignment": "CENTER",
+            "textPosition": "CENTER",
+            "text": "## Atendimento \n \n  Preencha o formulário abaixo e tire suas dúvidas com a nossa equipe de atendimento. \n \n ### Dakota - Loja Online"
+        }
+    },
+    "flex-layout.row#loja-online-form": {
+        "props": {
+            "marginTop": 6,
+            "marginBottom": 10
+        },
+        "children": [
+            "fale-conosco"
+        ]
+    }
+}

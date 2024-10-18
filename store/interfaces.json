@@ -20,6 +20,9 @@
   "fale-conosco": {
     "component": "FaleConosco"
   },
+  "fale-conosco-online": {
+    "component": "FaleConoscoOnline"
+  },
   "fg-metaOganization": {
     "component": "metaOganization"
   },
@@ -28,27 +31,27 @@
     "render": "client"
   },
   "minicart-custom": {
-    "component": "MiniCartCustom" 
+    "component": "MiniCartCustom"
   },
   "my-account-page.my-account-lm-page": {
     "component": "MyAppPage"
   },
   "my-account-link.my-account-lm-link": {
-    "component": "MyAppLink" 
+    "component": "MyAppLink"
   },
   "modal-privacidade": {
-    "component": "PrivacyPolicyModal" 
+    "component": "PrivacyPolicyModal"
   },
   "topo-menu-mobile": {
-    "component": "TopoMenuMobile" 
+    "component": "TopoMenuMobile"
   },
   "menu-custom": {
-    "component": "MenuCustom" 
+    "component": "MenuCustom"
   },
   "beonly": {
-    "component": "Beonly" 
+    "component": "Beonly"
   },
   "modal-newsletter": {
-    "component": "ModalNewsletter" 
+    "component": "ModalNewsletter"
   }
 }

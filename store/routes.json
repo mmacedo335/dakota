@@ -26,6 +26,10 @@
   "store.custom#loja-fisicas": {
     "path": "/lojas-fisicas",
     "isSitemapEntry": true
+  },
+  "store.custom#atendimento-online": {
+    "path": "/solicitar-atendimento",
+    "isSitemapEntry": true
   }
 }
 

@@ -80,3 +80,6 @@
     font-weight: 500;
 }
  
+:global(.fale-conosco) textarea {
+    height: 150px;
+}
