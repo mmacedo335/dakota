@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import "./style.css"; 
+import "./style.css";
 
 const FaleConoscoOnline: React.FC = () => {
   const [selectedOption, setSelectedOption] = useState<string>("");
@@ -15,7 +15,7 @@ const FaleConoscoOnline: React.FC = () => {
     city: "",
     state: "",
     productReference: "",
-    cpf: "",
+    cnpj: "",
     stateRegistration: "",
     message: "",
     purchaseDate: "",
@@ -44,7 +44,7 @@ const FaleConoscoOnline: React.FC = () => {
         formularioName = "Dúvidas, Críticas, Elogios ou Sugestões";
         break;
       case "option4":
-        formularioName = "Informações sobre o Produto";
+        formularioName = "Troca/Devolução";
         break;
       default:
         formularioName = "";
@@ -185,7 +185,7 @@ const FaleConoscoOnline: React.FC = () => {
         <option value="option1">Entrega</option>
         <option value="option2">Formas de Pagamento</option>
         <option value="option3">Dúvidas, Críticas, Elogios ou Sugestões</option>
-        <option value="option4">Informações sobre o Produto</option>
+        <option value="option4">Troca/Devolução</option>
       </select>
 
       {isFormVisible && (
@@ -214,8 +214,8 @@ const FaleConoscoOnline: React.FC = () => {
           <div>
             <input
               type="text"
-              name="cpf"
-              value={formData.cpf}
+              name="cnpj"
+              value={formData.cnpj}
               onChange={handleInputChange}
               required
               placeholder="CPF"
@@ -256,4 +256,3 @@ const FaleConoscoOnline: React.FC = () => {
 };
 
 export default FaleConoscoOnline;
- 
