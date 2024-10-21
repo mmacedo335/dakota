@@ -2,7 +2,7 @@
     max-width: 900px;
 }
 
-:global(.fale-conosco) select {
+:global(.fale-conosco) select:not(:global(.option)) {
     font-size: 20px;
     border-radius: 2px;
     background-color: #fff;
@@ -17,6 +17,52 @@
     width: 100%;
     height: 2.5em;
     margin-bottom: 50px;
+}
+
+:global(.fale-conosco) :global(.option) {
+    border-radius: 2px;
+    background-color: #fff;
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dfdfdf;
+    color: #333;
+    display: block;
+    font-size: .875rem;
+    margin: 0;
+    padding: .5em;
+    width: 100%;
+    height: 2.5em;
+    margin-bottom: 25px;
+    outline: none;
+}
+
+:global(.fale-conosco) :global(.options) input[type="radio"] {
+    margin-bottom: 25px;
+    width: 15px;
+    font-size: 1rem;
+    height: 15px;
+    color: #454545;
+    margin-bottom: 0px;
+}
+
+:global(.fale-conosco) :global(.options) label {
+    color: #929292;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 14px;
+    text-transform: uppercase;
+    gap: 8px;
+    font-family: 'Larsseit Medium';
+    cursor: pointer;
+    display: flex;
+}
+
+:global(.fale-conosco) :global(.options) {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
 }
 
 :global(.fale-conosco) :global(.anexo) {
@@ -79,7 +125,7 @@
     font-size: 17px;
     font-weight: 500;
 }
- 
+
 :global(.fale-conosco) textarea {
     height: 150px;
 }

@@ -8,7 +8,7 @@
       "flex-layout.row#header-departamentos",
       "shared-cart",
       "modal-privacidade",
-      "modal-newsletter" 
+      "modal-newsletter"
     ]
   },
   "sticky-layout#header-mobile": {
@@ -66,8 +66,9 @@
       "horizontalAlign": "right"
     },
     "children": [
-      "image#minicart-custom",
-      "minicart-custom"
+      "minicart.v2#mobile"
+      //"image#minicart-custom",
+      //"minicart-custom" 
     ]
   },
   "disclosure-layout#search-bar-mobile": {

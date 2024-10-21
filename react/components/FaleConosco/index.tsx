@@ -57,13 +57,23 @@ const DynamicForms: React.FC = () => {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
+
+    if (name === "birthDate") {
+      setFormData({ ...formData, [name]: formatDate(value) });
+    } else if (name === "cnpj") {
+      setFormData({ ...formData, [name]: formatCNPJ(value) });
+    } else if (name === "phone") {
+      setFormData({ ...formData, [name]: formatPhone(value) });
+    } else {
+      setFormData({ ...formData, [name]: value });
+    }
   };
+
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
-      setAttachmentFile(file); 
+      setAttachmentFile(file);
     }
   };
 
@@ -73,7 +83,7 @@ const DynamicForms: React.FC = () => {
     const dataToSubmit = {
       ...formData
     };
- 
+
     try {
       const response = await fetch("/api/dataentities/FL/documents", {
         method: "POST",
@@ -84,11 +94,11 @@ const DynamicForms: React.FC = () => {
       });
 
       if (response.ok) {
-        setFormData(initialFormData); 
-        setIsFormSubmitted(true); 
+        setFormData(initialFormData);
+        setIsFormSubmitted(true);
         const responseData = await response.json();
         const DocumentId = responseData.DocumentId;
-        
+
         if (attachmentFile != null) {
 
           const formData = new FormData();
@@ -98,7 +108,7 @@ const DynamicForms: React.FC = () => {
             method: 'POST',
             body: formData,
           })
-           
+
         }
 
       } else {
@@ -108,6 +118,55 @@ const DynamicForms: React.FC = () => {
       console.error("Erro na requisição:", error);
     }
   };
+
+  // Funções de mascaras inputs
+
+  const formatDate = (value: string) => {
+    // Remove todos os caracteres que não são dígitos
+    value = value.replace(/\D/g, "");
+
+    // Aplica a máscara de data: dd/mm/yyyy
+    if (value.length <= 2) {
+      return value;
+    }
+    if (value.length <= 4) {
+      return `${value.slice(0, 2)}/${value.slice(2)}`;
+    }
+    return `${value.slice(0, 2)}/${value.slice(2, 4)}/${value.slice(4, 8)}`;
+  };
+
+
+  const formatCNPJ = (value) => {
+    // Remove todos os caracteres que não são dígitos
+    value = value.replace(/\D/g, '');
+
+    // Aplica a máscara de CNPJ: 00.000.000/0000-00
+    value = value.replace(/^(\d{2})(\d)/, '$1.$2');
+    value = value.replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3');
+    value = value.replace(/\.(\d{3})(\d)/, '.$1/$2');
+    value = value.replace(/(\d{4})(\d)/, '$1-$2');
+
+    return value;
+  };
+
+  const formatPhone = (value) => {
+    // Remove todos os caracteres que não são dígitos
+    value = value.replace(/\D/g, '');
+
+    // Aplica a máscara de telefone: (xx) xxxxx-xxxx
+    if (value.length <= 2) {
+      return `(${value}`;
+    }
+    if (value.length <= 7) {
+      return `(${value.slice(0, 2)}) ${value.slice(2)}`;
+    }
+    if (value.length <= 11) {
+      return `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7)}`;
+    }
+    return `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7, 11)}`;
+  };
+
+
 
   const renderForm = () => {
     switch (selectedOption) {
@@ -300,7 +359,7 @@ const DynamicForms: React.FC = () => {
               name="birthDate"
               value={formData.birthDate}
               onChange={handleInputChange}
-              placeholder="Data de Nascimento" 
+              placeholder="Data de Nascimento"
               required
             />
           </div>
@@ -337,3 +396,4 @@ const DynamicForms: React.FC = () => {
 };
 
 export default DynamicForms;
+ 

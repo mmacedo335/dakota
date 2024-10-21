@@ -6,22 +6,21 @@ const FaleConoscoOnline: React.FC = () => {
   const [isFormVisible, setIsFormVisible] = useState<boolean>(false);
   const [isFormSubmitted, setIsFormSubmitted] = useState<boolean>(false);
   const [attachmentFile, setAttachmentFile] = useState<File | null>(null);
+  const [subOption, setSubOption] = useState<string>("");
 
   const initialFormData = {
     fullName: "",
     email: "",
     phone: "",
-    birthDate: "",
-    city: "",
-    state: "",
     productReference: "",
-    cnpj: "",
-    stateRegistration: "",
+    cpf: "",
     message: "",
-    purchaseDate: "",
-    storeName: "",
-    formulario: "" // Campo para armazenar o nome do formulário
+    devolucao: "",
+    escolha: "",
+    desejo: "",
+    formulario: ""
   };
+
 
   const [formData, setFormData] = useState(initialFormData);
 
@@ -29,9 +28,9 @@ const FaleConoscoOnline: React.FC = () => {
     const selectedValue = e.target.value;
     setSelectedOption(selectedValue);
     setIsFormVisible(!!selectedValue);
-    setIsFormSubmitted(false); // Reset the submission state when a new option is selected
+    setIsFormSubmitted(false);
+    setSubOption("");
 
-    // Atualiza o campo formulario com base na opção selecionada
     let formularioName = "";
     switch (selectedValue) {
       case "option1":
@@ -44,6 +43,9 @@ const FaleConoscoOnline: React.FC = () => {
         formularioName = "Dúvidas, Críticas, Elogios ou Sugestões";
         break;
       case "option4":
+        formularioName = "Informações sobre o Produto";
+        break;
+      case "option5":
         formularioName = "Troca/Devolução";
         break;
       default:
@@ -53,12 +55,18 @@ const FaleConoscoOnline: React.FC = () => {
     setFormData({ ...formData, formulario: formularioName });
   };
 
+  const handleSubOptionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
+    setSubOption(e.target.value);
+  };
+
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
     setFormData({ ...formData, [name]: value });
   };
+
+  console.log('aaaaa', formData);
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -75,7 +83,7 @@ const FaleConoscoOnline: React.FC = () => {
     };
 
     try {
-      const response = await fetch("/api/dataentities/FL/documents", {
+      const response = await fetch("/api/dataentities/CA/documents", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -92,7 +100,6 @@ const FaleConoscoOnline: React.FC = () => {
         if (attachmentFile != null) {
 
           const formData = new FormData();
-          formData.append('anexo', attachmentFile);
 
           await fetch(`/api/dataentities/FL/documents/${DocumentId}/anexo/attachments`, {
             method: 'POST',
@@ -108,6 +115,64 @@ const FaleConoscoOnline: React.FC = () => {
       console.error("Erro na requisição:", error);
     }
   };
+
+  const renderSubForm = () => {
+    switch (subOption) {
+      case "subOption1":
+        return (
+          <div className="options">
+            <label>
+              <input type="radio" name="escolha" value="Calçado ficou grande" onChange={handleInputChange} />
+              Calçado ficou grande
+            </label>
+            <label>
+              <input type="radio" name="escolha" value="Calçado ficou pequeno" onChange={handleInputChange} />
+              Calçado ficou pequeno
+            </label>
+          </div>
+        );
+      case "subOption2":
+        return (
+          <div className="anexo">
+            <input
+              type="file"
+              name="attachment"
+              onChange={handleFileChange}
+            />
+          </div>
+        );
+      case "subOption3":
+        return (
+          <div className="options">
+            <label>
+              <input type="radio" name="escolha" value="Tamanho errado" onChange={handleInputChange} />
+              Tamanho errado
+            </label>
+            <label>
+              <input type="radio" name="escolha" value="Modelo errado" onChange={handleInputChange} />
+              Modelo errado
+            </label>
+            <label>
+              <input type="radio" name="escolha" value="Produto diferente do site (foto ou descrição)" />
+              Produto diferente do site (foto ou descrição)
+            </label>
+          </div>
+        );
+      case "subOption4":
+        return (
+          <div className="anexo">
+            <input
+              type="file"
+              name="attachment"
+              onChange={handleFileChange}
+            />
+          </div>
+        );
+      default:
+        return null;
+    }
+  };
+
 
   const renderForm = () => {
     switch (selectedOption) {
@@ -140,6 +205,13 @@ const FaleConoscoOnline: React.FC = () => {
       case "option3":
         return (
           <>
+            <div className="anexo">
+              <input
+                type="file"
+                name="attachment"
+                onChange={handleFileChange}
+              />
+            </div>
             <div>
               <textarea
                 name="message"
@@ -173,6 +245,59 @@ const FaleConoscoOnline: React.FC = () => {
 
           </>
         );
+      case "option5":
+        return (
+          <>
+            <div>
+              <input
+                type="text"
+                name="devolucao"
+                value={formData.devolucao}
+                onChange={handleInputChange}
+                required
+                placeholder="Produto a ser devolvido (Modelo/Cor/Número)"
+              />
+            </div>
+            <div>
+              <select value={subOption} onChange={handleSubOptionChange} required className="option">
+                <option value="">Selecione um motivo</option>
+                <option value="subOption1">Troca de Numeração</option>
+                <option value="subOption2">Produto com Defeito</option>
+                <option value="subOption3">Recebi o produto errado</option>
+                <option value="subOption4">Produto não ficou bom</option>
+              </select>
+            </div>
+            {renderSubForm()}
+            <div className="options">
+              <label>O que deseja?</label>
+              <label>
+                <input type="radio" name="desejo" value="Cupom Desconto" onChange={handleInputChange} />
+                Cupom Desconto
+              </label>
+              <label>
+                <input type="radio" name="desejo" value="Estorno" onChange={handleInputChange} />
+                Estorno
+              </label>
+              <label>
+                <input type="radio" name="desejo" value="Reembolso" onChange={handleInputChange} />
+                Reembolso
+              </label>
+              <label>
+                <input type="radio" name="desejo" value="Troca por outro número" onChange={handleInputChange} />
+                Troca por outro número
+              </label>
+            </div>
+            <div>
+              <textarea
+                name="message"
+                value={formData.message}
+                onChange={handleInputChange}
+                required
+                placeholder="Mensagem"
+              />
+            </div>
+          </>
+        );
       default:
         return null;
     }
@@ -180,12 +305,13 @@ const FaleConoscoOnline: React.FC = () => {
 
   return (
     <div className="fale-conosco">
-      <select value={selectedOption} onChange={handleSelectChange}>
+      <select value={selectedOption} onChange={handleSelectChange} >
         <option value="">Assunto</option>
         <option value="option1">Entrega</option>
         <option value="option2">Formas de Pagamento</option>
         <option value="option3">Dúvidas, Críticas, Elogios ou Sugestões</option>
-        <option value="option4">Troca/Devolução</option>
+        <option value="option4">Informações sobre o Produto</option>
+        <option value="option5">Troca/Devolução</option>
       </select>
 
       {isFormVisible && (
@@ -214,8 +340,8 @@ const FaleConoscoOnline: React.FC = () => {
           <div>
             <input
               type="text"
-              name="cnpj"
-              value={formData.cnpj}
+              name="cpf"
+              value={formData.cpf}
               onChange={handleInputChange}
               required
               placeholder="CPF"

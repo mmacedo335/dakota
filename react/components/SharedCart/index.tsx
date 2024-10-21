@@ -62,7 +62,7 @@ const SharedCart: React.FC = () => {
 
     let executionCount = 0;
     const intervalId = setInterval(() => {
-      if (executionCount < 3) {
+      if (executionCount < 2) {
         handleCookieActions();
         executionCount++;
       } else {

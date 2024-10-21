@@ -34,8 +34,8 @@
       "search-bar",
       "flex-layout.col#spacer",
       "login",
-      //"minicart.v2"
-      "flex-layout.col#minicart-custom"
+      "minicart.v2" 
+      //"flex-layout.col#minicart-custom"
     ]
   },
   "flex-layout.col#minicart-custom": {
