@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { useCssHandles } from "vtex.css-handles";
-import './style.css'
+import './style.css';
 
 type SubmenuLink = {
   text: string;
@@ -61,6 +61,7 @@ const MenuCustom = (props: Props) => {
   const { menuLinks } = props;
   const [openSubmenus, setOpenSubmenus] = useState<string[]>([]);
   const { handles } = useCssHandles(CSS_HANDLES);
+  const [isLinkActive, setIsLinkActive] = useState<boolean>(true); // Novo estado
 
   const isMobile = window.innerWidth <= 768;
 
@@ -72,6 +73,19 @@ const MenuCustom = (props: Props) => {
     );
   };
 
+  const handleLinkClick = (e: React.MouseEvent<HTMLAnchorElement>, url: string) => {
+    if (!isLinkActive) {
+      e.preventDefault(); // Previne o clique se o link não estiver ativo
+      return;
+    }
+
+    // Desabilita o link e ativa após 1 segundo
+    setIsLinkActive(false);
+    setTimeout(() => {
+      window.location.href = url; // Redireciona após o atraso 
+    }, 300);
+  };
+
   const renderSubmenu = (
     submenuLinks: SubmenuLink[] | undefined,
     level: number = 0,
@@ -79,10 +93,8 @@ const MenuCustom = (props: Props) => {
   ) => {
     if (!submenuLinks) return null;
 
-
     return (
-      <ul
-        className={handles.submenuWrapper}>
+      <ul className={handles.submenuWrapper}>
         {submenuLinks.map((submenuLink, subIndex) => {
           const currentPath = `${parentIndexPath}-${subIndex}`;
 
@@ -117,11 +129,9 @@ const MenuCustom = (props: Props) => {
                     }
                   }}
                   aria-controls={`submenu-${currentPath}`}
-                  aria-expanded={
-                    openSubmenus.includes(currentPath) ? "true" : "false"
-                  }
+                  aria-expanded={openSubmenus.includes(currentPath) ? "true" : "false"}
                 >
-                  <a href={`${window.location.origin}${submenuLink.url}`} className={`${submenuLink.underline ? "underline" : ""} ${submenuLink.negrito ? "negrito" : ""}`}>{submenuLink.text}</a>
+                  <a href="#" onClick={(e) => handleLinkClick(e, submenuLink.url)} className={`${submenuLink.underline ? "underline" : ""} ${submenuLink.negrito ? "negrito" : ""}`}>{submenuLink.text}</a>
                   {submenuLink.hasSubmenu && (
                     <span
                       className={`${handles.submenuToggleIcon} ${openSubmenus.includes(currentPath) ? "active" : ""
@@ -131,7 +141,8 @@ const MenuCustom = (props: Props) => {
                 </p>
               ) : (
                 <a
-                  href={`${window.location.origin}${submenuLink.url}`}
+                  href="#"
+                  onClick={(e) => handleLinkClick(e, submenuLink.url)}
                   style={{ color: submenuLink.linkColor || "#000" }}
                   className={`${handles.menuLink} ${submenuLink.underline ? "underline" : ""} ${submenuLink.negrito ? "negrito" : ""}`}
                 >
@@ -150,7 +161,6 @@ const MenuCustom = (props: Props) => {
   const isMenuActive = openSubmenus.length > 0;
 
   return (
-
     <>
       <div className={handles.topoMenu}>
         <img width="135" height="35" alt="Logo Mobile" src="https://dakota.vtexassets.com/assets/vtex/assets-builder/dakota.dakota-theme/6.0.6/svg/logo-dakota___9e5024e768762611d1260e2e2d5e1aa5.svg" />
@@ -200,7 +210,8 @@ const MenuCustom = (props: Props) => {
                     )}
                     {!link.hasSubmenu && (
                       <a
-                        href={`${window.location.origin}${link.url}`}
+                        href="#"
+                        onClick={(e) => handleLinkClick(e, link.url)}
                         className={`${handles.menuLink} ${link.underline ? "underline" : ""} ${link.negrito ? "negrito" : ""}`}
                       >
                         {link.text}
@@ -209,7 +220,8 @@ const MenuCustom = (props: Props) => {
                   </p>
                 ) : (
                   <a
-                    href={`${window.location.origin}${link.url}`}
+                    href="#"
+                    onClick={(e) => handleLinkClick(e, link.url)}
                     className={`${handles.menuLink} ${link.underline ? "underline" : ""}`}
                     style={{ color: link.linkColor || "#000" }}
                   >
@@ -234,7 +246,6 @@ const MenuCustom = (props: Props) => {
                       {link.text}
                     </div>
 
-
                     <div className={handles.close} onClick={(e) => {
                       e.preventDefault();
                       handleSubmenuToggle(indexPath);
@@ -246,27 +257,12 @@ const MenuCustom = (props: Props) => {
 
                     {link.banners && link.banners.length > 0 && (
                       <div className={handles.bannerContainer}>
-                        {link.banners.map((banner, bannerIndex) => {
-                          return (
-                            <a
-                              className={handles.bannerLink}
-                              key={bannerIndex}
-                              href={banner.bannerLink}
-                              target="_blank"
-                              rel="noopener noreferrer"
-                            >
-                              <img
-                                src={banner.bannerImage}
-                                alt={`Banner ${bannerIndex + 1}`}
-                                className={handles.bannerImage} />
-                              {banner.bannerText && (
-                                <span className={handles.bannerText}>
-                                  {banner.bannerText}
-                                </span>
-                              )}
-                            </a>
-                          );
-                        })}
+                        {link.banners.map((banner, bannerIndex) => (
+                          <a key={bannerIndex} className={handles.bannerLink} href={banner.bannerLink}>
+                            <img className={handles.bannerImage} src={banner.bannerImage} alt={banner.bannerText} />
+                            <span className={handles.bannerText}>{banner.bannerText}</span>
+                          </a>
+                        ))}
                       </div>
                     )}
                   </div>
@@ -275,100 +271,9 @@ const MenuCustom = (props: Props) => {
             );
           })}
         </ul>
-      </nav></>
+      </nav>
+    </>
   );
 };
 
 export default MenuCustom;
-
-MenuCustom.schema = {
-  title: "Menu Customizado",
-  description: "Um menu customizado com links dinâmicos e banners nos submenus",
-  type: "object",
-  properties: {
-    menuLinks: {
-      type: "array",
-      title: "Links do Menu",
-      items: {
-        type: "object",
-        properties: {
-          __editorItemTitle: {
-            type: "string",
-            title: "Título no Editor",
-          },
-          text: {
-            type: "string",
-            title: "Texto do Link",
-          },
-          url: {
-            type: "string",
-            title: "URL do Link",
-          },
-          hasSubmenu: {
-            type: "boolean",
-            title: "Possui Submenu?",
-            default: false,
-          },
-          negrito: {
-            type: "boolean",
-            title: "Negrito",
-            default: false,
-          },
-          submenuLinks: {
-            title: "Submenu Links",
-            type: "array",
-            items: {
-              type: "object",
-              properties: {
-                text: {
-                  type: "string",
-                  title: "Texto do Link",
-                },
-                url: {
-                  type: "string",
-                  title: "URL do Link",
-                },
-                linkColor: {
-                  type: "string",
-                  title: "Cor do Link",
-                },
-                underline: {
-                  type: "boolean",
-                  title: "Título?",
-                  default: false,
-                },
-                negrito: {
-                  type: "boolean",
-                  title: "Negrito",
-                  default: false,
-                },
-                hasSubmenu: {
-                  type: "boolean",
-                  title: "Possui Submenu?",
-                  default: false,
-                },
-                submenuLinks: {
-                  type: "array",
-                  title: "Submenu Links",
-                  items: {
-                    type: "object",
-                    properties: {
-                      text: {
-                        type: "string",
-                        title: "Texto do Link",
-                      },
-                      url: {
-                        type: "string",
-                        title: "URL do Link",
-                      },
-                    },
-                  },
-                },
-              },
-            },
-          },
-        },
-      },
-    }, 
-  },
-};

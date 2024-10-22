@@ -330,9 +330,9 @@
 
 .flexRowContent--beneficios.flexRowContent--mobile {
     padding: 15px 35px 0px 35px;
-} 
+}
 
-.flexRowContent--beneficios.flexRowContent--mobile .flexCol--beneficios{
+.flexRowContent--beneficios.flexRowContent--mobile .flexCol--beneficios {
     margin-bottom: 12px;
 }
 
@@ -423,11 +423,11 @@
     height: 60px;
 }
 
-.flexRowContent--lp__container{
+.flexRowContent--lp__container {
     flex-direction: column;
 }
 
-.flexRowContent--lp__container .stretchChildrenWidth{
+.flexRowContent--lp__container .stretchChildrenWidth {
     display: contents;
 }
 
@@ -534,7 +534,7 @@
     height: 100vh;
 }
 
-.flexRow--menuHeader {  
+.flexRow--menuHeader {
     width: 100%;
     height: calc(100vh - 200px);
     overflow: auto;
@@ -707,6 +707,10 @@
     .flexRowContent--grid-banner :global(.vtex-store-components-3-x-imageElement) {
         margin-top: 10px;
         margin-bottom: 10px;
+    }
+
+    .flexRowContent--minicart-footer {
+        padding-bottom: 80px;
     }
 
 }

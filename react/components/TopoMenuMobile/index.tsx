@@ -48,9 +48,6 @@ const TopoMenuMobile = () => {
                         <a href='https://pinkcats.dakota.com.br/?o=d/' className='pinkcats'>
 
                         </a>
-                        <a href='https://kolway.dakota.com.br/?o=d/' className='kolway'>
-
-                        </a>
                     </div>
                 </div>
             )}

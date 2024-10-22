@@ -80,3 +80,7 @@
 .drawerStyles {
     height: 100vh;
 }
+
+.drawerContent--flutuante {
+    overflow: hidden; 
+} 

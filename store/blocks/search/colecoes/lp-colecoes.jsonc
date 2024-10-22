@@ -10,11 +10,11 @@
             "querySchema": {
                 "orderByField": "OrderByReleaseDateDESC",
                 "hideUnavailableItems": true,
-                "maxItemsPerPage": 12,
+                "maxItemsPerPage": 50,
                 "skusFilter": "ALL",
                 "simulationBehavior": "skip",
                 "mapField": "productClusterIds",
-                "queryField": "" //SETAR UM E DEPOIS PODERÁ TROCAR PELO SITE EDITOR
+                "queryField": "" 
             }
         },
         "blocks": [

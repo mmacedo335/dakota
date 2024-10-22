@@ -8,14 +8,15 @@
       "flex-layout.col#header-departamentos-04",
       "flex-layout.col#header-departamentos-05",
       "flex-layout.col#header-departamentos-06",
-      "flex-layout.col#header-departamentos-07"
+      "flex-layout.col#header-departamentos-07",
+      "flex-layout.col#header-departamentos-08"
     ],
     "props": {
       "blockClass": "header-departamento",
       "fullWidth": true,
       "preserveLayoutOnMobile": true,
       "paddingBottom": 3,
-      "paddingTop": 3 
+      "paddingTop": 3
     }
   },
   "flex-layout.col#header-departamentos-01": {
@@ -46,7 +47,10 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Lançamento",
-      "blockClass": ["margin-0", "header-departamentos"]
+      "blockClass": [
+        "margin-0",
+        "header-departamentos"
+      ]
     }
   },
   "flex-layout.col#header-departamentos-02": {
@@ -77,7 +81,10 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Botas",
-      "blockClass": ["margin-0", "header-departamentos"]
+      "blockClass": [
+        "margin-0",
+        "header-departamentos"
+      ]
     }
   },
   "flex-layout.col#header-departamentos-03": {
@@ -108,7 +115,10 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Tênis",
-      "blockClass": ["margin-0", "header-departamentos"]
+      "blockClass": [
+        "margin-0",
+        "header-departamentos"
+      ]
     }
   },
   "flex-layout.col#header-departamentos-04": {
@@ -139,7 +149,10 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Sapatos",
-      "blockClass": ["margin-0", "header-departamentos"]
+      "blockClass": [
+        "margin-0",
+        "header-departamentos"
+      ]
     }
   },
   "flex-layout.col#header-departamentos-05": {
@@ -170,7 +183,10 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Sandálias",
-      "blockClass": ["margin-0", "header-departamentos"]
+      "blockClass": [
+        "margin-0",
+        "header-departamentos"
+      ]
     }
   },
   "flex-layout.col#header-departamentos-06": {
@@ -201,7 +217,10 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Bolsas",
-      "blockClass": ["margin-0", "header-departamentos"]
+      "blockClass": [
+        "margin-0",
+        "header-departamentos"
+      ]
     }
   },
   "flex-layout.col#header-departamentos-07": {
@@ -232,7 +251,44 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "Promoção",
-      "blockClass": ["margin-0", "header-departamentos"]
+      "blockClass": [
+        "margin-0",
+        "header-departamentos"
+      ]
+    }
+  },
+  "flex-layout.col#header-departamentos-08": {
+    "title": "Conteudo 08",
+    "props": {
+      "blockClass": "header-departamentos"
+    },
+    "children": [
+      "image#header-departamentos-08",
+      "rich-text#header-departamentos-08"
+    ]
+  },
+  "image#header-departamentos-08": {
+    "title": "Imagem",
+    "props": {
+      "src": "assets/img/header-departamentos-07.png",
+      "blockClass": "full",
+      "link": {
+        "url": "/",
+        "attributeTitle": "",
+        "newTab": true
+      }
+    }
+  },
+  "rich-text#header-departamentos-08": {
+    "title": "Texto",
+    "props": {
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "Promoção",
+      "blockClass": [
+        "margin-0",
+        "header-departamentos"
+      ]
     }
   }
 }
