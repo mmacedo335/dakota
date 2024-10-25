@@ -7,8 +7,8 @@
       "flex-layout.row#result"
     ],
     "props": {
-      "pagination": "show-more",
-      "preventRouteChange": false,
+      "preventRouteChange": true,
+      "pagination": "show-more", 
       "defaultGalleryLayout": "grid"
     }
   }

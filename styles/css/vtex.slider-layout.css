@@ -16,7 +16,7 @@
 .sliderArrows--shelf {
     width: 40px;
     height: 40px;
-    background: black!important;
+    background: black !important;
     border-radius: 40px;
 }
 
@@ -26,10 +26,21 @@
     height: 18px;
 }
 
-.slide--shelf{
+.slide--shelf {
     padding: 0 8px;
-}  
+}
 
-.sliderLayoutContainer--full-banner{
+.sliderLayoutContainer--full-banner {
     line-height: 0px;
+}
+
+
+@media(max-width: 768px) {
+    .sliderRightArrow--shelf {
+        right: -12px;
+    }
+
+    .sliderLeftArrow--shelf {
+        left: -12px;
+    }
 }

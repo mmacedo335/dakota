@@ -76,6 +76,7 @@ function ModalNewsletter({ valor, ativo, imagem, imagemFundo }: PropsNewsletter)
     return (
         isModalVisible && (
             <div className="overlay-pop-dakota">
+                <div className="fundo" onClick={handleCloseModal}></div>
                 <div className="container-pop-dakota">
                     <span className="close" onClick={handleCloseModal}><svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 352 512" width="24" height="24" fill="white"><path d="M242.72 256l100.07-100.07c12.28-12.28 12.28-32.19 0-44.48l-28.28-28.28c-12.28-12.28-32.19-12.28-44.48 0L170 183.72 69.93 83.66c-12.28-12.28-32.19-12.28-44.48 0L-2.83 111.93c-12.28 12.28-12.28 32.19 0 44.48L97.24 256 0 353.24c-12.28 12.28-12.28 32.19 0 44.48l28.28 28.28c12.28 12.28 32.19 12.28 44.48 0L170 328.28l100.07 100.07c12.28 12.28 32.19 12.28 44.48 0l28.28-28.28c12.28-12.28 12.28-32.19 0-44.48L242.72 256z" /></svg></span>
                     <img

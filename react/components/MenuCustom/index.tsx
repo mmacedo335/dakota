@@ -31,9 +31,9 @@ type MenuLink = {
 };
 
 interface Props {
-  menuLinks: MenuLink[];
+  menuLinks: MenuLink[];  
 }
-
+ 
 const CSS_HANDLES = [
   "menuContainer",
   "submenuWrapper",
@@ -269,7 +269,7 @@ const MenuCustom = (props: Props) => {
                 )}
               </li>
             );
-          })}
+          })} 
         </ul>
       </nav>
     </>
@@ -277,3 +277,96 @@ const MenuCustom = (props: Props) => {
 };
 
 export default MenuCustom;
+
+
+MenuCustom.schema = {
+  title: "Menu Customizado",
+  description: "Um menu customizado com links dinâmicos e banners nos submenus",
+  type: "object",
+  properties: {
+    menuLinks: {
+      type: "array",
+      title: "Links do Menu",
+      items: {
+        type: "object",
+        properties: {
+          __editorItemTitle: {
+            type: "string",
+            title: "Título no Editor",
+          },
+          text: {
+            type: "string",
+            title: "Texto do Link",
+          },
+          url: {
+            type: "string",
+            title: "URL do Link",
+          },
+          hasSubmenu: {
+            type: "boolean",
+            title: "Possui Submenu?",
+            default: false,
+          },
+          negrito: {
+            type: "boolean",
+            title: "Negrito",
+            default: false,
+          },
+          submenuLinks: {
+            title: "Submenu Links",
+            type: "array",
+            items: {
+              type: "object",
+              properties: {
+                text: {
+                  type: "string",
+                  title: "Texto do Link",
+                },
+                url: {
+                  type: "string",
+                  title: "URL do Link",
+                },
+                linkColor: {
+                  type: "string",
+                  title: "Cor do Link",
+                },
+                underline: {
+                  type: "boolean",
+                  title: "Título?",
+                  default: false,
+                },
+                negrito: {
+                  type: "boolean",
+                  title: "Negrito",
+                  default: false,
+                },
+                hasSubmenu: {
+                  type: "boolean",
+                  title: "Possui Submenu?",
+                  default: false,
+                },
+                submenuLinks: {
+                  type: "array",
+                  title: "Submenu Links",
+                  items: {
+                    type: "object",
+                    properties: {
+                      text: {
+                        type: "string",
+                        title: "Texto do Link",
+                      },
+                      url: {
+                        type: "string",
+                        title: "URL do Link",
+                      },
+                    },
+                  },
+                },
+              },
+            },
+          },
+        },
+      },
+    },
+  },
+};

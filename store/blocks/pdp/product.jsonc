@@ -172,8 +172,9 @@
     ]
   },
   "responsive-layout.desktop#product-images-desktop": {
-    "children": [
-      "product-images#desktop"
+    "children": [ 
+      "product-images#desktop",
+      "product-video" 
     ]
   },
   "product-images#desktop": {
@@ -184,7 +185,7 @@
       "aspectRatio": {
         "desktop": "auto",
         "phone": "16:9"
-      },
+      }, 
       "displayThumbnailsArrows": true
     }
   },

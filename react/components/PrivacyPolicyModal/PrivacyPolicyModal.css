@@ -69,7 +69,7 @@
     :global(.modal-overlay) {
         bottom: 0;
         left: 0px;
-        right: 0px;
+        right: 0px; 
         width: 100%;
         padding: 28px 20px 15px 20px;
     }
@@ -91,5 +91,9 @@
     :global(.modal-overlay) :global(.close-button) {
         top: 2px;
         right: 6px;
+    }
+
+    :global(.render-route-store-product) :global(.modal-overlay) {
+        bottom: 70px;
     }
 }

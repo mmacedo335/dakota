@@ -1,3 +1,13 @@
-.summarySmallDisclaimer{
+.summarySmallDisclaimer {
     display: none;
+}
+
+.summaryItemContainer {
+    padding-bottom: 0;
+}
+
+.installments {
+    display: block;
+    margin-top: 5px;
+    text-align: right;
 }

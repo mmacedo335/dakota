@@ -101,5 +101,11 @@
 }
 
 :global(.vtex-slider-layout-0-x-sliderLayoutContainer) .imageNormal {
-    max-width: 90%!important; 
+    max-width: 90% !important;
+}
+
+@media(max-width: 768px) {
+    :global(.vtex-slider-layout-0-x-sliderLayoutContainer) .imageNormal {
+        max-width: 88% !important;
+    }
 }

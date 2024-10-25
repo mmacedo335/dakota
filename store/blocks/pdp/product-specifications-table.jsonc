@@ -14,8 +14,16 @@
   },
   "flex-layout.col#spec-group": {
     "children": [
-      "product-specification"
+      "product-specification",
+      "product-identifier.product"
     ]
+  },
+  "product-identifier.product": {
+    "props": {
+      "label": "default",
+      "customLabel": "Referência", 
+      "idField": "productReference"
+    }
   },
   "product-specification": {
     "children": [
@@ -58,11 +66,11 @@
   "product-specification-text#group": {
     "props": {
       "message": "{groupName}"
-    } 
+    }
   },
   "product-specification-text#specification": {
     "props": {
-      "message": "{specificationName}:" 
+      "message": "{specificationName}:"
     }
   },
   "product-specification-text#value": {

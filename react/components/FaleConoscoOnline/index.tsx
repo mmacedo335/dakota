@@ -63,10 +63,16 @@ const FaleConoscoOnline: React.FC = () => {
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
     const { name, value } = e.target;
-    setFormData({ ...formData, [name]: value });
-  };
 
-  console.log('aaaaa', formData);
+    if (name === "phone") {
+      setFormData({ ...formData, [name]: formatPhone(value) });
+    } else if (name === "cpf") {
+      setFormData({ ...formData, [name]: formatCPF(value) });
+    } else {
+      setFormData({ ...formData, [name]: value });
+    }
+
+  };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
@@ -114,6 +120,35 @@ const FaleConoscoOnline: React.FC = () => {
     } catch (error) {
       console.error("Erro na requisição:", error);
     }
+  };
+
+  const formatCPF = (value) => {
+    // Remove todos os caracteres que não são dígitos
+    value = value.replace(/\D/g, '');
+
+    // Aplica a máscara de CPF: 000.000.000-00
+    value = value.replace(/^(\d{3})(\d)/, '$1.$2');
+    value = value.replace(/^(\d{3})\.(\d{3})(\d)/, '$1.$2.$3');
+    value = value.replace(/\.(\d{3})(\d)/, '.$1-$2');
+
+    return value;
+  };
+
+  const formatPhone = (value) => {
+    // Remove todos os caracteres que não são dígitos
+    value = value.replace(/\D/g, '');
+
+    // Aplica a máscara de telefone: (xx) xxxxx-xxxx 
+    if (value.length <= 2) {
+      return `(${value}`;
+    }
+    if (value.length <= 7) {
+      return `(${value.slice(0, 2)}) ${value.slice(2)}`;
+    }
+    if (value.length <= 11) {
+      return `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7)}`;
+    }
+    return `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7, 11)}`;
   };
 
   const renderSubForm = () => {

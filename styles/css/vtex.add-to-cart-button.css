@@ -1,8 +1,10 @@
-.tooltipLabelText--checkout{
+.tooltipLabelText--checkout,
+.tooltipLabelText {
     font-size: 0;
 }
 
-.tooltipLabelText--checkout::after{
-    content: 'Por favor, selecione a numeração desejada.';
+.tooltipLabelText--checkout::after,
+.tooltipLabelText::after {
+    content: 'Por favor, selecione a NUMERAÇÃO desejada';
     font-size: .875rem;
-}  
+}

@@ -162,9 +162,9 @@
     }
   },
   // Minicart v2
-  "minicart.v2#flutuante": { 
-    "title": "Minicart modal", 
-    "props": { 
+  "minicart.v2#flutuante": {
+    "title": "Minicart modal",
+    "props": {
       "customPixelEventId": "add-to-cart-button",
       "quantityDisplay": "always",
       "openOnHover": true,
@@ -215,7 +215,7 @@
   "flex-layout.col#minicart-footer": {
     "children": [
       "free-shipping",
-      "summary-minicart",
+      "minicart-summary",
       "minicart-checkout-button"
     ]
   },
@@ -320,19 +320,23 @@
   },
   "checkout-summary.compact#minicart": {
     "children": [
-      "summary-totalizers#minicart"
+      "summary-totalizers#minicart",
+      "summary-installments#minicart"
     ],
     "props": {
-      "totalizersToShow": [
-        "Items",
-        "Discounts"
-      ]
+      "totalizersToShow": ["Items"]
+    } 
+  },
+  "summary-installments#minicart": { 
+    "props": {
+      "message": "Em até {installmentsNumber}x {installmentValue}"
     }
   },
   "summary-totalizers#minicart": {
     "props": {
       "showTotal": true,
-      "showDeliveryTotal": false
+      "showDeliveryTotal": true,
+      "showOriginalTotal": true
     }
   }
 }

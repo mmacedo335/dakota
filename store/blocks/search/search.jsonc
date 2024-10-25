@@ -148,8 +148,8 @@
       "showClearByFilter": false,
       "fullWidthOnMobile": false,
       "navigationTypeOnMobile": "collapsible",
-      "updateOnFilterSelectionOnMobile": true
-    }
+      "updateOnFilterSelectionOnMobile": false 
+    } 
   },
   "rich-text#title-filter": {
     "props": {

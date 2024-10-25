@@ -3,3 +3,22 @@
         padding: 30px 20px;
     }
 }
+
+.userName {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    line-height: 16px;
+    max-height: 32px;
+    -webkit-line-clamp: 1;
+    -webkit-box-orient: vertical;
+    white-space: break-spaces;
+}
+
+.userInfo {
+    flex-wrap: nowrap;
+}
+
+:global(.vtex-my-orders-app-3-x-cancelBtn) {
+    display: none !important;
+}

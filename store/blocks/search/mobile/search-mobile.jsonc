@@ -1,17 +1,18 @@
 {
   "search-result-layout.mobile": {
-    "title": "Listagem mobile", 
+    "title": "Listagem mobile",
     "children": [
       "flex-layout.row#search-banner-mobile",
       "flex-layout.row#searchbreadMobile",
-      "flex-layout.row#searchinfomobile",      
+      "flex-layout.row#searchinfomobile",
       "flex-layout.row#productCountMobile",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#contentmobile",
       "flex-layout.row#fetchmore",
-      "scrollListagem"  
+      "scrollListagem"
     ],
     "props": {
+      "preventRouteChange": true,
       "pagination": "show-more",
       "mobileLayout": {
         "mode1": "small",

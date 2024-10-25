@@ -347,6 +347,24 @@
     padding: 34px 50px;
 }
 
+.flexRowContent--productSpecificationGroup :global(.vtex-product-identifier-0-x-product-identifier) {
+    padding: 2px 0px;
+}
+
+.flexRowContent--productSpecificationGroup :global(.vtex-product-identifier-0-x-product-identifier__label) {
+    font-size: 14px;
+    font-family: 'Larsseit Medium';
+    color: #222222;
+    letter-spacing: 0.5px;
+}
+
+.flexRowContent--productSpecificationGroup :global(.vtex-product-identifier-0-x-product-identifier__value) {
+    font-size: 14px;
+    font-family: 'Larsseit Regular';
+    color: #222222;
+    letter-spacing: 0.5px;
+}
+
 .flexRowContent--title-description {
     border-bottom: 1px solid #F6F6F6;
 }
@@ -373,6 +391,8 @@
     background: #222;
     border-radius: 3px;
     border: none;
+    display: block;
+    margin-top: 20px;
 }
 
 .flexCol--menuproduct {

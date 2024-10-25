@@ -30,12 +30,12 @@
     font-family: 'Larsseit Regular';
 }
 
-.freeShippingItem .title strong { 
+.freeShippingItem .title strong {
     font-family: 'Larsseit Bold';
 }
 
 .freeShippingItem .title span {
-    color: #636363;
+    color: #636363; 
     font-size: 12px;
     text-transform: none;
     font-family: 'Figtree-Regular';
@@ -46,6 +46,6 @@
 .freeShippingItem {
     background: #DB3D68;
     padding: 15px;
-    position: relative; 
-    margin-bottom: 15px;
+    position: relative;
+    margin-bottom: 3px;
 }
