@@ -18,7 +18,16 @@
         "mode1": "small",
         "mode2": "normal"
       },
-      "defaultGalleryLayout": "grid"
+      "defaultGalleryLayout": "grid",
+      "hiddenFacets": {
+        "specificationFilters": {
+          "hiddenFilters": [
+            {
+              "name": "Tecnologias"
+            }
+          ]
+        }
+      }
     }
   }
 }
