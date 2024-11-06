@@ -71,9 +71,9 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
   integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
 
-"dakota.dakota-theme@https://desenvolvimento--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.25+build1730754504/public/@types/dakota.dakota-theme":
-  version "6.0.25"
-  resolved "https://desenvolvimento--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.25+build1730754504/public/@types/dakota.dakota-theme#9b253e732f2bbbd8287db68f6b8da8c01b180a91"
+"dakota.dakota-theme@https://desenvolvimento--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.28+build1730916630/public/@types/dakota.dakota-theme":
+  version "6.0.28"
+  resolved "https://desenvolvimento--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.28+build1730916630/public/@types/dakota.dakota-theme#0a8dc672b80d1e7148520f53e39d0cac07db1330"
 
 enquire.js@^2.1.6:
   version "2.1.6"
@@ -276,9 +276,9 @@ swiper@^11.1.4:
   version "0.5.6"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.locale-switcher@0.5.6/public/@types/vtex.locale-switcher#5db8558af5593d65e4fff3da0903d0081dfcab42"
 
-"vtex.login@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.65.0/public/@types/vtex.login":
-  version "2.65.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.65.0/public/@types/vtex.login#8e4da9ab4d76777726d88359d5c7191b5aa5aa93"
+"vtex.login@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.65.1/public/@types/vtex.login":
+  version "2.65.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.65.1/public/@types/vtex.login#5ffb38ed5dd800b20a6202820b135f865df410b8"
 
 "vtex.mega-menu@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.mega-menu@2.9.1/public/@types/vtex.mega-menu":
   version "2.9.1"
@@ -424,9 +424,9 @@ swiper@^11.1.4:
   version "0.3.4"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.sticky-layout@0.3.4/public/@types/vtex.sticky-layout#5b786d6f9ab0a40e4997c955a75885eee32515ef"
 
-"vtex.store-components@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.175.1/public/@types/vtex.store-components":
-  version "3.175.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.175.1/public/@types/vtex.store-components#b85cd3a694bf82c0d4f306c34df2d808977751d7"
+"vtex.store-components@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.176.0/public/@types/vtex.store-components":
+  version "3.176.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.176.0/public/@types/vtex.store-components#aab0c7cdf327d537febab2e1c9e2ac49d92f5de7"
 
 "vtex.store-drawer@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.18.0/public/@types/vtex.store-drawer":
   version "0.18.0"
