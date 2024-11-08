@@ -71,9 +71,9 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
   integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
 
-"dakota.dakota-theme@https://desenvolvimento--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.28+build1730916630/public/@types/dakota.dakota-theme":
-  version "6.0.28"
-  resolved "https://desenvolvimento--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.28+build1730916630/public/@types/dakota.dakota-theme#0a8dc672b80d1e7148520f53e39d0cac07db1330"
+"dakota.dakota-theme@http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.30/public/@types/dakota.dakota-theme":
+  version "6.0.30"
+  resolved "http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.30/public/@types/dakota.dakota-theme#e954b65fa6c879003a0943074acdbb256c9ef26b"
 
 enquire.js@^2.1.6:
   version "2.1.6"
@@ -396,9 +396,9 @@ swiper@^11.1.4:
   version "0.16.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.16.0/public/@types/vtex.rich-text#0cdcaccffb37ae0d025894ba7055f69bc3c9aa30"
 
-"vtex.search-result@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.133.1/public/@types/vtex.search-result":
-  version "3.133.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.133.1/public/@types/vtex.search-result#25b96e385913a6464fb78bf3d6ed924d3b180e62"
+"vtex.search-result@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.134.1/public/@types/vtex.search-result":
+  version "3.134.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.134.1/public/@types/vtex.search-result#6a92cf9576f7f1f4923ed284fe19a2990c9bc794"
 
 "vtex.shelf@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shelf@1.49.0/public/@types/vtex.shelf":
   version "1.49.0"

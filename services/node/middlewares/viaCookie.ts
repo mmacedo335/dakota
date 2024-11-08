@@ -17,10 +17,10 @@ export async function viaCookieMiddleware(ctx: ServiceContext) {
 
     // Verifica se o cookie padrão já foi setado no site
     if (!cookieValue) {
-      ctx.status = 404;
+      ctx.status = 404; 
       ctx.body = {
         success: false,
-        message: `Cookie ${COOKIE_NAME} não encontrado.`,
+        message: `Cookie ${COOKIE_NAME} não encontrado.. ---- ${ctx.cookies}`, 
       };
       return;
     }
