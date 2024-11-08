@@ -9,22 +9,25 @@ const DOMAIN = ".dakota.com.br";
 export async function viaCookieMiddleware(ctx: ServiceContext) {
   try {
     const currentHost = ctx.request.headers["x-forwarded-host"] || ctx.request.hostname;
-    const maxAge = 60 * 60 * 24 * 7; // Expira em 7 dias (em segundos)
-
-    // Obtém o valor customizado do cookie  
-    const cookieValueCustom = ctx.cookies.get(COOKIE_NAME_CUSTOM);
-    // const cookieValue = ctx.cookies.get(COOKIE_NAME); 
+    const maxAge = 60 * 60 * 24 * 7;
 
     const cookieHeader = ctx.request.headers['cookie'];
+
+    // Obtém o valor do Cookie padrão
     const cookiePattern = /checkout\.vtex\.com=([^;]+)/;
     const cookieValue = String(cookieHeader ? cookieHeader.match(cookiePattern) : undefined);
+
+    // Obtém o valor do Cookie customizado
+    const cookiePatternCustom = /checkout\.vtex\.dakota\.com=([^;]+)/;
+    const cookieValueCustom = String(cookieHeader ? cookieHeader.match(cookiePatternCustom) : undefined);
+
 
     // Verifica se o cookie padrão já foi setado no site 
     if (!cookieValue) {
       ctx.status = 404;
       ctx.body = {
         success: false,
-        message: `Cookie ${COOKIE_NAME} não encontrado.. ---- ${ctx.cookies}`,
+        message: `Cookie ${COOKIE_NAME} não encontrado.`,
       };
       return;
     }
