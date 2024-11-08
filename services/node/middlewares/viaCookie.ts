@@ -11,16 +11,20 @@ export async function viaCookieMiddleware(ctx: ServiceContext) {
     const currentHost = ctx.request.headers["x-forwarded-host"] || ctx.request.hostname;
     const maxAge = 60 * 60 * 24 * 7; // Expira em 7 dias (em segundos)
 
-    // Obtém o valor customizado do cookie
+    // Obtém o valor customizado do cookie  
     const cookieValueCustom = ctx.cookies.get(COOKIE_NAME_CUSTOM);
-    const cookieValue = ctx.cookies.get(COOKIE_NAME);
+    // const cookieValue = ctx.cookies.get(COOKIE_NAME); 
 
-    // Verifica se o cookie padrão já foi setado no site
+    const cookieHeader = ctx.request.headers['cookie'];
+    const cookiePattern = /checkout\.vtex\.com=([^;]+)/;
+    const cookieValue = String(cookieHeader ? cookieHeader.match(cookiePattern) : undefined);
+
+    // Verifica se o cookie padrão já foi setado no site 
     if (!cookieValue) {
-      ctx.status = 404; 
+      ctx.status = 404;
       ctx.body = {
         success: false,
-        message: `Cookie ${COOKIE_NAME} não encontrado.. ---- ${ctx.cookies}`, 
+        message: `Cookie ${COOKIE_NAME} não encontrado.. ---- ${ctx.cookies}`,
       };
       return;
     }
@@ -64,7 +68,7 @@ export async function viaCookieMiddleware(ctx: ServiceContext) {
     ctx.set("Cache-Control", "no-cache, no-store, must-revalidate");
     ctx.set("Pragma", "no-cache");
     ctx.set("Expires", "0");
-    
+
   } catch (error) {
     ctx.status = 500;
     ctx.body = {
