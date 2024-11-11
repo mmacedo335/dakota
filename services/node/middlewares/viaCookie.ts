@@ -8,6 +8,7 @@ const DOMAIN = ".dakota.com.br";
 // Handler que busca o cookie e retorna o valor
 export async function viaCookieMiddleware(ctx: ServiceContext) {
   try {
+
     const currentHost = ctx.request.headers["x-forwarded-host"] || ctx.request.hostname;
     const maxAge = 60 * 60 * 24 * 7;
 
@@ -24,11 +25,15 @@ export async function viaCookieMiddleware(ctx: ServiceContext) {
     const cookieValueCustom = cookieMatchCustom ? cookieMatchCustom[1] : null;
 
     // Verifica se o cookie padrão já foi setado no site  
-    if (!cookieValue) {
-      ctx.status = 404;  
+    if (cookieValue) {
+      ctx.status = 404;
       ctx.body = {
         success: false,
-        message: `cookie: ${cookieHeader}`,
+        message: {
+          url: ctx.request.url, 
+          method: ctx.request.method,
+          headers: ctx.request.headers
+        },
       };
       return;
     }
