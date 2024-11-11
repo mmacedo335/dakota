@@ -5,7 +5,6 @@ const COOKIE_NAME_CUSTOM = "checkout.vtex.dakota.com";
 const COOKIE_NAME = "checkout.vtex.com";
 const DOMAIN = ".dakota.com.br";
 
-// Handler que busca o cookie e retorna o valor
 export async function viaCookieMiddleware(ctx: ServiceContext) {
   try {
     const currentHost = ctx.request.headers["x-forwarded-host"] || ctx.request.hostname;
@@ -15,12 +14,13 @@ export async function viaCookieMiddleware(ctx: ServiceContext) {
 
     // Obtém o valor do Cookie padrão
     const cookiePattern = /checkout\.vtex\.com=([^;]+)/;
-    const cookieValue = String(cookieHeader ? cookieHeader.match(cookiePattern) : undefined);
+    const cookieMatch = cookieHeader ? cookieHeader.match(cookiePattern) : null;
+    const cookieValue = cookieMatch ? cookieMatch[1] : null;
 
     // Obtém o valor do Cookie customizado
     const cookiePatternCustom = /checkout\.vtex\.dakota\.com=([^;]+)/;
-    const cookieValueCustom = String(cookieHeader ? cookieHeader.match(cookiePatternCustom) : undefined);
-
+    const cookieMatchCustom = cookieHeader ? cookieHeader.match(cookiePatternCustom) : null;
+    const cookieValueCustom = cookieMatchCustom ? cookieMatchCustom[1] : null;
 
     // Verifica se o cookie padrão já foi setado no site 
     if (!cookieValue) {
@@ -34,7 +34,6 @@ export async function viaCookieMiddleware(ctx: ServiceContext) {
 
     // Verifica se o cookie customizado não existe
     if (!cookieValueCustom) {
-      // Define cookie customizado para o domínio especificado
       ctx.set(
         "Set-Cookie",
         `${COOKIE_NAME_CUSTOM}=${cookieValue}; Max-Age=${maxAge}; Domain=${DOMAIN}; Path=/; HttpOnly; Secure; SameSite=None`,
@@ -56,14 +55,14 @@ export async function viaCookieMiddleware(ctx: ServiceContext) {
       ctx.status = 200;
       ctx.body = {
         success: true,
-        message: `Valor do cookie ${COOKIE_NAME_CUSTOM} recuperado com sucesso.`,
+        message: `Ambos os cookies foram encontrados, porém os valores são diferentes. Novo cookie ${COOKIE_NAME} definido.`,
         cookieValueCustom,
       };
     } else {
       ctx.status = 200;
       ctx.body = {
         success: false,
-        message: `Os valores dos cookies ${COOKIE_NAME_CUSTOM} e ${COOKIE_NAME} já são iguais.`,
+        message: `Ambos cookies ${COOKIE_NAME_CUSTOM} e ${COOKIE_NAME} são iguais.`,
       };
     }
 
