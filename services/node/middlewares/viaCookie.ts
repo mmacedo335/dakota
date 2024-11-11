@@ -25,7 +25,7 @@ export async function viaCookieMiddleware(ctx: ServiceContext) {
     const cookieValueCustom = cookieMatchCustom ? cookieMatchCustom[1] : null;
 
     // Verifica se o cookie padrão já foi setado no site  
-    if (cookieValue) {
+    if (!cookieValue) {
       ctx.status = 404;
       ctx.body = {
         success: false,
