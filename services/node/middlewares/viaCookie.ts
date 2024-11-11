@@ -3,7 +3,7 @@ import type { ServiceContext } from "@vtex/api";
 // Definir constantes para nomes de cookies e domínio
 const COOKIE_NAME_CUSTOM = "checkout.vtex.dakota.com";
 const COOKIE_NAME = "checkout.vtex.com";
-const DOMAIN = ".dakota.com.br";
+const DOMAIN = ".myvtex.com";
 
 // Handler que busca o cookie e retorna o valor
 export async function viaCookieMiddleware(ctx: ServiceContext) {
@@ -13,20 +13,22 @@ export async function viaCookieMiddleware(ctx: ServiceContext) {
 
     const cookieHeader = ctx.request.headers['cookie'];
 
-    // Obtém o valor do Cookie padrão  
+    // Obtém o valor do Cookie padrão
     const cookiePattern = /checkout\.vtex\.com=([^;]+)/;
-    const cookieValue = String(cookieHeader ? cookieHeader.match(cookiePattern) : undefined);
- 
+    const cookieMatch = cookieHeader ? cookieHeader.match(cookiePattern) : null;
+    const cookieValue = cookieMatch ? cookieMatch[1] : null;
+
     // Obtém o valor do Cookie customizado
     const cookiePatternCustom = /checkout\.vtex\.dakota\.com=([^;]+)/;
-    const cookieValueCustom = cookieHeader ? cookieHeader.match(cookiePatternCustom)?.[1] : undefined;
+    const cookieMatchCustom = cookieHeader ? cookieHeader.match(cookiePatternCustom) : null;
+    const cookieValueCustom = cookieMatchCustom ? cookieMatchCustom[1] : null;
 
-    // Verifica se o cookie padrão já foi setado no site 
+    // Verifica se o cookie padrão já foi setado no site  
     if (!cookieValue) {
       ctx.status = 404;
       ctx.body = {
         success: false,
-        message: `Cookie ${COOKIE_NAME} não encontrado..`,
+        message: `Cookie padrão: ${cookieValue} ------- Cookie customizado: ${cookieValueCustom}`,
       };
       return;
     }
