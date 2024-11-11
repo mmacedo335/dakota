@@ -5,6 +5,7 @@ const COOKIE_NAME_CUSTOM = "checkout.vtex.dakota.com";
 const COOKIE_NAME = "checkout.vtex.com";
 const DOMAIN = ".dakota.com.br";
 
+// Handler que busca o cookie e retorna o valor
 export async function viaCookieMiddleware(ctx: ServiceContext) {
   try {
     const currentHost = ctx.request.headers["x-forwarded-host"] || ctx.request.hostname;
@@ -12,28 +13,27 @@ export async function viaCookieMiddleware(ctx: ServiceContext) {
 
     const cookieHeader = ctx.request.headers['cookie'];
 
-    // Obtém o valor do Cookie padrão
+    // Obtém o valor do Cookie padrão 
     const cookiePattern = /checkout\.vtex\.com=([^;]+)/;
-    const cookieMatch = cookieHeader ? cookieHeader.match(cookiePattern) : null;
-    const cookieValue = cookieMatch ? cookieMatch[1] : null;
-
+    const cookieValue = cookieHeader ? cookieHeader.match(cookiePattern)?.[1] : undefined;
+ 
     // Obtém o valor do Cookie customizado
     const cookiePatternCustom = /checkout\.vtex\.dakota\.com=([^;]+)/;
-    const cookieMatchCustom = cookieHeader ? cookieHeader.match(cookiePatternCustom) : null;
-    const cookieValueCustom = cookieMatchCustom ? cookieMatchCustom[1] : null;
+    const cookieValueCustom = cookieHeader ? cookieHeader.match(cookiePatternCustom)?.[1] : undefined;
 
     // Verifica se o cookie padrão já foi setado no site 
     if (!cookieValue) {
       ctx.status = 404;
       ctx.body = {
         success: false,
-        message: `Cookie ${COOKIE_NAME} não encontrado.`,
+        message: `Cookie ${COOKIE_NAME} não encontrado...`,
       };
       return;
     }
 
     // Verifica se o cookie customizado não existe
     if (!cookieValueCustom) {
+      // Define cookie customizado para o domínio especificado
       ctx.set(
         "Set-Cookie",
         `${COOKIE_NAME_CUSTOM}=${cookieValue}; Max-Age=${maxAge}; Domain=${DOMAIN}; Path=/; HttpOnly; Secure; SameSite=None`,
@@ -55,14 +55,14 @@ export async function viaCookieMiddleware(ctx: ServiceContext) {
       ctx.status = 200;
       ctx.body = {
         success: true,
-        message: `Ambos os cookies foram encontrados, porém os valores são diferentes. Novo cookie ${COOKIE_NAME} definido.`,
+        message: `Valor do cookie ${COOKIE_NAME_CUSTOM} recuperado com sucesso.`,
         cookieValueCustom,
       };
     } else {
       ctx.status = 200;
       ctx.body = {
         success: false,
-        message: `Ambos cookies ${COOKIE_NAME_CUSTOM} e ${COOKIE_NAME} são iguais.`,
+        message: `Os valores dos cookies ${COOKIE_NAME_CUSTOM} e ${COOKIE_NAME} já são iguais.`,
       };
     }
 
