@@ -13,9 +13,9 @@ export async function viaCookieMiddleware(ctx: ServiceContext) {
 
     const cookieHeader = ctx.request.headers['cookie'];
 
-    // Obtém o valor do Cookie padrão 
+    // Obtém o valor do Cookie padrão  
     const cookiePattern = /checkout\.vtex\.com=([^;]+)/;
-    const cookieValue = cookieHeader ? cookieHeader.match(cookiePattern)?.[1] : undefined;
+    const cookieValue = String(cookieHeader ? cookieHeader.match(cookiePattern) : undefined);
  
     // Obtém o valor do Cookie customizado
     const cookiePatternCustom = /checkout\.vtex\.dakota\.com=([^;]+)/;
@@ -26,7 +26,7 @@ export async function viaCookieMiddleware(ctx: ServiceContext) {
       ctx.status = 404;
       ctx.body = {
         success: false,
-        message: `Cookie ${COOKIE_NAME} não encontrado...`,
+        message: `Cookie ${COOKIE_NAME} não encontrado..`,
       };
       return;
     }
