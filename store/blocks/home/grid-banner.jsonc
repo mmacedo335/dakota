@@ -24,7 +24,11 @@
         "url": "",
         "attributeTitle": "",
         "newTab": false
-      }
+      },
+      "experimentalSetExplicitDimensions": true,
+      "width": "538",
+      "height": "461"
+
     }
   },
 
@@ -36,7 +40,10 @@
         "url": "",
         "attributeTitle": "",
         "newTab": false
-      }
+      },
+      "experimentalSetExplicitDimensions": true,
+      "width": "538",
+      "height": "461"
     }
   },
 
@@ -48,7 +55,10 @@
         "url": "",
         "attributeTitle": "",
         "newTab": false
-      }
+      },
+      "experimentalSetExplicitDimensions": true,
+      "width": "538",
+      "height": "461"
     }
   }
 }

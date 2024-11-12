@@ -19,7 +19,7 @@
   "devDependencies": {
     "@types/node": "^18.6.1",
     "@types/react": "^18.0.15",
-    "dakota.dakota-theme": "https://store--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.32+build1731435386/public/@types/dakota.dakota-theme",
+    "dakota.dakota-theme": "https://seo--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.32+build1731448518/public/@types/dakota.dakota-theme",
     "vtex.add-to-cart-button": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.30.2/public/@types/vtex.add-to-cart-button",
     "vtex.auth-challenge": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.auth-challenge@1.1.1/public/@types/vtex.auth-challenge",
     "vtex.breadcrumb": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.breadcrumb@1.9.5/public/@types/vtex.breadcrumb",

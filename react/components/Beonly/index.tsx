@@ -13,7 +13,7 @@ function Beonly() {
           `}
         </style>
 
-        <script type="text/javascript">
+        <script defer type="text/javascript">
           {`
             (function(i, s, o, g, r, a, m, d) {
               i['beonobject'] = r;
