@@ -65,5 +65,8 @@
   },
   "price-total-dicount-minicart": {
     "component": "PriceTotalDiscountMinicart"
+  },
+  "footer-minicart": {
+    "component": "FooterMinicart"
   }
 }

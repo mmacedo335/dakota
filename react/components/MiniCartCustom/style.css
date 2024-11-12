@@ -138,4 +138,46 @@
 
 :global(.vtex-flex-layout-0-x-flexRow--main-header-mobile) :global(.quantity) {
     top: -10px;
-} 
+}
+
+
+.FooterMiniCart {
+    padding-top: 10px;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    color: #454545;
+
+}
+
+.FooterMiniCart .FooterMiniCartRowSmall {
+    margin-top: .5rem;
+    color: #454545;
+    font-weight: 500;
+    font-size: 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.FooterMiniCart .FooterMiniCartRow {
+    margin-top: .75rem;
+    color: #454545;
+    font-size: 1.25rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.FooterMiniCart .FooterMiniCartPriceDiscount {
+    display: block;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.FooterMiniCart .FooterMiniCartInstallments {
+    display: block;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.FooterMiniCart .FooterMiniCartPriceDiscount strong {
+    font-weight: 500;
+}

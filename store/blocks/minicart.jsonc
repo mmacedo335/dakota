@@ -215,7 +215,8 @@
   "flex-layout.col#minicart-footer": {
     "children": [
       "free-shipping",
-      "minicart-summary",
+      //"minicart-summary",
+      "footer-minicart",
       "minicart-checkout-button"
     ]
   },
