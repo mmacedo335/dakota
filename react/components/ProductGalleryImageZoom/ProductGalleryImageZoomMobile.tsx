@@ -110,21 +110,42 @@ const ProductGalleryImageZoomMobile: React.FC = () => {
         arrows: false,
     };
 
+    console.log('productImages  = ', productImages.length);
+
     return (
         <div className={styles.ProductGalleryImageZoom}>
-            <Slider {...settingsSlider}>
-                {productImages.map((image, index) => (
-                    <ul className={styles.sliderProductImageGalleryMobile} key={image.imageId}>
-                        <li>
-                            <img
-                                src={image.imageUrl}
-                                alt={`Product ${index}`}
-                                onClick={() => openDialog(index)}
-                            />
-                        </li>
-                    </ul>
-                ))}
-            </Slider>
+            {productImages.length > 1 ? (
+                <Slider {...settingsSlider}>
+                    {productImages.map((image, index) => (
+                        <ul className={styles.sliderProductImageGalleryMobile} key={image.imageId}>
+                            <li>
+                                <img
+                                    src={image.imageUrl}
+                                    alt={`Product ${index}`}
+                                    onClick={() => openDialog(index)}
+                                />
+                            </li>
+                        </ul>
+                    ))}
+                </Slider>
+            ) : (
+                <>
+                    {
+                        productImages.map((image, index) => (
+                            <ul className={styles.sliderProductImageGalleryMobile} key={image.imageId}>
+                                <li>
+                                    <img
+                                        src={image.imageUrl}
+                                        alt={`Product ${index}`}
+                                        onClick={() => openDialog(index)}
+                                    />
+                                </li>
+                            </ul>
+                        ))
+                    }
+                </>
+            )}
+
 
             <dialog ref={dialogRef} className={styles.dialogProductImage}>
                 <div className={styles.modalContent}>
