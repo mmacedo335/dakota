@@ -68,5 +68,8 @@
   },
   "footer-minicart": {
     "component": "FooterMinicart"
+  },
+  "quick-filter-category": {
+    "component": "QuickFilterCategory"
   }
 }

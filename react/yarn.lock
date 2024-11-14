@@ -71,9 +71,9 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
   integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
 
-"dakota.dakota-theme@https://store--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.32+build1731438230/public/@types/dakota.dakota-theme":
-  version "6.0.32"
-  resolved "https://store--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.32+build1731438230/public/@types/dakota.dakota-theme#0fedd883d0dab101a9becd4096d2c77d9225e0e7"
+"dakota.dakota-theme@http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.37/public/@types/dakota.dakota-theme":
+  version "6.0.37"
+  resolved "http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.37/public/@types/dakota.dakota-theme#5bc2ab76c6b5413542ea13b3ae461e9d5f07002d"
 
 enquire.js@^2.1.6:
   version "2.1.6"
