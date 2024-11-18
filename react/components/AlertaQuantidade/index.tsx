@@ -7,7 +7,6 @@ import styles from "./style.css";
 const AlertaQuantidade: React.FC = () => {
 
     const productContextValue = useProduct();
-    console.log(productContextValue);
     const availableQuantity = productContextValue?.selectedItem?.sellers?.[0]?.commertialOffer?.AvailableQuantity;
     const collectionMessagemUrgencia = productContextValue.product?.productClusters.some(item => item.id === "252");
 
