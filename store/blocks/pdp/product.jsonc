@@ -245,6 +245,7 @@
       "product-installments#summary",
       "sku-selector",
       "modal-trigger#guia-tamanhos",
+      "alert-item-quantity",
       "flex-layout.row#product-similar",
       "responsive-layout.desktop#buy-button",
       "responsive-layout.mobile#button-whislist",

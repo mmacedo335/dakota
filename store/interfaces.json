@@ -71,5 +71,8 @@
   },
   "quick-filter-category": {
     "component": "QuickFilterCategory"
+  },
+  "alert-item-quantity": {
+    "component": "AlertaQuantidade"
   }
 }

@@ -1,10 +1,10 @@
 import React from "react";
-import "./SizeGuide.css"; 
+import "./SizeGuide.css";
 
 const GuiaMedidas: React.FC = () => {
   return (
     <div className="guia-tamanhos">
-      <h4>DESCUBRA SEU TAMANHO</h4> 
+      <h4>DESCUBRA SEU TAMANHO</h4>
       <div className="tabelas">
         <h5>NUMERAÇÃO ADULTA</h5>
         <table>
@@ -71,12 +71,12 @@ const GuiaMedidas: React.FC = () => {
         <div className="informacoes-guia">
           <img
             src="https://dakota.vtexassets.com/assets/vtex.file-manager-graphql/images/3515d5b1-4926-4d1e-bfed-a1e9d7674988___08b45d43453bac7726a25ca30445f01d.jpg"
-            alt="Tamanho pé" 
-          /> 
-          <p> 
+            alt="Tamanho pé"
+          />
+          <p>
             <b>Como medir o tamanho do seu pé:</b>
             <br />
-            1. Centralize seu pé em uma folha de papel. 
+            1. Centralize seu pé em uma folha de papel.
             <br />
             2. Faça um risco a partir do seu calcanhar.
             <br />
@@ -94,10 +94,10 @@ const GuiaMedidas: React.FC = () => {
             <br />
             aproximada do seu pé, facilitando assim a escolha da sua
             <br />
-            numeração. Se ficar com dúvida, nos contate através do chat 
+            numeração. Se ficar com dúvida, nos contate através do chat
             <br />
           </p>
-        </div> 
+        </div>
       </div>
     </div>
   );

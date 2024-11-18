@@ -33,7 +33,6 @@ function FooterMiniCart() {
 
     const priceParcel = totalCart / quantityParcel;
 
-    console.log(orderForm);
     return (
         <>
             <div className={styles.FooterMiniCart}>
