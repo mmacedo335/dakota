@@ -11,7 +11,7 @@
   }
   .filterAccordionItemBox--numeracao .accordionFilterItemTitle::after {
     content: 'Tamanho';
-    font-size: 14px;
+     font-size: 14px;
   }
 }
 

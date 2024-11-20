@@ -71,9 +71,9 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
   integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
 
-"dakota.dakota-theme@http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.37/public/@types/dakota.dakota-theme":
-  version "6.0.37"
-  resolved "http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.37/public/@types/dakota.dakota-theme#5bc2ab76c6b5413542ea13b3ae461e9d5f07002d"
+"dakota.dakota-theme@http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.39/public/@types/dakota.dakota-theme":
+  version "6.0.39"
+  resolved "http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.39/public/@types/dakota.dakota-theme#68ef05d729426600af05447a42cb5bf3a8e086d7"
 
 enquire.js@^2.1.6:
   version "2.1.6"
@@ -428,9 +428,9 @@ swiper@^11.1.4:
   version "3.176.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.176.0/public/@types/vtex.store-components#aab0c7cdf327d537febab2e1c9e2ac49d92f5de7"
 
-"vtex.store-drawer@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.18.0/public/@types/vtex.store-drawer":
-  version "0.18.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.18.0/public/@types/vtex.store-drawer#cea6548fd2f5cf9a8ba1d2e3040a45aa849ef03d"
+"vtex.store-drawer@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.18.1/public/@types/vtex.store-drawer":
+  version "0.18.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.18.1/public/@types/vtex.store-drawer#6a9c41b35d9f992c7683f2d275c0817271619075"
 
 "vtex.store-footer@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-footer@2.27.0/public/@types/vtex.store-footer":
   version "2.27.0"
