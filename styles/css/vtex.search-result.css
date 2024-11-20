@@ -1,20 +1,3 @@
-.filter__container--numeracao .filterTitleSpan {
-  font-size: 0;
-}
-.filter__container--numeracao .filterTitleSpan::after {
-  content: 'Tamanho';
-  font-size: 14px;
-}
-@media (max-width: 760px) {
-  .filterAccordionItemBox--numeracao .accordionFilterItemTitle {
-    font-size: 0;
-  }
-  .filterAccordionItemBox--numeracao .accordionFilterItemTitle::after {
-    content: 'Tamanho';
-     font-size: 14px;
-  }
-}
-
 .orderByButton {
   justify-content: space-between;
   background: #F6F6F6;
