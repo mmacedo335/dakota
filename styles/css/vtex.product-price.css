@@ -54,7 +54,7 @@
     position: absolute;
     top: 0px;
     right: 0px;
-    z-index: 1; 
+    z-index: 1;
 }
 
 .installments--summary {
@@ -64,4 +64,12 @@
     display: block;
     text-align: center;
     margin-top: 4px;
+}
+
+.sellingPrice--summary::after {
+  content: "5% de desconto no PIX";
+  display: flex;
+  justify-content: center;
+  font-family: Larsseit Medium;
+  font-size: 14px;
 }
