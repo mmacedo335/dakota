@@ -1,0 +1,113 @@
+@media (max-width: 760px) {
+    .contentforms {
+        background-size: cover !important;
+    }
+    .contentforms .logoDakotabf {
+        max-width: 150px;
+        top: -60px;
+    }
+    .contentforms .sub {
+        font-size: 15px;
+        margin-top: 20px;
+    }
+    .contentforms .tit {
+        font-size: 25px;
+    }
+    .contentforms .content input {
+        width: 300px;
+    }
+    .contentforms .clube {
+        font-size: 23px;
+    }
+    .contentforms .pronto {
+        font-size: 77px;
+    }
+}
+
+.contentforms {
+    background: url(https://dakota.vtexassets.com/assets/vtex.file-manager-graphql/images/cc8ebf98-54bf-4005-98b3-97245e8d518e___bdd895ee3de776e8ba7d4bdb8e62f60f.jpg) no-repeat;
+    display: block;
+    width: 100%;
+}
+.content {
+    background: url(https://dakota.vtexassets.com/assets/vtex.file-manager-graphql/images/7a83a816-1a0c-4bd9-a4e1-48e9613d61e9___c000dc3f6918c05293c7942992cbc89b.png) no-repeat;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+    gap: 10px;
+    margin-top: 50px;
+}
+.content input {
+    border: none;
+    border-radius: 5px;
+    outline: none;
+    width: 400px;
+    height: 35px;
+    text-align: center;
+    font-size: 15px;
+}
+.contentHeader {
+    max-width: 800px;
+    margin: 0 auto;
+}
+.sub {
+    color: #fff;
+    font-size: 25px;
+    text-align: center;
+    margin: 0;
+    margin-bottom: 10px;
+}
+.tit {
+    color: #fff;
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    margin: 0;
+    font-family: 'Larsseit Bold';
+}
+.contentFooter button {
+    background: url(https://dakota.vtexassets.com/assets/vtex.file-manager-graphql/images/38abd911-4f06-4867-82e3-35fd2e75f84e___a1659926b6b213c9f6070ff00fca6bbd.png) no-repeat;
+    width: 165px;
+    height: 50px;
+    background-size: contain;
+    border: none;
+    cursor: pointer;
+    padding: 0;
+}
+.contentFooter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 40px;
+    padding-bottom: 100px;
+}
+.logoDakotabf {
+    display: block;
+    max-width: 250px;
+    margin: 0 auto;
+    position: absolute;
+    top: -110px;
+    left: 50%;
+    transform: translate(-50%);
+}
+.divImg {
+    position: relative;
+}
+.clube {
+    font-size: 30px;
+    max-width: 500px;
+    color: #fff;
+    text-align: center;
+    margin: 10px 0;
+}
+.pronto {
+    color: #fff;
+    font-size: 100px;
+    font-family: 'Larsseit Bold';
+    margin: 0;
+    text-align: center;
+    margin-bottom: -83px;
+}

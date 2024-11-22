@@ -1,0 +1,11 @@
+.ratingSummary .ratingCount {
+    display: none;
+}
+.ratingStarsInactive {
+    width: 15px;
+    height: 15px;
+}
+.ratingStarsActive {
+    width: 15px;
+    height: 15px;
+}

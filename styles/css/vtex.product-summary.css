@@ -1,9 +1,32 @@
 .productBrand {
-    font-size: 15px;
+    font-size: 13px;
     text-transform: uppercase;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     line-height: normal;
     color: #333;
+}
+
+@media (min-width: 990px) {
+    .productBrand {
+        overflow: hidden;
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp: 1;
+        text-overflow: ellipsis;
+    }
+}
+
+
+@media (max-width: 760px) {
+    .productBrand {
+        font-size: 11px;
+    }
+    .container :global(.vtex-product-price-1-x-currencyContainer--summary) {
+        font-size: 15px;
+    }
+    .container :global(.vtex-product-price-1-x-installments--summary) {
+        font-size: 11px !important;
+    }
 }
 
 .container :global(.vtex-stack-layout-0-x-stackContainer) {
@@ -12,6 +35,7 @@
 
 .container {
     max-width: 100% !important;
+    position: relative;
 }
 
 .container--menucategory {
@@ -73,6 +97,31 @@
     display: block;
     font-family: Inter;
 }
+.nameContainer {
+    padding-bottom: 0;
+    justify-content: flex-start;
+    text-align: left;
+    padding-top: 10px;
+}
+
+.container :global(.vtex-similar-products-variants-0-x-title) {
+    display: none;
+}
+.container :global(.vtex-similar-products-variants-0-x-var-wrap) {
+    margin-top: 0;
+    justify-content: flex-start;
+}
+.container :global(.vtex-product-price-1-x-sellingPrice--summary) {
+    text-align: left;
+}
+.container :global(.vtex-product-price-1-x-installments--summary) {
+    text-align: left;
+    font-size: 13px;
+}
+.container :global(.vtex-product-price-1-x-currencyContainer--summary) {
+    font-size: 17px;
+}
+
 
 .containerNormal--summary-modal :global(.vtex-product-summary-2-x-nameContainer) {
     padding-bottom: 15px;
