@@ -65,5 +65,23 @@
   },
   "sku-selector-custom-summary": {
     "component": "SkuSelectorSummary"
+  },
+  "product-gallery-image-zoom-desktop": {
+    "component": "ProductGalleryImageZoomDesktop"
+  },
+  "product-gallery-image-zoom-mobile": {
+    "component": "ProductGalleryImageZoomMobile"
+  },
+  "price-total-dicount-minicart": {
+    "component": "PriceTotalDiscountMinicart"
+  },
+  "footer-minicart": {
+    "component": "FooterMinicart"
+  },
+  "quick-filter-category": {
+    "component": "QuickFilterCategory"
+  },
+  "alert-item-quantity": {
+    "component": "AlertaQuantidade"
   }
 }

@@ -8,19 +8,32 @@ const DOMAIN = ".dakota.com.br";
 // Handler que busca o cookie e retorna o valor
 export async function viaCookieMiddleware(ctx: ServiceContext) {
   try {
+
     const currentHost = ctx.request.headers["x-forwarded-host"] || ctx.request.hostname;
-    const maxAge = 60 * 60 * 24 * 7; // Expira em 7 dias (em segundos)
+    const maxAge = 60 * 60 * 24 * 7;
 
-    // Obtém o valor customizado do cookie
-    const cookieValueCustom = ctx.cookies.get(COOKIE_NAME_CUSTOM);
-    const cookieValue = ctx.cookies.get(COOKIE_NAME);
+    const cookieHeader = ctx.request.headers['cookie'];
 
-    // Verifica se o cookie padrão já foi setado no site
+    // Obtém o valor do Cookie padrão
+    const cookiePattern = /checkout\.vtex\.com=([^;]+)/;
+    const cookieMatch = cookieHeader ? cookieHeader.match(cookiePattern) : null;
+    const cookieValue = cookieMatch ? cookieMatch[1] : null;
+
+    // Obtém o valor do Cookie customizado
+    const cookiePatternCustom = /checkout\.vtex\.dakota\.com=([^;]+)/;
+    const cookieMatchCustom = cookieHeader ? cookieHeader.match(cookiePatternCustom) : null;
+    const cookieValueCustom = cookieMatchCustom ? cookieMatchCustom[1] : null;
+
+    // Verifica se o cookie padrão já foi setado no site  
     if (!cookieValue) {
       ctx.status = 404;
       ctx.body = {
         success: false,
-        message: `Cookie ${COOKIE_NAME} não encontrado.`,
+        message: {
+          url: ctx.request.url, 
+          method: ctx.request.method,
+          headers: ctx.request.headers
+        },
       };
       return;
     }
@@ -64,7 +77,7 @@ export async function viaCookieMiddleware(ctx: ServiceContext) {
     ctx.set("Cache-Control", "no-cache, no-store, must-revalidate");
     ctx.set("Pragma", "no-cache");
     ctx.set("Expires", "0");
-    
+
   } catch (error) {
     ctx.status = 500;
     ctx.body = {

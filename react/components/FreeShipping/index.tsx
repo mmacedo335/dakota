@@ -6,7 +6,7 @@ import styles from "./FreeShipping.css";
 
 type PropsImagens = {
   valor: string,
-  ativo: boolean
+  ativo: boolean,
 }
 
 function FreeShipping({ valor, ativo }: PropsImagens) {
@@ -31,6 +31,7 @@ function FreeShipping({ valor, ativo }: PropsImagens) {
     return (
       <div className={styles.freeShippingItem}>
         <div
+          id="barra_frete_texto"
           className={styles.title}
           dangerouslySetInnerHTML={{ __html: fretetexto }}
         />

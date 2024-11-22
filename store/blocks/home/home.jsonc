@@ -5,12 +5,12 @@
       "rich-text#h1__home",
       "list-context.image-list#full-banner-home",
       "flex-layout.row#compre-numeracao",
-      "__fold__", 
-      "flex-layout.row#shelf-01",
+      "__fold__",
+      //"flex-layout.row#shelf-01",
       "flex-layout.row#grid-banner",
-      "flex-layout.row#shelf-02",
+      //"flex-layout.row#shelf-02",
       "flex-layout.row#blog",
-      "flex-layout.row#shelf-03", 
+      //"flex-layout.row#shelf-03",
       "yv-testimonials",
       "flex-layout.row#texto-home"
     ]

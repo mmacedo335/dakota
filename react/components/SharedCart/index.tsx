@@ -9,7 +9,7 @@ const SharedCart: React.FC = () => {
   // Função para definir o cookie a partir do backend
   async function setCookieFromBackend(retries = 3) {
     try {
-      const response = await fetch("/_v/cookie", {
+      const response = await fetch("/_v/cookies", {
         method: "POST",
       });
 
@@ -33,7 +33,7 @@ const SharedCart: React.FC = () => {
   // Função para limpar o cookie a partir do backend
   async function setCookieClearFromBackend(retries = 3) {
     try {
-      const response = await fetch("/_v/cookieclear", {
+      const response = await fetch("/_v/cookieclears", {
         method: "POST",
       });
 

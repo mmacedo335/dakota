@@ -1,0 +1,9 @@
+.PriceTotalDiscountMinicartItem {
+    display: block;
+    margin-top: 5px;
+    text-align: right;
+}
+
+.PriceTotalDiscountMinicartItem strong {
+    font-weight: 500;
+}

@@ -10,8 +10,11 @@ export async function viaCookieClearMiddleware(ctx: ServiceContext) {
     // Tempo expiração cookie (7 dias em segundos)
     const maxAge = 60 * 60 * 24 * 7;
 
-    // Obtém o valor do cookie padrão
-    const cookieValue = ctx.cookies.get(COOKIE_NAME);
+    const cookieHeader = ctx.request.headers['cookie'];
+
+    // Obtém o valor do Cookie padrão 
+    const cookiePattern = /checkout\.vtex\.com=([^;]+)/;
+    const cookieValue = cookieHeader ? cookieHeader.match(cookiePattern)?.[1] : undefined;
 
     // Verifica se o cookie padrão já foi setado no site
     if (!cookieValue) {
@@ -35,7 +38,7 @@ export async function viaCookieClearMiddleware(ctx: ServiceContext) {
       success: true,
       message: `Cookie ${COOKIE_NAME_CUSTOM} adicionado com sucesso.`,
     };
-
+ 
     // Define cabeçalhos de controle de cache
     ctx.set("Cache-Control", "no-cache, no-store, must-revalidate");
     ctx.set("Pragma", "no-cache");

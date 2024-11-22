@@ -7,8 +7,11 @@
     "props": {
       "preserveLayoutOnMobile": true,
       "fullWidth": true,
-      "blockClass": ["search-topo", "container-full"],
-      "marginBottom": 10, 
+      "blockClass": [
+        "search-topo",
+        "container-full"
+      ],
+      "marginBottom": 10,
       "paddingTop": 3
     }
   },
@@ -16,7 +19,8 @@
     "title": "Topo listagem",
     "children": [
       "breadcrumb.search",
-      "flex-layout.row#searchtitle"
+      "flex-layout.row#searchtitle",
+      "quick-filter-category"
     ],
     "props": {
       "preserveLayoutOnMobile": true,
@@ -26,7 +30,9 @@
   },
   "flex-layout.row#searchtitle": {
     "title": "Titulo categoria",
-    "children": ["search-title.v2"],
+    "children": [
+      "search-title.v2"
+    ],
     "props": {
       "horizontalAlign": "center"
     }

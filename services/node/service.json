@@ -11,11 +11,11 @@
       "public": true
     },
     "viaCookie": {
-      "path": "/_v/cookie",
+      "path": "/_v/cookies",
       "public": true
     }, 
     "viaClearCookie": { 
-      "path": "/_v/cookieclear",
+      "path": "/_v/cookieclears",
       "public": true
     }
   } 

@@ -8,8 +8,17 @@
     ],
     "props": {
       "preventRouteChange": true,
-      "pagination": "show-more", 
-      "defaultGalleryLayout": "grid"
+      "pagination": "show-more",
+      "defaultGalleryLayout": "grid",
+      "hiddenFacets": {
+        "specificationFilters": {
+          "hiddenFilters": [
+            {
+              "name": "Tecnologias"
+            }
+          ]
+        }
+      }
     }
   }
 }
