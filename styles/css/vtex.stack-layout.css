@@ -3,3 +3,9 @@
     left: unset;
     z-index: 999!important;
 }
+
+@media (min-width: 990px) {
+    .stackItem--flags-not-desktop{
+        display: none;
+    }
+}

@@ -1,0 +1,38 @@
+.skucustomsummary img {
+    width: 28px;
+    height: 28px;
+    border-radius: 5px;
+}
+
+.skucustomsummary .skuslidesummary {
+    display: flex;
+    align-items: center;
+    gap: 6px;
+}
+
+.skucustomsummary .skuslidesummary div {
+    width: 32px;
+    height: 32px;
+    display: flex;
+    align-items: center;
+}
+
+
+.skucustomsummary .ativo {
+    border: 1px solid #FF6A00;
+    display: block;
+    border-radius: 5px;
+}
+
+.skucustomsummary a {
+    line-height: 0;
+    padding: 1px;
+}
+
+.more{
+    display: none;
+}
+
+.more:first-child{
+    display: block;
+}

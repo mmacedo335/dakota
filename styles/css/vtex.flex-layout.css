@@ -1,3 +1,25 @@
+.flexCol--prices-vitrine {
+    flex-direction: row;
+    align-items: center;
+}
+.flexColChild--prices-vitrine {
+    height: auto !important;
+}
+.flexCol--flags-desktop {
+    position: absolute;
+    width: auto;
+    height: auto;
+    z-index: 9;
+    bottom: 20px;
+    right: 35px;
+}
+
+@media (max-width: 760px) {
+    .flexCol--flags-desktop {
+        display: none;
+    }
+}
+
 .flexRow--content-custom .flexRowContent--content-custom {
     max-width: 95%;
     margin: auto;
@@ -6,6 +28,13 @@
 .flexRow--container-custom .flexRowContent--container-custom {
     padding: 0 20px;
 }
+
+@media (min-width: 990px) {
+    .flexCol--similar-summary {
+        min-height: 40px;
+    }
+}
+
 
 .flexRowContent--main-header {
     padding: 11px 0px;

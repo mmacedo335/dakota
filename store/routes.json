@@ -30,6 +30,10 @@
   "store.custom#atendimento-online": {
     "path": "/solicitar-atendimento",
     "isSitemapEntry": true
+  },
+  "store.custom#cadastro-bf": {
+    "path": "/cadastro-bf",
+    "isSitemapEntry": true
   }
 }
 

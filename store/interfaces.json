@@ -56,5 +56,14 @@
   },
   "product-video": {
     "component": "ProductVideo"
+  },
+  "cadastro-bf": {
+    "component": "CadastroBF"
+  },
+  "click-variant-summary": {
+    "component": "ClickVariantSummary"
+  },
+  "sku-selector-custom-summary": {
+    "component": "SkuSelectorSummary"
   }
 }
