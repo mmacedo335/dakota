@@ -5,7 +5,7 @@
       "fullWidth": true,
       "marginBottom": 0,
       "marginTop": 0,
-      "blockClass": "search-banner"
+      "blockClass": ["search-banner","search-banner-desktop"]
     },
     "children": [
       "image#search-banner"
@@ -28,7 +28,7 @@
       "fullWidth": true,
       "marginBottom": 2,
       "marginTop": 0,
-      "blockClass": "search-banner"
+      "blockClass": ["search-banner","search-banner-mobile"]
     },
     "children": [
       "image#search-banner-mobile"
@@ -45,4 +45,4 @@
       }
     }
   }
-} 
+}

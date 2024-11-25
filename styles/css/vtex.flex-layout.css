@@ -762,4 +762,21 @@
         padding-bottom: 80px;
     }
 
+    .flexRow--search-banner-mobile{
+      display: block;
+    }
+
+    .flexRow--search-banner-desktop{
+      display: none;
+    }
+}
+
+@media(min-width: 1000px){
+  .flexRow--search-banner-mobile{
+    display: none;
+  }
+
+  .flexRow--search-banner-desktop{
+    display: block;
+  }
 }
