@@ -107,3 +107,9 @@
   font-family: Larsseit Medium;
   font-size: 14px;
 }
+
+@media (max-width: 760px) {
+    .sellingPrice--summary::after {
+        font-size: 10px !important;
+      }
+}

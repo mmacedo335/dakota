@@ -27,6 +27,10 @@
     .container :global(.vtex-product-price-1-x-installments--summary) {
         font-size: 11px !important;
     }
+    .container :global(.vtex-product-price-1-x-sellingPrice--summary) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 .container :global(.vtex-stack-layout-0-x-stackContainer) {
