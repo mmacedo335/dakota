@@ -36,6 +36,9 @@
 }
 
 @media(max-width: 760px) {
+    .sellingPriceValue--summary .currencyContainer--summary { 
+        font-size: 15px !important;
+    }
     .listPrice .listPriceValue--summary .currencyContainer--summary::after {
         margin-right: 0;
     }
@@ -68,6 +71,14 @@
     align-items: center;
     font-family: 'Larsseit Bold';
     position: relative;
+}
+
+@media (max-width: 760px) {
+    .savings--savingPercentage {
+        font-size: 12px;
+        padding: 0 5px;
+        height: 19px
+    }
 }
 
 .savings--savingPercentage::before {
@@ -105,7 +116,7 @@
   display: flex;
   justify-content: center;
   font-family: Larsseit Medium;
-  font-size: 14px;
+  font-size: 11px;
 }
 
 @media (max-width: 760px) {

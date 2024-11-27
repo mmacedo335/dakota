@@ -1,4 +1,4 @@
-.stackItem--flags-summary{
+.stackItem--flags-summary {
     right: 0px;
     left: unset;
     z-index: 999!important;
@@ -7,5 +7,11 @@
 @media (min-width: 990px) {
     .stackItem--flags-not-desktop{
         display: none;
+    }
+}
+
+@media (max-width: 760px) {
+    .stackItem--flags-summary {
+        top: 25px;
     }
 }

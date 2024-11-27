@@ -18,6 +18,9 @@
 
 
 @media (max-width: 760px) {
+    .nameWrapper {
+        line-height: 11px;
+    }
     .productBrand {
         font-size: 11px;
     }
@@ -124,6 +127,13 @@
 }
 .container :global(.vtex-product-price-1-x-currencyContainer--summary) {
     font-size: 17px;
+}
+
+@media (min-width: 990px) {
+    .container :global(.vtex-product-price-1-x-sellingPrice--summary) {
+        display: flex;
+        flex-direction: column;
+    }
 }
 
 
