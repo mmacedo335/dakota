@@ -111,16 +111,10 @@
     margin-top: 4px;
 }
 
-.sellingPrice--summary::after {
+:global(.vtex-flex-layout-0-x-flexColChild--product-informacoes) .sellingPrice--summary::after {
   content: "5% de desconto no PIX";
   display: flex;
   justify-content: center;
   font-family: Larsseit Medium;
-  font-size: 11px;
-}
-
-@media (max-width: 760px) {
-    .sellingPrice--summary::after {
-        font-size: 10px !important;
-      }
+  font-size: 12px;
 }
