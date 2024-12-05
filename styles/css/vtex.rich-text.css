@@ -425,3 +425,27 @@
         font-size: 16px;
     }
 }
+
+:global(.vtex-flex-layout-0-x-flexRowContent--lp__container) .paragraph .link {
+    color: #db3d68;
+    font-family: Larsseit Medium;
+    font-weight: 700;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--lp__container) .paragraph .strong {
+    color: #db3d68;
+    font-family: Larsseit Medium;
+    font-weight: 700; 
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--lp__container) .paragraph {
+    line-height: 20px;
+    font-size: 16px;
+    color: #555;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--lp__container) .headingLevel2 .strong {
+    color: #db3d68;
+    font-family: Larsseit Medium;
+    font-weight: 700; 
+}
