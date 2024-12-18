@@ -1,30 +1,30 @@
 Arguments: 
-  D:\Program Files (x86)\node.exe C:\Program Files\vtex\client\node_modules\yarn\bin\yarn.js --non-interactive --ignore-engines
+  C:\Program Files\nodejs\node.exe C:\Program Files\vtex\client\node_modules\yarn\bin\yarn.js --non-interactive --ignore-engines
 
 PATH: 
-  C:\Users\Italo\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Italo\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\ProgramData\chocolatey\bin;C:\Users\Italo\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\Italo\AppData\Local\Programs\Python\Python37;C:\Users\Italo\AppData\Local\Microsoft\WindowsApps;C:\Users\Italo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Italo\AppData\Roaming\npm;C:\adb;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn;C:\Program Files\Microsoft SQL Server\150\DTS\Binn;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;D:\Program Files (x86);C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\src\flutter\bin;C:\Users\Italo\AppData\Local\Programs\Hyper\resources\bin;C:\Program Files\vtex\bin;C:\Users\Italo\AppData\Local\GitHubDesktop\bin;C:\Users\Italo\.deno\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+  C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\iCLS\;C:\Program Files\Intel\Intel(R) Management Engine Components\iCLS\;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0\;C:\WINDOWS\System32\OpenSSH\;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Git\cmd;C:\Program Files\nodejs\;C:\Users\Matheus Macedo\AppData\Local\Microsoft\WindowsApps;;C:\Users\Matheus Macedo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Program Files\vtex\bin;C:\Users\Matheus Macedo\AppData\Local\Microsoft\WinGet\Packages\Schniz.fnm_Microsoft.Winget.Source_8wekyb3d8bbwe;C:\Users\Matheus Macedo\AppData\Roaming\npm;C:\Users\Matheus Macedo\.deno\bin
 
 Yarn version: 
   1.22.10
 
 Node version: 
-  16.15.0
+  20.17.0
 
 Platform: 
   win32 x64
 
 Trace: 
-  Error: https://seo--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.32+build1731448518/public/@types/dakota.dakota-theme: Request failed "500 Internal Server Error"
+  Error: https://ldevdakota--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.48+build1733757877/public/@types/dakota.dakota-theme: Request failed "500 Internal Server Error"
       at ResponseError.ExtendableBuiltin (C:\Program Files\vtex\client\node_modules\yarn\lib\cli.js:696:66)
       at new ResponseError (C:\Program Files\vtex\client\node_modules\yarn\lib\cli.js:802:124)
       at Request.<anonymous> (C:\Program Files\vtex\client\node_modules\yarn\lib\cli.js:67058:16)
-      at Request.emit (node:events:527:28)
-      at Request.module.exports.Request.onRequestResponse (C:\Program Files\vtex\client\node_modules\yarn\lib\cli.js:141539:10)
-      at ClientRequest.emit (node:events:527:28)
-      at HTTPParser.parserOnIncomingClient (node:_http_client:631:27)
-      at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17)
-      at TLSSocket.socketOnData (node:_http_client:494:22)
-      at TLSSocket.emit (node:events:527:28)
+      at Request.emit (node:events:519:28)
+      at module.exports.Request.onRequestResponse (C:\Program Files\vtex\client\node_modules\yarn\lib\cli.js:141539:10)
+      at ClientRequest.emit (node:events:519:28)
+      at HTTPParser.parserOnIncomingClient (node:_http_client:709:27)
+      at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+      at TLSSocket.socketOnData (node:_http_client:551:22)
+      at TLSSocket.emit (node:events:519:28)
 
 npm manifest: 
   {
@@ -48,7 +48,7 @@ npm manifest:
     "devDependencies": {
       "@types/node": "^18.6.1",
       "@types/react": "^18.0.15",
-      "dakota.dakota-theme": "https://seo--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.32+build1731448518/public/@types/dakota.dakota-theme",
+      "dakota.dakota-theme": "https://ldevdakota--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.48+build1733757877/public/@types/dakota.dakota-theme",
       "vtex.add-to-cart-button": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.30.2/public/@types/vtex.add-to-cart-button",
       "vtex.auth-challenge": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.auth-challenge@1.1.1/public/@types/vtex.auth-challenge",
       "vtex.breadcrumb": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.breadcrumb@1.9.5/public/@types/vtex.breadcrumb",
@@ -64,7 +64,7 @@ npm manifest:
       "vtex.locale-switcher": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.locale-switcher@0.5.6/public/@types/vtex.locale-switcher",
       "vtex.login": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.65.1/public/@types/vtex.login",
       "vtex.mega-menu": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.mega-menu@2.9.1/public/@types/vtex.mega-menu",
-      "vtex.menu": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.menu@2.35.1/public/@types/vtex.menu",
+      "vtex.menu": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.menu@2.35.3/public/@types/vtex.menu",
       "vtex.minicart": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.minicart@2.68.0/public/@types/vtex.minicart",
       "vtex.modal-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.modal-layout@0.14.1/public/@types/vtex.modal-layout",
       "vtex.my-account": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.my-account@1.29.0/public/@types/vtex.my-account",
@@ -88,10 +88,12 @@ npm manifest:
       "vtex.product-review-interfaces": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-review-interfaces@1.0.2/public/_types/react",
       "vtex.product-specification-badges": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-specification-badges@0.3.0/public/@types/vtex.product-specification-badges",
       "vtex.product-specifications": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-specifications@1.1.1/public/@types/vtex.product-specifications",
-      "vtex.product-summary": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.90.1/public/@types/vtex.product-summary",
+      "vtex.product-summary": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.90.2/public/@types/vtex.product-summary",
+      "vtex.product-summary-context": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary-context@0.12.0/public/@types/vtex.product-summary-context",
       "vtex.render-runtime": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.134.11/public/@types/vtex.render-runtime",
       "vtex.responsive-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.responsive-layout@0.1.4/public/@types/vtex.responsive-layout",
       "vtex.rich-text": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.16.0/public/@types/vtex.rich-text",
+      "vtex.search-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.65.0/public/@types/vtex.search-graphql",
       "vtex.search-result": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.134.1/public/@types/vtex.search-result",
       "vtex.shelf": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shelf@1.49.0/public/@types/vtex.shelf",
       "vtex.similar-products-variants": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.similar-products-variants@0.1.1/public/@types/vtex.similar-products-variants",
@@ -99,9 +101,9 @@ npm manifest:
       "vtex.slider-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider-layout@0.24.6/public/@types/vtex.slider-layout",
       "vtex.stack-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.stack-layout@0.1.1/public/@types/vtex.stack-layout",
       "vtex.sticky-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.sticky-layout@0.3.4/public/@types/vtex.sticky-layout",
-      "vtex.store": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store@2.137.3/public/@types/vtex.store",
+      "vtex.store": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store@2.138.0/public/@types/vtex.store",
       "vtex.store-components": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.176.0/public/@types/vtex.store-components",
-      "vtex.store-drawer": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.18.0/public/@types/vtex.store-drawer",
+      "vtex.store-drawer": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.18.1/public/@types/vtex.store-drawer",
       "vtex.store-footer": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-footer@2.27.0/public/@types/vtex.store-footer",
       "vtex.store-form": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-form@0.10.1/public/@types/vtex.store-form",
       "vtex.store-header": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-header@2.29.0/public/@types/vtex.store-header",
@@ -195,9 +197,9 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
     integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
   
-  "dakota.dakota-theme@https://seo--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.32+build1731448518/public/@types/dakota.dakota-theme":
-    version "6.0.32"
-    resolved "https://seo--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.32+build1731448518/public/@types/dakota.dakota-theme#e767b6aaed3280dc0859c94d4ab2b6f5a71ef517"
+  "dakota.dakota-theme@https://ldevdakota--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.48+build1733757877/public/@types/dakota.dakota-theme":
+    version "6.0.48"
+    resolved "https://ldevdakota--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.48+build1733757877/public/@types/dakota.dakota-theme#5b828ba6533eb533ffacb0ee4a0ba102cee00b81"
   
   enquire.js@^2.1.6:
     version "2.1.6"
@@ -408,9 +410,9 @@ Lockfile:
     version "2.9.1"
     resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.mega-menu@2.9.1/public/@types/vtex.mega-menu#24ce483f8190f25a6ee52a9137d566fb60182322"
   
-  "vtex.menu@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.menu@2.35.1/public/@types/vtex.menu":
-    version "2.35.1"
-    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.menu@2.35.1/public/@types/vtex.menu#4f3c5748c116a441904efca1fde31a95415a4808"
+  "vtex.menu@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.menu@2.35.3/public/@types/vtex.menu":
+    version "2.35.3"
+    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.menu@2.35.3/public/@types/vtex.menu#36f6f8bd973275e1c809c8153f41af3bfcb53417"
   
   "vtex.minicart@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.minicart@2.68.0/public/@types/vtex.minicart":
     version "2.68.0"
@@ -504,9 +506,13 @@ Lockfile:
     version "1.1.1"
     resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-specifications@1.1.1/public/@types/vtex.product-specifications#f680211515fcab9f5498804df9402369ef2dabb8"
   
-  "vtex.product-summary@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.90.1/public/@types/vtex.product-summary":
-    version "2.90.1"
-    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.90.1/public/@types/vtex.product-summary#b2efb5e9543511f98da94d1814c0d6a6a6803feb"
+  "vtex.product-summary-context@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary-context@0.12.0/public/@types/vtex.product-summary-context":
+    version "0.12.0"
+    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary-context@0.12.0/public/@types/vtex.product-summary-context#423c6d700447d0a443ca64a5374dc97928727ff0"
+  
+  "vtex.product-summary@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.90.2/public/@types/vtex.product-summary":
+    version "2.90.2"
+    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.90.2/public/@types/vtex.product-summary#e0b1cb6d94fcdccb833cdb91fdf24376545dcc98"
   
   "vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.134.11/public/@types/vtex.render-runtime":
     version "8.134.11"
@@ -519,6 +525,10 @@ Lockfile:
   "vtex.rich-text@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.16.0/public/@types/vtex.rich-text":
     version "0.16.0"
     resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.16.0/public/@types/vtex.rich-text#0cdcaccffb37ae0d025894ba7055f69bc3c9aa30"
+  
+  "vtex.search-graphql@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.65.0/public/@types/vtex.search-graphql":
+    version "0.65.0"
+    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.65.0/public/@types/vtex.search-graphql#5f3d202bb6818842d1be258fa8ca849f5ef386a1"
   
   "vtex.search-result@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.134.1/public/@types/vtex.search-result":
     version "3.134.1"
@@ -552,9 +562,9 @@ Lockfile:
     version "3.176.0"
     resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-components@3.176.0/public/@types/vtex.store-components#aab0c7cdf327d537febab2e1c9e2ac49d92f5de7"
   
-  "vtex.store-drawer@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.18.0/public/@types/vtex.store-drawer":
-    version "0.18.0"
-    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.18.0/public/@types/vtex.store-drawer#cea6548fd2f5cf9a8ba1d2e3040a45aa849ef03d"
+  "vtex.store-drawer@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.18.1/public/@types/vtex.store-drawer":
+    version "0.18.1"
+    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-drawer@0.18.1/public/@types/vtex.store-drawer#6a9c41b35d9f992c7683f2d275c0817271619075"
   
   "vtex.store-footer@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-footer@2.27.0/public/@types/vtex.store-footer":
     version "2.27.0"
@@ -588,9 +598,9 @@ Lockfile:
     version "1.4.3"
     resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-video@1.4.3/public/@types/vtex.store-video#39c9ebc2b1d0edbf3310226b6d93bc1c09091856"
   
-  "vtex.store@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store@2.137.3/public/@types/vtex.store":
-    version "2.137.3"
-    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store@2.137.3/public/@types/vtex.store#c57f68491a538c3754893037420b4b5331820a76"
+  "vtex.store@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store@2.138.0/public/@types/vtex.store":
+    version "2.138.0"
+    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store@2.138.0/public/@types/vtex.store#bc1ef2f3eedc20d042014b815bdc5a4bc390d5a0"
   
   "vtex.styleguide@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.styleguide@9.146.13/public/@types/vtex.styleguide":
     version "9.146.13"

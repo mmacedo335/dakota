@@ -18,11 +18,18 @@ const FaleConoscoOnline: React.FC = () => {
     devolucao: "",
     escolha: "",
     desejo: "",
-    formulario: ""
+    formulario: "",
   };
 
-
   const [formData, setFormData] = useState(initialFormData);
+
+  const entityMap: { [key: string]: string } = {
+    Entrega: "ET",
+    "Formas de pagamento": "FP",
+    "Dúvidas, Críticas, Elogios ou Sugestões": "DE",
+    "Informações sobre o Produto": "IP",
+    "Troca/Devolução": "TD",
+  };
 
   const handleSelectChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     const selectedValue = e.target.value;
@@ -71,7 +78,6 @@ const FaleConoscoOnline: React.FC = () => {
     } else {
       setFormData({ ...formData, [name]: value });
     }
-
   };
 
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
@@ -84,12 +90,18 @@ const FaleConoscoOnline: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
+    const entityCode = entityMap[formData.formulario];
+    if (!entityCode) {
+      console.error("Entidade não encontrada para o formulário selecionado");
+      return;
+    }
+
     const dataToSubmit = {
-      ...formData
+      ...formData,
     };
 
     try {
-      const response = await fetch("/api/dataentities/CA/documents", {
+      const response = await fetch(`/api/dataentities/${entityCode}/documents`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -104,16 +116,17 @@ const FaleConoscoOnline: React.FC = () => {
         const DocumentId = responseData.DocumentId;
 
         if (attachmentFile != null) {
+          const fileFormData = new FormData();
+          fileFormData.append("file", attachmentFile);
 
-          const formData = new FormData();
-
-          await fetch(`/api/dataentities/FL/documents/${DocumentId}/anexo/attachments`, {
-            method: 'POST',
-            body: formData,
-          })
-
+          await fetch(
+            `/api/dataentities/${entityCode}/documents/${DocumentId}/anexo/attachments`,
+            {
+              method: "POST",
+              body: fileFormData,
+            }
+          );
         }
-
       } else {
         console.error("Erro ao enviar o formulário");
       }
@@ -122,32 +135,20 @@ const FaleConoscoOnline: React.FC = () => {
     }
   };
 
-  const formatCPF = (value) => {
-    // Remove todos os caracteres que não são dígitos
-    value = value.replace(/\D/g, '');
-
-    // Aplica a máscara de CPF: 000.000.000-00
-    value = value.replace(/^(\d{3})(\d)/, '$1.$2');
-    value = value.replace(/^(\d{3})\.(\d{3})(\d)/, '$1.$2.$3');
-    value = value.replace(/\.(\d{3})(\d)/, '.$1-$2');
-
+  const formatCPF = (value: string) => {
+    value = value.replace(/\D/g, "");
+    value = value.replace(/^(\d{3})(\d)/, "$1.$2");
+    value = value.replace(/^(\d{3})\.(\d{3})(\d)/, "$1.$2.$3");
+    value = value.replace(/\.(\d{3})(\d)/, ".$1-$2");
     return value;
   };
 
-  const formatPhone = (value) => {
-    // Remove todos os caracteres que não são dígitos
-    value = value.replace(/\D/g, '');
-
-    // Aplica a máscara de telefone: (xx) xxxxx-xxxx 
-    if (value.length <= 2) {
-      return `(${value}`;
-    }
-    if (value.length <= 7) {
-      return `(${value.slice(0, 2)}) ${value.slice(2)}`;
-    }
-    if (value.length <= 11) {
+  const formatPhone = (value: string) => {
+    value = value.replace(/\D/g, "");
+    if (value.length <= 2) return `(${value}`;
+    if (value.length <= 7) return `(${value.slice(0, 2)}) ${value.slice(2)}`;
+    if (value.length <= 11)
       return `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7)}`;
-    }
     return `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7, 11)}`;
   };
 
@@ -338,9 +339,10 @@ const FaleConoscoOnline: React.FC = () => {
     }
   };
 
+
   return (
     <div className="fale-conosco">
-      <select value={selectedOption} onChange={handleSelectChange} >
+      <select value={selectedOption} onChange={handleSelectChange}>
         <option value="">Assunto</option>
         <option value="option1">Entrega</option>
         <option value="option2">Formas de Pagamento</option>
@@ -371,7 +373,6 @@ const FaleConoscoOnline: React.FC = () => {
               required
             />
           </div>
-
           <div>
             <input
               type="text"
@@ -382,7 +383,6 @@ const FaleConoscoOnline: React.FC = () => {
               placeholder="CPF"
             />
           </div>
-
           <div>
             <input
               type="tel"
@@ -393,7 +393,6 @@ const FaleConoscoOnline: React.FC = () => {
               required
             />
           </div>
-
           <div>
             <input
               type="text"
@@ -404,14 +403,14 @@ const FaleConoscoOnline: React.FC = () => {
               placeholder="Número do pedido"
             />
           </div>
-
           {renderForm()}
-
           <button type="submit">Enviar Formulário</button>
         </form>
       )}
 
-      {isFormSubmitted && <p className="success-message">Mensagem enviada com sucesso!</p>}
+      {isFormSubmitted && (
+        <p className="success-message">Mensagem enviada com sucesso!</p>
+      )}
     </div>
   );
 };

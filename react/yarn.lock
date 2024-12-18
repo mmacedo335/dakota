@@ -71,9 +71,9 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
   integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
 
-"dakota.dakota-theme@https://ldevdakota--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.48+build1733757877/public/@types/dakota.dakota-theme":
-  version "6.0.48"
-  resolved "https://ldevdakota--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.48+build1733757877/public/@types/dakota.dakota-theme#5b828ba6533eb533ffacb0ee4a0ba102cee00b81"
+"dakota.dakota-theme@http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.52/public/@types/dakota.dakota-theme":
+  version "6.0.52"
+  resolved "http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.52/public/@types/dakota.dakota-theme#ab40bc013c7c799a23b0a14ab750ab3b395c426f"
 
 enquire.js@^2.1.6:
   version "2.1.6"
@@ -276,9 +276,9 @@ swiper@^11.1.4:
   version "0.5.6"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.locale-switcher@0.5.6/public/@types/vtex.locale-switcher#5db8558af5593d65e4fff3da0903d0081dfcab42"
 
-"vtex.login@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.65.1/public/@types/vtex.login":
-  version "2.65.1"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.65.1/public/@types/vtex.login#5ffb38ed5dd800b20a6202820b135f865df410b8"
+"vtex.login@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.66.0/public/@types/vtex.login":
+  version "2.66.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.login@2.66.0/public/@types/vtex.login#b43620ca5b04d71e7f3823be3f68e77d5ee852bb"
 
 "vtex.mega-menu@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.mega-menu@2.9.1/public/@types/vtex.mega-menu":
   version "2.9.1"
@@ -388,9 +388,9 @@ swiper@^11.1.4:
   version "2.90.2"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.product-summary@2.90.2/public/@types/vtex.product-summary#e0b1cb6d94fcdccb833cdb91fdf24376545dcc98"
 
-"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.134.11/public/@types/vtex.render-runtime":
-  version "8.134.11"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.134.11/public/@types/vtex.render-runtime#0e42a00ac9b26c34b5b18b7a080f7dc3a5ac9959"
+"vtex.render-runtime@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.135.1/public/@types/vtex.render-runtime":
+  version "8.135.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.render-runtime@8.135.1/public/@types/vtex.render-runtime#357ddee2f9249db4209de73b26c43997a5ca4422"
 
 "vtex.responsive-layout@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.responsive-layout@0.1.4/public/@types/vtex.responsive-layout":
   version "0.1.4"

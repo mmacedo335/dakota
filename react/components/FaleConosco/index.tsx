@@ -20,7 +20,7 @@ const DynamicForms: React.FC = () => {
     message: "",
     purchaseDate: "",
     storeName: "",
-    formulario: "" // Campo para armazenar o nome do formulário
+    formulario: "",
   };
 
   const [formData, setFormData] = useState(initialFormData);
@@ -29,9 +29,8 @@ const DynamicForms: React.FC = () => {
     const selectedValue = e.target.value;
     setSelectedOption(selectedValue);
     setIsFormVisible(!!selectedValue);
-    setIsFormSubmitted(false); // Reset the submission state when a new option is selected
+    setIsFormSubmitted(false);
 
-    // Atualiza o campo formulario com base na opção selecionada
     let formularioName = "";
     switch (selectedValue) {
       case "option1":
@@ -69,7 +68,6 @@ const DynamicForms: React.FC = () => {
     }
   };
 
-
   const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
     const file = e.target.files?.[0];
     if (file) {
@@ -80,12 +78,20 @@ const DynamicForms: React.FC = () => {
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
 
-    const dataToSubmit = {
-      ...formData
+    const entityMap: { [key: string]: string } = {
+      "Onde Comprar": "OC",
+      "Elogios, Dúvidas e Sugestões": "ED",
+      "Lojistas e Representantes": "LR",
+      "Reclamações/Críticas": "RC",
     };
 
+    const entity = entityMap[formData.formulario] || "FL";
+    const endpoint = `/api/dataentities/${entity}/documents`;
+
+    const dataToSubmit = { ...formData };
+
     try {
-      const response = await fetch("/api/dataentities/FL/documents", {
+      const response = await fetch(endpoint, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",
@@ -94,25 +100,26 @@ const DynamicForms: React.FC = () => {
       });
 
       if (response.ok) {
-        setFormData(initialFormData);
-        setIsFormSubmitted(true);
         const responseData = await response.json();
-        const DocumentId = responseData.DocumentId;
+        const documentId = responseData.DocumentId;
 
-        if (attachmentFile != null) {
+        if (attachmentFile) {
+          const formDataToSend = new FormData();
+          formDataToSend.append("anexo", attachmentFile);
 
-          const formData = new FormData();
-          formData.append('anexo', attachmentFile);
-
-          await fetch(`/api/dataentities/FL/documents/${DocumentId}/anexo/attachments`, {
-            method: 'POST',
-            body: formData,
-          })
-
+          await fetch(
+            `/api/dataentities/${entity}/documents/${documentId}/anexo/attachments`,
+            {
+              method: "POST",
+              body: formDataToSend,
+            }
+          );
         }
 
+        setFormData(initialFormData);
+        setIsFormSubmitted(true);
       } else {
-        console.error("Erro ao enviar o formulário");
+        console.error("Erro ao enviar o formulário.");
       }
     } catch (error) {
       console.error("Erro na requisição:", error);
@@ -122,51 +129,29 @@ const DynamicForms: React.FC = () => {
   // Funções de mascaras inputs
 
   const formatDate = (value: string) => {
-    // Remove todos os caracteres que não são dígitos
     value = value.replace(/\D/g, "");
-
-    // Aplica a máscara de data: dd/mm/yyyy
-    if (value.length <= 2) {
-      return value;
-    }
-    if (value.length <= 4) {
-      return `${value.slice(0, 2)}/${value.slice(2)}`;
-    }
+    if (value.length <= 2) return value;
+    if (value.length <= 4) return `${value.slice(0, 2)}/${value.slice(2)}`;
     return `${value.slice(0, 2)}/${value.slice(2, 4)}/${value.slice(4, 8)}`;
   };
 
-
-  const formatCNPJ = (value) => {
-    // Remove todos os caracteres que não são dígitos
-    value = value.replace(/\D/g, '');
-
-    // Aplica a máscara de CNPJ: 00.000.000/0000-00
-    value = value.replace(/^(\d{2})(\d)/, '$1.$2');
-    value = value.replace(/^(\d{2})\.(\d{3})(\d)/, '$1.$2.$3');
-    value = value.replace(/\.(\d{3})(\d)/, '.$1/$2');
-    value = value.replace(/(\d{4})(\d)/, '$1-$2');
-
+  const formatCNPJ = (value: string) => {
+    value = value.replace(/\D/g, "");
+    value = value.replace(/^(\d{2})(\d)/, "$1.$2");
+    value = value.replace(/^(\d{2})\.(\d{3})(\d)/, "$1.$2.$3");
+    value = value.replace(/\.(\d{3})(\d)/, ".$1/$2");
+    value = value.replace(/(\d{4})(\d)/, "$1-$2");
     return value;
   };
 
-  const formatPhone = (value) => {
-    // Remove todos os caracteres que não são dígitos
-    value = value.replace(/\D/g, '');
-
-    // Aplica a máscara de telefone: (xx) xxxxx-xxxx
-    if (value.length <= 2) {
-      return `(${value}`;
-    }
-    if (value.length <= 7) {
-      return `(${value.slice(0, 2)}) ${value.slice(2)}`;
-    }
-    if (value.length <= 11) {
+  const formatPhone = (value: string) => {
+    value = value.replace(/\D/g, "");
+    if (value.length <= 2) return `(${value}`;
+    if (value.length <= 7) return `(${value.slice(0, 2)}) ${value.slice(2)}`;
+    if (value.length <= 11)
       return `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7)}`;
-    }
     return `(${value.slice(0, 2)}) ${value.slice(2, 7)}-${value.slice(7, 11)}`;
   };
-
-
 
   const renderForm = () => {
     switch (selectedOption) {
@@ -303,13 +288,14 @@ const DynamicForms: React.FC = () => {
                 required
                 placeholder="Mensagem"
               />
-            </div>
+            </div> 
           </>
         );
       default:
         return null;
     }
   };
+
 
   return (
     <div className="fale-conosco">
@@ -323,69 +309,55 @@ const DynamicForms: React.FC = () => {
 
       {isFormVisible && (
         <form onSubmit={handleSubmit}>
-          <div>
-            <input
-              type="text"
-              name="fullName"
-              value={formData.fullName}
-              onChange={handleInputChange}
-              placeholder="Nome Completo"
-              required
-            />
-          </div>
-          <div>
-            <input
-              type="email"
-              name="email"
-              value={formData.email}
-              onChange={handleInputChange}
-              placeholder="E-mail"
-              required
-            />
-          </div>
-          <div>
-            <input
-              type="tel"
-              name="phone"
-              value={formData.phone}
-              onChange={handleInputChange}
-              placeholder="Telefone"
-              required
-            />
-          </div>
-          <div>
-            <input
-              type="text"
-              name="birthDate"
-              value={formData.birthDate}
-              onChange={handleInputChange}
-              placeholder="Data de Nascimento"
-              required
-            />
-          </div>
-          <div>
-            <input
-              type="text"
-              name="city"
-              value={formData.city}
-              onChange={handleInputChange}
-              required
-              placeholder="Cidade"
-            />
-          </div>
-          <div>
-            <input
-              type="text"
-              name="state"
-              value={formData.state}
-              onChange={handleInputChange}
-              required
-              placeholder="Estado"
-            />
-          </div>
-
+          <input
+            type="text"
+            name="fullName"
+            value={formData.fullName}
+            onChange={handleInputChange}
+            required
+            placeholder="Nome Completo"
+          />
+          <input
+            type="email"
+            name="email"
+            value={formData.email}
+            onChange={handleInputChange}
+            required
+            placeholder="E-mail"
+          />
+          <input
+            type="tel"
+            name="phone"
+            value={formData.phone}
+            onChange={handleInputChange}
+            required
+            placeholder="Telefone"
+          />
+          <input
+            type="text"
+            name="birthDate"
+            value={formData.birthDate}
+            onChange={handleInputChange}
+            required
+            placeholder="Data de Nascimento"
+          />
+          <input
+            type="text"
+            name="city"
+            value={formData.city}
+            onChange={handleInputChange}
+            required
+            placeholder="Cidade"
+          />
+          <input
+            type="text"
+            name="state"
+            value={formData.state}
+            onChange={handleInputChange}
+            required
+            placeholder="Estado"
+          />
           {renderForm()}
-
           <button type="submit">Enviar Formulário</button>
         </form>
       )}
@@ -396,4 +368,3 @@ const DynamicForms: React.FC = () => {
 };
 
 export default DynamicForms;
- 
