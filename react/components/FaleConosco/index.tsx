@@ -5,7 +5,7 @@ const DynamicForms: React.FC = () => {
   const [selectedOption, setSelectedOption] = useState<string>("");
   const [isFormVisible, setIsFormVisible] = useState<boolean>(false);
   const [isFormSubmitted, setIsFormSubmitted] = useState<boolean>(false);
-  const [attachmentFile, setAttachmentFile] = useState<File | null>(null);
+  const [attachmentFiles, setAttachmentFiles] = useState<File[]>([]);
 
   const initialFormData = {
     fullName: "",
@@ -68,10 +68,12 @@ const DynamicForms: React.FC = () => {
     }
   };
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>, index: number) => {
     const file = e.target.files?.[0];
     if (file) {
-      setAttachmentFile(file);
+      const updatedFiles = [...attachmentFiles];
+      updatedFiles[index] = file;
+      setAttachmentFiles(updatedFiles);
     }
   };
 
@@ -103,20 +105,23 @@ const DynamicForms: React.FC = () => {
         const responseData = await response.json();
         const documentId = responseData.DocumentId;
 
-        if (attachmentFile) {
-          const formDataToSend = new FormData();
-          formDataToSend.append("anexo", attachmentFile);
+        for (const file of attachmentFiles) {
+          if (file) {
+            const formDataToSend = new FormData();
+            formDataToSend.append("anexo", file);
 
-          await fetch(
-            `/api/dataentities/${entity}/documents/${documentId}/anexo/attachments`,
-            {
-              method: "POST",
-              body: formDataToSend,
-            }
-          );
+            await fetch(
+              `/api/dataentities/${entity}/documents/${documentId}/anexo/attachments`,
+              {
+                method: "POST",
+                body: formDataToSend,
+              }
+            );
+          }
         }
 
         setFormData(initialFormData);
+        setAttachmentFiles([]);
         setIsFormSubmitted(true);
       } else {
         console.error("Erro ao enviar o formulário.");
@@ -127,7 +132,6 @@ const DynamicForms: React.FC = () => {
   };
 
   // Funções de mascaras inputs
-
   const formatDate = (value: string) => {
     value = value.replace(/\D/g, "");
     if (value.length <= 2) return value;
@@ -156,23 +160,52 @@ const DynamicForms: React.FC = () => {
   const renderForm = () => {
     switch (selectedOption) {
       case "option1":
+      case "option4":
         return (
-          <div>
-            <input
-              type="text"
-              name="productReference"
-              value={formData.productReference}
-              onChange={handleInputChange}
-              required
-              placeholder="Referência do produto"
-            />
-            <div className="anexo">
+          <>
+            <div>
               <input
-                type="file"
-                name="attachment"
-                onChange={handleFileChange}
+                type="text"
+                name="productReference"
+                value={formData.productReference}
+                onChange={handleInputChange}
+                required
+                placeholder="Referência do produto"
               />
             </div>
+            {selectedOption === "option4" && (
+              <>
+                <div>
+                  <input
+                    type="text"
+                    name="purchaseDate"
+                    value={formData.purchaseDate}
+                    onChange={handleInputChange}
+                    required
+                    placeholder="Data da Compra"
+                  />
+                </div>
+                <div>
+                  <input
+                    type="text"
+                    name="storeName"
+                    value={formData.storeName}
+                    onChange={handleInputChange}
+                    required
+                    placeholder="Nome e endereço da loja"
+                  />
+                </div>
+              </>
+            )}
+            {[0, 1, 2].map((index) => (
+              <div className="anexo" key={index}>
+                <input 
+                  type="file"
+                  name={`attachment${index}`}
+                  onChange={(e) => handleFileChange(e, index)}
+                />
+              </div>
+            ))}
             <div>
               <textarea
                 name="message"
@@ -182,7 +215,7 @@ const DynamicForms: React.FC = () => {
                 placeholder="Mensagem"
               />
             </div>
-          </div>
+          </>
         );
       case "option2":
         return (
@@ -240,62 +273,10 @@ const DynamicForms: React.FC = () => {
             </div>
           </>
         );
-      case "option4":
-        return (
-          <>
-            <div>
-              <input
-                type="text"
-                name="productReference"
-                value={formData.productReference}
-                onChange={handleInputChange}
-                required
-                placeholder="Referência do produto"
-              />
-            </div>
-            <div>
-              <input
-                type="text"
-                name="purchaseDate"
-                value={formData.purchaseDate}
-                onChange={handleInputChange}
-                required
-                placeholder="Data da Compra"
-              />
-            </div>
-            <div>
-              <input
-                type="text"
-                name="storeName"
-                value={formData.storeName}
-                onChange={handleInputChange}
-                required
-                placeholder="Nome e endereço da loja"
-              />
-            </div>
-            <div className="anexo">
-              <input
-                type="file"
-                name="attachment"
-                onChange={handleFileChange}
-              />
-            </div>
-            <div>
-              <textarea
-                name="message"
-                value={formData.message}
-                onChange={handleInputChange}
-                required
-                placeholder="Mensagem"
-              />
-            </div> 
-          </>
-        );
       default:
         return null;
     }
   };
-
 
   return (
     <div className="fale-conosco">
@@ -352,17 +333,16 @@ const DynamicForms: React.FC = () => {
           <input
             type="text"
             name="state"
-            value={formData.state}
+            value={formData.state} 
             onChange={handleInputChange}
             required
             placeholder="Estado"
           />
           {renderForm()}
-          <button type="submit">Enviar Formulário</button>
+          <button type="submit">Enviar</button>
         </form>
       )}
-
-      {isFormSubmitted && <p className="success-message">Mensagem enviada com sucesso!</p>}
+      {isFormSubmitted && <p className="success-message">Formulário enviado com sucesso!</p>}
     </div>
   );
 };

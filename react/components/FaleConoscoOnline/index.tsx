@@ -5,7 +5,7 @@ const FaleConoscoOnline: React.FC = () => {
   const [selectedOption, setSelectedOption] = useState<string>("");
   const [isFormVisible, setIsFormVisible] = useState<boolean>(false);
   const [isFormSubmitted, setIsFormSubmitted] = useState<boolean>(false);
-  const [attachmentFile, setAttachmentFile] = useState<File | null>(null);
+  const [attachmentFile, setAttachmentFile] = useState<File[]>([]);
   const [subOption, setSubOption] = useState<string>("");
 
   const initialFormData = {
@@ -80,10 +80,12 @@ const FaleConoscoOnline: React.FC = () => {
     }
   };
 
-  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+  const handleFileChange = (e: React.ChangeEvent<HTMLInputElement>, index: number) => {
     const file = e.target.files?.[0];
     if (file) {
-      setAttachmentFile(file);
+      const updatedFiles = [...attachmentFile];
+      updatedFiles[index] = file;
+      setAttachmentFile(updatedFiles);
     }
   };
 
@@ -115,17 +117,19 @@ const FaleConoscoOnline: React.FC = () => {
         const responseData = await response.json();
         const DocumentId = responseData.DocumentId;
 
-        if (attachmentFile != null) {
-          const fileFormData = new FormData();
-          fileFormData.append("file", attachmentFile);
+        for (const file of attachmentFile) {
+          if (file) {
+            const formDataToSend = new FormData();
+            formDataToSend.append("anexo", file);
 
-          await fetch(
-            `/api/dataentities/${entityCode}/documents/${DocumentId}/anexo/attachments`,
-            {
-              method: "POST",
-              body: fileFormData,
-            }
-          );
+            await fetch(
+              `/api/dataentities/${entityCode}/documents/${DocumentId}/anexo/attachments`,
+              {
+                method: "POST",
+                body: formDataToSend,
+              }
+            );
+          }
         }
       } else {
         console.error("Erro ao enviar o formulário");
@@ -169,13 +173,15 @@ const FaleConoscoOnline: React.FC = () => {
         );
       case "subOption2":
         return (
-          <div className="anexo">
-            <input
-              type="file"
-              name="attachment"
-              onChange={handleFileChange}
-            />
-          </div>
+          [0, 1, 2].map((index) => (
+            <div className="anexo" key={index}>
+              <input
+                type="file"
+                name={`attachment${index}`}
+                onChange={(e) => handleFileChange(e, index)}
+              />
+            </div>
+          ))
         );
       case "subOption3":
         return (
@@ -196,13 +202,15 @@ const FaleConoscoOnline: React.FC = () => {
         );
       case "subOption4":
         return (
-          <div className="anexo">
-            <input
-              type="file"
-              name="attachment"
-              onChange={handleFileChange}
-            />
-          </div>
+          [0, 1, 2].map((index) => (
+            <div className="anexo" key={index}>
+              <input
+                type="file"
+                name={`attachment${index}`}
+                onChange={(e) => handleFileChange(e, index)}
+              />
+            </div>
+          ))
         );
       default:
         return null;
@@ -241,13 +249,15 @@ const FaleConoscoOnline: React.FC = () => {
       case "option3":
         return (
           <>
-            <div className="anexo">
-              <input
-                type="file"
-                name="attachment"
-                onChange={handleFileChange}
-              />
-            </div>
+            {[0, 1, 2].map((index) => (
+              <div className="anexo" key={index}>
+                <input
+                  type="file"
+                  name={`attachment${index}`}
+                  onChange={(e) => handleFileChange(e, index)}
+                />
+              </div>
+            ))}
             <div>
               <textarea
                 name="message"
@@ -262,13 +272,15 @@ const FaleConoscoOnline: React.FC = () => {
       case "option4":
         return (
           <>
-            <div className="anexo">
-              <input
-                type="file"
-                name="attachment"
-                onChange={handleFileChange}
-              />
-            </div>
+            {[0, 1, 2].map((index) => (
+              <div className="anexo" key={index}>
+                <input
+                  type="file"
+                  name={`attachment${index}`}
+                  onChange={(e) => handleFileChange(e, index)}
+                />
+              </div>
+            ))}
             <div>
               <textarea
                 name="message"
