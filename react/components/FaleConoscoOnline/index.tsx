@@ -64,7 +64,24 @@ const FaleConoscoOnline: React.FC = () => {
 
   const handleSubOptionChange = (e: React.ChangeEvent<HTMLSelectElement>) => {
     setSubOption(e.target.value);
-  };
+
+    if(e.target.value == "subOption1"){
+      setFormData({ ...formData, ["escolha"]: "Troca de Numeração"});   
+    }else if(e.target.value == "subOption2"){
+      setFormData({ ...formData, ["escolha"]: "Produto com Defeito"});  
+    }else if(e.target.value == "subOption3"){
+      setFormData({ ...formData, ["escolha"]: "Recebi o produto errado"});  
+    }else if(e.target.value == "subOption4"){
+      setFormData({ ...formData, ["escolha"]: "Produto não ficou bom"});  
+    }else{
+      setFormData({ ...formData, ["escolha"]: ""});  
+    }
+    
+  }; 
+
+  React.useEffect(() => {
+    console.log('FormData atualizado:', formData);
+  }, [formData]);
 
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
@@ -162,11 +179,11 @@ const FaleConoscoOnline: React.FC = () => {
         return (
           <div className="options">
             <label>
-              <input type="radio" name="escolha" value="Calçado ficou grande" onChange={handleInputChange} />
+              <input type="radio" name="escolha" value="Troca de Numeração - Calçado ficou grande" onChange={handleInputChange} />
               Calçado ficou grande
             </label>
             <label>
-              <input type="radio" name="escolha" value="Calçado ficou pequeno" onChange={handleInputChange} />
+              <input type="radio" name="escolha" value="Troca de Numeração - Calçado ficou pequeno" onChange={handleInputChange} />
               Calçado ficou pequeno
             </label>
           </div>
@@ -187,15 +204,15 @@ const FaleConoscoOnline: React.FC = () => {
         return (
           <div className="options">
             <label>
-              <input type="radio" name="escolha" value="Tamanho errado" onChange={handleInputChange} />
+              <input type="radio" name="escolha" value="Recebi o produto errado - Tamanho errado" onChange={handleInputChange} />
               Tamanho errado
             </label>
             <label>
-              <input type="radio" name="escolha" value="Modelo errado" onChange={handleInputChange} />
+              <input type="radio" name="escolha" value="Recebi o produto errado - Modelo errado" onChange={handleInputChange} />
               Modelo errado
             </label>
             <label>
-              <input type="radio" name="escolha" value="Produto diferente do site (foto ou descrição)" />
+              <input type="radio" name="escolha" value="Recebi o produto errado - Produto diferente do site (foto ou descrição)" />
               Produto diferente do site (foto ou descrição)
             </label>
           </div>
@@ -216,7 +233,6 @@ const FaleConoscoOnline: React.FC = () => {
         return null;
     }
   };
-
 
   const renderForm = () => {
     switch (selectedOption) {
