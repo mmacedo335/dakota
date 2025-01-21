@@ -34,6 +34,10 @@
   "store.custom#cadastro-bf": {
     "path": "/cadastro-bf",
     "isSitemapEntry": true
+  },
+  "store.custom#mapa-do-site": {
+    "path": "/mapa-do-site",
+    "isSitemapEntry": true
   }
 }
 
