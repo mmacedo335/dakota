@@ -320,8 +320,8 @@
   },
   "flex-layout.col#product-frete": {
     "children": [
-      "shipping-simulator"
-      // "custom-ship-pdp"
+      // "shipping-simulator"
+      "custom-ship-pdp"
     ]
   },
   "responsive-layout.desktop#beneficios": {
