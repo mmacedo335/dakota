@@ -1,0 +1,8 @@
+{
+    "store.custom#mapa-do-site": {
+    "blocks": ["rich-text#lp__text"]
+  },
+    "rich-text#lp__text": {
+    "title": "Lista map do site"
+  }
+}
