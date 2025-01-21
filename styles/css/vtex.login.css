@@ -173,3 +173,12 @@
         min-width: 20rem;
     }
 } 
+
+
+/* :global(.vtex-wish-list-1-x-fill){
+    background-image: url('data:image/svg+xml;utf,<?xml version="1.0" encoding="UTF-8"?><svg id="Layer_1" data-name="Layer 1" fill="#db3d68" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><title>heart-glyph</title><path d="M362.67,21.33A149,149,0,0,0,256,66.19,149,149,0,0,0,149.33,21.33C67,21.33,0,88.32,0,170.67a148.45,148.45,0,0,0,43.08,104.9L240.51,484a21.33,21.33,0,0,0,31,0L468.75,275.74A148.45,148.45,0,0,0,512,170.67C512,88.32,445,21.33,362.67,21.33Z"/></svg>') !important;
+} */
+
+:global(.vtex-wish-list-1-x-outline){
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='20' viewBox='0 0 24 20' fill='none'%3e%3cpath d='M12.3793 19C12.3793 19 1.92383 13.2727 1.92383 6.52273C1.92383 5.05801 2.49579 3.65328 3.51389 2.61757C4.53199 1.58186 5.91284 1 7.35265 1C9.62371 1 11.569 2.25898 12.3793 4.27273C13.1896 2.25898 15.135 1 17.406 1C18.8458 1 20.2267 1.58186 21.2448 2.61757C22.2629 3.65328 22.8348 5.05801 22.8348 6.52273C22.8348 13.2727 12.3793 19 12.3793 19Z' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e") !important;
+}

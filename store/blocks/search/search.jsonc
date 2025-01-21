@@ -242,6 +242,16 @@
       "blockClass": "searchinfomobile"
     }
   },
+
+  "sticky-layout#searchFilter":{
+    "props": {
+      "position": "top",
+      "blockClass":"sticky-filter-mobile"
+    },
+    "children":[
+      "flex-layout.row#searchinfomobile"
+    ]
+  },
   "flex-layout.col#orderByMobile": {
     "children": [
       "order-by.v2"

@@ -4,7 +4,8 @@
     "children": [
       "flex-layout.row#search-banner-mobile",
       "flex-layout.row#searchbreadMobile",
-      "flex-layout.row#searchinfomobile",
+      // "flex-layout.row#searchinfomobile",
+      "sticky-layout#searchFilter",
       "flex-layout.row#productCountMobile",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#contentmobile",

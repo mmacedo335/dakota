@@ -6,7 +6,8 @@
   z-index: 5;
   position: relative;
   padding: 8px 10px;
-  height: 39px;
+  height: 42px;
+  margin-top:-2px
 }
 
 .orderByButton .filterPopupTitle {

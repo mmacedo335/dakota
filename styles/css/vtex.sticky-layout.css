@@ -1,3 +1,13 @@
 .wrapper--sticky-header:not(.wrapper--sticky-header--stuck) :global(.vtex-flex-layout-0-x-flexRow--topo-menu-flutuante) {
     display: none;
 } 
+.wrapper--sticky-filter-mobile{
+    height: auto !important;
+}
+.wrapper--sticky-filter-mobile--stuck  .container--sticky-filter-mobile{
+    top: 170px !important;
+    background: #fff;
+    padding: 0 0 10px;
+}
+
+

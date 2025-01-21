@@ -72,7 +72,7 @@
     transition: all .5s linear;
     text-align: center;
     z-index: 99;
-    bottom: 0;
+    bottom: 70px !important;
 }
 
 .imageElementLink--redes-sociais {
@@ -432,7 +432,7 @@
 
     .imageElementLink--whats-flutuante {
         padding: 0px;
-        bottom: 10px;
+        bottom: 90px !important;
         right: 10px;
     }
 }

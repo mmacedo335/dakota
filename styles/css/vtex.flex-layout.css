@@ -338,7 +338,7 @@
 }
 
 .flexColChild--buy-button-whislist-rigth :global(.vtex-button__label)::after {
-    content: 'Inserir na Lista de Desejos';
+    content: 'Salvar para mais tarde';
     display: block;
     letter-spacing: 0.05em;
     color: #222222;

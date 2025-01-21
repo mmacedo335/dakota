@@ -1,0 +1,125 @@
+ 
+  .title {
+    font-size: 14px;
+    display: block;
+    color: #222222;
+    text-transform: uppercase;
+    font-family: 'Larsseit Medium';
+    letter-spacing: 0.05em;
+    margin-left: 8px;
+    font-weight: 500;
+  }
+  
+  .inputContainer {
+    display: flex;
+    margin-bottom: 15px;
+    justify-content: space-between;
+  }
+  
+  .input {
+    background: #FFF;
+    height: 45px;
+    border: 1.5px solid #EEEEEE;
+    border-radius: 3px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 22px;
+    color: #989898;
+    width: calc(100% - 88px);
+    padding: 0 0 0 10px;
+  }
+
+  .loading{
+    margin: 12px 0 0;
+  }
+  
+  .button {
+    width: 80px;
+    height: 45px;
+    background: #222222;
+    border: 1.5px solid #000000;
+    border-radius: 3px;
+    color:#fff;
+    cursor: pointer;
+    font-weight: bold;
+    position: relative;
+  }
+
+  .button:active,
+  .button:focus {
+    outline: none; /* Remove o contorno */
+    transform: translateY(0); /* Garante que não haja movimento no clique */
+  }
+  
+  .description {
+    margin-bottom: 15px;
+    font-size: 14px;
+  }
+  
+  .option {
+    display: block;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-size: 14px;
+  }
+
+  .boxInput{
+    display: flex;
+    align-items: center;
+    gap:4px
+  }
+  
+  .radio {
+    margin-right: 6px;
+    width: 18px;
+    height: 18px;
+  }
+
+  .shippingCard{
+    margin: 12px 0;
+    padding: 12px 8px;
+  }
+
+  .shippingCard_value{
+    padding: 0 0 0 35px;
+  }
+  
+  .coluna1{
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 12px;
+  }
+
+
+  .shipping_cepLink{
+    color: #000;
+    font-size: 14px;
+    font-family: 'Larsseit Medium';
+    margin-left: 8px;
+  }
+
+
+  .dotsAnimation {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #8B0000; 
+    border-top: 1px solid transparent;
+    animation: spin 0.2s linear infinite; 
+  }
+  
+  @keyframes spin {
+    0% {
+      transform: rotate(0deg);
+    }
+    100% {
+      transform: rotate(360deg);
+    }
+  }
+  
+  .button.loading {
+    cursor: not-allowed;
+    background-color: #000;
+    margin: 0 0 0;
+  }
