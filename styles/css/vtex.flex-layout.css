@@ -593,6 +593,7 @@
 .flexRow--img-seguranca :global(.vtex-store-components-3-x-imageElement) {
     display: block;
     width: 100%;
+    max-height: 90px!important;
 }
 
 .flexRowContent--footer-seguranca.flexRowContent--mobile .flexCol--seguranca {
