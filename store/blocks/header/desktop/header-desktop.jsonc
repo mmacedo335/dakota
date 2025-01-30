@@ -9,7 +9,8 @@
       "flex-layout.row#header-menu",
       "shared-cart",
       "modal-privacidade",
-      "modal-newsletter"
+      "modal-newsletter",
+      "input-helmet"
     ]
   }
 }

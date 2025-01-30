@@ -18,6 +18,7 @@
   "flex-layout.col#search-topo": {
     "title": "Topo listagem",
     "children": [
+      "rich-text#title-pagina",
       "breadcrumb.search",
       "flex-layout.row#searchtitle",
       "quick-filter-category"
@@ -35,6 +36,13 @@
     ],
     "props": {
       "horizontalAlign": "center"
+    }
+  },
+  "rich-text#title-pagina": {
+    "title":"Title Pagina",
+    "props": {
+      "text": "",
+      "blockClass": "title-da-pagina"
     }
   }
 }
