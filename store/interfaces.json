@@ -86,5 +86,8 @@
   },
   "custom-ship-pdp":{
     "component":"CustomShip"
+  },
+  "alert-minicart":{
+    "component": "AlertMinicart"
   }
 }

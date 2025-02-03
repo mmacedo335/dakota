@@ -1,0 +1,84 @@
+.notification {
+    background-color: #FFEDF2;
+    padding: 24px 16px 16px;
+    border-radius: 8px;
+    width:100%;
+    max-width:300px;
+    margin: 12px auto 0;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.notificationContent{
+    display: flex;
+    gap: 6px;
+    align-items: flex-start;
+    text-align: center;
+    position: relative;
+}
+
+.notificationTitle {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    color: #DB3D68;
+    margin: 0;
+}
+
+.notificationTitle strong{
+    font-weight: 700;
+}
+
+.notificationMessage {
+    color: #222222;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    text-align: center;
+    text-underline-position: from-font;
+    text-decoration-skip-ink: none;
+    margin: 0;
+}
+
+.notificationMessage strong{
+    font-weight: 700;
+}
+
+.closeButton {
+    background: none;
+    border: 1px solid #DB3D68;
+    padding: 4px;
+    color: #DB3D68;
+    cursor: pointer;
+    font-size: 5px;
+    border-radius: 50%;
+    transition: color 0.2s ease;
+    position: absolute;
+    top: -10px;
+    right: 0;
+    width: 20px;
+    height: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.close-button:hover {
+    color: #4b5563;
+}
+
+@keyframes shake {
+    0%, 100% { transform: translateX(0); }
+    10%, 30%, 50%, 70%, 90% { transform: translateX(-4px); }
+    20%, 40%, 60%, 80% { transform: translateX(4px); }
+}
+
+.shake {
+    animation: shake 0.8s ease-in-out;
+}
+
+@media(max-width:480px){
+    .notification{
+        max-width: 270px;
+    }
+}
