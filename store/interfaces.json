@@ -89,5 +89,8 @@
   },
   "alert-minicart":{
     "component": "AlertMinicart"
+  },
+  "input-helmet": {
+      "component": "InputHelmet"
   }
 }

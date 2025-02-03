@@ -771,6 +771,10 @@
     .flexRow--search-banner-desktop{
       display: none;
     }
+
+    .flexRow--search-topo {
+      display: none;
+   }
 }
 
 @media(min-width: 1000px){
@@ -782,3 +786,13 @@
     display: block;
   }
 }
+
+.flexRowContent--seo-category{
+  display: flex;
+  flex-direction: column;
+}
+
+.flexRowContent--seo-category :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
+  width: 100% !important;
+}
+

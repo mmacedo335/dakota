@@ -67,6 +67,10 @@
     height: 40px;
 }
 
+.paragraph--title-da-pagina{
+  display: none;
+}
+
 .paragraph--texto-home {
     font-size: 14px;
     margin: .55em 0;
@@ -79,7 +83,7 @@
 .heading--texto-home {
     margin: 15px auto;
     font-size: 14px;
-} 
+}
 
 .paragraph--newsletter-text-privacidade {
     font-size: .875rem;
@@ -443,7 +447,7 @@
 :global(.vtex-flex-layout-0-x-flexRowContent--lp__container) .paragraph .strong {
     color: #db3d68;
     font-family: Larsseit Medium;
-    font-weight: 700; 
+    font-weight: 700;
 }
 
 :global(.vtex-flex-layout-0-x-flexRowContent--lp__container) .paragraph {
@@ -455,5 +459,5 @@
 :global(.vtex-flex-layout-0-x-flexRowContent--lp__container) .headingLevel2 .strong {
     color: #db3d68;
     font-family: Larsseit Medium;
-    font-weight: 700; 
+    font-weight: 700;
 }
