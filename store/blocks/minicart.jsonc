@@ -180,6 +180,7 @@
     ],
     "children": [
       "flex-layout.row#minicart-header",
+      "alert-minicart",
       "minicart-product-list",
       "flex-layout.row#minicart-footer"
     ]

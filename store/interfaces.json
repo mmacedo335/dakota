@@ -87,6 +87,9 @@
   "custom-ship-pdp":{
     "component":"CustomShip"
   },
+  "alert-minicart":{
+    "component": "AlertMinicart"
+  },
   "input-helmet": {
       "component": "InputHelmet"
   }
