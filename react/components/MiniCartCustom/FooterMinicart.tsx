@@ -23,7 +23,7 @@ function FooterMiniCart() {
         setFinalValue(finalCalculatedValue);
         setPriceParcel(parcelPrice);
         setQuantityParcel(quantity);
-        console.log('Total do carrinho:', totalValue);console.log('Valor do desconto:', discountValue);console.log('Valor final PIX:', finalCalculatedValue);
+        console.log('Total do carrinho :', totalValue);console.log('Valor do desconto:', discountValue);console.log('Valor final PIX:', finalCalculatedValue);
         console.log("OrderForm", orderFormContext?.orderForm);
         console.log("installmentOptions", installmentOptions);
         console.log("quantityParcel", quantity);
@@ -67,3 +67,4 @@ function FooterMiniCart() {
     );
 }
 export default FooterMiniCart;
+
