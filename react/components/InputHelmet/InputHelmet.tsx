@@ -33,6 +33,7 @@ function InputHelmet() {
       {titlePagina && (
         <Helmet>
           <title>{titlePagina}</title>
+          <script type="text/partytown" async src="https://www.googletagmanager.com/gtm.js?id=GTM-KTQZW3R"></script>
         </Helmet>
       )}
     </>
