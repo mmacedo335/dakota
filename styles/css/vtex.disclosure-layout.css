@@ -1,3 +1,26 @@
+.trigger--disclosure-botao-descricao {
+    background: none;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    border-bottom: 1px solid #E7E7E9 !important;
+    margin-bottom: 20px;
+}
+.trigger--disclosure-botao-descricao::after {
+    content: '';
+    border: solid #DB3D68;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+}
+.trigger--disclosure-botao-descricao--visible::after {
+    transform: rotate(225deg);
+    -webkit-transform: rotate(225deg);
+}
+
 .trigger {
     cursor: pointer;
     border: none;
