@@ -246,7 +246,7 @@
       "product-selling-price#summary",
       "product-installments#summary",
       "sku-selector",
-      "modal-trigger#guia-tamanhos",
+      "condition-layout.product#modal-guia",
       "alert-item-quantity",
       "flex-layout.row#product-similar",
       "responsive-layout.desktop#buy-button",
@@ -265,6 +265,38 @@
     "children": [
       "similar-products-variants"
     ]
+  },
+  "condition-layout.product#modal-guia": {
+    "props": {
+      "conditions": [
+        {
+          "subject": "categoryTree",
+          "arguments": {
+            "id": "13"
+          }
+        },
+        {
+          "subject": "categoryTree",
+          "arguments": {
+            "id": "2"
+          }
+        },
+        {
+          "subject": "categoryTree",
+          "arguments": {
+            "id": "15"
+          }
+        },
+        {
+          "subject": "categoryTree",
+          "arguments": {
+            "id": "11"
+          }
+        }
+      ],
+      "matchType": "any",
+      "Then": "modal-trigger#guia-tamanhos"
+    }
   },
   "modal-trigger#guia-tamanhos": {
     "title": "Guia de tamanhos",

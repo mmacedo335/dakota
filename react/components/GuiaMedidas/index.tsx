@@ -1,7 +1,9 @@
 import React from "react";
 import "./SizeGuide.css";
 
+
 const GuiaMedidas: React.FC = () => {
+  
   return (
     <div className="guia-tamanhos">
       <h4>DESCUBRA SEU TAMANHO</h4>

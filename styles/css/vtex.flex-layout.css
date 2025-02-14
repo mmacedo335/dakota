@@ -585,7 +585,7 @@
 
 .flexRow--menuHeader {
     width: 100%;
-    height: calc(100vh - 200px);
+    height: calc(100vh - 50px);
     overflow: auto;
     margin-bottom: 25px;
 }
