@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@builder.io/partytown": "^0.10.3",
+    "react-helmet": "^6.1.0"
+  }
+}
