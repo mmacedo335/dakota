@@ -17,13 +17,11 @@
   transition: color 0.3s ease;
   text-transform: uppercase;
   letter-spacing: 2px;
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 800;
   justify-content: space-between;
   width: 100%;
   margin: 0;
-  padding-top: 10px;
-  padding-bottom: 10px;
   color: black;
 }
 
@@ -35,7 +33,7 @@
   font-weight: 500;
   text-decoration: unset;
   text-transform: capitalize;
-  font-size: 17px;
+  font-size: 14px;
   font-family: 'Larsseit Regular';
   margin: 0px 0;
   letter-spacing: 0.5px;
@@ -43,7 +41,7 @@
 
 .titleSubMenu {
   display: block;
-  margin-bottom: 30px;
+  margin-bottom: 8px;
   font-size: 20px;
   text-transform: uppercase;
   font-family: 'Larsseit Extra Bold';
@@ -61,7 +59,9 @@
 .submenuToggleIcon::after {
   content: ">";
   display: block;
-  font-size: 32px;
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
   font-family: monospace;
   color: #000;
   font-weight: 400;
@@ -80,7 +80,9 @@
 .close:before {
   content: "<";
   display: block;
-  font-size: 22px;
+  font-size: 16px;
+  width: 16px;
+  height: 16px;
   font-family: monospace;
   color: #000;
   font-weight: 400;
@@ -94,7 +96,8 @@
 .close {
   position: absolute;
   z-index: 99;
-  top: 30px;
+  /* top: 67px; */
+  top: 85px;
   display: flex;
   align-items: center;
   gap: 8px;
@@ -124,6 +127,9 @@
   display: block;
   width: 100%;
   margin-top: 85px;
+  flex-direction: column;
+  display: flex;
+  gap: 12px;
 }
 
 .wrapper.activeMenuItem .menuItem:not(.activeMenuItem) {
@@ -135,11 +141,20 @@
 }
 
 .submenuWrapper {
-  display: block;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
   list-style: none;
   padding: 0;
+}
 
+.menuItem {
+  border-bottom: 1px solid #EEEEEE;
+}
 
+p.menuLink{
+  padding: 0 0 2px;
+  margin: 0 0 8px;
 }
 
 .submenuWrapper.level-2 {
@@ -164,6 +179,7 @@
   flex-direction: column;
   align-items: flex-start;
   padding: 0px 30px;
+  margin: 15px 0 0;
 }
 
 .submenuContainer {
@@ -206,12 +222,153 @@
 }
 
 .topoMenu {
+    display: flex  ;
+    width: 100%;
+    text-align: center;
+    background: white;
+    position: absolute;
+    top: 0px;
+    padding: 20px;
+    border-bottom: 1px solid #EEEEEE;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 12px;
+}
+
+.linkMenu,
+.linkRegister{
+  font-family: 'Larsseit Medium';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 15.95px;
+  letter-spacing: 10%;
+  color: #DB3D68;
+  text-decoration: none;
+}
+
+.menuMarca{
+  background: #EEEEEE;
+  padding: 20px 30px;
+  display: none;
+}
+
+.menuMarcaTitle{
+  font-family: 'Larsseit Medium';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 15.95px;
+  margin: 0;
+  color: #222222;
+  text-transform: uppercase;
+}
+
+.menuMarcaBox{
+  display: flex;
+  flex-wrap: wrap;
+  margin: 12px 0 0;
+  gap: 4px;
+  justify-content: space-between;
+}
+
+.menuMarcaLink{
   display: block;
   width: 100%;
-  text-align: center;
-  background: white;
+  max-width: 47%;
+}
+
+.menuMarcaImg{
+  width: 100%;
+  max-width: 100%;
+}
+
+
+.menuInst{
+  padding: 0 30px;
+  display: none;
+}
+
+.menuInstList{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 0;
+}
+
+.menuInstItem{
+  list-style-type: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+}
+
+.menuToSub{
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.menuInstSpan{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-family: 'Larsseit Medium';
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 15.95px;
+  letter-spacing: 10%;
+  color: #222222;
+}
+
+.menuInstLink{
+  font-family: 'Larsseit Medium';
+  font-weight: 500;
+  font-size: 16px;
+  text-transform: uppercase;
+  line-height: 15.95px;
+  letter-spacing: 10%;
+  color: #222222;
+  text-decoration: none;
+}
+
+.subMenuInstList{
+  list-style-type:none;
+}
+
+.subMenuInst {
+  padding: 0 0 0 30px;
+  flex-direction: column;
+  gap: 8px;
+  margin: 12px 0 0;
+  display: none;
+}
+.activeClass{
+  display: flex;
+}
+
+.subMenuLink {
+  font-family: 'Larsseit Medium';
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 15.95px;
+  color: #222222;
+  text-decoration: none;
+}
+
+.subMenuIcon{
+  position: relative;
+  width: 100%;
+  max-width: 15px;
+  height: 15px;
+  display: flex
+;
+  align-items: center;
+  justify-content: center;
+}
+
+.iconPlus,
+.iconMinus{
   position: absolute;
-  top: 0px;
-  padding: 20px;
-  border-bottom: 1px solid #EEEEEE;
+  top:0;
+  left:0;
 }

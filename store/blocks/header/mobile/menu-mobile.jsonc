@@ -2,8 +2,8 @@
   "drawer": {
     "title": "Menu categorias",
     "children": [
-      "flex-layout.row#menu-header-mobile",  
-      "challenge-block#login-menu-mobile"  
+      "flex-layout.row#menu-header-mobile"
+      // "challenge-block#login-menu-mobile"  
     ],
     "props": {
       "blockClass": "header-menu",
