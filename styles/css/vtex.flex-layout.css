@@ -1,20 +1,3 @@
-@media (max-width: 760px) {
-    .flexRowContent--conteudo-descricao {
-        margin-bottom: 0;
-    }
-}
-
-.flexRowContent--conteudo-descricao {
-    display: flex;
-    flex-direction: column;
-    margin-top: 30px;
-    gap: 20px
-}
-.flexRowContent--conteudo-descricao .stretchChildrenWidth:last-child {
-    display: flex;
-    flex-direction: column;
-}
-
 .flexCol--prices-vitrine {
     flex-direction: row;
     align-items: center;
@@ -298,7 +281,7 @@
 .flexCol--info-availability {
     position: sticky;
     top: 120px;
-    height: 165vh;
+    height: 130vh;
     padding: 0 40px;
 }
 
@@ -387,10 +370,14 @@
     margin-top: 20px;
 }
 
+.flexRowContent--productSpecificationGroup {
+    background: #F6F6F6;
+    border-radius: 5px;
+    padding: 34px 50px;
+}
+
 .flexRowContent--productSpecificationGroup :global(.vtex-product-identifier-0-x-product-identifier) {
     padding: 2px 0px;
-    display: block;
-    margin: 6px 0;
 }
 
 .flexRowContent--productSpecificationGroup :global(.vtex-product-identifier-0-x-product-identifier__label) {
@@ -410,13 +397,9 @@
 .flexRowContent--title-description {
     border-bottom: 1px solid #F6F6F6;
 }
-.flexRowContent--conteudo-descricao .stretchChildrenWidth {
-    padding-right: 0;
-}
 
 .flexRow--productSpecification {
-    padding: 6px 0px;
-    border-bottom: 1px solid #E7E7E9;
+    padding: 2px 0px;
 }
 
 .flexRowContent--cartSummary,
@@ -682,6 +665,11 @@
         margin-bottom: 50px;
     }
 
+    .flexRowContent--productSpecificationGroup {
+        margin-top: 15px;
+        padding: 34px 25px;
+    }
+
     .flexRow--beneficios .flexCol--beneficios {
         flex-direction: row;
         gap: 13px;
@@ -807,4 +795,3 @@
 .flexRowContent--seo-category :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
   width: 100% !important;
 }
-
