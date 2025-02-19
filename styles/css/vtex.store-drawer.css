@@ -17,7 +17,7 @@
 .closeIconButton--header-menu {
     position: fixed;
     right: 10px;
-    top: 10px;
+    top: 0px;
     z-index: 99;
 }
 

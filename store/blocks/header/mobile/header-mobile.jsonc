@@ -18,7 +18,7 @@
     },
     "children": [
       "flex-layout.row#topo-flutuante-mobile",
-      "topo-menu-mobile",
+      // "topo-menu-mobile",
       "flex-layout.row#header-mobile",
       "disclosure-layout#search-bar-mobile"
     ]
