@@ -175,9 +175,8 @@
   },
   "responsive-layout.desktop#product-images-desktop": {
     "children": [
-      "product-gallery-image-zoom-desktop",
-      //"product-images#desktop",
-      "product-video"
+      "product-gallery-image-zoom-desktop"
+      //"product-images#desktop"
     ]
   },
   "product-images#desktop": {

@@ -19,6 +19,13 @@ const ProductGalleryImageZoomMobile: React.FC = () => {
     const productContextValue = useProduct();
     const productImages: ProductImage[] = productContextValue?.product?.items[0]?.images as ProductImage[] || [];
 
+    const productVideo =
+    productContextValue?.product?.items?.[0]?.videos?.[0]?.videoUrl;
+    const isVimeo = productVideo?.includes("vimeo") ?? false;
+    const idAccountVimeo = isVimeo ? productVideo!.split("/").slice(-2, -1)[0] : "";
+    const idVideoVimeo = isVimeo ? productVideo!.split("/").pop() : "";
+    const idYoutubeVideo = !isVimeo && productVideo ? productVideo.split("v=")[1] ?? "" : "";
+
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
     const [isZoomed, setIsZoomed] = useState(false);
     const dialogRef = useRef<HTMLDialogElement>(null);
@@ -127,6 +134,35 @@ const ProductGalleryImageZoomMobile: React.FC = () => {
                             </li>
                         </ul>
                     ))}
+                    {idAccountVimeo || idYoutubeVideo ? (
+                  <div className={styles.ProductVideo}>
+                    {productVideo && isVimeo && idAccountVimeo ? (
+                      <>
+                        <iframe
+                          src={`https://player.vimeo.com/video/${idAccountVimeo}?h=${idVideoVimeo}&amp;badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479`}
+                          allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media"
+                          className={styles.ProductVideoMobile__iframe}
+                          title="Vimeo Video"
+                        ></iframe>
+                        <script src="https://player.vimeo.com/api/player.js"></script>
+                      </>
+                    ) : (
+                      idYoutubeVideo && (
+                        <iframe
+                          width="560"
+                          height="330"
+                          src={`https://www.youtube.com/embed/${idYoutubeVideo}`}
+                          title="YouTube video player"
+                          frameBorder="0"
+                          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                          referrerPolicy="strict-origin-when-cross-origin"
+                          allowFullScreen
+                          className={styles.ProductVideoMobile__iframe}
+                        ></iframe>
+                      )
+                    )}
+                  </div>
+                ) : null}
                 </Slider>
             ) : (
                 <>

@@ -54,9 +54,6 @@
   "modal-newsletter": {
     "component": "ModalNewsletter"
   },
-  "product-video": {
-    "component": "ProductVideo"
-  },
   "cadastro-bf": {
     "component": "CadastroBF"
   },
