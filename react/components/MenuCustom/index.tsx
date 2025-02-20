@@ -190,14 +190,14 @@ const MenuCustom = (props: Props) => {
   return (
     <>
       <div className={handles.topoMenu}>
-        <img width="135" height="35" alt="Logo Mobile" src="https://dakota.vtexassets.com/assets/vtex/assets-builder/dakota.dakota-theme/6.0.6/svg/logo-dakota___9e5024e768762611d1260e2e2d5e1aa5.svg" />
-        {/* <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
+        {/* <img width="135" height="35" alt="Logo Mobile" src="https://dakota.vtexassets.com/assets/vtex/assets-builder/dakota.dakota-theme/6.0.6/svg/logo-dakota___9e5024e768762611d1260e2e2d5e1aa5.svg" /> */}
+        <svg xmlns="http://www.w3.org/2000/svg" width="22" height="20" viewBox="0 0 22 20" fill="none">
           <path d="M10.769 13.4255C14.4125 13.4255 17.3662 10.6223 17.3662 7.16442C17.3662 3.70651 14.4125 0.90332 10.769 0.90332C7.12552 0.90332 4.17188 3.70651 4.17188 7.16442C4.17188 10.6223 7.12552 13.4255 10.769 13.4255Z" stroke="#DB3D68" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M0.769531 18.903C1.78339 17.2375 3.24121 15.8546 4.99654 14.8931C6.75186 13.9316 8.74289 13.4255 10.7696 13.4255C12.7963 13.4255 14.7873 13.9317 16.5426 14.8932C18.2979 15.8547 19.7557 17.2377 20.7695 18.9032" stroke="#DB3D68" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
         <span className={handles.linkMenu}>
           <a href="/login" className={handles.linkRegister}>ENTRE</a> OU <a href="/login" className={handles.linkRegister}>CADASTRE-SE</a>
-        </span> */}
+        </span>
       </div>
 
       <nav

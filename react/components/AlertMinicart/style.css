@@ -84,6 +84,12 @@
     animation: shake 0.8s ease-in-out;
 }
 
+@media (max-width:768px){
+    .notificationText{
+        flex-direction: column;
+    }
+}
+
 @media(max-width:480px){
     .notification{
         max-width: 270px;
