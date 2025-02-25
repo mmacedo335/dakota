@@ -111,13 +111,6 @@
     padding-top: 10px;
 }
 
-.container :global(.vtex-similar-products-variants-0-x-title) {
-    display: none;
-}
-.container :global(.vtex-similar-products-variants-0-x-var-wrap) {
-    margin-top: 0;
-    justify-content: flex-start;
-}
 .container :global(.vtex-product-price-1-x-sellingPrice--summary) {
     text-align: left;
 }

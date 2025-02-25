@@ -41,7 +41,7 @@ function QuickFilterCategory(props: Props) {
                     {menuItems.length > 4 ? (
                         <ul className={styles.QuickFilterCategoryList}>
                             <Slider {...settingsSlider}>
-                                {menuItems?.map((link, index) => {
+                                {menuItems?.map((link) => {
                                     return (
                                         <li className={styles.QuickFilterCategoryListItem}>
                                             <a href="" className={styles.QuickFilterCategoryListItemLink}>{link.title}</a>
@@ -54,7 +54,7 @@ function QuickFilterCategory(props: Props) {
                     ) : (
                         <ul className={styles.QuickFilterCategoryList}>
 
-                            {menuItems?.map((link, index) => {
+                            {menuItems?.map((link) => {
                                 return (
                                     <li className={styles.QuickFilterCategoryListItem}>
                                         <a href="" className={styles.QuickFilterCategoryListItemLink}>{link.title}</a>

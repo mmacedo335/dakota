@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState } from 'react';
 //@ts-ignore
 import { useProduct } from "vtex.product-context";
 //@ts-ignore
@@ -15,6 +15,8 @@ const CustomShip = () => {
         localidade: "",
         uf: "",
     });
+
+    console.log(isAddress)
 
     const productContextValue = useProduct();
     // console.log('Product Context:', productContextValue);

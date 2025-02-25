@@ -1,4 +1,4 @@
-import * as React from 'react';
+// import * as React from 'react';
 import { useEffect } from 'react';
 
 function ClickVariantSummary() {
@@ -32,7 +32,7 @@ function ClickVariantSummary() {
     };
   }, []);
 
-  const handleLink1Click = (event) => {
+  const handleLink1Click = () => {
     console.log("Clique no Link 1");
     // Comportamento padrão do Link 1
   };

@@ -2,8 +2,8 @@ import React, { useEffect, useState } from 'react';
 import { ProductSummaryContext } from 'vtex.product-summary-context';
 
 
-import { ProductTypes } from 'vtex.product-context'
-import productRecommendationsQuery from './productRecommendations.gql';
+// import { ProductTypes } from 'vtex.product-context'
+import productRecommendationsQuery from '../../queries/productRecommendations.gql';
 import { useQuery } from 'react-apollo';
 import { useProduct } from 'vtex.product-context';
 
@@ -17,15 +17,17 @@ interface SimilarProductsVariantsProps {
 
 const SkuSelector = ({ imageLabel }: SimilarProductsVariantsProps) => {
 
+    console.log(imageLabel)
+
     const { useProductSummary, useProductSummaryDispatch } = ProductSummaryContext
     const { product } = useProductSummary()
     const dispatch = useProductSummaryDispatch()
-    const [loading, setLoading] = useState(false);
+    const [loadingg, setLoading] = useState(false);
     const productContext = useProduct();
 
     const productId = productContext?.product?.productId
 
-    const { data, loadingg, error } = useQuery(productRecommendationsQuery, {
+    const { loading, error } = useQuery(productRecommendationsQuery, {
         variables: {
             identifier: { field: 'id', value: productId },
             type: `similars`,
@@ -33,7 +35,7 @@ const SkuSelector = ({ imageLabel }: SimilarProductsVariantsProps) => {
         skip: !productId,
     });
 
-    if (loadingg || error) return null;
+    if (loading || error) return null;
 
     //console.log('datinha', data);
 
@@ -79,7 +81,7 @@ const SkuSelector = ({ imageLabel }: SimilarProductsVariantsProps) => {
 
     return (
         <div className={styles.skucustomsummary} onClick={removeClick}>
-            {loading === true ? (
+            {loadingg === true ? (
                 <div className={styles.skuslidesummary}>
                     {product?.items.map((item, index) => (
                         <div>

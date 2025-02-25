@@ -7,8 +7,8 @@ import styles from "./style.css";
 const AlertaQuantidade: React.FC = () => {
 
     const productContextValue = useProduct();
-    const availableQuantity = productContextValue?.selectedItem?.sellers?.[0]?.commertialOffer?.AvailableQuantity;
-    const collectionMessagemUrgencia = productContextValue.product?.productClusters.some(item => item.id === "252");
+    const availableQuantity = productContextValue?.selectedItem?.sellers?.[0]?.commertialOffer?.AvailableQuantity ?? 0;
+    const collectionMessagemUrgencia = productContextValue?.product?.productClusters?.some(item => item.id === "252");
 
     if (collectionMessagemUrgencia && availableQuantity > 0 && availableQuantity < 4) {
         if (availableQuantity === 3) {

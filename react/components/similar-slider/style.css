@@ -1,0 +1,61 @@
+:global(.dakota-dakota-theme-6-x-title) {
+    display: none;
+}
+
+:global(.dakota-dakota-theme-6-x-var-wrap) {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+:global(.dakota-dakota-theme-6-x-img_wrap) {
+    border: 1.5px solid #EEEEEE;
+    border-radius: 3px;
+    width: 42px;
+    height: 40px;
+    padding: 4px;
+    display: block;
+    margin: auto;
+}
+
+:global(.dakota-dakota-theme-6-x-variants) :global(.slick-slider.slick-initialized){
+    display: flex;
+    align-items: baseline;
+}
+:global(.dakota-dakota-theme-6-x-variants) :global(.custom-arrow.custom-prev){
+    top: 50%;
+    left: 10px;
+    translate: 0 -50%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+:global(.dakota-dakota-theme-6-x-variants) :global(.custom-arrow.custom-next){
+    right: 10px;
+    top: 50%;
+    translate: 0 -50%;
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+:global(.dakota-dakota-theme-6-x-variants) :global(.custom-arrow.custom-next) :global(.vtex-search-result-3-x-caretIcon){
+    color: black;
+    rotate: -90deg;
+    width: 20px;
+    height: 20px;
+}
+:global(.dakota-dakota-theme-6-x-variants) :global(.custom-arrow.custom-prev) :global(.vtex-search-result-3-x-caretIcon){
+    color: black;
+    width: 20px;
+    rotate: 90deg;
+    height: 20px;
+}
+
+:global(.dakota-dakota-theme-6-x-img) {
+    width: 32px;
+    height: 32px;
+    margin: 0;
+}

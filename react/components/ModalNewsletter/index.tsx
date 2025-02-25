@@ -25,8 +25,6 @@ function ModalNewsletter({ valor, ativo, imagem, imagemFundo }: PropsNewsletter)
     useEffect(() => {
         if (!localStorage.getItem('newsletter')) {
             setIsModalVisible(true);
-        } else {
-            return null
         }
     }, []);
 

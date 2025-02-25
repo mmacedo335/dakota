@@ -60,6 +60,9 @@
   "click-variant-summary": {
     "component": "ClickVariantSummary"
   },
+  "SimilarProductsVariants": {
+    "component": "SimilarSlider"
+  },
   "sku-selector-custom-summary": {
     "component": "SkuSelectorSummary"
   },

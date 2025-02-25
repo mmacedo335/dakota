@@ -38,7 +38,7 @@
 
   "flex-layout.col#similar-summary": {
     "children": [
-      "similar-products-variants"
+      "SimilarProductsVariants"
     ],
     "props": {
       "blockClass": "similar-summary"
