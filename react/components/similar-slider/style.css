@@ -18,6 +18,9 @@
     height: 40px;
     padding: 4px;
     display: block;
+}
+
+:global(.slick-slider.slick-initialized) :global(.dakota-dakota-theme-6-x-img_wrap) {
     margin: auto;
 }
 

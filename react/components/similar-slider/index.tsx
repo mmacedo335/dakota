@@ -34,10 +34,12 @@ export function SimilarProductsVariants({
   imageLabel,
 }: SimilarProductsVariantsProps) {
   const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth > 1440);
 
   useEffect(() => {
     const handleResize = () => {
       setIsMobile(window.innerWidth <= 768);
+      setIsLargeScreen(window.innerWidth > 1440);
     };
 
     window.addEventListener("resize", handleResize);
@@ -165,7 +167,9 @@ export function SimilarProductsVariants({
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: items.length > 4 ? 4 : items.length, // Mostra até 4 no desktop
+    slidesToShow: isMobile ? (items.length > 2 ? 2 : items.length) 
+    : isLargeScreen ? (items.length > 4 ? 4 : items.length) 
+    : (items.length > 3 ? 3 : items.length), // Regra para telas grandes
     slidesToScroll: 1,
     centerMode: true, // Ativa a centralização
     centerPadding: "0px", // Remove margem lateral para centralizar melhor
@@ -182,7 +186,7 @@ export function SimilarProductsVariants({
     ],
   };
 
-  const shouldUseSlider = isMobile ? items.length > 2 : items.length > 4;
+  const shouldUseSlider = isMobile ? items.length > 2 : items.length > 3;
 
   return (
     <div className={handles.variants}>
