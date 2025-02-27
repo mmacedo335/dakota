@@ -2356,9 +2356,9 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
   integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
 
-"dakota.dakota-theme@https://lucastech--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.73+build1740148595/public/@types/dakota.dakota-theme":
-  version "6.0.73"
-  resolved "https://lucastech--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.73+build1740148595/public/@types/dakota.dakota-theme#9c1aa7531396365e41aff1dd2ba56270fa8f8fb3"
+"dakota.dakota-theme@http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.75/public/@types/dakota.dakota-theme":
+  version "6.0.75"
+  resolved "http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.75/public/@types/dakota.dakota-theme#81ac61a254d66e74bf6040cbded9f29877743a54"
 
 dashdash@^1.12.0:
   version "1.14.1"
@@ -5460,9 +5460,9 @@ verror@1.10.0:
   version "0.65.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.65.0/public/@types/vtex.search-graphql#5f3d202bb6818842d1be258fa8ca849f5ef386a1"
 
-"vtex.search-result@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.136.0/public/@types/vtex.search-result":
-  version "3.136.0"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.136.0/public/@types/vtex.search-result#1163d18adfb4059ee80965bb878efe77c7b483b7"
+"vtex.search-result@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.136.1/public/@types/vtex.search-result":
+  version "3.136.1"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.136.1/public/@types/vtex.search-result#bf6cd0c5f2340cd70cc5736f4228f6dad34874c4"
 
 "vtex.shelf@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shelf@1.49.0/public/@types/vtex.shelf":
   version "1.49.0"
