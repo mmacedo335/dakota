@@ -27,7 +27,7 @@
     "@vtex/test-tools": "^3.3.2",
     "@vtex/tsconfig": "^0.4.4",
     "apollo-cache-inmemory": "^1.6.5",
-    "dakota.dakota-theme": "http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.75/public/@types/dakota.dakota-theme",
+    "dakota.dakota-theme": "https://ldakotadev--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.73+build1740055265/public/@types/dakota.dakota-theme",
     "graphql": "^14.6.0",
     "typescript": "3.9.7",
     "vtex.add-to-cart-button": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.30.2/public/@types/vtex.add-to-cart-button",

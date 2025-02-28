@@ -1,30 +1,29 @@
 Arguments: 
-  D:\Program Files (x86)\node.exe C:\Program Files\vtex\client\node_modules\yarn\bin\yarn.js --non-interactive --ignore-engines
+  C:\Program Files\nodejs\node.exe C:\Program Files\vtex\client\node_modules\yarn\bin\yarn.js --non-interactive --ignore-engines
 
 PATH: 
-  C:\Users\Italo\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Italo\bin;C:\ProgramData\Oracle\Java\javapath;C:\Program Files (x86)\Intel\iCLS Client;C:\Program Files\Intel\iCLS Client;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files\Intel\Intel(R) Management Engine Components\DAL;C:\Program Files (x86)\Intel\Intel(R) Management Engine Components\IPT;C:\Program Files\Intel\Intel(R) Management Engine Components\IPT;C:\ProgramData\chocolatey\bin;C:\Users\Italo\AppData\Local\Programs\Python\Python37\Scripts;C:\Users\Italo\AppData\Local\Programs\Python\Python37;C:\Users\Italo\AppData\Local\Microsoft\WindowsApps;C:\Users\Italo\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Italo\AppData\Roaming\npm;C:\adb;C:\Program Files (x86)\Microsoft SQL Server\150\Tools\Binn;C:\Program Files\Microsoft SQL Server\150\Tools\Binn;C:\Program Files (x86)\Microsoft SQL Server\150\DTS\Binn;C:\Program Files\Microsoft SQL Server\150\DTS\Binn;C:\WINDOWS\system32;C:\WINDOWS;C:\WINDOWS\System32\Wbem;C:\WINDOWS\System32\WindowsPowerShell\v1.0;C:\WINDOWS\System32\OpenSSH;D:\Program Files (x86);C:\Program Files\Docker\Docker\resources\bin;C:\ProgramData\DockerDesktop\version-bin;C:\Program Files\Git\cmd;C:\src\flutter\bin;C:\Users\Italo\AppData\Local\Programs\Hyper\resources\bin;C:\Program Files\vtex\bin;C:\Users\Italo\AppData\Local\GitHubDesktop\bin;C:\Users\Italo\.deno\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\lucas\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Go\bin;C:\Users\lucas\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\lucas\AppData\Local\Programs\Python\Python312\;C:\Users\lucas\AppData\Local\Microsoft\WindowsApps;C:\Users\lucas\AppData\Roaming\npm;C:\Users\lucas\AppData\Roaming\Composer\vendor\bin;C:\Users\lucas\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\vtex\bin;C:\Users\lucas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lucas\.deno\bin;C:\Users\lucas\go\bin;c:\Users\lucas\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand
 
 Yarn version: 
   1.22.10
 
 Node version: 
-  16.15.0
+  18.17.1
 
 Platform: 
   win32 x64
 
 Trace: 
-  Error: https://lucastech--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.73+build1740148595/public/@types/dakota.dakota-theme: Request failed "500 Internal Server Error"
-      at ResponseError.ExtendableBuiltin (C:\Program Files\vtex\client\node_modules\yarn\lib\cli.js:696:66)
-      at new ResponseError (C:\Program Files\vtex\client\node_modules\yarn\lib\cli.js:802:124)
-      at Request.<anonymous> (C:\Program Files\vtex\client\node_modules\yarn\lib\cli.js:67058:16)
-      at Request.emit (node:events:527:28)
-      at Request.module.exports.Request.onRequestResponse (C:\Program Files\vtex\client\node_modules\yarn\lib\cli.js:141539:10)
-      at ClientRequest.emit (node:events:527:28)
-      at HTTPParser.parserOnIncomingClient (node:_http_client:631:27)
-      at HTTPParser.parserOnHeadersComplete (node:_http_common:128:17)
-      at TLSSocket.socketOnData (node:_http_client:494:22)
-      at TLSSocket.emit (node:events:527:28)
+  Error: https://registry.yarnpkg.com/@formatjs/intl-displaynames/-/intl-displaynames-5.4.3.tgz: ESOCKETTIMEDOUT
+      at ClientRequest.<anonymous> (C:\Program Files\vtex\client\node_modules\yarn\lib\cli.js:141289:19)
+      at Object.onceWrapper (node:events:628:28)
+      at ClientRequest.emit (node:events:514:28)
+      at TLSSocket.emitRequestTimeout (node:_http_client:847:9)
+      at Object.onceWrapper (node:events:628:28)
+      at TLSSocket.emit (node:events:526:35)
+      at Socket._onTimeout (node:net:571:8)
+      at listOnTimeout (node:internal/timers:569:17)
+      at process.processTimers (node:internal/timers:512:7)
 
 npm manifest: 
   {
@@ -56,7 +55,7 @@ npm manifest:
       "@vtex/test-tools": "^3.3.2",
       "@vtex/tsconfig": "^0.4.4",
       "apollo-cache-inmemory": "^1.6.5",
-      "dakota.dakota-theme": "https://lucastech--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.73+build1740148595/public/@types/dakota.dakota-theme",
+      "dakota.dakota-theme": "http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.75/public/@types/dakota.dakota-theme",
       "graphql": "^14.6.0",
       "typescript": "3.9.7",
       "vtex.add-to-cart-button": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.30.2/public/@types/vtex.add-to-cart-button",
@@ -104,7 +103,7 @@ npm manifest:
       "vtex.responsive-layout": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.responsive-layout@0.1.4/public/@types/vtex.responsive-layout",
       "vtex.rich-text": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.rich-text@0.16.0/public/@types/vtex.rich-text",
       "vtex.search-graphql": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.65.0/public/@types/vtex.search-graphql",
-      "vtex.search-result": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.136.0/public/@types/vtex.search-result",
+      "vtex.search-result": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.136.1/public/@types/vtex.search-result",
       "vtex.shelf": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shelf@1.49.0/public/@types/vtex.shelf",
       "vtex.similar-products-variants": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.similar-products-variants@0.1.1/public/@types/vtex.similar-products-variants",
       "vtex.slider": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.slider@0.8.3/public/@types/vtex.slider",
@@ -2492,9 +2491,9 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
     integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
   
-  "dakota.dakota-theme@https://lucastech--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.73+build1740148595/public/@types/dakota.dakota-theme":
-    version "6.0.73"
-    resolved "https://lucastech--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.73+build1740148595/public/@types/dakota.dakota-theme#9c1aa7531396365e41aff1dd2ba56270fa8f8fb3"
+  "dakota.dakota-theme@http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.75/public/@types/dakota.dakota-theme":
+    version "6.0.75"
+    resolved "http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.75/public/@types/dakota.dakota-theme#81ac61a254d66e74bf6040cbded9f29877743a54"
   
   dashdash@^1.12.0:
     version "1.14.1"
@@ -5596,9 +5595,9 @@ Lockfile:
     version "0.65.0"
     resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-graphql@0.65.0/public/@types/vtex.search-graphql#5f3d202bb6818842d1be258fa8ca849f5ef386a1"
   
-  "vtex.search-result@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.136.0/public/@types/vtex.search-result":
-    version "3.136.0"
-    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.136.0/public/@types/vtex.search-result#1163d18adfb4059ee80965bb878efe77c7b483b7"
+  "vtex.search-result@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.136.1/public/@types/vtex.search-result":
+    version "3.136.1"
+    resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.search-result@3.136.1/public/@types/vtex.search-result#bf6cd0c5f2340cd70cc5736f4228f6dad34874c4"
   
   "vtex.shelf@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.shelf@1.49.0/public/@types/vtex.shelf":
     version "1.49.0"
