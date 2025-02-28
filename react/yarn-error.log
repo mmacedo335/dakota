@@ -1,29 +1,30 @@
 Arguments: 
-  C:\Program Files\nodejs\node.exe C:\Program Files\vtex\client\node_modules\yarn\bin\yarn.js --non-interactive --ignore-engines
+  C:\Program Files\nodejs\node.exe C:\Users\Lucas Astino\AppData\Local\vtex\client\4.2.0\node_modules\yarn\bin\yarn.js --non-interactive --ignore-engines
 
 PATH: 
-  C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0\;C:\Windows\System32\OpenSSH\;C:\xampp\php;C:\ProgramData\ComposerSetup\bin;C:\Program Files\Git\cmd;C:\Program Files\dotnet\;C:\Users\lucas\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Go\bin;C:\Users\lucas\AppData\Local\Programs\Python\Python312\Scripts\;C:\Users\lucas\AppData\Local\Programs\Python\Python312\;C:\Users\lucas\AppData\Local\Microsoft\WindowsApps;C:\Users\lucas\AppData\Roaming\npm;C:\Users\lucas\AppData\Roaming\Composer\vendor\bin;C:\Users\lucas\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\vtex\bin;C:\Users\lucas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\lucas\.deno\bin;C:\Users\lucas\go\bin;c:\Users\lucas\AppData\Roaming\Code\User\globalStorage\github.copilot-chat\debugCommand
+  C:\Users\Lucas Astino\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\Lucas Astino\bin;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Users\Lucas Astino\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Docker\Docker\resources\bin;C:\Users\Lucas Astino\AppData\Local\Microsoft\WindowsApps;C:\Users\Lucas Astino\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\Lucas Astino\AppData\Roaming\npm;C:\Program Files\vtex\bin;C:\Users\Lucas Astino\AppData\Roaming\nvm;C:\Program Files\nodejs;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
 
 Yarn version: 
   1.22.10
 
 Node version: 
-  18.17.1
+  20.16.0
 
 Platform: 
   win32 x64
 
 Trace: 
-  Error: https://registry.yarnpkg.com/@formatjs/intl-displaynames/-/intl-displaynames-5.4.3.tgz: ESOCKETTIMEDOUT
-      at ClientRequest.<anonymous> (C:\Program Files\vtex\client\node_modules\yarn\lib\cli.js:141289:19)
-      at Object.onceWrapper (node:events:628:28)
-      at ClientRequest.emit (node:events:514:28)
-      at TLSSocket.emitRequestTimeout (node:_http_client:847:9)
-      at Object.onceWrapper (node:events:628:28)
-      at TLSSocket.emit (node:events:526:35)
-      at Socket._onTimeout (node:net:571:8)
-      at listOnTimeout (node:internal/timers:569:17)
-      at process.processTimers (node:internal/timers:512:7)
+  Error: https://ldakotadev--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.73+build1740055265/public/@types/dakota.dakota-theme: Request failed "500 Internal Server Error"
+      at ResponseError.ExtendableBuiltin (C:\Users\Lucas Astino\AppData\Local\vtex\client\4.2.0\node_modules\yarn\lib\cli.js:696:66)
+      at new ResponseError (C:\Users\Lucas Astino\AppData\Local\vtex\client\4.2.0\node_modules\yarn\lib\cli.js:802:124)
+      at Request.<anonymous> (C:\Users\Lucas Astino\AppData\Local\vtex\client\4.2.0\node_modules\yarn\lib\cli.js:67058:16)
+      at Request.emit (node:events:519:28)
+      at module.exports.Request.onRequestResponse (C:\Users\Lucas Astino\AppData\Local\vtex\client\4.2.0\node_modules\yarn\lib\cli.js:141539:10)
+      at ClientRequest.emit (node:events:519:28)
+      at HTTPParser.parserOnIncomingClient (node:_http_client:698:27)
+      at HTTPParser.parserOnHeadersComplete (node:_http_common:119:17)
+      at TLSSocket.socketOnData (node:_http_client:540:22)
+      at TLSSocket.emit (node:events:519:28)
 
 npm manifest: 
   {
@@ -55,7 +56,7 @@ npm manifest:
       "@vtex/test-tools": "^3.3.2",
       "@vtex/tsconfig": "^0.4.4",
       "apollo-cache-inmemory": "^1.6.5",
-      "dakota.dakota-theme": "http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.75/public/@types/dakota.dakota-theme",
+      "dakota.dakota-theme": "https://ldakotadev--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.73+build1740055265/public/@types/dakota.dakota-theme",
       "graphql": "^14.6.0",
       "typescript": "3.9.7",
       "vtex.add-to-cart-button": "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.add-to-cart-button@0.30.2/public/@types/vtex.add-to-cart-button",
@@ -2491,9 +2492,9 @@ Lockfile:
     resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
     integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
   
-  "dakota.dakota-theme@http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.75/public/@types/dakota.dakota-theme":
-    version "6.0.75"
-    resolved "http://dakota.vtexassets.com/_v/public/typings/v1/dakota.dakota-theme@6.0.75/public/@types/dakota.dakota-theme#81ac61a254d66e74bf6040cbded9f29877743a54"
+  "dakota.dakota-theme@https://ldakotadev--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.73+build1740055265/public/@types/dakota.dakota-theme":
+    version "6.0.73"
+    resolved "https://ldakotadev--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.73+build1740055265/public/@types/dakota.dakota-theme#7ea43594f6feb55630ac0b9c83ef4b5a60164436"
   
   dashdash@^1.12.0:
     version "1.14.1"
