@@ -7,8 +7,7 @@ import { useRuntime } from "vtex.render-runtime";
 import { Link } from "vtex.render-runtime";
 import Slider from "react-slick";
 import "./style.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
+import "./slick.css";
 
 import productRecommendationsQuery from "../../queries/productRecommendations.gql";
 
@@ -48,25 +47,25 @@ export function SimilarProductsVariants({
 
     useEffect(() => {
         const slider = document.querySelector(".dakota-dakota-theme-6-x-variants");
-      
+
         if (!slider) return;
-      
+
         const stopPropagation = (event: Event) => {
           console.log("Clique bloqueado no slider! 🚫", event.target);
           event.stopPropagation();
         };
-      
+
         // Bloqueia cliques nas setas de navegação do slider
         const nextButton = slider.querySelector(".slick-next");
         const prevButton = slider.querySelector(".slick-prev");
-        
+
         if (nextButton) nextButton.addEventListener("click", stopPropagation);
         if (prevButton) prevButton.addEventListener("click", stopPropagation);
-      
+
         // Bloqueia cliques dentro dos slides
         const slides = slider.querySelectorAll(".slick-slide");
         slides.forEach(slide => slide.addEventListener("click", stopPropagation));
-      
+
         return () => {
           if (nextButton) nextButton.removeEventListener("click", stopPropagation);
           if (prevButton) prevButton.removeEventListener("click", stopPropagation);
@@ -136,7 +135,7 @@ export function SimilarProductsVariants({
       </button>
     );
   };
-  
+
   const CustomPrevArrow = (props: any) => {
     const { onClick } = props;
     return (
@@ -160,15 +159,15 @@ export function SimilarProductsVariants({
       </button>
     );
   };
-  
+
 
   // Configuração do slider
   const settings = {
     dots: false,
     infinite: true,
     speed: 500,
-    slidesToShow: isMobile ? (items.length > 2 ? 2 : items.length) 
-    : isLargeScreen ? (items.length > 4 ? 4 : items.length) 
+    slidesToShow: isMobile ? (items.length > 2 ? 2 : items.length)
+    : isLargeScreen ? (items.length > 4 ? 4 : items.length)
     : (items.length > 3 ? 3 : items.length), // Regra para telas grandes
     slidesToScroll: 1,
     centerMode: true, // Ativa a centralização
