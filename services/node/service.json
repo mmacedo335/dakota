@@ -11,7 +11,7 @@
       "public": true
     },
     "viaCookie": {
-      "path": "/_v/cookies",
+      "path": "/_v/private/cookies",
       "public": true
     }, 
     "viaClearCookie": { 
