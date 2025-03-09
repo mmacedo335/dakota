@@ -23,6 +23,10 @@
     "path": "/lancamento-inverno",
     "isSitemapEntry": true
   },
+ "store.custom#LP__fall-winter": {
+    "path": "/outono-inverno",
+    "isSitemapEntry": true
+  },
   "store.custom#loja-fisicas": {
     "path": "/lojas-fisicas",
     "isSitemapEntry": true

@@ -1,0 +1,15 @@
+:global(.dakota-dakota-theme-6-x-video__player){
+    width: 70% !important;
+
+    @media(max-width:768px){
+        margin: auto;
+        width: 80% !important;
+    }
+}
+:global(.dakota-dakota-theme-6-x-video__player-video){
+    aspect-ratio: 16/9;
+
+    @media(max-width:768px){
+        aspect-ratio: 9 / 16;
+    }
+}
