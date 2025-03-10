@@ -494,7 +494,10 @@
 .container--fall-winter__showcase-banner--link {
     justify-content: center;
     padding-bottom: 35px;
-    border-bottom: 4px solid #E50069;
+    
+    @media(max-width:768px){
+        border-bottom: 4px solid #E50069;
+    }
 }
 
 .container--fall-winter__showcase-banner--link .link {
