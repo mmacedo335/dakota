@@ -799,12 +799,9 @@
 }
 
 /*lp fall-winter*/
-
 .flexRow--lp__container-fall-winter :global(.vtex-store-components-3-x-container) {
     max-width: 1920px;
-    @media(max-width:768px){
-        padding: 0;
-    }
+    
 }
 
 .flexRowContent--lp__container-fall-winter {
@@ -819,34 +816,12 @@
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px;
-
-    @media(max-width:768px){
-        grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: auto;
-        gap: 15px;
-    }
-}
-
-.flexRowContent--fall-winter__categories .flexCol--fall-winter__categories-01 {
-    @media(max-width:768px){
-        grid-column: span 2
-    }
-}
-.flexRowContent--fall-winter__categories :last-child  .flexCol--fall-winter__categories {
-    @media(max-width:768px){
-        grid-column: span 2;
-    }
 }
 
 .flexRowContent--fall-winter__showcase-banner {
     position: relative;
     gap: 40px;
     padding: 4%;
-
-    @media(max-width:768px){
-        padding: 0;
-        display: block;
-    }
 }
 
 .flexRowContent--fall-winter__showcase-banner::before {
@@ -858,30 +833,15 @@
     height: 50%;
     background: #E50069;
     z-index: 1;
-
-    @media(max-width:768px){
-        height: 40%;
-    }
 }
 
 .flexRow--lp__container-fall-winter :global(.vtex-slider-layout-0-x-sliderLeftArrow):not(:global(.vtex-slider-layout-0-x-sliderArrows--fall-winter__showcase-banner))::before {
     content: url('assets/img/lp-outono/seta-black.png');
-
-    @media(max-width:768px){
-        height: 32px;
-        width: 32px;
-    }
 }
 
 .flexRow--lp__container-fall-winter :global(.vtex-slider-layout-0-x-sliderRightArrow):not(:global(.vtex-slider-layout-0-x-sliderArrows--fall-winter__showcase-banner))::before {
     content: url('assets/img/lp-outono/seta-black.png');
     rotate: 180deg;
-
-    @media(max-width:768px){
-        height: 32px;
-        width: 32px;
-        display: block;
-    }
 }
 
 .flexRow--lp__container-fall-winter :global(.vtex-slider-layout-0-x-sliderLeftArrow) {
@@ -909,16 +869,53 @@
     justify-content: center;
 }
 
-.flexRow--lp__container-fall-winter :global(.vtex-product-summary-2-x-nameContainer) :global(.vtex-product-summary-2-x-brandName) {
-    @media(max-width:768px){
-        font-size: 15px !important;
-    }
+.flexRow--lp__container-fall-winter :global(.vtex-flex-layout-0-x-flexCol--prices-vitrine) {
+    display: block;
 }
 
-.flexRow--lp__container-fall-winter :global(.vtex-product-price-1-x-currencyContainer--summary) {
-    @media(max-width:768px){
-        font-size: 24px !important;
-    }
+.flexRow--lp__container-fall-winter :global(.vtex-product-price-1-x-sellingPrice--summary) {
+    text-align: center !important;
+}
+
+.flexRow--lp__container-fall-winter :global(.vtex-product-price-1-x-currencyContainer)::after {
+    display: none;
+}
+
+.flexRow--lp__container-fall-winter :global(.vtex-slider-layout-0-x-sliderArrows--shelf) {
+    background-color: white !important;
+}
+
+.flexCol--fall-winter__categories {
+    position: relative;
+}
+
+.flexRow--fall-winter__categories {
+    padding: 4%;
+}
+:global(.vtex-store-components-3-x-imageElement--fall-winter__showcase-banner) {
+    z-index: 1;
+    position: relative;
+}
+
+.flexRow--fall-winter__cupom {
+    margin: 50px 0;
+    position: relative;
+}
+
+.flexRowContent--fall-winter__video {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(to bottom, #E50069 80%, white 40%);
+    margin-bottom: 50px;
+}
+
+.flexRow--fall-winter__cupom :global(.vtex-store-components-3-x-imageElement){
+    width: 100%;
+}
+
+.flexRow--lp__container-fall-winter :global(.vtex-product-price-1-x-installments) {
+    text-align: center !important;
 }
 
 .flexRow--lp__container-fall-winter :global(.vtex-flex-layout-0-x-flexCol--prices-vitrine) {
@@ -931,73 +928,93 @@
 
 .flexRow--lp__container-fall-winter :global(.vtex-product-price-1-x-sellingPriceValue--summary) :global(.vtex-product-price-1-x-currencyContainer--summary) {
     color: #E50069 !important;
-    @media(max-width:768px){
+}
+
+@media(max-width:768px) {
+    .flexRow--lp__container-fall-winter :global(.vtex-store-components-3-x-container) {
+        padding: 0;
+    }
+
+    .flexRow--lp__container-fall-winter :global(.vtex-product-price-1-x-installments) {
+            font-size: 12px !important;
+    }
+
+    .flexRowContent--fall-winter__categories {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+
+    .flexRowContent--fall-winter__categories .flexCol--fall-winter__categories-01,
+    .flexRowContent--fall-winter__categories :last-child .flexCol--fall-winter__categories {
+        grid-column: span 2;
+    }
+
+    .flexRowContent--fall-winter__showcase-banner {
+        padding: 0;
+        display: block;
+    }
+
+    .flexRowContent--fall-winter__showcase-banner::before {
+        height: 40%;
+    }
+
+    .flexRow--lp__container-fall-winter :global(.vtex-slider-layout-0-x-sliderLeftArrow)::before,
+    .flexRow--lp__container-fall-winter :global(.vtex-slider-layout-0-x-sliderRightArrow)::before {
+        height: 32px;
+        width: 32px;
+        display: block;
+    }
+
+    .flexRow--lp__container-fall-winter :global(.vtex-product-summary-2-x-nameContainer) :global(.vtex-product-summary-2-x-brandName),
+    .flexRow--lp__container-fall-winter :global(.vtex-product-price-1-x-currencyContainer--summary),
+    .flexRow--lp__container-fall-winter :global(.vtex-product-price-1-x-sellingPriceValue--summary) :global(.vtex-product-price-1-x-currencyContainer--summary) {
         font-size: 24px !important;
     }
-}
 
-.flexRow--lp__container-fall-winter :global(.vtex-product-price-1-x-currencyContainer)::after {
-    display: none;
-}
-
-.flexRow--lp__container-fall-winter :global(.vtex-product-price-1-x-installments) {
-    text-align: center !important;
-    @media(max-width:768px){
+    .flexRow--lp__container-fall-winter :global(.vtex-product-price-1-x-installments) {
         font-size: 12px !important;
     }
-}
 
-.flexRow--lp__container-fall-winter :global(.vtex-slider-layout-0-x-sliderArrows--shelf) {
-    background-color: white !important;
-}
-
-:global(.vtex-store-components-3-x-imageElement--fall-winter__showcase-banner) {
-    z-index: 1;
-    position: relative;
-    @media(max-width:768px){
+    :global(.vtex-store-components-3-x-imageElement--fall-winter__showcase-banner) {
         width: 92%;
         margin: auto;
         display: block;
     }
-}
 
-.flexRow--fall-winter__categories {
-    padding: 4%;
-
-    @media(max-width:768px){
+    .flexRow--fall-winter__categories {
         margin-bottom: 50px;
     }
-}
 
-.flexCol--fall-winter__categories {
-    position: relative;
-}
-
-.flexColChild--fall-winter__categories :global(.vtex-store-components-3-x-imageElement) {
-    box-shadow: 10px 10px #D6D6D6;
-
-    @media(max-width:768px){
+    .flexColChild--fall-winter__categories :global(.vtex-store-components-3-x-imageElement) {
         box-shadow: 5px 5px #D6D6D6;
     }
-}
 
-.flexRowContent--fall-winter__video {
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    background: linear-gradient(to bottom, #E50069 80%, white 40%);
-    margin-bottom: 50px;
-
-    @media(max-width:768px){
+    .flexRowContent--fall-winter__video {
         background: linear-gradient(to bottom, #E50069 60%, white 40%);
     }
-}
 
-.flexRow--fall-winter__cupom {
-    margin: 50px 0;
-    position: relative;
-}
+    :global(.vtex-store-components-3-x-imageElement--fall-winter__showcase-banner) {
+            width: 92%;
+            margin: auto;
+            display: block;
+     
+    }
 
-.flexRow--fall-winter__cupom :global(.vtex-store-components-3-x-imageElement){
-    width: 100%;
+    .flexRow--lp__container-fall-winter :global(.vtex-product-summary-2-x-nameContainer) :global(.vtex-product-summary-2-x-brandName) {
+   
+            font-size: 15px !important;
+        
+    }
+    
+    .flexRow--lp__container-fall-winter :global(.vtex-product-price-1-x-currencyContainer--summary) {
+        
+            font-size: 24px !important;
+        
+    }
+    
+    
+    .flexRow--lp__container-fall-winter :global(.vtex-product-price-1-x-sellingPriceValue--summary) :global(.vtex-product-price-1-x-currencyContainer--summary) {
+            font-size: 24px !important;
+        }
 }

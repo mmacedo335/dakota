@@ -63,19 +63,19 @@
 
 .sliderLeftArrow--fall-winter__showcase-banner::before{
     content: url('assets/img/lp-outono/seta.png');
-    @media(max-width:768px){
-        scale: 0.7;
-    }
 }
 .sliderRightArrow--fall-winter__showcase-banner::before{
     content: url('assets/img/lp-outono/seta.png');
     rotate: 180deg;
-    @media(max-width:768px){
-        scale: 0.7;
-    }
 }
 
 @media(max-width: 768px) {
+    .sliderRightArrow--fall-winter__showcase-banner::before{     
+            scale: 0.7;
+    }
+    .sliderLeftArrow--fall-winter__showcase-banner::before{
+            scale: 0.7;
+    }
     .sliderRightArrow--shelf {
         right: -12px;
     }

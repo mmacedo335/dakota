@@ -272,6 +272,7 @@
   "fg-VideoPlayer": {
     "props": {
       "videoUrl": "https://www.youtube.com/watch?v=C1s_7na--KA",
+      "videoUrlMobile":"https://www.youtube.com/watch?v=C1s_7na--KA",
       "playIcon": "assets/img/lp-outono/play.png",
       "thumbUrl": "assets/img/lp-outono/cupom.png"
     }

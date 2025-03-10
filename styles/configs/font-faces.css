@@ -1,4 +1,20 @@
 @font-face {
+  font-family: 'Averta';
+  src: url('assets/fonts/AvertaStd-Regular.otf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Adrianna';
+  src: url('assets/fonts/AdriannaExtended-Regular.ttf');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
   font-family: 'Larsseit Regular';
   src: url('assets/fonts/larsseit.woff') format('woff');
   font-weight: 400;
