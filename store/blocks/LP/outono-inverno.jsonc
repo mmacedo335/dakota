@@ -158,10 +158,10 @@
     "children": [
       "flex-layout.col#fall-winter__categories-01",
       "flex-layout.col#fall-winter__categories-02",
-      "flex-layout.col#fall-winter__categories-02",
-      "flex-layout.col#fall-winter__categories-02",
-      "flex-layout.col#fall-winter__categories-02",
-      "flex-layout.col#fall-winter__categories-02"
+      "flex-layout.col#fall-winter__categories-03",
+      "flex-layout.col#fall-winter__categories-04",
+      "flex-layout.col#fall-winter__categories-05",
+      "flex-layout.col#fall-winter__categories-06"
     ]
   },
   "flex-layout.col#fall-winter__categories-01": {
@@ -196,25 +196,66 @@
       "blockClass": "fall-winter__categories"
     },
     "children": [
-      "image#fall-winter__categories",
-      "rich-text#fall-winter__categories-link"
+      "image#fall-winter__categories-02"
     ]
   },
-  "image#fall-winter__categories": {
+  "image#fall-winter__categories-02": {
     "props": {
       "src": "assets/img/lp-outono/categoria.png"
     }
   },
-  "rich-text#fall-winter__categories-link": {
+  "flex-layout.col#fall-winter__categories-03": {
     "props": {
-      "blockClass": "fall-winter__categories-link",
-      "text": "BOTAS [Conferir](#)"
+      "blockClass": "fall-winter__categories"
+    },
+    "children": [
+      "image#fall-winter__categories-03"
+    ]
+  },
+  "image#fall-winter__categories-03": {
+    "props": {
+      "src": "assets/img/lp-outono/categoria.png"
     }
   },
-  //   "flex-layout.col#fall-winter__categories-03": {},
-  //   "flex-layout.col#fall-winter__categories-04": {},
-  //   "flex-layout.col#fall-winter__categories-05": {},
-  //   "flex-layout.col#fall-winter__categories-05": {}
+  "flex-layout.col#fall-winter__categories-04": {
+    "props": {
+      "blockClass": "fall-winter__categories"
+    },
+    "children": [
+      "image#fall-winter__categories-04"
+    ]
+  },
+  "image#fall-winter__categories-04": {
+    "props": {
+      "src": "assets/img/lp-outono/categoria.png"
+    }
+  },
+  "flex-layout.col#fall-winter__categories-05": {
+    "props": {
+      "blockClass": "fall-winter__categories"
+    },
+    "children": [
+      "image#fall-winter__categories-05"
+    ]
+  },
+  "image#fall-winter__categories-05": {
+    "props": {
+      "src": "assets/img/lp-outono/categoria.png"
+    }
+  },
+  "flex-layout.col#fall-winter__categories-06": {
+    "props": {
+      "blockClass": "fall-winter__categories"
+    },
+    "children": [
+      "image#fall-winter__categories-06"
+    ]
+  },
+  "image#fall-winter__categories-06": {
+    "props": {
+      "src": "assets/img/lp-outono/categoria.png"
+    }
+  },
   "flex-layout.row#fall-winter__video": {
     "props": {
       "blockClass": "fall-winter__video"
