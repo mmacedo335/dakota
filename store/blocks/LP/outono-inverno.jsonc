@@ -12,12 +12,26 @@
       "responsive-layout.mobile#fall-winter--fullbanner",
       "responsive-layout.desktop#fall-winter__showcase-banner",
       "responsive-layout.mobile#fall-winter__showcase-banner",
-      "list-context.product-list#fall-winter__showcase-first",
-      "rich-text#fall-winter__discover",
+      "responsive-layout.desktop#p__container-fall-winter-desktop",
+      "responsive-layout.mobile#p__container-fall-winter-mobile",
       "flex-layout.row#fall-winter__categories",
       "flex-layout.row#fall-winter__video",
       "list-context.product-list#fall-winter__showcase-secund",
       "flex-layout.row#fall-winter__cupom"
+    ]
+  },
+
+  "responsive-layout.desktop#p__container-fall-winter-desktop": {
+    "children": [
+      "list-context.product-list#fall-winter__showcase-first",
+      "rich-text#fall-winter__discover"
+    ]
+  },
+
+  "responsive-layout.mobile#p__container-fall-winter-mobile": {
+    "children": [
+      "rich-text#fall-winter__discover",
+      "list-context.product-list#fall-winter__showcase-first"
     ]
   },
 
