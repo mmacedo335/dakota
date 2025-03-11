@@ -36,6 +36,7 @@
 
 .sliderLayoutContainer--fall-winter__showcase-banner{
     max-width: 700px;
+    margin-top: 100px;
 }
 .sliderLayoutContainer--fall-winter__showcase-banner :global(.vtex-product-summary-2-x-containerNormal){
     max-width: 300px !important;
@@ -82,5 +83,9 @@
 
     .sliderLeftArrow--shelf {
         left: -12px;
+    }
+
+    .sliderLayoutContainer--fall-winter__showcase-banner{       
+        margin-top: 0px;
     }
 }

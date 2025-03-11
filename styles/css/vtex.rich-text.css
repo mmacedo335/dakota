@@ -480,6 +480,7 @@
 .container--fall-winter__showcase-banner--right .heading {
     color: #FFFFFF;
     font-size: 48px;
+    font-weight: 400;
     margin-bottom: 30px;
     font-family: 'Adrianna';
 
@@ -531,6 +532,7 @@
 
 .container--fall-winter__categories-text .heading {
     font-size: 48px;
+    font-weight: 400;
     color: #222222;
     font-family: 'Adrianna';
 
@@ -616,6 +618,7 @@
     .container--fall-winter__showcase-banner--right .heading {
 
         font-size: 20px;
+        font-weight: 400;
         margin-bottom: 12px;
 
     }
@@ -652,6 +655,7 @@
     .container--fall-winter__categories-text .heading {
 
         font-size: 20px;
+        font-weight: 400;
         white-space: nowrap;
         margin-top: 0;
 
