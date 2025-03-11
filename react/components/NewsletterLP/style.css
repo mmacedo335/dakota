@@ -34,16 +34,13 @@
 
 
 :global(.dakota-dakota-theme-6-x-container__newslatter-message){   
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
     background-color: white;
     padding: 40px;
     border-radius: 6px;
     width: 80%;
     max-width: 400px;
     color: #E50069;
+    box-shadow: 0 0 1px black;
 }
 
 :global(.dakota-dakota-theme-6-x-container__newslatter-form) {
