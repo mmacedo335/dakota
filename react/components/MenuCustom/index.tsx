@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import { useCssHandles } from "vtex.css-handles";
+//@ts-ignore
+import { useRenderSession } from 'vtex.session-client'
 import './style.css';
 
 type SubmenuLink = {
@@ -85,6 +87,10 @@ const MenuCustom = (props: Props) => {
   const [isLinkActive, setIsLinkActive] = useState<boolean>(true);
 
   const [isOpen, setIsOpen] = useState(false);
+
+  const { session } = useRenderSession();
+  const isAuthenticated = (session as any)?.namespaces?.profile?.isAuthenticated?.value === 'true';
+  const firstName = (session as any)?.namespaces?.profile?.firstName?.value;
 
   const toggleSubMenu = () => {
     setIsOpen(!isOpen);
@@ -195,9 +201,17 @@ const MenuCustom = (props: Props) => {
           <path d="M10.769 13.4255C14.4125 13.4255 17.3662 10.6223 17.3662 7.16442C17.3662 3.70651 14.4125 0.90332 10.769 0.90332C7.12552 0.90332 4.17188 3.70651 4.17188 7.16442C4.17188 10.6223 7.12552 13.4255 10.769 13.4255Z" stroke="#DB3D68" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
           <path d="M0.769531 18.903C1.78339 17.2375 3.24121 15.8546 4.99654 14.8931C6.75186 13.9316 8.74289 13.4255 10.7696 13.4255C12.7963 13.4255 14.7873 13.9317 16.5426 14.8932C18.2979 15.8547 19.7557 17.2377 20.7695 18.9032" stroke="#DB3D68" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
         </svg>
-        <span className={handles.linkMenu}>
-          <a href="/login" className={handles.linkRegister}>ENTRE</a> OU <a href="/login" className={handles.linkRegister}>CADASTRE-SE</a>
-        </span>
+        {isAuthenticated ? (
+          <span className={handles.linkMenu}>
+            <a href="/account" className={handles.linkRegister}><strong className={handles.linkRegister}>Olá, {firstName}</strong> - <u>Minha Conta</u></a>
+          </span>
+        ) : (
+          <span className={handles.linkMenu}>
+            <a href="/login" className={handles.linkRegister}>ENTRE</a> OU <a href="/cadastro" className={handles.linkRegister}>CADASTRE-SE</a>
+          </span>
+        )}
+
+        
       </div>
 
       <nav
