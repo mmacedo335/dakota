@@ -7,6 +7,9 @@
 }
 
 @media(max-width:768px) {
+    :global(.dakota-dakota-theme-6-x-video__player-video) {
+        aspect-ratio: 9/16;
+    }
     :global(.dakota-dakota-theme-6-x-video__player-video) iframe {
         width: 100%;
         height: auto;

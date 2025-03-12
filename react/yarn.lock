@@ -2363,9 +2363,9 @@ csstype@^3.0.2:
   resolved "https://registry.yarnpkg.com/csstype/-/csstype-3.1.0.tgz#4ddcac3718d787cf9df0d1b7d15033925c8f29f2"
   integrity sha512-uX1KG+x9h5hIJsaKR9xHUeUraxf8IODOwq9JLNPq6BwB04a/xgpq3rcx47l5BZu5zBPlgD342tdke3Hom/nJRA==
 
-"dakota.dakota-theme@https://raulbonavitaseodev--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.86+build1741705524/public/@types/dakota.dakota-theme":
-  version "6.0.86"
-  resolved "https://raulbonavitaseodev--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.86+build1741705524/public/@types/dakota.dakota-theme#79924fbded85901b44220d8f366254af5ac31146"
+"dakota.dakota-theme@https://lucastech--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.89+build1741641351/public/@types/dakota.dakota-theme":
+  version "6.0.89"
+  resolved "https://lucastech--dakota.myvtex.com/_v/private/typings/linked/v1/dakota.dakota-theme@6.0.89+build1741641351/public/@types/dakota.dakota-theme#d6bfb5c8103bca3c5d030da784a81d782e60b1f6"
 
 dashdash@^1.12.0:
   version "1.14.1"
@@ -5547,9 +5547,9 @@ verror@1.10.0:
   version "0.18.0"
   resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-icons@0.18.0/public/@types/vtex.store-icons#0ee94d549aa283ce3a13ab987c13eac4fdfd1bba"
 
-"vtex.store-image@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.22.3/public/@types/vtex.store-image":
-  version "0.22.3"
-  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.22.3/public/@types/vtex.store-image#71e81446ab5eb1b80ec9b7915f5471bdd6ec0757"
+"vtex.store-image@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.23.0/public/@types/vtex.store-image":
+  version "0.23.0"
+  resolved "http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-image@0.23.0/public/@types/vtex.store-image#bda0aba85ba2a151409236d6724aab1701442b03"
 
 "vtex.store-link@http://vtex.vtexassets.com/_v/public/typings/v1/vtex.store-link@0.9.3/public/@types/vtex.store-link":
   version "0.9.3"
