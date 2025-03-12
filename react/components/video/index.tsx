@@ -49,11 +49,12 @@ export const VideoPlayer = (props: VideoPlayerProps) => {
         <ReactPlayer
           url={window.innerWidth > 1024 ? videoUrl : videoUrlMobile}
           playing={isPlaying}
-          controls={false}
-          muted={true}
+          controls={true}
+          muted={false}
           loop={true}
           width="100%"
           height="auto"
+          volume={1}
           className={handles["video__player-video"]}
         />
 

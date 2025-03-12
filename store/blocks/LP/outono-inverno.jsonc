@@ -23,8 +23,9 @@
 
   "responsive-layout.desktop#p__container-fall-winter-desktop": {
     "children": [
-      "list-context.product-list#fall-winter__showcase-first",
-      "rich-text#fall-winter__discover"
+      "rich-text#fall-winter__discover",
+      "list-context.product-list#fall-winter__showcase-first"
+
     ]
   },
 
