@@ -26,6 +26,12 @@
   "fg-metaOganization": {
     "component": "metaOganization"
   },
+  "fg-VideoPlayer": {
+    "component": "VideoPlayer"
+  },
+  "fg-NewsletterFormLp": {
+    "component": "NewsletterFormLp"
+  },
   "shared-cart": {
     "component": "SharedCart",
     "render": "client"

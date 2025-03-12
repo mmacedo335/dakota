@@ -1,0 +1,348 @@
+{
+  "store.custom#LP__fall-winter": {
+    "blocks": ["flex-layout.row#lp__container-fall-winter"]
+  },
+
+  "flex-layout.row#lp__container-fall-winter": {
+    "props": {
+      "blockClass": "lp__container-fall-winter"
+    },
+    "children": [
+      "responsive-layout.desktop#fall-winter--fullbanner",
+      "responsive-layout.mobile#fall-winter--fullbanner",
+      "responsive-layout.desktop#fall-winter__showcase-banner",
+      "responsive-layout.mobile#fall-winter__showcase-banner",
+      "responsive-layout.desktop#p__container-fall-winter-desktop",
+      "responsive-layout.mobile#p__container-fall-winter-mobile",
+      "flex-layout.row#fall-winter__categories",
+      "flex-layout.row#fall-winter__video",
+      "list-context.product-list#fall-winter__showcase-secund",
+      "flex-layout.row#fall-winter__cupom"
+    ]
+  },
+
+  "responsive-layout.desktop#p__container-fall-winter-desktop": {
+    "children": [
+      "rich-text#fall-winter__discover",
+      "list-context.product-list#fall-winter__showcase-first"
+
+    ]
+  },
+
+  "responsive-layout.mobile#p__container-fall-winter-mobile": {
+    "children": [
+      "rich-text#fall-winter__discover",
+      "list-context.product-list#fall-winter__showcase-first"
+    ]
+  },
+
+  "responsive-layout.desktop#fall-winter--fullbanner": {
+    "children": ["image#fall-winter--fullbanner__desk"]
+  },
+  "responsive-layout.mobile#fall-winter--fullbanner": {
+    "children": ["image#fall-winter--fullbanner__mobile"]
+  },
+
+  "image#fall-winter--fullbanner__desk": {
+    "props": {
+      "src": "assets/img/lp-outono/fullbanner.png",
+      "blockClass": "fall-winter--fullbanner"
+    }
+  },
+  "image#fall-winter--fullbanner__mobile": {
+    "props": {
+      "src": "assets/img/lp-outono/foto-header-mobile.png",
+      "blockClass": "fall-winter--fullbanner"
+    }
+  },
+
+  "responsive-layout.desktop#fall-winter__showcase-banner": {
+    "children": ["flex-layout.row#fall-winter__showcase-banner"]
+  },
+  "responsive-layout.mobile#fall-winter__showcase-banner": {
+    "children": ["flex-layout.row#fall-winter__showcase-banner--mobile"]
+  },
+
+  "flex-layout.row#fall-winter__showcase-banner": {
+    "title": "Seção banner com vitrine",
+    "props": {
+      "blockClass": "fall-winter__showcase-banner"
+    },
+    "children": [
+      "flex-layout.col#fall-winter__showcase-banner--left",
+      "flex-layout.col#fall-winter__showcase-banner--right"
+    ]
+  },
+  "flex-layout.row#fall-winter__showcase-banner--mobile": {
+    "title": "Seção banner com vitrine",
+    "props": {
+      "blockClass": "fall-winter__showcase-banner"
+    },
+    "children": [
+      "rich-text##fall-winter__showcase-banner--right",
+      "image#fall-winter__showcase-banner",
+      "list-context.product-list#fall-winter__showcase-banner",
+      "rich-text#fall-winter__showcase-banner--link"
+    ]
+  },
+
+  "flex-layout.col#fall-winter__showcase-banner--left": {
+    "children": ["image#fall-winter__showcase-banner"]
+  },
+  "image#fall-winter__showcase-banner": {
+    "props": {
+      "src": "assets/img/lp-outono/banner.png",
+      "blockClass": "fall-winter__showcase-banner"
+    }
+  },
+  "flex-layout.col#fall-winter__showcase-banner--right": {
+    "children": [
+      "rich-text##fall-winter__showcase-banner--right",
+      "list-context.product-list#fall-winter__showcase-banner",
+      "rich-text#fall-winter__showcase-banner--link"
+    ]
+  },
+  "rich-text##fall-winter__showcase-banner--right": {
+    "props": {
+      "blockClass": "fall-winter__showcase-banner--right",
+      "text": "## DEIXE SUA MARCA <br> POR ONDE FOR \n Confira as novidades do Outono Inverno e vá mais longe com as tendências da temporada. Escolha a nova coleção Dakota!"
+    }
+  },
+  "slider-layout#fall-winter__showcase-banner": {
+    "title": "Slider Vitrine",
+    "props": {
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "fall-winter__showcase-banner",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      }
+    }
+  },
+  "list-context.product-list#fall-winter__showcase-banner": {
+    "title": "01 - Vitrine",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#fall-winter__showcase-banner"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "rich-text#fall-winter__showcase-banner--link": {
+    "props": {
+      "text": "[VER MAIS](#)",
+      "blockClass": "fall-winter__showcase-banner--link"
+    }
+  },
+  "slider-layout#fall-winter__showcase-first": {
+    "title": "Slider Vitrine",
+    "props": {
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always",
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 1,
+        "phone": 1
+      }
+    }
+  },
+  "list-context.product-list#fall-winter__showcase-first": {
+    "title": "01 - Vitrine",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#fall-winter__showcase-first"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "rich-text#fall-winter__discover": {
+    "props": {
+      "blockClass": "fall-winter__discover",
+      "text": "DESCUBUBRA AS NOVIDADES DA COLEÇÃO DAKOTA! [Conferir lançamentos](#)"
+    }
+  },
+  "flex-layout.row#fall-winter__categories": {
+    "props": {
+      "blockClass": "fall-winter__categories"
+    },
+    "children": [
+      "flex-layout.col#fall-winter__categories-01",
+      "flex-layout.col#fall-winter__categories-02",
+      "flex-layout.col#fall-winter__categories-03",
+      "flex-layout.col#fall-winter__categories-04",
+      "flex-layout.col#fall-winter__categories-05",
+      "flex-layout.col#fall-winter__categories-06"
+    ]
+  },
+  "flex-layout.col#fall-winter__categories-01": {
+    "props": {
+      "blockClass": "fall-winter__categories-01"
+    },
+    "children": [
+      "responsive-layout.desktop#fall-winter__categories-01",
+      "responsive-layout.mobile#fall-winter__categories-01"
+    ]
+  },
+  "responsive-layout.desktop#fall-winter__categories-01": {
+    "children": ["rich-text#fall-winter__categories-text"]
+  },
+  "responsive-layout.mobile#fall-winter__categories-01": {
+    "children": ["rich-text#fall-winter__categories-text--mobile"]
+  },
+  "rich-text#fall-winter__categories-text": {
+    "props": {
+      "blockClass": "fall-winter__categories-text",
+      "text": "### ÍCONES <br> DA ESTAÇÃO \n As tendências da moda em uma coleção pensada para que cada momento da sua jornada seja um desfile e você deixe sua marca por onde for!"
+    }
+  },
+  "rich-text#fall-winter__categories-text--mobile": {
+    "props": {
+      "blockClass": "fall-winter__categories-text",
+      "text": "### ÍCONES DA ESTAÇÃO \n As tendências da moda em uma coleção pensada para que cada momento da sua jornada seja um desfile e você deixe sua marca por onde for!"
+    }
+  },
+  "flex-layout.col#fall-winter__categories-02": {
+    "props": {
+      "blockClass": "fall-winter__categories"
+    },
+    "children": [
+      "image#fall-winter__categories-02"
+    ]
+  },
+  "image#fall-winter__categories-02": {
+    "props": {
+      "src": "assets/img/lp-outono/categoria.png"
+    }
+  },
+  "flex-layout.col#fall-winter__categories-03": {
+    "props": {
+      "blockClass": "fall-winter__categories"
+    },
+    "children": [
+      "image#fall-winter__categories-03"
+    ]
+  },
+  "image#fall-winter__categories-03": {
+    "props": {
+      "src": "assets/img/lp-outono/categoria.png"
+    }
+  },
+  "flex-layout.col#fall-winter__categories-04": {
+    "props": {
+      "blockClass": "fall-winter__categories"
+    },
+    "children": [
+      "image#fall-winter__categories-04"
+    ]
+  },
+  "image#fall-winter__categories-04": {
+    "props": {
+      "src": "assets/img/lp-outono/categoria.png"
+    }
+  },
+  "flex-layout.col#fall-winter__categories-05": {
+    "props": {
+      "blockClass": "fall-winter__categories"
+    },
+    "children": [
+      "image#fall-winter__categories-05"
+    ]
+  },
+  "image#fall-winter__categories-05": {
+    "props": {
+      "src": "assets/img/lp-outono/categoria.png"
+    }
+  },
+  "flex-layout.col#fall-winter__categories-06": {
+    "props": {
+      "blockClass": "fall-winter__categories"
+    },
+    "children": [
+      "image#fall-winter__categories-06"
+    ]
+  },
+  "image#fall-winter__categories-06": {
+    "props": {
+      "src": "assets/img/lp-outono/categoria.png"
+    }
+  },
+  "flex-layout.row#fall-winter__video": {
+    "props": {
+      "blockClass": "fall-winter__video"
+    },
+    "children": ["rich-text#fall-winter__video", "fg-VideoPlayer"]
+  },
+  "rich-text#fall-winter__video": {
+    "props": {
+      "blockClass": "fall-winter__video",
+      "text": "### DESCUBRA O OUTONO INVERNO DAKOTA \n Estrelando Juliana Paes, a campanha Outono Inverno 2025 traz a mulher brasileira como protagonista, que escolhe o seu destino e chega mais longe com confiança. \n **Confira o filme completo!**"
+    }
+  },
+
+  "fg-VideoPlayer": {
+    "props": {
+      "videoUrl": "https://www.youtube.com/watch?v=C1s_7na--KA",
+      "videoUrlMobile":"https://www.youtube.com/watch?v=C1s_7na--KA",
+      "playIcon": "assets/img/lp-outono/play.png",
+      "thumbUrl": "assets/img/lp-outono/cupom.png"
+    }
+  },
+
+  "slider-layout#fall-winter__showcase-secund": {
+    "title": "Slider Vitrine",
+    "props": {
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always",
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 1,
+        "phone": 1
+      }
+    }
+  },
+  "list-context.product-list#fall-winter__showcase-secund": {
+    "title": "01 - Vitrine",
+    "blocks": ["product-summary.shelf"],
+    "children": ["slider-layout#fall-winter__showcase-secund"],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+
+  "flex-layout.row#fall-winter__cupom": {
+    "props": {
+      "blockClass": "fall-winter__cupom"
+    },
+    "children": [
+      "fg-NewsletterFormLp",
+      "flex-layout.col#fall-winter__cupom--right"
+    ]
+  },
+  "flex-layout.col#fall-winter__cupom--right": {
+    "children": ["responsive-layout.desktop#fall-winter__cupom","responsive-layout.mobile#fall-winter__cupom"]
+  },
+  "responsive-layout.desktop#fall-winter__cupom": {
+    "children": ["image#fall-winter__cupom"]
+  },
+  "responsive-layout.mobile#fall-winter__cupom": {
+    "children": ["image#fall-winter__cupom--mobile"]
+  },
+  "image#fall-winter__cupom": {
+    "props": {
+      "src": "assets/img/lp-outono/cupom.png"
+    }
+  },
+  "image#fall-winter__cupom--mobile": {
+    "props": {
+      "src": "assets/img/lp-outono/form-mobile.png"
+    }
+  }
+}

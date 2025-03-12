@@ -1,0 +1,119 @@
+:global(.dakota-dakota-theme-6-x-container__newslatter-lp) {
+    background-color: #E50069;
+    padding: 50px;
+
+    @media(max-width:768px) {
+        max-width: 180px;
+        padding: 20px;
+    }
+
+}
+
+:global(.dakota-dakota-theme-6-x-container__newslatter-title) {
+    font-size: 40px;
+    color: white;
+    text-align: left;
+    font-weight: 400;
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: 'Adrianna';
+
+    @media(max-width:768px) {
+        font-size: 20px;
+        max-width: 135px;
+    }
+}
+
+:global(.dakota-dakota-theme-6-x-container__newslatter-lp--wrapper){
+    position: absolute;
+    max-width: 700px;
+    top: 50%;
+    left: 4%;
+    translate: 0 -50%;
+}
+
+
+:global(.dakota-dakota-theme-6-x-container__newslatter-message){   
+    background-color: white;
+    padding: 40px;
+    border-radius: 6px;
+    width: 80%;
+    max-width: 400px;
+    color: #E50069;
+    box-shadow: 0 0 1px black;
+}
+
+:global(.dakota-dakota-theme-6-x-container__newslatter-form) {
+    width: 100%;
+}
+
+:global(.dakota-dakota-theme-6-x-container__newslatter-input) {
+    width: 100%;
+    height: 50px;
+    border-radius: 200px;
+    padding: 20px;
+    border: none;
+    font-family: 'Adrianna';
+
+    @media(max-width:768px) {
+        position: absolute;
+        width: 90vw;
+    }
+}
+
+:global(.dakota-dakota-theme-6-x-container__newslatter-input--container) {
+    @media(max-width:768px) {
+        height: 50px;
+    }
+}
+
+:global(.dakota-dakota-theme-6-x-container__newslatter-button) {
+    width: 100%;
+    margin-top: 20px;
+    height: 50px;
+    border: none;
+    text-transform: uppercase;
+    max-width: 288px;
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+
+    @media(max-width:768px) {
+        font-size: 12px;
+        height: 32px;
+    }
+}
+
+@media(max-width:768px) {
+    :global(.dakota-dakota-theme-6-x-container__newslatter-lp--wrapper){
+        left: 0%;
+    }
+    :global(.dakota-dakota-theme-6-x-container__newslatter-lp) {
+        left: 0;
+        max-width: 180px;
+        padding: 20px;
+    }
+
+    :global(.dakota-dakota-theme-6-x-container__newslatter-title) {
+        font-size: 20px;
+        max-width: 135px;
+        font-family: 'Adrianna';
+    }
+
+    :global(.dakota-dakota-theme-6-x-container__newslatter-input) {
+        position: absolute;
+        width: 90vw;
+    }
+
+    :global(.dakota-dakota-theme-6-x-container__newslatter-input--container) {
+        height: 50px;
+    }
+
+    :global(.dakota-dakota-theme-6-x-container__newslatter-button) {
+
+        font-size: 12px;
+        height: 32px;
+        font-family: 'Adrianna';
+    }
+
+}

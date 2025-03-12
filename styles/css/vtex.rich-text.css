@@ -67,8 +67,8 @@
     height: 40px;
 }
 
-.paragraph--title-da-pagina{
-  display: none;
+.paragraph--title-da-pagina {
+    display: none;
 }
 
 .paragraph--texto-home {
@@ -460,4 +460,245 @@
     color: #db3d68;
     font-family: Larsseit Medium;
     font-weight: 700;
+}
+
+.container--fall-winter__showcase-banner--right {
+    max-width: 600px;
+    z-index: 1;
+    position: relative;
+
+}
+
+.container--fall-winter__showcase-banner--right .paragraph {
+    color: #FFFFFF;
+    font-size: 28px;
+    margin-bottom: 0;
+    font-family: 'Averta';
+
+}
+
+.container--fall-winter__showcase-banner--right .heading {
+    color: #FFFFFF;
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-family: 'Adrianna';
+
+}
+
+.container--fall-winter__showcase-banner--link {
+    justify-content: center;
+    padding-bottom: 35px;
+
+}
+
+.container--fall-winter__showcase-banner--link .link {
+    color: #E50069;
+    font-size: 20px;
+    border: 1.5px solid #E50069;
+    padding: 10px 88px;
+    font-family: 'Adrianna';
+
+}
+
+.container--fall-winter__discover {
+    background-color: #E50069;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.container--fall-winter__discover .paragraph {
+    display: flex;
+    gap: 50px;
+    font-size: 32px;
+    color: white;
+    align-items: center;
+    font-family: 'Adrianna';
+
+}
+
+.container--fall-winter__discover .paragraph .link {
+    background-color: white;
+    font-size: 20px;
+    color: #E50069;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    font-family: 'Adrianna';
+
+}
+
+.container--fall-winter__categories-text .heading {
+    font-size: 48px;
+    font-weight: 400;
+    color: #222222;
+    font-family: 'Adrianna';
+
+}
+
+.container--fall-winter__categories-text .paragraph {
+    font-size: 20px;
+    color: #222222;
+    font-family: 'Averta';
+
+}
+
+.container--fall-winter__categories-link {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    translate: -50%;
+}
+
+.container--fall-winter__categories-link .paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    font-size: 56px;
+    color: white;
+    text-align: center;
+}
+
+.container--fall-winter__categories-link .paragraph .link {
+    font-size: 24px;
+    color: white;
+    text-align: center;
+    border: 1px solid white;
+    width: 288px;
+    text-transform: uppercase;
+    font-family: 'Averta';
+
+}
+
+.container--fall-winter__video {
+    justify-content: center;
+    max-width: 800px;
+}
+
+.container--fall-winter__video .heading {
+    color: white;
+    font-size: 40px;
+    text-align: center;
+    font-family: 'Adrianna';
+}
+
+.container--fall-winter__video .paragraph {
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    font-family: 'Averta';
+}
+
+.container--fall-winter__video .strong {
+    margin-top: 20px;
+    color: white;
+    font-size: 28px;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Averta';
+}
+
+@media(max-width:768px) {
+
+    .container--fall-winter__showcase-banner--right {
+
+        padding: 4%;
+
+    }
+
+    .container--fall-winter__showcase-banner--right .paragraph {
+
+        font-size: 14px;
+        margin-bottom: 18px;
+
+    }
+
+    .container--fall-winter__showcase-banner--right .heading {
+
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 12px;
+
+    }
+
+
+    .container--fall-winter__showcase-banner--link .link {
+
+        font-size: 14px;
+
+    }
+
+
+
+    .container--fall-winter__discover .paragraph {
+
+        font-size: 18px;
+        gap: 16px;
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+    .container--fall-winter__discover .paragraph .link {
+
+        font-size: 14px;
+
+    }
+
+    .container--fall-winter__categories-text .heading {
+
+        font-size: 20px;
+        font-weight: 400;
+        white-space: nowrap;
+        margin-top: 0;
+
+    }
+
+    .container--fall-winter__categories-text .paragraph {
+
+        font-size: 14px;
+
+    }
+
+    .container--fall-winter__categories-link .paragraph {
+
+        font-size: 20px;
+        gap: 40px;
+
+    }
+
+    .container--fall-winter__categories-link .paragraph .link {
+
+        font-size: 12px;
+        max-width: 100px;
+
+
+    }
+
+    .container--fall-winter__video {
+
+        padding: 4%;
+
+    }
+
+    .container--fall-winter__video .heading {
+        font-size: 20px;
+        text-align: left;
+        max-width: 280px;
+
+    }
+
+    .container--fall-winter__video .paragraph {
+        font-size: 14px;
+        text-align: left;
+
+    }
+
+    .container--fall-winter__video .strong {
+        font-size: 14px;
+        text-align: left;
+
+    }
 }
