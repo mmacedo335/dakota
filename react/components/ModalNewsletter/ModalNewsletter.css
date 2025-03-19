@@ -27,10 +27,9 @@
     text-align: center;
     border: 1px solid #fff;
     position: absolute;
-    right: 120px;
+    right: 70px;
     width: 330px;
     outline: none;
-    border-radius: 40px;
     height: 40px;
 }
 
@@ -40,27 +39,25 @@
 }
 
 :global(.overlay-pop-dakota) :global(#pop-dakota-name) {
-    bottom: 178px;
+    bottom: 180px;
 }
 
 :global(.overlay-pop-dakota) :global(#pop-dakota-email) {
-    bottom: 121px;
+    bottom: 130px;
 }
 
 :global(.overlay-pop-dakota) :global(.container-pop-dakota) button {
     position: absolute;
-    color: #d43773;
-    background: #edce9a;
-    bottom: 50px;
-    right: 181px;
-    height: 49px;
-    width: 210px;
-    font-weight: bold !important;
+    color: #000;
+    background: #fff;
+    bottom: 40px;
+    right: 130px;
+    height: 40px;
+    width: 200px;
     letter-spacing: 3px;
     line-height: 10px;
-    font-size: 30px;
+    font-size: 20px;
     padding: 0;
-    border-radius: 40px;
     cursor: pointer;
     border: 3px solid #fff;
 }
@@ -73,7 +70,7 @@
 :global(.overlay-pop-dakota) :global(#container-sucesso) {
     position: absolute;
     right: 70px;
-    top: 200px;
+    top: 250px;
     display: inline-block;
 }
 
@@ -86,17 +83,16 @@
 }
 
 :global(.overlay-pop-dakota) :global(#container-sucesso) p textarea {
-    background: #ffdcb7;
-    color: #E80C75;
-    border: 3px dotted #FFF;
+    background: #fff;
+    color: #000;
+    border: 3px solid #FFF;
     height: 35px;
     outline: none;
     line-height: 35px;
     display: inline-block;
-    border-radius: 8px;
-    font-size: 26px;
+    border-radius: 4px;
+    font-size: 24px;
     letter-spacing: 2px;
-    font-weight: bold;
     padding: 0 15px;
     margin: 5px 0;
     text-align: center;
@@ -163,7 +159,7 @@
         left: 0px;
         margin: auto;
         top: 38%;
-        bottom: unset;
+        bottom: -15%;
         height: 29px;
     }
 
@@ -173,7 +169,7 @@
         left: 0px;
         margin: auto;
         top: 46%;
-        bottom: unset;
+        bottom: -25%;
         height: 29px;
     }
 
@@ -182,16 +178,17 @@
         left: 0px;
         margin: auto;
         top: 53%;
-        bottom: unset;
-        font-size: 17px;
-        height: 40px;
+        bottom: -35%;
+        font-size: 12px;
+        height: 25px;
+        width: 120px;
     }
 
     :global(.overlay-pop-dakota) :global(#container-sucesso) {
         display: block;
         left: 0px;
         right: 0px;
-        top: 61%;
+        top: 68%;
     }
 
     :global(.overlay-pop-dakota) :global(.close) {
@@ -201,6 +198,11 @@
     :global(.overlay-pop-dakota) :global(.close) svg {
         width: 40px !important;
         height: 40px !important;
+    }
+
+    :global(.overlay-pop-dakota) :global(#container-sucesso) p textarea {
+      width: 200px;
+      font-size: 18px;
     }
 }
 

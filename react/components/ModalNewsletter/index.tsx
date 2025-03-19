@@ -60,7 +60,7 @@ function ModalNewsletter({ valor, ativo, imagem, imagemFundo }: PropsNewsletter)
 
                 if (response.ok) {
                     setIsSuccessVisible(true);
-                    // setIsModalVisible(false); 
+                    // setIsModalVisible(false);
                     localStorage.setItem('newsletter', 'ativo');
                 } else {
                     console.log('Erro ao enviar dados:', response.statusText);
@@ -85,19 +85,19 @@ function ModalNewsletter({ valor, ativo, imagem, imagemFundo }: PropsNewsletter)
                         <input
                             type="text"
                             id="pop-dakota-name"
-                            placeholder="Seu nome"
+                            placeholder="Nome:"
                             value={name}
                             onChange={(e) => setName(e.target.value)}
                         />
                         <input
                             type="email"
                             id="pop-dakota-email"
-                            placeholder="Qual o seu email?"
+                            placeholder="Email:"
                             value={email}
                             onChange={(e) => setEmail(e.target.value)}
                         />
                         <button id="send-cadastro" onClick={handleSubmit}>
-                            ENVIAR!
+                            ENVIAR
                         </button>
                     </div>
                     <div id="container-sucesso" style={{ display: isSuccessVisible ? 'block' : 'none' }}>
