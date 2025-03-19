@@ -188,7 +188,8 @@
         display: block;
         left: 0px;
         right: 0px;
-        top: 68%;
+        top: 70%;
+        margin-top: 2px;
     }
 
     :global(.overlay-pop-dakota) :global(.close) {
