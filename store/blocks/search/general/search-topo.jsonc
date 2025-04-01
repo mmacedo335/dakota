@@ -19,6 +19,7 @@
     "title": "Topo listagem",
     "children": [
       "rich-text#title-pagina",
+      "rich-text#meta-description",
       "breadcrumb.search",
       "flex-layout.row#searchtitle",
       "quick-filter-category"
@@ -43,6 +44,13 @@
     "props": {
       "text": "",
       "blockClass": "title-da-pagina"
+    }
+  },
+  "rich-text#meta-description": {
+    "title":"Meta description",
+    "props": {
+      "text": "",
+      "blockClass": "meta-description"
     }
   }
 }
