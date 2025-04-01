@@ -71,6 +71,10 @@
     display: none;
 }
 
+.paragraph--meta-description {
+    display: none;
+}
+
 .paragraph--texto-home {
     font-size: 14px;
     margin: .55em 0;
