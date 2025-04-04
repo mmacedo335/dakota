@@ -1,3 +1,14 @@
+@media (min-witdh: 990px){
+  .gallery--grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(302px, 1fr));
+  }
+
+  .galleryItem--grid{
+    max-width: 100%!important;
+  }
+}
+
 .orderByButton {
   justify-content: space-between;
   background: #F6F6F6;

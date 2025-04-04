@@ -171,7 +171,8 @@
     ],
     "props": {
       "width": "grow",
-      "preventVerticalStretch": true
+      "preventVerticalStretch": true,
+      "blockClass":"resultados-busca"
     }
   },
   "flex-layout.row#orderByAndSwitcher": {

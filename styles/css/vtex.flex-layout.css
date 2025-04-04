@@ -16,6 +16,11 @@
     right: 15px;
 }
 
+.flexCol--resultados-busca{
+    max-width: 1900px;
+    margin: 0 auto;
+}
+
 @media (max-width: 760px) {
     .flexCol--flags-desktop {
         display: none;
