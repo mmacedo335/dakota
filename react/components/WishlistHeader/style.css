@@ -1,0 +1,97 @@
+.wishlistHeader {
+    display: flex;
+    align-items: center;
+    margin: 0 10px;
+}
+.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5); /* overlay escuro */
+    z-index: 999;
+}
+
+.modalMessage {
+    position: absolute;
+    top: 80%;
+    right: 0;
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    z-index: 1000;
+    box-shadow: 12px 29px 32px 0px rgba(0, 0, 0, 0.09);
+    width: 300px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+.modalMessage p {
+    font-size: 16px;
+    color: #222;
+    margin: 0;
+}
+.modalMessage a {
+    margin-top: 15px;
+    background-color: rgba(219, 61, 104, 1);
+    color: #fff;
+    text-transform: uppercase;
+    font-family: Inter;
+    font-weight: 800;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0.05em;
+    text-align: center;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 4px;
+    width: 100%;
+}
+.modalMessage::after {
+    content: '';
+    width: 0;
+    height: 0;
+    border-left: 10px solid transparent;
+    border-right: 10px solid transparent;
+    border-bottom: 10px solid #f7f7f7;
+    position: absolute;
+    top: -9px;
+    right: 12px;
+}
+.wishlistWrapper {
+    position: relative;
+    display: flex;
+    z-index: 1001;
+}
+.modalMessage button {
+    display: none;
+}
+
+@media (max-width: 760px) {
+    .wishlistHeader {
+        margin: 0;
+    }
+    .modalMessage button {
+        background: none;
+        position: absolute;
+        right: 10px;
+        top: 10px;
+        border: none;
+        display: block;
+    }
+    .modalMessage::after {
+        display: none;
+    }
+    .modalMessage {
+        top: 200% !important;
+        left: 50% !important;
+        right: auto !important;
+        transform: translate(-50%, -50%);
+    }
+    .wishlistWrapper {
+        position: initial;
+    }
+}

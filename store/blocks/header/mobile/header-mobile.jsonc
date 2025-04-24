@@ -67,6 +67,7 @@
       "horizontalAlign": "right"
     },
     "children": [
+      "wishlist-header",
       "minicart.v2#mobile"
       //"image#minicart-custom",
       //"minicart-custom"

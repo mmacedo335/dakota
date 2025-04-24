@@ -98,5 +98,8 @@
   },
   "input-helmet": {
       "component": "InputHelmet"
+  },
+  "wishlist-header": {
+    "component": "WishlistHeader"
   }
 }
