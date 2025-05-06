@@ -6,7 +6,7 @@ import styles from "./PriceTotalDiscountMinicart.css";
 
 
 function PriceTotalDiscountMinicart() {
-    const valueDiscountPix = 0.05;
+    const valueDiscountPix = 0.03; //3% no pix
     const { useOrderForm } = OrderForm;
     const OrderFormContext = useOrderForm();
     const totalValue = OrderFormContext.orderForm.totalizers[0]?.value;

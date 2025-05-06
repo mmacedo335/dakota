@@ -12,7 +12,7 @@ function FooterMiniCart() {
     const [finalValue, setFinalValue] = useState(0);
     const [priceParcel, setPriceParcel] = useState(0);
     const [quantityParcel, setQuantityParcel] = useState(0);
-    const valueDiscountPix = 0.05; // 5% de desconto
+    const valueDiscountPix = 0.03; // 3% de desconto
 
     useEffect(() => {
 
