@@ -19,7 +19,7 @@ const UltimasUnidades = () => {
 
     return (
         <>
-            {availableQty !== null && availableQty < 3 && (
+            {availableQty !== null && availableQty <= 3 && (
                 <div className={styles.ultimasUnidades}>
                     <span className={styles.ultimas}>últimas unidades</span>
                     <span className={styles.disponível}>
