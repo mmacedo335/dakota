@@ -101,5 +101,8 @@
   },
   "wishlist-header": {
     "component": "WishlistHeader"
+  },
+  "ultimas-unidades": {
+    "component": "UltimasUnidades"
   }
 }

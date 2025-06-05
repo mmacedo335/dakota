@@ -1,0 +1,21 @@
+.ultimasUnidades {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    margin: 10px 0;
+}
+
+.ultimas {
+    border: 1px solid #000;
+    color: #000;
+    border-radius: 5px;
+    padding: 5px 10px;
+    font-weight: 600;
+}
+
+.disponível {
+    color: #db3d68;
+    font-weight: 600;
+    font-style: italic;
+}
