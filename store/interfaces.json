@@ -104,5 +104,8 @@
   },
   "ultimas-unidades": {
     "component": "UltimasUnidades"
+  },
+  "video-fullbanner": {
+    "component": "VideoFullbanner"
   }
 }

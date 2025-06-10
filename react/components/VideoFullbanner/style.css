@@ -1,0 +1,31 @@
+.ProductVideo {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.ProductVideo__iframe {
+    width: 100%;
+    height: 650px;
+    border: 0;
+}
+
+@media (max-width: 760px) {
+    .ProductVideo__iframe {
+        width: 100%;
+        height: 300px !important;
+        border: 0;
+        margin: 30px 0;
+        box-sizing: border-box;
+        background: #000;
+    }
+    .imageDesktop {
+        display: none;
+    }
+}
+
+@media (min-width: 990px) {
+    .imageMobile {
+        display: none;
+    }
+}

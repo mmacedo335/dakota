@@ -11,6 +11,9 @@
     }
   },
   "slider-layout#full-banner": {
+    "children": [
+      "video-fullbanner"
+    ],
     "props": {
       "itemsPerPage": {
         "desktop": 1,
