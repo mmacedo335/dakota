@@ -47,6 +47,7 @@
 @media (min-width: 990px) {
     .flexCol--similar-summary {
         min-height: 40px;
+        display: none;
     }
 }
 
@@ -814,7 +815,7 @@
 /*lp fall-winter*/
 .flexRow--lp__container-fall-winter :global(.vtex-store-components-3-x-container) {
     max-width: 1920px;
-    
+
 }
 
 .flexRowContent--lp__container-fall-winter {
@@ -1011,22 +1012,22 @@
             width: 92%;
             margin: auto;
             display: block;
-     
+
     }
 
     .flexRow--lp__container-fall-winter :global(.vtex-product-summary-2-x-nameContainer) :global(.vtex-product-summary-2-x-brandName) {
-   
+
             font-size: 15px !important;
-        
+
     }
-    
+
     .flexRow--lp__container-fall-winter :global(.vtex-product-price-1-x-currencyContainer--summary) {
-        
+
             font-size: 24px !important;
-        
+
     }
-    
-    
+
+
     .flexRow--lp__container-fall-winter :global(.vtex-product-price-1-x-sellingPriceValue--summary) :global(.vtex-product-price-1-x-currencyContainer--summary) {
             font-size: 24px !important;
         }
