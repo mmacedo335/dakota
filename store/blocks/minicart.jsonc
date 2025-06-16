@@ -33,7 +33,7 @@
   "minicart.v2": {
     "props": {
       "quantityDisplay": "always",
-      "variation": "popup",
+      "variation": "link",
       "openOnHover": true
     },
     "children": [
