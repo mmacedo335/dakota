@@ -207,7 +207,7 @@ const MenuCustom = (props: Props) => {
           </span>
         ) : (
           <span className={handles.linkMenu}>
-            <a href="/login" className={handles.linkRegister}>ENTRE</a> OU <a href="/cadastro" className={handles.linkRegister}>CADASTRE-SE</a>
+            <a href="/login" className={handles.linkRegister}>ENTRE</a> OU <a href="/login" className={handles.linkRegister}>CADASTRE-SE</a>
           </span>
         )}
 
