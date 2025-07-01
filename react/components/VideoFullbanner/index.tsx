@@ -95,7 +95,6 @@ function VideoFullbanner({ videoDesktop, videoMobile, imageDesktop, imageMobile,
                 {linkImage && (
                     <a
                         href={linkImage}
-                        target="_blank"
                         rel="noopener noreferrer"
                         style={{
                             position: 'absolute',
@@ -119,7 +118,7 @@ function VideoFullbanner({ videoDesktop, videoMobile, imageDesktop, imageMobile,
     return (
         <div>
             {linkImage ? (
-                <a href={linkImage} target="_blank" rel="noopener noreferrer">
+                <a href={linkImage} rel="noopener noreferrer">
                     <img src={imageUrl} className={isMobile ? styles.imageMobile : styles.imageDesktop} />
                 </a>
             ) : (
