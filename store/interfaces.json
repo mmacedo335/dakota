@@ -107,5 +107,8 @@
   },
   "video-fullbanner": {
     "component": "VideoFullbanner"
+  },
+    "replace-delivery-warning": {
+    "component": "ReplaceDeliveryWarning"
   }
 }
