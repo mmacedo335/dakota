@@ -7,13 +7,14 @@
 :global(.guia-tamanhos) h4 {
     text-align: center; 
     padding: 20px;
-    font-size: 1.3rem; 
+    font-size: 2rem; 
     margin-bottom: 15px; 
 }
  
 :global(.guia-tamanhos) :global(.tabelas) h5 {
     text-align: center;
     margin-top: 1rem;
+    font-size: 20px;
 }
 
 :global(.guia-tamanhos) :global(.tabelas) table {

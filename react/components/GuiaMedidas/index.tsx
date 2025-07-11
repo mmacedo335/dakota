@@ -8,23 +8,19 @@ const GuiaMedidas: React.FC = () => {
     <div className="guia-tamanhos">
       <h4>DESCUBRA SEU TAMANHO</h4>
       <div className="tabelas">
-        <h5>NUMERAÇÃO ADULTA</h5>
+        <h5>NUMERAÇÃO ADULTO FEMININA</h5>
         <table>
           <tbody>
             <tr className="background-cinza">
               <th>COMPRIMENTO DO PÉ</th>
-              <td>21,7 - 22,5</td>
-              <td>22,6 - 23,3</td>
-              <td>23,4 - 24</td>
-              <td>24,1 - 24,8</td>
-              <td>24,9 - 25,3</td>
-              <td>25,4 - 26</td>
-              <td>26,1 - 26,6</td>
-              <td>26,7 - 27,3</td>
-              <td>27,4 - 28</td>
-              <td>28,1 - 28,6</td>
-              <td>28,7 - 29,3</td>
-              <td>29,4 - 30</td>
+              <td>25,1 - 25,6</td>
+              <td>25,7 - 26,3</td>
+              <td>26,4 - 27,0</td>
+              <td>27,1 - 27,6</td>
+              <td>27,7 - 28,3</td>
+              <td>28,4 - 29,0</td>
+              <td>29,1 - 29,8</td>
+              <td>26,4 - 27,0</td>
             </tr>
             <tr>
               <th>NUMERAÇÃO (BRASIL)</th>
@@ -36,29 +32,29 @@ const GuiaMedidas: React.FC = () => {
               <td>38</td>
               <td>39</td>
               <td>40</td>
-              <td>41</td>
-              <td>42</td>
-              <td>43</td>
-              <td>44</td>
             </tr>
           </tbody>
         </table>
+
         <h5>NUMERAÇÃO INFANTIL</h5>
         <table>
           <tbody>
             <tr className="background-cinza">
               <th>COMPRIMENTO DO PÉ</th>
-              <td>18,6 - 19,2</td>
-              <td>19,3 - 19,9</td>
-              <td>20 - 20,6</td>
-              <td>20,7 - 21,2</td>
-              <td>21,3 - 21,9</td>
-              <td>22 - 22,6</td>
-              <td>22,7 - 23,3</td>
-              <td>23,4 - 23,9</td>
+              <td>17,0 - 17,6</td>
+              <td>17,7 - 18,3</td>
+              <td>18,4 - 19,0</td>
+              <td>19,1 - 19,7</td>
+              <td>19,8 - 20,3</td>
+              <td>20,4 - 21,0</td>
+              <td>21,1 - 21,7</td>
+              <td>21,8 - 22,3</td>
+              <td>22,4 - 23,0</td>
             </tr>
             <tr>
               <th>NUMERAÇÃO (BRASIL)</th>
+              <td>26</td>
+              <td>27</td>
               <td>28</td>
               <td>29</td>
               <td>30</td>
@@ -66,17 +62,39 @@ const GuiaMedidas: React.FC = () => {
               <td>32</td>
               <td>33</td>
               <td>34</td>
-              <td>35</td>
             </tr>
           </tbody>
         </table>
+
+        <h5>NUMERAÇÃO ADULTO MASCULINA</h5>
+        <table>
+          <tbody>
+            <tr className="background-cinza">
+              <th>COMPRIMENTO DO PÉ</th>
+              <td>25,1 - 25,6</td>
+              <td>25,7 - 26,3</td>
+              <td>26,4 - 27,0</td>
+              <td>27,1 - 27,6</td>
+              <td>27,7 - 28,3</td>
+              <td>28,4 - 29,0</td>
+              <td>29,1 - 29,8</td>
+            </tr>
+            <tr>
+              <th>NUMERAÇÃO (BRASIL)</th>
+              <td>38</td>
+              <td>39</td>
+              <td>40</td>
+              <td>41</td>
+              <td>42</td>
+              <td>43</td>
+              <td>44</td>
+            </tr>
+          </tbody>
+        </table>
+
         <div className="informacoes-guia">
-          <img
-            src="https://dakota.vtexassets.com/assets/vtex.file-manager-graphql/images/3515d5b1-4926-4d1e-bfed-a1e9d7674988___08b45d43453bac7726a25ca30445f01d.jpg"
-            alt="Tamanho pé"
-          />
           <p>
-            <b>Como medir o tamanho do seu pé:</b>
+            <b>Como medir o tamanho do seu pé?</b>
             <br />
             1. Centralize seu pé em uma folha de papel.
             <br />
@@ -99,6 +117,10 @@ const GuiaMedidas: React.FC = () => {
             numeração. Se ficar com dúvida, nos contate através do chat
             <br />
           </p>
+           <img
+            src="https://dakota.vtexassets.com/assets/vtex.file-manager-graphql/images/3515d5b1-4926-4d1e-bfed-a1e9d7674988___08b45d43453bac7726a25ca30445f01d.jpg"
+            alt="Tamanho pé"
+          />
         </div>
       </div>
     </div>
