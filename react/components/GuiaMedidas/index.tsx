@@ -6,7 +6,7 @@ const GuiaMedidas: React.FC = () => {
   
   return (
     <div className="guia-tamanhos">
-     <h4>DESCUBRA SEU TAMANHO</h4>
+       <h4>DESCUBRA SEU TAMANHO</h4>
       <div className="tabelas">
         <h5>NUMERAÇÃO ADULTO FEMININA</h5>
         <table>
@@ -66,6 +66,32 @@ const GuiaMedidas: React.FC = () => {
               <td>34</td>
               <td>35</td>
               <td>36</td>
+            </tr>
+          </tbody>
+        </table>
+
+        <h5>NUMERAÇÃO ADULTO MASCULINA</h5>
+        <table>
+          <tbody>
+            <tr className="background-cinza">
+              <th>COMPRIMENTO DO PÉ (cm)</th>
+              <td>25,1 - 25,6</td>
+              <td>25,7 - 26,3</td>
+              <td>26,4 - 27,0</td>
+              <td>27,1 - 27,6</td>
+              <td>27,7 - 28,3</td>
+              <td>28,4 - 29,0</td>
+              <td>29,1 - 29,8</td>
+            </tr>
+            <tr>
+              <th>NUMERAÇÃO (BRASIL)</th>
+              <td>38</td>
+              <td>39</td>
+              <td>40</td>
+              <td>41</td>
+              <td>42</td>
+              <td>43</td>
+              <td>44</td>
             </tr>
           </tbody>
         </table>
