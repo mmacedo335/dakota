@@ -4,7 +4,7 @@ const ReplaceDeliveryWarning = () => {
     useEffect(() => {
         const targetText = 'O prazo de entrega começa a contar só depois da confirmação do pagamento'
 
-        const customText = 'O prazo de entrega começa a contar só depois da confirmação de pagamento, exceto os produtos de PRÉ-VENDA que serão enviados de acordo com a data informada no produto.'
+        const customText = 'O prazo de entrega começa a contar a partir da postagem do pedido, exceto os produtos de PRÉ-VENDA que serão postados de acordo com a data informada no produto.'
 
         const observer = new MutationObserver(() => {
             const listItems = document.querySelectorAll('ul[class*="noticesList"] li')

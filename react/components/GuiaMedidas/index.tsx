@@ -6,20 +6,20 @@ const GuiaMedidas: React.FC = () => {
   
   return (
     <div className="guia-tamanhos">
-      <h4>DESCUBRA SEU TAMANHO</h4>
+       <h4>DESCUBRA SEU TAMANHO</h4>
       <div className="tabelas">
         <h5>NUMERAÇÃO ADULTO FEMININA</h5>
         <table>
           <tbody>
             <tr className="background-cinza">
-              <th>COMPRIMENTO DO PÉ</th>
+              <th>COMPRIMENTO DO PÉ (cm)</th>
+              <td>21,8 - 22,3</td>
+              <td>22,4 - 23,0</td>
+              <td>23,1 - 23,6</td>
+              <td>23,7 - 24,3</td>
+              <td>24,4 - 25,0</td>
               <td>25,1 - 25,6</td>
               <td>25,7 - 26,3</td>
-              <td>26,4 - 27,0</td>
-              <td>27,1 - 27,6</td>
-              <td>27,7 - 28,3</td>
-              <td>28,4 - 29,0</td>
-              <td>29,1 - 29,8</td>
               <td>26,4 - 27,0</td>
             </tr>
             <tr>
@@ -40,7 +40,7 @@ const GuiaMedidas: React.FC = () => {
         <table>
           <tbody>
             <tr className="background-cinza">
-              <th>COMPRIMENTO DO PÉ</th>
+              <th>COMPRIMENTO DO PÉ (cm)</th>
               <td>17,0 - 17,6</td>
               <td>17,7 - 18,3</td>
               <td>18,4 - 19,0</td>
@@ -50,6 +50,8 @@ const GuiaMedidas: React.FC = () => {
               <td>21,1 - 21,7</td>
               <td>21,8 - 22,3</td>
               <td>22,4 - 23,0</td>
+              <td>23,1 - 23,6</td>
+              <td>23,7 - 24,3</td>
             </tr>
             <tr>
               <th>NUMERAÇÃO (BRASIL)</th>
@@ -62,6 +64,8 @@ const GuiaMedidas: React.FC = () => {
               <td>32</td>
               <td>33</td>
               <td>34</td>
+              <td>35</td>
+              <td>36</td>
             </tr>
           </tbody>
         </table>
@@ -70,7 +74,7 @@ const GuiaMedidas: React.FC = () => {
         <table>
           <tbody>
             <tr className="background-cinza">
-              <th>COMPRIMENTO DO PÉ</th>
+              <th>COMPRIMENTO DO PÉ (cm)</th>
               <td>25,1 - 25,6</td>
               <td>25,7 - 26,3</td>
               <td>26,4 - 27,0</td>
