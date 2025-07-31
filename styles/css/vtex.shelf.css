@@ -1,0 +1,47 @@
+.relatedProducts {
+    margin-bottom: 50px;
+}
+
+.relatedProducts :global(.vtex-slider-0-x-dotsContainer) {
+    display: none;
+}
+
+.relatedProducts :global(.vtex-slider-0-x-sliderFrame) :global(.vtex-button){
+    display: none;
+}
+
+.relatedProducts :global(.vtex-slider-0-x-sliderFrame) :global(.vtex-product-summary-2-x-priceContainer){
+    padding: 0;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.relatedProducts :global(.vtex-slider-0-x-sliderFrame) :global(.vtex-store-components-3-x-sellingPriceContainer){
+    text-align: left;
+    padding: 0;
+}
+
+.relatedProducts :global(.vtex-slider-0-x-sliderFrame) :global(.vtex-store-components-3-x-sellingPrice){
+    padding: 0;
+    color: #000;
+    font-family: 'Larsseit Extra Bold';
+    font-size: 17px;
+}
+.relatedProducts :global(.vtex-slider-0-x-sliderFrame) :global(.vtex-store-components-3-x-installmentsPrice){
+    font-family: 'Larsseit Thin';
+    color: #757575;
+    font-size: 13px;
+    margin-top: 4px;
+}
+
+.relatedProducts :global(.vtex-shelf-1-x-title ) {
+    font-size: 28px;
+    color: #000;
+}
+
+@media (max-width: 760px) {
+    .relatedProducts :global(.vtex-shelf-1-x-sliderContainer) {
+        width: 90%;
+        margin: 0 auto;
+    }
+}
