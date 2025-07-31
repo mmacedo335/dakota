@@ -6,6 +6,7 @@
     "children": [
       "op-section#confirmation",
       "op-section#notices",
+      "replace-delivery-warning",
       "op-summary-section",
       "op-bank-invoice-section"
     ]

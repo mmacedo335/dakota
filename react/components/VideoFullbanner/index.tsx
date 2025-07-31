@@ -10,8 +10,42 @@ interface VideoFullbannerProps {
 }
 
 function VideoFullbanner({ videoDesktop, videoMobile, imageDesktop, imageMobile, linkImage }: VideoFullbannerProps) {
-    // Detecta se está em mobile
-    const isMobile = typeof window !== "undefined" && window.innerWidth <= 760;
+    // Detecta se está em mobile de forma reativa
+    const [isMobile, setIsMobile] = React.useState<null | boolean>(null);
+
+    React.useEffect(() => {
+        function handleResize() {
+            setIsMobile(window.innerWidth <= 760);
+        }
+        setIsMobile(window.innerWidth <= 760); // Detecta no client após hydration
+        window.addEventListener("resize", handleResize);
+        return () => window.removeEventListener("resize", handleResize);
+    }, []);
+
+    // Enquanto não detectar o device, renderiza um spinner se houver vídeo cadastrado, senão imagem
+    if (isMobile === null) {
+        // Verifica se há vídeo cadastrado para algum device
+        const hasAnyVideo = (videoDesktop && videoDesktop.trim() !== '') || (videoMobile && videoMobile.trim() !== '');
+        if (hasAnyVideo) {
+            return (
+                <div className={styles.blocoSpinner}>
+                    <div className={styles.spinner} aria-label="Carregando vídeo..." />
+                </div>
+            );
+        }
+        // Se não houver vídeo cadastrado, mostra imagem desktop
+        return (
+            <div>
+                {linkImage ? (
+                    <a href={imageDesktop} rel="noopener noreferrer">
+                        <img src={imageDesktop} className={styles.imageDesktop} />
+                    </a>
+                ) : (
+                    <img src={imageDesktop} className={styles.imageDesktop} />
+                )}
+            </div>
+        );
+    }
 
     // Funções auxiliares para identificar tipo de vídeo
     const getVideoType = (videoUrl?: string) => {
@@ -33,9 +67,20 @@ function VideoFullbanner({ videoDesktop, videoMobile, imageDesktop, imageMobile,
             : videoUrl.split("/").pop() ?? ""
     );
 
-    // Escolhe qual vídeo/imagem exibir conforme o device
-    const videoUrl = isMobile ? videoMobile : videoDesktop;
-    const imageUrl = isMobile ? imageMobile : imageDesktop;
+    // Lógica para garantir que só exibe vídeo mobile no mobile e vídeo desktop no desktop
+    let videoUrl = '';
+    let imageUrl = '';
+    if (isMobile) {
+        if (videoMobile && videoMobile.trim() !== '') {
+            videoUrl = videoMobile;
+        }
+        imageUrl = imageMobile;
+    } else {
+        if (videoDesktop && videoDesktop.trim() !== '') {
+            videoUrl = videoDesktop;
+        }
+        imageUrl = imageDesktop;
+    }
 
     const { isVimeo, isYoutube, isDirectVideo } = getVideoType(videoUrl);
 
@@ -81,7 +126,6 @@ function VideoFullbanner({ videoDesktop, videoMobile, imageDesktop, imageMobile,
                     playsInline
                 >
                     <source src={videoUrl} type="video/mp4" />
-                    Seu navegador não suporta o elemento de vídeo.
                 </video>
             );
         }
@@ -95,7 +139,6 @@ function VideoFullbanner({ videoDesktop, videoMobile, imageDesktop, imageMobile,
                 {linkImage && (
                     <a
                         href={linkImage}
-                        target="_blank"
                         rel="noopener noreferrer"
                         style={{
                             position: 'absolute',
@@ -119,7 +162,7 @@ function VideoFullbanner({ videoDesktop, videoMobile, imageDesktop, imageMobile,
     return (
         <div>
             {linkImage ? (
-                <a href={linkImage} target="_blank" rel="noopener noreferrer">
+                <a href={linkImage} rel="noopener noreferrer">
                     <img src={imageUrl} className={isMobile ? styles.imageMobile : styles.imageDesktop} />
                 </a>
             ) : (
