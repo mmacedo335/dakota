@@ -1,5 +1,6 @@
 .relatedProducts {
     margin-bottom: 50px;
+    padding: 0 20px;
 }
 
 .relatedProducts :global(.vtex-slider-0-x-dotsContainer) {
@@ -41,6 +42,16 @@
     content: 'Produtos Relacionados';
     font-size: 28px;
     color: #000;
+}
+
+.relatedProducts :global(.vtex-store-components-3-x-listPriceLabel), .relatedProducts :global(.vtex-store-components-3-x-sellingPriceLabel) {
+    display: none;
+}
+.relatedProducts :global(.vtex-store-components-3-x-listPrice) {
+    text-align: left;
+}
+.relatedProducts :global(.vtex-store-components-3-x-listPriceValue) {
+    padding: 0;
 }
 
 @media (max-width: 760px) {
