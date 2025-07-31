@@ -35,6 +35,10 @@
 }
 
 .relatedProducts :global(.vtex-shelf-1-x-title ) {
+    font-size: 0;
+}
+.relatedProducts :global(.vtex-shelf-1-x-title)::after {
+    content: 'Produtos Relacionados';
     font-size: 28px;
     color: #000;
 }
