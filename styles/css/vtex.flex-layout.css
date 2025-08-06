@@ -297,8 +297,10 @@
 .flexCol--info-availability {
     position: sticky;
     top: 120px;
-    height: 225vh;
+    height: fit-content;
+    max-height: 100vh;
     padding: 0 40px;
+    overflow-y: auto;
 }
 
 @media(max-width: 1500px) {

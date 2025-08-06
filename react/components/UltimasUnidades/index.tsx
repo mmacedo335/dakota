@@ -9,6 +9,24 @@ const UltimasUnidades = () => {
 
     const [availableQty, setAvailableQty] = useState<number | null>(null)
 
+    // Efeito para clicar automaticamente na variação correta
+    useEffect(() => {
+        if (!product?.name) return
+
+        // Pequeno delay para garantir que os elementos estejam renderizados
+        setTimeout(() => {
+            const elements = document.querySelectorAll('.vtex-store-components-3-x-skuSelectorItemTextValue')
+            elements.forEach((element) => {
+                if (element instanceof HTMLElement && element.textContent?.trim() === product.name) {
+                    element.click()
+                }
+            })
+
+            //console.log('Clicou na variação correta:', product.name)
+            
+        }, 1000)
+    }, [])
+
     useEffect(() => {
         const qty = product?.sellers?.[0]?.commertialOffer?.AvailableQuantity
 
