@@ -298,7 +298,6 @@
     position: sticky;
     top: 120px;
     height: fit-content;
-    max-height: 100vh;
     padding: 0 40px;
     overflow-y: auto;
 }
