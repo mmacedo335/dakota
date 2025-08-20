@@ -1,7 +1,7 @@
 :global(.vtex-product-summary-2-x-container) .sellingPrice--summary .sellingPriceValue--summary {
     font-size: 24px;
     color: #000;
-    font-family: 'Larsseit Extra Bold';
+    font-family: 'Larsseit Bold';
 }
 
 :global(.vtex-flex-layout-0-x-flexRow--product-main) .sellingPrice--summary .sellingPriceValue--summary {
@@ -105,7 +105,7 @@
 .installments--summary {
     color: #757575;
     font-size: 15px;
-    font-family: 'Larsseit Thin';
+    font-family: 'Larsseit Regular';
     display: block;
     text-align: center;
     margin-top: 4px;

@@ -4,7 +4,8 @@
     "children": [
       "flex-layout.row#search-banner",
       "flex-layout.row#search-topo",
-      "flex-layout.row#result"
+      "flex-layout.row#result",
+      "flex-layout.row#compre-numeracao"
     ],
     "props": {
       "preventRouteChange": true,

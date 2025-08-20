@@ -1,0 +1,10 @@
+.imageContainer {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.productImage {
+    height: auto;
+    object-fit: cover;
+}
