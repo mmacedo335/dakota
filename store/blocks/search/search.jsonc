@@ -103,7 +103,7 @@
   },
   "flex-layout.row#result": {
     "children": [
-      "flex-layout.col#filter",
+      //"flex-layout.col#filter",
       "flex-layout.col#content"
     ],
     "props": {
@@ -163,7 +163,8 @@
   },
   "flex-layout.col#content": {
     "children": [
-      "flex-layout.row#orderByAndSwitcher",
+      "toggle-layout#banner-e-lista",
+      "sticky-layout#searchFilter-desktop",
       "flex-layout.row#fetchprevious",
       "flex-layout.row#products",
       "flex-layout.row#fetchmore",
@@ -175,15 +176,99 @@
       "blockClass":"resultados-busca"
     }
   },
+
+  "toggle-layout#banner-e-lista": {
+    "title": "Banner e Lista",
+    "children": [
+        "flex-layout.row#banner-and-list"
+    ],
+    "props": {
+      "renderChildren": false     
+    }
+  },
+  "flex-layout.row#banner-and-list": {
+    "props": {
+      "blockClass": "banner-and-list",
+      "fullWidth": true
+    },
+    "children": [
+      "flex-layout.col#banner-category",
+      "flex-layout.col#list-category"
+    ]
+  },
+  "flex-layout.col#banner-category": {
+    "children": [
+      "image#banner-category"
+    ],
+    "props": {
+      "blockClass": "banner-category",
+      "width": "40%"
+    }
+  },
+  "image#banner-category": {
+    "props": {
+      "src": ""
+    }
+  },
+  "flex-layout.col#list-category": {
+    "children": [
+      "list-context.product-list#vitrine-categoria"
+    ],
+    "props": {
+      "blockClass": "list-category",
+      "width": "60%"
+    }
+  },
+  "list-context.product-list#vitrine-categoria": {
+    "title": "Vitrine categoria",
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#vitrine-categoria"
+    ],
+    "props": {
+      "maxItems": "6"
+    }
+  },
+  "slider-layout#vitrine-categoria": {
+    "props": {
+        "itemsPerPage": {
+            "desktop": 6
+        },
+        "showNavigationArrows": "never",
+        "showPaginationDots": "never",
+        "infinite": false,
+        "fullWidth": false,
+        "blockClass": "shelf-vitrine-categoria"
+    } 
+  },
+  "sticky-layout#searchFilter-desktop":{
+    "props": {
+      "blockClass":"sticky-filter-desktop"
+    },
+    "children":[
+      "flex-layout.row#orderByAndSwitcher"
+    ]
+  },
+
   "flex-layout.row#orderByAndSwitcher": {
     "children": [
+      "flex-layout.col#disclosure-filter",
       "order-by.v2"
     ],
     "props": {
       "horizontalAlign": "right",
       "preventHorizontalStretch": true,
-      "blockClass": "orderByAndSwitcher",
-      "paddingBottom": 7
+      "blockClass": "orderByAndSwitcher"
+    }
+  },
+  "flex-layout.col#disclosure-filter": {
+    "children": [
+      "disclosure-layout#filter"
+    ],
+    "props": {
+      "blockClass": "disclosure-filter"
     }
   },
   "flex-layout.row#fetchprevious": {
@@ -263,8 +348,8 @@
   },
   "flex-layout.row#productCountMobile": {
     "children": [
-      "flex-layout.col#switcherMobile",
-      "total-products.v2"
+      "total-products.v2",
+      "flex-layout.col#switcherMobile"
     ],
     "props": {
       "blockClass": "productCountMobileRow",

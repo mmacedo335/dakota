@@ -1,4 +1,72 @@
 @media (max-width: 760px) {
+    .flexRowContent--banner-and-list {
+        flex-direction: column;
+        max-width: 95%;
+        margin: auto;
+        margin-bottom: 30px;
+    }
+    .flexRowContent--infos-summary {
+        padding: 0 !important;
+    }
+}
+
+.flexCol--similar-summary {
+    min-height: 40px;
+}
+
+.flexCol--banner-category :global(.vtex-store-components-3-x-imageElement) {
+    border-radius: 8px;
+    width: 100%;
+}
+.flexRowContent--banner-and-list {
+    gap: 15px;
+    align-items: center;
+    display: flex;
+}
+.flexRowContent--orderByAndSwitcher {
+    padding: 20px 0;
+    justify-content: space-between;
+}
+
+.flexRowContent--infos-summary {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+}
+
+.flexRowContent--infos-summary .stretchChildrenWidth {
+    width: 100% !important;
+}
+.flexRow--orderByAndSwitcher :global(.vtex-disclosure-layout-1-x-trigger) {
+    background: #DB3D68;
+    border-radius: 3px;
+    padding: 11px 15px;
+}
+.flexRow--orderByAndSwitcher :global(.vtex-disclosure-layout-1-x-trigger--visible) {
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.flexRow--orderByAndSwitcher :global(.vtex-disclosure-layout-1-x-trigger--visible)::after {
+    content: '';
+    border: solid #fff;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 4px;
+    transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+}
+.flexColChild--disclosure-filter :global(.vtex-disclosure-layout-1-x-content) {
+    position: absolute;
+    background: #fff;
+    box-shadow: 0 4px 7px -2px grey;
+    padding: 15px;
+    width: 250px;
+    border-radius: 3px;
+}
+
+@media (max-width: 760px) {
     .flexCol--minicart-custom {
         flex-direction: row;
         align-items: center;
@@ -20,7 +88,7 @@
     width: auto;
     height: auto;
     z-index: 9;
-    bottom: 20px;
+    bottom: 30px;
     right: 15px;
 }
 
@@ -576,7 +644,7 @@
 }
 
 .flexRow--search-topo {
-    box-shadow: inset 0px 119px #F6F6F6;
+    background-color: rgba(238, 238, 238, 1);
     margin-bottom: 30px;
 }
 
@@ -588,10 +656,13 @@
     border-bottom: 1px solid #F6F6F6;
     border-top: 1px solid #F6F6F6;
     align-items: center;
+    margin-top: 10px;
 }
 
 .flexRowContent--searchinfomobile {
     gap: 8px;
+    align-items: baseline;
+    margin-top: 0;
 }
 
 .flexCol--filterCol {
@@ -790,7 +861,8 @@
     }
 
     .flexRow--search-topo {
-        display: none;
+        background-color: rgba(246, 246, 246, 1);
+        margin-bottom: 25px;
     }
 }
 

@@ -22,7 +22,8 @@
       "rich-text#meta-description",
       "breadcrumb.search",
       "flex-layout.row#searchtitle",
-      "quick-filter-category"
+      "quick-filter-category",
+      "total-products.v2"
     ],
     "props": {
       "preserveLayoutOnMobile": true,
@@ -51,6 +52,37 @@
     "props": {
       "text": "",
       "blockClass": "meta-description"
+    }
+  },
+  "flex-layout.row#search-topo-mobile": {
+    "title": "Topo listagem Mobile",
+    "children": [
+      "flex-layout.col#search-topo-mobile"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "fullWidth": true,
+      "blockClass": [
+        "search-topo",
+        "container-full",
+        "search-topo-mobile"
+      ],
+      "marginBottom": 10,
+      "paddingTop": 3
+    }
+  },
+  "flex-layout.col#search-topo-mobile": {
+    "title": "Topo listagem",
+    "children": [
+      "rich-text#title-pagina",
+      "rich-text#meta-description",
+      "breadcrumb.search",
+      "flex-layout.row#searchtitle"
+    ],
+    "props": {
+      "preserveLayoutOnMobile": true,
+      "fullWidth": false,
+      "blockClass": "search-topo"
     }
   }
 }

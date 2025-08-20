@@ -79,7 +79,8 @@
     "vtex.auth-challenge": "1.x",
     "vtex.product-summary-context": "0.x",
     "vtex.search-graphql": "0.x",
-    "vtex.session-client": "1.x"
+    "vtex.session-client": "1.x",
+    "vtex.toggle-layout": "0.x"
   },
   "peerDependencies": {
     "vtex.wish-list": "1.x",
