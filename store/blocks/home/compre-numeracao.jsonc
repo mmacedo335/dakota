@@ -9,20 +9,20 @@
       "link#compre-numeracao-36",
       "link#compre-numeracao-37",
       "link#compre-numeracao-38",
-      "link#compre-numeracao-39", 
+      "link#compre-numeracao-39",
       "link#compre-numeracao-40"
     ],
     "props": {
       "blockClass": "compre-numeracao",
       "preventHorizontalStretch": true,
-      "preventVerticalStretch": true ,
-      "horizontalAlign": "center", 
+      "preventVerticalStretch": true,
+      "horizontalAlign": "center",
       "verticalAlign": "center",
-      "preserveLayoutOnMobile": true, 
-      "paddingTop": 5, 
+      "preserveLayoutOnMobile": true,
+      "paddingTop": 5,
       "paddingBottom": 5
     }
-  }, 
+  },
   "responsive-layout.desktop#compre-numeracao-title": {
     "children": [
       "rich-text#compre-numeracao-title"
@@ -33,7 +33,10 @@
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
       "text": "COMPRE NA SUA NUMERAÇÃO",
-      "blockClass": ["margin-0", "compre-numeracao"]
+      "blockClass": [
+        "margin-0",
+        "compre-numeracao"
+      ]
     }
   },
   "link#compre-numeracao-33": {
@@ -107,5 +110,89 @@
         "compre-numeracao"
       ]
     }
+  },
+  "flex-layout.row#diferenciais": {
+    "title": "Diferenciais",
+    "children": [
+      "rich-text#diferencial1",
+      "rich-text#diferencial2",
+      "rich-text#diferencial3",
+      "rich-text#diferencial4"
+    ],
+    "props": {
+      "blockClass": "diferenciais"
+    }
+  },
+  "responsive-layout.desktop#diferenciais": {
+    "children": [
+      "flex-layout.row#diferenciais"
+    ]
+  },
+  "rich-text#diferencial1": {
+    "title": "Diferencial 1",
+    "props": {
+      "text": "**FRETE GRÁTIS** ACIMA DE R$ 249",
+      "blockClass": [
+        "diferencial",
+        "diferencial1"
+      ]
+    }
+  },
+  "rich-text#diferencial2": {
+    "title": "Diferencial 2",
+    "props": {
+      "text": "**3% OFF** NO PIX",
+      "blockClass": [
+        "diferencial",
+        "diferencial2" 
+      ]
+    }
+  },
+  "rich-text#diferencial3": {
+    "title": "Diferencial 3",
+    "props": {
+      "text": "**10X SEM JUROS** NO CARTÃO",
+      "blockClass": [
+        "diferencial",
+        "diferencial3"
+      ]
+    }
+  },
+  "rich-text#diferencial4": {
+    "title": "Diferencial 4",
+    "props": {
+      "text": "**PRIMEIRA TROCA** GRÁTIS",
+      "blockClass": [
+        "diferencial",
+        "diferencial4"
+      ]
+    }
+  },
+  "responsive-layout.mobile#diferenciais": {
+    "children": [
+      "slider-layout#diferenciais-mobile"
+    ]
+  },
+  "slider-layout#diferenciais-mobile": {
+    "props": {
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      },
+      "autoplay": {
+        "timeout": 3000
+      },
+      "infinite": true,
+      "showNavigationArrows": "never",
+      "blockClass": "topo-flutuante",
+      "showPaginationDots": "never"
+    },
+    "children": [
+      "rich-text#diferencial1",
+      "rich-text#diferencial2",
+      "rich-text#diferencial3",
+      "rich-text#diferencial4"
+    ]
   }
 }

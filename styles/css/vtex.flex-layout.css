@@ -1,3 +1,15 @@
+.flexRow--diferenciais {
+    background-color: #DB3D68;
+    margin-top: -2px;
+}
+.flexRow--diferenciais :global(.vtex-store-components-3-x-container) {
+    max-width: 1310px;
+}
+
+.flexRowContent--container-custom {
+    margin: 50px 0;
+}
+
 @media (max-width: 760px) {
     .flexCol--minicart-custom {
         flex-direction: row;

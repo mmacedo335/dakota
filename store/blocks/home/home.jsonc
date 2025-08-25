@@ -4,15 +4,18 @@
       "fg-metaOganization",
       "rich-text#h1__home",
       "list-context.image-list#full-banner-home",
+      "responsive-layout.desktop#diferenciais",
+      "responsive-layout.mobile#diferenciais",
       "flex-layout.row#compre-numeracao",
       "__fold__",
       "flex-layout.row#shelf-01",
-      "flex-layout.row#grid-banner",
+      "mosaico-home",
+      //"flex-layout.row#grid-banner",
       "flex-layout.row#shelf-02",
-      "flex-layout.row#blog",
-      "flex-layout.row#shelf-03",
-      "yv-testimonials",
-      "flex-layout.row#texto-home"
+      "flex-layout.row#blog"
+      //"flex-layout.row#shelf-03",
+      //"yv-testimonials",
+      //"flex-layout.row#texto-home"
     ]
   }
 }

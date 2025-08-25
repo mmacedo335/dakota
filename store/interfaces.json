@@ -90,14 +90,14 @@
   "alert-item-quantity": {
     "component": "AlertaQuantidade"
   },
-  "custom-ship-pdp":{
-    "component":"CustomShip"
+  "custom-ship-pdp": {
+    "component": "CustomShip"
   },
-  "alert-minicart":{
+  "alert-minicart": {
     "component": "AlertMinicart"
   },
   "input-helmet": {
-      "component": "InputHelmet"
+    "component": "InputHelmet"
   },
   "wishlist-header": {
     "component": "WishlistHeader"
@@ -108,7 +108,10 @@
   "video-fullbanner": {
     "component": "VideoFullbanner"
   },
-    "replace-delivery-warning": {
+  "replace-delivery-warning": {
     "component": "ReplaceDeliveryWarning"
+  },
+  "mosaico-home": {
+    "component": "MosaicoHome"
   }
 }
