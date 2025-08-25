@@ -1,3 +1,38 @@
+.container--diferencial {
+    justify-content: center;
+}
+.paragraph--diferencial {
+    display: flex;
+    align-items: center;
+    color: #fff;
+    font-size: 16px;
+    gap: 4px;
+}
+.paragraph--diferencial1::before {
+    content: url('assets/svg/Package-dif.svg');
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.paragraph--diferencial2::before {
+    content: url('assets/svg/Diamond-dif.svg');
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.paragraph--diferencial3::before {
+    content: url('assets/svg/CreditCard-dif.svg');
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+.paragraph--diferencial4::before {
+    content: url('assets/svg/Swap-dif.svg');
+    width: 24px;
+    height: 24px;
+    margin-right: 10px;
+}
+
 .link {
     text-decoration: none;
 }
@@ -183,18 +218,18 @@
     color: #4C4C4C;
     font-size: 18px;
     font-weight: bold;
-    letter-spacing: 5px;
-    font-family: 'BebasNeue Regular';
+    letter-spacing: 3px;
+    font-family: 'Larsseit Regular';
     margin-right: 35px;
 }
 
 .heading--title-padrao,
 .paragraph--title-padrao {
-    font-size: 27px;
+    font-size: 32px;
     text-transform: uppercase;
-    letter-spacing: 4px;
-    color: #000;
-    font-family: 'Larsseit Extra Bold';
+    color: #222;
+    font-family: 'Larsseit Medium';
+    letter-spacing: 0.05em;
 }
 
 .strong--conteudo-blog {
@@ -415,7 +450,7 @@
 
     .heading--title-padrao,
     .paragraph--title-padrao {
-        font-size: 16px;
+        font-size: 20px;
     }
 
     :global(.vtex-flex-layout-0-x-flexRowContent--topo-menu) .paragraph--topo-flutuante {

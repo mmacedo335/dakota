@@ -23,7 +23,7 @@
 }
 
 .label--compre-numeracao {
-    color: #9B9B9B;
+    color: rgba(105, 105, 105, 1);
     font-size: 41px;
     font-family: 'Larsseit Extra Bold';
 }
