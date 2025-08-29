@@ -1,8 +1,14 @@
 .stackItem--add-wishlist-summary {
     right: 0;
     left: auto;
-    opacity: 0;
     z-index: 999 !important;
+}
+
+.stackItem--add-wishlist-summary  :global(.vtex-wish-list-1-x-wishlistIcon) {
+    opacity: 0;
+}
+.stackItem--add-wishlist-summary  :global(.vtex-wish-list-1-x-fill) {
+    opacity: 1;
 }
 
 .stackItem--add-wishlist-summary :global(.vtex-button__label) {
@@ -25,7 +31,7 @@
     .stackItem--flags-summary {
         top: 30px;
     }
-    .stackItem--add-wishlist-summary {
+    .stackItem--add-wishlist-summary :global(.vtex-wish-list-1-x-wishlistIcon) {
         opacity: 1 !important;
     }
 }

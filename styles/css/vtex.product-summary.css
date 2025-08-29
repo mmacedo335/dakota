@@ -15,7 +15,7 @@
     }
 }
 
-.container:hover :global(.vtex-stack-layout-0-x-stackItem--add-wishlist-summary) {
+.container:hover :global(.vtex-wish-list-1-x-wishlistIcon) {
     opacity: 1;
 }
 
