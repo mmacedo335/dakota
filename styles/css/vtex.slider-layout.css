@@ -1,3 +1,7 @@
+.slideChildrenContainer--conteudo-blog {
+    background-color: #fff;
+}
+
 .paginationDotsContainer .paginationDot--isActive {
     background: black;
 }

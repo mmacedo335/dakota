@@ -6,6 +6,12 @@
     max-width: 1310px;
 }
 
+.flexRowContent--blog {
+    background-color: #F6F6F6;
+    margin-bottom: 0;
+    padding-bottom: 30px;
+}
+
 .flexRowContent--container-custom {
     margin: 50px 0;
 }
@@ -15,6 +21,9 @@
         flex-direction: row;
         align-items: center;
         justify-content: end;
+    }
+    .flexColChild--container-blog {
+        width: 100%;
     }
 }
 
