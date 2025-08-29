@@ -22,9 +22,10 @@
         align-items: center;
         justify-content: end;
     }
-    .flexColChild--container-blog {
-        width: 100%;
-    }
+}
+
+.flexColChild--container-blog {
+    width: 100%;
 }
 
 .flexCol--prices-vitrine {
