@@ -1,7 +1,7 @@
 {
   "vendor": "dakota",
   "name": "specification-badge",
-  "version": "0.0.0",
+  "version": "0.0.1",
   "title": "Selos de Especificação",
   "description": "Admin app to control product specifications badges",
   "builders": {
