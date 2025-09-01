@@ -11,6 +11,7 @@
       "shelf.relatedProducts",
       "flex-layout.row#title-description",
       "flex-layout.row#description",
+      "product-specifications-badges",
       "flex-layout.row#review-product"
     ]
   },
