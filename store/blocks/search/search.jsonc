@@ -202,7 +202,7 @@
     ],
     "props": {
       "blockClass": "banner-category",
-      "width": "40%"
+      "width": "35%"
     }
   },
   "image#banner-category": {
@@ -216,7 +216,7 @@
     ],
     "props": {
       "blockClass": "list-category",
-      "width": "60%"
+      "width": "63%"
     }
   },
   "list-context.product-list#vitrine-categoria": {

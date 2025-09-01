@@ -25,6 +25,13 @@
     align-items: stretch;
     display: flex;
 }
+
+@media (min-width: 2400px) {
+    .flexRowContent--banner-and-list {
+        align-items: center;
+    }
+}
+
 .flexRowContent--orderByAndSwitcher {
     padding: 20px 0;
     justify-content: space-between;
@@ -97,6 +104,28 @@
 .flexCol--resultados-busca{
     max-width: 1900px;
     margin: 0 auto;
+}
+
+@media (min-width: 990px) {
+    .flexCol--resultados-busca{
+        max-width: 100%;
+    }
+    .flexColChild--resultados-busca {
+        max-width: 1900px;
+        margin: 0 auto;
+        width: 95%;
+    }
+    .flexColChild--resultados-busca:first-child {
+        width: 100%;
+        max-width: 100%;
+    }
+    .flexRowContent--search-topo {
+        max-width: 95%;
+        margin: 0 auto;
+    }
+    .flexRow--banner-and-list {
+        margin-top: -15px;
+    }
 }
 
 @media (max-width: 760px) {

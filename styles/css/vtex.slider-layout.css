@@ -9,17 +9,17 @@
 
 @media (min-width: 1921px) {
     .sliderTrack--shelf-vitrine-categoria :global(.vtex-product-summary-2-x-element) {
-        height: 500px;;
+        height: 485px;
     }
 }
 @media (max-width: 1920px) {
     .sliderTrack--shelf-vitrine-categoria :global(.vtex-product-summary-2-x-element) {
-        height: 475px;;
+        height: auto;
     }
 }
 @media (min-width: 1200px) and (max-width: 1919px) {
     .sliderTrack--shelf-vitrine-categoria :global(.vtex-product-summary-2-x-element) {
-        height: 430px;;
+        height: auto;
     }
 }
 @media (max-width: 760px) {
