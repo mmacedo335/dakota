@@ -110,4 +110,8 @@
     .sliderLayoutContainer--fall-winter__showcase-banner{       
         margin-top: 0px;
     }
+
+    .sliderLayoutContainer--topo-flutuante {
+        background: #DB3D68;
+    }
 }
