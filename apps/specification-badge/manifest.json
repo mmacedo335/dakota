@@ -1,0 +1,56 @@
+{
+  "vendor": "dakota",
+  "name": "specification-badge",
+  "version": "0.0.2",
+  "title": "Selos de Especificação",
+  "description": "Admin app to control product specifications badges",
+  "builders": {
+    "react": "3.x",
+    "messages": "1.x",
+    "docs": "0.x",
+    "store": "0.x"
+  },
+  "dependencies": {
+    "vtex.css-handles": "1.x",
+    "vtex.store-graphql": "2.x",
+    "vtex.apps-graphql": "3.x",
+    "vtex.native-types": "0.x",
+    "vtex.product-context": "0.x"
+  },
+  "settingsSchema": {
+    "title": "Product Specifications Badge Control",
+    "type": "object",
+    "access": "public",
+    "properties": {
+      "badges": {
+        "type": "array",
+        "title": "Selos",
+        "items": {
+          "type": "object",
+          "title": "Selo",
+          "properties": {
+            "specificationName": {
+              "title": "Nome da especificação",
+              "type": "string",
+              "description": "O nome deve ser o mesmo que o cadastrado no produto."
+            },
+            "specificationBadge": {
+              "title": "Imagem do selo",
+              "type": "string",
+              "description": "Imagem responsável pelo selo"
+            }
+          },
+          "required": [
+            "specificationBadge",
+            "specificationName"
+          ]
+        }
+      }
+    }
+  },
+  "registries": [
+    "smartcheckout"
+  ],
+  "policies": [],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}
