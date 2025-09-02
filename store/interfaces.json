@@ -111,6 +111,9 @@
   "replace-delivery-warning": {
     "component": "ReplaceDeliveryWarning"
   },
+  "mosaico-home": {
+    "component": "MosaicoHome"
+  },
   "product-refs": {
     "component": "ProductRefs"
   }
