@@ -15,7 +15,8 @@
   "flex-layout.col#spec-group": {
     "children": [
       "product-specification",
-      "product-identifier.product"
+      "product-identifier.product",
+      "product-refs"
     ]
   },
   "product-identifier.product": {

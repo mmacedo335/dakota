@@ -1,0 +1,36 @@
+/* Typings for `render-runtime` */
+declare module 'vtex.render-runtime' {
+  export {
+    ExtensionContainer,
+    Block,
+    ExtensionPoint,
+    LayoutContainer,
+    LegacyExtensionContainer,
+    Helmet,
+    Link,
+    NoSSR,
+    useSSR,
+    RenderContextConsumer,
+    TreePathContextConsumer,
+    ExperimentalLazyImages,
+    useExperimentalLazyImagesContext,
+    canUseDOM,
+    render,
+    start,
+    withHMR,
+    registerComponent,
+    withRuntimeContext,
+    ChildBlock,
+    useChildBlock,
+    useRuntime,
+    useTreePath,
+    withSession,
+    Loading,
+    LoadingContextProvider,
+    buildCacheLocator,
+    renderExtension,
+    Unstable__ChildBlock,
+    useChildBlock__unstable,
+  } from 'vtex.render-runtime/react/core/main'
+}
+export {}

@@ -1,0 +1,9 @@
+{
+  "greeting-example": {
+    "component": "Greeting",
+    "composition": "children"
+  },
+  "product-specifications-badges":{
+    "component": "SpecificationBadge"
+  }
+}
