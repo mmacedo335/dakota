@@ -1,0 +1,26 @@
+.flexRefs {
+    display: flex;
+    gap: 5px;
+    align-items: center;
+}
+
+.productRefs {
+    padding-top: 10px;
+    margin-top: 10px;
+    border-top: 1px solid #222;
+}
+.productRefs strong {
+    font-size: 12px;
+    font-family: 'Larsseit Medium';
+    color: #222222;
+    letter-spacing: 0.5px;
+    padding: 4px 0;
+}
+.productRefs p {
+    margin: 0;
+    font-size: 12px;
+    font-family: 'Larsseit Regular';
+    color: #222222;
+    letter-spacing: 0.5px;
+    padding: 3px 0;
+}
