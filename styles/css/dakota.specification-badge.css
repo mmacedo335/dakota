@@ -1,0 +1,25 @@
+.specificationsBadgesWrapper{
+    max-width: 1200px;
+    width: 100%;
+    margin: 15px auto;
+    
+    .specificationBadgesList{
+        padding: 0;
+        margin: 0;
+        list-style: none;
+        display: flex;
+        gap: 10px;
+        flex-wrap: wrap;
+    }
+}
+
+@media screen and (max-width:768px){
+    .specificationsBadgesWrapper{
+        padding-inline: 10px;
+
+    .specificationBadgesListItem{
+        max-width: 48%;
+
+    }
+    }
+}
