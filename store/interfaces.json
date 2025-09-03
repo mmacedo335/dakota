@@ -113,5 +113,11 @@
   },
   "image-product-summary": {
     "component": "ImageProductSummary"
+  },
+  "mosaico-home": {
+    "component": "MosaicoHome"
+  },
+  "product-refs": {
+    "component": "ProductRefs"
   }
 }

@@ -1,0 +1,66 @@
+.mosaicoContainer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    margin: 0;
+    gap: 10px;
+    padding-top: 50px;
+}
+
+.mosaicoItem:nth-child(1) {
+    width: calc(30% - 5px);
+}
+
+.mosaicoItem:nth-child(2) {
+    width: calc(70% - 5px);
+}
+
+/* Demais items do mosaico (após a primeira linha) */
+.mosaicoItem:nth-child(n+3) {
+    width: calc(50% - 5px);
+}
+
+.mosaicoItem {
+    position: relative;
+}
+
+.mosaicoImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.mosaicoVideo {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+}
+
+.mosaicoText {
+    position: absolute;
+    bottom: 30px;
+    left: 55px;
+    font-size: 24px;
+    text-decoration: underline;
+    color: #222;
+    font-family: 'Larsseit Medium';
+}
+
+@media (max-width: 768px) {
+    .mosaicoContainer {
+        padding-top: 0;
+    }
+    .mosaicoItem,
+    .mosaicoItem:nth-child(1),
+    .mosaicoItem:nth-child(2),
+    .mosaicoItem:nth-child(n+3) {
+        width: 100%;
+    }
+    .mosaicoText {
+        font-size: 16px;
+        left: 20px;
+        bottom: 10px;
+    }
+}

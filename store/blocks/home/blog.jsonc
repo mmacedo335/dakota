@@ -14,24 +14,20 @@
   },
   "flex-layout.col#blog": {
     "children": [
-      "responsive-layout.desktop#title-blog",
-      "flex-layout.row#grid-blog"
+      "rich-text#title-blog",
+      "slider-layout#blog"
     ],
     "props": {
+      "blockClass": "container-blog",
       "horizontalAlign": "center"
     }
-  },
-  "responsive-layout.desktop#title-blog": {
-    "children": [
-      "rich-text#title-blog"
-    ]
   },
   "rich-text#title-blog": {
     "title": "Titulo",
     "props": {
       "textAlignment": "CENTER",
       "textPosition": "CENTER",
-      "text": "### ÚLTIMAS TENDÊNCIAS DO MUNDO FASHION",
+      "text": "### ÚLTIMAS TENDÊNCIAS",
       "blockClass": "title-padrao"
     }
   },
@@ -39,7 +35,9 @@
     "children": [
       "flex-layout.col#conteudo-blog-01",
       "flex-layout.col#conteudo-blog-02",
-      "flex-layout.col#conteudo-blog-03"
+      "flex-layout.col#conteudo-blog-03",
+      "flex-layout.col#conteudo-blog-04",
+      "flex-layout.col#conteudo-blog-05"
     ],
     "props": {
       "blockClass": "conteudo-blog",
@@ -141,5 +139,92 @@
         "conteudo-blog"
       ]
     }
+  },
+  "flex-layout.col#conteudo-blog-04": {
+    "title": "Conteudo Blog 04",
+    "children": [
+      "image#conteudo-blog-04",
+      "rich-text#conteudo-blog-04"
+    ],
+    "props": {
+      "width": "28%",
+      "blockClass": "conteudo-01"
+    }
+  },
+  "image#conteudo-blog-04": {
+    "title": "Imagem",
+    "props": {
+      "blockClass": "full",
+      "src": "",
+      "link": {
+        "url": "",
+        "newTab": true
+      }
+    }
+  },
+  "rich-text#conteudo-blog-04": {
+    "title": "Texto",
+    "props": {
+      "text": "",
+      "blockClass": [
+        "margin-0",
+        "conteudo-blog"
+      ]
+    }
+  },
+  "flex-layout.col#conteudo-blog-05": {
+    "title": "Conteudo Blog 05",
+    "children": [
+      "image#conteudo-blog-05",
+      "rich-text#conteudo-blog-05"
+    ],
+    "props": {
+      "width": "28%",
+      "blockClass": "conteudo-01"
+    }
+  },
+  "image#conteudo-blog-05": {
+    "title": "Imagem",
+    "props": {
+      "blockClass": "full",
+      "src": "",
+      "link": {
+        "url": "",
+        "newTab": true
+      }
+    }
+  },
+  "rich-text#conteudo-blog-05": {
+    "title": "Texto",
+    "props": {
+      "text": "",
+      "blockClass": [
+        "margin-0",
+        "conteudo-blog"
+      ]
+    }
+  },
+
+  "slider-layout#blog": {
+    "title": "Slider Blog",
+    "props": {
+      "infinite": true,
+      "fullWidth": true,
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always",
+      "blockClass": "conteudo-blog",
+      "itemsPerPage": {
+        "desktop": 4,
+        "tablet": 1,
+        "phone": 1
+      }
+    },
+    "children": [
+      "flex-layout.col#conteudo-blog-01",
+      "flex-layout.col#conteudo-blog-02",
+      "flex-layout.col#conteudo-blog-03",
+      "flex-layout.col#conteudo-blog-04",
+      "flex-layout.col#conteudo-blog-05"
+    ]
   }
 }
