@@ -111,6 +111,9 @@
   "replace-delivery-warning": {
     "component": "ReplaceDeliveryWarning"
   },
+  "image-product-summary": {
+    "component": "ImageProductSummary"
+  },
   "mosaico-home": {
     "component": "MosaicoHome"
   },

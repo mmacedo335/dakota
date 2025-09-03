@@ -1,3 +1,11 @@
+@media (max-width: 760px) {
+  .galleryTitle--layout {
+    text-align: left !important;
+    margin-bottom: 0 !important;
+  }
+
+}
+
 @media (min-width: 990px) {
   .gallery--grid{
     display: grid;
@@ -11,14 +19,14 @@
 
 .orderByButton {
   justify-content: space-between;
-  background: #F6F6F6;
+  background: #fff;
   border: none;
   border-radius: 3px;
   z-index: 5;
   position: relative;
   padding: 8px 10px;
   height: 42px;
-  margin-top:-2px
+  border: 1px solid rgba(219, 61, 104, 1);
 }
 
 .orderByButton .filterPopupTitle {
@@ -173,43 +181,66 @@
   text-transform: uppercase;
 }
 
+@media (min-width: 990px) {
+  .totalProducts--layout {
+    position: absolute;
+    bottom: 0;
+    top: 0;
+    right: 0;
+  }
+}
+
 .totalProducts--layout {
-  border: none;
-  padding: 0px;
-  color: #222;
-  font-size: 10px;
-  letter-spacing: 0.5px;
+  margin: 0;
   font-family: 'Larsseit Medium';
+  font-weight: 600;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  color: rgba(34, 34, 34, 1);
 }
 
 .totalProducts--layout .totalProductsMessage {
   font-size: 0px;
 }
 
+@media (max-width: 760px) {
+  .totalProducts--layout .totalProductsMessage::before {
+    font-size: 10px !important;
+  }
+  .totalProducts--layout .totalProductsMessage::after {
+    font-size: 10px !important;
+  }
+}
+
 .totalProducts--layout .totalProductsMessage::before {
   content: 'Resultados ';
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.5px;
   display: inline-block;
-  font-size: 10px;
-  color: #222;
-  text-transform: uppercase;
+  color: rgba(34, 34, 34, 1);
 }
 
 .totalProducts--layout .totalProductsMessage::after {
   content: 'Encontrados';
   display: inline-block;
-  font-size: 10px;
-  margin-left: 3px;
-  color: #222;
-  text-transform: uppercase;
-  font-family: 'Larsseit Regular';
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  color: rgba(34, 34, 34, 1);
 }
 
 .filterPopupButton {
   height: 42px;
-  background: #f6f6f6;
+  background: #fff;
   width: 100%;
   border-radius: 3px;
   padding: 5px 10px;
+  border: 1px solid #DB3D68;
 }
 
 .filterPopupButton .filterPopupTitle {
@@ -360,15 +391,12 @@
 }
 
 @media(max-width: 768px) {
+  .gallery--grid {
+    gap: 5px;
+  }
   .gallery--grid .galleryItem {
     padding: 0px;
-  }
-
-  .gallery--grid .galleryItem:nth-child(even) {
-    padding-left: 5px;
-  }
-
-  .gallery--grid .galleryItem:nth-child(odd) {
-    padding-right: 5px;
+    width: 49% !important;
+    flex-basis: auto !important;
   }
 }

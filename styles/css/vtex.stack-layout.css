@@ -1,3 +1,20 @@
+.stackItem--add-wishlist-summary {
+    right: 0;
+    left: auto;
+    z-index: 999 !important;
+}
+
+.stackItem--add-wishlist-summary  :global(.vtex-wish-list-1-x-wishlistIcon) {
+    opacity: 0;
+}
+.stackItem--add-wishlist-summary  :global(.vtex-wish-list-1-x-fill) {
+    opacity: 1;
+}
+
+.stackItem--add-wishlist-summary :global(.vtex-button__label) {
+    padding: 0 !important;
+}
+
 .stackItem--flags-summary {
     right: 0px;
     left: unset;
@@ -12,6 +29,9 @@
 
 @media (max-width: 760px) {
     .stackItem--flags-summary {
-        top: 25px;
+        top: 30px;
+    }
+    .stackItem--add-wishlist-summary :global(.vtex-wish-list-1-x-wishlistIcon) {
+        opacity: 1 !important;
     }
 }

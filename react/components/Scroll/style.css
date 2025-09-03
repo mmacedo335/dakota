@@ -6,16 +6,17 @@
     font-size: 16px;
     text-transform: none;
     font-family: 'Larsseit Bold';
-    background-color: #F6F6F6;
+    background-color: #fff;
     display: flex;
     align-items: center;
     color: #DB3D68;
     border: none;
     cursor: pointer;
+    border: 1px solid;
 } 
 
 .contentscroll{
     display: flex;
     justify-content: center;
-    margin-bottom: 40px; 
+    margin-bottom: 60px; 
 }

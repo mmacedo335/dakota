@@ -5,12 +5,19 @@
 .container:global(.vtex-search-result-3-x-searchResultContainer) {
     max-width: 100%;
     padding: 0px;
+    background-color: rgba(246, 246, 246, 1);
 }
 
 :global(.vtex-flex-layout-0-x-flexRowContent--container-full) {
     max-width: 95%;
     margin: auto;
     width: 100%;
+}
+
+@media (min-width: 990px) {
+    :global(.vtex-flex-layout-0-x-flexRowContent--content-search) {
+        max-width: 100%;
+    }
 }
 
 .resultsItemImage {

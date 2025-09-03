@@ -1,6 +1,5 @@
 .productBrand {
     font-size: 13px;
-    text-transform: uppercase;
     letter-spacing: 0.5px;
     line-height: normal;
     color: #333;
@@ -16,6 +15,9 @@
     }
 }
 
+.container:hover :global(.vtex-wish-list-1-x-wishlistIcon) {
+    opacity: 1;
+}
 
 @media (max-width: 760px) {
     .nameWrapper {
@@ -34,6 +36,9 @@
         display: flex;
         flex-direction: column;
     }
+    .element {
+        padding: 10px 5px !important;
+    }
 }
 
 .container :global(.vtex-stack-layout-0-x-stackContainer) {
@@ -43,6 +48,11 @@
 .container {
     max-width: 100% !important;
     position: relative;
+    background: #fff;
+}
+
+.element {
+    padding: 10px
 }
 
 .container--menucategory {

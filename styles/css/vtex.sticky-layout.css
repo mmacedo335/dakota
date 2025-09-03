@@ -10,4 +10,19 @@
     padding: 0 0 10px;
 }
 
-
+.wrapper--sticky-filter-desktop--stuck  .container--sticky-filter-desktop {
+    background: #fff;
+    top: 103px !important;
+    box-shadow: 0 4px 7px -6px grey;
+}
+.container--sticky-filter-desktop {
+    z-index: 8;
+}
+.wrapper--sticky-filter-desktop--stuck :global(.vtex-flex-layout-0-x-flexRowContent--orderByAndSwitcher) {
+    max-width: 95%;
+    margin: auto;
+    padding: 10px 0;
+}
+.wrapper--sticky-filter-mobile--stuck :global(.vtex-flex-layout-0-x-flexRowContent--searchinfomobile) {
+    margin-top: 15px;
+}
