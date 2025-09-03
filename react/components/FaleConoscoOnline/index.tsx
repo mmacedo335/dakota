@@ -1,10 +1,18 @@
 import React, { useState } from "react";
 import "./style.css";
+import GoogleRecaptcha from "../../GoogleRecaptcha";
+import safeFetch from "../../utils/safeFetch";
 
-const FaleConoscoOnline: React.FC = () => {
+interface FaleConoscoOnlienProps {
+  recaptchaTokenSE?:string | null
+}
+
+const FaleConoscoOnline: React.FC = ({ recaptchaTokenSE = "6LeXqLsrAAAAAE2-DcjeG44YgwaDBTHmK0GcITsM"}:FaleConoscoOnlienProps) => {
   const [selectedOption, setSelectedOption] = useState<string>("");
   const [isFormVisible, setIsFormVisible] = useState<boolean>(false);
   const [isFormSubmitted, setIsFormSubmitted] = useState<boolean>(false);
+    const [recaptchaToken, setRecaptchaToken] = useState<string | null>(recaptchaTokenSE);
+    const [recaptchaError, setRecaptchaError] = useState<string | null>(null);
   const [attachmentFile, setAttachmentFile] = useState<File[]>([]);
   const [subOption, setSubOption] = useState<string>("");
 
@@ -79,10 +87,6 @@ const FaleConoscoOnline: React.FC = () => {
     
   }; 
 
-  React.useEffect(() => {
-    console.log('FormData atualizado:', formData);
-  }, [formData]);
-
   const handleInputChange = (
     e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
   ) => {
@@ -115,11 +119,33 @@ const FaleConoscoOnline: React.FC = () => {
       return;
     }
 
+    if (!recaptchaToken) {
+      setRecaptchaError("Por favor, confirme que você não é um robô.");
+      setTimeout(() => setRecaptchaError(null), 5000);
+      return;
+    }
+
     const dataToSubmit = {
       ...formData,
     };
-
     try {
+  const recaptchaRes = await safeFetch('/_v/recaptcha', {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ token: recaptchaToken }),
+      });
+
+      if (!recaptchaRes.ok) {
+        setRecaptchaError("Falha ao validar reCAPTCHA. Tente novamente.");
+        return;
+      }
+
+      const { success } = await recaptchaRes.json().catch(() => ({ success: false }));
+      if (!success) {
+        setRecaptchaError("Validação do reCAPTCHA inválida. Recarregue e tente novamente.");
+        return;
+      }
+
       const response = await fetch(`/api/dataentities/${entityCode}/documents`, {
         method: "POST",
         headers: {
@@ -432,6 +458,21 @@ const FaleConoscoOnline: React.FC = () => {
             />
           </div>
           {renderForm()}
+
+          <GoogleRecaptcha
+              sitekey={recaptchaToken ?? ''}
+              onVerify={(token) => {
+                setRecaptchaToken(token);
+                if (token) setRecaptchaError(null);
+              }}
+            />
+ {recaptchaError && (
+              <div
+                style={{ color: "#aa0606ff", fontSize: "12px", marginTop: "4px" }}
+              >
+                {recaptchaError}
+              </div>
+            )}
           <button type="submit">Enviar Formulário</button>
         </form>
       )}
@@ -444,3 +485,16 @@ const FaleConoscoOnline: React.FC = () => {
 };
 
 export default FaleConoscoOnline;
+;(FaleConoscoOnline as any).schema = {
+  title: 'Footer Newsletter',
+  description: 'Formulário de newsletter com suporte a reCAPTCHA',
+  type: 'object',
+  properties: {
+    recaptchaTokenSE: {
+      title: 'Token reCAPTCHA',
+      description: 'Token reCAPTCHA',
+      type: 'string',
+      default: ''
+    }
+  }
+}

@@ -80,7 +80,8 @@
     "vtex.product-summary-context": "0.x",
     "vtex.search-graphql": "0.x",
     "vtex.session-client": "1.x",
-    "dakota.specification-badge": "0.x"
+    "dakota.specification-badge": "0.x",
+    "dakota.backend-io": "0.x"
   },
   "peerDependencies": {
     "vtex.wish-list": "1.x",

@@ -1,0 +1,73 @@
+{
+  "name": "backend-io",
+  "vendor": "dakota",
+  "version": "0.0.0",
+  "title": "Dakota Node App",
+  "description": "Reference app for Dakota Node App",
+  "mustUpdateAt": "2025-05-12",
+  "categories": [],
+  "dependencies": {},
+  "builders": {
+    "node": "7.x",
+    "docs": "0.x",
+    "graphql": "1.x"
+  },
+  "settingsSchema": {
+    "title": "Backend IO Settings",
+    "type": "object",
+    "properties": {
+      "recaptchaSecret": {
+        "title": "Google reCAPTCHA Secret Key",
+        "description": "Secret key obtained from Google reCAPTCHA admin console.",
+        "type": "string"
+      }
+    }
+  },
+  "scripts": {
+    "prereleasy": "bash lint.sh"
+  },
+  "credentialType": "absolute",
+  "policies": [
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "httpstat.us",
+        "path": "*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "portal.vtexcommercestable.com.br",
+        "path": "/api/logistics/*"
+      }
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "api.vtex.com",
+        "path": "/api/logistics/*"
+      }
+    },
+    {
+      "name": "colossus-fire-event"
+    },
+    {
+      "name": "LogisticsAdmin"
+    },
+    {
+      "name": "LogisticsViewer"
+    },
+    {
+      "name": "colossus-write-logs"
+    },
+    {
+      "name": "outbound-access",
+      "attrs": {
+        "host": "www.google.com",
+        "path": "/recaptcha/api/*"
+      }
+    }
+  ],
+  "$schema": "https://raw.githubusercontent.com/vtex/node-vtex-api/master/gen/manifest.schema"
+}

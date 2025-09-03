@@ -1,0 +1,20 @@
+type InventoryItem {
+  totalQuantity: Int
+  reservedQuantity: Int
+  warehouseId: String
+  warehouseName: String
+  hasUnlimitedQuantity: Boolean
+  timeToRefill: String
+  dateOfSupplyUtc: String
+  leadTime: String
+}
+
+type InventoryResponse {
+  items: [InventoryItem]
+  totalStock: Int
+  skuId: String
+}
+
+type Query {
+  getInventory(skuId: String!): InventoryResponse
+}
