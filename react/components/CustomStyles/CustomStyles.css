@@ -25,10 +25,6 @@
     box-shadow: none !important;
 }
 
-:global(.render-route-store-home) :global(.vtex-flex-layout-0-x-flexRow--header-departamento) {
-    display: block;
-}
-
 :global(.vtex-search-result-3-x-accordionFilter) :global(.ReactCollapse--content) :global(.pl8) {
     margin: 0;
     padding: 0px;
