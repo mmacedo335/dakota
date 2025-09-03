@@ -21,6 +21,10 @@
     width: calc(50% - 5px);
 }
 
+:global(.render-route-store-search-department) :global(.vtex-sticky-layout-0-x-container--sticky-header) {
+    box-shadow: none !important;
+}
+
 :global(.render-route-store-home) :global(.vtex-flex-layout-0-x-flexRow--header-departamento) {
     display: block;
 }

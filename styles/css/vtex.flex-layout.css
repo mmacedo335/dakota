@@ -910,6 +910,7 @@
 .flexRowContent--seo-category {
     display: flex;
     flex-direction: column;
+    padding-top: 50px;
 }
 
 .flexRowContent--seo-category :global(.vtex-flex-layout-0-x-stretchChildrenWidth) {
