@@ -99,6 +99,9 @@
   "input-helmet": {
     "component": "InputHelmet"
   },
+  "helmet":{
+    "component": "Helmet"
+  },
   "wishlist-header": {
     "component": "WishlistHeader"
   },

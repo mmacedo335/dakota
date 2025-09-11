@@ -19,6 +19,20 @@
       "flex-layout.row#header-main-desktop"
     ]
   },
+  "helmet#google-script":{
+    "props":{
+      "tags":[
+        {
+          "type":"script",
+          "tagProps":{
+            "src":"https://www.google.com/recaptcha/api.js",
+            "async":"true",
+            "defer":"true"
+          }
+        }
+      ]
+    }
+  },
   "flex-layout.row#header-main-desktop": {
     "props": {
       "blockClass": ["main-header", "content-custom"],

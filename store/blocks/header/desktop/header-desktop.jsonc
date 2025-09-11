@@ -3,6 +3,7 @@
     "title": "Header - Desktop",
     "children": [
       "custom-styles",
+      "helmet#google-script",
       "minicart.v2#flutuante",
       "flex-layout.row#topo-menu",
       "sticky-layout#header-desktop",
