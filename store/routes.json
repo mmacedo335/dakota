@@ -23,7 +23,7 @@
     "path": "/lancamento-inverno",
     "isSitemapEntry": true
   },
- "store.custom#LP__fall-winter": {
+  "store.custom#LP__fall-winter": {
     "path": "/outono-inverno",
     "isSitemapEntry": true
   },
@@ -42,10 +42,9 @@
   "store.custom#mapa-do-site": {
     "path": "/mapa-do-site",
     "isSitemapEntry": true
+  },
+  "store.custom#LP-spring-summer": {
+    "path": "/verao-primavera",
+    "isSitemapEntry": true
   }
 }
-
-
-
-
-

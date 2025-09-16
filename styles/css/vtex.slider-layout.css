@@ -112,7 +112,7 @@
 }
 
 .sliderLayoutContainer--fall-winter__showcase-banner{
-    max-width: 700px;    
+    max-width: 700px;
     margin: auto;
     margin-top: 100px;
 }
@@ -150,7 +150,7 @@
 }
 
 @media(max-width: 768px) {
-    .sliderRightArrow--fall-winter__showcase-banner::before{     
+    .sliderRightArrow--fall-winter__showcase-banner::before{
             scale: 0.7;
     }
     .sliderLeftArrow--fall-winter__showcase-banner::before{
@@ -164,7 +164,72 @@
         left: -12px;
     }
 
-    .sliderLayoutContainer--fall-winter__showcase-banner{       
+    .sliderLayoutContainer--fall-winter__showcase-banner{
+        margin-top: 0px;
+    }
+
+    .sliderLayoutContainer--topo-flutuante {
+        background: #DB3D68;
+    }
+}
+
+
+.sliderLayoutContainer--spring-summer__showcase-banner{
+    max-width: 700px;
+    margin: auto;
+    margin-top: 100px;
+}
+
+.sliderLayoutContainer--spring-summer__showcase-banner :global(.vtex-product-summary-2-x-containerNormal){
+    max-width: 300px !important;
+}
+
+.sliderLayoutContainer--spring-summer__showcase-banner :global(.vtex-flex-layout-0-x-flexCol--similar-summary){
+    display: none;
+}
+.sliderLayoutContainer--spring-summer__showcase-banner :global(.vtex-product-summary-2-x-nameContainer ){
+    display: none;
+}
+.sliderLayoutContainer--spring-summer__showcase-banner :global(.vtex-flex-layout-0-x-flexCol--prices-vitrine ){
+    display: none;
+}
+.sliderLayoutContainer--spring-summer__showcase-banner :global(.vtex-product-price-1-x-installments ){
+    display: none;
+}
+.sliderLayoutContainer--spring-summer__showcase-banner :global(.vtex-product-price-1-x-savings--savingPercentage ){
+    display: none;
+}
+
+.caretIcon--spring-summer__showcase-banner{
+    display: none;
+}
+
+.sliderLeftArrow--spring-summer__showcase-banner::before{
+    content: url('assets/img/lp-outono/seta.png');
+}
+.sliderRightArrow--spring-summer__showcase-banner::before{
+    content: url('assets/img/lp-outono/seta.png');
+    rotate: 180deg;
+}
+
+
+
+@media(max-width: 768px) {
+    .sliderRightArrow--spring-summer__showcase-banner::before{
+            scale: 0.7;
+    }
+    .sliderLeftArrow--spring-summer__showcase-banner::before{
+            scale: 0.7;
+    }
+    .sliderRightArrow--shelf {
+        right: -12px;
+    }
+
+    .sliderLeftArrow--shelf {
+        left: -12px;
+    }
+
+    .sliderLayoutContainer--spring-summer__showcase-banner{
         margin-top: 0px;
     }
 

@@ -443,3 +443,9 @@
         right: 10px;
     }
 }
+
+@media (max-width: 768px){
+  .imageElement--spring-summer--fullbanner {
+    width: 100%;
+  }
+}
