@@ -9,9 +9,10 @@
       "blockClass": "lp__container-spring-summer"
     },
     "children": [
-      "responsive-layout.desktop#spring-summer--fullbanner",
+      // "responsive-layout.desktop#spring-summer--fullbanner",
       // "responsive-layout.mobile#spring-summer--fullbanner",
       "fg-VideoPlayer#fullbanner-mob",
+      "fg-VideoPlayer#fullbanner-desk",
       "responsive-layout.desktop#spring-summer__showcase-banner",
       "responsive-layout.mobile#spring-summer__showcase-banner",
       "responsive-layout.desktop#p__container-spring-summer-desktop",
@@ -37,11 +38,20 @@
   "fg-VideoPlayer#fullbanner-mob": {
     "props": {
       "blockClass": "video-fullbanner-mob",
-      "width": "70%",
       "videoUrl": "https://blog.dakota.com.br/wp-content/uploads/2025/09/dak004225o_landing_page_pv26_banner_topo_mobile_1-1.mp4",
       "videoUrlMobile": "https://blog.dakota.com.br/wp-content/uploads/2025/09/dak004225o_landing_page_pv26_banner_topo_mobile_1-1.mp4",
       "playIcon": "assets/img/lp-outono/play.png",
       "thumbUrl": "assets/img/lp-primavera-verao-2025/capa-video-fullbanner-mobile.png"
+    }
+  },
+  "fg-VideoPlayer#fullbanner-desk": {
+    "props": {
+      "blockClass": "video-fullbanner-desk",
+      "width": "100%",
+      "videoUrl": "https://blog.dakota.com.br/wp-content/uploads/2025/09/dak004225o_landing_page_pv26_banner_topo_desk_v2-1.mp4",
+      "videoUrlMobile": "https://blog.dakota.com.br/wp-content/uploads/2025/09/dak004225o_landing_page_pv26_banner_topo_desk_v2-1.mp4",
+      "playIcon": "assets/img/lp-outono/play.png",
+      "thumbUrl": "assets/img/lp-primavera-verao-2025/capa-video-fullbanner-desktop.png"
     }
   },
   "responsive-layout.desktop#spring-summer--fullbanner": {
@@ -424,8 +434,8 @@
   "fg-VideoPlayer": {
     "props": {
       "width": "70%",
-      "videoUrl": "https://www.youtube.com/watch?v=C1s_7na--KA",
-      "videoUrlMobile": "https://blog.dakota.com.br/wp-content/uploads/2025/09/dak004225o_landing_page_pv26_banner_categoria_sandalia-2-1.mp4",
+      "videoUrl": "https://vimeo.com/1119391000?share=copy",
+      "videoUrlMobile": "https://vimeo.com/1119392578?share=copy",
       "playIcon": "assets/img/lp-outono/play.png",
       "thumbUrl": "assets/img/lp-primavera-verao-2025/capa-video-miolo-mobile.png"
     }
