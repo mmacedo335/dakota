@@ -103,44 +103,38 @@
   font-display: swap;
   src: url('assets/fonts/Inter-ExtraBold.woff') format('woff');
 }
-
 @font-face {
   font-family: 'Atyp Display TRIAL';
   font-style: normal;
-  font-weight: 400;
+  font-weight: 400; /* Regular */
   font-display: swap;
-  src: url('assets/fonts/AtypDisplayTRIAL-Light-BF65727125c722b.otf');
+  src: url('assets/fonts/atypdisplaytrial-regular-bf65727125d566e-webfont.woff2') format('woff2'),
+       url('assets/fonts/atypdisplaytrial-regular-bf65727125d566e-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Atyp Display TRIAL';
   font-style: normal;
-  font-weight: 500;
+  font-weight: 500; /* Medium */
   font-display: swap;
-  src: url('assets/fonts/AtypDisplayTRIAL-Regular-BF65727125d566e.otf');
+  src: url('assets/fonts/atypdisplaytrial-medium-bf65727125b8683-webfont.woff2') format('woff2'),
+       url('assets/fonts/atypdisplaytrial-medium-bf65727125b8683-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Atyp Display TRIAL';
   font-style: normal;
-  font-weight: 600;
+  font-weight: 600; /* Semibold */
   font-display: swap;
-  src: url('assets/fonts/AtypDisplayTRIAL-Medium-BF65727125b8683.otf');
+  src: url('assets/fonts/atypdisplaytrial-semibold-bf65727125c6fc9-webfont.woff2') format('woff2'),
+       url('assets/fonts/atypdisplaytrial-semibold-bf65727125c6fc9-webfont.woff') format('woff');
 }
 
 @font-face {
   font-family: 'Atyp Display TRIAL';
   font-style: normal;
-  font-weight: 700;
+  font-weight: 700; /* Bold */
   font-display: swap;
-  src: url('assets/fonts/AtypDisplayTRIAL-Semibold-BF65727125c6fc9.otf');
-}
-
-
-@font-face {
-  font-family: 'Atyp Display TRIAL';
-  font-style: normal;
-  font-weight: 800;
-  font-display: swap;
-  src: url('assets/fonts/AtypDisplayTRIAL-Bold-BF65727125c8d1d.otf');
+  src: url('assets/fonts/atypdisplaytrial-bold-bf65727125c8d1d-webfont.woff2') format('woff2'),
+       url('assets/fonts/atypdisplaytrial-bold-bf65727125c8d1d-webfont.woff') format('woff');
 }

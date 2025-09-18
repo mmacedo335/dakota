@@ -212,11 +212,15 @@
   },
   "responsive-layout.desktop#spring-summer__categories-01": {
     "props": {
-      "blockClass": "spring-summer__categories-01-text"
+      "blockClass": [
+        "spring-summer__categories-01-text",
+        "spring-summer__categories-01-text-princ",
+        "spring-summer__categories-01-text-desktop"
+      ]
     },
     "children": [
-      "flex-layout.col#spring-summer__categories-02",
-      "flex-layout.col#spring-summer__categories-right"
+      "flex-layout.row#spring-summer__title",
+      "flex-layout.row#spring-summer__images-desktop"
     ]
   },
   "responsive-layout.mobile#spring-summer__categories-01": {
@@ -228,17 +232,32 @@
       "flex-layout.col#spring-summer__categories-right-mob"
     ]
   },
+  "flex-layout.row#spring-summer__title": {
+    "children": [
+      "rich-text#spring-summer__categories-text-1",
+      "rich-text#spring-summer__categories-text-2"
+    ]
+  },
+  "flex-layout.row#spring-summer__images-desktop": {
+    "children": [
+      "flex-layout.col#spring-summer__categories-02",
+      "flex-layout.col#spring-summer__categories-right"
+    ],
+    "props": {
+      "blockClass": "spring-summer__categories-principal-cards-right"
+    }
+  },
   "flex-layout.col#spring-summer__categories-right": {
     "props": {
       "width": "80%",
       "blockClass": [
         "rich-text#spring-summer__categories-text-2",
         "spring-summer__categories-right",
-        "spring-summer__categories-right-col"
+        "spring-summer__categories-right-col",
+        "spring-summer__categories-text-title-2"
       ]
     },
     "children": [
-      "rich-text#spring-summer__categories-text-2",
       "flex-layout.row#spring-summer__categories-right-top",
       "flex-layout.row#spring-summer__categories-right-bottom"
     ]
@@ -255,36 +274,61 @@
       "flex-layout.row#spring-summer__categories-right-bottom"
     ]
   },
+  "flex-layout.col#spring-summer__categories-right-cards": {
+    "props": {
+      "blockClass": [
+        "spring-summer__categories-right",
+        "spring-summer__categories-right-col",
+        "spring-summer__categories-right-col-cards-1"
+      ]
+    },
+    "children": [
+      "flex-layout.row#spring-summer__categories-right-top",
+      "flex-layout.row#spring-summer__categories-right-bottom"
+    ]
+  },
   "flex-layout.row#spring-summer__categories-right-top": {
     "children": [
       "flex-layout.col#spring-summer__categories-03",
       "flex-layout.col#spring-summer__categories-04"
-    ]
+    ],
+    "props": {
+      "blockClass": [
+        "spring-summer__categories-right",
+        "spring-summer__categories-right-col",
+        "spring-summer__categories-right-col-cards"
+      ]
+    }
   },
   "flex-layout.row#spring-summer__categories-right-bottom": {
     "children": [
       "flex-layout.col#spring-summer__categories-05",
       "flex-layout.col#spring-summer__categories-06"
-    ]
-  },
-  "flex-layout.row#categories-text": {
+    ],
     "props": {
-      "blockClass": "spring-summer__categories-01-text"
-    },
-    "children": [
-      "rich-text#spring-summer__categories-text-1",
-      "rich-text#spring-summer__categories-text-2"
-    ]
+      "blockClass": [
+        "spring-summer__categories-right",
+        "spring-summer__categories-right-col",
+        "spring-summer__categories-right-col-cards"
+      ]
+    }
   },
   "rich-text#spring-summer__categories-text-1": {
     "props": {
-      "blockClass": "spring-summer__categories-text",
+      "blockClass": [
+        "spring-summer__categories-text",
+        "spring-summer__categories-text-heading"
+      ],
       "text": "### TENDÊNCIAS EM ALTA"
     }
   },
   "rich-text#spring-summer__categories-text-2": {
     "props": {
-      "blockClass": "spring-summer__categories-text",
+      "width": "80%",
+      "blockClass": [
+        "spring-summer__categories-text",
+        "spring-summer__categories-text-title"
+      ],
       "text": "Trends que saem das passarelas, ganham as ruas\n e acompanham cada momento da sua jornada."
     }
   },
@@ -305,7 +349,6 @@
       "blockClass": "spring-summer__categories"
     },
     "children": [
-      "rich-text#spring-summer__categories-text-1",
       "image#spring-summer__categories-02",
       "rich-text#spring-summer__categories-card-text-2"
     ]

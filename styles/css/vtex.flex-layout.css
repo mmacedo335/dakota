@@ -1401,11 +1401,15 @@
         }
 }
 
+.flexCol--spring-summer__categories-right-col,
+.flexColChild--spring-summer__categories-text-title-2{
+  height: initial!important;
+}
 
 @media (min-width: 768px) and (max-width: 1500px){
   .flexColChild--spring-summer__categories-right-col :global(.vtex-flex-layout-0-x-flexRowContent) {
     gap: 10px;
-}
+  }
 }
 
 @media (max-width: 768px){
@@ -1413,4 +1417,16 @@
     flex-direction: row;
     gap: 10px;
   }
+}
+
+.flexCol--spring-summer__categories-text-title-2 {
+    justify-content: space-between;
+}
+
+.flexRowContent--spring-summer__categories-principal {
+    flex-direction: column;
+}
+
+.flexRowContent--spring-summer__categories-principal-cards-right {
+    gap: 20px;
 }
