@@ -1430,3 +1430,15 @@
 .flexRowContent--spring-summer__categories-principal-cards-right {
     gap: 20px;
 }
+
+@media (max-width: 768px){
+  .flexRow--spring-summer__showcase-secund-desk {
+    display: none;
+  }
+}
+
+@media (min-width: 769px){
+  .flexRow--spring-summer__showcase-secund-mob {
+    display: none;
+  }
+}
