@@ -1,12 +1,19 @@
 import React, { useState } from "react";
 import "./style.css";
+import GoogleRecaptcha from "../../GoogleRecaptcha";
+import safeFetch from "../../utils/safeFetch";
 
-const DynamicForms: React.FC = () => {
+interface FaleConoscoOnlienProps {
+  recaptchaTokenSE?:string | null
+}
+
+const DynamicForms: React.FC = ({recaptchaTokenSE="6LeXqLsrAAAAAE2-DcjeG44YgwaDBTHmK0GcITsM"}:FaleConoscoOnlienProps) => {
   const [selectedOption, setSelectedOption] = useState<string>("");
   const [isFormVisible, setIsFormVisible] = useState<boolean>(false);
   const [isFormSubmitted, setIsFormSubmitted] = useState<boolean>(false);
   const [attachmentFiles, setAttachmentFiles] = useState<File[]>([]);
-
+ const [recaptchaToken, setRecaptchaToken] = useState<string | null>(recaptchaTokenSE);
+    const [recaptchaError, setRecaptchaError] = useState<string | null>(null);
   const initialFormData = {
     fullName: "",
     email: "",
@@ -92,7 +99,33 @@ const DynamicForms: React.FC = () => {
 
     const dataToSubmit = { ...formData };
 
+       if (!recaptchaToken) {
+      setRecaptchaError("Por favor, confirme que você não é um robô.");
+      setTimeout(() => setRecaptchaError(null), 5000);
+      return;
+    }
+
+
     try {
+
+       const recaptchaRes = await safeFetch('/_v/recaptcha', {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ token: recaptchaToken }),
+      });
+
+      if (!recaptchaRes.ok) {
+        setRecaptchaError("Falha ao validar reCAPTCHA. Tente novamente.");
+        return;
+      }
+
+      const { success } = await recaptchaRes.json().catch(() => ({ success: false }));
+      if (!success) {
+        setRecaptchaError("Validação do reCAPTCHA inválida. Recarregue e tente novamente.");
+        return;
+      }
+
+
       const response = await fetch(endpoint, {
         method: "POST",
         headers: {
@@ -339,6 +372,22 @@ const DynamicForms: React.FC = () => {
             placeholder="Estado"
           />
           {renderForm()}
+          <GoogleRecaptcha
+          
+          sitekey={recaptchaToken ?? ''}
+              onVerify={(token) => {
+                setRecaptchaToken(token);
+                if (token) setRecaptchaError(null);
+              }}
+            />
+ {recaptchaError && (
+              <div
+                style={{ color: "#aa0606ff", fontSize: "12px", marginTop: "4px" }}
+              >
+                {recaptchaError}
+              </div>
+            )}
+
           <button type="submit">Enviar</button>
         </form>
       )}

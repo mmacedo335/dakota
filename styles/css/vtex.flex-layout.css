@@ -1411,6 +1411,11 @@
     gap: 10px;
   }
 }
+@media (min-width: 1501px){
+  .flexColChild--spring-summer__categories-right-col :global(.vtex-flex-layout-0-x-flexRowContent) {
+    gap: 10px;
+  }
+}
 
 @media (max-width: 768px){
   .flexCol--spring-summer__categories-right {

@@ -1,7 +1,7 @@
 {
   "store.custom#LP": {
     "blocks": [
-      "flex-layout.row#lp__container"
+      "flex-layout.row#lp__container-spring-summer"
     ]
   },
   "flex-layout.row#lp__container": {

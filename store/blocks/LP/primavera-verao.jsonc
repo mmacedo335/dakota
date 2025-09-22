@@ -1,5 +1,5 @@
 {
-  "store.custom#LP-spring-summer": {
+  "store.custom#LP-primavera-verao-2026": {
     "blocks": [
       "flex-layout.row#lp__container-spring-summer"
     ]
@@ -162,7 +162,7 @@
   },
   "rich-text#spring-summer__showcase-banner--link": {
     "props": {
-      "text": "[VER MAIS](#)",
+      "text": "[VER MAIS](/lancamento)",
       "blockClass": "spring-summer__showcase-banner--link"
     }
   },
