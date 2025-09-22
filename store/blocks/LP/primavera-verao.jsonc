@@ -1,0 +1,590 @@
+{
+  "store.custom#LP-primavera-verao-2026": {
+    "blocks": [
+      "flex-layout.row#lp__container-spring-summer"
+    ]
+  },
+  "flex-layout.row#lp__container-spring-summer": {
+    "props": {
+      "blockClass": "lp__container-spring-summer"
+    },
+    "children": [
+      // "responsive-layout.desktop#spring-summer--fullbanner",
+      // "responsive-layout.mobile#spring-summer--fullbanner",
+      "fg-VideoPlayer#fullbanner-mob",
+      "fg-VideoPlayer#fullbanner-desk",
+      "responsive-layout.desktop#spring-summer__showcase-banner",
+      "responsive-layout.mobile#spring-summer__showcase-banner",
+      "responsive-layout.desktop#p__container-spring-summer-desktop",
+      "responsive-layout.mobile#p__container-spring-summer-mobile",
+      "flex-layout.row#spring-summer__categories",
+      "flex-layout.row#vitrines-footer-mob",
+      "flex-layout.row#spring-summer__video",
+      "flex-layout.row#vitrines-footer-desk"
+      // "flex-layout.row#spring-summer__cupom"
+    ]
+  },
+  "responsive-layout.desktop#p__container-spring-summer-desktop": {
+    "children": [
+      "list-context.product-list#spring-summer__showcase-first",
+      "rich-text#spring-summer__discover"
+    ]
+  },
+  "responsive-layout.mobile#p__container-spring-summer-mobile": {
+    "children": [
+      "list-context.product-list#spring-summer__showcase-first",
+      "rich-text#spring-summer__discover"
+    ]
+  },
+  "fg-VideoPlayer#fullbanner-mob": {
+    "props": {
+      "blockClass": "video-fullbanner-mob",
+      "videoUrl": "https://blog.dakota.com.br/wp-content/uploads/2025/09/dak004225o_landing_page_pv26_banner_topo_mobile_1-1.mp4",
+      "videoUrlMobile": "https://blog.dakota.com.br/wp-content/uploads/2025/09/dak004225o_landing_page_pv26_banner_topo_mobile_1-1.mp4",
+      "playIcon": "assets/img/lp-outono/play.png",
+      "thumbUrl": "assets/img/lp-primavera-verao-2025/capa-video-fullbanner-mobile.png"
+    }
+  },
+  "fg-VideoPlayer#fullbanner-desk": {
+    "props": {
+      "blockClass": "video-fullbanner-desk",
+      "width": "100%",
+      "videoUrl": "https://blog.dakota.com.br/wp-content/uploads/2025/09/dak004225o_landing_page_pv26_banner_topo_desk_v2-1.mp4",
+      "videoUrlMobile": "https://blog.dakota.com.br/wp-content/uploads/2025/09/dak004225o_landing_page_pv26_banner_topo_desk_v2-1.mp4",
+      "playIcon": "assets/img/lp-outono/play.png",
+      "thumbUrl": "assets/img/lp-primavera-verao-2025/capa-video-fullbanner-desktop.png"
+    }
+  },
+  "responsive-layout.desktop#spring-summer--fullbanner": {
+    "children": [
+      "image#spring-summer--fullbanner__desk"
+    ]
+  },
+  "responsive-layout.mobile#spring-summer--fullbanner": {
+    "children": [
+      "image#spring-summer--fullbanner__mobile"
+    ]
+  },
+  "image#spring-summer--fullbanner__desk": {
+    "props": {
+      "src": "assets/img/lp-outono/fullbanner.png",
+      "blockClass": "spring-summer--fullbanner"
+    }
+  },
+  "image#spring-summer--fullbanner__mobile": {
+    "props": {
+      "src": "assets/img/lp-primavera-verao-2025/img-1-primavera-verao-mobile.png",
+      "blockClass": "spring-summer--fullbanner"
+    }
+  },
+  "responsive-layout.desktop#spring-summer__showcase-banner": {
+    "children": [
+      "flex-layout.row#spring-summer__showcase-banner"
+    ]
+  },
+  "responsive-layout.mobile#spring-summer__showcase-banner": {
+    "children": [
+      "flex-layout.row#spring-summer__showcase-banner--mobile"
+    ]
+  },
+  "flex-layout.row#spring-summer__showcase-banner": {
+    "title": "Seção banner com vitrine",
+    "props": {
+      "blockClass": "spring-summer__showcase-banner"
+    },
+    "children": [
+      "flex-layout.col#spring-summer__showcase-banner--left",
+      "flex-layout.col#spring-summer__showcase-banner--right"
+    ]
+  },
+  "flex-layout.row#spring-summer__showcase-banner--mobile": {
+    "title": "Seção banner com vitrine",
+    "props": {
+      "blockClass": "spring-summer__showcase-banner"
+    },
+    "children": [
+      "rich-text##spring-summer__showcase-banner--right",
+      "image#spring-summer__showcase-banner",
+      "list-context.product-list#spring-summer__showcase-banner",
+      "rich-text#spring-summer__showcase-banner--link"
+    ]
+  },
+  "flex-layout.col#spring-summer__showcase-banner--left": {
+    "children": [
+      "image#spring-summer__showcase-banner"
+    ]
+  },
+  "image#spring-summer__showcase-banner": {
+    "props": {
+      "src": "assets/img/lp-primavera-verao-2025/img-1-primavera-verao.png",
+      "blockClass": "spring-summer__showcase-banner"
+    }
+  },
+  "flex-layout.col#spring-summer__showcase-banner--right": {
+    "children": [
+      "rich-text##spring-summer__showcase-banner--right",
+      "list-context.product-list#spring-summer__showcase-banner",
+      "rich-text#spring-summer__showcase-banner--link"
+    ]
+  },
+  "rich-text##spring-summer__showcase-banner--right": {
+    "props": {
+      "blockClass": "spring-summer__showcase-banner--right",
+      "text": "## MEUS PASSOS TÊM **PODER** \n Dakota apresenta os lançamentos Primavera Verão: peças poderosas que traduzem a personalidade de quem as veste. Confira os destaques da coleção!"
+    }
+  },
+  "slider-layout#spring-summer__showcase-banner": {
+    "title": "Slider Vitrine",
+    "props": {
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "spring-summer__showcase-banner",
+      "showPaginationDots": "always",
+      "showNavigationArrows": "always",
+      "itemsPerPage": {
+        "desktop": 1,
+        "tablet": 1,
+        "phone": 1
+      }
+    }
+  },
+  "list-context.product-list#spring-summer__showcase-banner": {
+    "title": "01 - Vitrine",
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#spring-summer__showcase-banner"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "rich-text#spring-summer__showcase-banner--link": {
+    "props": {
+      "text": "[VER MAIS](/lancamento)",
+      "blockClass": "spring-summer__showcase-banner--link"
+    }
+  },
+  "slider-layout#spring-summer__showcase-first": {
+    "title": "Slider Vitrine",
+    "props": {
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always",
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 1,
+        "phone": 1
+      }
+    }
+  },
+  "list-context.product-list#spring-summer__showcase-first": {
+    "title": "01 - Vitrine",
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#spring-summer__showcase-first"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "rich-text#spring-summer__discover": {
+    "props": {
+      "blockClass": "spring-summer__discover",
+      "text": "DESCUBRA AS NOVIDADES DA COLEÇÃO DAKOTA! [Conferir lançamentos](#)"
+    }
+  },
+  "flex-layout.row#spring-summer__categories": {
+    "props": {
+      "blockClass": [
+        "spring-summer__categories",
+        "spring-summer__categories-principal"
+      ]
+    },
+    "children": [
+      "responsive-layout.desktop#spring-summer__categories-01",
+      "responsive-layout.mobile#spring-summer__categories-01"
+    ]
+  },
+  "responsive-layout.desktop#spring-summer__categories-01": {
+    "props": {
+      "blockClass": [
+        "spring-summer__categories-01-text",
+        "spring-summer__categories-01-text-princ",
+        "spring-summer__categories-01-text-desktop"
+      ]
+    },
+    "children": [
+      "flex-layout.row#spring-summer__title",
+      "flex-layout.row#spring-summer__images-desktop"
+    ]
+  },
+  "responsive-layout.mobile#spring-summer__categories-01": {
+    "props": {
+      "blockClass": "spring-summer__categories-01-text"
+    },
+    "children": [
+      "flex-layout.col#spring-summer__categories-02-mob",
+      "flex-layout.col#spring-summer__categories-right-mob"
+    ]
+  },
+  "flex-layout.row#spring-summer__title": {
+    "children": [
+      "rich-text#spring-summer__categories-text-1",
+      "rich-text#spring-summer__categories-text-2"
+    ]
+  },
+  "flex-layout.row#spring-summer__images-desktop": {
+    "children": [
+      "flex-layout.col#spring-summer__categories-02",
+      "flex-layout.col#spring-summer__categories-right"
+    ],
+    "props": {
+      "blockClass": "spring-summer__categories-principal-cards-right"
+    }
+  },
+  "flex-layout.col#spring-summer__categories-right": {
+    "props": {
+      "width": "80%",
+      "blockClass": [
+        "rich-text#spring-summer__categories-text-2",
+        "spring-summer__categories-right",
+        "spring-summer__categories-right-col",
+        "spring-summer__categories-text-title-2"
+      ]
+    },
+    "children": [
+      "flex-layout.row#spring-summer__categories-right-top",
+      "flex-layout.row#spring-summer__categories-right-bottom"
+    ]
+  },
+  "flex-layout.col#spring-summer__categories-right-mob": {
+    "props": {
+      "blockClass": [
+        "spring-summer__categories-right",
+        "spring-summer__categories-right-col"
+      ]
+    },
+    "children": [
+      "flex-layout.row#spring-summer__categories-right-top",
+      "flex-layout.row#spring-summer__categories-right-bottom"
+    ]
+  },
+  "flex-layout.col#spring-summer__categories-right-cards": {
+    "props": {
+      "blockClass": [
+        "spring-summer__categories-right",
+        "spring-summer__categories-right-col",
+        "spring-summer__categories-right-col-cards-1"
+      ]
+    },
+    "children": [
+      "flex-layout.row#spring-summer__categories-right-top",
+      "flex-layout.row#spring-summer__categories-right-bottom"
+    ]
+  },
+  "flex-layout.row#spring-summer__categories-right-top": {
+    "children": [
+      "flex-layout.col#spring-summer__categories-03",
+      "flex-layout.col#spring-summer__categories-04"
+    ],
+    "props": {
+      "blockClass": [
+        "spring-summer__categories-right",
+        "spring-summer__categories-right-col",
+        "spring-summer__categories-right-col-cards"
+      ]
+    }
+  },
+  "flex-layout.row#spring-summer__categories-right-bottom": {
+    "children": [
+      "flex-layout.col#spring-summer__categories-05",
+      "flex-layout.col#spring-summer__categories-06"
+    ],
+    "props": {
+      "blockClass": [
+        "spring-summer__categories-right",
+        "spring-summer__categories-right-col",
+        "spring-summer__categories-right-col-cards"
+      ]
+    }
+  },
+  "rich-text#spring-summer__categories-text-1": {
+    "props": {
+      "blockClass": [
+        "spring-summer__categories-text",
+        "spring-summer__categories-text-heading"
+      ],
+      "text": "### TENDÊNCIAS EM ALTA"
+    }
+  },
+  "rich-text#spring-summer__categories-text-2": {
+    "props": {
+      "width": "80%",
+      "blockClass": [
+        "spring-summer__categories-text",
+        "spring-summer__categories-text-title"
+      ],
+      "text": "Trends que saem das passarelas, ganham as ruas\n e acompanham cada momento da sua jornada."
+    }
+  },
+  "rich-text#spring-summer__categories-text--mobile-1": {
+    "props": {
+      "blockClass": "spring-summer__categories-text",
+      "text": "### TENDÊNCIAS EM ALTA"
+    }
+  },
+  "rich-text#spring-summer__categories-text--mobile-2": {
+    "props": {
+      "blockClass": "spring-summer__categories-text",
+      "text": "Trends que saem das passarelas, ganham as ruas\n e acompanham cada momento da sua jornada."
+    }
+  },
+  "flex-layout.col#spring-summer__categories-02": {
+    "props": {
+      "blockClass": "spring-summer__categories"
+    },
+    "children": [
+      "image#spring-summer__categories-02",
+      "rich-text#spring-summer__categories-card-text-2"
+    ]
+  },
+  "flex-layout.col#spring-summer__categories-02-mob": {
+    "props": {
+      "blockClass": "spring-summer__categories"
+    },
+    "children": [
+      "rich-text#spring-summer__categories-text-1",
+      "rich-text#spring-summer__categories-text-2",
+      "image#spring-summer__categories-02",
+      "rich-text#spring-summer__categories-card-text-2"
+    ]
+  },
+  "image#spring-summer__categories-02": {
+    "props": {
+      "blockClass": "spring-summer__categories-image-card",
+      "src": "assets/img/lp-primavera-verao-2025/sandalias.png"
+    }
+  },
+  "rich-text#spring-summer__categories-card-text-2": {
+    "props": {
+      "blockClass": "spring-summer__categories-text-card",
+      "text": "[Sandálias](/sandalias)"
+    }
+  },
+  "flex-layout.col#spring-summer__categories-03": {
+    "props": {
+      "blockClass": "spring-summer__categories"
+    },
+    "children": [
+      "image#spring-summer__categories-03",
+      "rich-text#spring-summer__categories-card-text-3"
+    ]
+  },
+  "image#spring-summer__categories-03": {
+    "props": {
+      "blockClass": "spring-summer__categories-image-card",
+      "src": "assets/img/lp-primavera-verao-2025/tenis.png"
+    }
+  },
+  "rich-text#spring-summer__categories-card-text-3": {
+    "props": {
+      "blockClass": "spring-summer__categories-text-card",
+      "text": "[Tênis](/tenis)"
+    }
+  },
+  "flex-layout.col#spring-summer__categories-04": {
+    "props": {
+      "blockClass": "spring-summer__categories"
+    },
+    "children": [
+      "image#spring-summer__categories-04",
+      "rich-text#spring-summer__categories-card-text-4"
+    ]
+  },
+  "image#spring-summer__categories-04": {
+    "props": {
+      "src": "assets/img/lp-primavera-verao-2025/flatforms.png"
+    }
+  },
+  "rich-text#spring-summer__categories-card-text-4": {
+    "props": {
+      "blockClass": "spring-summer__categories-text-card",
+      "text": "[Flatforms](/Flatforms)"
+    }
+  },
+  "flex-layout.col#spring-summer__categories-05": {
+    "props": {
+      "blockClass": "spring-summer__categories"
+    },
+    "children": [
+      "image#spring-summer__categories-05",
+      "rich-text#spring-summer__categories-card-text-5"
+    ]
+  },
+  "image#spring-summer__categories-05": {
+    "props": {
+      "blockClass": "spring-summer__categories-image-card",
+      "src": "assets/img/lp-primavera-verao-2025/anabelas.png"
+    }
+  },
+  "rich-text#spring-summer__categories-card-text-5": {
+    "props": {
+      "blockClass": "spring-summer__categories-text-card",
+      "text": "[Anabelas](/Anabelas)"
+    }
+  },
+  "flex-layout.col#spring-summer__categories-06": {
+    "props": {
+      "blockClass": "spring-summer__categories"
+    },
+    "children": [
+      "image#spring-summer__categories-06",
+      "rich-text#spring-summer__categories-card-text-6"
+    ]
+  },
+  "image#spring-summer__categories-06": {
+    "props": {
+      "blockClass": "spring-summer__categories-image-card",
+      "src": "assets/img/lp-primavera-verao-2025/acessorios.png"
+    }
+  },
+  "rich-text#spring-summer__categories-card-text-6": {
+    "props": {
+      "blockClass": "spring-summer__categories-text-card",
+      "text": "[Acessórios](/acessorios)"
+    }
+  },
+  "flex-layout.row#spring-summer__video": {
+    "props": {
+      "blockClass": "spring-summer__video"
+    },
+    "children": [
+      "rich-text#spring-summer__video",
+      "fg-VideoPlayer#miolo-mobile",
+      "fg-VideoPlayer#miolo-desktop"
+    ]
+  },
+  "rich-text#spring-summer__video": {
+    "props": {
+      "blockClass": "spring-summer__video",
+      "text": "### VIVA A NOVA TEMPORADA DAKOTA \n No cenário vibrante de Niterói, a musa Juliana Paes protagoniza a campanha Primavera Verão, celebrando a força feminina com estilo que deixa a sua marca. \n **Assista ao vídeo da coleção!**"
+    }
+  },
+  "fg-VideoPlayer#miolo-mobile": {
+    "props": {
+      "blockClass": "video-miolo-mobile",
+      "width": "70%",
+      "videoUrl": "https://vimeo.com/1119391000?share=copy",
+      "videoUrlMobile": "https://vimeo.com/1119392578?share=copy",
+      "playIcon": "assets/img/lp-outono/play.png",
+      "thumbUrl": "assets/img/lp-primavera-verao-2025/capa-video-miolo-mobile.png"
+    }
+  },
+  "fg-VideoPlayer#miolo-desktop": {
+    "props": {
+      "blockClass": "video-miolo-desktop",
+      "width": "70%",
+      "videoUrl": "https://vimeo.com/1119391000?share=copy",
+      "videoUrlMobile": "https://vimeo.com/1119392578?share=copy",
+      "playIcon": "assets/img/lp-outono/play.png",
+      "thumbUrl": "assets/img/lp-primavera-verao-2025/video-miolo-mobile.png"
+    }
+  },
+  "slider-layout#spring-summer__showcase-secund": {
+    "title": "Slider Vitrine",
+    "props": {
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always",
+      "itemsPerPage": {
+        "desktop": 5,
+        "tablet": 1,
+        "phone": 1
+      }
+    }
+  },
+  "flex-layout.row#vitrines-footer-mob": {
+    "children": [
+      "list-context.product-list#spring-summer__showcase-secund-mob"
+    ],
+    "props": {
+      "blockClass": "spring-summer__showcase-secund-mob"
+    }
+  },
+  "flex-layout.row#vitrines-footer-desk": {
+    "children": [
+      "list-context.product-list#spring-summer__showcase-secund-desk"
+    ],
+    "props": {
+      "blockClass": "spring-summer__showcase-secund-desk"
+    }
+  },
+  "list-context.product-list#spring-summer__showcase-secund-mob": {
+    "title": "01 - Vitrine",
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#spring-summer__showcase-secund"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "list-context.product-list#spring-summer__showcase-secund-desk": {
+    "title": "01 - Vitrine",
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#spring-summer__showcase-secund"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC",
+      "blockClass": "spring-summer__showcase-secund-desk"
+    }
+  },
+  "flex-layout.row#spring-summer__cupom": {
+    "props": {
+      "blockClass": "spring-summer__cupom"
+    },
+    "children": [
+      "flex-layout.col#spring-summer__cupom--right",
+      "fg-NewsletterFormLp"
+    ]
+  },
+  "flex-layout.col#spring-summer__cupom--right": {
+    "children": [
+      "responsive-layout.desktop#spring-summer__cupom",
+      "responsive-layout.mobile#spring-summer__cupom"
+    ]
+  },
+  "responsive-layout.desktop#spring-summer__cupom": {
+    "children": [
+      "image#spring-summer__cupom"
+    ]
+  },
+  "responsive-layout.mobile#spring-summer__cupom": {
+    "children": [
+      "image#spring-summer__cupom--mobile"
+    ]
+  },
+  "image#spring-summer__cupom": {
+    "props": {
+      "src": "assets/img/lp-primavera-verao-2025/bg-newsletter-desktop.png"
+    }
+  },
+  "image#spring-summer__cupom--mobile": {
+    "props": {
+      "src": "assets/img/lp-primavera-verao-2025/bg-newsletter-mobile.png"
+    }
+  }
+}

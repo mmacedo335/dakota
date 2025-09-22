@@ -1,6 +1,8 @@
 {
   "store.custom#LP": {
-    "blocks": ["flex-layout.row#lp__container"]
+    "blocks": [
+      "flex-layout.row#lp__container-spring-summer"
+    ]
   },
   "flex-layout.row#lp__container": {
     "title": "conteúdo",
@@ -41,8 +43,12 @@
   },
   "list-context.product-list#lp": {
     "title": "01 - Vitrine",
-    "blocks": ["product-summary.shelf"],
-    "children": ["slider-layout#slider-product"],
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#slider-product"
+    ],
     "props": {
       "orderBy": "OrderByTopSaleDESC"
     }

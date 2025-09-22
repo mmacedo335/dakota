@@ -736,3 +736,408 @@
 
     }
 }
+
+
+.container--spring-summer__showcase-banner--right {
+    max-width: 600px;
+    z-index: 1;
+    position: relative;
+
+}
+
+.container--spring-summer__showcase-banner--right .paragraph {
+    font-size: 25px;
+    margin-bottom: 0;
+    font-family: 'Atyp Display TRIAL', sans-serif;
+
+}
+
+.container--spring-summer__showcase-banner--right .heading {
+    font-size: 48px;
+    font-weight: 400;
+    margin-bottom: 30px;
+    font-family: 'Atyp Display TRIAL', sans-serif;
+    color: #FFF;
+    background: #E50069;
+    padding-left: 100px;
+    width: 125%;
+    margin-left: -20%;
+    line-height: normal;
+}
+
+.container--spring-summer__showcase-banner--link {
+    justify-content: center;
+    padding-bottom: 35px;
+
+}
+
+.container--spring-summer__showcase-banner--link .link {
+    color: #E50069;
+    font-size: 20px;
+    border: 1.5px solid #E50069;
+    padding: 10px 88px;
+    font-family: 'Adrianna';
+
+}
+
+.container--spring-summer__discover {
+    background-image: url('assets/img/lp-primavera-verao-2025/bg-miolo-desktop.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    margin: 30px 0;
+}
+
+.container--spring-summer__discover .paragraph {
+    display: flex;
+    gap: 50px;
+    align-items: center;
+    color: white;
+    font-family: Atyp Display TRIAL, sans-serif;
+  font-weight: 500;
+  font-style: Regular;
+  font-size: 32px;
+  line-height: 48px;
+  letter-spacing: 0%;
+
+
+}
+
+.container--spring-summer__discover .paragraph .link {
+    background-color: white;
+    color: #E50069;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10px 25px;
+    text-transform: uppercase;
+    height: 40px;
+    font-family: Atyp Display TRIAL, sans-serif;
+    font-weight: 500;
+    font-style: Regular;
+    font-size: 20px;
+    leading-trim: CAP_HEIGHT;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+.container--spring-summer__categories-text .heading {
+    color: #FF006C;
+    font-family: 'Atyp Display TRIAL', sans-serif;
+    font-weight: 600;
+    font-size: 45px;
+    leading-trim: NONE;
+    line-height: 58px;
+    letter-spacing: 0%;
+    text-align: center;
+    margin: 0;
+    height: 78px;
+}
+
+.paragraph--spring-summer__categories-text-card {
+  margin: 0;
+}
+
+.container--spring-summer__categories-text .paragraph {
+    font-size: 26px;
+    color: #222222;
+    font-family: 'Atyp Display TRIAL', sans-serif;
+    margin: 0;
+}
+
+.container--spring-summer__categories-link {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    translate: -50%;
+}
+
+.container--spring-summer__categories-link .paragraph {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    font-size: 56px;
+    text-align: center;
+}
+
+.container--spring-summer__categories-link .paragraph .link {
+    font-size: 24px;
+    text-align: center;
+    border: 1px solid white;
+    width: 288px;
+    text-transform: uppercase;
+    font-family: 'Averta';
+
+}
+
+.container--spring-summer__video {
+    justify-content: center;
+    max-width: 800px;
+}
+
+.container--spring-summer__video .heading {
+    text-align: center;
+    color: #fff;
+    font-family: Atyp Display TRIAL, sans-serif;
+    font-weight: 700;
+    font-style: Bold;
+    font-size: 72px;
+    leading-trim: CAP_HEIGHT;
+    line-height: 100%;
+    letter-spacing: 0%;
+  text-align: left;
+}
+
+.container--spring-summer__video .paragraph {
+    text-align: center;
+    font-family: Atyp Display TRIAL, sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 28px;
+    leading-trim: CAP_HEIGHT;
+    line-height: 36px;
+    letter-spacing: 0%;
+    text-align: left;
+    color: #FFF;
+}
+
+.container--spring-summer__video .strong {
+    margin-top: 20px;
+    font-size: 28px;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Averta';
+}
+
+.spring-summer__categories-text {
+    padding-left: 4%;
+}
+
+.link--spring-summer__categories-text-card {
+    font-family: Atyp Display TRIAL, sans-serif;
+    font-weight: 600;
+    font-size: 28px;
+    line-height: 58px;
+    text-align: center;
+    text-decoration: underline;
+    text-decoration-style: solid;
+    text-decoration-thickness: 0%;
+    text-transform: uppercase;
+    color: #FF006C;
+}
+
+.container--spring-summer__categories-text-card {
+    justify-content: center;
+}
+
+@media(max-width:768px) {
+
+    .container--spring-summer__showcase-banner--right {
+        padding: 4%;
+    }
+
+    .container--spring-summer__showcase-banner--right .paragraph {
+        font-size: 14px;
+        margin-bottom: 18px;
+        padding: 0 14px;
+    }
+
+    .container--spring-summer__showcase-banner--right .heading {
+
+        font-size: 20px;
+        font-weight: 400;
+        margin-bottom: 12px;
+    }
+
+
+    .container--spring-summer__showcase-banner--link .link {
+
+        font-size: 14px;
+
+    }
+
+
+
+    .container--spring-summer__discover .paragraph {
+
+        font-size: 18px;
+        gap: 16px;
+        text-align: center;
+        flex-direction: column;
+
+    }
+
+    .container--spring-summer__discover .paragraph .link {
+
+        font-size: 14px;
+
+    }
+
+    .container--spring-summer__categories-text .heading {
+
+        font-size: 20px;
+        font-weight: 400;
+        white-space: nowrap;
+        margin-top: 0;
+
+    }
+
+    .container--spring-summer__categories-text .paragraph {
+
+        font-size: 14px;
+
+    }
+
+    .container--spring-summer__categories-link .paragraph {
+
+        font-size: 20px;
+        gap: 40px;
+
+    }
+
+    .container--spring-summer__categories-link .paragraph .link {
+
+        font-size: 12px;
+        max-width: 100px;
+
+
+    }
+
+    .container--spring-summer__video {
+
+        padding: 4%;
+
+    }
+
+    .container--spring-summer__video .heading {
+        font-size: 20px;
+        text-align: left;
+        max-width: 280px;
+
+    }
+
+    .container--spring-summer__video .paragraph {
+        font-size: 14px;
+        text-align: left;
+
+    }
+
+    .container--spring-summer__video .strong {
+        font-size: 14px;
+        text-align: left;
+
+    }
+}
+
+.wrapper--spring-summer__video {
+  padding: 20px 50px;
+}
+
+@media (min-width: 1300px) and (max-width: 1700px){
+  .container--spring-summer__categories-text .heading {
+    font-size: 36px;
+  }
+}
+@media (min-width: 1100px) and (max-width: 1299px){
+  .container--spring-summer__categories-text .heading {
+    font-size: 32px;
+  }
+  .container--spring-summer__categories-text .paragraph {
+    font-size: 26px;
+  }
+}
+@media (min-width: 768px) and (max-width: 1099px){
+  .container--spring-summer__categories-text .heading {
+    font-size: 28px;
+  }
+  .container--spring-summer__categories-text .paragraph {
+    font-size: 22px;
+  }
+}
+
+@media (max-width: 768px){
+  .container--spring-summer__showcase-banner--right .heading {
+    width: 100%;
+    padding: 5px 10px;
+    margin-left: -14px;
+    font-size: 20px;
+    padding-left: 27px;
+  }
+
+  .container--spring-summer__showcase-banner--link {
+      border-bottom: 4px solid #E50069;
+  }
+  .container--spring-summer__discover {
+    background-image: url('assets/img/lp-primavera-verao-2025/bg-miolo-mobile.png');
+    background-size: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    justify-content: center;
+    margin: 15px 0;
+    height: 116px;
+    display: flex;
+    align-items: center;
+  }
+
+  .container--spring-summer__discover .paragraph {
+      font-family: Atyp Display TRIAL, sans-serif;
+      font-weight: 400;
+      font-size: 16px;
+      line-height: 24px;
+      text-align: center;
+      gap: 5px;
+      width: 70%;
+      margin: 0 auto;
+  }
+
+  .container--spring-summer__discover .paragraph .link {
+      height: 24px;
+  }
+  .container--spring-summer__categories-text .heading {
+    height: fit-content;
+    font-weight: 600;
+    font-size: 24px;
+  }
+
+  .container--spring-summer__categories-text .paragraph {
+      margin-bottom: 20px;
+  }
+
+  .link--spring-summer__categories-text-card {
+      font-size: 16px;
+      line-height: 40px;
+  }
+
+  .wrapper--spring-summer__discover {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+  }
+
+  .container--spring-summer__video .heading {
+      font-weight: 700;
+      width: 80%;
+      font-size: 32px;
+  }
+
+  .wrapper--spring-summer__video {
+      padding: 0;
+  }
+
+  .container--spring-summer__video .paragraph {
+      line-height: 16px;
+  }
+
+  .container--spring-summer__video .strong {
+      font-size: 16px;
+  }
+
+}
+
+.container--spring-summer__categories-text-heading {
+    width: 50%!important;
+}

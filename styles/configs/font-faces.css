@@ -73,7 +73,7 @@
 
 @font-face {
   font-family: 'Inter';
-  font-style: normal; 
+  font-style: normal;
   font-weight: 500;
   font-display: swap;
   src: url('assets/fonts/Inter-Medium.woff') format('woff');
@@ -92,14 +92,49 @@
   font-style: normal;
   font-weight: 700;
   font-display: swap;
-  src: url('assets/fonts/Inter-Bold.woff') format('woff'); 
+  src: url('assets/fonts/Inter-Bold.woff') format('woff');
 }
 
- 
-@font-face { 
-  font-family: 'Inter'; 
+
+@font-face {
+  font-family: 'Inter';
   font-style: normal;
   font-weight: 800;
   font-display: swap;
   src: url('assets/fonts/Inter-ExtraBold.woff') format('woff');
-} 
+}
+@font-face {
+  font-family: 'Atyp Display TRIAL';
+  font-style: normal;
+  font-weight: 400; /* Regular */
+  font-display: swap;
+  src: url('assets/fonts/atypdisplaytrial-regular-bf65727125d566e-webfont.woff2') format('woff2'),
+       url('assets/fonts/atypdisplaytrial-regular-bf65727125d566e-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Atyp Display TRIAL';
+  font-style: normal;
+  font-weight: 500; /* Medium */
+  font-display: swap;
+  src: url('assets/fonts/atypdisplaytrial-medium-bf65727125b8683-webfont.woff2') format('woff2'),
+       url('assets/fonts/atypdisplaytrial-medium-bf65727125b8683-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Atyp Display TRIAL';
+  font-style: normal;
+  font-weight: 600; /* Semibold */
+  font-display: swap;
+  src: url('assets/fonts/atypdisplaytrial-semibold-bf65727125c6fc9-webfont.woff2') format('woff2'),
+       url('assets/fonts/atypdisplaytrial-semibold-bf65727125c6fc9-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'Atyp Display TRIAL';
+  font-style: normal;
+  font-weight: 700; /* Bold */
+  font-display: swap;
+  src: url('assets/fonts/atypdisplaytrial-bold-bf65727125c8d1d-webfont.woff2') format('woff2'),
+       url('assets/fonts/atypdisplaytrial-bold-bf65727125c8d1d-webfont.woff') format('woff');
+}

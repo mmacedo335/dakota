@@ -67,6 +67,12 @@ const NewsletterFormLp = () => {
           <br />
           <strong>5% OFF</strong> na primeira compra
         </h3>
+        <h3 className={handles["container__newslatter-title-lp-spring"]}>
+          Acompanhe as nossas novidades
+          e receba
+          <br />
+          <strong>5% OFF</strong> na primeira compra:
+        </h3>
         <form
           className={handles["container__newslatter-form"]}
           onSubmit={handleSubmit}
@@ -86,21 +92,21 @@ const NewsletterFormLp = () => {
             className={handles["container__newslatter-button"]}
             type="submit"
           >
-            Eu quero
+            Eu quero!
           </button>
         </form>
       </div>
       {isSuccessVisible && (
-          <p
-            className={handles["container__newslatter-message"]}
-            style={{ color: "green", marginTop: "10px" }}
-          >
-            Cadastro realizado com sucesso!
-          </p>
-        )}
-        {errorMessage && (
-          <p style={{ color: "red", marginTop: "10px" }}>{errorMessage}</p>
-        )}
+        <p
+          className={handles["container__newslatter-message"]}
+          style={{ color: "green", marginTop: "10px" }}
+        >
+          Cadastro realizado com sucesso!
+        </p>
+      )}
+      {errorMessage && (
+        <p style={{ color: "red", marginTop: "10px" }}>{errorMessage}</p>
+      )}
     </section>
   );
 };

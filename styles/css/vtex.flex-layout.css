@@ -1027,7 +1027,7 @@
 }
 
 .flexRow--fall-winter__categories {
-    padding: 4%;
+    padding: 2%;
 }
 :global(.vtex-store-components-3-x-imageElement--fall-winter__showcase-banner) {
     z-index: 1;
@@ -1154,4 +1154,296 @@
     .flexRow--lp__container-fall-winter :global(.vtex-product-price-1-x-sellingPriceValue--summary) :global(.vtex-product-price-1-x-currencyContainer--summary) {
             font-size: 24px !important;
         }
+}
+
+
+/*lp spring-summer*/
+.flexRow--lp__container-spring-summer :global(.vtex-store-components-3-x-container) {
+    max-width: 1920px;
+
+}
+
+.flexRowContent--lp__container-spring-summer{
+    flex-direction: column;
+}
+
+.flexRowContent--lp__container-spring-summer .stretchChildrenWidth {
+    display: contents;
+}
+
+.flexRowContent--spring-summer__showcase-banner {
+    position: relative;
+    gap: 40px;
+    padding: 4%;
+}
+
+
+.flexRow--lp__container-spring-summer :global(.vtex-slider-layout-0-x-sliderLeftArrow):not(:global(.vtex-slider-layout-0-x-sliderArrows--spring-summer-banner))::before {
+     content: '';
+    background-image: url('assets/img/lp-primavera-verao-2025/seta.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    display: block;
+}
+
+.flexRow--lp__container-spring-summer :global(.vtex-slider-layout-0-x-sliderRightArrow):not(:global(.vtex-slider-layout-0-x-sliderArrows--fall-winter__showcase-banner))::before {
+     content: '';
+    background-image: url('assets/img/lp-primavera-verao-2025/seta.png');
+    background-size: contain;
+    background-repeat: no-repeat;
+    width: 30px;
+    height: 30px;
+    display: block;
+    rotate: 180deg;
+}
+
+.flexRow--lp__container-spring-summer :global(.vtex-slider-layout-0-x-sliderLeftArrow) {
+    left: 0;
+}
+
+.flexRow--lp__container-spring-summer :global(.vtex-slider-layout-0-x-sliderRightArrow) {
+    right: 0;
+}
+
+.flexRow--lp__container-spring-summer :global(.vtex-slider-layout-0-x-caretIcon) {
+    display: none;
+}
+
+.flexRow--lp__container-spring-summer :global(.vtex-flex-layout-0-x-flexCol--similar-summary) {
+    display: none;
+}
+
+.flexRow--lp__container-spring-summer :global(.vtex-flex-layout-0-x-flexCol--flags-summary) {
+    top: 0;
+    bottom: auto;
+}
+
+.flexRow--lp__container-spring-summer :global(.vtex-product-summary-2-x-nameContainer) {
+    justify-content: center;
+}
+
+.flexRow--lp__container-spring-summer :global(.vtex-flex-layout-0-x-flexCol--prices-vitrine) {
+    display: block;
+}
+
+.flexRow--lp__container-spring-summer :global(.vtex-product-price-1-x-sellingPrice--summary) {
+    text-align: center !important;
+}
+
+.flexRow--lp__container-spring-summer :global(.vtex-product-price-1-x-currencyContainer)::after {
+    display: none;
+}
+
+.flexRow--lp__container-spring-summer :global(.vtex-slider-layout-0-x-sliderArrows--shelf) {
+    background-color: white !important;
+}
+
+.flexCol--spring-summer__categories {
+    position: relative;
+}
+
+.flexRow--spring-summer__categories {
+    padding: 4%;
+}
+:global(.vtex-store-components-3-x-imageElement--spring-summer__showcase-banner) {
+    z-index: 1;
+    position: relative;
+}
+
+.flexRow--spring-summer__cupom {
+    margin: 50px 0;
+    position: relative;
+}
+
+.flexRowContent--spring-summer__video {
+  justify-content: center;
+    align-items: center;
+    background: #E50069;
+    margin-bottom: 50px;
+}
+
+.flexRow--spring-summer__cupom :global(.vtex-store-components-3-x-imageElement){
+    width: 100%;
+}
+
+.flexRow--lp__container-spring-summer :global(.vtex-product-price-1-x-installments) {
+    text-align: center !important;
+}
+
+.flexRow--lp__container-spring-summer :global(.vtex-flex-layout-0-x-flexCol--prices-vitrine) {
+    display: block;
+}
+
+.flexRow--lp__container-spring-summer :global(.vtex-product-price-1-x-sellingPrice--summary) {
+    text-align: center !important;
+}
+
+.flexRow--lp__container-spring-summer :global(.vtex-product-price-1-x-sellingPriceValue--summary) :global(.vtex-product-price-1-x-currencyContainer--summary) {
+    color: #E50069 !important;
+}
+
+.flexRow--lp__container-spring-summer :global(.vtex-slider-layout-0-x-paginationDotsContainer ) :global(.vtex-slider-layout-0-x-paginationDot--isActive) {
+    background: #FD0062;
+    border: none;
+    width: 12px!important;
+    height: 12px!important;
+}
+
+
+.flexRow--lp__container-spring-summer :global(.vtex-slider-layout-0-x-paginationDot) {
+    background: #FF54A0;
+    border: none;
+    width: 8px !important;
+    height: 8px !important;
+}
+
+@media (min-width: 769px){
+    .flexCol--spring-summer__categories {
+      width: 50%!important;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1024px){
+  .flexRowContent--spring-summer__showcase-banner {
+    flex-direction: column;
+  }
+}
+
+.flexRowContent--spring-summer__categories {
+    justify-content: center;
+    gap: 20px;
+}
+
+@media(max-width:768px) {
+    .flexRow--lp__container-spring-summer :global(.vtex-store-components-3-x-container) {
+        padding: 0;
+    }
+
+    .flexRow--lp__container-spring-summer :global(.vtex-product-price-1-x-installments) {
+            font-size: 12px !important;
+    }
+
+    .flexRowContent--spring-summer__categories {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: auto;
+        gap: 15px;
+    }
+
+    .flexRowContent--spring-summer__categories .flexCol--spring-summer__categories-01,
+    .flexRowContent--spring-summer__categories :last-child .flexCol--spring-summer__categories {
+        grid-column: span 2;
+    }
+
+    .flexRowContent--spring-summer__showcase-banner {
+        padding: 0;
+        display: block;
+    }
+
+    .flexRowContent--spring-summer__showcase-banner::before {
+        height: 40%;
+    }
+
+    .flexRow--lp__container-spring-summer :global(.vtex-slider-layout-0-x-sliderLeftArrow)::before,
+    .flexRow--lp__container-spring-summer :global(.vtex-slider-layout-0-x-sliderRightArrow)::before {
+        height: 32px;
+        width: 32px;
+        display: block;
+    }
+
+    .flexRow--lp__container-spring-summer :global(.vtex-product-summary-2-x-nameContainer) :global(.vtex-product-summary-2-x-brandName),
+    .flexRow--lp__container-spring-summer :global(.vtex-product-price-1-x-currencyContainer--summary),
+    .flexRow--lp__container-spring-summer :global(.vtex-product-price-1-x-sellingPriceValue--summary) :global(.vtex-product-price-1-x-currencyContainer--summary) {
+        font-size: 24px !important;
+    }
+
+    .flexRow--lp__container-spring-summer :global(.vtex-product-price-1-x-installments) {
+        font-size: 12px !important;
+    }
+
+    :global(.vtex-store-components-3-x-imageElement--spring-summer__showcase-banner) {
+        width: 92%;
+        margin: auto;
+        display: block;
+    }
+
+    .flexRow--spring-summer__categories {
+        margin-bottom: 50px;
+    }
+
+    .flexRowContent--spring-summer__video {
+        background: #E50069;
+    }
+
+    :global(.vtex-store-components-3-x-imageElement--spring-summer__showcase-banner) {
+            width: 92%;
+            margin: auto;
+            display: block;
+
+    }
+
+    .flexRow--lp__container-spring-summer :global(.vtex-product-summary-2-x-nameContainer) :global(.vtex-product-summary-2-x-brandName) {
+
+            font-size: 15px !important;
+
+    }
+
+    .flexRow--lp__container-spring-summer :global(.vtex-product-price-1-x-currencyContainer--summary) {
+
+            font-size: 24px !important;
+
+    }
+
+
+    .flexRow--lp__container-spring-summer :global(.vtex-product-price-1-x-sellingPriceValue--summary) :global(.vtex-product-price-1-x-currencyContainer--summary) {
+            font-size: 24px !important;
+        }
+}
+
+.flexCol--spring-summer__categories-right-col,
+.flexColChild--spring-summer__categories-text-title-2{
+  height: initial!important;
+}
+
+@media (min-width: 768px) and (max-width: 1500px){
+  .flexColChild--spring-summer__categories-right-col :global(.vtex-flex-layout-0-x-flexRowContent) {
+    gap: 10px;
+  }
+}
+@media (min-width: 1501px){
+  .flexColChild--spring-summer__categories-right-col :global(.vtex-flex-layout-0-x-flexRowContent) {
+    gap: 10px;
+  }
+}
+
+@media (max-width: 768px){
+  .flexCol--spring-summer__categories-right {
+    flex-direction: row;
+    gap: 10px;
+  }
+}
+
+.flexCol--spring-summer__categories-text-title-2 {
+    justify-content: space-between;
+}
+
+.flexRowContent--spring-summer__categories-principal {
+    flex-direction: column;
+}
+
+.flexRowContent--spring-summer__categories-principal-cards-right {
+    gap: 20px;
+}
+
+@media (max-width: 768px){
+  .flexRow--spring-summer__showcase-secund-desk {
+    display: none;
+  }
+}
+
+@media (min-width: 769px){
+  .flexRow--spring-summer__showcase-secund-mob {
+    display: none;
+  }
 }

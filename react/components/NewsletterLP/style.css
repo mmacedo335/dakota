@@ -24,6 +24,11 @@
     }
 }
 
+
+:global(.dakota-dakota-theme-6-x-container__newslatter-title-lp-spring){
+  display: none;
+}
+
 :global(.dakota-dakota-theme-6-x-container__newslatter-lp--wrapper){
     position: absolute;
     max-width: 700px;
@@ -33,7 +38,7 @@
 }
 
 
-:global(.dakota-dakota-theme-6-x-container__newslatter-message){   
+:global(.dakota-dakota-theme-6-x-container__newslatter-message){
     background-color: white;
     padding: 40px;
     border-radius: 6px;
@@ -117,3 +122,83 @@
     }
 
 }
+
+:global(.vtex-flex-layout-0-x-flexRow--lp__container-spring-summer) :global(.dakota-dakota-theme-6-x-container__newslatter-lp) {
+    background-color: transparent;
+}
+
+
+:global(.vtex-flex-layout-0-x-flexRow--lp__container-spring-summer)  :global(.dakota-dakota-theme-6-x-container__newslatter-lp--wrapper){
+    position: absolute;
+    max-width: 700px;
+    top: 50%;
+    right: 4%;
+    left: initial;
+    translate: 0 -50%;
+    @media(max-width:768px) {
+      right: initial;
+    }
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--lp__container-spring-summer) :global(.dakota-dakota-theme-6-x-container__newslatter-title){
+  display: none!important;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--lp__container-spring-summer) :global(.dakota-dakota-theme-6-x-container__newslatter-lp) h3{
+  display: block;
+    color: white;
+    text-align: left;
+    margin: 0;
+    margin-bottom: 20px;
+    font-family: Atyp Display TRIAL, sans-serif;
+    font-weight: 500;
+    font-style: Medium;
+    font-size: 40px;
+    leading-trim: CAP_HEIGHT;
+    line-height: 48px;
+    letter-spacing: 0%;
+
+
+    @media(max-width:768px) {
+        font-size: 20px;
+        width: 100%;
+        max-width: 100%;
+        line-height: 100%;
+    }
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--lp__container-spring-summer) :global(.dakota-dakota-theme-6-x-container__newslatter-lp) :global(.dakota-dakota-theme-6-x-container__newslatter-button) {
+    color: #e50169;
+    background: #FFF;
+    height: 40px;
+    font-family: Atyp Display TRIAL, sans-serif;
+    font-weight: 400;
+    font-style: Regular;
+    font-size: 20px;
+    leading-trim: CAP_HEIGHT;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+}
+
+:global(.vtex-flex-layout-0-x-flexRow--lp__container-spring-summer) :global(.dakota-dakota-theme-6-x-container__newslatter-lp) :global(.dakota-dakota-theme-6-x-container__newslatter-input){
+font-family: Atyp Display TRIAL, sans-serif;
+font-weight: 400;
+font-style: Regular;
+font-size: 20px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle;
+
+}
+
+@media (max-width: 768px){
+  :global(.vtex-flex-layout-0-x-flexRow--lp__container-spring-summer) :global(.dakota-dakota-theme-6-x-container__newslatter-lp) {
+    max-width: 100%;
+    width: 100%;
+}
+}
+
