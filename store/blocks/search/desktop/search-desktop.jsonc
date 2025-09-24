@@ -9,7 +9,7 @@
     ],
     "props": {
       "preventRouteChange": true,
-      "pagination": "show-more",
+       "pagination": "infiniteScroll",
       "defaultGalleryLayout": "grid",
       "hiddenFacets": {
         "specificationFilters": {
