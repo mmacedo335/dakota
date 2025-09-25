@@ -15,7 +15,7 @@
     ],
     "props": {
       "preventRouteChange": true,
-      "pagination": "show-more",
+       "pagination": "infiniteScroll",
       "mobileLayout": {
         "mode1": "small",
         "mode2": "normal"
