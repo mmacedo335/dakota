@@ -1141,3 +1141,9 @@
 .container--spring-summer__categories-text-heading {
     width: 50%!important;
 }
+
+@media (min-width: 769px){
+  .container--spring-summer__categories-text-title{
+    width: 70%!important;
+  }
+}

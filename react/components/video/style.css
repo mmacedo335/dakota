@@ -26,6 +26,13 @@
     :global(.vtex-flex-layout-0-x-flexRow--lp__container-spring-summer) :global(.dakota-dakota-theme-6-x-video__player--video-fullbanner-mob) :global(.dakota-dakota-theme-6-x-video__player) {
         width: 100%!important;
     }
+    :global(.vtex-flex-layout-0-x-flexRow--lp__container-spring-summer) :global(.dakota-dakota-theme-6-x-video__player-video--spring-summer__categories-image-card) {
+        aspect-ratio: 16/9;
+    }
+
+    :global(.vtex-flex-layout-0-x-flexRow--lp__container-spring-summer) :global(.dakota-dakota-theme-6-x-video__player--spring-summer__categories-image-card) {
+        width: 100%!important;
+    }
 
     /* Fallback para navegadores que não suportam aspect-ratio */
     @supports not (aspect-ratio: 9 / 16) {
@@ -76,6 +83,9 @@
   :global(.vtex-flex-layout-0-x-flexRow--lp__container-spring-summer) :global(.dakota-dakota-theme-6-x-video__player--video-miolo-mobile){
       display: none;
   }
+  :global(.vtex-flex-layout-0-x-flexRow--lp__container-spring-summer) :global(.dakota-dakota-theme-6-x-video__player--spring-summer__categories-image-card) {
+        width: 100%!important;
+    }
 }
 @media (max-width: 768px){
   :global(.vtex-flex-layout-0-x-flexRow--lp__container-spring-summer) :global(.dakota-dakota-theme-6-x-video__player--video-fullbanner-desk){

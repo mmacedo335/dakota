@@ -6,8 +6,9 @@ import "./style.css";
 interface VideoPlayerProps {
   videoUrl: string;
   videoUrlMobile: string;
-  playIcon?: string; // Ícone de play personalizado (URL)
-  thumbUrl?: string; // Imagem de thumbnail (URL)
+  playIcon?: string;
+  thumbUrl?: string;
+  autoplay?: boolean; // Adicionada a prop 'autoplay'
 }
 
 const CSS_VIDEO = [
@@ -20,9 +21,12 @@ const CSS_VIDEO = [
 ] as const;
 
 export const VideoPlayer = (props: VideoPlayerProps) => {
-  const { videoUrl, videoUrlMobile, playIcon, thumbUrl } = props;
+  const { videoUrl, videoUrlMobile, playIcon, thumbUrl, autoplay } = props;
   const { handles } = useCssHandles(CSS_VIDEO);
-  const [isPlaying, setIsPlaying] = useState(false);
+
+  // O estado inicial 'isPlaying' agora depende da prop 'autoplay'.
+  // Se 'autoplay' for true, o vídeo já começa tocando.
+  const [isPlaying, setIsPlaying] = useState(autoplay || false);
 
   const handlePlay = () => {
     setIsPlaying(true);
@@ -31,6 +35,7 @@ export const VideoPlayer = (props: VideoPlayerProps) => {
   return (
     <div className={handles.video__player}>
       <div className={handles["video__player-wrapper"]} style={{ position: "relative" }}>
+        {/* A thumbnail e o botão de play só aparecem se 'isPlaying' for falso */}
         {!isPlaying && thumbUrl && (
           <img
             src={thumbUrl}
@@ -50,14 +55,17 @@ export const VideoPlayer = (props: VideoPlayerProps) => {
           url={window.innerWidth > 1024 ? videoUrl : videoUrlMobile}
           playing={isPlaying}
           controls={true}
-          muted={false}
+          // Para que o autoplay funcione em navegadores, o vídeo precisa estar mudo.
+          // Se 'autoplay' for true, o volume é 0. Caso contrário, é 1.
+          muted={autoplay ? true : false}
           loop={true}
           width="100%"
           height="auto"
-          volume={1}
+          volume={autoplay ? 0 : 1}
           className={handles["video__player-video"]}
         />
 
+        {/* O botão de play só aparece se o autoplay não estiver ativo e o vídeo não estiver tocando */}
         {!isPlaying && (
           <button
             className={handles["video__player-iconPlay"]}
@@ -108,6 +116,12 @@ VideoPlayer.schema = {
       description: "URL of the video thumbnail",
       type: "string",
       default: "https://example.com/thumbnail.jpg"
+    },
+    autoplay: {
+      title: "Autoplay",
+      description: "Start the video automatically",
+      type: "boolean",
+      default: false
     }
   },
-};
+}

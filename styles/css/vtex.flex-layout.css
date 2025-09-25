@@ -1446,4 +1446,10 @@
   .flexRow--spring-summer__showcase-secund-mob {
     display: none;
   }
+  .flexCol--spring-summer__categories-text-title-2{
+    width: 70%!important;
+  }
+  .flexRowContent--spring-summer__categories-title-gp {
+    gap: 20px;
+  }
 }

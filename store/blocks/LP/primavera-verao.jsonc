@@ -42,7 +42,8 @@
       "videoUrl": "https://blog.dakota.com.br/wp-content/uploads/2025/09/dak004225o_landing_page_pv26_banner_topo_mobile_1-1.mp4",
       "videoUrlMobile": "https://blog.dakota.com.br/wp-content/uploads/2025/09/dak004225o_landing_page_pv26_banner_topo_mobile_1-1.mp4",
       "playIcon": "assets/img/lp-outono/play.png",
-      "thumbUrl": "assets/img/lp-primavera-verao-2025/capa-video-fullbanner-mobile.png"
+      "thumbUrl": "assets/img/lp-primavera-verao-2025/capa-video-fullbanner-mobile.png",
+      "autoplay": true
     }
   },
   "fg-VideoPlayer#fullbanner-desk": {
@@ -52,7 +53,8 @@
       "videoUrl": "https://blog.dakota.com.br/wp-content/uploads/2025/09/dak004225o_landing_page_pv26_banner_topo_desk_v2-1.mp4",
       "videoUrlMobile": "https://blog.dakota.com.br/wp-content/uploads/2025/09/dak004225o_landing_page_pv26_banner_topo_desk_v2-1.mp4",
       "playIcon": "assets/img/lp-outono/play.png",
-      "thumbUrl": "assets/img/lp-primavera-verao-2025/capa-video-fullbanner-desktop.png"
+      "thumbUrl": "assets/img/lp-primavera-verao-2025/capa-video-fullbanner-desktop.png",
+      "autoplay": true
     }
   },
   "responsive-layout.desktop#spring-summer--fullbanner": {
@@ -234,6 +236,9 @@
     ]
   },
   "flex-layout.row#spring-summer__title": {
+    "props": {
+      "blockClass": "spring-summer__categories-title-gp"
+    },
     "children": [
       "rich-text#spring-summer__categories-text-1",
       "rich-text#spring-summer__categories-text-2"
@@ -250,7 +255,7 @@
   },
   "flex-layout.col#spring-summer__categories-right": {
     "props": {
-      "width": "80%",
+      "width": "70%",
       "blockClass": [
         "rich-text#spring-summer__categories-text-2",
         "spring-summer__categories-right",
@@ -325,7 +330,7 @@
   },
   "rich-text#spring-summer__categories-text-2": {
     "props": {
-      "width": "80%",
+      "width": "70%",
       "blockClass": [
         "spring-summer__categories-text",
         "spring-summer__categories-text-title"
@@ -350,7 +355,7 @@
       "blockClass": "spring-summer__categories"
     },
     "children": [
-      "image#spring-summer__categories-02",
+      "fg-VideoPlayer#categories-video",
       "rich-text#spring-summer__categories-card-text-2"
     ]
   },
@@ -361,7 +366,7 @@
     "children": [
       "rich-text#spring-summer__categories-text-1",
       "rich-text#spring-summer__categories-text-2",
-      "image#spring-summer__categories-02",
+      "fg-VideoPlayer#categories-video",
       "rich-text#spring-summer__categories-card-text-2"
     ]
   },
@@ -369,6 +374,16 @@
     "props": {
       "blockClass": "spring-summer__categories-image-card",
       "src": "assets/img/lp-primavera-verao-2025/sandalias.png"
+    }
+  },
+  "fg-VideoPlayer#categories-video": {
+    "props": {
+      "blockClass": "spring-summer__categories-image-card",
+      "videoUrl": "https://blog.dakota.com.br/wp-content/uploads/2025/09/dak004225o_landing_page_pv26_banner_categoria_sandalia_mobile-1.mp4",
+      "videoUrlMobile": "https://blog.dakota.com.br/wp-content/uploads/2025/09/dak004225o_landing_page_pv26_banner_categoria_sandalia_mobile-1.mp4",
+      "playIcon": "assets/img/lp-outono/play.png",
+      "thumbUrl": "assets/img/lp-primavera-verao-2025/sandalias.png",
+      "autoplay": true
     }
   },
   "rich-text#spring-summer__categories-card-text-2": {
@@ -483,7 +498,8 @@
       "videoUrl": "https://vimeo.com/1119391000?share=copy",
       "videoUrlMobile": "https://vimeo.com/1119392578?share=copy",
       "playIcon": "assets/img/lp-outono/play.png",
-      "thumbUrl": "assets/img/lp-primavera-verao-2025/capa-video-miolo-mobile.png"
+      "thumbUrl": "assets/img/lp-primavera-verao-2025/capa-video-miolo-mobile.png",
+      "autoplay": true
     }
   },
   "fg-VideoPlayer#miolo-desktop": {
@@ -493,7 +509,8 @@
       "videoUrl": "https://vimeo.com/1119391000?share=copy",
       "videoUrlMobile": "https://vimeo.com/1119392578?share=copy",
       "playIcon": "assets/img/lp-outono/play.png",
-      "thumbUrl": "assets/img/lp-primavera-verao-2025/video-miolo-mobile.png"
+      "thumbUrl": "assets/img/lp-primavera-verao-2025/video-miolo-mobile.png",
+      "autoplay": true
     }
   },
   "slider-layout#spring-summer__showcase-secund": {
