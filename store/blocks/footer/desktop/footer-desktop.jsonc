@@ -4,6 +4,7 @@
     "children": [
       "image#whats-flutuante", 
       "flex-layout.row#footer-newsletter", 
+      "flex-layout.row#texto-home",
       "flex-layout.row#footer-menu",
       "flex-layout.row#meios-pagamento-footer", 
       "flex-layout.row#redes-sociais",  

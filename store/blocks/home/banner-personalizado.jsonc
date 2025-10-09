@@ -1,0 +1,35 @@
+{
+  "toggle-layout#banner-reclame-aqui": {
+    "title": "Banner reclame aqui",
+    "children": [
+      "banner-personalizado"
+    ]
+  },
+   "flex-layout.row#banner-personalizado": {
+     "props": {
+        "blockClass": "container-banner-home",
+        "fullWidth": true,
+        "preventHorizontalStretch": true,
+        "preventVerticalStretch": true,
+        "horizontalAlign":"center",
+        "marginTop": 7,
+        "marginBottom": 7
+     },
+     "children": [
+        "image#banner-personalizado"
+     ]
+   },
+
+   "image#banner-personalizado": {
+     "props": {
+        "src": "assets/img/banner-reclame-aqui.jpg",
+        "alt": "Finalistas do prêmio reclame aqui - 2025",
+        "link": {
+          "url": "https://www.reclameaqui.com.br/premio/votacao/moda/calcados-femininos-grandes-operacoes/",
+          "title": "Finalistas do prêmio reclame aqui - 2025"
+          ,
+        "newTab": true
+        }
+     }
+   }
+  }
