@@ -122,5 +122,8 @@
   },
   "product-refs": {
     "component": "ProductRefs"
+  },
+  "handle-banner-filter": {
+    "component": "HandleBannerFilter"
   }
 }

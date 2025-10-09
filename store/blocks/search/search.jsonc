@@ -163,6 +163,7 @@
   },
   "flex-layout.col#content": {
     "children": [
+      "handle-banner-filter",
       "toggle-layout#banner-e-lista",
       "sticky-layout#searchFilter-desktop",
       "flex-layout.row#fetchprevious",

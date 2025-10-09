@@ -11,8 +11,8 @@ function InputHelmet() {
 
   useEffect(() => {
     const handlePageLoad = () => {
-      console.log("departamento: ", departmentName);
-      console.log("route: ", route);
+      //console.log("departamento: ", departmentName);
+      //console.log("route: ", route);
       const element = document.querySelector('.vtex-rich-text-0-x-paragraph--title-da-pagina');
       const descriptionElement = document.querySelector('.vtex-rich-text-0-x-paragraph--meta-description');
       if (element) {
@@ -25,9 +25,9 @@ function InputHelmet() {
 
       if (descriptionElement) {
         setMetaDescription(descriptionElement.textContent || '');
-        console.log('Meta description customizada:', descriptionElement.textContent);
+        //console.log('Meta description customizada:', descriptionElement.textContent);
       } else {
-        console.log('Não foi encontrada meta description customizada.');
+        //console.log('Não foi encontrada meta description customizada.');
         setMetaDescription('');
       }
     };

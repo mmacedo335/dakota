@@ -2,6 +2,7 @@
   "search-result-layout.mobile": {
     "title": "Listagem mobile",
     "children": [
+      "handle-banner-filter",
       "flex-layout.row#search-topo-mobile",
       "flex-layout.row#search-banner-mobile",
       "toggle-layout#banner-e-lista",
