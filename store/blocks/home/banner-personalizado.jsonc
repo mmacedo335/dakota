@@ -2,8 +2,7 @@
   "toggle-layout#banner-reclame-aqui": {
     "title": "Banner reclame aqui",
     "children": [
-      "banner-personalizado"
-    ]
+ "flex-layout.row#banner-personalizado"    ]
   },
    "flex-layout.row#banner-personalizado": {
      "props": {
@@ -33,3 +32,5 @@
      }
    }
   }
+
+  
