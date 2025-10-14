@@ -35,16 +35,16 @@
     "path": "/solicitar-atendimento",
     "isSitemapEntry": true
   },
-  "store.custom#cadastro-bf": {
-    "path": "/cadastro-bf",
-    "isSitemapEntry": true
-  },
   "store.custom#mapa-do-site": {
     "path": "/mapa-do-site",
     "isSitemapEntry": true
   },
   "store.custom#LP-primavera-verao-2026": {
     "path": "/primavera-verao",
+    "isSitemapEntry": true
+  },
+  "store.custom#LP-esquenta-black-friday": {
+    "path": "/blackfriday-leads",
     "isSitemapEntry": true
   }
 }

@@ -1,113 +1,236 @@
-@media (max-width: 760px) {
-    .contentforms {
-        background-size: cover !important;
-    }
-    .contentforms .logoDakotabf {
-        max-width: 150px;
-        top: -60px;
-    }
-    .contentforms .sub {
-        font-size: 15px;
-        margin-top: 20px;
-    }
-    .contentforms .tit {
-        font-size: 25px;
-    }
-    .contentforms .content input {
-        width: 300px;
-    }
-    .contentforms .clube {
-        font-size: 23px;
-    }
-    .contentforms .pronto {
-        font-size: 77px;
-    }
+.contentforms .texto strong {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    color: #000;
 }
-
+.contentforms .texto p {
+    font-family: 'Atyp Display TRIAL';
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    line-height: 35px;
+}
+.contentforms .texto p strong {
+    font-family: 'Atyp Display TRIAL';
+    font-weight: 600;
+    font-size: 30px;
+}
+.contentforms .content {
+    position: absolute;
+    right: 10%;
+    top: 30%;
+    max-width: 710px;
+}
 .contentforms {
-    background: url(https://dakota.vtexassets.com/assets/vtex.file-manager-graphql/images/cc8ebf98-54bf-4005-98b3-97245e8d518e___bdd895ee3de776e8ba7d4bdb8e62f60f.jpg) no-repeat;
+    background: url(https://dakota.vtexassets.com/assets/vtex.file-manager-graphql/images/5a4d8cad-097f-4792-a011-5705c803e136___62ddb4b1bdbff4a501e38f6d3f1d3486.png) no-repeat;
     display: block;
     width: 100%;
+    height: 100vh;
+    background-size: cover !important;
+    position: relative;
 }
-.content {
-    background: url(https://dakota.vtexassets.com/assets/vtex.file-manager-graphql/images/7a83a816-1a0c-4bd9-a4e1-48e9613d61e9___c000dc3f6918c05293c7942992cbc89b.png) no-repeat;
+.contentforms .content input {
+    border: none;
+    border-radius: 8px;
+    outline: none;
     width: 100%;
+    height: 56px;
+    font-size: 24px;
+    background: rgba(228, 0, 106, 1);
+    color: #fff;
+    padding-left: 20px;
+    margin: 10px 0;
+    font-family: 'Atyp Display TRIAL';
+}
+.contentforms .content input::placeholder {
+    color: #fff;
+}
+.contentforms .textoConcluido p {
+    font-family: 'Atyp Display TRIAL';
+    font-weight: 400;
+    font-size: 24px;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+    margin: 0;
+}
+.contentforms .textoConcluido strong {
+    font-family: 'Atyp Display TRIAL';
+    font-weight: 700;
+    font-size: 24px;
+    letter-spacing: 0;
+    text-align: center;
+    text-transform: uppercase;
+    color: #000;
+}
+.contentforms button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0;
+    text-transform: uppercase;
+    width: 260px;
+    height: 56px;
+    background: #000;
+    color: #fff;
+    border-radius: 8px;
+    margin-top: 20px;
+    cursor: pointer;
+    border: none;
+    font-family: 'Atyp Display TRIAL';
+    line-height: normal;
+}
+.contentforms .error {
+    color: #ff0000;
+    font-size: 16px;
+}
+.contentforms .textoConcluido {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    padding: 30px;
-    gap: 10px;
-    margin-top: 50px;
+    gap: 20px;
 }
-.content input {
-    border: none;
-    border-radius: 5px;
-    outline: none;
-    width: 400px;
-    height: 35px;
-    text-align: center;
-    font-size: 15px;
-}
-.contentHeader {
-    max-width: 800px;
-    margin: 0 auto;
-}
-.sub {
+.contentforms .textoConcluido a {
+    font-family: 'Atyp Display TRIAL';
+    font-weight: 700;
+    font-size: 20px;
+    letter-spacing: 0;
+    text-transform: uppercase;
     color: #fff;
-    font-size: 25px;
-    text-align: center;
-    margin: 0;
-    margin-bottom: 10px;
+    background: rgba(228, 0, 106, 1);
+    padding: 15px 25px;
+    border-radius: 8px;
+    text-decoration: none;
+    margin-top: 30px;
 }
-.tit {
-    color: #fff;
-    font-size: 40px;
-    font-weight: 600;
-    text-align: center;
-    margin: 0;
-    font-family: 'Larsseit Bold';
-}
-.contentFooter button {
-    background: url(https://dakota.vtexassets.com/assets/vtex.file-manager-graphql/images/38abd911-4f06-4867-82e3-35fd2e75f84e___a1659926b6b213c9f6070ff00fca6bbd.png) no-repeat;
-    width: 165px;
-    height: 50px;
-    background-size: contain;
-    border: none;
-    cursor: pointer;
-    padding: 0;
-}
-.contentFooter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 40px;
-    padding-bottom: 100px;
-}
-.logoDakotabf {
-    display: block;
-    max-width: 250px;
-    margin: 0 auto;
+.contentforms .valido {
+    font-family: 'Atyp Display TRIAL';
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0;
+    color: rgba(64, 64, 64, 1);
     position: absolute;
-    top: -110px;
-    left: 50%;
-    transform: translate(-50%);
+    bottom: 5%;
+    right: 5%;
 }
-.divImg {
-    position: relative;
+
+@media (min-width: 990px) and (max-width: 1300px) {
+    .contentforms .content {
+        max-width: 500px;
+        top: 25%;
+    }
+    .contentforms .texto strong {
+        font-size: 18px;
+    }
+    .contentforms .texto p {
+        font-size: 18px;
+        line-height: normal;
+    }
+    .contentforms .texto p strong {
+        font-size: 20px;
+    }
+    .contentforms .content input {
+        height: 40px;
+        font-size: 18px;
+    }
+    .contentforms button {
+        width: 200px;
+        height: 40px;
+        font-size: 18px;
+    }
 }
-.clube {
-    font-size: 30px;
-    max-width: 500px;
-    color: #fff;
-    text-align: center;
-    margin: 10px 0;
+@media (min-width: 1300px) and (max-width: 1600px) {
+    .contentforms .content {
+        max-width: 600px;
+        top: 25%;
+    }
+    .contentforms .texto strong {
+        font-size: 22x;
+    }
+    .contentforms .texto p {
+        font-size: 22px;
+        line-height: normal;
+    }
+    .contentforms .texto p strong {
+        font-size: 24px;
+    }
+    .contentforms .content input {
+        height: 40px;
+        font-size: 18px;
+    }
+    .contentforms button {
+        width: 220px;
+        height: 40px;
+        font-size: 20px;
+    }
 }
-.pronto {
-    color: #fff;
-    font-size: 100px;
-    font-family: 'Larsseit Bold';
-    margin: 0;
-    text-align: center;
-    margin-bottom: -83px;
+
+@media (max-width: 760px) {
+    .contentforms {
+        background: url(https://dakota.vtexassets.com/assets/vtex.file-manager-graphql/images/7cc8183d-4863-4f6d-8dcc-2cbb228ff696___881c3d82e32b08ef09a95b0b9bfaa46a.png) no-repeat;
+    }
+    .contentforms .content {
+        max-width: 320px;
+        right: auto;
+        left: 50%;
+        transform: translate(-50%);
+        width: 100%;
+        top: auto;
+        bottom: 12%;
+    }
+    .contentforms .texto strong {
+        font-size: 14px;
+    }
+    .contentforms .texto p {
+        font-size: 12px;
+        line-height: 20px;
+    }
+    .contentforms .texto p strong {
+        font-size: 16px;
+    }
+    .contentforms .content input {
+        width: 100%;
+        height: 40px;
+        font-size: 14px;
+    }
+    .contentforms button {
+        width: 145px;
+        height: 32px;
+        font-size: 14px;
+    }
+    .contentforms .valido {
+        font-size: 14px;
+        right: auto;
+        transform: translate(-50%);
+        left: 50%;
+        width: 100%;
+        text-align: center;
+    }
+    .contentforms .texto {
+        max-width: 250px;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .contentforms .textoConcluido p {
+        font-size: 14px;
+    }
+    .contentforms .textoConcluido strong {
+        font-size: 14px;
+    }
+    .contentforms .textoConcluido a {
+        font-size: 14px;
+        padding: 10px 25px;
+    }
+    .contentforms .textoConcluido {
+        margin-bottom: 100px;
+    }
 }
