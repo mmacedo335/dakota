@@ -45,6 +45,7 @@ function CadastroBF() {
             nome: nome.trim(),
             email: trimmedEmail,
             telefone: phone.trim(),
+            origem: 'dakota'
         };
 
         window.fetch('/api/dataentities/BF/documents', {
