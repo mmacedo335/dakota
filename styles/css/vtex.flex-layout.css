@@ -147,10 +147,14 @@
     }
     .flexRow--banner-and-list {
         margin-top: -15px;
+        display: block !important;
     }
 }
 
 @media (max-width: 760px) {
+    .flexRow--banner-and-list {
+        display: block !important;
+    }
     .flexCol--flags-desktop {
         display: none;
     }
@@ -884,6 +888,7 @@
     .flexCol--info-availability {
         height: auto !important;
         padding: 0px;
+        overflow-x: hidden;
     }
 
     .flexRowContent--product-main {
