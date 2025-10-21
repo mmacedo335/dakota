@@ -66,6 +66,7 @@
   "flex-layout.row#footer-seguranca": {
     "title": "Selos de segurança",
     "children": [
+      "flex-layout.col#footer-seguranca",
       "flex-layout.col#footer-seguranca-00",
       "flex-layout.col#footer-seguranca-01",
       "flex-layout.col#footer-seguranca-02"
@@ -82,6 +83,7 @@
   "flex-layout.row#footer-seguranca-mobile": {
     "title": "Selos de segurança",
     "children": [
+      "flex-layout.col#footer-seguranca",
       "flex-layout.col#footer-seguranca-00",
       "flex-layout.col#footer-seguranca-01",
       "flex-layout.col#footer-seguranca-02"
@@ -93,6 +95,34 @@
       "preventHorizontalStretch": true,
       "preventVerticalStretch": true,
       "preserveLayoutOnMobile": true
+    }
+  },
+  "flex-layout.col#footer-seguranca": {
+    "props": {
+      "horizontalAlign": "center",
+      "blockClass": "footer-seguranca" 
+    },
+    "children": [
+      "rich-text#footer-seguranca",
+      "image#loja-confiavel"
+    ]
+  },
+  "rich-text#footer-seguranca": {
+    "props": {
+      "text": "AVALIAÇÃO DOS\nCONSUMIDORES",
+      "blockClass": "footer-seguranca"
+    }
+  },
+  "image#loja-confiavel": {
+    "props": {
+      "blockClass": "footer-seguranca",
+      "src": "assets/img/loja-confiavel.png",
+      "maxHeight": 52,
+      "maxWidth": 142,
+      "link": {
+        "url": "https://www.lojaconfiavel.com/dakota",
+        "newTab": true
+      }
     }
   },
   "flex-layout.col#footer-seguranca-00": {
