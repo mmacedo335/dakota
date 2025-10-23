@@ -1147,3 +1147,48 @@
     width: 70%!important;
   }
 }
+
+
+.container--solado-default{
+    .headingLevel2--solado-default{
+        margin-top: 0;
+        color: #34bf7e;
+        font-weight: 500;
+        font-size: 2rem;
+        margin-bottom: 44px;
+    }
+    .headingLevel2--solado-eva-micronizado{
+        margin-block: 22px;
+    }
+
+    .paragraph--solado-default {
+        max-width: 500px;
+        color: #838383;
+        font-size: 1rem;
+        font-weight: 600;
+    }
+}
+
+.container--solado-title{
+    .paragraph--solado-title{
+        font-size: 3.5rem;
+        margin-top: 0;
+        margin-bottom: 80px;
+        text-transform: uppercase;
+        color: #34BF7E;
+        display: flex;
+        gap: 8px;
+
+    }
+}
+
+.paragraph--solado-title::after {
+    content:url("assets/img/solado-passo-certo-vira.svg");
+            width: 20px;
+            height: 20px;
+}
+.paragraph--solado-title::before {
+    content:url("assets/img/solado-passo-certo.svg");
+            width: 20px;
+            height: 20px;
+}

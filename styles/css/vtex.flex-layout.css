@@ -1453,3 +1453,42 @@
     gap: 20px;
   }
 }
+
+.flexColChild--solado-banner-wrapper{
+    position: relative;
+    margin-top: 400px;
+    width: 100%;
+    background-color: white;
+    height: 255px !important;
+
+    :global(.vtex-store-components-3-x-imageElement){
+        position: absolute;
+        top: -404px;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.flexRow--passoCertoWrapper{
+     > :global(.vtex-store-components-3-x-container){
+        max-width: 100%;
+        padding: 0;
+        background-color: #EFEFEF;
+     }
+}
+
+
+.flexCol--solado-all-content{
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    padding-block: 40px;
+}
+
+.flexCol--solado{
+    padding-inline: 48px;
+    display: grid !important;
+    row-gap: 2rem;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}

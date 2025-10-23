@@ -1,0 +1,157 @@
+{  
+    "store.custom#passo-certo":{
+        "blocks": [
+            "flex-layout.row#passo-certo-wrapper-content"
+        ]
+    },
+    "flex-layout.row#passo-certo-wrapper-content":{
+        "title": "Passo Certo - Conteudo",
+        "children": [
+            "flex-layout.col#passo-certo-content"
+        ],
+        "props": {
+            "blockClass": "passoCertoWrapper"
+        }
+    },
+    "flex-layout.col#passo-certo-content": {
+        "title": "Passo Certo - Conteudo",
+        "children": [
+            "responsive-layout.desktop#passo-certo-main-banner",
+            "responsive-layout.mobile#passo-certo-main-banner",
+
+
+                "flex-layout.col#solado-all-content",
+                "flex-layout.col#solado-banner",
+             "responsive-layout.desktop#passo-certo-main-banner-footer",
+             "responsive-layout.mobile#passo-certo-main-banner-footer"
+        ],
+        "props": {
+            "blockClass":"passoCertoContent"
+        }
+    },
+    "responsive-layout.desktop#passo-certo-main-banner": {
+        "children": ["image#passo-certo-main-banner-desktop"]
+    },
+    "responsive-layout.mobile#passo-certo-main-banner": {
+        "children": ["image#passo-certo-main-banner-mobile"]
+    },
+    "image#passo-certo-main-banner-desktop":{
+        "title": "Passo Certo - Banner Principal Desktop",
+        "props": {
+            "src": "",
+            "maxHeight": "930px",
+            "alt": "Banner Passo Certo"
+        }
+    },
+    "image#passo-certo-main-banner-mobile":{
+        "title": "Passo Certo - Banner Principal Mobile",
+        "props": {
+            "src": "",
+            "maxHeight": "930px",
+            "alt": "Banner Passo Certo"
+        }
+    },
+    "responsive-layout.desktop#passo-certo-main-banner-footer": {
+        "children": ["image#passo-certo-main-banner-desktop-footer"]
+    },
+    "responsive-layout.mobile#passo-certo-main-banner-footer": {
+        "children": ["image#passo-certo-main-banner-mobile-footer"]
+    },
+    "image#passo-certo-main-banner-desktop-footer":{
+            "title": "Passo Certo - Banner footer Desktop",
+        "props": {
+            "src": "",
+            "maxHeight": "380",
+            "alt": "Banner Passo Certo"
+        }
+    },
+    "image#passo-certo-main-banner-mobile-footer":{
+        "title": "Passo Certo - Banner footer Mobile",
+        "props": {
+            "src": "",
+            "maxHeight": "280",
+            "alt": "Banner Passo Certo"
+        }
+    },
+
+
+"flex-layout.col#solado-banner": {
+    "children": [
+          "image#solado-banner"
+
+    ],
+    "props": {
+        "blockClass":"solado-banner-wrapper"
+    }
+},
+
+
+"flex-layout.col#solado-all-content": {
+    "title": "Bloco Solado",
+    "children": [
+        "rich-text#solado-title",
+         "flex-layout.col#solado"
+    ],
+    "props": {
+        "blockClass":"solado-all-content"
+    }
+
+},
+    "rich-text#solado-title": {
+        "title": "Solado  - Titulo",
+        "props": {
+            "blockClass":"solado-title",
+            "text": "SOLADO"
+        }
+    },
+
+    "image#solado-banner":{
+        "props": {
+            "src":"",
+            "maxHeight": "660px",
+            "alt": "Solado"
+        }
+    },
+    "flex-layout.col#solado": {
+        "children": [
+             "rich-text#Solado-content-eva-reciclado",
+              "rich-text#Solado-content-eva-micronizado",
+               "rich-text#Solado-content-bambu",
+               "rich-text#Solado-content-sola-pvc"
+        ],
+        "props": {
+            "blockClass":"solado"
+        },
+        "title": "Conteudo - Solado"
+    },
+    
+    "rich-text#Solado-content-eva-reciclado": {
+        "title": "EVA Reciclado",
+        "props": {
+            "blockClass":["solado-default","solado-eva-reciclado"],
+            "text": "## EVA termo reciclado ##\n\n Material elástico com boa transformação e resistência e termoconformado a partir de aparas da indústria. "
+        }
+    },
+    "rich-text#Solado-content-eva-micronizado": {
+        "title": "EVA Micronizado",
+        "props": {
+            "blockClass":["solado-default","solado-eva-micronizado"],
+            "text": "## EVA micronizado ## \n\n O EVA reciclado em formato de grãos, muito versátil, é utilizado para confecção de solas e palmilhas."
+        }
+    },
+    "rich-text#Solado-content-bambu": {
+        "title": "Fibra Bambu",
+        "props": {
+            "blockClass":["solado-default","fibra-de-bambu"],
+            "text": "## fibra de bambu ##\n\n Material de origem renovável, utilizado para produção de solados e pigmentação dos calçados. "
+        }
+    },
+    "rich-text#Solado-content-sola-pvc": {
+        "title": "sola pvc",
+        "props": {
+            "blockClass":["solado-default","solado-pvc"],
+            "text": "## sola PVC ##\n\n O PVC é o único material plástico que não é 100% originário do petróleo. Promove o desenvolvimento sustentável contribuindo para a conservação de nossos recursos naturais."
+        }
+    }
+   
+}
