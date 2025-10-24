@@ -1,131 +1,65 @@
 import React from "react";
 import "./SizeGuide.css";
 
-
 const GuiaMedidas: React.FC = () => {
-  
   return (
     <div className="guia-tamanhos">
-       <h4>DESCUBRA SEU TAMANHO</h4>
       <div className="tabelas">
-        <h5>NUMERAÇÃO ADULTO FEMININA</h5>
+        <h4>GUIA DE MEDIDAS</h4>
+        <h6>Compare as medidas e identifique o seu número.<br />Medir o tamanho em centímetros (cm).</h6>
         <table>
           <tbody>
-            <tr className="background-cinza">
-              <th>COMPRIMENTO DO PÉ (cm)</th>
-              <td>21,8 - 22,3</td>
-              <td>22,4 - 23,0</td>
-              <td>23,1 - 23,6</td>
-              <td>23,7 - 24,3</td>
-              <td>24,4 - 25,0</td>
-              <td>25,1 - 25,6</td>
-              <td>25,7 - 26,3</td>
-              <td>26,4 - 27,0</td>
+            <tr>
+              <td colSpan={9}></td>
             </tr>
             <tr>
-              <th>NUMERAÇÃO (BRASIL)</th>
-              <td>33</td>
-              <td>34</td>
-              <td>35</td>
-              <td>36</td>
-              <td>37</td>
-              <td>38</td>
-              <td>39</td>
-              <td>40</td>
+              <td className="border">
+                Numeração <br />(BRASIL)
+              </td>
+              <td className="border">
+                Tamanho do pé <br />(cm)
+              </td>
+              <td rowSpan={20}></td>
+              <td rowSpan={8}>
+                <img style={{ width: '200px' }} src="https://dakota.vtexassets.com/assets/vtex.file-manager-graphql/images/93c0b55d-74de-4861-9041-67475e0d3fff___7ea638b8cdc2435492fd66760464a9d1.png" />
+              </td>
+              <td rowSpan={7}>
+                <span className="spanTitle">Como medir o tamanho do seu pé?<br /></span>
+                <span className="spanSub">
+                  1. Centralize seu pé em uma folha de papel.<br />
+                  2. Faça um risco a partir do seu calcanhar.<br />
+                  3. Repita o risco na frente do dedão.<br />
+                  4. Meça o comprimento entre as linhas.
+                </span>
+              </td>
             </tr>
+            <tr><td className="border">33</td><td className="border">21,8 a 22,3</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td className="border">34</td><td className="border">22,4 a 23,0</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td className="border">35</td><td className="border">23,1 a 23,6</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td className="border">36</td><td className="border">23,7 a 24,3</td></tr>
+            <tr><td className="border">37</td><td className="border">24,4 a 25,0</td></tr>
+            <tr><td className="border">38</td><td className="border">25,1 a 25,6</td></tr>
+            <tr><td className="border">39</td><td className="border">25,7 a 26,3</td></tr>
+            <tr><td className="border">40</td><td className="border">26,4 a 27,0</td></tr>
+            <tr><td className="border">41</td><td className="border">27,1 a 27,6</td></tr>
+            <tr><td className="border">42</td><td className="border">27,7 a 28,3</td></tr>
+            <tr><td className="border">43</td><td className="border">28,4 a 29,0</td></tr>
+            <tr><td className="border">44</td><td className="border">29,1 a 29,8</td></tr>
+            <tr><td colSpan={9}></td></tr>
           </tbody>
         </table>
 
-        <h5>NUMERAÇÃO INFANTIL</h5>
-        <table>
-          <tbody>
-            <tr className="background-cinza">
-              <th>COMPRIMENTO DO PÉ (cm)</th>
-              <td>17,0 - 17,6</td>
-              <td>17,7 - 18,3</td>
-              <td>18,4 - 19,0</td>
-              <td>19,1 - 19,7</td>
-              <td>19,8 - 20,3</td>
-              <td>20,4 - 21,0</td>
-              <td>21,1 - 21,7</td>
-              <td>21,8 - 22,3</td>
-              <td>22,4 - 23,0</td>
-              <td>23,1 - 23,6</td>
-              <td>23,7 - 24,3</td>
-            </tr>
-            <tr>
-              <th>NUMERAÇÃO (BRASIL)</th>
-              <td>26</td>
-              <td>27</td>
-              <td>28</td>
-              <td>29</td>
-              <td>30</td>
-              <td>31</td>
-              <td>32</td>
-              <td>33</td>
-              <td>34</td>
-              <td>35</td>
-              <td>36</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <h5>NUMERAÇÃO ADULTO MASCULINA</h5>
-        <table>
-          <tbody>
-            <tr className="background-cinza">
-              <th>COMPRIMENTO DO PÉ (cm)</th>
-              <td>25,1 - 25,6</td>
-              <td>25,7 - 26,3</td>
-              <td>26,4 - 27,0</td>
-              <td>27,1 - 27,6</td>
-              <td>27,7 - 28,3</td>
-              <td>28,4 - 29,0</td>
-              <td>29,1 - 29,8</td>
-            </tr>
-            <tr>
-              <th>NUMERAÇÃO (BRASIL)</th>
-              <td>38</td>
-              <td>39</td>
-              <td>40</td>
-              <td>41</td>
-              <td>42</td>
-              <td>43</td>
-              <td>44</td>
-            </tr>
-          </tbody>
-        </table>
-
-        <div className="informacoes-guia">
-          <p>
-            <b>Como medir o tamanho do seu pé?</b>
-            <br />
-            1. Centralize seu pé em uma folha de papel.
-            <br />
-            2. Faça um risco a partir do seu calcanhar.
-            <br />
-            3. Repita o risco na frente do dedão.
-            <br />
-            4. Meça o comprimento entre as linhas.
-            <br />
-          </p>
-          <p>
-            * Lembramos que pelo fato do pé ser tridimensional, nenhuma
-            <br />
-            medida de tamanho é totalmente exata. Abaixo da nossa tabela de
-            <br />
-            medidas está nossa sugestão para que você obtenha uma medida
-            <br />
-            aproximada do seu pé, facilitando assim a escolha da sua
-            <br />
-            numeração. Se ficar com dúvida, nos contate através do chat
-            <br />
-          </p>
-           <img
-            src="https://dakota.vtexassets.com/assets/vtex.file-manager-graphql/images/3515d5b1-4926-4d1e-bfed-a1e9d7674988___08b45d43453bac7726a25ca30445f01d.jpg"
-            alt="Tamanho pé"
-          />
+        <div className="contentLembramos">
+          <span className="lembramos first">
+            * Lembramos que pelo fato do pé ser tridimensional, nenhuma medida de tamanho é totalmente exata.
+            A nossa tabela é sugestão para que você obtenha uma medida aproximada do seu pé, facilitando assim a escolha da sua numeração.
+          </span>
+          <span className="lembramos">
+            Se precisar de ajuda?<br />
+            Fale via Whatsapp com o nosso SAC
+          </span>
         </div>
+
       </div>
     </div>
   );

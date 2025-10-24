@@ -1,21 +1,7 @@
 :global(.guia-tamanhos) {
     background-color: #fff;
     box-shadow: 0 0 3em #d6d6d6;
-    width: 970px;
 } 
-
-:global(.guia-tamanhos) h4 {
-    text-align: center; 
-    padding: 20px;
-    font-size: 2rem; 
-    margin-bottom: 15px; 
-}
- 
-:global(.guia-tamanhos) :global(.tabelas) h5 {
-    text-align: center;
-    margin-top: 1rem;
-    font-size: 20px;
-}
 
 :global(.guia-tamanhos) :global(.tabelas) table {
     margin: auto;
@@ -31,8 +17,8 @@
 
 :global(.guia-tamanhos) :global(.tabelas) table td,
 :global(.guia-tamanhos) :global(.tabelas) table th {  
-    border: 1px solid #cecece;
     padding: 8px;
+    font-size: 14px;
 }
 
 :global(.guia-tamanhos) :global(.informacoes-guia) {
@@ -60,3 +46,53 @@
 :global(.guia-tamanhos) :global(.informacoes-guia) img {
     padding-right: 30px;
 } 
+
+:global(.guia-tamanhos) :global(.border) {
+    border: 1px solid #cecece;
+}
+
+:global(.guia-tamanhos) :global(.spanTitle) {
+    width: 100%;
+    display: block;
+    font-size: 18px;
+    text-align: left;
+    line-height: 22px;
+}
+:global(.guia-tamanhos) :global(.spanSub) {
+    width: 100%;
+    display: block;
+    text-align: left;
+    line-height: 22px;
+}
+:global(.guia-tamanhos) :global(.tabelas) {
+    padding: 20px;
+    position: relative;
+}
+:global(.guia-tamanhos) h4 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+:global(.guia-tamanhos) h6 {
+    margin-bottom: 20px;
+    margin-top: 0;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+:global(.guia-tamanhos) :global(.contentLembramos) {
+    position: absolute;
+    bottom: 60px;
+    right: 100px;
+    max-width: 450px;
+}
+
+:global(.guia-tamanhos) :global(.lembramos) {
+    font-size: 14px;
+    line-height: 22px;
+    color: #555;
+    display: block;
+}
+:global(.guia-tamanhos) :global(.first) {
+    margin-bottom: 15px;
+}
