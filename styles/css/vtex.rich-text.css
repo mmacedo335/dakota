@@ -1169,6 +1169,102 @@
     }
 }
 
+.container--caixa-reciclavel{
+     max-width: 1170px;
+    margin: 0 auto;
+     width: 100%;
+
+    .wrapper--caixa-reciclavel{
+        display: flex;
+        gap: 80px;
+        max-width: 500px;
+        flex-direction: column;
+        .headingLevel2--caixa-reciclavel{
+              font-size: 3.5rem;
+            margin-top: 0;
+            color: #3B6B46;
+            max-width: 200px;
+        }
+
+        .paragraph--caixa-reciclavel{
+            color: #3B6B46;
+            font-weight: 600;
+            font-size: 1.5rem;
+        }
+    }
+}
+.container--eco-motivacional{
+     max-width: 940px;
+     width: 100%;
+    margin: 0 auto;
+    .wrapper--eco-motivacional{
+        display: flex;
+        text-align: left;
+        flex-direction: column;
+
+        .headingLevel2--eco-motivacional{
+            margin-top: 0;
+            color: #FFF;
+            font-weight: 400;
+            font-size: 3rem;
+            .strong--eco-motivacional{
+                display: block;
+                width: 100%;
+            }
+        }
+
+        .paragraph--eco-motivacional{
+            color: #FFF;;
+            font-size: 1.5rem;
+            margin-top: 0;
+            margin-bottom: 40px;
+            
+            max-width: 660px;
+            line-height: 100%;
+    }
+}
+}
+.container--iniciativa{
+    justify-content: center;
+    height: 80px;
+    box-sizing: border-box;
+    .paragraph--iniciativa{
+        color: #34BF7E;
+        font-size: 28px;
+        line-height: 100%;
+        font-weight: 600;
+    }
+}
+
+
+.container--energia-limpa{
+    max-width: 1170px;
+    margin: 0 auto;
+     width: 100%;
+    
+    .wrapper--energia-limpa{
+        display: flex;
+        gap:4.1rem ;
+        .headingLevel2--energia-limpa{
+            color: #FFF;
+            font-size: 6.25rem;
+            line-height: 90%;
+            margin-top: 0;
+        }
+        .paragraph--energia-limpa{
+            color: #FFF;
+            font-weight: 500;
+            font-size: 1.75rem;
+            line-height: 40px;
+            font-weight: 400;
+            max-width: 500px;
+            text-align: left;
+        
+    }
+
+    }
+}
+
 .container--solado-title{
     .paragraph--solado-title{
         font-size: 3.5rem;
@@ -1191,4 +1287,217 @@
     content:url("assets/img/solado-passo-certo.svg");
             width: 20px;
             height: 20px;
+}
+
+
+.container--palmilha-scraptech{
+    .wrapper--palmilha-scraptech{
+        max-width: 50%;
+
+        .headingLevel2--palmilha-scraptech{
+            color: #34BF7E;
+            font-size: 100px;
+            width: 100%;
+            line-height: 90px;
+            font-weight: 300;
+            margin-top: 0;
+        }
+
+        .paragraph {
+            font-size: 28px;
+            line-height: 40px;
+            color: #34BF7E;
+            width: 100%;
+
+            .image--palmilha-scraptech{
+                margin-top: 20px;
+            }
+        }
+    }
+}
+
+     .heading--fio-pet-title::after{
+             content:url("assets/img/solado-passo-certo-vira.svg");
+            width: 20px;
+            height: 20px;
+         }
+
+
+         .heading--fio-pet-title::before {
+            content:url("assets/img/solado-passo-certo.svg");
+            width: 20px;
+            height: 20px;
+}
+.container--fio-pet-title{
+    margin-bottom: 80px;
+    .wrapper--fio-pet-title{
+        display: flex;
+        gap: 200px;
+
+        .heading--fio-pet-title{
+              font-size: 3.5rem;
+        margin-top: 0;
+        margin-bottom: 80px;
+        text-transform: uppercase;
+        color: #34BF7E;
+        display: flex;
+        gap: 8px;
+        }
+        
+
+
+
+        .paragraph{
+            color: #34BF7E;
+            font-size: 20px;
+            margin-top: 0;
+            line-height: 32px;
+        }
+    }
+}
+
+.container--fio-pet-subtitle {
+    .wrapper--fio-pet-subtitle{
+.heading{
+    margin-top: 0;
+    color: #34BF7E;
+}
+
+.paragraph {
+    color: #838383;
+    font-size: 20px;
+    line-height: 25px;
+    max-width: 400px;
+}
+    }
+}
+
+.container--couraca-eva{
+    .wrapper--couraca-eva{
+        .heading{
+            margin-top: 0;
+            color: #34BF7E;
+            font-size: 64px;
+            line-height: 64px;
+        }
+    }
+}
+
+.container--algodao-desfibrado{
+    .wrapper {
+        .heading{
+            font-size: 96px;
+            font-weight: 700;
+            margin-top: 0;
+            color: #34BF7E;
+            margin-bottom: 20px;
+        }
+
+        .paragraph{
+            color: #838383;
+            font-size: 28px;
+            margin-top: 0;
+        }
+    }
+}
+
+
+@media screen and (max-width:1024px){
+    .container--eco-motivacional{
+        .wrapper--eco-motivacional{
+            .headingLevel2--eco-motivacional{
+                font-size: 24px;
+            }
+            .paragraph--eco-motivacional{
+                font-size: 1rem;
+            }
+        }   
+    }
+
+    .container--iniciativa{
+        align-items: center;
+            .wrapper--iniciativa {
+                .paragraph{
+                    font-size: 1rem;
+                    text-align: center;
+                    margin: 0;
+                    max-width: 244px;
+                }
+            }
+        }
+
+
+        .container--caixa-reciclavel{
+            .wrapper--caixa-reciclavel{
+                .headingLevel2--caixa-reciclavel{
+                    font-size: 40px;
+                }
+
+                .paragraph{
+                    margin-top: 0;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .container--energia-limpa{
+            max-width: 100%;
+            .wrapper{
+                gap: 1.5rem;
+                flex-direction: column;
+                .headingLevel2--energia-limpa{
+                    font-size: 40px;
+                    margin-bottom: 0;
+                }
+                
+                
+                .paragraph{
+                    margin-bottom: 0;
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .container--palmilha-scraptech{
+            .wrapper{
+                max-width: 100%;
+
+                .headingLevel2--palmilha-scraptech{
+                        font-size: 40px;
+                        max-width: 200px;
+                        line-height: 2rem;
+                }
+
+                .paragraph{
+                    margin-top: 0;
+                    font-size: 1rem;
+                    display: flex;
+                    flex-direction: column;
+                    line-height: 20px;
+                }
+
+                .image--palmilha-scraptech{
+                    max-width: 180px;
+                    object-fit: fill;
+                }
+            }
+        }
+
+        .container--solado-default{
+              .headingLevel2--solado-default{
+                    margin-bottom: 20px;
+                }
+        }
+
+        .container--fio-pet-title{
+            margin-bottom: 20px;
+            .wrapper--fio-pet-title{
+                flex-direction: column;
+                gap: 20px;
+
+                .heading--fio-pet-title{
+                    margin-bottom: 0;
+                }
+            }
+        }
 }
