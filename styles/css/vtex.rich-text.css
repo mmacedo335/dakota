@@ -1429,8 +1429,10 @@
 
         .container--caixa-reciclavel{
             .wrapper--caixa-reciclavel{
+                gap: 40px;
                 .headingLevel2--caixa-reciclavel{
                     font-size: 40px;
+                    margin-bottom: 0;
                 }
 
                 .paragraph{
@@ -1497,6 +1499,34 @@
 
                 .heading--fio-pet-title{
                     margin-bottom: 0;
+                }
+            }
+        }
+
+
+        .container--algodao-desfibrado {
+            padding: 20px;
+            .wrapper--algodao-desfibrado{
+                .heading{
+                    font-size: 40px;
+                }
+
+                .paragraph{
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .container--couraca-eva {
+            .wrapper--couraca-eva{
+                .heading{
+                    font-size: 40px;
+                    text-align: left;
+                    
+                }
+                .paragraph {
+                    text-align: left;
+                    font-size: 1rem;
                 }
             }
         }

@@ -1561,6 +1561,7 @@
     .flexRowContent--caixa-reciclavel{
         padding: 80px 20px;
         height: auto;
+        background-size: 100%;
         background-image: url("assets/img/lp-passo-certo/caixa-reciclavel-mobile.png");
     }
 
@@ -1588,7 +1589,7 @@
 
     .flexColChild--solado-banner-wrapper{
         background-color: unset;
-        height: 100%;
+        height: auto !important;
         margin-top: 20px;
 
         :global(.vtex-store-components-3-x-imageElement){
@@ -1599,10 +1600,32 @@
 
     .flexCol--tecido-fio-pet{
         padding-inline: 20px;
+        padding-block: 40px;
         
     }
     .flexColChild--tecido-fio-pet{
         position: relative;
-        overflow: hidden;
     }
+
+    .flexRow--algodao-desfibrado{
+        padding-block: unset;
+
+        .flexRowContent--algodao-desfibrado{
+            height: 100%;
+            overflow: hidden;
+        }
+    }
+
+    .flexRowContent--couraca-eva{
+        padding-block: unset;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+        overflow: hidden;
+        padding: 20px;
+    }
+
+
+
 }

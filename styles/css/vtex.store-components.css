@@ -453,6 +453,7 @@
 
 .imageElement--main-banner-passo-certo,.imageElement--banner-footer-passo-certo{
     display: flex;
+    width: 100%;
 }
 
 .imageElement--palmilha-scraptech{
@@ -482,9 +483,25 @@
 }
 
 @media screen and (max-width:1024px){
-    .imageElement--tecido-fio-pet-1{
-        max-width: 350px;
+    .imageElement--tecido-fio-pet-1 {
+        max-width: 600px;
+        position: relative;
         bottom: unset;
-        right: -25%;
+        top: unset;
+        right: 90px;
+    }
+    .imageElement--tecido-fio-pet-2{
+        position: relative;
+        bottom: unset;
+        top: unset;
+        max-width: 140%;
+        left: -3px;
+    }
+    .imageElement--tecido-fio-pet-3{
+        max-width:500px ;
+        left: -60px;
+         position: relative;
+        bottom: unset;
+        top: unset;
     }
 }
