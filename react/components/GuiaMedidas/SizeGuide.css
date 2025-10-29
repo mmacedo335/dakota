@@ -96,3 +96,7 @@
 :global(.guia-tamanhos) :global(.first) {
     margin-bottom: 15px;
 }
+
+:global(.guia-tamanhos) :global(.lembramos) a {
+    color: #454545;
+}

@@ -56,7 +56,7 @@ const GuiaMedidas: React.FC = () => {
           </span>
           <span className="lembramos">
             Se precisar de ajuda?<br />
-            Fale via Whatsapp com o nosso SAC
+            <a href="https://hsm.dakota.com.br/sac" target="_blank">Fale via Whatsapp com o nosso SAC</a>
           </span>
         </div>
 
