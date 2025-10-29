@@ -341,7 +341,7 @@
   },
   "image#guia-tamanhos": {
     "props": {
-      "src": "assets/img/medida-dakota-mob.png"
+      "src": "assets/img/guia-mob-dakota.png"
     }
   },
   "flex-layout.row#product-frete": {

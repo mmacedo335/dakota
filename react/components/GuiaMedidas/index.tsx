@@ -33,9 +33,16 @@ const GuiaMedidas: React.FC = () => {
                 </span>
               </td>
             </tr>
-            <tr><td className="border">33</td><td className="border">21,8 a 22,3</td><td></td><td></td><td></td><td></td></tr>
-            <tr><td className="border">34</td><td className="border">22,4 a 23,0</td><td></td><td></td><td></td><td></td></tr>
-            <tr><td className="border">35</td><td className="border">23,1 a 23,6</td><td></td><td></td><td></td><td></td></tr>
+            <tr><td className="border">26</td><td className="border">17,0 a 17,6</td></tr>
+            <tr><td className="border">27</td><td className="border">17,7 a 18,3</td></tr>
+            <tr><td className="border">28</td><td className="border">18,4 a 19,0</td></tr>
+            <tr><td className="border">29</td><td className="border">19,1 a 19,7</td></tr>
+            <tr><td className="border">30</td><td className="border">19,8 a 20,3</td></tr>
+            <tr><td className="border">31</td><td className="border">20,4 a 21,0</td></tr>
+            <tr><td className="border">32</td><td className="border">21,1 a 21,7</td></tr>
+            <tr><td className="border">33</td><td className="border">21,8 a 22,3</td></tr>
+            <tr><td className="border">34</td><td className="border">22,4 a 23,0</td></tr>
+            <tr><td className="border">35</td><td className="border">23,1 a 23,6</td></tr>
             <tr><td className="border">36</td><td className="border">23,7 a 24,3</td></tr>
             <tr><td className="border">37</td><td className="border">24,4 a 25,0</td></tr>
             <tr><td className="border">38</td><td className="border">25,1 a 25,6</td></tr>
