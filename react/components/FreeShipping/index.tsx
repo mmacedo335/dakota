@@ -1,55 +1,75 @@
-import React from "react";
+import React, { useMemo } from "react";
 //@ts-ignore
 import { OrderForm } from "vtex.order-manager";
 //@ts-ignore
 import styles from "./FreeShipping.css";
 
-type PropsImagens = {
-  valor: string,
-  ativo: boolean,
+interface FreeShippingProps {
+  valor: string;
+  ativo: boolean;
 }
 
-function FreeShipping({ valor, ativo }: PropsImagens) {
-  const valueFrete = valor;
+const FreeShipping = React.memo(({ valor, ativo }: FreeShippingProps) => {
   const { useOrderForm } = OrderForm;
-  const OrderFormContext = useOrderForm();
-  const totalValue = OrderFormContext.orderForm.totalizers[0]?.value;
-  const valorFrete = Number(valueFrete);
-  const calculateBar = ((totalValue / valorFrete) * 100).toFixed(2);
-  var dynamicWidth = "" + calculateBar + "%";
-  var realValor = ((valorFrete - totalValue) / 100).toFixed(2);
-  var RealNovo = realValor.split(".");
+  const orderFormContext = useOrderForm();
+  
+  if (!ativo) {
+    return null;
+  }
 
-  if (ativo === true) {
-    if (totalValue < valorFrete) {
-      var fretetexto =
-        `Quase lá, faltam <strong>${RealNovo}</strong> para o <strong>Frete Grátis</strong>`;
-    } else {
-      var fretetexto = "Parabéns! Você ganhou <strong>FRETE GRÁTIS!</strong>";
+  const calculations = useMemo(() => {
+    const totalValue = orderFormContext.orderForm.totalizers[0]?.value || 0;
+    const valorFrete = Number(valor) || 0;
+    
+    if (valorFrete <= 0) {
+      return null;
     }
 
-    return (
-      <div className={styles.freeShippingItem}>
-        <div
-          id="barra_frete_texto"
-          className={styles.title}
-          dangerouslySetInnerHTML={{ __html: fretetexto }}
-        />
-        <div className={styles.freeShippingBar}>
-          <div
-            className={styles.freeShippingRange}
-            style={{ width: dynamicWidth }}
-          >
-          </div>
-        </div>
-      </div>
-    );
-  } else {
-    return null
-  }
-}
+    const progressPercentage = Math.min((totalValue / valorFrete) * 100, 100);
+    const dynamicWidth = `${progressPercentage.toFixed(2)}%`;
+    const remainingValue = Math.max(valorFrete - totalValue, 0);
+    const formattedRemainingValue = (remainingValue / 100).toFixed(2);
+    const valueParts = formattedRemainingValue.split(".");
 
-FreeShipping.schema = {
+    const isEligibleForFreeShipping = totalValue >= valorFrete;
+    const freetextMessage = isEligibleForFreeShipping
+      ? "Parabéns! Você ganhou <strong>FRETE GRÁTIS!</strong>"
+      : `Quase lá, faltam <strong>${valueParts}</strong> para o <strong>Frete Grátis</strong>`;
+
+    return {
+      dynamicWidth,
+      freetextMessage
+    };
+  }, [orderFormContext.orderForm.totalizers, valor]);
+
+  if (!calculations) {
+    return null;
+  }
+
+  const { dynamicWidth, freetextMessage } = calculations;
+
+  return (
+    <div className={styles.freeShippingItem}>
+      <div
+        id="barra_frete_texto"
+        className={styles.title}
+        dangerouslySetInnerHTML={{ __html: freetextMessage }}
+      />
+      <div className={styles.freeShippingBar}>
+        <div
+          className={styles.freeShippingRange}
+          style={{ width: dynamicWidth }}
+        />
+      </div>
+    </div>
+  );
+});
+
+// Add displayName for debugging
+FreeShipping.displayName = 'FreeShipping';
+
+// Add schema to the component
+(FreeShipping as any).schema = {
   title: "Barra frete grátis",
   description: "Barra frete grátis",
   type: "object",
@@ -65,6 +85,6 @@ FreeShipping.schema = {
       default: null
     },
   }
-}
+};
 
 export default FreeShipping;
