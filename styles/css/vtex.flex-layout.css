@@ -172,7 +172,7 @@
 @media (min-width: 990px) {
     .flexCol--similar-summary {
         min-height: 40px;
-        display: none;
+        /* display: none; */
     }
 }
 
