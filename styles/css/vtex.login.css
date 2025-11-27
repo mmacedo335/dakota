@@ -213,3 +213,15 @@
     background: #707070;
     opacity: 1;
 }
+:global(.vtex-wish-list-1-x-outline){
+    background-image: url("data:image/svg+xml;charset=UTF-8,%3csvg xmlns='http://www.w3.org/2000/svg' width='24' height='20' viewBox='0 0 24 20' fill='none'%3e%3cpath d='M12.3793 19C12.3793 19 1.92383 13.2727 1.92383 6.52273C1.92383 5.05801 2.49579 3.65328 3.51389 2.61757C4.53199 1.58186 5.91284 1 7.35265 1C9.62371 1 11.569 2.25898 12.3793 4.27273C13.1896 2.25898 15.135 1 17.406 1C18.8458 1 20.2267 1.58186 21.2448 2.61757C22.2629 3.65328 22.8348 5.05801 22.8348 6.52273C22.8348 13.2727 12.3793 19 12.3793 19Z' stroke='black' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3e%3c/svg%3e") !important;
+}
+
+
+
+:global(.vtex-flex-layout-0-x-flexColChild--passoCertoContent):has(:global(.vtex-flex-layout-0-x-flexRow--algodao-desfibrado)),
+:global(.vtex-flex-layout-0-x-flexColChild--passoCertoContent):has(:global(.vtex-flex-layout-0-x-flexCol--palmilha-scraptech))
+{
+    background-color: #FFF;
+}
+

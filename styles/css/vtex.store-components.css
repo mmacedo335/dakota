@@ -449,3 +449,59 @@
     width: 100%;
   }
 }
+
+
+.imageElement--main-banner-passo-certo,.imageElement--banner-footer-passo-certo{
+    display: flex;
+    width: 100%;
+}
+
+.imageElement--palmilha-scraptech{
+    max-width: 300px;
+    object-fit: fill;
+    aspect-ratio: 1/1;
+}
+
+.imageElement--tecido-fio-pet-1{
+    position: absolute;
+    max-width: 750px;
+    bottom: -70px;
+    right: 80px;
+}
+
+.imageElement--tecido-fio-pet-2{
+    position: absolute;
+    max-width: 750px;
+    top: -65px;
+    left: -235px;
+}
+
+.imageElement--tecido-fio-pet-3{
+    position: absolute;
+    max-width: 750px;
+    top: -90px;
+}
+
+@media screen and (max-width:1024px){
+    .imageElement--tecido-fio-pet-1 {
+        max-width: 600px;
+        position: relative;
+        bottom: unset;
+        top: unset;
+        right: 90px;
+    }
+    .imageElement--tecido-fio-pet-2{
+        position: relative;
+        bottom: unset;
+        top: unset;
+        max-width: 140%;
+        left: -3px;
+    }
+    .imageElement--tecido-fio-pet-3{
+        max-width:500px ;
+        left: -60px;
+         position: relative;
+        bottom: unset;
+        top: unset;
+    }
+}

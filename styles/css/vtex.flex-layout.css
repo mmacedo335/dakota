@@ -1458,3 +1458,179 @@
     gap: 20px;
   }
 }
+
+.flexColChild--solado-banner-wrapper{
+    position: relative;
+    margin-top: 400px;
+    width: 100%;
+    background-color: white;
+    height: 255px !important;
+
+    :global(.vtex-store-components-3-x-imageElement){
+        position: absolute;
+        top: -404px;
+        width: 100%;
+        object-fit: contain;
+    }
+}
+
+.flexRow--passoCertoWrapper{
+     > :global(.vtex-store-components-3-x-container){
+        max-width: 100%;
+        padding: 0;
+        background-color: #EFEFEF;
+     }
+}
+
+
+.flexRowContent--energia-limpa{
+    background-image: url("assets/img/lp-passo-certo/energia-limpa.png");
+    background-color: #34BF7E;
+    background-repeat: no-repeat;
+    height: 1000px;
+    padding: 100px;
+}
+.flexRowContent--eco-motivacional{
+    background: url("assets/img/lp-passo-certo/fundo-ondulado.png") #34BF7E;
+    background-repeat: no-repeat;
+    height: 1000px;
+    background-position: center;
+    padding-block: 115px;
+}
+.flexRowContent--caixa-reciclavel{
+    background-image: url("assets/img/lp-passo-certo/caixa-reciclavel.png");
+    background-repeat: no-repeat;
+    height: 1000px;
+    padding: 150px;
+}
+.flexCol--palmilha-scraptech{
+    background-image: url("/arquivos/palmilha-scraptech.png");
+    background-repeat: no-repeat;
+    height: auto;
+    box-sizing: border-box;
+    padding-block: 70px;
+}
+
+.flexColChild--palmilha-scraptech{
+    max-width: 1170px;
+    margin: 0 auto;
+}
+
+.flexRowContent--tecido-fio-pet{
+    background-color: white;
+}
+
+.flexCol--tecido-fio-pet{
+    padding-block: 40px 150px;
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+
+
+}
+
+.flexCol--solado-all-content{
+    max-width: 1240px;
+    width: 100%;
+    margin: 0 auto;
+    padding-block: 40px ;
+}
+
+.flexCol--solado{
+    padding-inline: 48px;
+    display: grid !important;
+    row-gap: 2rem;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(2,1fr);
+}
+
+.flexRowContent--couraca-eva,.flexRow--algodao-desfibrado{
+    height: 640px;
+    padding-block: 120px;
+    box-sizing: border-box;
+    max-width: 1170px;
+    margin: 0 auto;
+    position: relative;
+}
+
+
+
+@media screen and (max-width:1024px){
+    .flexRowContent--eco-motivacional{
+        padding-block: 30px;
+        padding-inline: 20px 150px;
+        height: auto;
+        background-position: -12% 0;
+    }
+
+    .flexRowContent--caixa-reciclavel{
+        padding: 80px 20px;
+        height: auto;
+        background-size: 100%;
+        background-image: url("assets/img/lp-passo-certo/caixa-reciclavel-mobile.png");
+    }
+
+    .flexRowContent--energia-limpa{
+        padding: 40px 20px;
+        height: 600px;
+        background-size: cover;
+        background-position: 52% 0;
+    }
+
+    .flexCol--palmilha-scraptech{
+        padding: 30px 20px;
+        height: 710px;
+        background-size: 700px;
+        background-position: 100% 125%;
+    }
+    .flexCol--solado-all-content{
+        padding-inline:20px;
+    }
+    .flexCol--solado{
+        display: flex !important;
+        flex-direction: column;
+        padding-inline: 0;
+    }
+
+    .flexColChild--solado-banner-wrapper{
+        background-color: unset;
+        height: auto !important;
+        margin-top: 20px;
+
+        :global(.vtex-store-components-3-x-imageElement){
+            position: relative;
+            top: unset;
+        }
+    }
+
+    .flexCol--tecido-fio-pet{
+        padding-inline: 20px;
+        padding-block: 40px;
+        
+    }
+    .flexColChild--tecido-fio-pet{
+        position: relative;
+    }
+
+    .flexRow--algodao-desfibrado{
+        padding-block: unset;
+
+        .flexRowContent--algodao-desfibrado{
+            height: 100%;
+            overflow: hidden;
+        }
+    }
+
+    .flexRowContent--couraca-eva{
+        padding-block: unset;
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        height: auto;
+        overflow: hidden;
+        padding: 20px;
+    }
+
+
+
+}
