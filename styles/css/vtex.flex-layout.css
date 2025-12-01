@@ -1459,6 +1459,23 @@
   }
 }
 
+.flexRow--vitrine-produto {
+    max-width: 1600px;
+    margin: 0 auto;
+}
+.flexRow--vitrine-produto :global(.vtex-slider-layout-0-x-sliderArrows) {
+    background: transparent !important;
+}
+.flexRow--vitrine-produto :global(.vtex-slider-layout-0-x-caretIcon) {
+    color: #000 !important;
+}
+.flexRow--vitrine-produto :global(.vtex-rich-text-0-x-heading--title-padrao) {
+    color: #000 !important;
+    font-size: 28px !important;
+    font-family: "Larsseit Regular" !important;
+    text-transform: math-auto !important;
+    font-weight: 300 !important;
+}
 .flexColChild--solado-banner-wrapper{
     position: relative;
     margin-top: 400px;

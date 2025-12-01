@@ -12,7 +12,8 @@
       "flex-layout.row#title-description",
       "flex-layout.row#description",
       "product-specifications-badges",
-      "flex-layout.row#review-product"
+      "flex-layout.row#review-product",
+      "flex-layout.row#shelf-pdp"
     ]
   },
 
@@ -590,6 +591,66 @@
         "Twitter": false,
         "Pinterest": true
       }
+    }
+  },
+  
+  // Vitrine Pdp
+  "flex-layout.row#shelf-pdp": {
+    "title": "Vitrine",
+    "props": {
+      "fullWidth": true,
+      "blockClass": [
+        "container-custom",
+        "vitrine-produto"
+      ]
+    },
+    "children": [
+      "flex-layout.col#shelf-pdp"
+    ]
+  },
+  "flex-layout.col#shelf-pdp": {
+    "props": {
+      "blockClass": "vitrine-produto"
+    },
+    "children": [
+      "rich-text#title-shelf-pdp",
+      "list-context.product-list#shelf-pdp"
+    ]
+  },
+  "rich-text#title-shelf-pdp": {
+    "title": "Titulo",
+    "props": { 
+      "textAlignment": "CENTER",
+      "textPosition": "CENTER",
+      "text": "## As melhores ofertas", 
+      "blockClass": "title-padrao"
+    }
+  },
+  "list-context.product-list#shelf-pdp": {
+    "title": "Produtos Vitrine",
+    "blocks": [
+      "product-summary.shelf"
+    ],
+    "children": [
+      "slider-layout#slider-product-pdp"
+    ],
+    "props": {
+      "orderBy": "OrderByTopSaleDESC"
+    }
+  },
+  "slider-layout#slider-product-pdp": {
+    "title": "Slider Vitrine PDP",
+    "props": {
+      "infinite": true,
+      "fullWidth": true,
+      "blockClass": "shelf",
+      "showPaginationDots": "never",
+      "showNavigationArrows": "always",
+      "itemsPerPage": {
+        "desktop": 6,
+        "tablet": 2,
+        "phone": 1
+      } 
     }
   }
 }
