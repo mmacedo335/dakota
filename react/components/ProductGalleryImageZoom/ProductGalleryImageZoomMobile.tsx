@@ -108,8 +108,8 @@ const ProductGalleryImageZoomMobile: React.FC = () => {
     };
 
     const settingsSlider = {
-        dots: true,
-        infinite: true,
+       dots: productImages.length > 1,
+    infinite: productImages.length > 1,
         speed: 500,
         slidesToShow: 1,
         slidesToScroll: 1,

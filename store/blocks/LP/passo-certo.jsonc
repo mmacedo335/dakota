@@ -1,0 +1,297 @@
+{  
+    "store.custom#passo-certo":{
+        "blocks": [
+            "flex-layout.row#passo-certo-wrapper-content"
+        ]
+    },
+    "flex-layout.row#passo-certo-wrapper-content":{
+        "title": "Passo Certo - Conteudo",
+        "children": [
+            "flex-layout.col#passo-certo-content"
+        ],
+        "props": {
+            "blockClass": "passoCertoWrapper"
+        }
+    },
+    "flex-layout.col#passo-certo-content": {
+        "title": "Passo Certo - Conteudo",
+        "children": [
+            "responsive-layout.desktop#passo-certo-main-banner",
+            "responsive-layout.mobile#passo-certo-main-banner",
+            "flex-layout.row#eco-motivacional",
+            "rich-text#iniciativa",
+            "flex-layout.row#caixa-reciclavel",
+            "flex-layout.row#energia-limpa",    
+            "flex-layout.col#palmilha-scraptech",
+             "flex-layout.row#tecido-fio-pet",
+             "flex-layout.row#couraça-eva",
+              "flex-layout.row#algodao-desfibrado",
+                "flex-layout.col#solado-all-content",
+                "flex-layout.col#solado-banner",
+             "responsive-layout.desktop#passo-certo-main-banner-footer",
+             "responsive-layout.mobile#passo-certo-main-banner-footer"
+        ],
+        "props": {
+            "blockClass":"passoCertoContent"
+        }
+    },
+    "responsive-layout.desktop#passo-certo-main-banner": {
+        "children": ["image#passo-certo-main-banner-desktop"]
+    },
+    "responsive-layout.mobile#passo-certo-main-banner": {
+        "children": ["image#passo-certo-main-banner-mobile"]
+    },
+    "image#passo-certo-main-banner-desktop":{
+        "title": "Passo Certo - Banner Principal Desktop",
+        "props": {
+            "src": "",
+            "maxHeight": "930px",
+            "alt": "Banner Passo Certo",
+            "blockClass":"main-banner-passo-certo"
+        }
+    },
+    "image#passo-certo-main-banner-mobile":{
+        "title": "Passo Certo - Banner Principal Mobile",
+        "props": {
+            "src": "",
+            "maxHeight": "930px",
+            "alt": "Banner Passo Certo",
+            "blockClass":"main-banner-passo-certo"
+        }
+    },
+    "responsive-layout.desktop#passo-certo-main-banner-footer": {
+        "children": ["image#passo-certo-main-banner-desktop-footer"]
+    },
+    "responsive-layout.mobile#passo-certo-main-banner-footer": {
+        "children": ["image#passo-certo-main-banner-mobile-footer"]
+    },
+    "image#passo-certo-main-banner-desktop-footer":{
+            "title": "Passo Certo - Banner footer Desktop",
+        "props": {
+            "src": "",
+            "maxHeight": "380",
+            "alt": "Banner Passo Certo",
+            "blockClass":"banner-footer-passo-certo"
+        }
+    },
+    "image#passo-certo-main-banner-mobile-footer":{
+        "title": "Passo Certo - Banner footer Mobile",
+        "props": {
+            "src": "",
+            "maxHeight": "280",
+            "alt": "Banner Passo Certo",
+            "blockClass":"banner-footer-passo-certo"
+        }
+    },  
+
+    "rich-text#iniciativa": {
+        "title": "Faça parte da nossa iniciativa",
+        "props": {
+            "blockClass":"iniciativa",
+            "text": "CONHEÇA NOSSAS INICIATIVAS E PARTICIPE DO MOVIMENTO"
+        }
+    },
+
+     "flex-layout.row#eco-motivacional": {
+        "children": ["rich-text#eco-motivacional"],
+        "props": {
+            "blockClass": "eco-motivacional"
+        }
+    },
+    "rich-text#eco-motivacional": {
+        "title": "Eco - Texto",
+        "props": {
+            "blockClass":"eco-motivacional",
+            "text":"## Somos o eco de tudo oque já foi. **E de tudo que ainda seremos!** ## \n\nTudo o que existe na natureza retorna para nós de formas inesperadas. A natureza é um sistema... e nós fazemos parte dele.\n\n **#NoPassoCerto** é o mais novo compromisso do Universo Dakota por um mundo mais sustentável.\n\n Nessa plataforma, você vai acompanhar as novas tecnologias adotadas e a transformação gradual dos processos de fabricação de nossos produtos, que já utilizam matérias-primas com menor impacto e práticas certificadas de gestão da água, energia e resíduos em nossas plantas industriais.\n\n Aqui vamos apresentar também alguns de nossos produtos que recebem o selo de ECO, de responsabilidade socioambiental, em todas as marcas do Universo.\n\n Mas, como toda longa caminhada, precisávamos começar com o passo certo: rumo a um futuro mais verde e um planeta melhor."
+        }
+    },
+     "flex-layout.row#caixa-reciclavel": {
+        "children": ["rich-text#caixa-reciclavel"],
+        "props": {
+            "blockClass": "caixa-reciclavel"
+        }
+    },
+    "rich-text#caixa-reciclavel": {
+        "title": "Caixa Reciclavel - Texto",
+        "props": {
+            "blockClass":"caixa-reciclavel",
+            "text": "## Caixas  100%  Recicláveis ##\n Possuimos o Selo FSC, sigla em inglês para a palavra Forest Stewardship Council, ou Conselho de Manejo Florestal, em português. Este conselho foi criado como o resultadode uma iniciativa para a conservação ambiental e desenvolvimento sustentável das florestas do mundo inteiro."
+        }
+    },
+    
+    "flex-layout.row#energia-limpa": {
+        "children": ["rich-text#energia-limpa"],
+        "props": {
+            "blockClass": "energia-limpa"
+        }
+    },
+    "rich-text#energia-limpa": {
+        "title": "Energia Limpa - Texto",
+        "props": {
+            "blockClass":"energia-limpa",
+            "text": "## Energia  Limpa## \n A Dakota atingiu, em 2022, a marca de 100% da energia de suas fábricas proveniente de  fontes renováveis. São usinas eólicas, solares, de biomassa e também pequenas centrais hidrelétricas (PCH’s) fornecendo a energia para suas produções."
+        }
+    },
+    "flex-layout.col#palmilha-scraptech": {
+        "children": ["rich-text#palmilha-scraptech"],
+        "props": {
+            "blockClass": "palmilha-scraptech"
+        }
+    },
+    "rich-text#palmilha-scraptech": {
+        "title": "Palmilha Scraptech - Texto",
+        "props": {
+            "blockClass":"palmilha-scraptech",
+            "text": "## Palmilha Scraptech ## \n A Dakota atingiu, em 2022, a marca de 100% da energia de suas fábricas proveniente de  fontes renováveis. São usinas eólicas, solares, de biomassa e também pequenas centrais hidrelétricas (PCH’s) fornecendo a energia para suas produções. ![Palmilha](/assets/vtex.file-manager-graphql/images/002f2dff-4800-42b9-aeb0-c00d58651cc9___ac026b25bba71b6d19ab86cc2a5ed4cc.png)"
+        }
+    },
+"flex-layout.col#solado-banner": {
+    "children": [
+          "image#solado-banner"
+
+    ],
+    "props": {
+        "blockClass":"solado-banner-wrapper"
+    }
+},
+
+
+"flex-layout.col#solado-all-content": {
+    "title": "Bloco Solado",
+    "children": [
+        "rich-text#solado-title",
+         "flex-layout.col#solado"
+    ],
+    "props": {
+        "blockClass":"solado-all-content"
+    }
+
+},
+    "rich-text#solado-title": {
+        "title": "Solado  - Titulo",
+        "props": {
+            "blockClass":"solado-title",
+            "text": "SOLADO"
+        }
+    },
+
+    "image#solado-banner":{
+        "props": {
+            "src":"",
+            "maxHeight": "660px",
+            "alt": "Solado"
+        }
+    },
+    "flex-layout.col#solado": {
+        "children": [
+             "rich-text#Solado-content-eva-reciclado",
+              "rich-text#Solado-content-eva-micronizado",
+               "rich-text#Solado-content-bambu",
+               "rich-text#Solado-content-sola-pvc"
+        ],
+        "props": {
+            "blockClass":"solado"
+        },
+        "title": "Conteudo - Solado"
+    },
+    
+    "rich-text#Solado-content-eva-reciclado": {
+        "title": "EVA Reciclado",
+        "props": {
+            "blockClass":["solado-default","solado-eva-reciclado"],
+            "text": "## EVA termo reciclado ##\n\n Material elástico com boa transformação e resistência e termoconformado a partir de aparas da indústria. "
+        }
+    },
+    "rich-text#Solado-content-eva-micronizado": {
+        "title": "EVA Micronizado",
+        "props": {
+            "blockClass":["solado-default","solado-eva-micronizado"],
+            "text": "## EVA micronizado ## \n\n O EVA reciclado em formato de grãos, muito versátil, é utilizado para confecção de solas e palmilhas."
+        }
+    },
+    "rich-text#Solado-content-bambu": {
+        "title": "Fibra Bambu",
+        "props": {
+            "blockClass":["solado-default","fibra-de-bambu"],
+            "text": "## fibra de bambu ##\n\n Material de origem renovável, utilizado para produção de solados e pigmentação dos calçados. "
+        }
+    },
+    "rich-text#Solado-content-sola-pvc": {
+        "title": "sola pvc",
+        "props": {
+            "blockClass":["solado-default","solado-pvc"],
+            "text": "## sola PVC ##\n\n O PVC é o único material plástico que não é 100% originário do petróleo. Promove o desenvolvimento sustentável contribuindo para a conservação de nossos recursos naturais."
+        }
+    },
+
+    "flex-layout.row#tecido-fio-pet": {
+        "props": {
+            "blockClass": "tecido-fio-pet"
+        },
+        "children": [  "flex-layout.col#tecido-fio-pet"]
+    },
+    "flex-layout.col#tecido-fio-pet": {
+        "children": ["rich-text#tecido-fio-pet-title",  "rich-text#tecido-fio-pet-sub","image#tecido-fio-pet-1"],
+          "props": {
+            "blockClass": "tecido-fio-pet"
+        }
+    },
+    "rich-text#tecido-fio-pet-title": {
+        "props": {
+            "blockClass":"fio-pet-title",
+            "text": " ## TECIDO##\n Descubra matérias-primas renováveis selecionadas com propósito sustentável. Pensando sempre no impacto positivo para o meio ambiente e no conforto superior dos seus passos."
+        }
+    },
+    "rich-text#tecido-fio-pet-sub": {
+        "props": {
+            "blockClass":"fio-pet-subtitle",
+            "text": " ## fio pet##\n Fios ecologicamente corretos  compostos com fibras de garrafas  pet reciclados, em cores naturais,sem tingimento."
+        }
+    },
+    "image#tecido-fio-pet-1":{
+        "props": {
+            "alt": "TECIDO",
+            "src":"assets/img/lp-passo-certo/tecido-fio-pet.png",
+            "blockClass":"tecido-fio-pet-1"
+        }
+    },
+    "flex-layout.row#couraça-eva": {
+        "props": {
+            "blockClass": "couraca-eva"
+        },
+        "children": ["image#tecido-fio-pet-2", "rich-text#couraca-eva"]
+    },
+        "image#tecido-fio-pet-2":{
+        "props": {
+            "alt": "TECIDO",
+            "src":"assets/img/lp-passo-certo/tecido-fio-pet-2.png",
+            "blockClass":"tecido-fio-pet-2"
+        }
+    },
+    "rich-text#couraca-eva": {
+        "props": {
+            "text": "## couraça e palmilha a base de EVA ## \n\n São confeccionados com 50% de EVA expandido obtidos dos resíduos do processo de injeção das solas. Através do processo de cronização torna-se novamente matéria prima, evitando desta forma o descarte por incineração. ",
+            "blockClass":"couraca-eva"
+        }
+    },
+    "flex-layout.row#algodao-desfibrado": {
+        "props": {
+            "blockClass": "algodao-desfibrado"
+        },
+        "children": [ "rich-text#algodao-desfibrado","image#algodao-desfibrado"]
+    },
+        "image#algodao-desfibrado":{
+        "props": {
+            "alt": "TECIDO",
+            "src":"assets/img/lp-passo-certo/tecido-fio-pet-3.png",
+            "blockClass":"tecido-fio-pet-3"
+        }
+    },
+    "rich-text#algodao-desfibrado": {
+        "props": {
+            "text": "## algodão desfibrado ## \n\n Fios ecologicamente corretos compostos com fibras de garrafas pet reciclados, em cores naturais, sem tingimento.",
+            "blockClass":"algodao-desfibrado"
+        }
+    }
+    
+}

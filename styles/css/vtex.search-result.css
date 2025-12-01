@@ -400,3 +400,7 @@
     flex-basis: auto !important;
   }
 }
+
+.buttonShowMore--layout{
+  display: none;
+}
