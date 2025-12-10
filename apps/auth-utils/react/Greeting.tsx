@@ -8,6 +8,7 @@ interface GreetingProps {
   markers?: string[]
   unloggedText?: string
   loggedText?: string
+  handleModalVisibility:() => void
 }
 
 const CSS_HANDLES = ['greeting'] as const
@@ -16,13 +17,14 @@ const Greeting: React.FC<GreetingProps> = ({
   unloggedText = 'Entrar / Cadastrar',
   loggedText = 'Olá {user}',
   markers = [],
+  handleModalVisibility
 }) => {
   const { handles } = useCssHandles(CSS_HANDLES)
 
   const { greetingName, fullName, isAuthenticated, loading } = useUser()
 
   if (loading || !isAuthenticated) {
-    return <div className={`${handles.greeting} truncate`}>{unloggedText}</div>
+    return <div className={`${handles.greeting} truncate`} role='button' onClick={handleModalVisibility}>{unloggedText}</div>
   }
 
   return (

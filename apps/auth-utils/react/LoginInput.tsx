@@ -5,6 +5,14 @@ import { useLogin } from './hooks/login'
 
 // import { Container } from './styles';
 
+  const generateUUID = () => {
+    return 'xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx'.replace(/[xy]/g, (c) => {
+      const r = Math.random() * 16 | 0
+      const v = c === 'x' ? r : (r & 0x3 | 0x8)
+      return v.toString(16)
+    })
+  }
+
 interface LoginInputProps {
   id?: string
   name: string
@@ -41,7 +49,10 @@ const LoginInput: React.FC<LoginInputProps> = ({
   const { handles, withModifiers } = useCssHandles(CSS_HANDLES)
   const { handleInputChange, data, clearErrors, errors } = useLogin()
 
-  const finalId = id ?? `${(window.crypto as any).randomUUID()}-${name}`
+
+
+  const finalId = id ?? `${generateUUID()}-${name}`;
+
 
   const input = (
     <input

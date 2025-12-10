@@ -34,5 +34,12 @@
   "login-button": {
     "component": "LoginButton",
     "composition": "children"
+  },
+  "login-with-timer":{
+    "component": "LoginWithTimer"
+  },
+  "custom-login-wrapper":{
+    "component": "LoginWrapper",
+    "composition": "children"
   }
 }

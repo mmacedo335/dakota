@@ -4,6 +4,7 @@ import LoginButton from '../LoginButton'
 import LoginErrorList from '../LoginErrorList'
 import LoginFormElement from '../LoginFormElement'
 import LoginInput from '../LoginInput'
+import LoginWithAccesKeyTimer from './LoginWithAccesKeyTimer'
 
 // import { Container } from './styles';
 
@@ -18,7 +19,7 @@ interface LoginWithAccessKeyProps {
 
 const LoginWithAccessKey: React.FC<LoginWithAccessKeyProps> = ({
   emailLabel = 'E-mail',
-  emailPlaceholder = 'exemplo@exemplo.com',
+  emailPlaceholder = 'exemplo@exemplo.comaaaaaaaaaaaaa',
   emailButtonText = 'Confirmar',
   accessKeyLabel = 'Código de acesso',
   accessKeyPlaceholder = 'Ex: 123123',
@@ -26,7 +27,7 @@ const LoginWithAccessKey: React.FC<LoginWithAccessKeyProps> = ({
 }) => {
   const [step, setStep] = useState<'email' | 'accessKey'>('email')
   const [loading, setIsLoading] = useState(false)
-
+  console.log(emailPlaceholder,'a')
   const DICT = {
     email: (
       <LoginFormElement
@@ -40,29 +41,19 @@ const LoginWithAccessKey: React.FC<LoginWithAccessKeyProps> = ({
           type="email"
           blockClass="email"
           label={emailLabel}
-          placeholder={emailPlaceholder}
+          placeholder={'aaaaaaaaaaaaaaaa'}
         />
         <LoginButton text={emailButtonText} type="submit" loading={loading} />
       </LoginFormElement>
     ),
     accessKey: (
-      <LoginFormElement
-        action="validateKey"
-        onStart={() => setIsLoading(true)}
-        onError={() => setIsLoading(false)}
-      >
-        <LoginInput
-          name="accessKey"
-          blockClass="accessKey"
-          label={accessKeyLabel}
-          placeholder={accessKeyPlaceholder}
-        />
-        <LoginButton
-          text={accessKeyButtonText}
-          type="submit"
-          loading={loading}
-        />
-      </LoginFormElement>
+      <LoginWithAccesKeyTimer
+        accessKeyButtonText={accessKeyButtonText}
+        accessKeyPlaceholder={accessKeyPlaceholder}
+        accessKeyLabel={accessKeyLabel}
+        loading={loading}
+        setIsLoading={setIsLoading}
+      />
     ),
   }
 
