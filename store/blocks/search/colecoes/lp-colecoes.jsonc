@@ -30,7 +30,8 @@
             "flex-layout.row#result"
         ],
         "props": {
-            "preventRouteChange": true
+            "preventRouteChange": true,
+              "pagination": "infiniteScroll"
         }
     },
     "search-result-layout.mobile#lp-colecoes-custom": {
