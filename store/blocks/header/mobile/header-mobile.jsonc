@@ -6,7 +6,7 @@
       "helmet#google-script",
       "minicart.v2#flutuante",
       "sticky-layout#header-mobile",
-      "flex-layout.row#header-departamentos",
+      // "flex-layout.row#header-departamentos",
       "shared-cart",
       "modal-privacidade",
       "modal-newsletter",
