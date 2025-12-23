@@ -32,7 +32,7 @@
 .openSubmenu .menuLink {
   font-weight: 500;
   text-decoration: unset;
-  text-transform: capitalize;
+  text-transform: none;
   font-size: 14px;
   font-family: 'Larsseit Regular';
   margin: 0px 0;
