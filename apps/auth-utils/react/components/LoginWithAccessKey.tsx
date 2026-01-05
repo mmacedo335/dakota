@@ -1,5 +1,6 @@
+//@ts-ignore
 import React, { useState } from 'react'
-
+import { useCssHandles } from 'vtex.css-handles'
 import LoginButton from '../LoginButton'
 import LoginErrorList from '../LoginErrorList'
 import LoginFormElement from '../LoginFormElement'
@@ -8,6 +9,7 @@ import LoginWithAccesKeyTimer from './LoginWithAccesKeyTimer'
 
 // import { Container } from './styles';
 
+const CSS_HANDLES = ['loginWithAccessKeyContainer',"loginWithAccessKeyButton","loginWithAccessKeyText","loginWithAccessKeyBackButton"] as const
 interface LoginWithAccessKeyProps {
   emailLabel?: string
   emailPlaceholder?: string
@@ -18,8 +20,7 @@ interface LoginWithAccessKeyProps {
 }
 
 const LoginWithAccessKey: React.FC<LoginWithAccessKeyProps> = ({
-  emailLabel = 'E-mail',
-  emailPlaceholder = 'exemplo@exemplo.comaaaaaaaaaaaaa',
+  emailPlaceholder = 'exemplo@exemplo.com',
   emailButtonText = 'Confirmar',
   accessKeyLabel = 'Código de acesso',
   accessKeyPlaceholder = 'Ex: 123123',
@@ -27,7 +28,8 @@ const LoginWithAccessKey: React.FC<LoginWithAccessKeyProps> = ({
 }) => {
   const [step, setStep] = useState<'email' | 'accessKey'>('email')
   const [loading, setIsLoading] = useState(false)
-  console.log(emailPlaceholder,'a')
+  const [showInput,setShowInput] = useState(false)
+  const { handles } = useCssHandles(CSS_HANDLES)
   const DICT = {
     email: (
       <LoginFormElement
@@ -36,14 +38,18 @@ const LoginWithAccessKey: React.FC<LoginWithAccessKeyProps> = ({
         onSuccess={() => setStep('accessKey')}
         onEnd={() => setIsLoading(false)}
       >
+        <p className={handles.loginWithAccessKeyText}>Receber código de acesso por email</p>
         <LoginInput
           name="email"
           type="email"
           blockClass="email"
-          label={emailLabel}
-          placeholder={'aaaaaaaaaaaaaaaa'}
+          placeholder={emailPlaceholder}
         />
+
+        <div className={handles.loginWithAccessKeyContainer}>
+         <button className={handles.loginWithAccessKeyBackButton} onClick={() => setShowInput(false)}>Voltar</button>
         <LoginButton text={emailButtonText} type="submit" loading={loading} />
+        </div>
       </LoginFormElement>
     ),
     accessKey: (
@@ -53,14 +59,25 @@ const LoginWithAccessKey: React.FC<LoginWithAccessKeyProps> = ({
         accessKeyLabel={accessKeyLabel}
         loading={loading}
         setIsLoading={setIsLoading}
+        handleStep={() => {
+          setShowInput(false)
+          setStep('email')
+        }}
       />
     ),
   }
 
   return (
     <>
-      {DICT[step]}
-      <LoginErrorList />
+        {
+          !showInput  ? (<button className={handles.loginWithAccessKeyButton} onClick={() => setShowInput(true)}>Receber código de acesso por email</button>) : (
+          <>
+          {DICT[step]}
+          <LoginErrorList />
+          </>
+        )
+        
+        }
     </>
   )
 }

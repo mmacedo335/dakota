@@ -225,3 +225,34 @@
     background-color: #FFF;
 }
 
+:global(.dakota-auth-utils-3-x-customLoginModal) :global(.vtex-login-2-x-accessCodeOptionBtn),:global(.dakota-auth-utils-3-x-customLoginModal) :global(.vtex-login-2-x-formTitle ) {
+    display: none;
+}
+
+:global(.vtex-login-2-x-optionsListItem:first-child:after){
+    all: unset !important;
+}
+:global(.dakota-auth-utils-3-x-customLoginModal) .content--loginOptions {
+    padding-top: 0;
+}
+
+:global(.dakota-auth-utils-3-x-customLoginModal) .contentFormVisible {
+
+}
+
+:global(.dakota-auth-utils-3-x-customLoginModal):has(:global(.vtex-login-2-x-emailVerification)){
+    :global(.dakota-auth-utils-3-x-formContainer--accessKey){
+        display: none;
+    }
+}
+
+:global(.dakota-auth-utils-3-x-customLoginModal):has(:global(.dakota-auth-utils-3-x-formElement--accessKey)){
+    :global(.vtex-login-2-x-content--loginOptions){
+        display: none;
+    }
+}
+
+:global(.dakota-auth-utils-3-x-loggedModalOption):first-of-type {
+    border-bottom: 1px solid #CCC;
+    padding-bottom: 12px;
+}

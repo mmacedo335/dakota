@@ -1,8 +1,9 @@
-import React from 'react'
+import React,{useState} from 'react'
 import { IOMessageWithMarkers } from 'vtex.native-types'
 import {useCssHandles} from "vtex.css-handles"
 
 import { useUser } from './hooks/useUser'
+import LoggedModal from './components/LoggedModal'
 
 interface GreetingProps {
   markers?: string[]
@@ -14,13 +15,13 @@ interface GreetingProps {
 const CSS_HANDLES = ['greeting'] as const
 
 const Greeting: React.FC<GreetingProps> = ({
-  unloggedText = 'Entrar / Cadastrar',
+  unloggedText = 'Entre ou Cadastre-se',
   loggedText = 'Olá {user}',
   markers = [],
   handleModalVisibility
 }) => {
   const { handles } = useCssHandles(CSS_HANDLES)
-
+  const [showModal,setShowModal] = useState(false)
   const { greetingName, fullName, isAuthenticated, loading } = useUser()
 
   if (loading || !isAuthenticated) {
@@ -28,7 +29,7 @@ const Greeting: React.FC<GreetingProps> = ({
   }
 
   return (
-    <div className={`${handles.greeting} truncate`}>
+    <div className={`${handles.greeting} truncate`} role='button' onClick={() => setShowModal(!showModal)}>
       <IOMessageWithMarkers
         message={loggedText}
         markers={markers}
@@ -40,6 +41,9 @@ const Greeting: React.FC<GreetingProps> = ({
           fullName,
         }}
       />
+      {
+        showModal &&  <LoggedModal />
+      }
     </div>
   )
 }

@@ -4,6 +4,7 @@
       "fg-metaOganization",
       "rich-text#h1__home",
       "list-context.image-list#full-banner-home",
+      "custom-login-wrapper",
       "responsive-layout.desktop#diferenciais",
       "responsive-layout.mobile#diferenciais",
       "flex-layout.row#compre-numeracao",
@@ -18,5 +19,31 @@
       "yv-testimonials"
       // "flex-layout.row#texto-home"
     ]
+  },
+  "custom-login-wrapper":{
+    "children":["login-provider#access-key","login-content#custom-login"]
+  },
+    
+    "login-provider#access-key": {
+    "children": [
+      "login-form#header-modal-access-key"
+    ]
+  },
+  
+  "login-form#header-modal-access-key": {
+    "props": {
+      "blockClass": "accessKey",
+      "option": "access-key",
+      "data": {
+        "accessKeyLabel": "Digite o código enviado para seu email",
+        "accessKeyPlaceholder": "Adicione aqui o código de acesso"
+      }
+    }
+  },
+"login-content#custom-login": {
+  "props": {
+    "isInitialScreenOptionOnly": true,
+    "blockClass":"teste123"
   }
+}
 }
