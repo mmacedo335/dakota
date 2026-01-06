@@ -225,7 +225,7 @@
     background-color: #FFF;
 }
 
-:global(.dakota-auth-utils-3-x-customLoginModal) :global(.vtex-login-2-x-accessCodeOptionBtn),:global(.dakota-auth-utils-3-x-customLoginModal) :global(.vtex-login-2-x-formTitle ) {
+ :global(.vtex-login-2-x-accessCodeOptionBtn), :global(.vtex-login-2-x-formTitle ) {
     display: none;
 }
 
@@ -255,4 +255,9 @@
 :global(.dakota-auth-utils-3-x-loggedModalOption):first-of-type {
     border-bottom: 1px solid #CCC;
     padding-bottom: 12px;
+}
+
+:global(.vtex-flex-layout-0-x-flexRowContent--custom-login-block) :global(.dakota-auth-utils-3-x-loginWithAccessKeyButton--accessKey){
+    max-width: 320px;
+    margin-inline: auto;
 }
