@@ -26,3 +26,10 @@
 .wrapper--sticky-filter-mobile--stuck :global(.vtex-flex-layout-0-x-flexRowContent--searchinfomobile) {
     margin-top: 15px;
 }
+
+
+@media screen and (max-width: 600px) {
+   .wrapper--sticky-filter-mobile--stuck  .container--sticky-filter-mobile {
+        top: 121px !important;
+    }
+}

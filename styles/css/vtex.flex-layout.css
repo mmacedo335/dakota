@@ -879,8 +879,8 @@
     }
 
     .flexRowContent--menu-footer :global(.vtex-menu-2-x-styledLinkContent) {
-        font-size: 16px;
-        font-family: 'Larsseit Bold';
+        font-size: 14px;
+        font-family: 'Larsseit Regular';
         justify-content: center;
     }
 
@@ -1650,4 +1650,10 @@
 
 
 
+}
+
+@media screen and (max-width: 600px) {
+.flexRowContent--searchinfomobile {
+        margin-top: 0 !important;
+    }
 }

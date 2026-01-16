@@ -442,6 +442,9 @@
         bottom: 90px !important;
         right: 10px;
     }
+    .imageElement--whats-flutuante {
+        width: 50px;
+    }
 }
 
 @media (max-width: 768px){
@@ -503,5 +506,11 @@
          position: relative;
         bottom: unset;
         top: unset;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .searchBarContainer {
+        padding: 0 !important;
     }
 }
